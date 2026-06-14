@@ -1,0 +1,66 @@
+name: Rafraîchir l'agenda
+
+# Régénère data.js automatiquement DANS LE CLOUD (indépendant de ton Mac) :
+#  - tous les jours à 04:00 UTC (~06:00 Paris)
+#  - ou à la demande via le bouton « Run workflow » (onglet Actions)
+on:
+  schedule:
+    - cron: "0 4 * * *"
+  workflow_dispatch:
+
+# Autorise le job à committer le data.js régénéré dans le dépôt.
+permissions:
+  contents: write
+
+# Évite deux exécutions simultanées.
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      # Chaque scraper est protégé : un échec (site momentanément KO, IP bloquée)
+      # n'empêche pas les autres ni la régénération finale. On garde alors le
+      # dernier snapshot JSON committé pour la source en échec.
+      - name: Lancer les scrapers
+        run: |
+          node destination-nancy.js || echo "⚠ destination-nancy a échoué"
+          node curieux-net.js       || echo "⚠ curieux-net a échoué"
+          node vandoeuvre.js        || echo "⚠ vandoeuvre a échoué"
+          node villers-les-nancy.js || echo "⚠ villers-les-nancy a échoué"
+          node alentoor.js          || echo "⚠ alentoor a échoué"
+          node ici-c-nancy.js       || echo "⚠ ici-c-nancy a échoué"
+          node zenith-nancy.js      || echo "⚠ zenith-nancy a échoué"
+        # NB : on ne scrape PAS l'Est Républicain (réserve tdm-reservation:1).
+        # L'import iCal ne traite que des .ics ajoutés manuellement au dépôt.
+
+      - name: Import iCal manuel (si des .ics ont été ajoutés)
+        run: |
+          if ls ics-est-republicain/*.ics >/dev/null 2>&1; then
+            node import-ics.js || echo "⚠ import-ics a échoué"
+          else
+            echo "Aucun .ics — étape ignorée."
+          fi
+
+      - name: Régénérer data.js (fusion de toutes les sources)
+        run: node update-events.js
+
+      - name: Publier si data.js a changé
+        run: |
+          git config user.name "agenda-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data.js events-*.json
+          if git diff --cached --quiet; then
+            echo "Rien de neuf — pas de commit."
+          else
+            git commit -m "chore: maj agenda $(date -u +%F)"
+            git push
+          fi

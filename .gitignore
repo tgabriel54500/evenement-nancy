@@ -1,0 +1,14 @@
+# Outils / IDE
+.capybavibe/
+.claude/
+.DS_Store
+
+# Journaux d'exécution locaux
+refresh.log
+*.log
+
+# Dépendances éventuelles
+node_modules/
+
+# Exports iCal manuels (perso, non publiés) — on garde juste le mode d'emploi
+ics-est-republicain/*.ics
