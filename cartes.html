@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Que faire à Nancy ? — Agenda des événements</title>
-  <meta name="description" content="Toutes les affiches des événements à Nancy et dans le Grand Nancy. Cliquez une affiche pour l'agrandir et accéder aux infos.">
+  <title>Vue cartes — Agenda de Nancy</title>
+  <meta name="description" content="Tous les événements à Nancy : concerts, expositions, théâtre, sport, gastronomie. Filtrez par activité, date, tarif.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E👑%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,14 +16,14 @@
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda culturel · Lorraine</p>
       <h1 class="hero__title">Que faire à <span>Nancy</span> ?</h1>
-      <p class="hero__subtitle">Toutes les affiches des événements à venir. Cliquez sur une affiche pour la voir en grand et accéder aux infos.</p>
+      <p class="hero__subtitle">Concerts, expositions, spectacles, ateliers, festivals… Tous les événements de Nancy et du Grand Nancy, filtrables par activité.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input type="search" id="search" placeholder="Rechercher un événement, un lieu…" aria-label="Rechercher un événement">
       </div>
       <div class="hero__views" role="tablist" aria-label="Mode d'affichage">
-        <span class="view-switch is-active" aria-current="page">🖼️ Galerie</span>
-        <a class="view-switch" href="cartes.html">🗂️ Cartes</a>
+        <a class="view-switch" href="index.html">🖼️ Galerie</a>
+        <span class="view-switch is-active" aria-current="page">🗂️ Cartes</span>
       </div>
     </div>
   </header>
@@ -35,22 +35,16 @@
 
     <p class="results-count" id="resultsCount"></p>
 
-    <section class="gallery" id="gallery" aria-live="polite"></section>
+    <section class="grid" id="grid" aria-live="polite"></section>
 
     <p class="empty" id="empty" hidden>Aucun événement ne correspond à votre recherche. Essayez un autre filtre ou un autre mot-clé.</p>
   </main>
 
   <footer class="footer">
-    <p>Source : agendas officiels de la <a href="https://www.nancy.fr/agenda" target="_blank" rel="noopener">Ville de Nancy</a>, du Grand Nancy et de ses partenaires culturels.</p>
+    <p id="footerNote">Source : agendas officiels de la <a href="https://www.nancy.fr/agenda" target="_blank" rel="noopener">Ville de Nancy</a>, du Grand Nancy et de ses partenaires culturels.</p>
   </footer>
 
-  <!-- Lightbox : affiche en grand au clic -->
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Affiche de l'événement">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
-    <div class="lightbox__inner" id="lightboxInner"></div>
-  </div>
-
   <script src="data.js"></script>
-  <script src="galerie.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>

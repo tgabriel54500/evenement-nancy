@@ -40,6 +40,7 @@ const { collect: collectVLN } = require("./villers-les-nancy");
 const { collect: collectAL } = require("./alentoor");
 const { collect: collectICN } = require("./ici-c-nancy");
 const { collect: collectZEN } = require("./zenith-nancy");
+const { collect: collectPoirel } = require("./poirel");
 const { cleanupMerged } = require("./normalize");
 
 const ROOT = __dirname;
@@ -63,6 +64,7 @@ const SNAPSHOTS = [
   { name: "Alentoor",          file: "events-alentoor.json",           collect: collectAL,  opts: { concurrency: 12 } },
   { name: "ICI-C-Nancy",       file: "events-ici-c-nancy.json",        collect: collectICN, opts: {} },
   { name: "Zénith de Nancy",   file: "events-zenith-nancy.json",       collect: collectZEN, opts: {} },
+  { name: "Salle Poirel",      file: "events-poirel.json",             collect: collectPoirel, opts: {} },
 ].map((s) => ({ ...s, path: path.join(ROOT, s.file), refreshing: false }));
 
 // ── Mapping Ville de Nancy (miroir compact de update-events.js) ────────────

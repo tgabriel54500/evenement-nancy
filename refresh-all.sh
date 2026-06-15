@@ -52,7 +52,8 @@ for s in \
   villers-les-nancy.js \
   alentoor.js \
   ici-c-nancy.js \
-  zenith-nancy.js
+  zenith-nancy.js \
+  poirel.js
 do
   run_step "$s"
 done
@@ -66,6 +67,16 @@ fi
 
 # --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
 run_step "update-events.js"
+
+# --- 4. Publication du site statique sur Netlify (sauté proprement si non configuré) ---
+if [ -f "$PROJECT_DIR/deploy-site.sh" ]; then
+  log "START deploy-site.sh"
+  if bash "$PROJECT_DIR/deploy-site.sh" >> "$LOG" 2>&1; then
+    log "OK    deploy-site.sh"
+  else
+    log "FAIL  deploy-site.sh (code $?) — data.js a tout de même été régénéré"
+  fi
+fi
 
 log "===== FIN refresh-all ====="
 log ""

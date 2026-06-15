@@ -7,11 +7,14 @@ const MONTHS_LONG = ["janvier", "février", "mars", "avril", "mai", "juin",
 const MONTHS_SHORT = ["JANV", "FÉVR", "MARS", "AVR", "MAI", "JUIN",
   "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"];
 
-const state = { filter: "all", query: "", when: "all", customFrom: "", customTo: "" };
+// state.cats = ensemble des catégories cochées (multi-sélection, logique OU).
+// Vide = « Tout » (aucun filtre catégorie).
+const state = { cats: new Set(), query: "", when: "all", customFrom: "", customTo: "", price: "all", resa: "all" };
 
 const els = {
   filters: document.getElementById("filters"),
   dateFilters: document.getElementById("dateFilters"),
+  optFilters: document.getElementById("optFilters"),
   grid: document.getElementById("grid"),
   empty: document.getElementById("empty"),
   count: document.getElementById("resultsCount"),
@@ -68,7 +71,16 @@ function dedupEvents(events) {
   return merged;
 }
 
+// Aujourd'hui (heure du navigateur) au format ISO, calculé une fois au chargement.
+const TODAY_ISO = (() => { const d = new Date();
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; })();
+// Un événement est PASSÉ si sa date de fin (ou sa date) est < aujourd'hui. On les
+// retire de l'affichage : le site se nettoie ainsi tout seul chaque jour, même
+// sans régénération de data.js.
+const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
+
 const sortedEvents = dedupEvents(EVENTS)
+  .filter(notPast)
   .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 
 function dateParts(iso) {
@@ -124,20 +136,66 @@ function buildFilters() {
       .map(([key, c]) => ({ key, label: c.label, emoji: c.emoji, n: counts[key] })),
   ];
 
+  const isActive = (key) => key === "all" ? state.cats.size === 0 : state.cats.has(key);
+
   els.filters.innerHTML = buttons.map(b => `
-    <button class="filter ${b.key === state.filter ? "is-active" : ""}" data-key="${b.key}">
+    <button class="filter ${isActive(b.key) ? "is-active" : ""}" data-key="${b.key}">
       <span>${b.emoji}</span>${escapeHtml(b.label)}
       <span class="count">${b.n}</span>
     </button>`).join("");
 
   els.filters.querySelectorAll(".filter").forEach(btn => {
     btn.addEventListener("click", () => {
-      state.filter = btn.dataset.key;
-      els.filters.querySelectorAll(".filter").forEach(b => b.classList.remove("is-active"));
-      btn.classList.add("is-active");
+      const key = btn.dataset.key;
+      // « Tout » remet à zéro ; une catégorie se coche / décoche (multi-sélection).
+      if (key === "all") state.cats.clear();
+      else state.cats.has(key) ? state.cats.delete(key) : state.cats.add(key);
+      els.filters.querySelectorAll(".filter").forEach(b =>
+        b.classList.toggle("is-active", isActive(b.dataset.key)));
       render();
     });
   });
+}
+
+// Filtres tarif (gratuit/payant) et réservation (accès libre / sur réservation).
+// L'info est fiabilisée à la source par enrich-pricing.js (cf. data.js).
+function buildOptFilters() {
+  if (!els.optFilters) return;
+  const groups = [
+    { key: "price", aria: "Tarif", opts: [
+      { v: "all", t: "Tarif : tous" }, { v: "free", t: "🆓 Gratuit" }, { v: "paid", t: "💶 Payant" } ] },
+    { key: "resa", aria: "Réservation", opts: [
+      { v: "all", t: "Réservation : toutes" }, { v: "no", t: "Accès libre" }, { v: "yes", t: "🎟️ Sur réservation" } ] },
+  ];
+  els.optFilters.innerHTML = groups.map(g => `
+    <div class="datefilters" role="group" aria-label="${g.aria}">
+      ${g.opts.map(o => `<button class="datefilter ${state[g.key] === o.v ? "is-active" : ""}"
+          data-group="${g.key}" data-val="${o.v}">${o.t}</button>`).join("")}
+    </div>`).join("");
+  els.optFilters.querySelectorAll(".datefilter").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const g = btn.dataset.group;
+      state[g] = btn.dataset.val;
+      els.optFilters.querySelectorAll(`[data-group="${g}"]`)
+        .forEach(b => b.classList.toggle("is-active", b === btn));
+      render();
+    });
+  });
+}
+
+// État transitoire du calendrier (mois affiché + ouvert/fermé). La vérité sur la
+// plage choisie reste state.customFrom / state.customTo (ISO "AAAA-MM-JJ").
+const cal = { view: null, open: false };
+const CAL_DOW = ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"];
+const CAL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cal-ico"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
+
+const frDay = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${MONTHS_LONG[m - 1]}`; };
+function dateRangeLabel() {
+  const f = state.customFrom, t = state.customTo;
+  if (f && t) return f === t ? frDay(f) : `${frDay(f)} – ${frDay(t)}`;
+  if (f) return `Dès le ${frDay(f)}`;
+  if (t) return `Jusqu'au ${frDay(t)}`;
+  return "Choisir des dates";
 }
 
 function buildDateFilters() {
@@ -146,22 +204,21 @@ function buildDateFilters() {
     { key: "all", label: "Tout" },
     { key: "today", label: "Aujourd'hui" },
     { key: "weekend", label: "Ce week-end" },
-    { key: "week", label: "Cette semaine" },
-    { key: "month", label: "Ce mois-ci" },
   ];
   const chipsHTML = chips.map(c => `
     <button class="datefilter ${c.key === state.when ? "is-active" : ""}" data-when="${c.key}">
       ${escapeHtml(c.label)}
     </button>`).join("");
 
-  // Plage de dates personnalisée : deux champs « date » (du / au). Renseigner
-  // l'un ou l'autre (ou les deux) bascule state.when sur "custom".
+  // Plage personnalisée : un bouton qui ouvre un CALENDRIER (popover), au lieu de
+  // saisir les dates au clavier. La sélection alimente state.customFrom/customTo.
   els.dateFilters.innerHTML = chipsHTML + `
-    <span class="daterange ${state.when === "custom" ? "is-active" : ""}">
-      <input type="date" class="daterange__input" id="dateFrom" aria-label="Date de début" value="${state.customFrom}">
-      <span class="daterange__sep">→</span>
-      <input type="date" class="daterange__input" id="dateTo" aria-label="Date de fin" value="${state.customTo}">
+    <span class="daterange ${state.when === "custom" ? "is-active" : ""}" id="dateRangeWrap">
+      <button type="button" class="daterange__trigger" id="dateTrigger" aria-haspopup="dialog" aria-expanded="false">
+        ${CAL_ICON}<span id="dateTriggerLabel">${escapeHtml(dateRangeLabel())}</span>
+      </button>
       <button type="button" class="daterange__clear" id="dateClear" aria-label="Effacer les dates" title="Effacer">×</button>
+      <div class="cal" id="calPopover" role="dialog" aria-label="Choisir une plage de dates" hidden></div>
     </span>`;
 
   els.dateFilters.querySelectorAll(".datefilter").forEach(btn => {
@@ -169,31 +226,172 @@ function buildDateFilters() {
       state.when = btn.dataset.when;
       state.customFrom = "";
       state.customTo = "";
-      buildDateFilters();          // reconstruit (vide les champs date, maj is-active)
+      closeCal();
+      buildDateFilters();          // reconstruit (maj is-active des chips)
       render();
     });
   });
 
-  const from = els.dateFilters.querySelector("#dateFrom");
-  const to = els.dateFilters.querySelector("#dateTo");
-  const onPick = () => {
-    state.customFrom = from.value || "";
-    state.customTo = to.value || "";
-    state.when = (state.customFrom || state.customTo) ? "custom" : "all";
-    els.dateFilters.querySelectorAll(".datefilter").forEach(b =>
-      b.classList.toggle("is-active", b.dataset.when === state.when));
-    els.dateFilters.querySelector(".daterange").classList.toggle("is-active", state.when === "custom");
-    render();
-  };
-  from.addEventListener("change", onPick);
-  to.addEventListener("change", onPick);
-  els.dateFilters.querySelector("#dateClear").addEventListener("click", () => {
-    state.customFrom = "";
-    state.customTo = "";
-    state.when = "all";
+  els.dateFilters.querySelector("#dateTrigger")
+    .addEventListener("click", (e) => { e.stopPropagation(); toggleCal(); });
+  els.dateFilters.querySelector("#dateClear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    state.customFrom = ""; state.customTo = ""; state.when = "all";
+    closeCal();
     buildDateFilters();
     render();
   });
+}
+
+// --- Calendrier (popover de sélection de plage) ---------------------------
+function toggleCal() { cal.open ? closeCal() : openCal(); }
+
+function openCal() {
+  const pop = document.getElementById("calPopover");
+  if (!pop) return;
+  cal.open = true;
+  const base = state.customFrom ? new Date(state.customFrom + "T00:00:00") : new Date();
+  cal.view = new Date(base.getFullYear(), base.getMonth(), 1);
+  pop.hidden = false;
+  const t = document.getElementById("dateTrigger");
+  if (t) t.setAttribute("aria-expanded", "true");
+  renderCal();
+  // Fermer au clic extérieur / Échap (différé pour ne pas capter le clic courant).
+  setTimeout(() => document.addEventListener("click", onCalDocClick), 0);
+  document.addEventListener("keydown", onCalKey);
+}
+
+function closeCal() {
+  cal.open = false;
+  const pop = document.getElementById("calPopover");
+  if (pop) pop.hidden = true;
+  const t = document.getElementById("dateTrigger");
+  if (t) t.setAttribute("aria-expanded", "false");
+  document.removeEventListener("click", onCalDocClick);
+  document.removeEventListener("keydown", onCalKey);
+}
+function onCalDocClick(e) {
+  const wrap = document.getElementById("dateRangeWrap");
+  if (wrap && !wrap.contains(e.target)) closeCal();
+}
+function onCalKey(e) { if (e.key === "Escape") closeCal(); }
+
+// Met à jour l'UI dépendante de la plage SANS reconstruire (sinon on détruirait le
+// popover ouvert) : état actif des chips, du bouton, et libellé de la plage.
+function syncDateUI() {
+  els.dateFilters.querySelectorAll(".datefilter").forEach(b =>
+    b.classList.toggle("is-active", b.dataset.when === state.when));
+  const wrap = document.getElementById("dateRangeWrap");
+  if (wrap) wrap.classList.toggle("is-active", state.when === "custom");
+  const lbl = document.getElementById("dateTriggerLabel");
+  if (lbl) lbl.textContent = dateRangeLabel();
+}
+
+function pickDay(iso) {
+  const f = state.customFrom, t = state.customTo;
+  if (!f || (f && t)) {            // (re)commence une sélection
+    state.customFrom = iso; state.customTo = "";
+  } else if (iso < f) {            // fin avant début → on inverse
+    state.customTo = f; state.customFrom = iso;
+  } else {
+    state.customTo = iso;
+  }
+  state.when = "custom";
+  syncDateUI();
+  renderCal();
+  render();
+  if (state.customFrom && state.customTo) setTimeout(closeCal, 200); // plage complète → on referme
+}
+
+// Construit le bloc d'un mois (titre + jours de semaine + grille). Les classes de
+// sélection/plage ne sont PAS posées ici : c'est paintSelection() qui le fait, pour
+// pouvoir les rafraîchir au survol sans reconstruire tout le calendrier.
+function monthBlock(year, month, todayISO) {
+  const d = new Date(year, month, 1);
+  const y = d.getFullYear(), m = d.getMonth();
+  const offset = (new Date(y, m, 1).getDay() + 6) % 7;     // lundi = 1ère colonne
+  const nbDays = new Date(y, m + 1, 0).getDate();
+  let cells = "";
+  for (let i = 0; i < offset; i++) cells += `<span class="cal__day cal__day--blank"></span>`;
+  for (let dd = 1; dd <= nbDays; dd++) {
+    const iso = `${y}-${String(m + 1).padStart(2, "0")}-${String(dd).padStart(2, "0")}`;
+    const past = iso < todayISO;
+    const cls = ["cal__day", past ? "is-past" : "", iso === todayISO ? "is-today" : ""].filter(Boolean).join(" ");
+    cells += `<button type="button" class="${cls}" data-iso="${iso}"${past ? " disabled" : ""}>${dd}</button>`;
+  }
+  return `<div class="cal__month">
+      <div class="cal__title">${MONTHS_LONG[m]} ${y}</div>
+      <div class="cal__dow">${CAL_DOW.map(x => `<span>${x}</span>`).join("")}</div>
+      <div class="cal__days">${cells}</div>
+    </div>`;
+}
+
+// Pose les classes de bornes/plage sur les jours déjà rendus. Si une date de début
+// est posée mais pas la fin, `hoverISO` permet de PRÉVISUALISER la plage au survol.
+function paintSelection(hoverISO) {
+  const f = state.customFrom, t = state.customTo;
+  let lo = f, hi = t;
+  if (f && !t && hoverISO) { lo = hoverISO < f ? hoverISO : f; hi = hoverISO < f ? f : hoverISO; }
+  document.querySelectorAll("#calPopover .cal__day[data-iso]").forEach(el => {
+    const iso = el.dataset.iso;
+    el.classList.remove("is-start", "is-end", "is-sel", "is-range");
+    if (lo && hi) {
+      if (iso === lo) el.classList.add("is-start", "is-sel");
+      if (iso === hi) el.classList.add("is-end", "is-sel");
+      if (iso > lo && iso < hi) el.classList.add("is-range");
+    } else if (f && iso === f) {
+      el.classList.add("is-start", "is-end", "is-sel");
+    }
+  });
+}
+
+function renderCal() {
+  const pop = document.getElementById("calPopover");
+  if (!pop || !cal.open) return;
+  const y = cal.view.getFullYear(), m = cal.view.getMonth();
+  const todayISO = isoOf(new Date());
+  const f = state.customFrom, t = state.customTo;
+
+  pop.innerHTML = `
+    <div class="cal__bar">
+      <button type="button" class="cal__nav" data-nav="-1" aria-label="Mois précédent">‹</button>
+      <button type="button" class="cal__nav" data-nav="1" aria-label="Mois suivant">›</button>
+    </div>
+    <div class="cal__months">
+      ${monthBlock(y, m, todayISO)}
+      ${monthBlock(y, m + 1, todayISO)}
+    </div>
+    <div class="cal__foot">
+      <span class="cal__hint">${f && t ? "Plage sélectionnée" : f ? "Choisissez la date de fin" : "Choisissez la date de début"}</span>
+      <button type="button" class="cal__clear"${f || t ? "" : " disabled"}>Effacer</button>
+    </div>`;
+
+  pop.querySelectorAll(".cal__nav").forEach(b => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    cal.view = new Date(y, m + Number(b.dataset.nav), 1);
+    renderCal();
+  }));
+
+  const grid = pop.querySelector(".cal__months");
+  grid.addEventListener("click", (e) => {
+    const b = e.target.closest(".cal__day[data-iso]");
+    if (!b || b.disabled) return;
+    e.stopPropagation();
+    pickDay(b.dataset.iso);
+  });
+  grid.addEventListener("mouseover", (e) => {
+    const b = e.target.closest(".cal__day[data-iso]");
+    if (b && !b.disabled && state.customFrom && !state.customTo) paintSelection(b.dataset.iso);
+  });
+  grid.addEventListener("mouseleave", () => paintSelection(null));
+
+  pop.querySelector(".cal__clear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    state.customFrom = ""; state.customTo = ""; state.when = "all";
+    syncDateUI(); renderCal(); render();
+  });
+
+  paintSelection(null);
 }
 
 // --- Filtre par date ------------------------------------------------------
@@ -247,6 +445,10 @@ function matchesWhen(ev, range) {
 // compte tenu des autres filtres actifs, indépendamment de la catégorie choisie.
 function matchesNonCategory(ev) {
   if (state.when !== "all" && !matchesWhen(ev, whenRange(state.when))) return false;
+  if (state.price === "free" && !ev.free) return false;
+  if (state.price === "paid" && ev.free) return false;
+  if (state.resa === "yes" && !ev.reservation) return false;
+  if (state.resa === "no" && ev.reservation) return false;
   if (state.query) {
     const cat = CATEGORIES[ev.category] ? CATEGORIES[ev.category].label : "";
     const hay = `${ev.title} ${ev.place} ${ev.city} ${(ev.subcats || []).join(" ")} ${cat}`.toLowerCase();
@@ -256,7 +458,7 @@ function matchesNonCategory(ev) {
 }
 
 function matches(ev) {
-  if (state.filter !== "all" && ev.category !== state.filter) return false;
+  if (state.cats.size && !state.cats.has(ev.category)) return false;
   return matchesNonCategory(ev);
 }
 
@@ -357,4 +559,5 @@ if (typeof GENERATED_AT === "string") {
 
 buildDateFilters();
 buildFilters();
+buildOptFilters();
 render();

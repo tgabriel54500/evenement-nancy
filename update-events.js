@@ -231,7 +231,79 @@ async function main() {
       console.warn("  ⚠ events-est-republicain.json illisible, ignoré :", e.message);
     }
   }
-  const rawMerged = [...events, ...dnEvents, ...cxEvents, ...vdvEvents, ...vlnEvents, ...alEvents, ...icnEvents, ...zenEvents, ...erEvents];
+  // 10e source : LorraineAUcoeur (portail régional, FILTRÉ zone Nancy), collectée
+  // à part dans events-lorraineaucoeur.json (même schéma + champ source).
+  // Optionnelle. Régénérer : node lorraineaucoeur.js
+  const lacPath = path.join(__dirname, "events-lorraineaucoeur.json");
+  let lacEvents = [];
+  if (fs.existsSync(lacPath)) {
+    try {
+      lacEvents = JSON.parse(fs.readFileSync(lacPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${lacEvents.length} événements LorraineAUcoeur fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-lorraineaucoeur.json illisible, ignoré :", e.message);
+    }
+  }
+  // 11e source : Salle / Galerie Poirel (équipement culturel municipal de Nancy),
+  // collectée à part dans events-poirel.json (même schéma + champ source). Même
+  // socle API Grand Nancy que la Ville (entité `sgp`). Régénérer : node poirel.js
+  const poPath = path.join(__dirname, "events-poirel.json");
+  let poEvents = [];
+  if (fs.existsSync(poPath)) {
+    try {
+      poEvents = JSON.parse(fs.readFileSync(poPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${poEvents.length} événements Salle Poirel fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-poirel.json illisible, ignoré :", e.message);
+    }
+  }
+  // 12e source : L'Autre Canal (SMAC — musiques actuelles), collectée à part dans
+  // events-autre-canal.json (même schéma + champ source). free/reservation déjà
+  // fiables (classe term-gratuit + billetterie) → EXCLUE de enrich-pricing.js.
+  // Optionnelle. Régénérer : node autre-canal.js
+  const acnPath = path.join(__dirname, "events-autre-canal.json");
+  let acnEvents = [];
+  if (fs.existsSync(acnPath)) {
+    try {
+      acnEvents = JSON.parse(fs.readFileSync(acnPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${acnEvents.length} événements L'Autre Canal fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-autre-canal.json illisible, ignoré :", e.message);
+    }
+  }
+  // 13e source : événements Facebook « Intéressé·e/Je participe », import MANUEL
+  // (Facebook a supprimé l'export iCal). L'utilisateur enregistre la page
+  // facebook.com/events affichée, `node facebook.js` la convertit en
+  // events-facebook.json (même schéma + champ source). Optionnelle.
+  const fbPath = path.join(__dirname, "events-facebook.json");
+  let fbEvents = [];
+  if (fs.existsSync(fbPath)) {
+    try {
+      fbEvents = JSON.parse(fs.readFileSync(fbPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${fbEvents.length} événements Facebook fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-facebook.json illisible, ignoré :", e.message);
+    }
+  }
+  // 15e source : Ville d'Essey-lès-Nancy (agenda municipal Drupal/Stratis),
+  // collectée à part dans events-essey.json (même schéma + champ source).
+  // Optionnelle. Régénérer : node essey.js
+  const esPath = path.join(__dirname, "events-essey.json");
+  let esEvents = [];
+  if (fs.existsSync(esPath)) {
+    try {
+      esEvents = JSON.parse(fs.readFileSync(esPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${esEvents.length} événements Essey-lès-Nancy fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-essey.json illisible, ignoré :", e.message);
+    }
+  }
+  const rawMerged = [...events, ...dnEvents, ...cxEvents, ...vdvEvents, ...vlnEvents, ...alEvents, ...icnEvents, ...zenEvents, ...erEvents, ...lacEvents, ...poEvents, ...acnEvents, ...fbEvents, ...esEvents];
 
   // Nettoyage commun (cf. normalize.js) : normalisation des communes, remappage
   // des catégories parasites, et dédoublonnage du MÊME événement listé par
@@ -239,6 +311,27 @@ async function main() {
   const merged = cleanupMerged(rawMerged);
   const removed = rawMerged.length - merged.length;
   if (removed > 0) console.log(`  ⤷ ${removed} doublons inter-sources fusionnés (${merged.length} événements uniques).`);
+
+  // Overlay tarif/réservation revérifié à la source (events-pricing.json, produit
+  // par `node enrich-pricing.js`). La Ville de Nancy garde ses valeurs d'API
+  // (fiables) ; pour les autres sources on n'écrase QUE ce qui a pu être
+  // déterminé avec certitude (free=gratuit/payant, reservation=inscription requise).
+  const pricingPath = path.join(__dirname, "events-pricing.json");
+  if (fs.existsSync(pricingPath)) {
+    try {
+      const pricing = JSON.parse(fs.readFileSync(pricingPath, "utf8"));
+      let nf = 0, nr = 0;
+      for (const e of merged) {
+        const p = pricing[e.uuid];
+        if (!p) continue;
+        if (typeof p.free === "boolean") { e.free = p.free; nf++; }
+        if (typeof p.reservation === "boolean") { e.reservation = p.reservation; nr++; }
+      }
+      console.log(`  ⓘ overlay tarif/réservation appliqué : ${nf} tarifs + ${nr} réservations fiabilisés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-pricing.json illisible, ignoré :", e.message);
+    }
+  }
 
   // Catégories réellement présentes, dans un ordre lisible. Les thèmes propres à
   // Vandœuvre (culture, famille, sport…) suivent les types d'événement de Nancy.

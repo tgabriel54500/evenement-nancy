@@ -59,6 +59,7 @@ a { color: var(--accent); }
   white-space: nowrap;
 }
 .head__link:hover { border-color: var(--accent); }
+.head__links { display: inline-flex; gap: .5rem; flex-wrap: wrap; }
 
 /* ---------- Stats ---------- */
 .stats { display: flex; flex-wrap: wrap; gap: .5rem .75rem; margin-top: 1rem; }
@@ -240,6 +241,58 @@ tbody tr:hover td { background: #fcf9f4; }
 .foot {
   max-width: 1500px; margin: 0 auto; padding: 1.5rem; color: var(--ink-soft);
   font-size: .8rem; border-top: 1px solid var(--line);
+}
+
+/* ---------- Mobile : le tableau devient une liste de cartes ---------- */
+@media (max-width: 760px) {
+  .head { padding: 1.5rem 1rem 1.25rem; }
+  .head h1 { font-size: 2rem; }
+  .head__sub { font-size: .86rem; }
+  .head__top { gap: .5rem 1rem; }
+
+  .toolbar { padding: 0 1rem; }
+  .filters { grid-template-columns: 1fr 1fr; gap: .6rem; }
+  .field--search { grid-column: 1 / -1; }
+  .toolbar__actions { flex-wrap: wrap; gap: .5rem; }
+  .toolbar__count { margin-left: 0; width: 100%; order: -1; }
+
+  .table-wrap { overflow-x: visible; padding: 0 1rem; margin-top: 1rem; }
+  table { border: 0; box-shadow: none; background: transparent; font-size: .92rem; }
+
+  /* En-têtes masqués (accessibles) : leur libellé est repris par data-label. */
+  thead { position: absolute; width: 1px; height: 1px; padding: 0; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+  tbody tr {
+    display: block;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: .35rem .9rem;
+    margin-bottom: .85rem;
+  }
+  tbody tr:hover td { background: transparent; }
+
+  tbody td {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+    gap: .4rem .8rem;
+    align-items: start;
+    padding: .5rem 0;
+    border-bottom: 1px solid var(--line-soft);
+    max-width: none; min-width: 0;
+  }
+  tbody tr td:last-child { border-bottom: 0; }
+  tbody td::before {
+    content: attr(data-label);
+    font-size: .7rem; font-weight: 600; text-transform: uppercase;
+    letter-spacing: .04em; color: var(--ink-soft);
+  }
+
+  /* La valeur (span interne) reprend toute la largeur dispo. */
+  .c-title { font-size: 1.05rem; min-width: 0; }
+  .c-desc { -webkit-line-clamp: 5; line-clamp: 5; max-width: none; min-width: 0; }
+  .c-subcats { max-width: none; }
 }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }

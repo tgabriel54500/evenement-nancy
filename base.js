@@ -236,7 +236,9 @@ function render() {
 
   renderHead();
   els.tbody.innerHTML = rows.map(ev =>
-    `<tr>${cols.map(c => `<td>${cell(c, ev)}</td>`).join("")}</tr>`
+    // data-label : utilisé en CSS mobile (≤760px) pour afficher l'intitulé de
+    // colonne devant chaque valeur quand le tableau passe en mode « cartes ».
+    `<tr>${cols.map(c => `<td data-label="${esc(c.label)}">${cell(c, ev)}</td>`).join("")}</tr>`
   ).join("");
 
   els.empty.hidden = rows.length > 0;

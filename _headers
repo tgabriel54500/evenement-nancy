@@ -1,0 +1,13 @@
+/*
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  X-Frame-Options: DENY
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()
+  Content-Security-Policy: frame-ancestors 'none'
+  Cross-Origin-Resource-Policy: same-site
+
+# data.js : on décourage le cache partagé et l'usage hors-site.
+/data.js
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store

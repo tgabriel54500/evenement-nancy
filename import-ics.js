@@ -47,6 +47,24 @@ function resolveCategory(text) {
   return { key: "autre", label: "Autre", emoji: "📌" };
 }
 
+// Catégorisation multi-champs : on n'a pas qu'un titre. On regarde les champs
+// du plus fiable au moins fiable et on renvoie le PREMIER qui matche une
+// catégorie connue — au lieu de tout concaténer (ce qui laisse le bruit de la
+// description écraser un titre clair). Ordre :
+//   1. CATEGORIES iCal explicite (rare mais sans ambiguïté)
+//   2. le titre
+//   3. titre + description + lieu réunis (rattrape ce que le titre seul rate)
+// Si rien ne matche → "autre".
+function resolveCategoryFrom({ categories, title, description, location } = {}) {
+  for (const field of [categories, title]) {
+    if (!field) continue;
+    const cat = resolveCategory(field);
+    if (cat.key !== "autre") return cat;
+  }
+  const combined = [title, description, location].filter(Boolean).join(" ");
+  return resolveCategory(combined);
+}
+
 // ── Parsing iCalendar (RFC 5545) ────────────────────────────────────────────
 
 // Déplie les lignes repliées : une ligne de continuation commence par un espace
@@ -111,9 +129,14 @@ function toEvent(props, { prefix, source }, todayISO) {
   const start = parseDt(props.DTSTART);
   if (!start.date) return null;
   const end = parseDt(props.DTEND || props.DTSTART);
-  const cat = resolveCategory(`${title} ${unescapeText(props.CATEGORIES) || ""}`);
-
   const location = unescapeText(props.LOCATION);
+  const cat = resolveCategoryFrom({
+    categories: unescapeText(props.CATEGORIES),
+    title,
+    description: unescapeText(props.DESCRIPTION),
+    location,
+  });
+
   // LOCATION iCal = souvent "Lieu, Adresse, Ville" -> on isole lieu / ville.
   const parts = location.split(",").map((s) => s.trim()).filter(Boolean);
   const place = parts[0] || "";
@@ -212,4 +235,4 @@ function main() {
 
 if (require.main === module) main();
 
-module.exports = { parseVEvents, toEvent, resolveCategory };
+module.exports = { parseVEvents, toEvent, resolveCategory, resolveCategoryFrom };

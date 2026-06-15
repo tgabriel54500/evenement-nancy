@@ -12,3 +12,12 @@ node_modules/
 
 # Exports iCal manuels (perso, non publiés) — on garde juste le mode d'emploi
 ics-est-republicain/*.ics
+
+# Import manuel Facebook : page sauvegardée (~60 Mo) — artefact local, non versionné
+ics-facebook/
+
+# Build du site statique publié sur Netlify (régénéré par deploy-site.sh)
+dist/
+
+# Local Netlify folder
+.netlify
