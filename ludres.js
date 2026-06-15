@@ -37,15 +37,17 @@ function decodeEntities(s) {
     .replace(/&[a-z]+;/g, " ").replace(/\s+/g, " ").trim();
 }
 
-// Mappe la taxonomie `categorie` de Ludres vers nos clés (repli sur le titre).
-function resolveLudresCategory(title, terms, description) {
+// Mappe la taxonomie `categorie` de Ludres vers nos clés. Repli sur le TITRE seul
+// (PAS la description : "Population" contient "pop" → faux positif musiques-actuelles).
+function resolveLudresCategory(title, terms) {
   const t = terms.join(" ").toLowerCase();
-  if (/spectacle|théâtre|theatre/.test(t)) return { key: "spectacle", label: "Spectacles", emoji: "🎭" };
+  if (/spectacle|théâtre|theatre|danse|cirque|humour/.test(t)) return { key: "spectacle", label: "Spectacles", emoji: "🎭" };
   if (/expo/.test(t)) return { key: "exposition", label: "Expositions", emoji: "🖼️" };
-  if (/musique|concert/.test(t)) return { key: "musiques-actuelles", label: "Musiques actuelles", emoji: "🎸" };
+  if (/concert|musique/.test(t)) return { key: "musiques-actuelles", label: "Musiques actuelles", emoji: "🎸" };
+  if (/sécurité|securite|citoyen|social|solidar/.test(t)) return { key: "citoyennete", label: "Citoyenneté", emoji: "🤝" };
+  if (/jeunesse|jeune|enfant/.test(t)) return { key: "jeune-public", label: "Jeune public", emoji: "🧸" };
   if (/sport|loisir/.test(t)) return { key: "activite", label: "Activités & ateliers", emoji: "🎨" };
-  // Repli : on devine au titre + termes + description (catégorisation multi-champs).
-  return resolveCategoryFrom({ title, description: `${terms.join(" ")} ${description}` });
+  return resolveCategoryFrom({ title, categories: terms.join(" ") });  // titre + termes, sans description
 }
 
 // Page liste -> [{slug, day, month, place}] dans l'ordre du DOM.
@@ -117,15 +119,14 @@ async function main() {
   const todayISO = new Date().toISOString().slice(0, 10);
   const events = [];
   for (const c of cards) {
-    const e = bySlug.get(c.slug);
+    const e = findRest(c.slug);
     const date = toISO(c.day, c.month, todayISO);
     if (!date) continue;
     const title = decodeEntities((e && e.title && e.title.rendered) || c.slug.replace(/-/g, " "));
     const terms = e ? termNames(e) : [];
-    const desc = e && e.content ? decodeEntities(e.content.rendered).slice(0, 300) : "";
-    const cat = resolveLudresCategory(title, terms, desc);
+    const cat = resolveLudresCategory(title, terms);
     events.push({
-      uuid: `lud-${(e && e.id) || c.slug}`,
+      uuid: `lud-${c.slug}`,   // slug de la liste = unique par occurrence
       title,
       category: cat.key,
       catLabel: cat.label,

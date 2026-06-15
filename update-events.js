@@ -303,7 +303,35 @@ async function main() {
       console.warn("  ⚠ events-essey.json illisible, ignoré :", e.message);
     }
   }
-  const rawMerged = [...events, ...dnEvents, ...cxEvents, ...vdvEvents, ...vlnEvents, ...alEvents, ...icnEvents, ...zenEvents, ...erEvents, ...lacEvents, ...poEvents, ...acnEvents, ...fbEvents, ...esEvents];
+  // 16e source : Ville de Laxou (agenda municipal CMS Flexit), collectée à part
+  // dans events-laxou.json (même schéma + champ source). Optionnelle.
+  // Régénérer : node laxou.js
+  const laxPath = path.join(__dirname, "events-laxou.json");
+  let laxEvents = [];
+  if (fs.existsSync(laxPath)) {
+    try {
+      laxEvents = JSON.parse(fs.readFileSync(laxPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${laxEvents.length} événements Laxou fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-laxou.json illisible, ignoré :", e.message);
+    }
+  }
+  // 17e source : Ville de Ludres (WordPress + JetEngine), collectée à part dans
+  // events-ludres.json (même schéma + champ source). Dates lues dans la page liste
+  // (jour/mois), titre/image/catégorie via REST. Optionnelle. Régénérer : node ludres.js
+  const ludPath = path.join(__dirname, "events-ludres.json");
+  let ludEvents = [];
+  if (fs.existsSync(ludPath)) {
+    try {
+      ludEvents = JSON.parse(fs.readFileSync(ludPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      console.log(`  + ${ludEvents.length} événements Ludres fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-ludres.json illisible, ignoré :", e.message);
+    }
+  }
+  const rawMerged = [...events, ...dnEvents, ...cxEvents, ...vdvEvents, ...vlnEvents, ...alEvents, ...icnEvents, ...zenEvents, ...erEvents, ...lacEvents, ...poEvents, ...acnEvents, ...fbEvents, ...esEvents, ...laxEvents, ...ludEvents];
 
   // Nettoyage commun (cf. normalize.js) : normalisation des communes, remappage
   // des catégories parasites, et dédoublonnage du MÊME événement listé par

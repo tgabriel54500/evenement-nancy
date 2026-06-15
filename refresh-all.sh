@@ -53,7 +53,9 @@ for s in \
   alentoor.js \
   ici-c-nancy.js \
   zenith-nancy.js \
-  poirel.js
+  poirel.js \
+  laxou.js \
+  ludres.js
 do
   run_step "$s"
 done

@@ -1,6 +1,6 @@
 [
   {
-    "uuid": "lud-7967",
+    "uuid": "lud-heure-du-conte-7",
     "title": "Heure du conte – Grands",
     "category": "activite",
     "catLabel": "Activités & ateliers",
@@ -22,7 +22,7 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-20737",
+    "uuid": "lud-les-grands-enfants",
     "title": "Les grands enfants",
     "category": "autre",
     "catLabel": "Autre",
@@ -43,7 +43,7 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-26736",
+    "uuid": "lud-la-fete-de-la-musique-est-de-retour",
     "title": "La Fête de la musique",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -65,11 +65,13 @@
   },
   {
     "uuid": "lud-permanence-de-police-nationale2",
-    "title": "permanence de police nationale2",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
+    "title": "Permanence de Police Nationale",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Sécurité"
+    ],
     "date": "2026-06-19",
     "endDate": "2026-06-19",
     "dateText": "",
@@ -78,17 +80,20 @@
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": null,
+    "image": "https://www.ludres.com/wp-content/uploads/2025/08/securite-du-quotidien.jpg",
     "url": "https://www.ludres.com/liste-evenements/permanence-de-police-nationale2/",
     "source": "ludres"
   },
   {
     "uuid": "lud-bebes-lecteurs-16",
-    "title": "bebes lecteurs 16",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
+    "title": "Heure du conte – Bébés",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture",
+      "Loisirs"
+    ],
     "date": "2026-06-20",
     "endDate": "2026-06-20",
     "dateText": "",
@@ -97,12 +102,12 @@
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": null,
+    "image": "https://www.ludres.com/wp-content/uploads/2022/09/heure-du-conte.jpg",
     "url": "https://www.ludres.com/liste-evenements/bebes-lecteurs-16/",
     "source": "ludres"
   },
   {
-    "uuid": "lud-26766",
+    "uuid": "lud-fete-de-la-musique-a-la-mediatheque-3",
     "title": "Fête de la musique à la Médiathèque",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -123,11 +128,11 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-26770",
+    "uuid": "lud-coups-de-coeur-des-9-12-ans-2",
     "title": "Coups de cœur des 9-12 ans",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
     "subcats": [
       "Culture"
     ],
@@ -144,7 +149,7 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-26907",
+    "uuid": "lud-spectacles-de-theatre-6",
     "title": "Spectacles de Théâtre",
     "category": "spectacle",
     "catLabel": "Spectacles",
@@ -165,7 +170,7 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-26925",
+    "uuid": "lud-gala-de-patinage-sur-roulettes-3",
     "title": "Gala de Patinage sur roulettes",
     "category": "spectacle",
     "catLabel": "Spectacles",

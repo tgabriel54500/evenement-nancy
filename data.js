@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-06-15 — 1275 événements à venir.
+// Généré le : 2026-06-15 — 1303 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -2911,6 +2911,23 @@ const EVENTS = [
     "source": "essey"
   },
   {
+    "uuid": "lx-cinema-seniors",
+    "title": "CINÉMA SENIORS",
+    "category": "conference",
+    "subcats": [],
+    "date": "2026-06-16",
+    "endDate": "2026-06-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/221/1200_630_7_cine-seniors-arnaqueuse.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/cinema-seniors_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "a135bd42-bd25-11ef-8388-9544cd2afae0",
     "title": "Comment ça marche l'extinction?",
     "category": "conference",
@@ -3353,6 +3370,43 @@ const EVENTS = [
     "source": "facebook",
     "rsvp": "",
     "online": false
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-cpie-champenoux",
+    "title": "Jardin des 1000 fleurs - CPIE Champenoux",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-17",
+    "endDate": "2026-06-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/226/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-cpie-champenoux_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lud-heure-du-conte-7",
+    "title": "Heure du conte – Grands",
+    "category": "activite",
+    "subcats": [
+      "Culture",
+      "Loisirs"
+    ],
+    "date": "2026-06-17",
+    "endDate": "2026-06-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2023/11/heure-du-conte-grands.jpg",
+    "url": "https://www.ludres.com/liste-evenements/heure-du-conte-7/",
+    "source": "ludres"
   },
   {
     "uuid": "5cb3e0d2-64d5-11f1-89ce-ef63a37a37f8",
@@ -3940,7 +3994,9 @@ const EVENTS = [
     "uuid": "cx-les-grands-enfants-1",
     "title": "Les grands enfants",
     "category": "autre",
-    "subcats": [],
+    "subcats": [
+      "Chaudeau"
+    ],
     "date": "2026-06-19",
     "endDate": "2026-06-19",
     "dateText": "Le vendredi 19 juin 2026",
@@ -4611,6 +4667,44 @@ const EVENTS = [
     "source": "facebook",
     "rsvp": "",
     "online": false
+  },
+  {
+    "uuid": "lud-la-fete-de-la-musique-est-de-retour",
+    "title": "La Fête de la musique",
+    "category": "musiques-actuelles",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "Place Ferri de Ludre",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/05/couv-fete-de-la-musique.jpg",
+    "url": "https://www.ludres.com/liste-evenements/la-fete-de-la-musique-est-de-retour/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-permanence-de-police-nationale2",
+    "title": "Permanence de Police Nationale",
+    "category": "citoyennete",
+    "subcats": [
+      "Sécurité"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel de Ville",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2025/08/securite-du-quotidien.jpg",
+    "url": "https://www.ludres.com/liste-evenements/permanence-de-police-nationale2/",
+    "source": "ludres"
   },
   {
     "uuid": "10d09ec4-6315-11f1-ac2d-a1e4194f8ea4",
@@ -6075,6 +6169,103 @@ const EVENTS = [
     "source": "facebook",
     "rsvp": "",
     "online": false
+  },
+  {
+    "uuid": "lud-bebes-lecteurs-16",
+    "title": "Heure du conte – Bébés",
+    "category": "activite",
+    "subcats": [
+      "Culture",
+      "Loisirs"
+    ],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2022/09/heure-du-conte.jpg",
+    "url": "https://www.ludres.com/liste-evenements/bebes-lecteurs-16/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-fete-de-la-musique-a-la-mediatheque-3",
+    "title": "Fête de la musique à la Médiathèque",
+    "category": "musiques-actuelles",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/05/fete-musique-mediatheque.jpg",
+    "url": "https://www.ludres.com/liste-evenements/fete-de-la-musique-a-la-mediatheque-3/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-coups-de-coeur-des-9-12-ans-2",
+    "title": "Coups de cœur des 9-12 ans",
+    "category": "autre",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://www.ludres.com/liste-evenements/coups-de-coeur-des-9-12-ans-2/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-spectacles-de-theatre-6",
+    "title": "Spectacles de Théâtre",
+    "category": "spectacle",
+    "subcats": [
+      "Evènements et spectacles"
+    ],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Jean Monnet",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/06/spectacles-theatre-centre-brassens.jpg",
+    "url": "https://www.ludres.com/liste-evenements/spectacles-de-theatre-6/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-gala-de-patinage-sur-roulettes-3",
+    "title": "Gala de Patinage sur roulettes",
+    "category": "spectacle",
+    "subcats": [
+      "Evènements et spectacles",
+      "sport"
+    ],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espace Séquoia",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/06/patinage-roulettes.jpg",
+    "url": "https://www.ludres.com/liste-evenements/gala-de-patinage-sur-roulettes-3/",
+    "source": "ludres"
   },
   {
     "uuid": "68cc3e44-f77c-11f0-beb3-6189d7a1084d",
@@ -7730,6 +7921,40 @@ const EVENTS = [
     "online": false
   },
   {
+    "uuid": "lx-jardin-des-1000-fleurs-atelier-confiture",
+    "title": "Jardin des 1000 fleurs - Atelier confiture",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-24",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/227/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-atelier-confiture_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-annonce-transhumance-laxou-brabois",
+    "title": "Annonce Transhumance Laxou Brabois",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-24",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/240/1200_630_7_capture-decran-2026-05-12-160313.png",
+    "url": "https://www.laxou.fr/fr/agenda/annonce-transhumance-laxou-brabois_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "b6b98f2c-64d6-11f1-8ad8-81cfc9e6006b",
     "title": "Blind Test avec Woodsdad et Bogdan",
     "category": "activite",
@@ -8084,23 +8309,23 @@ const EVENTS = [
     "source": "curieux-net"
   },
   {
-    "uuid": "9c9da8ba-2d01-11f1-a03f-c574474048e5",
+    "uuid": "7b112c88-5d60-11f0-800e-17bbff828828",
     "title": "Oh La La La !",
-    "category": "musique-classique",
+    "category": "spectacle",
     "subcats": [
       "Opéra / lyrique",
       "Culture"
     ],
     "date": "2026-06-26",
     "endDate": "2026-07-01",
-    "dateText": "Les 26, 30 juin et 1er juillet 2026",
+    "dateText": "Du 26 juin au 1er juillet 2026",
     "schedule": "20h",
     "place": "Opéra national de Nancy-Lorraine",
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c9da8ba-2d01-11f1-a03f-c574474048e5/0/ORIGINE_M_69cbc5752eb7c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c9da8ba-2d01-11f1-a03f-c574474048e5"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7b112c88-5d60-11f0-800e-17bbff828828/0/ORIGINE_M_686f6d4d89758.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b112c88-5d60-11f0-800e-17bbff828828"
   },
   {
     "uuid": "008c9a94-4494-11f1-9457-4f2974f96cd8",
@@ -8608,6 +8833,40 @@ const EVENTS = [
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_706474685_1.jpeg?itok=1OKlh1dp",
     "url": "https://www.esseylesnancy.fr/agenda/inscriptions-au-club-informatique",
     "source": "essey"
+  },
+  {
+    "uuid": "lx-experimentation-police-population-jeunesse-aux-provinces",
+    "title": "Expérimentation Police Population Jeunesse aux Provinces",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-26",
+    "endDate": "2026-06-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/244/1200_630_7_affiche-du-film-police-population-jeunesse-26-juin.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/experimentation-police-population-jeunesse-aux-provinces_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-paroles-de-nos-quartier",
+    "title": "Paroles de nos quartier",
+    "category": "conference",
+    "subcats": [],
+    "date": "2026-06-26",
+    "endDate": "2026-06-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espace Europe",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/246/1200_630_7_police-population-jeunesse-26-juin.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/paroles-de-nos-quartier_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "c187f124-6007-11f1-a92e-1b08844719dc",
@@ -9678,6 +9937,23 @@ const EVENTS = [
     "source": "essey"
   },
   {
+    "uuid": "lx-sortie-temps-nature-a-laxou-decouverte-de-la-mare",
+    "title": "Sortie Temps Nature à Laxou - Découverte de la mare",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-27",
+    "endDate": "2026-06-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/237/1200_630_7_decouverte-de-la-mare.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/sortie-temps-nature-a-laxou-decouverte-de-la-mare_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "2059f7f0-64d7-11f1-9f6e-9bb96dd064eb",
     "title": "El José : Blues",
     "category": "musiques-actuelles",
@@ -10508,7 +10784,7 @@ const EVENTS = [
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": null,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/238/1200_630_7_jms-2026-med-laxou-1.png",
     "url": "https://www.facebook.com/events/1250415783584062/",
     "source": "facebook",
     "rsvp": "",
@@ -10730,6 +11006,23 @@ const EVENTS = [
     "source": "facebook",
     "rsvp": "",
     "online": false
+  },
+  {
+    "uuid": "lx-mobilogement",
+    "title": "Mobilogement",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-01",
+    "endDate": "2026-07-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/250/1200_630_7_affichesmobilogement-2026-cascades-2.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/mobilogement_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "52606ca2-64d7-11f1-b9e2-b7f76ce9932e",
@@ -11245,6 +11538,23 @@ const EVENTS = [
     "source": "essey"
   },
   {
+    "uuid": "lx-venez-en-voisins",
+    "title": "VENEZ EN VOISINS",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-03",
+    "endDate": "2026-07-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espace commercial du Plateau de Haye",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/249/1200_630_7_plateaude-haye-juillet2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/venez-en-voisins_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "88f19e42-3cc0-11f1-92e2-b1fe6ee73c30",
     "title": "Commémoration de la mort d’Emile Coué",
     "category": "conference",
@@ -11398,6 +11708,7 @@ const EVENTS = [
     "title": "Rallye jeu estival",
     "category": "jeune-public",
     "subcats": [
+      "Atelier",
       "Evénement"
     ],
     "date": "2026-07-04",
@@ -13060,6 +13371,23 @@ const EVENTS = [
     "online": false
   },
   {
+    "uuid": "lx-jardin-des-1000-fleurs-alpe",
+    "title": "Jardin des 1000 fleurs - ALPE",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-08",
+    "endDate": "2026-07-08",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/228/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-alpe_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "d7367bf6-64d7-11f1-a756-2f7e389fddae",
     "title": "Blind Test avec Woodsdad et Bogdan",
     "category": "activite",
@@ -14719,6 +15047,23 @@ const EVENTS = [
     "online": false
   },
   {
+    "uuid": "lx-jardin-des-1000-fleurs-flore-54-1",
+    "title": "Jardin des 1000 fleurs - FLORE 54",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-15",
+    "endDate": "2026-07-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/229/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-flore-54-1_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "384461ea-64da-11f1-8e35-e50a72b8ccfd",
     "title": "Blind Test avec Woodsdad et Bogdan",
     "category": "activite",
@@ -15402,6 +15747,23 @@ const EVENTS = [
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/6da/737-737018735_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-basilique-saint-epvre/",
     "source": "destination-nancy"
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-flore-54-2",
+    "title": "Jardin des 1000 fleurs - FLORE 54",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-22",
+    "endDate": "2026-07-22",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/230/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-flore-54-2_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "bdc7c89c-64db-11f1-a05e-b7e560556f88",
@@ -16265,6 +16627,23 @@ const EVENTS = [
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cf24baa8-64c4-11f1-97a7-f5205e6df6e5/0/1-1_M_6a2953ce4d1b5.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf24baa8-64c4-11f1-97a7-f5205e6df6e5"
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-lecturique",
+    "title": "Jardin des 1000 fleurs - LECTURIQUE",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-08-12",
+    "endDate": "2026-08-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/231/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-lecturique_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
@@ -17834,6 +18213,23 @@ const EVENTS = [
     "online": false
   },
   {
+    "uuid": "lx-ceremonie-d-accueil-des-nouveaux-laxoviens",
+    "title": "Cérémonie d'accueil des nouveaux laxoviens",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/216/1200_630_7_accueil-des-nouveaux.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/ceremonie-d-accueil-des-nouveaux-laxoviens_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "6c2b7732-4234-11f1-ae4d-29d3dcc1907e",
     "title": "Brocante et Fête de Quartier",
     "category": "activite",
@@ -18297,6 +18693,23 @@ const EVENTS = [
     "image": "https://www.alentoor.fr/photos/classifieds/c2/b1/c2b1258703fb18b6735da5355c334bd5e95fe2b1343859bd11e7f8113f2de30f-large.jpg",
     "url": "https://www.alentoor.fr/moncel-les-luneville/agenda/5791889-ateliers-yoga-du-rire",
     "source": "alentoor"
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-1",
+    "title": "Jardin des 1000 fleurs",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-09-16",
+    "endDate": "2026-09-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/232/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-1_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "zen-la-dame-de-pierre",
@@ -18878,6 +19291,23 @@ const EVENTS = [
     "source": "alentoor"
   },
   {
+    "uuid": "lx-bulletins-d-inscription-du-vide-greniers-et-de-la-braderie",
+    "title": "Bulletins d'inscription du vide-greniers et de la braderie",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_vide-greniers-braderie.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "essey-conseil-municipal-du-21-septembre-2026",
     "title": "Conseil municipal du 21 septembre 2026",
     "category": "citoyennete",
@@ -19418,6 +19848,23 @@ const EVENTS = [
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/compost.webp",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/restitution-de-compost",
     "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-2",
+    "title": "Jardin des 1000 fleurs",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-10-07",
+    "endDate": "2026-10-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/233/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-2_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "a76a6f78-5fef-11f1-84f2-e36a1ea2236d",
@@ -20738,6 +21185,23 @@ const EVENTS = [
     "source": "autre-canal"
   },
   {
+    "uuid": "lx-distribution-de-compost",
+    "title": "Distribution de compost",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-11-02",
+    "endDate": "2026-11-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/190/1200_630_7_compost-laxou-2-nove2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/distribution-de-compost_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "481741b8-13f5-11f1-a372-9bbc33408a3b",
     "title": "Mesdames en vraies",
     "category": "spectacle",
@@ -21342,6 +21806,23 @@ const EVENTS = [
     "source": "autre-canal"
   },
   {
+    "uuid": "lx-jardin-des-1000-fleurs-3",
+    "title": "Jardin des 1000 fleurs",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/234/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-3_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "cx-casse-noisette-ballet-et-orchestre-casse-noisette-1",
     "title": "CASSE-NOISETTE - BALLET ET ORCHESTRE - CASSE-NOISETTE",
     "category": "spectacle",
@@ -21745,6 +22226,23 @@ const EVENTS = [
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a2c/737-737016887_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-sur-les-traces-de-saint-nicolas-lsf/",
     "source": "destination-nancy"
+  },
+  {
+    "uuid": "lx-jardin-des-1000-fleurs-4",
+    "title": "Jardin des 1000 fleurs",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/235/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-4_-d.html",
+    "source": "laxou"
   },
   {
     "uuid": "lcn-bilal-hassani",

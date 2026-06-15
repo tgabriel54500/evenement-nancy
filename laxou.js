@@ -57,6 +57,56 @@ function resolveCategory(text) {
   return { key: "autre", label: "Autre", emoji: "📌" };
 }
 
+// ── Déduction de la ville ───────────────────────────────────────────────────
+// Le JSON-LD Laxou ne fournit que le NOM du lieu (+ parfois des coordonnées
+// `geo`), jamais la commune. On la déduit : 1) si le nom du lieu contient une
+// commune connue, on la prend (gère les events HORS Laxou, ex. Lunéville) ;
+// 2) sinon, si la géo est clairement hors agglo nancéienne, on laisse vide
+// (mieux que de tagger Laxou à tort) ; 3) sinon défaut « Laxou » (agenda
+// municipal : la grande majorité des events s'y tiennent).
+const norm = (s) => (s || "").toLowerCase().normalize("NFD")
+  .replace(/[̀-ͯ]/g, "").replace(/œ/g, "oe").replace(/æ/g, "ae");
+
+// Communes les plus spécifiques d'abord ; « nancy » EN DERNIER (sous-chaîne de
+// "villers-lès-nancy", "vandœuvre-lès-nancy"…).
+const CITIES = [
+  ["laxou", "Laxou"],
+  ["vandoeuvre", "Vandœuvre-lès-Nancy"],
+  ["villers-les-nancy", "Villers-lès-Nancy"], ["villers les nancy", "Villers-lès-Nancy"],
+  ["maxeville", "Maxéville"],
+  ["saint-nicolas-de-port", "Saint-Nicolas-de-Port"], ["saint nicolas de port", "Saint-Nicolas-de-Port"],
+  ["luneville", "Lunéville"],
+  ["pont-a-mousson", "Pont-à-Mousson"], ["pont a mousson", "Pont-à-Mousson"],
+  ["toul", "Toul"],
+  ["essey", "Essey-lès-Nancy"],
+  ["malzeville", "Malzéville"],
+  ["tomblaine", "Tomblaine"],
+  ["jarville", "Jarville-la-Malgrange"],
+  ["ludres", "Ludres"],
+  ["houdemont", "Houdemont"],
+  ["heillecourt", "Heillecourt"],
+  ["fleville", "Fléville-devant-Nancy"],
+  ["champigneulles", "Champigneulles"],
+  ["frouard", "Frouard"],
+  ["pompey", "Pompey"],
+  ["dombasle", "Dombasle-sur-Meurthe"],
+  ["saint-max", "Saint-Max"], ["saint max", "Saint-Max"],
+  ["seichamps", "Seichamps"],
+  ["nancy", "Nancy"],
+];
+
+function deduceCity(place, geo) {
+  const hay = norm(place);
+  if (hay) for (const [needle, name] of CITIES) if (hay.includes(needle)) return name;
+  if (geo && geo.latitude && geo.longitude) {
+    const la = parseFloat(geo.latitude), lo = parseFloat(geo.longitude);
+    // Laxou ≈ 48.684 N, 6.145 E. Hors d'une large boîte autour de l'agglo →
+    // commune inconnue (on ne devine pas Laxou à tort).
+    if (Math.abs(la - 48.684) > 0.15 || Math.abs(lo - 6.145) > 0.22) return "";
+  }
+  return "Laxou";
+}
+
 // ── HTTP avec retry léger ──────────────────────────────────────────────────
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 
@@ -179,7 +229,9 @@ async function fetchDetail(stub) {
     .replace(/\s+ville de laxou\s*$/i, "").trim();
   const ogTitle = (html.match(/og:title"[^>]+content="([^"]+)/) || [])[1];
   const h1 = decode((html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i) || [])[1]);
-  const name = (ev && decode(ev.name)) || cleanTitle(ogTitle) || h1 || "";
+  // h1 = titre propre et complet ; le JSON-LD name est souvent absent et l'og:title
+  // est verbeux/tronqué (« … ville de laxou »). Priorité : name → h1 → og nettoyé.
+  const name = (ev && decode(ev.name)) || h1 || cleanTitle(ogTitle) || "";
   if (!name) return null;
   const cat = resolveCategory(`${name} ${decode(ev && ev.description)}`);
   const startDate = start.date;
@@ -202,7 +254,7 @@ async function fetchDetail(stub) {
     dateText: "",
     schedule: hhmm(start.time),
     place: (typeof loc.name === "string" && loc.name) || "",
-    city: "",                                   // le JSON-LD Laxou ne porte pas la ville
+    city: deduceCity(typeof loc.name === "string" ? loc.name : "", loc.geo),
     free: false,
     reservation: false,
     image,

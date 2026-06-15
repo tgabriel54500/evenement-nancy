@@ -140,6 +140,26 @@
   thème (Petite enfance→jeune-public, Vie municipale/Conseil/quartier→citoyennete, Manifestation culturelle/Jeudis de la
   culture→spectacle, Vie associative→activite). free par défaut=true (municipal), affiné par enrich-pricing.js (ajouté à
   SOURCE_FILES). Régénérer: `node essey.js`. Branché dans update-events.js. ⚠️ server.js live ne la couvre PAS encore.
+- 16e SOURCE — Ville de Laxou (CMS Flexit, laxou.fr/fr/agenda.html): `laxou.js` → `events-laxou.json`
+  (~31 events, ~23 à venir, `source:"laxou"`, uuid `lx-<slug>`). Listing paginé `?page_actualites=N` : cartes avec
+  `data-goto-url="/fr/agenda/<slug>_-d.html"` + `data-first-day="AAAA-MM-JJ"`; chaque fiche détail porte un JSON-LD
+  Event (name souvent ABSENT, startDate au format "AAAA/MM/JJThh:mm:ss" à SLASHES, location.name, image, description).
+  ⚠️ PIÈGES: (1) les pages 2+ du listing renvoient un statut HTTP 404 TROMPEUR avec le vrai contenu → lire le corps
+  quel que soit le statut, et s'arrêter quand une page répète la précédente (la pagination reboucle). (2) titre: JSON-LD
+  name souvent vide et og:title verbeux/tronqué ("… ville de laxou") → prendre le <h1> (propre et complet). city non
+  fournie (JSON-LD sans adresse) → laissée vide, place=location.name (events parfois HORS Laxou, ex. Lunéville).
+  Régénérer: `node laxou.js`. Branché dans update-events.js, refresh-all.sh et le workflow GitHub Actions.
+- 17e SOURCE — Ville de Ludres (WordPress + JetEngine/Elementor, ludres.com/liste-evenements/): `ludres.js` →
+  `events-ludres.json` (~9 events à venir, `source:"ludres"`, uuid `lud-<slug-liste>`, city="Ludres"). ⚠️ CPT
+  `evenements` exposé en REST (`/wp-json/wp/v2/evenements?per_page=100&_embed=1`) avec titre/image(featured)/taxo
+  `categorie`/description — MAIS les dates JetEngine NE SONT PAS dans le `meta` REST. Les dates sont seulement dans la
+  PAGE LISTE: chaque carte rend 3 champs `.jet-listing-dynamic-field__content` dans l'ordre = JOUR(nombre)·MOIS·LIEU.
+  On croise: liste (slugs dans l'ordre + triplets jour/mois/lieu) ⨯ REST (par slug). ⚠️ events RÉCURRENTS: la liste a un
+  slug à suffixe n° (bebes-lecteurs-16) absent du REST (qui garde bebes-lecteurs-5) → repli par « slug de base » (sans
+  `-?\d+$`). Pas d'heure ni d'année dans la liste → schedule="", année inférée (mois passé→année+1). Catégorie: taxo
+  Ludres mappée (Sécurité→citoyennete, Culture/Loisirs→activite…), repli `resolveCategoryFrom(titre+termes)` SANS la
+  description (⚠️ "Population" contient "pop" → faux positif musiques-actuelles). Régénérer: `node ludres.js`. Branché
+  update-events.js (17e) + refresh-all.sh. (Penser à l'ajouter aussi au workflow GitHub Actions.)
 - ⚠️ VUES (réorg demande user): GALERIE = vue PAR DÉFAUT → `index.html` + `galerie.js` (mur de posters, clic → lightbox).
   CARTES = `cartes.html` + `app.js`. BASE DE DONNÉES = `base.html`/`base.js`/`base.css` TOUJOURS PRÉSENTE mais RETIRÉE de
   la nav PROD (plus aucun lien depuis index/cartes ; accessible par URL directe seulement, outil de dev). Sélecteur de vue
