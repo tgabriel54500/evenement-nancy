@@ -1,0 +1,11 @@
+{
+  // Configuration Cloudflare Workers — sert le site statique (Static Assets).
+  // `npx wrangler deploy` publie tout le dossier comme site statique, sans
+  // code Worker (pas de champ "main"). Les fichiers _headers / _redirects à la
+  // racine sont pris en charge nativement par Cloudflare.
+  "name": "evenement-nancy",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "."
+  }
+}
