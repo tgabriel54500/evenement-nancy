@@ -38,9 +38,11 @@ for f in $FILES; do
 done
 
 # Le sélecteur de vue (Galerie/Cartes) est CONSERVÉ — la Base de données reste
-# exclue (ni base.html ni lien vers elle dans index/cartes). On injecte juste une
-# balise robots noindex dans chaque page publiée (ceinture + bretelles avec
-# _headers / netlify.toml).
+# exclue (ni base.html ni lien vers elle dans index/cartes). Sur chaque page publiée
+# on injecte (a) une balise robots noindex, (b) le compteur de visites GoatCounter
+# (privé, sans cookie). Ces ajouts ne concernent QUE le build public dist/ : la
+# version locale reste propre et n'est pas comptabilisée.
+# GoatCounter ignore de toute façon localhost/file:// → seules les vraies visites comptent.
 for page in index.html cartes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
@@ -49,6 +51,10 @@ for page in index.html cartes.html; do
     let h = fs.readFileSync(p, "utf8");
     if (!/name="robots"/.test(h)) {
       h = h.replace(/<head>/i, "<head>\n  <meta name=\"robots\" content=\"noindex, nofollow\">");
+    }
+    if (!/goatcounter/i.test(h)) {
+      const gc = "  <script data-goatcounter=\"https://gabz.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>\n";
+      h = h.replace(/<\/body>/i, gc + "</body>");
     }
     fs.writeFileSync(p, h);
   ' "$DIST/$page"

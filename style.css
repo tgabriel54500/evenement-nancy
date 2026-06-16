@@ -46,8 +46,18 @@ body {
   letter-spacing: -.02em;
 }
 .hero__title span { color: var(--accent); font-style: italic; }
+.hero__tagline {
+  font-family: "Fraunces", Georgia, serif;
+  font-style: italic;
+  font-weight: 600;
+  font-size: clamp(1.12rem, 3vw, 1.55rem);
+  line-height: 1.25;
+  color: var(--accent);
+  margin: 1rem auto 0;
+  max-width: 620px;
+}
 .hero__subtitle {
-  margin: 1.1rem auto 0;
+  margin: .85rem auto 0;
   max-width: 540px;
   color: var(--ink-soft);
   font-size: 1.05rem;
@@ -628,6 +638,119 @@ body {
   padding: 2.4rem 1rem 1rem;
   color: var(--ink); font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; line-height: 1.25;
 }
+
+/* ---------- Favoris ---------- */
+/* Galerie : la tuile est un <button> ; le cœur est un bouton FRÈRE positionné
+   par-dessus (pas d'imbrication de boutons). */
+.poster-wrap { position: relative; }
+.poster-wrap .poster { width: 100%; height: 100%; }
+.gallery .poster-wrap { aspect-ratio: 2 / 3; }
+.poster-wrap .poster { aspect-ratio: auto; }
+.poster-wrap .poster__title { padding-right: 2.4rem; }   /* laisse la place au cœur */
+
+.fav-btn {
+  position: absolute; right: .5rem; bottom: .5rem; z-index: 4;
+  width: 36px; height: 36px; border-radius: 50%; border: 0; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: rgba(20,16,12,.55); color: #fff; backdrop-filter: blur(3px);
+  transition: transform .12s ease, background .15s, color .15s;
+}
+.fav-btn .heart { width: 19px; height: 19px; fill: none; stroke: currentColor; stroke-width: 2; }
+.fav-btn:hover { background: rgba(20,16,12,.75); }
+.fav-btn:active { transform: scale(.86); }
+.fav-btn.is-fav { background: #fff; color: var(--accent); }
+.fav-btn.is-fav .heart { fill: var(--accent); stroke: var(--accent); }
+
+/* Cartes : le cœur se pose sur l'image, en haut à droite (la date est en bas-droite ici ? non,
+   la date est en haut-droite → on met le cœur en bas-droite de l'image). */
+.card__media .fav-btn { top: auto; bottom: .6rem; right: .6rem; }
+
+/* Barre « Mes favoris » */
+/* ---------- Barre d'outils : Recherche avancée + Favoris (côte à côte) ---------- */
+.toolbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: .6rem;
+  margin-bottom: 1.25rem;
+}
+.tool-group { position: relative; }
+.tool-btn {
+  font: inherit; font-weight: 600; font-size: .9rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .45rem;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  padding: .5rem 1.05rem; border-radius: 999px; transition: all .18s ease;
+}
+.tool-btn:hover { border-color: var(--accent); }
+.tool-btn .tool-ico { width: 17px; height: 17px; opacity: .9; }
+.tool-btn .tool-chev { width: 14px; height: 14px; opacity: .55; transition: transform .2s ease; }
+.tool-btn[aria-expanded="true"] { border-color: var(--accent); color: var(--accent); }
+.tool-btn[aria-expanded="true"] .tool-chev { transform: rotate(180deg); }
+/* filtres avancés actifs (panneau fermé) → on signale via la couleur d'accent */
+.tool-btn.is-active { border-color: var(--accent); color: var(--accent); }
+.tool-badge {
+  font-size: .72rem; font-weight: 700; line-height: 1;
+  min-width: 18px; height: 18px; padding: 0 .32rem;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--accent); color: #fff; border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+.tool-badge[hidden] { display: none; }
+
+/* Popover « Recherche avancée » : réutilise .cal (placement, ombre, flèche),
+   mais ancré à GAUCHE du bouton (le bouton est à gauche de la paire). */
+.adv-pop { left: 0; right: auto; min-width: 240px; }
+.adv-pop::before { left: 28px; right: auto; }
+.adv-group + .adv-group { margin-top: .85rem; }
+.adv-label {
+  display: block; font-size: .7rem; font-weight: 700; letter-spacing: .04em;
+  text-transform: uppercase; color: var(--ink-soft); margin-bottom: .45rem;
+}
+.seg { display: flex; flex-wrap: wrap; gap: .35rem; }
+.seg__btn {
+  font: inherit; font-weight: 600; font-size: .82rem; cursor: pointer;
+  border: 1px solid var(--line); background: transparent; color: var(--ink-soft);
+  padding: .38rem .7rem; border-radius: 999px; white-space: nowrap;
+  transition: all .15s ease;
+}
+.seg__btn:hover { border-color: var(--ink); color: var(--ink); }
+.seg__btn.is-active { background: var(--ink); border-color: var(--ink); color: #fff; }
+.adv-reset {
+  margin-top: .9rem; width: 100%;
+  font: inherit; font-size: .8rem; font-weight: 600; cursor: pointer;
+  border: 0; background: transparent; color: var(--accent);
+  padding: .4rem; border-radius: 8px; transition: background .15s;
+}
+.adv-reset:hover:not(:disabled) { background: rgba(196,69,47,.08); }
+.adv-reset:disabled { color: var(--ink-soft); opacity: .5; cursor: default; }
+
+.favbar { display: flex; justify-content: center; margin-bottom: 1.25rem; }
+.favtoggle {
+  font: inherit; font-weight: 600; font-size: .9rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .45rem;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  padding: .5rem 1.05rem; border-radius: 999px; transition: all .18s ease;
+}
+.favtoggle .heart { width: 17px; height: 17px; fill: var(--accent); stroke: var(--accent); stroke-width: 2; }
+.favtoggle:hover { border-color: var(--accent); }
+.favtoggle.is-active { background: var(--accent); border-color: var(--accent); color: #fff; box-shadow: 0 8px 18px -8px var(--accent-deep); }
+.favtoggle.is-active .heart { fill: #fff; stroke: #fff; }
+.favtoggle .count { font-variant-numeric: tabular-nums; opacity: .85; font-size: .82rem; }
+
+/* Bouton favori dans la lightbox */
+.lightbox__actions { display: flex; flex-wrap: wrap; gap: .6rem; align-items: center; margin-top: 1.2rem; }
+.lightbox__actions .lightbox__cta { margin-top: 0; }
+.lightbox__fav {
+  display: inline-flex; align-items: center; gap: .45rem;
+  font: inherit; font-weight: 600; font-size: .88rem; cursor: pointer;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  border-radius: 10px; padding: .55rem .95rem; transition: all .15s;
+}
+.lightbox__fav .heart { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; }
+.lightbox__fav:hover { border-color: var(--accent); }
+.lightbox__fav.is-fav { border-color: var(--accent); color: var(--accent); }
+.lightbox__fav.is-fav .heart { fill: var(--accent); stroke: var(--accent); }
 
 /* ---------- Lightbox (affiche en grand) ---------- */
 .lightbox {

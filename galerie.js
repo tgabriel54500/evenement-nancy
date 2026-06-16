@@ -7,12 +7,12 @@ const MONTHS_LONG = ["janvier", "février", "mars", "avril", "mai", "juin",
 const MONTHS_SHORT = ["JANV", "FÉVR", "MARS", "AVR", "MAI", "JUIN",
   "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"];
 
-const state = { query: "", filter: "all", when: "all", customFrom: "", customTo: "", price: "all", resa: "all" };
+const state = { query: "", filter: "all", when: "all", customFrom: "", customTo: "", price: "all", resa: "all", favOnly: false };
 
 const els = {
   filters: document.getElementById("filters"),
   dateFilters: document.getElementById("dateFilters"),
-  optFilters: document.getElementById("optFilters"),
+  toolbar: document.getElementById("toolbar"),
   gallery: document.getElementById("gallery"),
   empty: document.getElementById("empty"),
   count: document.getElementById("resultsCount"),
@@ -64,6 +64,23 @@ const TODAY_ISO = (() => { const d = new Date();
 const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
 
 const sortedEvents = dedupEvents(EVENTS).filter(notPast).sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+
+// ---------- Favoris (persistés dans le navigateur via localStorage) ----------
+// Clé stable = titre + date (le data.js de prod est minifié SANS uuid). On stocke
+// {clé: endDate} : au chargement on PURGE les favoris dont l'événement est passé.
+const FAV_KEY = "agenda-nancy:favoris";
+const HEART = '<svg viewBox="0 0 24 24" class="heart" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
+function favLoad() { try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {}; } catch (e) { return {}; } }
+function favSave() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {} }
+let favs = favLoad();
+(function prunePast() { let ch = false; for (const k of Object.keys(favs)) if ((favs[k] || "") < TODAY_ISO) { delete favs[k]; ch = true; } if (ch) favSave(); })();
+function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || ""); }
+function isFav(ev) { return favKey(ev) in favs; }
+function toggleFav(ev) {
+  const k = favKey(ev);
+  if (k in favs) delete favs[k]; else favs[k] = ev.endDate || ev.date || "";
+  favSave();
+}
 
 // ---------- Dates ----------
 const isoOf = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
@@ -129,6 +146,7 @@ function matchesNonCategory(ev) {
   return true;
 }
 function matches(ev) {
+  if (state.favOnly && !isFav(ev)) return false;
   if (state.filter !== "all" && ev.category !== state.filter) return false;
   return matchesNonCategory(ev);
 }
@@ -252,21 +270,95 @@ function buildDateFilters() {
 document.addEventListener("click", (e) => { if (dpOpen && !e.target.closest("#dateRangeWrap")) closeDatePop(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dpOpen) closeDatePop(); });
 
-function buildOptFilters() {
-  const groups = [
-    { key: "price", aria: "Tarif", opts: [{ v: "all", t: "Tarif : tous" }, { v: "free", t: "🆓 Gratuit" }, { v: "paid", t: "💶 Payant" }] },
-    { key: "resa", aria: "Réservation", opts: [{ v: "all", t: "Réservation : toutes" }, { v: "no", t: "Accès libre" }, { v: "yes", t: "🎟️ Sur réservation" }] },
-  ];
-  els.optFilters.innerHTML = groups.map(g => `
-    <div class="datefilters" role="group" aria-label="${g.aria}">
-      ${g.opts.map(o => `<button class="datefilter ${state[g.key] === o.v ? "is-active" : ""}" data-group="${g.key}" data-val="${o.v}">${o.t}</button>`).join("")}
-    </div>`).join("");
-  els.optFilters.querySelectorAll(".datefilter").forEach(btn => btn.addEventListener("click", () => {
-    const g = btn.dataset.group; state[g] = btn.dataset.val;
-    els.optFilters.querySelectorAll(`[data-group="${g}"]`).forEach(b => b.classList.toggle("is-active", b === btn));
+// ---------- Barre d'outils : « Recherche avancée » (tarif + réservation) + « Mes favoris » ----------
+// Le tarif et la réservation sont des filtres secondaires : on les range dans un
+// popover « Recherche avancée », à côté du bouton « Mes favoris ». Les catégories,
+// elles, restent toujours visibles (filtre principal).
+const SLIDERS_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tool-ico"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>';
+const CHEVRON_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="tool-chev"><path d="M6 9l6 6 6-6"/></svg>';
+
+const ADV_GROUPS = [
+  { key: "price", label: "Tarif", opts: [{ v: "all", t: "Tous" }, { v: "free", t: "🆓 Gratuit" }, { v: "paid", t: "💶 Payant" }] },
+  { key: "resa", label: "Réservation", opts: [{ v: "all", t: "Toutes" }, { v: "no", t: "Accès libre" }, { v: "yes", t: "🎟️ Sur réservation" }] },
+];
+function advCount() { return (state.price !== "all" ? 1 : 0) + (state.resa !== "all" ? 1 : 0); }
+
+let advOpen = false;
+function openAdvPop() {
+  const p = document.getElementById("advPop"); if (!p) return;
+  p.hidden = false; advOpen = true;
+  document.getElementById("advTrigger").setAttribute("aria-expanded", "true");
+}
+function closeAdvPop() {
+  const p = document.getElementById("advPop"); if (p) p.hidden = true;
+  advOpen = false;
+  const t = document.getElementById("advTrigger"); if (t) t.setAttribute("aria-expanded", "false");
+}
+
+// Maj de l'état visuel de la barre (badge filtres actifs, segments, favoris) sans
+// reconstruire → le popover reste ouvert pendant le réglage.
+function syncToolbar() {
+  const n = advCount();
+  const badge = document.getElementById("advBadge");
+  if (badge) { badge.textContent = n; badge.hidden = n === 0; }
+  const trig = document.getElementById("advTrigger");
+  if (trig) trig.classList.toggle("is-active", n > 0);
+  document.querySelectorAll("#advPop .seg__btn").forEach(b =>
+    b.classList.toggle("is-active", state[b.dataset.group] === b.dataset.val));
+  const reset = document.getElementById("advReset");
+  if (reset) reset.disabled = n === 0;
+  const fav = document.getElementById("favToggle");
+  if (fav) {
+    const c = favCount();
+    fav.classList.toggle("is-active", state.favOnly);
+    fav.setAttribute("aria-pressed", String(state.favOnly));
+    const cnt = fav.querySelector(".count");
+    if (cnt) { cnt.textContent = c; cnt.hidden = c === 0; }
+  }
+}
+
+function buildToolbar() {
+  els.toolbar.innerHTML = `
+    <div class="tool-group" id="advWrap">
+      <button type="button" class="tool-btn" id="advTrigger" aria-haspopup="dialog" aria-expanded="false">
+        ${SLIDERS_ICON}<span>Recherche avancée</span><span class="tool-badge" id="advBadge" hidden>0</span>${CHEVRON_ICON}
+      </button>
+      <div class="cal adv-pop" id="advPop" role="dialog" aria-label="Recherche avancée" hidden>
+        ${ADV_GROUPS.map(g => `
+          <div class="adv-group">
+            <span class="adv-label">${g.label}</span>
+            <div class="seg" role="group" aria-label="${g.label}">
+              ${g.opts.map(o => `<button type="button" class="seg__btn ${state[g.key] === o.v ? "is-active" : ""}" data-group="${g.key}" data-val="${o.v}">${o.t}</button>`).join("")}
+            </div>
+          </div>`).join("")}
+        <button type="button" class="adv-reset" id="advReset">Réinitialiser</button>
+      </div>
+    </div>
+    <button type="button" class="tool-btn favtoggle" id="favToggle" aria-pressed="false">
+      ${HEART}<span>Mes favoris</span><span class="count" hidden>0</span>
+    </button>`;
+
+  els.toolbar.querySelector("#advTrigger")
+    .addEventListener("click", (e) => { e.stopPropagation(); advOpen ? closeAdvPop() : openAdvPop(); });
+  els.toolbar.querySelectorAll("#advPop .seg__btn").forEach(btn => btn.addEventListener("click", () => {
+    state[btn.dataset.group] = btn.dataset.val;
+    syncToolbar();
     render();
   }));
+  els.toolbar.querySelector("#advReset").addEventListener("click", () => {
+    state.price = "all"; state.resa = "all";
+    syncToolbar(); render();
+  });
+  els.toolbar.querySelector("#favToggle").addEventListener("click", () => {
+    state.favOnly = !state.favOnly;
+    syncToolbar(); render();
+  });
+  syncToolbar();
 }
+
+// Fermeture du popover « Recherche avancée » : clic extérieur ou Échap.
+document.addEventListener("click", (e) => { if (advOpen && !e.target.closest("#advWrap")) closeAdvPop(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape" && advOpen) closeAdvPop(); });
 
 // ---------- Rendu galerie ----------
 function escapeHtml(s) {
@@ -282,24 +374,52 @@ function tileHTML(ev, i) {
     ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" referrerpolicy="no-referrer"
          onerror="this.closest('.poster').classList.add('poster--noimg');this.remove();">`
     : "";
+  const fav = isFav(ev);
   return `
-    <button class="poster ${ev.image ? "" : "poster--noimg"}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
-      ${media}
-      <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
-      <span class="poster__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>
-      <span class="poster__fallback">${escapeHtml(ev.title)}</span>
-      <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span></span>
-    </button>`;
+    <div class="poster-wrap">
+      <button class="poster ${ev.image ? "" : "poster--noimg"}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
+        ${media}
+        <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
+        <span class="poster__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>
+        <span class="poster__fallback">${escapeHtml(ev.title)}</span>
+        <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span></span>
+      </button>
+      <button class="fav-btn ${fav ? "is-fav" : ""}" data-i="${i}" aria-pressed="${fav}"
+        aria-label="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}" title="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}">${HEART}</button>
+    </div>`;
+}
+
+// Bascule un favori depuis une carte : maj du cœur en place (pas de re-rendu
+// complet, sauf en mode « favoris seuls » où la carte doit disparaître).
+function onToggleFav(ev, btn) {
+  toggleFav(ev);
+  syncToolbar();
+  if (state.favOnly) { render(); return; }
+  const f = isFav(ev);
+  btn.classList.toggle("is-fav", f);
+  btn.setAttribute("aria-pressed", String(f));
+  btn.setAttribute("aria-label", f ? "Retirer des favoris" : "Ajouter aux favoris");
+  btn.title = f ? "Retirer des favoris" : "Ajouter aux favoris";
 }
 
 function render() {
   visible = sortedEvents.filter(matches);
   els.gallery.innerHTML = visible.map(tileHTML).join("");
   els.empty.hidden = visible.length > 0;
+  if (visible.length === 0) {
+    els.empty.textContent = state.favOnly
+      ? "Aucun favori. Cliquez sur le ♥ d'une affiche pour l'ajouter ici."
+      : "Aucun événement ne correspond à votre recherche. Essayez un autre filtre ou un autre mot-clé.";
+  }
   els.count.textContent = visible.length ? `${visible.length} affiche${visible.length > 1 ? "s" : ""}` : "";
   els.gallery.querySelectorAll(".poster").forEach(btn =>
     btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
+  els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
+    btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(visible[Number(btn.dataset.i)], btn); }));
 }
+
+// ---------- Favoris : compteur (le bouton vit dans la barre d'outils) ----------
+function favCount() { return sortedEvents.filter(isFav).length; }
 
 // ---------- Lightbox ----------
 const lbIcon = {
@@ -328,8 +448,20 @@ function openLightbox(ev) {
         <div>${lbIcon.clock}<span>${escapeHtml(dateLabel(ev))}</span></div>
         ${place ? `<div>${lbIcon.pin}<span>${escapeHtml(place)}</span></div>` : ""}
       </div>
-      ${ev.url ? `<a class="lightbox__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">Plus d'infos ${lbIcon.arrow}</a>` : ""}
+      <div class="lightbox__actions">
+        ${ev.url ? `<a class="lightbox__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">Plus d'infos ${lbIcon.arrow}</a>` : ""}
+        <button class="lightbox__fav ${isFav(ev) ? "is-fav" : ""}" id="lbFav" aria-pressed="${isFav(ev)}">${HEART}<span>${isFav(ev) ? "Dans vos favoris" : "Ajouter aux favoris"}</span></button>
+      </div>
     </div>`;
+  const lbFav = els.lightboxInner.querySelector("#lbFav");
+  if (lbFav) lbFav.addEventListener("click", () => {
+    toggleFav(ev);
+    const f = isFav(ev);
+    lbFav.classList.toggle("is-fav", f);
+    lbFav.setAttribute("aria-pressed", String(f));
+    lbFav.querySelector("span").textContent = f ? "Dans vos favoris" : "Ajouter aux favoris";
+    syncToolbar();
+  });
   els.lightbox.hidden = false;
   document.body.style.overflow = "hidden";
   lbOpen = true;
@@ -347,6 +479,9 @@ function hideLightbox() {
   els.lightbox.hidden = true;
   els.lightboxInner.innerHTML = "";
   document.body.style.overflow = "";
+  // En mode « favoris seuls », un favori retiré depuis la lightbox doit
+  // disparaître de la grille à la fermeture.
+  if (state.favOnly) render();
 }
 
 // Fermeture demandée par l'utilisateur (croix, fond, Échap) : on « revient en
@@ -369,5 +504,5 @@ els.search.addEventListener("input", e => {
 
 buildDateFilters();
 buildFilters();
-buildOptFilters();
+buildToolbar();
 render();

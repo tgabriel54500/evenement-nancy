@@ -167,6 +167,13 @@
 - FILTRES DATE (demande user): uniquement Tout · Aujourd'hui · Ce week-end · « choisir des dates ». Cartes (app.js) =
   chips + CALENDRIER popover. Galerie (galerie.js) = chips + 2 champs date natifs (state.customFrom/customTo, when="custom").
   ⚠️ Si tu rebranches d'autres chips (semaine/mois), garde les 2 vues alignées.
+- FAVORIS (demande user, dans app.js ET galerie.js) : persistés en localStorage clé `agenda-nancy:favoris` =
+  objet {cléÉvénement: endDate}. ⚠️ Clé = `normKey(title)+"|"+date` (PAS l'uuid : le data.js de prod est minifié sans
+  uuid/source). Au chargement, on PURGE les favoris dont endDate < aujourd'hui (auto-nettoyage du passé). UI : cœur sur
+  chaque carte/affiche (clic = toggle, `stopPropagation` pour ne pas ouvrir la lightbox), bouton dans la lightbox, et
+  barre « Mes favoris (N) » (#favbar, state.favOnly) injectée avant #resultsCount → filtre les favoris seuls (déjà triés
+  par date car sortedEvents l'est). Galerie : la tuile <button> est wrappée dans `.poster-wrap` + cœur frère `.fav-btn`
+  (pas de bouton imbriqué). Le store est PARTAGÉ entre les 2 vues (même origine/clé).
 - NETTOYAGE COMMUN — `normalize.js` (module partagé par update-events.js ET server.js, appliqué à la FUSION, jamais
   sur les snapshots events-*.json). `cleanupMerged(events)` enchaîne 3 passes: (1) `cleanCity` normalise les communes
   (casse/accents/tirets via table CITY_CANON Grand Nancy + anneau; ex "NANCY"→"Nancy", "VANDOEUVRE LES NANCY"→
@@ -219,6 +226,13 @@
   élève la barre + on masque la méthode, on ne rend pas l'extraction impossible). Vraie protection = backend gaté
   (Netlify Function origin/token, ou accès par mot de passe) — non mis en place. ⚠️ Le champ `url` (lien « Plus d'infos »)
   pointe encore vers les domaines sources (fuite résiduelle assumée, car c'est la valeur d'usage du lien).
+- STATISTIQUES DE VISITE — GoatCounter (gratuit, sans cookie, RGPD-friendly → pas de bandeau). Code `gabz`, tableau de
+  bord https://gabz.goatcounter.com. Script `<script data-goatcounter="https://gabz.goatcounter.com/count" async
+  src="//gc.zgo.at/count.js">` INJECTÉ par deploy-site.sh dans dist/index.html ET dist/cartes.html (build public
+  uniquement, avant </body>) — PAS dans les sources, donc le local n'est pas compté (GoatCounter ignore de toute façon
+  localhost/file://). CSP (_headers) = seulement `frame-ancestors 'none'` → ne bloque pas le script. ⚠️ Referrer-Policy
+  no-referrer vide document.referrer → le rapport « provenance » de GoatCounter sera limité (le comptage de visiteurs
+  uniques, lui, marche). Domaine public passé à agenda-grandnancy.fr (domaine perso branché sur Netlify).
 
 ## Pitfalls / gotchas (Destination Nancy)
 - L'agenda DN liste une CARTE PAR OCCURRENCE: un récurrent apparaît avec suffixe `/occ/N/` sur des dizaines de pages
