@@ -482,6 +482,27 @@ function onToggleFav(ev, btn) {
   btn.title = f ? "Retirer des favoris" : "Ajouter aux favoris";
 }
 
+// Recalcule les compteurs des boutons de catégorie selon les filtres ACTIFS
+// (date, recherche, tarif, réservation, favoris) — tout sauf la catégorie
+// elle-même —, puis les réécrit sans reconstruire la barre (préserve l'état actif).
+function updateFilterCounts() {
+  const counts = {};
+  let total = 0;
+  for (const ev of sortedEvents) {
+    if (state.favOnly && !isFav(ev)) continue;
+    if (!matchesNonCategory(ev)) continue;
+    total++;
+    counts[ev.category] = (counts[ev.category] || 0) + 1;
+  }
+  els.filters.querySelectorAll(".filter").forEach(btn => {
+    const key = btn.dataset.key;
+    const n = key === "all" ? total : (counts[key] || 0);
+    const span = btn.querySelector(".count");
+    if (span) span.textContent = n;
+    btn.classList.toggle("is-empty", n === 0 && key !== "all");
+  });
+}
+
 function render() {
   visible = sortedEvents.filter(matches);
   els.gallery.innerHTML = visible.map(tileHTML).join("");
@@ -492,6 +513,7 @@ function render() {
       : "Aucun événement ne correspond à votre recherche. Essayez un autre filtre ou un autre mot-clé.";
   }
   els.count.textContent = visible.length ? `${visible.length} affiche${visible.length > 1 ? "s" : ""}` : "";
+  updateFilterCounts();
   els.gallery.querySelectorAll(".poster").forEach(btn =>
     btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
   els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
