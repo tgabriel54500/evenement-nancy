@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-14",
+    "date": "2026-06-16",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-14",
+    "date": "2026-06-16",
     "endDate": "2026-07-02",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-14",
+    "date": "2026-06-16",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -64,49 +64,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-179",
-    "title": "Les greniers du Placieux",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité",
-      "Environnement"
-    ],
-    "date": "2026-06-14",
-    "endDate": "2026-06-14",
-    "dateText": "",
-    "schedule": "7h à 18h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/grenierduplacieux.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-greniers-du-placieux",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-558",
-    "title": "Concert du quatuor novitango",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-14",
-    "endDate": "2026-06-14",
-    "dateText": "",
-    "schedule": "16h",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0614_CONCERT_QUATUOR.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-du-quatuor-novitango",
     "source": "villers-les-nancy"
   },
   {
@@ -370,8 +327,8 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-225",
-    "title": "Ciné plein air ",
+    "uuid": "vln-226",
+    "title": "Ciné plein air - Astérix et Obélix Mission Cléopâtre",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
@@ -379,7 +336,7 @@
       "Culture"
     ],
     "date": "2026-07-03",
-    "endDate": "2026-08-07",
+    "endDate": "2026-07-03",
     "dateText": "",
     "schedule": "22h30",
     "place": "Parc Mme de Graffigny",
@@ -387,7 +344,7 @@
     "free": false,
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-asterix-et-obelix-mission-cleopatre",
     "source": "villers-les-nancy"
   },
   {
@@ -454,6 +411,48 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/fetenat.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/13-juillet-x-amours-dete",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-574",
+    "title": "Ciné plein air - Retour vers le futur",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-07-24",
+    "endDate": "2026-07-24",
+    "dateText": "",
+    "schedule": "22h30",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-retour-vers-le-futur",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-575",
+    "title": "Ciné plein air - Le Comte de Monte-Cristo",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-08-07",
+    "endDate": "2026-08-07",
+    "dateText": "",
+    "schedule": "21h30",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-le-comte-de-monte-cristo",
     "source": "villers-les-nancy"
   },
   {
