@@ -1,2 +1,7 @@
+# Agenda public du Grand-Nancy — on autorise l'indexation par les moteurs.
+# Les bots d'IA (GPTBot, CCBot, Google-Extended…) sont bloqués en amont par
+# Cloudflare ; la protection anti-aspiration repose sur le rate-limiting Cloudflare.
 User-agent: *
-Disallow: /
+Allow: /
+
+Sitemap: https://agenda-grandnancy.fr/sitemap.xml

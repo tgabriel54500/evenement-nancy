@@ -1,5 +1,7 @@
+# NB : PAS de X-Robots-Tag noindex sur /* → on VEUT être indexé par Google.
+# (le noindex ne bloque pas les scrapers, il ne fait que nous retirer de Google ;
+#  la vraie protection anti-aspiration est assurée par Cloudflare.)
 /*
-  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
   Referrer-Policy: no-referrer

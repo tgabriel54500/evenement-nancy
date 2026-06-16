@@ -585,7 +585,7 @@ function cardHTML(ev, i) {
     (ev.reservation ? `<span class="badge">${icon.ticket} Réservation</span>` : "");
 
   const media = ev.image
-    ? `<img class="card__img" src="${escapeHtml(ev.image)}" alt="" loading="lazy" referrerpolicy="no-referrer"
+    ? `<img class="card__img" src="${escapeHtml(ev.image)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"
           onerror="this.parentNode.classList.add('card__media--noimg');this.remove();">`
     : "";
 

@@ -173,6 +173,8 @@ function buildFilters() {
 // Bouton « Choisir des dates » identique à la vue Cartes (cohérence visuelle),
 // ouvrant un petit popover propre avec deux champs Du/au.
 const CAL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="cal-ico"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>';
+const CAL_DOW = ["lun", "mar", "mer", "jeu", "ven", "sam", "dim"];
+const cal = { view: null };                       // mois affiché (1er du mois)
 const frDay = (iso) => { const [y, m, d] = iso.split("-").map(Number); return `${d} ${MONTHS_LONG[m - 1]}`; };
 function dateRangeLabel() {
   const f = state.customFrom, t = state.customTo;
@@ -185,8 +187,111 @@ function dateRangeLabel() {
 let dpOpen = false;
 function openDatePop() {
   const p = document.getElementById("datePop"); if (!p) return;
+  const base = state.customFrom ? new Date(state.customFrom + "T00:00:00") : new Date();
+  cal.view = new Date(base.getFullYear(), base.getMonth(), 1);
   p.hidden = false; dpOpen = true;
   document.getElementById("dateTrigger").setAttribute("aria-expanded", "true");
+  renderCal();
+}
+
+// Construit le bloc d'un mois (titre + jours). Les classes de sélection/plage sont
+// posées par paintSelection (pour les rafraîchir au survol sans tout reconstruire).
+function monthBlock(year, month, todayISO) {
+  const d = new Date(year, month, 1);
+  const y = d.getFullYear(), m = d.getMonth();
+  const offset = (new Date(y, m, 1).getDay() + 6) % 7;     // lundi = 1ère colonne
+  const nbDays = new Date(y, m + 1, 0).getDate();
+  let cells = "";
+  for (let i = 0; i < offset; i++) cells += `<span class="cal__day cal__day--blank"></span>`;
+  for (let dd = 1; dd <= nbDays; dd++) {
+    const iso = `${y}-${String(m + 1).padStart(2, "0")}-${String(dd).padStart(2, "0")}`;
+    const past = iso < todayISO;
+    const cls = ["cal__day", past ? "is-past" : "", iso === todayISO ? "is-today" : ""].filter(Boolean).join(" ");
+    cells += `<button type="button" class="${cls}" data-iso="${iso}"${past ? " disabled" : ""}>${dd}</button>`;
+  }
+  return `<div class="cal__month">
+      <div class="cal__title">${MONTHS_LONG[m]} ${y}</div>
+      <div class="cal__dow">${CAL_DOW.map(x => `<span>${x}</span>`).join("")}</div>
+      <div class="cal__days">${cells}</div>
+    </div>`;
+}
+
+// Pose bornes/plage sur les jours rendus ; hoverISO = prévisualisation au survol.
+function paintSelection(hoverISO) {
+  const f = state.customFrom, t = state.customTo;
+  let lo = f, hi = t;
+  if (f && !t && hoverISO) { lo = hoverISO < f ? hoverISO : f; hi = hoverISO < f ? f : hoverISO; }
+  document.querySelectorAll("#datePop .cal__day[data-iso]").forEach(el => {
+    const iso = el.dataset.iso;
+    el.classList.remove("is-start", "is-end", "is-sel", "is-range");
+    if (lo && hi) {
+      if (iso === lo) el.classList.add("is-start", "is-sel");
+      if (iso === hi) el.classList.add("is-end", "is-sel");
+      if (iso > lo && iso < hi) el.classList.add("is-range");
+    } else if (f && iso === f) {
+      el.classList.add("is-start", "is-end", "is-sel");
+    }
+  });
+}
+
+function pickDay(iso) {
+  const f = state.customFrom, t = state.customTo;
+  if (!f || (f && t)) { state.customFrom = iso; state.customTo = ""; }
+  else if (iso < f) { state.customTo = f; state.customFrom = iso; }
+  else { state.customTo = iso; }
+  state.when = "custom";
+  syncDateUI(); renderCal(); render();
+  if (state.customFrom && state.customTo) setTimeout(closeDatePop, 200);   // plage complète → on referme
+}
+
+// Rend les DEUX mois côte à côte (le 2e est masqué par CSS sous 600px).
+function renderCal() {
+  const pop = document.getElementById("datePop");
+  if (!pop || !dpOpen) return;
+  const y = cal.view.getFullYear(), m = cal.view.getMonth();
+  const todayISO = isoOf(new Date());
+  const f = state.customFrom, t = state.customTo;
+
+  pop.innerHTML = `
+    <div class="cal__bar">
+      <button type="button" class="cal__nav" data-nav="-1" aria-label="Mois précédent">‹</button>
+      <button type="button" class="cal__nav" data-nav="1" aria-label="Mois suivant">›</button>
+    </div>
+    <div class="cal__months">
+      ${monthBlock(y, m, todayISO)}
+      ${monthBlock(y, m + 1, todayISO)}
+    </div>
+    <div class="cal__foot">
+      <span class="cal__hint">${f && t ? "Plage sélectionnée" : f ? "Choisissez la date de fin" : "Choisissez la date de début"}</span>
+      <button type="button" class="cal__clear"${f || t ? "" : " disabled"}>Effacer</button>
+    </div>`;
+
+  pop.querySelectorAll(".cal__nav").forEach(b => b.addEventListener("click", (e) => {
+    e.stopPropagation();
+    cal.view = new Date(y, m + Number(b.dataset.nav), 1);
+    renderCal();
+  }));
+
+  const grid = pop.querySelector(".cal__months");
+  grid.addEventListener("click", (e) => {
+    const b = e.target.closest(".cal__day[data-iso]");
+    if (!b || b.disabled) return;
+    e.stopPropagation();
+    pickDay(b.dataset.iso);
+  });
+  grid.addEventListener("mouseover", (e) => {
+    const b = e.target.closest(".cal__day[data-iso]");
+    if (b && !b.disabled && state.customFrom && !state.customTo) paintSelection(b.dataset.iso);
+  });
+  grid.addEventListener("mouseleave", () => paintSelection(null));
+
+  pop.querySelector(".cal__clear").addEventListener("click", (e) => {
+    e.stopPropagation();
+    state.customFrom = ""; state.customTo = ""; state.when = "all";
+    syncDateUI(); renderCal(); render();
+  });
+
+  paintSelection(null);
 }
 function closeDatePop() {
   const p = document.getElementById("datePop"); if (p) p.hidden = true;
@@ -220,12 +325,7 @@ function buildDateFilters() {
         ${CAL_ICON}<span id="dateTriggerLabel">${escapeHtml(dateRangeLabel())}</span>
       </button>
       <button type="button" class="daterange__clear" id="dateClear" aria-label="Effacer les dates" title="Effacer">×</button>
-      <div class="cal dn-pop" id="datePop" role="dialog" aria-label="Choisir une plage de dates" hidden>
-        <div class="dn-pop__row"><span class="dn-cap">Du</span>
-          <input type="date" id="dnFrom" aria-label="Date de début" value="${state.customFrom}"></div>
-        <div class="dn-pop__row"><span class="dn-cap">au</span>
-          <input type="date" id="dnTo" aria-label="Date de fin" value="${state.customTo}"></div>
-      </div>
+      <div class="cal" id="datePop" role="dialog" aria-label="Choisir une plage de dates" hidden></div>
     </span>`;
 
   els.dateFilters.querySelectorAll(".datefilter").forEach(btn => btn.addEventListener("click", () => {
@@ -243,27 +343,7 @@ function buildDateFilters() {
     state.customFrom = ""; state.customTo = ""; state.when = "all";
     closeDatePop(); syncDateUI(); render();
   });
-
-  const from = els.dateFilters.querySelector("#dnFrom");
-  const to = els.dateFilters.querySelector("#dnTo");
-  const onChange = () => {
-    state.customFrom = from.value || "";
-    state.customTo = to.value || "";
-    state.when = (state.customFrom || state.customTo) ? "custom" : "all";
-    syncDateUI();
-    render();
-  };
-  // Saisie au clavier INTERDITE : on force l'ouverture du calendrier (le picker
-  // natif) au clic/Entrée. Toute autre touche est ignorée.
-  [from, to].forEach((inp) => {
-    inp.addEventListener("change", onChange);
-    inp.addEventListener("click", () => { try { inp.showPicker(); } catch (e) {} });
-    inp.addEventListener("keydown", (e) => {
-      if (e.key === "Tab") return;                 // navigation au clavier OK
-      e.preventDefault();                          // pas de frappe dans jj/mm/aaaa
-      if (e.key === "Enter" || e.key === " ") { try { inp.showPicker(); } catch (e2) {} }
-    });
-  });
+  // Le calendrier (deux mois) câble lui-même ses jours/navigation dans renderCal().
 }
 
 // Fermeture du popover dates : clic à l'extérieur ou Échap (ajouté une seule fois).
@@ -371,7 +451,7 @@ function tileHTML(ev, i) {
   const dp = dateParts(displayDate(ev));
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const media = ev.image
-    ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" referrerpolicy="no-referrer"
+    ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
          onerror="this.closest('.poster').classList.add('poster--noimg');this.remove();">`
     : "";
   const fav = isFav(ev);
@@ -436,7 +516,7 @@ function openLightbox(ev) {
     (ev.free ? `<span class="badge badge--free">Gratuit</span>` : "") +
     (ev.reservation ? `<span class="badge">${lbIcon.ticket} Réservation</span>` : "");
   const media = ev.image
-    ? `<div class="lightbox__media"><img src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" referrerpolicy="no-referrer"></div>`
+    ? `<div class="lightbox__media"><img src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"></div>`
     : "";
   els.lightboxInner.innerHTML = `
     ${media}

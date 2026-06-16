@@ -405,6 +405,9 @@ body {
   box-shadow: var(--shadow);
   transition: transform .2s ease, box-shadow .2s ease, border-color .2s;
   animation: rise .4s ease backwards;
+  /* Perf : ~1300 cartes → on saute le rendu de celles hors écran (cf. galerie). */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 380px;
 }
 .card:hover { transform: translateY(-4px); border-color: #d9cfc0; box-shadow: 0 1px 2px rgba(28,26,23,.04), 0 22px 40px -20px rgba(28,26,23,.28); }
 
@@ -644,7 +647,16 @@ body {
    par-dessus (pas d'imbrication de boutons). */
 .poster-wrap { position: relative; }
 .poster-wrap .poster { width: 100%; height: 100%; }
-.gallery .poster-wrap { aspect-ratio: 2 / 3; }
+.gallery .poster-wrap {
+  aspect-ratio: 2 / 3;
+  /* Perf : avec ~1300 affiches, on laisse le navigateur SAUTER le rendu des
+     tuiles hors écran (rendu/peinture/décodage d'image différés jusqu'au scroll).
+     Rend la page et l'ouverture de la lightbox fluides même sur très longue liste.
+     contain-intrinsic-size = taille réservée tant que la tuile n'est pas rendue
+     (auto = mémorise la taille réelle une fois affichée → pas de saut au scroll). */
+  content-visibility: auto;
+  contain-intrinsic-size: auto 320px;
+}
 .poster-wrap .poster { aspect-ratio: auto; }
 .poster-wrap .poster__title { padding-right: 2.4rem; }   /* laisse la place au cœur */
 
