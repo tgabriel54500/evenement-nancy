@@ -288,7 +288,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette-3/",
     "source": "zenith-nancy"
@@ -855,7 +855,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/GAEL-FAYE-TOURNEE-ZENITH-1080-1920-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/gael-faye/",
     "source": "zenith-nancy"
@@ -939,7 +939,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2024/12/affiche-A3-goldme-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/goldmen-2/",
     "source": "zenith-nancy"

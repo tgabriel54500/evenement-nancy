@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1008,7 +1008,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/rendez-vous-aux-jardins/",
     "source": "vandoeuvre"
   },
@@ -1021,7 +1021,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-06-16",
+    "date": "2026-06-17",
     "endDate": "2026-06-24",
     "dateText": "Du 3 septembre 2025 au 24 juin 2026",
     "schedule": "",
@@ -1040,7 +1040,7 @@
     "catLabel": "Culture",
     "catEmoji": "🎭",
     "subcats": [],
-    "date": "2026-06-16",
+    "date": "2026-06-17",
     "endDate": "2026-06-29",
     "dateText": "Du 22 décembre 2025 au 29 juin 2026",
     "schedule": "De 14h à 18h",
@@ -1050,48 +1050,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/11/thes-dansants.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/thes-dansants/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28255",
-    "title": "Sax et Cie",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-06-16",
-    "endDate": "2026-06-16",
-    "dateText": "",
-    "schedule": "19h",
-    "place": "Château du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/sax-et-cie/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28307",
-    "title": "Cross des écoles",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-06-16",
-    "endDate": "2026-06-16",
-    "dateText": "",
-    "schedule": "De 9h à 16h30",
-    "place": "Parc des Sports",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/cross-des-ecoles/",
     "source": "vandoeuvre"
   },
   {
@@ -1111,7 +1069,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projection-opera-bastien-et-bastienne/",
     "source": "vandoeuvre"
   },
@@ -1232,7 +1190,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/vandoeuvre-en-fete/",
     "source": "vandoeuvre"
   },
@@ -1251,8 +1209,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-5365",
+    "title": "Conseil Municipal en direct",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [],
+    "date": "2026-06-22",
+    "endDate": "2026-06-22",
+    "dateText": "",
+    "schedule": "19h",
+    "place": "Mairie",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
     "source": "vandoeuvre"
   },
   {
@@ -1270,7 +1247,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/recital-de-fin-de-scolarite-julie-baroukel/",
     "source": "vandoeuvre"
   },
@@ -1289,7 +1266,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projections-fifn/",
     "source": "vandoeuvre"
   },
@@ -1310,7 +1287,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/spectacle-tous-en-scene/",
     "source": "vandoeuvre"
   },
@@ -1348,7 +1325,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/randonnee-culturelle/",
     "source": "vandoeuvre"
   },
@@ -1369,7 +1346,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
     "source": "vandoeuvre"
   },
@@ -1388,7 +1365,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/randonnee-patrimoniale/",
     "source": "vandoeuvre"
   },
@@ -1407,7 +1384,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
     "source": "vandoeuvre"
   },
@@ -1426,7 +1403,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
     "source": "vandoeuvre"
   },
@@ -1494,6 +1471,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-28685",
+    "title": "40 ans de l’association AVEC",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-07-01",
+    "endDate": "2026-07-01",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "Salle des Fêtes",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-28590",
     "title": "Concert “A Kind of Queen”",
     "category": "culture",
@@ -1510,7 +1508,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1569,7 +1567,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/20-000-jeux-sous-les-pixels-3/",
     "source": "vandoeuvre"
   },
@@ -1607,7 +1605,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous/",
     "source": "vandoeuvre"
   },
@@ -1626,7 +1624,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1645,7 +1643,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1685,7 +1683,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/12/20-000-jeux-sous-les-pixels.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }

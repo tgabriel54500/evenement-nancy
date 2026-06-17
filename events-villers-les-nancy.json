@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-16",
+    "date": "2026-06-17",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-16",
+    "date": "2026-06-17",
     "endDate": "2026-07-02",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-16",
+    "date": "2026-06-17",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -64,27 +64,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-496",
-    "title": "Conférence - débat - Les lumières sombres : Comprendre la pensée néoréactionnaire américaine ",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Citoyenneté"
-    ],
-    "date": "2026-06-16",
-    "endDate": "2026-06-16",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/dondada.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-debat-les-lumieres-sombres-comprendre-la-pensee-neoreactionnaire-americaine",
     "source": "villers-les-nancy"
   },
   {

@@ -38,6 +38,25 @@
     "source": "ici-c-nancy"
   },
   {
+    "uuid": "icn-1093",
+    "title": "MATIN DES HÉROS : TOY STORY 5",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-06-21",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "10:00",
+    "place": "UGC Ciné Cité Ludres",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_ugc-bandeau-caisse-matin-heros-800x480-toystory.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1093-matin-des-heros-toy-story-5/2026-06-21-10-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1078",
     "title": "PLOMBIÈRES-LES-BAINS : SALON DU JEU GNOMANIA",
     "category": "festival",
