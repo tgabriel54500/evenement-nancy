@@ -340,6 +340,50 @@ async function main() {
   const removed = rawMerged.length - merged.length;
   if (removed > 0) console.log(`  ⤷ ${removed} doublons inter-sources fusionnés (${merged.length} événements uniques).`);
 
+  // ── Suivi des NOUVEAUTÉS : date de première apparition de chaque événement ──
+  // On mémorise dans events-firstseen.json { uuid -> date ISO } la première fois
+  // qu'un événement est vu. Un événement déjà connu garde sa date ; un nouvel
+  // ajout sur une source reçoit la date du jour.
+  // ⚠️ CLÉ = `uuid` (identifiant STABLE de la source), surtout PAS `titre|date` :
+  // le champ `date` est recalé sur « aujourd'hui » pour les événements EN COURS
+  // (expos…), donc il change chaque jour → un événement déjà présent serait vu
+  // comme « nouveau » chaque jour. L'uuid, lui, ne bouge pas tant que la source
+  // garde l'événement. Au TOUT PREMIER remplissage, on PRÉ-DATE l'existant à J-45
+  // pour ne pas afficher les ~1300 événements comme « nouveaux » le jour 1 : la
+  // page Nouveautés démarre vide et se remplit avec les vrais ajouts dès demain.
+  const fsPath = path.join(__dirname, "events-firstseen.json");
+  const fsKey = (e) => e.uuid || (String(e.title || "").trim().toLowerCase().replace(/\s+/g, " ") + "|" + (e.date || ""));
+  const daysAgoISO = (n) => { const d = new Date(today); d.setDate(d.getDate() - n); return d.toISOString().slice(0, 10); };
+  let firstSeen = {};
+  let fsExisting = false;
+  if (fs.existsSync(fsPath)) {
+    try {
+      firstSeen = JSON.parse(fs.readFileSync(fsPath, "utf8")) || {};
+      fsExisting = Object.keys(firstSeen).length > 0;
+    } catch (e) {
+      console.warn("  ⚠ events-firstseen.json illisible, réinitialisé :", e.message);
+      firstSeen = {};
+    }
+  }
+  const seedISO = daysAgoISO(45);
+  let nNew = 0;
+  for (const e of merged) {
+    const k = fsKey(e);
+    if (!firstSeen[k]) { firstSeen[k] = fsExisting ? todayISO : seedISO; if (fsExisting) nNew++; }
+    e.addedAt = firstSeen[k];
+  }
+  // Purge : on ne garde que les clés encore présentes OU vues il y a moins de 60 j
+  // (un événement qui disparaît puis revient n'est pas reclassé « nouveau » aussitôt).
+  const liveKeys = new Set(merged.map(fsKey));
+  const cutoff = daysAgoISO(60);
+  for (const k of Object.keys(firstSeen)) {
+    if (!liveKeys.has(k) && firstSeen[k] < cutoff) delete firstSeen[k];
+  }
+  fs.writeFileSync(fsPath, JSON.stringify(firstSeen), "utf8");
+  console.log(fsExisting
+    ? `  🆕 ${nNew} nouvel(le)s événement(s) depuis le dernier passage.`
+    : `  🆕 suivi des nouveautés initialisé (${Object.keys(firstSeen).length} événements pré-datés à J-45).`);
+
   // Overlay tarif/réservation revérifié à la source (events-pricing.json, produit
   // par `node enrich-pricing.js`). La Ville de Nancy garde ses valeurs d'API
   // (fiables) ; pour les autres sources on n'écrase QUE ce qui a pu être

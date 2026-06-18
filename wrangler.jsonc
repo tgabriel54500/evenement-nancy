@@ -1,11 +1,15 @@
 {
   // Configuration Cloudflare Workers — sert le site statique (Static Assets).
-  // `npx wrangler deploy` publie tout le dossier comme site statique, sans
-  // code Worker (pas de champ "main"). Les fichiers _headers / _redirects à la
-  // racine sont pris en charge nativement par Cloudflare.
+  // `npx wrangler deploy` publie le dossier `dist/` (build DURCI produit par
+  // deploy-cloudflare.sh : data.js minifié sans source/uuid, GoatCounter injecté,
+  // ?v= anti-cache) comme site statique, sans code Worker (pas de champ "main").
+  // ⚠️ On ne publie PLUS la racine brute (".") : dist/ ne contient QUE le front
+  // public, donc plus besoin de .assetsignore. Les _headers/_redirects de dist/
+  // sont pris en charge nativement par Cloudflare.
+  // Build + déploiement : `bash deploy-cloudflare.sh` (lancé par refresh-all.sh).
   "name": "evenement-nancy",
   "compatibility_date": "2025-06-01",
   "assets": {
-    "directory": "."
+    "directory": "dist"
   }
 }

@@ -37,6 +37,7 @@ function mergeOcc(occ) {
     free: occ.some(e => e.free),
     reservation: occ.some(e => e.reservation),
     subcats: [...new Set(occ.flatMap(e => e.subcats || []))],
+    addedAt: occ.map(e => e.addedAt).filter(Boolean).sort().pop(),
   };
 }
 
@@ -79,9 +80,20 @@ const TODAY_ISO = (() => { const d = new Date();
 // sans régénération de data.js.
 const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
 
+// Ruban « Nouveau » : événement ajouté il y a ≤ 7 jours (champ addedAt posé par
+// update-events.js). Cohérent avec la galerie et la page Nouveautés.
+const NEW_SINCE_ISO = (() => { const d = new Date(); d.setDate(d.getDate() - 7);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; })();
+const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
+
+// Un événement est « multi-jours » si sa date de fin tombe un jour APRÈS son
+// début (comparaison sur la partie date seule, pas l'horaire).
+const isMulti = (ev) => { const s = (ev.date || "").slice(0, 10), e = (ev.endDate || "").slice(0, 10); return !!e && e > s; };
+// Tri : d'abord TOUS les mono-jour (par date croissante), puis TOUS les
+// multi-jours (par date croissante). render() insère un titre à la bascule.
 const sortedEvents = dedupEvents(EVENTS)
   .filter(notPast)
-  .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  .sort((a, b) => (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || ""));
 
 // ---------- Favoris (persistés via localStorage, partagés avec la vue Galerie) ----------
 // Clé stable = titre + date (data.js de prod minifié SANS uuid). On stocke
@@ -594,6 +606,7 @@ function cardHTML(ev, i) {
     <article class="card" style="animation-delay:${Math.min(i * 28, 360)}ms">
       <div class="card__media">
         ${media}
+        ${isNew(ev) ? '<span class="card__new">🆕 Nouveau</span>' : ""}
         <span class="card__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
         <span class="card__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>
         <button class="fav-btn ${fav ? "is-fav" : ""}" data-i="${i}" aria-pressed="${fav}"
@@ -616,7 +629,11 @@ function cardHTML(ev, i) {
 let renderList = [];
 function render() {
   renderList = sortedEvents.filter(matches);
-  els.grid.innerHTML = renderList.map(cardHTML).join("");
+  // Titre de bascule mono-jour → multi-jours (1er multi-jours de la liste triée).
+  const firstMulti = renderList.findIndex(isMulti);
+  els.grid.innerHTML = renderList.map((ev, i) =>
+    (i === firstMulti ? `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${renderList.length - firstMulti}</span></h2>` : "")
+    + cardHTML(ev, i)).join("");
   els.empty.hidden = renderList.length > 0;
   if (renderList.length === 0 && state.favOnly) {
     els.empty.textContent = "Aucun favori. Cliquez sur le ♥ d'une carte pour l'ajouter ici.";

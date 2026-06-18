@@ -3,63 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Que faire dans le Grand-Nancy ? — Agenda des événements</title>
-  <meta name="description" content="Toutes les affiches des événements à Nancy et dans le Grand Nancy. Cliquez une affiche pour l'agrandir et accéder aux infos.">
-  <link rel="canonical" href="https://agenda-grandnancy.fr/">
+  <title>Nouveautés — Que faire dans le Grand-Nancy ?</title>
+  <meta name="description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy : ce qui est nouveau cette semaine et ce mois-ci.">
+  <link rel="canonical" href="https://agenda-grandnancy.fr/nouveautes.html">
   <meta name="robots" content="index, follow">
   <!-- Open Graph (aperçu lors d'un partage Facebook/LinkedIn/WhatsApp) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Que faire dans le Grand-Nancy ?">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Que faire dans le Grand-Nancy ?">
-  <meta property="og:description" content="L'agenda des événements à Nancy et dans le Grand Nancy : concerts, expositions, spectacles, festivals, ateliers…">
-  <meta property="og:url" content="https://agenda-grandnancy.fr/">
+  <meta property="og:title" content="Nouveautés — Que faire dans le Grand-Nancy ?">
+  <meta property="og:description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy.">
+  <meta property="og:url" content="https://agenda-grandnancy.fr/nouveautes.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Que faire dans le Grand-Nancy ?">
-  <meta name="twitter:description" content="L'agenda des événements à Nancy et dans le Grand Nancy.">
+  <meta name="twitter:title" content="Nouveautés — Que faire dans le Grand-Nancy ?">
+  <meta name="twitter:description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy.">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E👑%3C/text%3E%3C/svg%3E">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#c4452f">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Agenda Nancy">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
+<body data-view="nouveautes">
   <header class="hero">
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
-      <h1 class="hero__title">Que faire dans le <span>Grand-Nancy</span> ?</h1>
-      <p class="hero__tagline">Enfin un site qui regroupe tous les événements locaux du Grand&nbsp;Nancy.</p>
-      <p class="hero__subtitle">Toutes les affiches des événements à venir. Cliquez sur une affiche pour la voir en grand et accéder aux infos.</p>
+      <h1 class="hero__title">🆕 Les <span>nouveautés</span></h1>
+      <p class="hero__tagline">Les derniers événements ajoutés à l'agenda, des plus récents aux plus anciens.</p>
+      <p class="hero__subtitle">Les événements tout juste ajoutés à l'agenda (7 derniers jours), regroupés par date d'ajout. Cliquez sur une affiche pour la voir en grand.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input type="search" id="search" placeholder="Rechercher un événement, un lieu…" aria-label="Rechercher un événement">
       </div>
       <div class="hero__views" role="tablist" aria-label="Mode d'affichage">
-        <span class="view-switch is-active" aria-current="page">🖼️ Galerie</span>
+        <a class="view-switch" href="index.html">🖼️ Galerie</a>
         <a class="view-switch" href="cartes.html">🗂️ Cartes</a>
-        <a class="view-switch" href="nouveautes.html">🆕 Nouveautés</a>
+        <span class="view-switch is-active" aria-current="page">🆕 Nouveautés</span>
       </div>
     </div>
   </header>
 
   <main class="container">
-    <nav class="datefilters" id="dateFilters" aria-label="Filtrer par date"></nav>
-    <nav class="filters" id="filters" aria-label="Filtrer par activité"></nav>
-    <div class="toolbar" id="toolbar" aria-label="Recherche avancée et favoris"></div>
-
     <p class="results-count" id="resultsCount"></p>
 
     <section class="gallery" id="gallery" aria-live="polite"></section>
 
-    <p class="empty" id="empty" hidden>Aucun événement ne correspond à votre recherche. Essayez un autre filtre ou un autre mot-clé.</p>
+    <p class="empty" id="empty" hidden>Aucune nouveauté pour le moment. Revenez bientôt&nbsp;!</p>
   </main>
 
   <footer class="footer">

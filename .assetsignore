@@ -1,0 +1,31 @@
+# Wrangler déploie tout le dossier racine. Ce fichier RESTREINT la publication
+# au strict front-end public : on n'expose NI le code des scrapers, NI .git,
+# NI les snapshots de données, NI les notes internes.
+#
+# Stratégie : tout ignorer (*), puis ré-autoriser (!) uniquement les fichiers
+# réellement servis au visiteur. Tout nouveau scraper/JSON/script est donc
+# exclu automatiquement, sans rien à modifier ici.
+
+# 1) Tout exclure par défaut (fichiers ET dossiers, y compris .git, ics-*, dist, node_modules)
+*
+.git
+.git/**
+
+# 2) Ré-autoriser uniquement le site public
+!index.html
+!cartes.html
+!nouveautes.html
+!app.js
+!galerie.js
+!data.js
+!style.css
+!robots.txt
+!sitemap.xml
+!_headers
+!site.webmanifest
+!apple-touch-icon.png
+!icon-192.png
+!icon-512.png
+!icon-maskable-512.png
+!favicon-16.png
+!favicon-32.png

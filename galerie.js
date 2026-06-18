@@ -35,6 +35,7 @@ function mergeOcc(occ) {
     free: occ.some(e => e.free),
     reservation: occ.some(e => e.reservation),
     subcats: [...new Set(occ.flatMap(e => e.subcats || []))],
+    addedAt: occ.map(e => e.addedAt).filter(Boolean).sort().pop(),
   };
 }
 
@@ -63,7 +64,24 @@ const TODAY_ISO = (() => { const d = new Date();
 // sans régénération de data.js.
 const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
 
-const sortedEvents = dedupEvents(EVENTS).filter(notPast).sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+// ── Nouveautés ──────────────────────────────────────────────────────────────
+// Un événement est « nouveau » pendant 7 JOURS à compter de son AJOUT sur une
+// source (champ addedAt posé par update-events.js, indexé sur l'uuid stable).
+// Le ruban 🆕 apparaît partout (galerie + cartes) et la page Nouveautés
+// (body[data-view="nouveautes"]) liste ces ajouts des 7 derniers jours.
+const daysAgoISO = (n) => { const d = new Date(); d.setDate(d.getDate() - n);
+  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
+const NEW_SINCE_ISO = daysAgoISO(7);
+const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
+const NOUVEAUTES = document.body.dataset.view === "nouveautes";
+
+// Un événement est « multi-jours » si sa date de fin tombe un jour APRÈS son
+// début (comparaison sur la partie date seule, pas l'horaire).
+const isMulti = (ev) => { const s = (ev.date || "").slice(0, 10), e = (ev.endDate || "").slice(0, 10); return !!e && e > s; };
+// Tri : d'abord TOUS les mono-jour (par date croissante), puis TOUS les
+// multi-jours (par date croissante). render() insère un titre à la bascule.
+const sortedEvents = dedupEvents(EVENTS).filter(notPast).sort((a, b) =>
+  (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || ""));
 
 // ---------- Favoris (persistés dans le navigateur via localStorage) ----------
 // Clé stable = titre + date (le data.js de prod est minifié SANS uuid). On stocke
@@ -449,6 +467,11 @@ let visible = [];
 
 function tileHTML(ev, i) {
   const dp = dateParts(displayDate(ev));
+  // Multi-jours : la pastille affiche la plage (jour de début → jour/mois de fin).
+  const ep = isMulti(ev) ? dateParts((ev.endDate || "").slice(0, 10)) : null;
+  const dateHTML = ep
+    ? `<span class="poster__date poster__date--range"><span class="day">${dp.day}</span><span class="month">${dp.month}</span><span class="poster__dateend">→ ${ep.day} ${ep.month}</span></span>`
+    : `<span class="poster__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>`;
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const media = ev.image
     ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
@@ -457,10 +480,11 @@ function tileHTML(ev, i) {
   const fav = isFav(ev);
   return `
     <div class="poster-wrap">
-      <button class="poster ${ev.image ? "" : "poster--noimg"}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
+      <button class="poster ${ev.image ? "" : "poster--noimg"} ${isNew(ev) ? "poster--new" : ""}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
         ${media}
+        ${isNew(ev) ? '<span class="poster__new">🆕 Nouveau</span>' : ""}
         <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
-        <span class="poster__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>
+        ${dateHTML}
         <span class="poster__fallback">${escapeHtml(ev.title)}</span>
         <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span></span>
       </button>
@@ -503,9 +527,45 @@ function updateFilterCounts() {
   });
 }
 
+// Page « Nouveautés » : ajouts des 7 derniers jours (nouvel événement apparu sur
+// une source), groupés par récence et triés du plus récent au plus ancien.
+// Réutilise tileHTML + la lightbox.
+function renderNouveautes() {
+  const base = sortedEvents
+    .filter(ev => ev.addedAt && ev.addedAt >= NEW_SINCE_ISO)
+    .filter(matchesNonCategory)
+    .sort((a, b) => (b.addedAt || "").localeCompare(a.addedAt || "") || (a.date || "").localeCompare(b.date || ""));
+  const groups = [
+    { label: "Ajoutés aujourd'hui", test: e => e.addedAt === TODAY_ISO },
+    { label: "Ajoutés ces 7 derniers jours", test: e => e.addedAt < TODAY_ISO && e.addedAt >= NEW_SINCE_ISO },
+  ];
+  visible = [];
+  let html = "";
+  for (const g of groups) {
+    const items = base.filter(g.test);
+    if (!items.length) continue;
+    html += `<h2 class="nouv-group">${g.label}<span>${items.length}</span></h2>`;
+    for (const ev of items) html += tileHTML(ev, visible.push(ev) - 1);
+  }
+  els.gallery.innerHTML = html;
+  els.empty.hidden = visible.length > 0;
+  if (!visible.length) els.empty.textContent =
+    "Aucune nouveauté ces 7 derniers jours pour le moment. Revenez bientôt : de nouveaux événements sont ajoutés régulièrement !";
+  els.count.textContent = visible.length ? `${visible.length} nouveauté${visible.length > 1 ? "s" : ""}` : "";
+  els.gallery.querySelectorAll(".poster").forEach(btn =>
+    btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
+  els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
+    btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(visible[Number(btn.dataset.i)], btn); }));
+}
+
 function render() {
+  if (NOUVEAUTES) return renderNouveautes();
   visible = sortedEvents.filter(matches);
-  els.gallery.innerHTML = visible.map(tileHTML).join("");
+  // Titre de bascule mono-jour → multi-jours (1er multi-jours de la liste triée).
+  const firstMulti = visible.findIndex(isMulti);
+  els.gallery.innerHTML = visible.map((ev, i) =>
+    (i === firstMulti ? `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${visible.length - firstMulti}</span></h2>` : "")
+    + tileHTML(ev, i)).join("");
   els.empty.hidden = visible.length > 0;
   if (visible.length === 0) {
     els.empty.textContent = state.favOnly
@@ -604,7 +664,13 @@ els.search.addEventListener("input", e => {
   searchTimer = setTimeout(() => { state.query = e.target.value.trim().toLowerCase(); render(); }, 120);
 });
 
-buildDateFilters();
-buildFilters();
-buildToolbar();
-render();
+// Sur la page Nouveautés : pas de filtres date/catégorie/avancés ni barre d'outils,
+// juste la recherche + la liste groupée par récence.
+if (NOUVEAUTES) {
+  render();
+} else {
+  buildDateFilters();
+  buildFilters();
+  buildToolbar();
+  render();
+}
