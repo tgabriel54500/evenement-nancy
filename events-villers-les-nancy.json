@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,11 +33,11 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-17",
-    "endDate": "2026-07-02",
+    "date": "2026-06-18",
+    "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
-    "place": "",
+    "place": "Clairlieu",
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-17",
+    "date": "2026-06-18",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -141,7 +141,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-21",
+    "date": "2026-06-20",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "",

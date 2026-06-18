@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1089",
-    "title": "NANCY - HAUT-DU-LIÈVRE : FÊTE DES JARDINS",
-    "category": "nature",
-    "catLabel": "Nature",
-    "catEmoji": "🌳",
-    "subcats": [],
-    "date": "2026-06-17",
-    "endDate": "2026-06-17",
-    "dateText": "",
-    "schedule": "14:00",
-    "place": "Autour de la Tour des Énergies",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_fete-jardins.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1089-nancy-haut-du-lievre-fete-des-jardins/2026-06-17-14-00.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-974",
     "title": "ESPACE CHAUDEAU LUDRES : LES GRANDS ENFANTS",
     "category": "spectacle",
