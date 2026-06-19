@@ -527,11 +527,11 @@
   {
     "uuid": "zen-veronic-dicaire",
     "title": "Véronic Dicaire",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
     "subcats": [
-      "Concert"
+      "Spectacle"
     ],
     "date": "2027-02-03",
     "endDate": "2027-02-03",
@@ -541,7 +541,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2021/02/Veronic-Dicaire_40x60_originale-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Veronic-Dicaire_40x60_originale-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/veronic-dicaire/",
     "source": "zenith-nancy"
   },

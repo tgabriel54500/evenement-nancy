@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-06-18 — 1321 événements à venir.
+// Généré le : 2026-06-19 — 1292 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -47,7 +47,7 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-06-18";
+const GENERATED_AT = "2026-06-19";
 
 const EVENTS = [
   {
@@ -66,7 +66,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8e28efd4-a907-11f0-84e1-bd2b83c22b6a/0/1-1_M_68ee5ea0df49e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8e28efd4-a907-11f0-84e1-bd2b83c22b6a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8e28efd4-a907-11f0-84e1-bd2b83c22b6a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
@@ -84,7 +85,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41673",
@@ -101,7 +103,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41673_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41673/les-guinguettes-de-l-ete-a-nancy/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41556",
@@ -118,7 +121,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41556_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41556/son-et-lumiere-nancy-la-belle-saison-place-stanislas/meurthe-et-moselle-nancy/concerts-spectacles-gratuits-ete",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41444",
@@ -135,7 +139,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41444_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41444/exposition-france-palette-paul-diemunsch-nancy/meurthe-et-moselle-nancy/exposition",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-fete-de-la-musique-du-relais-petite-enfance-essey-saint-max-et-malzeville",
@@ -154,43 +159,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_306962564.jpeg?itok=Yqb3ejSY",
     "url": "https://www.esseylesnancy.fr/agenda/fete-de-la-musique-du-relais-petite-enfance-essey-saint-max-et-malzeville",
-    "source": "essey"
-  },
-  {
-    "uuid": "vdv-5364",
-    "title": "Inscriptions « Vand’sport et Eveil sportif »",
-    "category": "jeune-public",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-06-17",
-    "endDate": "2026-06-24",
-    "dateText": "Du 3 septembre 2025 au 24 juin 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-12588",
-    "title": "Thés dansants",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-17",
-    "endDate": "2026-06-29",
-    "dateText": "Du 22 décembre 2025 au 29 juin 2026",
-    "schedule": "De 14h à 18h",
-    "place": "Salle des Fêtes",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/11/thes-dansants.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/thes-dansants/",
-    "source": "vandoeuvre"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7d08edba-220d-11f1-84ae-4bde2c413236",
@@ -199,7 +169,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "endDate": "2026-06-20",
     "dateText": "Mercredi 17 juin à 12h30 et samedi 20 juin à 14h30",
     "schedule": "14h30 - 15h30",
@@ -208,2872 +178,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7d08edba-220d-11f1-84ae-4bde2c413236/0/1-1_M_69b96512260bc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7d08edba-220d-11f1-84ae-4bde2c413236"
-  },
-  {
-    "uuid": "5cb3e0d2-64d5-11f1-89ce-ef63a37a37f8",
-    "title": "Blind Test avec Woodsdad & Bogdan",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "Jeudi 18 juin 2026",
-    "schedule": "de 17h à 22h",
-    "place": "Guinguette La Cageot'Folles - Parc Charles III",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5cb3e0d2-64d5-11f1-89ce-ef63a37a37f8/0/ORIGINE_M_6a296f0937440.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5cb3e0d2-64d5-11f1-89ce-ef63a37a37f8"
-  },
-  {
-    "uuid": "6b2ad334-6988-11f1-9983-9d2517c01f2a",
-    "title": "Fête d'été",
-    "category": "festival",
-    "subcats": [
-      "Concert",
-      "Activité - Animation",
-      "Culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "Jeudi 18 juin 2026",
-    "schedule": "de 18h30 à 22h",
-    "place": "Goethe-Institut",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6b2ad334-6988-11f1-9983-9d2517c01f2a/0/ORIGINE_M_6a31516e0e7c3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6b2ad334-6988-11f1-9983-9d2517c01f2a"
-  },
-  {
-    "uuid": "cf49022e-36e3-11f0-9e7a-334ed055a80e",
-    "title": "MALADIES : L'alimentation suspecte n°1 ?",
-    "category": "conference",
-    "subcats": [
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "Jeudi 18 juin 2026 - 18h30",
-    "schedule": "18h30",
-    "place": "Amphithéâtre Cuénot (Muséum-Aquarium de Nancy)",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cf49022e-36e3-11f0-9e7a-334ed055a80e/0/1-1_M_6a0430290618a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf49022e-36e3-11f0-9e7a-334ed055a80e"
-  },
-  {
-    "uuid": "ed881e42-5e55-11f1-83a2-3d652f082e3e",
-    "title": "Rosae - Garden Party Caritative",
-    "category": "activite",
-    "subcats": [
-      "Artisanat",
-      "La nature dans la ville",
-      "Culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "Jeudi 18 juin 2026",
-    "schedule": "de 19h à 22h",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ed881e42-5e55-11f1-83a2-3d652f082e3e/0/ORIGINE_M_6a1e8841a26ee.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ed881e42-5e55-11f1-83a2-3d652f082e3e"
-  },
-  {
-    "uuid": "fb-1694484188122333",
-    "title": "ROSAE - Garden party caritative",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 19:00",
-    "schedule": "19h",
-    "place": "Jardins botaniques du Grand Nancy et de l'Université de Lorraine",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/1694484188122333/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "39dac502-6314-11f1-ac7f-092ffab2cfc8",
-    "title": "Marie Curie, femme et scientifique",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-19",
-    "dateText": "Du 8 au 19 juin 2026",
-    "schedule": "de 08h à 18h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/39dac502-6314-11f1-ac7f-092ffab2cfc8/0/ORIGINE_M_6a267d82b3b9f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=39dac502-6314-11f1-ac7f-092ffab2cfc8"
-  },
-  {
-    "uuid": "ba3d091c-568b-11f0-b9d5-3b2c04c22725",
-    "title": "Concerts Apéritifs | Le Salon des Artistes",
-    "category": "musique-classique",
-    "subcats": [
-      "Concert",
-      "Musique de chambre / chorale",
-      "Culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-20",
-    "dateText": "Du 11 octobre 2025 au 20 juin 2026",
-    "schedule": "de 11h à 12h",
-    "place": "Opéra national de Nancy-Lorraine",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ba3d091c-568b-11f0-b9d5-3b2c04c22725/0/ORIGINE_M_6863f76169af7.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba3d091c-568b-11f0-b9d5-3b2c04c22725"
-  },
-  {
-    "uuid": "4b361bc2-1877-11f1-8be6-6d7d608b68c8",
-    "title": "GLISSANDO",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-21",
-    "dateText": "Du 10 avril au 21 juin 2026",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4b361bc2-1877-11f1-8be6-6d7d608b68c8/0/1-1_M_69a94fb06381a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b361bc2-1877-11f1-8be6-6d7d608b68c8"
-  },
-  {
-    "uuid": "0e51b472-1878-11f1-80ce-b538d1f4e26a",
-    "title": "Mesterou - Milcovitch. Deux artistes cinétiques",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-21",
-    "dateText": "Du 26 mars au 21 juin 2026",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0e51b472-1878-11f1-80ce-b538d1f4e26a/0/1-1_M_69b9837361fa2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0e51b472-1878-11f1-80ce-b538d1f4e26a"
-  },
-  {
-    "uuid": "85468a10-5fe7-11f1-b61a-0d101d7754bd",
-    "title": "De MJC en MJC",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-24",
-    "dateText": "Du 13 au 24 juin 2026",
-    "schedule": "de 09h à 18h",
-    "place": "MJC Lillebonne",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/85468a10-5fe7-11f1-b61a-0d101d7754bd/0/ORIGINE_M_6a212a04670f6.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=85468a10-5fe7-11f1-b61a-0d101d7754bd"
-  },
-  {
-    "uuid": "718988ea-736d-11f0-bf11-95252ac2c4f2",
-    "title": "Club Nature",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "à partir du 29 avril",
-    "schedule": "de 14h30 à 16h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/718988ea-736d-11f0-bf11-95252ac2c4f2/0/16-9_M_68c12d431c379.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=718988ea-736d-11f0-bf11-95252ac2c4f2"
-  },
-  {
-    "uuid": "d566a3fc-3a46-11f1-9330-c5efacb34ad0",
-    "title": "Les grâces divines",
-    "category": "exposition",
-    "subcats": [
-      "La nature dans la ville",
-      "Culture",
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-25",
-    "dateText": "Du 30 avril au 25 juin 2026",
-    "schedule": "8h à 19h",
-    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d566a3fc-3a46-11f1-9330-c5efacb34ad0/0/ORIGINE_M_69e2090cd1153.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d566a3fc-3a46-11f1-9330-c5efacb34ad0"
-  },
-  {
-    "uuid": "e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf",
-    "title": "Les rois du bluff !",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-28",
-    "dateText": "Les dimanches 14, 21, 28 juin 2026",
-    "schedule": "10h30",
-    "place": "Muséum-Aquarium de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf/0/1-1_M_69b7b91e1c6dc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf"
-  },
-  {
-    "uuid": "7312fa66-2795-11f1-9651-1de3f99a6b81",
-    "title": "Aquarelle",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "Les 10 juin & 4 juillet",
-    "schedule": "de 14h30 à 16h30",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7312fa66-2795-11f1-9651-1de3f99a6b81/0/1-1_M_6a1024becfcbf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7312fa66-2795-11f1-9651-1de3f99a6b81"
-  },
-  {
-    "uuid": "cx-le-kiosque-creatif-de-la-pulperie",
-    "title": "Le kiosque créatif de La Pulperie®",
-    "category": "exposition",
-    "subcats": [
-      "Atelier / jeux",
-      "Artisanat",
-      "Exposition",
-      "Jeune public"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "Du mercredi 3 juin 2026 au samedi 4 juillet 2026",
-    "schedule": "",
-    "place": "Pop Up Store - Place Monseigneur Ruch",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.curieux.net/img/e/2026/05/6a18061a3c062-le-kiosque-creatif-de-la-pulperie.png",
-    "url": "https://nancy.curieux.net/agenda/evenement/le-kiosque-creatif-de-la-pulperie",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "3183bd8a-5fe7-11f1-85d5-730b6f811f78",
-    "title": "France Palette - Paul Diemunsch",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "Du 23 mai au 4 juillet 2026",
-    "schedule": "de 14h à 19h",
-    "place": "Galerie Lillebonne - Espace Culturel d'Art Contemporain",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3183bd8a-5fe7-11f1-85d5-730b6f811f78/0/ORIGINE_M_6a212977dbc11.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3183bd8a-5fe7-11f1-85d5-730b6f811f78"
-  },
-  {
-    "uuid": "2a2914a8-1bc3-11f1-bb51-7533f1e6a79d",
-    "title": "À la rencontre de la gravure : des œuvres à la pratique",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée",
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "Samedi 25 avril, 13 juin et 4 juillet 2026",
-    "schedule": "10h - 12h30",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a2914a8-1bc3-11f1-bb51-7533f1e6a79d/0/1-1_M_69aed774511f9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a2914a8-1bc3-11f1-bb51-7533f1e6a79d"
-  },
-  {
-    "uuid": "6ba7a10c-fff3-11ef-a066-5bf873cf4f77",
-    "title": "Visite parfumée \"Made in Nancy pardi !\"",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "Samedi 11 avril et 4 juillet  à 18h",
-    "schedule": "18h - 19h30",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ba7a10c-fff3-11ef-a066-5bf873cf4f77/0/1-1_M_67d2afa34644c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ba7a10c-fff3-11ef-a066-5bf873cf4f77"
-  },
-  {
-    "uuid": "6ca70dbc-99f0-11f0-abe6-8bcd6d31c452",
-    "title": "Cœur de Marie",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-05",
-    "dateText": "Prolongation jusqu'au 5 juillet",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ca70dbc-99f0-11f0-abe6-8bcd6d31c452/0/1-1_M_69bac1b908655.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ca70dbc-99f0-11f0-abe6-8bcd6d31c452"
-  },
-  {
-    "uuid": "dab67e24-35c9-11ee-a790-db67e4a732b1",
-    "title": "Rencontrez les ambassadeurs de la prévention et du tri",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-12",
-    "dateText": "Mai-Juillet 2026",
-    "schedule": "Scène de tri lors du concert au Zénith à Maxéville",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dab67e24-35c9-11ee-a790-db67e4a732b1/0/16-9_M_64e36f05ef16a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dab67e24-35c9-11ee-a790-db67e4a732b1"
-  },
-  {
-    "uuid": "f034dab6-b796-11ef-810e-39ff70e0e079",
-    "title": "Marée cosmique",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-12",
-    "dateText": "Du 14 mars 2026 – 12 juillet 2026",
-    "schedule": "",
-    "place": "Muséum-Aquarium de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f034dab6-b796-11ef-810e-39ff70e0e079/0/1-1_M_69a850f826d0b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f034dab6-b796-11ef-810e-39ff70e0e079"
-  },
-  {
-    "uuid": "4b31d13c-4eb1-11f1-aff2-4dc15d0d2951",
-    "title": "Ateliers mobiles d'auto-réparation vélo de Dynamo",
-    "category": "activite",
-    "subcats": [
-      "Atelier de réparation"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-16",
-    "dateText": "Jusqu'au 16 juillet 2026",
-    "schedule": "16h00-19h00 - Nancy, \"Venez en voisin\" Plateau de Haye",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4b31d13c-4eb1-11f1-aff2-4dc15d0d2951/0/1-1_M_6a0464cda2dd3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b31d13c-4eb1-11f1-aff2-4dc15d0d2951"
-  },
-  {
-    "uuid": "5c843086-2118-11f1-a5fe-2ba20506611c",
-    "title": "Manières de mesurer les marées, une exposition d'Anna Moreno",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-01",
-    "dateText": "Du 1er mars au 1er août 2026",
-    "schedule": "de 14h à 19h",
-    "place": "openspace",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5c843086-2118-11f1-a5fe-2ba20506611c/0/ORIGINE_M_69b7c9aa1ee63.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c843086-2118-11f1-a5fe-2ba20506611c"
-  },
-  {
-    "uuid": "37270556-3e2e-11f1-9af1-c7e3b7da03fe",
-    "title": "Saison 2026",
-    "category": "spectacle",
-    "subcats": [
-      "Evénement"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-18",
-    "dateText": "Du 1er juin au 18 août",
-    "schedule": "à 15h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/37270556-3e2e-11f1-9af1-c7e3b7da03fe/0/1-1_M_69e8970fad46b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=37270556-3e2e-11f1-9af1-c7e3b7da03fe"
-  },
-  {
-    "uuid": "c2279008-1bbf-11f1-a2d6-a3661d1d7adb",
-    "title": "Atelier des vacances \"Le jardin suspendu\"",
-    "category": "jeune-public",
-    "subcats": [
-      "Visite guidée",
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-19",
-    "dateText": "Mercredi 15 avril, 15 juillet et 19 août",
-    "schedule": "10h30 - 12h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c2279008-1bbf-11f1-a2d6-a3661d1d7adb/0/1-1_M_69aed1aaeb7cb.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c2279008-1bbf-11f1-a2d6-a3661d1d7adb"
-  },
-  {
-    "uuid": "334646ce-599d-11f1-9590-d7008bf84f9e",
-    "title": "Ma créature Z’imaginaire",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-22",
-    "dateText": "à partir du 13 juin",
-    "schedule": "de 11h00 à 12h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/334646ce-599d-11f1-9590-d7008bf84f9e/0/1-1_M_6a169f3ee3ab5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=334646ce-599d-11f1-9590-d7008bf84f9e"
-  },
-  {
-    "uuid": "0a7f5fdc-1875-11f1-9839-8d21048d2dad",
-    "title": "OX. Les Loisirs créatifs",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-23",
-    "dateText": "Du 10 avril au 23 août 2026",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a7f5fdc-1875-11f1-9839-8d21048d2dad/0/1-1_M_69a95067d7807.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a7f5fdc-1875-11f1-9839-8d21048d2dad"
-  },
-  {
-    "uuid": "49293cfa-5b3f-11f1-b4cc-1d3414262583",
-    "title": "Joris Infanti",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-29",
-    "dateText": "Du 11 juin au 29 août 2026",
-    "schedule": "10h à 12h et 14h à 17h",
-    "place": "13",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/49293cfa-5b3f-11f1-b4cc-1d3414262583/0/ORIGINE_M_6a1959c772741.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=49293cfa-5b3f-11f1-b4cc-1d3414262583"
-  },
-  {
-    "uuid": "75b1a276-6cf9-11ee-aeb6-d574d0e49805",
-    "title": "Chemical kitchen",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-30",
-    "dateText": "Du 29 novembre 2025 au 30 août 2026",
-    "schedule": "",
-    "place": "Le Féru des sciences",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/75b1a276-6cf9-11ee-aeb6-d574d0e49805/0/1-1_M_68f753155f8ee.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=75b1a276-6cf9-11ee-aeb6-d574d0e49805"
-  },
-  {
-    "uuid": "f85b4aaa-00cd-11f1-94e5-eb84b69aa22a",
-    "title": "GeneZis",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-31",
-    "dateText": "Du 5 juin au 31 août",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f85b4aaa-00cd-11f1-94e5-eb84b69aa22a/0/1-1_M_69819d5fda62c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f85b4aaa-00cd-11f1-94e5-eb84b69aa22a"
-  },
-  {
-    "uuid": "af386e82-2ce4-11f1-b49a-9f5442e79d78",
-    "title": "Le marché de l'artisanat",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché",
-      "Artisanat"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-05",
-    "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
-    "schedule": "de 9h à 19h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/af386e82-2ce4-11f1-b49a-9f5442e79d78/0/ORIGINE_M_69cb94ecf3744.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af386e82-2ce4-11f1-b49a-9f5442e79d78"
-  },
-  {
-    "uuid": "a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
-    "title": "Les Essentiels",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-06",
-    "dateText": "Du 3 mai au 6 septembre 2026",
-    "schedule": "11h - 12h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a0bbdf14-21dc-11f1-9d24-c9865b070fb2/0/1-1_M_69b9131d03253.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a0bbdf14-21dc-11f1-9d24-c9865b070fb2"
-  },
-  {
-    "uuid": "9dc69216-1bc1-11f1-80ee-79539a25a29c",
-    "title": "Musée en famille \"L'aventure de Mousse\"",
-    "category": "jeune-public",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-13",
-    "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
-    "schedule": "10h30 - 11h30",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9dc69216-1bc1-11f1-80ee-79539a25a29c/0/1-1_M_69aed4fe7154f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dc69216-1bc1-11f1-80ee-79539a25a29c"
-  },
-  {
-    "uuid": "fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
-    "title": "Visite commentée de la maison Prouvé",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-26",
-    "dateText": "Les samedis du 30 mai au 26 septembre 2026",
-    "schedule": "à 14h15, 15h15 et 16h15",
-    "place": "",
-    "city": "",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fc936b6e-f9d7-11ef-b246-0f0fb51191cb/0/1-1_M_67c871e913a50.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fc936b6e-f9d7-11ef-b246-0f0fb51191cb"
-  },
-  {
-    "uuid": "189700de-187f-11f1-a28e-a1b57673fc46",
-    "title": "Musée en famille \"Histoire(s) de s'amuser...avec l'art\"",
-    "category": "jeune-public",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-27",
-    "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
-    "schedule": "10h30 - 11h30",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/189700de-187f-11f1-a28e-a1b57673fc46/0/1-1_M_69a95cab1caf8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=189700de-187f-11f1-a28e-a1b57673fc46"
-  },
-  {
-    "uuid": "775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
-    "title": "Villa d'exception",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-27",
-    "dateText": "Chaque samedi et dimanche de 11h à 12h",
-    "schedule": "11h - 12h",
-    "place": "Villa Majorelle",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/775633ee-49a3-11ef-88ed-2f0fa8a1a7a6/0/1-1_M_66a0d0ce7ebb9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=775633ee-49a3-11ef-88ed-2f0fa8a1a7a6"
-  },
-  {
-    "uuid": "4236f124-49a5-11ef-b4fb-2d7719a34d34",
-    "title": "Chefs-d'œuvre de l'École de Nancy",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-27",
-    "dateText": "Chaque samedi et dimanche de 15h à 16h",
-    "schedule": "15h - 16h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4236f124-49a5-11ef-b4fb-2d7719a34d34/0/1-1_M_66a0d3c01738b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4236f124-49a5-11ef-b4fb-2d7719a34d34"
-  },
-  {
-    "uuid": "2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
-    "title": "Visite flash \"le musée de l'Ecole de Nancy en un clin d'oeil\"",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-30",
-    "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
-    "schedule": "14h30 - 15h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a07a11a-1bbe-11f1-97a4-5b40f9b19584/0/1-1_M_69aecfa82fece.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a07a11a-1bbe-11f1-97a4-5b40f9b19584"
-  },
-  {
-    "uuid": "7a527efe-84e9-11f0-a72a-4d30edf7f41e",
-    "title": "Visite flash",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-09-30",
-    "dateText": "Tous les samedis",
-    "schedule": "14h30 - 15h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7a527efe-84e9-11f0-a72a-4d30edf7f41e/0/1-1_M_68b1c1d3ba94a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a527efe-84e9-11f0-a72a-4d30edf7f41e"
-  },
-  {
-    "uuid": "83cc27f4-1d1f-11f1-a4ae-831444a75800",
-    "title": "Yoga au jardin",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-03",
-    "dateText": "à partir du 26 avril",
-    "schedule": "de 10h00 à 11h30",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83cc27f4-1d1f-11f1-a4ae-831444a75800/0/1-1_M_69b1200ad9729.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83cc27f4-1d1f-11f1-a4ae-831444a75800"
-  },
-  {
-    "uuid": "335b74a8-3cac-11f1-8634-1f0e75f21a65",
-    "title": "Banquet d’images",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-07",
-    "dateText": "Du 7 mai au 7 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/335b74a8-3cac-11f1-8634-1f0e75f21a65/0/1-1_M_69e60f88ed280.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=335b74a8-3cac-11f1-8634-1f0e75f21a65"
-  },
-  {
-    "uuid": "176d7f20-38a6-11f1-af3b-579a15d24778",
-    "title": "Brocante Solidaire",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-09",
-    "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
-    "schedule": "de 07h30 à 18h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/176d7f20-38a6-11f1-af3b-579a15d24778/0/ORIGINE_M_69df4ddf78daa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=176d7f20-38a6-11f1-af3b-579a15d24778"
-  },
-  {
-    "uuid": "62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
-    "title": "Initiez-vous aux gestes qui sauvent",
-    "category": "citoyennete",
-    "subcats": [
-      "Citoyenneté",
-      "Santé"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-10",
-    "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
-    "schedule": "de 9h30 à 11h30",
-    "place": "Hôtel de Ville - mairie de Nancy",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/62cd9904-9d5f-11ed-981d-012a3d3c5c5b/0/ORIGINE_M_65e6efcdb6345.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62cd9904-9d5f-11ed-981d-012a3d3c5c5b"
-  },
-  {
-    "uuid": "8291494e-1c63-11f1-8396-878ef3dd6ee6",
-    "title": "Balade nature",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-11",
-    "dateText": "Vendredi 24 avril",
-    "schedule": "de 14h00 à 16h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8291494e-1c63-11f1-8396-878ef3dd6ee6/0/1-1_M_69afe4c699b31.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8291494e-1c63-11f1-8396-878ef3dd6ee6"
-  },
-  {
-    "uuid": "90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
-    "title": "Atelier photo",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-11",
-    "dateText": "Jeudi 23 avril",
-    "schedule": "de 10h00 à 12h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8/0/1-1_M_69afe869c2d15.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8"
-  },
-  {
-    "uuid": "4d23db94-1d4b-11f1-9aa6-65d57d322806",
-    "title": "Sur le vif !",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-11",
-    "dateText": "Les 22, 23 avril et 11 octobre",
-    "schedule": "de 10h00 à 12h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4d23db94-1d4b-11f1-9aa6-65d57d322806/0/1-1_M_69bbfb3165da1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d23db94-1d4b-11f1-9aa6-65d57d322806"
-  },
-  {
-    "uuid": "5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
-    "title": "Sentiers botaniques de Lorraine",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-11",
-    "dateText": "Du 10 avril au 11 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5581cc5c-1d2c-11f1-a36e-1b1f40dbef70/0/1-1_M_69b1357407d3f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5581cc5c-1d2c-11f1-a36e-1b1f40dbef70"
-  },
-  {
-    "uuid": "02061cf0-1c5e-11f1-92e4-47181f49b69f",
-    "title": "À pas feutrés",
-    "category": "exposition",
-    "subcats": [
-      "Exposition",
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-11",
-    "dateText": "Du 10 avril au 11 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/02061cf0-1c5e-11f1-92e4-47181f49b69f/0/1-1_M_69afdb41ce725.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=02061cf0-1c5e-11f1-92e4-47181f49b69f"
-  },
-  {
-    "uuid": "241ca2dc-001b-11f1-a595-d142e589f5c5",
-    "title": "La Bergamote de Nancy - 2026, une année de célébration",
-    "category": "festival",
-    "subcats": [
-      "Gastronomie",
-      "Artisanat",
-      "Festival",
-      "Activité - Animation"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-25",
-    "dateText": "Du 4 février au 31 octobre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/241ca2dc-001b-11f1-a595-d142e589f5c5/0/ORIGINE_M_698071a480d66.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=241ca2dc-001b-11f1-a595-d142e589f5c5"
-  },
-  {
-    "uuid": "0a90745c-3710-11f1-8e35-c550c58884ef",
-    "title": "Randonnées à Rollers",
-    "category": "activite",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-30",
-    "dateText": "Du 3 avril au 30 octobre 2026",
-    "schedule": "à 20h30",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a90745c-3710-11f1-8e35-c550c58884ef/0/ORIGINE_M_69dca4a23e793.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a90745c-3710-11f1-8e35-c550c58884ef"
-  },
-  {
-    "uuid": "9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
-    "title": "Coulées de bergamote",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "Du 4 février au 31 octobre 2026",
-    "schedule": "à l'Office de tourisme",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c1bc6a0-eadb-11f0-956c-8d11b4d490df/0/1-1_M_695ccb1c10f3e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c1bc6a0-eadb-11f0-956c-8d11b4d490df"
-  },
-  {
-    "uuid": "0cfe0034-caa9-11f0-91ae-5379b006b74f",
-    "title": "Cours de jardinage 2026",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-11-06",
-    "dateText": "à partir du 20 février",
-    "schedule": "à 14h30",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0cfe0034-caa9-11f0-91ae-5379b006b74f/0/16-9_M_6926d35e959ed.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0cfe0034-caa9-11f0-91ae-5379b006b74f"
-  },
-  {
-    "uuid": "cd165d82-220e-11f1-8007-79f1c5828d09",
-    "title": "Hugo Drubay. Là où les arbres prennent forme",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-01-03",
-    "dateText": "Du 6 juin 2026 au 3 janvier 2027",
-    "schedule": "",
-    "place": "Villa Majorelle",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd165d82-220e-11f1-8007-79f1c5828d09/0/1-1_M_69e613070fbe9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd165d82-220e-11f1-8007-79f1c5828d09"
-  },
-  {
-    "uuid": "fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
-    "title": "Moches! 2",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-01-03",
-    "dateText": "30 mai 2026 > 03 janvier 2027",
-    "schedule": "",
-    "place": "Muséum-Aquarium de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa3c2c70-f9d2-11ef-a672-57c2cdff87fb/0/1-1_M_69cb6a4dad6ca.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa3c2c70-f9d2-11ef-a672-57c2cdff87fb"
-  },
-  {
-    "uuid": "20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
-    "title": "Cochon d'Inde, mon ami",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-01-03",
-    "dateText": "Du 22 mai 2026 au 3 janvier 2027",
-    "schedule": "de 13h30 à 16h45",
-    "place": "Parc de la pépinière",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/20cb3198-4a26-11f1-ad5d-2de7a4b036b8/0/ORIGINE_M_69fcaa2089427.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=20cb3198-4a26-11f1-ad5d-2de7a4b036b8"
-  },
-  {
-    "uuid": "c66dc65e-1878-11f1-8b74-9f225bb9de47",
-    "title": "Charles Cartier-Bresson et les arts : du collectionneur au dessinateur",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-03-31",
-    "dateText": "À partir du 26 mars 2026",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c66dc65e-1878-11f1-8b74-9f225bb9de47/0/1-1_M_69a95225f0508.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c66dc65e-1878-11f1-8b74-9f225bb9de47"
-  },
-  {
-    "uuid": "35d1f88c-0159-11ef-bc5c-27495689ee18",
-    "title": "Récits décoloniaux. Faut-il brûler les musées ?",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-05-31",
-    "dateText": "Jusqu'au 31 mai 2027",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/35d1f88c-0159-11ef-bc5c-27495689ee18/0/1-1_M_666c3f8bd93f9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d1f88c-0159-11ef-bc5c-27495689ee18"
-  },
-  {
-    "uuid": "1fab231a-43c1-11f1-bde1-db822db513d6",
-    "title": "Merveilleuses molécules végétales",
-    "category": "exposition",
-    "subcats": [
-      "Exposition",
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-06-30",
-    "dateText": "À partir du 5 juin",
-    "schedule": "sur les horaires d'ouverture du parc",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1fab231a-43c1-11f1-bde1-db822db513d6/0/1-1_M_69f1efe0c1f7e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1fab231a-43c1-11f1-bde1-db822db513d6"
-  },
-  {
-    "uuid": "4bddf292-43ac-11f1-8986-5d2c90db8092",
-    "title": "Mystérieuse bergamote",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2027-06-30",
-    "dateText": "À partir du 5 juin",
-    "schedule": "sur les horaires d'ouverture des serres",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4bddf292-43ac-11f1-8986-5d2c90db8092/0/1-1_M_69f1cd2035cee.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bddf292-43ac-11f1-8986-5d2c90db8092"
-  },
-  {
-    "uuid": "dn-22281",
-    "title": "Visite guidée - Maison Bergeret",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "24",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/363/737-737013834_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-maison-bergeret/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20524",
-    "title": "La Bergamote de Nancy - 30 ans IGP -  Exposition - Mystérieuse Bergamote",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "100",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/730/737-737018572_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/la-bergamote-de-nancy-30-ans-igp-exposition-mysterieuse-bergamote/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "al-6152159",
-    "title": "Exposition - Nancy, Art nouveau par nature",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-11-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "Destination - Office de Tourisme",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/0c/8f/0c8ffb7cd4657a3e301a53d08f594dc379635ead2459fba848304ea9b474c5b2-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6152159-exposition-nancy-art-nouveau-par-nature",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "dn-20492",
-    "title": "Exposition Permanente - Laurence Jenkell",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2027-11-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "14",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/017/737-737018351_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-permanente-laurence-jenkell/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20607",
-    "title": "Exposition - Cabinet d'Art Graphique - Mesterou - Milcovitch",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "3",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/baf/737-737018654_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-cabinet-dart-graphique-mesterou-milcovitch/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20632",
-    "title": "Exposition - Glissando - Tania Mouraud",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "3",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b31/737-737018793_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-glissando-tania-mouraud/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-23478",
-    "title": "Guinguette Estivale - Le Cookoon",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/df0/737-737015418_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-le-cookoon/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "al-6180969",
-    "title": "Guinguette Estivale - Carnot",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "Place Carnot",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/df/34/df34ecd41c86a2b4de9aac9d325e767bb4c723123e64c2810e29e3c234fb4739-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6180969-guinguette-estivale-carnot",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "dn-20455",
-    "title": "Atelier théâtre 8-12ans",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "126 bis",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0e6/737-737017525_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-8-12ans/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20463",
-    "title": "Métro'folies - Exposition - Artdeco)))",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "3",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/3fd/737-737018130_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/metrofolies-exposition-artdeco/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20605",
-    "title": "Exposition - Manières de mesurer les Marées - Anna Moreno",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "14",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/c62/737-737018828_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-manieres-de-mesurer-les-marees-anna-moreno/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-21682",
-    "title": "Exposition - Le cinéma c'est quoi ?",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "2",
-    "city": "Houdemont",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/d8f/737-737018901_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-le-cinema-cest-quoi/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-22593",
-    "title": "Exposition - Là où les Arbres Prennent Forme",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "1",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/50a/737-737019032_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-la-ou-les-arbres-prennent-forme/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-23402",
-    "title": "Exposition - Camille Gauthier",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "4",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/c8f/737-737019232_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-camille-gauthier/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "vln-553",
-    "title": "Exposition - Laque : 4 regards",
-    "category": "exposition",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "Galerie Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "dn-23483",
-    "title": "Guinguette Estivale - Les Folies de la Cure d'Air",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "54",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/77d/737-737015414_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-les-folies-de-la-cure-dair/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "al-6180950",
-    "title": "Guinguette Estivale - la Paillotte de la Craffe",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "Porte de la Craffe",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/6e/ef/6eeffc80bb8e8bba24d4b37019242f27872006f3e1bd783b6484973de125bbab-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6180950-guinguette-estivale-la-paillotte-de-la-craffe",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "dn-23482",
-    "title": "Guinguette Estivale - Parc Blondlot",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "4",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0d4/737-737015412_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-parc-blondlot/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "al-6180949",
-    "title": "Guinguette Estivale - la Cageot'Folle",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc Charles III",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/98/b3/98b3f50fc0a4156a6d845ef1b72e1346decb4e7a019902d19e5c2ebc2e515c61-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6180949-guinguette-estivale-la-cageot-folle",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "dn-23485",
-    "title": "Guinguette Estivale - L'Oasis",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "83",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/af1/737-737019264_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-loasis/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20457",
-    "title": "Atelier théâtre 13-16ans",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "126 bis",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/20d/737-737017526_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-13-16ans/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-23479",
-    "title": "Guinguette Estivale - Laxou",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "46",
-    "city": "Laxou",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/eab/737-737019266_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-laxou/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20459",
-    "title": "Réunion OpenStreetMap",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "164",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/3e4/737-737017979_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/reunion-openstreetmap/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20456",
-    "title": "Atelier théâtre adulte - 17ans et plus",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "126 bis",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/624/737-737017527_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-adulte-17ans-et-plus/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20458",
-    "title": "Visite commentée - Villa Majorelle",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "1",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/304/737-737016629_9-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-villa-majorelle/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-21995",
-    "title": "Visite commentée - Maison Prouvé",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "4",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/1bb/737-737015403_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-maison-prouve/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-22277",
-    "title": "Visite Guidée - Centre historique - PMR",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/537/737-737016881_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-centre-historique-pmr/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20465",
-    "title": "Visite Guidée - Centre historique",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/9fc/737-737016357_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-centre-historique/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-22097",
-    "title": "Visite Commentée - Chefs d'œuvre de l'École de Nancy",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-27",
-    "dateText": "",
-    "schedule": "",
-    "place": "38",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/804/737-737015575_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-chefs-doeuvre-de-lecole-de-nancy/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-22098",
-    "title": "Visite Flash - Musée de l'école de Nancy",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "38",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/83c/737-737018670_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-flash-musee-de-lecole-de-nancy/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "dn-20616",
-    "title": "Visite Flash - Le Musée de l'École de Nancy en un Clin d'Œil",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "38",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/ee9/737-737018837_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-flash-le-musee-de-lecole-de-nancy-en-un-clin-doeil/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "cx-serwan",
-    "title": "Serwan",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "Le jeudi 18 juin 2026",
-    "schedule": "",
-    "place": "salon du Haut Château",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/06/6a2a5daa92a32-serwan.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/serwan",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
-    "title": "Exposition Permanent Laurence Jenkell à Nancy",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-11-30",
-    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
-    "schedule": "",
-    "place": "L'autre Galerie",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "cx-expo-les-graces-divines",
-    "title": "Expo \"Les grâces divines\"",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-25",
-    "dateText": "Du jeudi 30 avril 2026 au jeudi 25 juin 2026",
-    "schedule": "",
-    "place": "Bibliothèque de Lettres & SHS",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/04/69e20d7d6e13d-expo-les-graces-divines.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/expo-les-graces-divines",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "cx-ici-on-boit-de-l-eau",
-    "title": "Ici On Boit de l’Eau",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-19",
-    "dateText": "Du vendredi 1 mai 2026 au dimanche 19 juillet 2026",
-    "schedule": "",
-    "place": "Galerie Les Volets Bleus",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/04/69e261387dec7-ici-on-boit-de-l-eau.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/ici-on-boit-de-l-eau",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "cx-exposition-marie-curie-femme-et-scientifique",
-    "title": "Exposition « Marie Curie, femme et scientifique »",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-19",
-    "dateText": "Du lundi 8 juin 2026 au vendredi 19 juin 2026",
-    "schedule": "",
-    "place": "Ensic",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/06/6a24179805391-exposition-marie-curie-femme-et-scientifique.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/exposition-marie-curie-femme-et-scientifique",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "cx-nancy-open-air",
-    "title": "Nancy Open Air",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-12",
-    "dateText": "Du vendredi 12 juin 2026 au dimanche 12 juillet 2026",
-    "schedule": "",
-    "place": "Le Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/02/699c10318fc0f-nancy-open-air.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/nancy-open-air",
-    "source": "curieux-net"
-  },
-  {
-    "uuid": "vln-554",
-    "title": "Exposition - Camille Gauthier, ébéniste et industriel de l'Art Nouveau",
-    "category": "exposition",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-08-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "Le château Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0612_EXPO_CAMILLE_GAUTHIER__c__Musee_de_l_Ecole_de_Nancy.png",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-camille-gauthier",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-569",
-    "title": "Permanences - Avec vous pour vos droits",
-    "category": "citoyennete",
-    "subcats": [
-      "Citoyenneté",
-      "Solidarité",
-      "Sénior",
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-07-30",
-    "dateText": "",
-    "schedule": "15h30 > 18h",
-    "place": "Clairlieu",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-542",
-    "title": "Café solidaire - Espace de vie sociale",
-    "category": "citoyennete",
-    "subcats": [
-      "Solidarité",
-      "Culture",
-      "Petite enfance"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "14h à 17h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/cafes_solidaires_evs_mjc_jean_savine.jpeg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cafe-solidaire-espace-de-vie-sociale",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "al-6141315",
-    "title": "Exposition Joris Infanti",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "Galerie de la Fondation Solange Bertrand",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/39/c7/39c779c7d5c60a6a8938dbbec721510c96811aea0ff7890fe142e315e9496cb6-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6141315-exposition-joris-infanti",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5983524",
-    "title": "Manières de mesurer les marées",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "Openspace",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/2a/1b/2a1b4c3d9d02c9f7ce3fe2d1c38167c95e264376cad2e6c0af9940cff4186502-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/5983524-manieres-de-mesurer-les-marees",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6046716",
-    "title": "France Palette – Exposition de Paul Diemunsch",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "Galerie Lillebonne",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/2a/4c/2a4c45460bd9ce1119132c3bd0f1971c81a81cbdc2a7508dcdb5a587fe126436-large.jpg",
-    "url": "https://www.alentoor.fr/nancy/agenda/6046716-france-palette-exposition-de-paul-diemunsch",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6062587",
-    "title": "Expo photos \"Dans l'oeil du photographe - Fortifications de Toul et du Toulois\"",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "Musée d'Art et d'Histoire Michel Hachet",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/dd/d9/ddd9640b0ed15f8b18bce480bd15305ed69562be6110fa29e94772f6b52cb3d1-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6062587-expo-photos-dans-l-oeil-du-photographe-fortifications-de-toul-et-du-toulois",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6186507",
-    "title": "Visite guidée de la collégiale Saint-Gengoult",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "Collégiale Saint-Gengoult",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/19/e9/19e9341d50d13ca12d80970c5bac84fa3c9e64e31c57dd6bff382976b634129a-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6186507-visite-guidee-de-la-collegiale-saint-gengoult",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6077568",
-    "title": "Exposition « Exploratrice du Merveilleux »",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "Place de la Cagnotte",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/0a/57/0a575a10cacf49b25d4675bfc3966e06ae6e854b0fbb2fe3fb6b3d69a6c28165-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/6077568-exposition-exploratrice-du-merveilleux",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6015536",
-    "title": "Exposition Ici on Boit de l'Eau",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "ville médiévale",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ba/0e/ba0e88d9ccbc9cd2389621036d7cc23bf5617ebbd3f989b042666100d21d5a3e-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/6015536-exposition-ici-on-boit-de-l-eau",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6059849",
-    "title": "Exposition - atelier d'artiste - betty guzzo",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-27",
-    "dateText": "",
-    "schedule": "",
-    "place": "8 rue du Couchant",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/71/f8/71f8a7b2b2dccbed49e79a43ff054ff4b19b0b86d69eb6ced2c7f2b04def0172-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/6059849-exposition-atelier-d-artiste-betty-guzzo",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5984278",
-    "title": "Les marchés de la halle",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "Esplanade Lerebourg",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/e5/05/e5052b656d3a0089b5908157687fe412ff6e222e41151a9c54a1068018107181-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/5984278-les-marches-de-la-halle",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6162613",
-    "title": "Spectacle de marionnettes",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "99 ter rue des Jardins Fleuris",
-    "city": "Pompey",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/32/66/3266697902ce1e1ff7ecbe25d60bc54114a38ab1cf72ed3495cca5c43dbb9fd2-large.jpg",
-    "url": "https://www.alentoor.fr/pompey/agenda/6162613-spectacle-de-marionnettes",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5836313",
-    "title": "Visites guidées du fort du Vieux Canton",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "Forêt de Villey-Saint-Étienne",
-    "city": "Villey-Saint-Étienne",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ca/19/ca19673637a5d7a3e82b4e3705fe68bdfec64047486582bb95678ccd98264136-large.jpg",
-    "url": "https://www.alentoor.fr/villey-saint-etienne/agenda/5836313-visites-guidees-du-fort-du-vieux-canton",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6146489",
-    "title": "Fête de la musique",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Place du village",
-    "city": "Malleloy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/festival-medium.jpg",
-    "url": "https://www.alentoor.fr/malleloy/agenda/6146489-fete-de-la-musique",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6077518",
-    "title": "Initiation pêche pour enfants",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "Étang du Malnoy",
-    "city": "Champigneulles",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/9c/df/9cdfbc0ade9fe2bac9efe6c6ca73aa6e4411c1b2f212fadbb91374e950b5a699-large.jpg",
-    "url": "https://www.alentoor.fr/champigneulles/agenda/6077518-initiation-peche-pour-enfants",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6012062",
-    "title": "Visite des Brasseries de Champigneulles",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-11",
-    "dateText": "",
-    "schedule": "",
-    "place": "Rue Gabriel Bour",
-    "city": "Champigneulles",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/photos/classifieds/49/41/4941b2d69300ef60213140a29f2ce67c6ee99dbf81687260aa7ae01d95db0549-large.jpg",
-    "url": "https://www.alentoor.fr/champigneulles/agenda/6012062-visite-des-brasseries-de-champigneulles",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5840754",
-    "title": "Exposition – le Fer en Héritage(s)",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "Abbaye des Prémontrés",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/exposition-medium.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5840754-exposition-le-fer-en-heritage-s",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172477",
-    "title": "J'adopt'un Artiste",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "Commerces du centre ville",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/c1/fb/c1fbf9ea3188340346e37489d93f20b2dbafe86b0021c939df7ca782dd03fc88-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172477-j-adopt-un-artiste",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5279789",
-    "title": "Atelier - Travail du verre au fusing",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "Esprit Verre",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/photos/classifieds/84/12/8412a2df90936a63bba8b96525e1d23a7049d8da5826942d2bbb3837222a9afb-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5279789-atelier-travail-du-verre-au-fusing",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5179130",
-    "title": "Visite Guidée – Brasseurs de Lorraine",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-12-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "3 rue du Bois-le-Prêtre",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/00/09/000997627cf1ab657f187bbde84b90cbf519ccd1279bff7c8d1f62952084daf2-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5179130-visite-guidee-brasseurs-de-lorraine",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5283137",
-    "title": "Visite Guidée du Monument Historique",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "9 rue saint Martin",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/photos/classifieds/6f/30/6f304f7ccfbae5f7f88f4104459cc6d57c549473195ec61b77bb16b4382fe8aa-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5283137-visite-guidee-du-monument-historique",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5283143",
-    "title": "Visite Guidée de la Bibliothèque",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "9 rue saint Martin",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/e8/92/e892e2abd2cc1da51118434c04b601bcebb893dc177e7164529e9851051453f5-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5283143-visite-guidee-de-la-bibliotheque",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6140544",
-    "title": "Ateliers Lumineux : abat-jour contrecollé",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-11",
-    "dateText": "",
-    "schedule": "",
-    "place": "Boutique-Atelier Esprit Verre",
-    "city": "Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/77/2e/772eef893f9070d5de050d8039785e3247c7a81ff408eadf5fbcece5c963f435-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6140544-ateliers-lumineux-abat-jour-contrecolle",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6140521",
-    "title": "Exposition – la déportation pour motif d'homosexualité",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "Château de Dieulouard",
-    "city": "Dieulouard",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/6b/b5/6bb571ccc352bb642eaafd833b9306824e9d7d551612af1353c019d78c9282f0-large.jpg",
-    "url": "https://www.alentoor.fr/dieulouard/agenda/6140521-exposition-la-deportation-pour-motif-d-homosexualite",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5991601",
-    "title": "Bébés lecteurs",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "Médiathèque ludothèque intercommunale",
-    "city": "Delme",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/4b/72/4b7264693a9f3d817d5f6f9a41711d1d4bc32b525db36c7ca492364b11cdb3c2-large.jpg",
-    "url": "https://www.alentoor.fr/delme/agenda/5991601-bebes-lecteurs",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-3456541",
-    "title": "Marché hebdomadaire",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-12-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "Place du Général de Gaulle",
-    "city": "Delme",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/f1/b0/f1b06f1e0397badadec3ce16e5498789438de6bcf94cf4d605c3e504f45a0f00-large.jpg",
-    "url": "https://www.alentoor.fr/delme/agenda/3456541-marche-hebdomadaire",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6138278",
-    "title": "Lectures / Atelier '(Super) Héros'",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "7 impasse St Germain",
-    "city": "Delme",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/photos/classifieds/1e/15/1e159e447615e2e63a79b7578ae46a57dbedca8048c81aface6637106d30856d-large.jpg",
-    "url": "https://www.alentoor.fr/delme/agenda/6138278-lectures-atelier-super-heros",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6180088",
-    "title": "Concert - Serwan - Jeudi de la Culture",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "de 20h à 21h30",
-    "place": "Salons du Haut Château",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/db/23/db23e8bb99a17cb4ac69cdc2b785e76fd3adbf82c4ff638b439afae1a00d089b-large.jpg",
-    "url": "https://www.alentoor.fr/essey-les-nancy/agenda/6180088-concert-serwan-jeudi-de-la-culture",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6144436",
-    "title": "Commémoration « Appel du Général de Gaulle »",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc des Bosquets",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/99/3d/993dfc64d4ab1de10f206447faec05efdb96043327ba79c668d3049baf58912a-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6144436-commemoration-appel-du-general-de-gaulle",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6074343",
-    "title": "Exposition les visages de la ruralité volet II",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Commun Sud du Château Galerie du Cri des Lumières",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ba/c5/bac5f88601f5f8990d1a06b28676021bfbb014467a576f2ce35a15a54e421040-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6074343-exposition-les-visages-de-la-ruralite-volet-ii",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6123678",
-    "title": "Exposition \"Les oiseaux\" dans les faïences de Lunéville et Saint-Clément",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "Salle Vayringe au Château de Lunéville",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/14/65/14658d2e685a290205494b1316f5d046f3decf5164680eda5da68ab89e024e32-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6123678-exposition-les-oiseaux-dans-les-faiences-de-luneville-et-saint-clement",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5824718",
-    "title": "Exposition - \"Les grandes époques de la mode\"",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2027-03-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "Commun sud",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/a6/0f/a60ffa790396be4add3a8fdf7a0c862e57bc4d628e7a9686ae93675c55083d5e-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5824718-exposition-les-grandes-epoques-de-la-mode",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5909019",
-    "title": "Visites immersives des appartements ducaux !",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "5 place de la 2ème Dc",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/60/4d/604de7ffb25afa5fca39e5f6c9fb77409dbbc90f4b38754c7ba20760255c2043-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5909019-visites-immersives-des-appartements-ducaux",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6080735",
-    "title": "Brocante du comité des fêtes de Lamath Xermaménil",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Lamath",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/5f/f5/5ff5a3557becb10422dc4c0e87cc784802e5a0ed0ca83f928659c271dd85703e-large.jpg",
-    "url": "https://www.alentoor.fr/lamath/agenda/6080735-brocante-du-comite-des-fetes-de-lamath-xermamenil",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5791888",
-    "title": "Exposition - Ailes de soie et de sel, butineurs et voltigeurs",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "Office de Tourisme du Pays du Saulnois",
-    "city": "Vic-sur-Seille",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ae/cd/aecd142ca46140458c07ae7084d7219598ba2e5a79005b0b3e5bd1bcec7541ff-large.jpg",
-    "url": "https://www.alentoor.fr/vic-sur-seille/agenda/5791888-exposition-ailes-de-soie-et-de-sel-butineurs-et-voltigeurs",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6140624",
-    "title": "Exposition - Beaux Gestes ! savoir-faire d’exception XVIIIe – XXIe S.",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Salle Boffrand - escalier d'honneur Nord",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/7a/cd/7acdf047cb6619b2d1e2757f31c8b4d43b9f13873c39d54d97b61ab9e6f50041-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6140624-exposition-beaux-gestes-savoir-faire-d-exception-xviiie-xxie-s",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5922412",
-    "title": "Exposition les belles heures du château de lunéville",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Commun Nord du Château",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/98/84/9884e14570646823d1c2876107ce9548f654625f6181117c6fee0e7cf8930e52-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5922412-exposition-les-belles-heures-du-chateau-de-luneville",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5922413",
-    "title": "Exposition Parade. métiers d’art en majesté chez les ducs et duchesses de Lorraine",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Espaces Restaurés",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/77/5d/775d128b0abe13b3d632f99325dc726394d3b12ccf1eecc7838d425f99cf4f3d-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5922413-exposition-parade-metiers-d-art-en-majeste-chez-les-ducs-et-duchesses-de-lorraine",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5753332",
-    "title": "Exposition de Gilles Leimdorfer",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc des Bosquets",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/c5/80/c5805c788f34bd494388b75a837c0e62c328c8f2709239b8b8572bc6d1e9d644-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5753332-exposition-de-gilles-leimdorfer",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6041089",
-    "title": "Programme animations Hôtel Abbatial",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "Hôtel Abbatial",
-    "city": "Lunéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/87/2c/872c2b6d5f7db10f8572bcae0a9dd5ec8b477304890866f182f247dd383bac8b-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6041089-programme-animations-hotel-abbatial",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5873522",
-    "title": "Exposition - ‘Louis XVI, l’inconnu de Versailles‘",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "Hôtel Abbatial",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/9a/f6/9af67cd4d4640e2537b5bc7c69781f7aa2a282f26cb6cbe973501bd6d3bf5c21-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5873522-exposition-louis-xvi-l-inconnu-de-versailles",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5485761",
-    "title": "Exposition reconstitution d'un appartement du XVIIIème siècle",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "Hôtel Abbatial",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/51/a1/51a1251c3a65fd8a9aea890d8151fb8053f7dfac33e3c7fcda4332c768dfb525-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5485761-exposition-reconstitution-d-un-appartement-du-xviiieme-siecle",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6043554",
-    "title": "Visites libres et guidées de l'église jeanne d'arc",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-10-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "Église Jeanne d'arc",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/f4/a2/f4a21ba6cb4716c9fba66cfee5db1665561f2acf9a6a099422d16b1b43e43776-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6043554-visites-libres-et-guidees-de-l-eglise-jeanne-d-arc",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5840755",
-    "title": "Conférences Ahce",
-    "category": "conference",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "1er étage du Commun sud du Château",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/74/f0/74f030310f53fb4949cc05e54f91dd812f643e9dbaff7a63bb4c8a7d94000d08-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/5840755-conferences-ahce",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6086426",
-    "title": "Anim’ en terrasse",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-09-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "Bar le Progrès",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/26/42/26422eb2ab5a0cd8a195ab71fa74bbe4c53836ed5e145d9abf3441e91777e327-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6086426-anim-en-terrasse",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6175309",
-    "title": "Partage - Rencontre - Moment festif autour d'un bière truck et d'un food truck",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parking de la Ronchère",
-    "city": "Houdemont",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/7a/d0/7ad0535bb086b24f6ecf53c8c7474759434c12b1a98c9ac7938189b74208673d-large.jpg",
-    "url": "https://www.alentoor.fr/houdemont/agenda/6175309-partage-rencontre-moment-festif-autour-d-un-biere-truck-et-d-un-food-truck",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5957189",
-    "title": "Marché fermier de Haroué",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "place des landres",
-    "city": "Haroué",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/84/14/841483976e9cbf2a59a0c82f94538d456055657145f7ef83e006a1e777a47a3e-large.jpg",
-    "url": "https://www.alentoor.fr/haroue/agenda/5957189-marche-fermier-de-haroue",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6178716",
-    "title": "Soirée Festive - Rosae",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "de 19h à 22h",
-    "place": "100 rue du jardin-botanique",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/32/ee/32eee87f37d4ebd34aede7bee090978d60d1ebfbd7bacc1164316b6f3e9be97b-large.jpg",
-    "url": "https://www.alentoor.fr/villers-les-nancy/agenda/6178716-soiree-festive-rosae",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6011962",
-    "title": "Bistrot de Lulu itinérant",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Gerbécourt-et-Haplemont",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/34/81/3481dcf7ad59f3e53cd6bcca6e4d5c7dd98ea535eb92cca455695cae7cca4bb0-large.jpg",
-    "url": "https://www.alentoor.fr/gerbecourt-et-haplemont/agenda/6011962-bistrot-de-lulu-itinerant",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6087188",
-    "title": "L'art en campagne",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "Tem espace d'art contemporain et son jardin",
-    "city": "Goviller",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/fc/39/fc39ee4c287961dceef601e9893021ec9841e6e3c3336d51e85f7a26b6aa10e6-large.jpg",
-    "url": "https://www.alentoor.fr/goviller/agenda/6087188-l-art-en-campagne",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6089157",
-    "title": "Tem 34ème édition - l'art en campagne",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "Tem espace d'art contemporain",
-    "city": "Goviller",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/9a/cd/9acd31bd36f61a470b63fbd6b18525e2cc275e82bb5dfca0cf2db478d1333a29-large.jpg",
-    "url": "https://www.alentoor.fr/goviller/agenda/6089157-tem-34eme-edition-l-art-en-campagne",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5623606",
-    "title": "Atelier \"Redécouvrez le goût authentique du fait-maison\" avec la Maison Griffoul",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "5 grande rue",
-    "city": "Punerot",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/4f/2e/4f2e7fbb1616dab54e7979f8f5949125a08b4308a354213a211988a64372e4fb-large.jpg",
-    "url": "https://www.alentoor.fr/punerot/agenda/5623606-atelier-redecouvrez-le-gout-authentique-du-fait-maison-avec-la-maison-griffoul",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6089557",
-    "title": "L'Arbre à chansons et ses invités",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "de 18h à 21h",
-    "place": "Théâtre de Cristal",
-    "city": "Vannes-le-Châtel",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/44/d6/44d675d16f3a2958cf306492c8ec7d47d8a8a639285e6f7368376101e1746112-large.jpg",
-    "url": "https://www.alentoor.fr/vannes-le-chatel/agenda/6089557-l-arbre-a-chansons-et-ses-invites",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6102243",
-    "title": "Act Radio Déclic 40 ans : l'arbre à Chansons et ses amis",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "de 18h à 20h",
-    "place": "Théâtre de Crystal",
-    "city": "Vannes-le-Châtel",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/0b/94/0b9487bda4a63e72e59732b5c3dd217a7770a78a44672850b0b13610a931630c-large.jpg",
-    "url": "https://www.alentoor.fr/vannes-le-chatel/agenda/6102243-act-radio-declic-40-ans-l-arbre-a-chansons-et-ses-amis",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6089704",
-    "title": "40 ans de Radio Déclic",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villey-le-Sec",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/66/8b/668bf52060f3e6d7db995ffb2acfae679bdf63e347c3e0ec7aa3de9679a77df7-large.jpg",
-    "url": "https://www.alentoor.fr/villey-le-sec/agenda/6089704-40-ans-de-radio-declic",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6062558",
-    "title": "Visite guidée du fort de Villey-le-Sec",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-08-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "7 rue du 26ème Ri",
-    "city": "Villey-le-Sec",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/4f/07/4f071b5b86e2a563f906feedafada500f63021fad8e0487b93417816db76da0c-large.jpg",
-    "url": "https://www.alentoor.fr/villey-le-sec/agenda/6062558-visite-guidee-du-fort-de-villey-le-sec",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5699694",
-    "title": "Atelier de poterie Béatrice Allard - Stages",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "9 bis rue du general leclerc",
-    "city": "Dommartin-lès-Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/48/45/4845eef9840462c4a4f0a9fd8403e816c04887c56f7a493c4b85153a35370a8e-large.jpg",
-    "url": "https://www.alentoor.fr/dommartin-les-toul/agenda/5699694-atelier-de-poterie-beatrice-allard-stages",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "fb-1543325087183156",
-    "title": "Le HELLFEST en direct au BBC 🔥🤘",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin - 20 juin",
-    "schedule": "",
-    "place": "3",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/1543325087183156/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "fb-2495657747553907",
-    "title": "Acoustic Post Punk Association aux Péres Peinards",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 19:00",
-    "schedule": "19h",
-    "place": "O'Péres Peinards 17 rue du Pont Mouja",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/2495657747553907/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "fb-4517431741832999",
-    "title": "Soirée toutes danses",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 19:30",
-    "schedule": "19h30",
-    "place": "5B rue Jacques Brel",
-    "city": "Essey-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/4517431741832999/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "fb-1910593379623394",
-    "title": "LANCEMENT DE SAISON AU CCAM 🌻💪",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 19:30",
-    "schedule": "19h30",
-    "place": "CCAM / Scène Nationale de Vandœuvre-lès-Nancy",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/1910593379623394/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "fb-1316845726438716",
-    "title": "Afterwork inter-réseaux féminins nancéiens",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 19:00",
-    "schedule": "19h",
-    "place": "Salon de l'Hotel de ville Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/1316845726438716/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "fb-985444597422236",
-    "title": "Fête de la Musique et de fin de saison Fajet 🥳",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "18 juin à 18:00",
-    "schedule": "18h",
-    "place": "47 rue Charles III",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://www.facebook.com/events/985444597422236/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false
-  },
-  {
-    "uuid": "essey-portes-ouvertes-de-la-toute-petite-section-1",
-    "title": "Portes ouvertes de la Toute Petite Section",
-    "category": "activite",
-    "subcats": [
-      "Petite enfance"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "14h à 16h",
-    "place": "École maternelle Galilée",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/atelier-mdp-AdobeStock_249958765.jpeg?itok=e4DnFanY",
-    "url": "https://www.esseylesnancy.fr/agenda/portes-ouvertes-de-la-toute-petite-section-1",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-jeudi-de-la-culture-serwan",
-    "title": "Jeudi de la culture : Serwan",
-    "category": "spectacle",
-    "subcats": [
-      "Jeudis de la culture"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Haut-Château",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/dsc02496.jpeg?itok=2HgBcRDf",
-    "url": "https://www.esseylesnancy.fr/agenda/jeudi-de-la-culture-serwan",
-    "source": "essey"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7d08edba-220d-11f1-84ae-4bde2c413236",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a80e4240-6988-11f1-940a-01274dfe202d",
@@ -3091,7 +197,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a80e4240-6988-11f1-940a-01274dfe202d/0/ORIGINE_M_6a3151d4326f6.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a80e4240-6988-11f1-940a-01274dfe202d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a80e4240-6988-11f1-940a-01274dfe202d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8538253e-5fe6-11f1-b1d7-b3fe16104080",
@@ -3109,7 +216,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8538253e-5fe6-11f1-b1d7-b3fe16104080/0/ORIGINE_M_6a212856cd83b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8538253e-5fe6-11f1-b1d7-b3fe16104080"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8538253e-5fe6-11f1-b1d7-b3fe16104080",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ab08f796-ca0b-11f0-8ecf-a90ce37f412a",
@@ -3127,7 +235,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ab08f796-ca0b-11f0-8ecf-a90ce37f412a/0/1-1_M_6925be4c37607.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ab08f796-ca0b-11f0-8ecf-a90ce37f412a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ab08f796-ca0b-11f0-8ecf-a90ce37f412a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8466482c-64d5-11f1-9deb-07914bdaf0e7",
@@ -3145,7 +254,28 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8466482c-64d5-11f1-9deb-07914bdaf0e7/0/ORIGINE_M_6a296f4bc9c1f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8466482c-64d5-11f1-9deb-07914bdaf0e7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8466482c-64d5-11f1-9deb-07914bdaf0e7",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "a6b1de90-6a5d-11f1-a399-637780a53c5b",
+    "title": "Merveilleuses molécules végétales",
+    "category": "conference",
+    "subcats": [
+      "Conférence - Rencontre",
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-06-30",
+    "dateText": "Vendredi 19 juin",
+    "schedule": "à 14h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a6b1de90-6a5d-11f1-a399-637780a53c5b/0/1-1_M_6a32b7926aff3.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a6b1de90-6a5d-11f1-a399-637780a53c5b",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "1d006750-3e3b-11f1-afbe-15d094d48e82",
@@ -3163,7 +293,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1d006750-3e3b-11f1-afbe-15d094d48e82/0/1-1_M_69e9d6cc4a2c7.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1d006750-3e3b-11f1-afbe-15d094d48e82"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1d006750-3e3b-11f1-afbe-15d094d48e82",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ee3b5208-5fe7-11f1-ab5f-bdfb47df7f88",
@@ -3181,7 +312,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee3b5208-5fe7-11f1-ab5f-bdfb47df7f88/0/ORIGINE_M_6a212ab47e3bd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee3b5208-5fe7-11f1-ab5f-bdfb47df7f88"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee3b5208-5fe7-11f1-ab5f-bdfb47df7f88",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "01159708-f512-11f0-b274-979d2763151c",
@@ -3200,7 +332,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/01159708-f512-11f0-b274-979d2763151c/0/ORIGINE_M_696ded249238c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01159708-f512-11f0-b274-979d2763151c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01159708-f512-11f0-b274-979d2763151c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "65bebfe6-38af-11f1-9178-9f03725d9c31",
@@ -3220,7 +353,1447 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/65bebfe6-38af-11f1-9178-9f03725d9c31/0/ORIGINE_M_69df5d7c574f6.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=65bebfe6-38af-11f1-9178-9f03725d9c31"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=65bebfe6-38af-11f1-9178-9f03725d9c31",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "39dac502-6314-11f1-ac7f-092ffab2cfc8",
+    "title": "Marie Curie, femme et scientifique",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-19",
+    "dateText": "Du 8 au 19 juin 2026",
+    "schedule": "de 08h à 18h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/39dac502-6314-11f1-ac7f-092ffab2cfc8/0/ORIGINE_M_6a267d82b3b9f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=39dac502-6314-11f1-ac7f-092ffab2cfc8",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "ba3d091c-568b-11f0-b9d5-3b2c04c22725",
+    "title": "Concerts Apéritifs | Le Salon des Artistes",
+    "category": "musique-classique",
+    "subcats": [
+      "Concert",
+      "Musique de chambre / chorale",
+      "Culture"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-20",
+    "dateText": "Du 11 octobre 2025 au 20 juin 2026",
+    "schedule": "de 11h à 12h",
+    "place": "Opéra national de Nancy-Lorraine",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ba3d091c-568b-11f0-b9d5-3b2c04c22725/0/ORIGINE_M_6863f76169af7.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba3d091c-568b-11f0-b9d5-3b2c04c22725",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "4b361bc2-1877-11f1-8be6-6d7d608b68c8",
+    "title": "GLISSANDO",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-21",
+    "dateText": "Du 10 avril au 21 juin 2026",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4b361bc2-1877-11f1-8be6-6d7d608b68c8/0/1-1_M_69a94fb06381a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b361bc2-1877-11f1-8be6-6d7d608b68c8",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "0e51b472-1878-11f1-80ce-b538d1f4e26a",
+    "title": "Mesterou - Milcovitch. Deux artistes cinétiques",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-21",
+    "dateText": "Du 26 mars au 21 juin 2026",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0e51b472-1878-11f1-80ce-b538d1f4e26a/0/1-1_M_69b9837361fa2.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0e51b472-1878-11f1-80ce-b538d1f4e26a",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "85468a10-5fe7-11f1-b61a-0d101d7754bd",
+    "title": "De MJC en MJC",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-24",
+    "dateText": "Du 13 au 24 juin 2026",
+    "schedule": "de 09h à 18h",
+    "place": "MJC Lillebonne",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/85468a10-5fe7-11f1-b61a-0d101d7754bd/0/ORIGINE_M_6a212a04670f6.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=85468a10-5fe7-11f1-b61a-0d101d7754bd",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "718988ea-736d-11f0-bf11-95252ac2c4f2",
+    "title": "Club Nature",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "à partir du 29 avril",
+    "schedule": "de 14h30 à 16h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/718988ea-736d-11f0-bf11-95252ac2c4f2/0/16-9_M_68c12d431c379.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=718988ea-736d-11f0-bf11-95252ac2c4f2",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "d566a3fc-3a46-11f1-9330-c5efacb34ad0",
+    "title": "Les grâces divines",
+    "category": "exposition",
+    "subcats": [
+      "La nature dans la ville",
+      "Culture",
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-25",
+    "dateText": "Du 30 avril au 25 juin 2026",
+    "schedule": "8h à 19h",
+    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d566a3fc-3a46-11f1-9330-c5efacb34ad0/0/ORIGINE_M_69e2090cd1153.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d566a3fc-3a46-11f1-9330-c5efacb34ad0",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf",
+    "title": "Les rois du bluff !",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-28",
+    "dateText": "Les dimanches 14, 21, 28 juin 2026",
+    "schedule": "10h30",
+    "place": "Muséum-Aquarium de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf/0/1-1_M_69b7b91e1c6dc.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e53f42f4-bd13-11ef-8a0a-e57ffbc91ecf",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "7312fa66-2795-11f1-9651-1de3f99a6b81",
+    "title": "Aquarelle",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "Les 10 juin & 4 juillet",
+    "schedule": "de 14h30 à 16h30",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7312fa66-2795-11f1-9651-1de3f99a6b81/0/1-1_M_6a1024becfcbf.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7312fa66-2795-11f1-9651-1de3f99a6b81",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-le-kiosque-creatif-de-la-pulperie",
+    "title": "Le kiosque créatif de La Pulperie®",
+    "category": "exposition",
+    "subcats": [
+      "Atelier / jeux",
+      "Artisanat",
+      "Exposition",
+      "Jeune public"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "Du mercredi 3 juin 2026 au samedi 4 juillet 2026",
+    "schedule": "",
+    "place": "Pop Up Store - Place Monseigneur Ruch",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.curieux.net/img/e/2026/05/6a18061a3c062-le-kiosque-creatif-de-la-pulperie.png",
+    "url": "https://nancy.curieux.net/agenda/evenement/le-kiosque-creatif-de-la-pulperie",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "3183bd8a-5fe7-11f1-85d5-730b6f811f78",
+    "title": "France Palette - Paul Diemunsch",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "Du 23 mai au 4 juillet 2026",
+    "schedule": "de 14h à 19h",
+    "place": "Galerie Lillebonne - Espace Culturel d'Art Contemporain",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3183bd8a-5fe7-11f1-85d5-730b6f811f78/0/ORIGINE_M_6a212977dbc11.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3183bd8a-5fe7-11f1-85d5-730b6f811f78",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "2a2914a8-1bc3-11f1-bb51-7533f1e6a79d",
+    "title": "À la rencontre de la gravure : des œuvres à la pratique",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée",
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "Samedi 25 avril, 13 juin et 4 juillet 2026",
+    "schedule": "10h - 12h30",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a2914a8-1bc3-11f1-bb51-7533f1e6a79d/0/1-1_M_69aed774511f9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a2914a8-1bc3-11f1-bb51-7533f1e6a79d",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "6ba7a10c-fff3-11ef-a066-5bf873cf4f77",
+    "title": "Visite parfumée \"Made in Nancy pardi !\"",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "Samedi 11 avril et 4 juillet  à 18h",
+    "schedule": "18h - 19h30",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ba7a10c-fff3-11ef-a066-5bf873cf4f77/0/1-1_M_67d2afa34644c.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ba7a10c-fff3-11ef-a066-5bf873cf4f77",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "6ca70dbc-99f0-11f0-abe6-8bcd6d31c452",
+    "title": "Cœur de Marie",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-05",
+    "dateText": "Prolongation jusqu'au 5 juillet",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ca70dbc-99f0-11f0-abe6-8bcd6d31c452/0/1-1_M_69bac1b908655.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ca70dbc-99f0-11f0-abe6-8bcd6d31c452",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dab67e24-35c9-11ee-a790-db67e4a732b1",
+    "title": "Rencontrez les ambassadeurs de la prévention et du tri",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-12",
+    "dateText": "Mai-Juillet 2026",
+    "schedule": "Scène de tri lors du concert au Zénith à Maxéville",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dab67e24-35c9-11ee-a790-db67e4a732b1/0/16-9_M_64e36f05ef16a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dab67e24-35c9-11ee-a790-db67e4a732b1",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "f034dab6-b796-11ef-810e-39ff70e0e079",
+    "title": "Marée cosmique",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-12",
+    "dateText": "Du 14 mars 2026 – 12 juillet 2026",
+    "schedule": "",
+    "place": "Muséum-Aquarium de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f034dab6-b796-11ef-810e-39ff70e0e079/0/1-1_M_69a850f826d0b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f034dab6-b796-11ef-810e-39ff70e0e079",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "4b31d13c-4eb1-11f1-aff2-4dc15d0d2951",
+    "title": "Ateliers mobiles d'auto-réparation vélo de Dynamo",
+    "category": "activite",
+    "subcats": [
+      "Atelier de réparation"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-16",
+    "dateText": "Jusqu'au 16 juillet 2026",
+    "schedule": "16h00-19h00 - Nancy, \"Venez en voisin\" Plateau de Haye",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4b31d13c-4eb1-11f1-aff2-4dc15d0d2951/0/1-1_M_6a0464cda2dd3.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b31d13c-4eb1-11f1-aff2-4dc15d0d2951",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "5c843086-2118-11f1-a5fe-2ba20506611c",
+    "title": "Manières de mesurer les marées, une exposition d'Anna Moreno",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-01",
+    "dateText": "Du 1er mars au 1er août 2026",
+    "schedule": "de 14h à 19h",
+    "place": "openspace",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5c843086-2118-11f1-a5fe-2ba20506611c/0/ORIGINE_M_69b7c9aa1ee63.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c843086-2118-11f1-a5fe-2ba20506611c",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "37270556-3e2e-11f1-9af1-c7e3b7da03fe",
+    "title": "Saison 2026",
+    "category": "spectacle",
+    "subcats": [
+      "Evénement"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-18",
+    "dateText": "Du 1er juin au 18 août",
+    "schedule": "à 15h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/37270556-3e2e-11f1-9af1-c7e3b7da03fe/0/1-1_M_69e8970fad46b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=37270556-3e2e-11f1-9af1-c7e3b7da03fe",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "c2279008-1bbf-11f1-a2d6-a3661d1d7adb",
+    "title": "Atelier des vacances \"Le jardin suspendu\"",
+    "category": "jeune-public",
+    "subcats": [
+      "Visite guidée",
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-19",
+    "dateText": "Mercredi 15 avril, 15 juillet et 19 août",
+    "schedule": "10h30 - 12h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c2279008-1bbf-11f1-a2d6-a3661d1d7adb/0/1-1_M_69aed1aaeb7cb.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c2279008-1bbf-11f1-a2d6-a3661d1d7adb",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "334646ce-599d-11f1-9590-d7008bf84f9e",
+    "title": "Ma créature Z’imaginaire",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-22",
+    "dateText": "à partir du 13 juin",
+    "schedule": "de 11h00 à 12h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/334646ce-599d-11f1-9590-d7008bf84f9e/0/1-1_M_6a169f3ee3ab5.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=334646ce-599d-11f1-9590-d7008bf84f9e",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "0a7f5fdc-1875-11f1-9839-8d21048d2dad",
+    "title": "OX. Les Loisirs créatifs",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-23",
+    "dateText": "Du 10 avril au 23 août 2026",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a7f5fdc-1875-11f1-9839-8d21048d2dad/0/1-1_M_69a95067d7807.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a7f5fdc-1875-11f1-9839-8d21048d2dad",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "49293cfa-5b3f-11f1-b4cc-1d3414262583",
+    "title": "Joris Infanti",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-29",
+    "dateText": "Du 11 juin au 29 août 2026",
+    "schedule": "10h à 12h et 14h à 17h",
+    "place": "13",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/49293cfa-5b3f-11f1-b4cc-1d3414262583/0/ORIGINE_M_6a1959c772741.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=49293cfa-5b3f-11f1-b4cc-1d3414262583",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "75b1a276-6cf9-11ee-aeb6-d574d0e49805",
+    "title": "Chemical kitchen",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "Du 29 novembre 2025 au 30 août 2026",
+    "schedule": "",
+    "place": "Le Féru des sciences",
+    "city": "Jarville-la-Malgrange",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/75b1a276-6cf9-11ee-aeb6-d574d0e49805/0/1-1_M_68f753155f8ee.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=75b1a276-6cf9-11ee-aeb6-d574d0e49805",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "f85b4aaa-00cd-11f1-94e5-eb84b69aa22a",
+    "title": "GeneZis",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-31",
+    "dateText": "Du 5 juin au 31 août",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f85b4aaa-00cd-11f1-94e5-eb84b69aa22a/0/1-1_M_69819d5fda62c.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f85b4aaa-00cd-11f1-94e5-eb84b69aa22a",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "af386e82-2ce4-11f1-b49a-9f5442e79d78",
+    "title": "Le marché de l'artisanat",
+    "category": "activite",
+    "subcats": [
+      "Brocante / marché",
+      "Artisanat"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-05",
+    "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
+    "schedule": "de 9h à 19h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/af386e82-2ce4-11f1-b49a-9f5442e79d78/0/ORIGINE_M_69cb94ecf3744.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af386e82-2ce4-11f1-b49a-9f5442e79d78",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
+    "title": "Les Essentiels",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-06",
+    "dateText": "Du 3 mai au 6 septembre 2026",
+    "schedule": "11h - 12h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a0bbdf14-21dc-11f1-9d24-c9865b070fb2/0/1-1_M_69b9131d03253.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "9dc69216-1bc1-11f1-80ee-79539a25a29c",
+    "title": "Musée en famille \"L'aventure de Mousse\"",
+    "category": "jeune-public",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
+    "schedule": "10h30 - 11h30",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9dc69216-1bc1-11f1-80ee-79539a25a29c/0/1-1_M_69aed4fe7154f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dc69216-1bc1-11f1-80ee-79539a25a29c",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
+    "title": "Visite commentée de la maison Prouvé",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-26",
+    "dateText": "Les samedis du 30 mai au 26 septembre 2026",
+    "schedule": "à 14h15, 15h15 et 16h15",
+    "place": "",
+    "city": "",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fc936b6e-f9d7-11ef-b246-0f0fb51191cb/0/1-1_M_67c871e913a50.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "189700de-187f-11f1-a28e-a1b57673fc46",
+    "title": "Musée en famille \"Histoire(s) de s'amuser...avec l'art\"",
+    "category": "jeune-public",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-27",
+    "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
+    "schedule": "10h30 - 11h30",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/189700de-187f-11f1-a28e-a1b57673fc46/0/1-1_M_69a95cab1caf8.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=189700de-187f-11f1-a28e-a1b57673fc46",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
+    "title": "Villa d'exception",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-27",
+    "dateText": "Chaque samedi et dimanche de 11h à 12h",
+    "schedule": "11h - 12h",
+    "place": "Villa Majorelle",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/775633ee-49a3-11ef-88ed-2f0fa8a1a7a6/0/1-1_M_66a0d0ce7ebb9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "4236f124-49a5-11ef-b4fb-2d7719a34d34",
+    "title": "Chefs-d'œuvre de l'École de Nancy",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-27",
+    "dateText": "Chaque samedi et dimanche de 15h à 16h",
+    "schedule": "15h - 16h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4236f124-49a5-11ef-b4fb-2d7719a34d34/0/1-1_M_66a0d3c01738b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4236f124-49a5-11ef-b4fb-2d7719a34d34",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
+    "title": "Visite flash \"le musée de l'Ecole de Nancy en un clin d'oeil\"",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-30",
+    "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
+    "schedule": "14h30 - 15h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a07a11a-1bbe-11f1-97a4-5b40f9b19584/0/1-1_M_69aecfa82fece.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "7a527efe-84e9-11f0-a72a-4d30edf7f41e",
+    "title": "Visite flash",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-09-30",
+    "dateText": "Tous les samedis",
+    "schedule": "14h30 - 15h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7a527efe-84e9-11f0-a72a-4d30edf7f41e/0/1-1_M_68b1c1d3ba94a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a527efe-84e9-11f0-a72a-4d30edf7f41e",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "83cc27f4-1d1f-11f1-a4ae-831444a75800",
+    "title": "Yoga au jardin",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-03",
+    "dateText": "à partir du 26 avril",
+    "schedule": "de 10h00 à 11h30",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83cc27f4-1d1f-11f1-a4ae-831444a75800/0/1-1_M_69b1200ad9729.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83cc27f4-1d1f-11f1-a4ae-831444a75800",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "335b74a8-3cac-11f1-8634-1f0e75f21a65",
+    "title": "Banquet d’images",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-07",
+    "dateText": "Du 7 mai au 7 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/335b74a8-3cac-11f1-8634-1f0e75f21a65/0/1-1_M_69e60f88ed280.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=335b74a8-3cac-11f1-8634-1f0e75f21a65",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "176d7f20-38a6-11f1-af3b-579a15d24778",
+    "title": "Brocante Solidaire",
+    "category": "activite",
+    "subcats": [
+      "Brocante / marché"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-09",
+    "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
+    "schedule": "de 07h30 à 18h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/176d7f20-38a6-11f1-af3b-579a15d24778/0/ORIGINE_M_69df4ddf78daa.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=176d7f20-38a6-11f1-af3b-579a15d24778",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
+    "title": "Initiez-vous aux gestes qui sauvent",
+    "category": "citoyennete",
+    "subcats": [
+      "Citoyenneté",
+      "Santé"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-10",
+    "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
+    "schedule": "de 9h30 à 11h30",
+    "place": "Hôtel de Ville - mairie de Nancy",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/62cd9904-9d5f-11ed-981d-012a3d3c5c5b/0/ORIGINE_M_65e6efcdb6345.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "8291494e-1c63-11f1-8396-878ef3dd6ee6",
+    "title": "Balade nature",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-11",
+    "dateText": "Vendredi 24 avril",
+    "schedule": "de 14h00 à 16h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8291494e-1c63-11f1-8396-878ef3dd6ee6/0/1-1_M_69afe4c699b31.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8291494e-1c63-11f1-8396-878ef3dd6ee6",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
+    "title": "Atelier photo",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-11",
+    "dateText": "Jeudi 23 avril",
+    "schedule": "de 10h00 à 12h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8/0/1-1_M_69afe869c2d15.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "4d23db94-1d4b-11f1-9aa6-65d57d322806",
+    "title": "Sur le vif !",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-11",
+    "dateText": "Les 22, 23 avril et 11 octobre",
+    "schedule": "de 10h00 à 12h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4d23db94-1d4b-11f1-9aa6-65d57d322806/0/1-1_M_69bbfb3165da1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d23db94-1d4b-11f1-9aa6-65d57d322806",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
+    "title": "Sentiers botaniques de Lorraine",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-11",
+    "dateText": "Du 10 avril au 11 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5581cc5c-1d2c-11f1-a36e-1b1f40dbef70/0/1-1_M_69b1357407d3f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "02061cf0-1c5e-11f1-92e4-47181f49b69f",
+    "title": "À pas feutrés",
+    "category": "exposition",
+    "subcats": [
+      "Exposition",
+      "Conférence - Rencontre"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-11",
+    "dateText": "Du 10 avril au 11 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/02061cf0-1c5e-11f1-92e4-47181f49b69f/0/1-1_M_69afdb41ce725.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=02061cf0-1c5e-11f1-92e4-47181f49b69f",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "241ca2dc-001b-11f1-a595-d142e589f5c5",
+    "title": "La Bergamote de Nancy - 2026, une année de célébration",
+    "category": "festival",
+    "subcats": [
+      "Gastronomie",
+      "Artisanat",
+      "Festival",
+      "Activité - Animation"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-25",
+    "dateText": "Du 4 février au 31 octobre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/241ca2dc-001b-11f1-a595-d142e589f5c5/0/ORIGINE_M_698071a480d66.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=241ca2dc-001b-11f1-a595-d142e589f5c5",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "0a90745c-3710-11f1-8e35-c550c58884ef",
+    "title": "Randonnées à Rollers",
+    "category": "activite",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-30",
+    "dateText": "Du 3 avril au 30 octobre 2026",
+    "schedule": "à 20h30",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a90745c-3710-11f1-8e35-c550c58884ef/0/ORIGINE_M_69dca4a23e793.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a90745c-3710-11f1-8e35-c550c58884ef",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
+    "title": "Coulées de bergamote",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-10-31",
+    "dateText": "Du 4 février au 31 octobre 2026",
+    "schedule": "à l'Office de tourisme",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c1bc6a0-eadb-11f0-956c-8d11b4d490df/0/1-1_M_695ccb1c10f3e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "0cfe0034-caa9-11f0-91ae-5379b006b74f",
+    "title": "Cours de jardinage 2026",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-11-06",
+    "dateText": "à partir du 20 février",
+    "schedule": "à 14h30",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0cfe0034-caa9-11f0-91ae-5379b006b74f/0/16-9_M_6926d35e959ed.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0cfe0034-caa9-11f0-91ae-5379b006b74f",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cd165d82-220e-11f1-8007-79f1c5828d09",
+    "title": "Hugo Drubay. Là où les arbres prennent forme",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-01-03",
+    "dateText": "Du 6 juin 2026 au 3 janvier 2027",
+    "schedule": "",
+    "place": "Villa Majorelle",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd165d82-220e-11f1-8007-79f1c5828d09/0/1-1_M_69e613070fbe9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd165d82-220e-11f1-8007-79f1c5828d09",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
+    "title": "Moches! 2",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-01-03",
+    "dateText": "30 mai 2026 > 03 janvier 2027",
+    "schedule": "",
+    "place": "Muséum-Aquarium de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa3c2c70-f9d2-11ef-a672-57c2cdff87fb/0/1-1_M_69cb6a4dad6ca.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
+    "title": "Cochon d'Inde, mon ami",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-01-03",
+    "dateText": "Du 22 mai 2026 au 3 janvier 2027",
+    "schedule": "de 13h30 à 16h45",
+    "place": "Parc de la pépinière",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/20cb3198-4a26-11f1-ad5d-2de7a4b036b8/0/ORIGINE_M_69fcaa2089427.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "c66dc65e-1878-11f1-8b74-9f225bb9de47",
+    "title": "Charles Cartier-Bresson et les arts : du collectionneur au dessinateur",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-03-31",
+    "dateText": "À partir du 26 mars 2026",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c66dc65e-1878-11f1-8b74-9f225bb9de47/0/1-1_M_69a95225f0508.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c66dc65e-1878-11f1-8b74-9f225bb9de47",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "35d1f88c-0159-11ef-bc5c-27495689ee18",
+    "title": "Récits décoloniaux. Faut-il brûler les musées ?",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-05-31",
+    "dateText": "Jusqu'au 31 mai 2027",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/35d1f88c-0159-11ef-bc5c-27495689ee18/0/1-1_M_666c3f8bd93f9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d1f88c-0159-11ef-bc5c-27495689ee18",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "4bddf292-43ac-11f1-8986-5d2c90db8092",
+    "title": "Mystérieuse bergamote",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2027-06-30",
+    "dateText": "À partir du 5 juin",
+    "schedule": "sur les horaires d'ouverture des serres",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4bddf292-43ac-11f1-8986-5d2c90db8092/0/1-1_M_69f1cd2035cee.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bddf292-43ac-11f1-8986-5d2c90db8092",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-22281",
+    "title": "Visite guidée - Maison Bergeret",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "24",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/363/737-737013834_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-maison-bergeret/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-21682",
+    "title": "Exposition - Le cinéma c'est quoi ?",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "2",
+    "city": "Houdemont",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/d8f/737-737018901_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-le-cinema-cest-quoi/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20524",
+    "title": "La Bergamote de Nancy - 30 ans IGP -  Exposition - Mystérieuse Bergamote",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "100",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/730/737-737018572_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/la-bergamote-de-nancy-30-ans-igp-exposition-mysterieuse-bergamote/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6152159",
+    "title": "Exposition - Nancy, Art nouveau par nature",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-11-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "Destination - Office de Tourisme",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/0c/8f/0c8ffb7cd4657a3e301a53d08f594dc379635ead2459fba848304ea9b474c5b2-large.jpg",
+    "url": "https://www.alentoor.fr/nancy/agenda/6152159-exposition-nancy-art-nouveau-par-nature",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20492",
+    "title": "Exposition Permanente - Laurence Jenkell",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2027-11-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "14",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/017/737-737018351_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-permanente-laurence-jenkell/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20607",
+    "title": "Exposition - Cabinet d'Art Graphique - Mesterou - Milcovitch",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "3",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/baf/737-737018654_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-cabinet-dart-graphique-mesterou-milcovitch/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20632",
+    "title": "Exposition - Glissando - Tania Mouraud",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "3",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b31/737-737018793_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-glissando-tania-mouraud/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23478",
+    "title": "Guinguette Estivale - Le Cookoon",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/df0/737-737015418_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-le-cookoon/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6180969",
+    "title": "Guinguette Estivale - Carnot",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Place Carnot",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/df/34/df34ecd41c86a2b4de9aac9d325e767bb4c723123e64c2810e29e3c234fb4739-large.jpg",
+    "url": "https://www.alentoor.fr/nancy/agenda/6180969-guinguette-estivale-carnot",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6180950",
+    "title": "Guinguette Estivale - la Paillotte de la Craffe",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Porte de la Craffe",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/6e/ef/6eeffc80bb8e8bba24d4b37019242f27872006f3e1bd783b6484973de125bbab-large.jpg",
+    "url": "https://www.alentoor.fr/nancy/agenda/6180950-guinguette-estivale-la-paillotte-de-la-craffe",
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
+  },
+  {
+    "uuid": "dn-20455",
+    "title": "Atelier théâtre 8-12ans",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "126 bis",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0e6/737-737017525_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-8-12ans/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20463",
+    "title": "Métro'folies - Exposition - Artdeco)))",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "3",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/3fd/737-737018130_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/metrofolies-exposition-artdeco/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20605",
+    "title": "Exposition - Manières de mesurer les Marées - Anna Moreno",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "14",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/c62/737-737018828_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-manieres-de-mesurer-les-marees-anna-moreno/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-22593",
+    "title": "Exposition - Là où les Arbres Prennent Forme",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2027-01-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/50a/737-737019032_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-la-ou-les-arbres-prennent-forme/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23402",
+    "title": "Exposition - Camille Gauthier",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "4",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/c8f/737-737019232_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-camille-gauthier/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "vln-553",
+    "title": "Exposition - Laque : 4 regards",
+    "category": "exposition",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "Galerie Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23483",
+    "title": "Guinguette Estivale - Les Folies de la Cure d'Air",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "54",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/77d/737-737015414_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-les-folies-de-la-cure-dair/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23482",
+    "title": "Guinguette Estivale - Parc Blondlot",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "4",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0d4/737-737015412_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-parc-blondlot/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6180949",
+    "title": "Guinguette Estivale - la Cageot'Folle",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parc Charles III",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/98/b3/98b3f50fc0a4156a6d845ef1b72e1346decb4e7a019902d19e5c2ebc2e515c61-large.jpg",
+    "url": "https://www.alentoor.fr/nancy/agenda/6180949-guinguette-estivale-la-cageot-folle",
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
+  },
+  {
+    "uuid": "dn-23485",
+    "title": "Guinguette Estivale - L'Oasis",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "83",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/af1/737-737019264_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-loasis/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20457",
+    "title": "Atelier théâtre 13-16ans",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "126 bis",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/20d/737-737017526_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-13-16ans/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23479",
+    "title": "Guinguette Estivale - Laxou",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "46",
+    "city": "Laxou",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/eab/737-737019266_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-laxou/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20459",
+    "title": "Réunion OpenStreetMap",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "164",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/3e4/737-737017979_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/reunion-openstreetmap/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180987",
@@ -3229,7 +1802,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-08-31",
-    "dateText": "Du 19 juin au 31 août 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Côté Tomblaine",
     "city": "Tomblaine",
@@ -3237,24 +1810,170 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a4/92/a49257e0eb7b5de69819804da5acc37cb4a4ed84f56347b0d8b15d744b9396e9-large.jpg",
     "url": "https://www.alentoor.fr/tomblaine/agenda/6180987-guinguette-estivale-gege-la-bronzette",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "dn-23411",
-    "title": "Festival - Map N'Roll - Son et lumière",
-    "category": "festival",
+    "uuid": "dn-20456",
+    "title": "Atelier théâtre adulte - 17ans et plus",
+    "category": "activite",
     "subcats": [],
     "date": "2026-06-19",
-    "endDate": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "126 bis",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/624/737-737017527_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-theatre-adulte-17ans-et-plus/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20458",
+    "title": "Visite commentée - Villa Majorelle",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/304/737-737016629_9-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-villa-majorelle/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-21995",
+    "title": "Visite commentée - Maison Prouvé",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-26",
     "dateText": "",
     "schedule": "",
     "place": "4",
-    "city": "Villers-lès-Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/1bb/737-737015403_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-maison-prouve/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-22277",
+    "title": "Visite Guidée - Centre historique - PMR",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/537/737-737016881_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-centre-historique-pmr/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20465",
+    "title": "Visite Guidée - Centre historique",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/9fc/737-737016357_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-centre-historique/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-22097",
+    "title": "Visite Commentée - Chefs d'œuvre de l'École de Nancy",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "38",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/804/737-737015575_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-commentee-chefs-doeuvre-de-lecole-de-nancy/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-22098",
+    "title": "Visite Flash - Musée de l'école de Nancy",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "38",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/83c/737-737018670_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-flash-musee-de-lecole-de-nancy/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-20616",
+    "title": "Visite Flash - Le Musée de l'École de Nancy en un Clin d'Œil",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "38",
+    "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/e2e/737-737019236_4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/festival-map-nroll-son-et-lumiere/",
-    "source": "destination-nancy"
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/ee9/737-737018837_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-flash-le-musee-de-lecole-de-nancy-en-un-clin-doeil/",
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6175309",
+    "title": "Partage - Rencontre - Moment festif autour d'un bière truck et d'un food truck",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parking de la Ronchère",
+    "city": "Houdemont",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/7a/d0/7ad0535bb086b24f6ecf53c8c7474759434c12b1a98c9ac7938189b74208673d-large.jpg",
+    "url": "https://www.alentoor.fr/houdemont/agenda/6175309-partage-rencontre-moment-festif-autour-d-un-biere-truck-et-d-un-food-truck",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-impro-comedy-live-special-musique",
@@ -3271,7 +1990,80 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a259312d7406-impro-comedy-live-special-musique.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/impro-comedy-live-special-musique",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
+    "title": "Exposition Permanent Laurence Jenkell à Nancy",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-11-30",
+    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
+    "schedule": "",
+    "place": "L'autre Galerie",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-expo-les-graces-divines",
+    "title": "Expo \"Les grâces divines\"",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-25",
+    "dateText": "Du jeudi 30 avril 2026 au jeudi 25 juin 2026",
+    "schedule": "",
+    "place": "Bibliothèque de Lettres & SHS",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/04/69e20d7d6e13d-expo-les-graces-divines.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/expo-les-graces-divines",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-ici-on-boit-de-l-eau",
+    "title": "Ici On Boit de l’Eau",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-19",
+    "dateText": "Du vendredi 1 mai 2026 au dimanche 19 juillet 2026",
+    "schedule": "",
+    "place": "Galerie Les Volets Bleus",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/04/69e261387dec7-ici-on-boit-de-l-eau.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/ici-on-boit-de-l-eau",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-exposition-marie-curie-femme-et-scientifique",
+    "title": "Exposition « Marie Curie, femme et scientifique »",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-19",
+    "dateText": "Du lundi 8 juin 2026 au vendredi 19 juin 2026",
+    "schedule": "",
+    "place": "Ensic",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/06/6a24179805391-exposition-marie-curie-femme-et-scientifique.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/exposition-marie-curie-femme-et-scientifique",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-les-grands-enfants-1",
@@ -3290,7 +2082,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d588636f-les-grands-enfants.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/les-grands-enfants-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-stage-self-defense-2",
@@ -3307,7 +2100,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/05/6a0ef4f29abe4-stage-self-defense.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/stage-self-defense-2",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "cx-nancy-open-air",
+    "title": "Nancy Open Air",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-12",
+    "dateText": "Du vendredi 12 juin 2026 au dimanche 12 juillet 2026",
+    "schedule": "",
+    "place": "Le Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c10318fc0f-nancy-open-air.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/nancy-open-air",
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-vente-de-cd-et-documents-de-musique",
@@ -3324,7 +2136,28 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a22906ba1c39-vente-de-cd-et-documents-de-musique.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/vente-de-cd-et-documents-de-musique",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "vdv-5364",
+    "title": "Inscriptions « Vand’sport et Eveil sportif »",
+    "category": "jeune-public",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "Du 3 septembre 2025 au 24 juin 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-19179",
@@ -3343,7 +2176,52 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/05/voyage-autour-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-final-des-orchestres-a-lecole/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "vln-554",
+    "title": "Exposition - Camille Gauthier, ébéniste et industriel de l'Art Nouveau",
+    "category": "exposition",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-08-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "Le château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0612_EXPO_CAMILLE_GAUTHIER__c__Musee_de_l_Ecole_de_Nancy.png",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-camille-gauthier",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "vln-569",
+    "title": "Permanences - Avec vous pour vos droits",
+    "category": "citoyennete",
+    "subcats": [
+      "Citoyenneté",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-06-19",
+    "endDate": "2026-07-30",
+    "dateText": "",
+    "schedule": "15h30 > 18h",
+    "place": "Clairlieu",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-229",
@@ -3362,7 +2240,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2025/photo-paysage2.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/fete-de-la-musique-festival-son-et-lumiere-mapnroll",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6046716",
+    "title": "France Palette – Exposition de Paul Diemunsch",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Galerie Lillebonne",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/2a/4c/2a4c45460bd9ce1119132c3bd0f1971c81a81cbdc2a7508dcdb5a587fe126436-large.jpg",
+    "url": "https://www.alentoor.fr/nancy/agenda/6046716-france-palette-exposition-de-paul-diemunsch",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6135828",
@@ -3371,7 +2268,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-07-03",
-    "dateText": "Du 19 juin au 3 juillet 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Centre culturel Vauban",
     "city": "Toul",
@@ -3379,7 +2276,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/1e/5d/1e5de2ef45669dc8d1098e55de62c334c89b24db5f0cf721bb5af92ad6dd38e8-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6135828-guinguette-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149655",
@@ -3388,7 +2286,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-06-21",
-    "dateText": "Du 19 au 21 juin 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Centre culturel Vauban",
     "city": "Toul",
@@ -3396,7 +2294,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/1a/e4/1ae4d68d891feb0b16e8cd1c61533a38d7d21e00321abb77a02c3a59aa2bd3ba-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149655-tota-familia-les-enfants-et-le-chaos-magique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5782239",
@@ -3405,7 +2304,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-06-21",
-    "dateText": "Du 19 au 21 juin 2026",
+    "dateText": "",
     "schedule": "",
     "place": "2 place des Clercs",
     "city": "Toul",
@@ -3413,7 +2312,62 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/88/74/8874e8ac589779497dfe915386f4ef8a3ee9a993acd4713fdc0e35b6213c0ea5-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/5782239-salon-du-livre-de-toul",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6062587",
+    "title": "Expo photos \"Dans l'oeil du photographe - Fortifications de Toul et du Toulois\"",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "Musée d'Art et d'Histoire Michel Hachet",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/dd/d9/ddd9640b0ed15f8b18bce480bd15305ed69562be6110fa29e94772f6b52cb3d1-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6062587-expo-photos-dans-l-oeil-du-photographe-fortifications-de-toul-et-du-toulois",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6186507",
+    "title": "Visite guidée de la collégiale Saint-Gengoult",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Collégiale Saint-Gengoult",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/19/e9/19e9341d50d13ca12d80970c5bac84fa3c9e64e31c57dd6bff382976b634129a-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6186507-visite-guidee-de-la-collegiale-saint-gengoult",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6077568",
+    "title": "Exposition « Exploratrice du Merveilleux »",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "Place de la Cagnotte",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/0a/57/0a575a10cacf49b25d4675bfc3966e06ae6e854b0fbb2fe3fb6b3d69a6c28165-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6077568-exposition-exploratrice-du-merveilleux",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6077547",
@@ -3422,7 +2376,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-07-19",
-    "dateText": "Du 19 juin au 19 juillet 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Place de la Cagnotte",
     "city": "Liverdun",
@@ -3430,7 +2384,62 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/f7/af/f7afa58c4e91bfd8f08648397e73f0102d59579a6b785bfdec19c2795250cba4-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6077547-cafe-associatif-l-esperluette-le-musee-du-merveilleux",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6015536",
+    "title": "Exposition Ici on Boit de l'Eau",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "ville médiévale",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/ba/0e/ba0e88d9ccbc9cd2389621036d7cc23bf5617ebbd3f989b042666100d21d5a3e-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6015536-exposition-ici-on-boit-de-l-eau",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6059849",
+    "title": "Exposition - atelier d'artiste - betty guzzo",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "8 rue du Couchant",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/71/f8/71f8a7b2b2dccbed49e79a43ff054ff4b19b0b86d69eb6ced2c7f2b04def0172-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6059849-exposition-atelier-d-artiste-betty-guzzo",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5984278",
+    "title": "Les marchés de la halle",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Esplanade Lerebourg",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/e5/05/e5052b656d3a0089b5908157687fe412ff6e222e41151a9c54a1068018107181-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/5984278-les-marches-de-la-halle",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149677",
@@ -3447,7 +2456,98 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/cb/22/cb22bb3a4f5dc02447c12d7632ec9730cf592e6e623020c22f58b2843c9cb7bc-large.jpg",
     "url": "https://www.alentoor.fr/pompey/agenda/6149677-fete-de-la-musique-a-pompey",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6162613",
+    "title": "Spectacle de marionnettes",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "99 ter rue des Jardins Fleuris",
+    "city": "Pompey",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/32/66/3266697902ce1e1ff7ecbe25d60bc54114a38ab1cf72ed3495cca5c43dbb9fd2-large.jpg",
+    "url": "https://www.alentoor.fr/pompey/agenda/6162613-spectacle-de-marionnettes",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6077518",
+    "title": "Initiation pêche pour enfants",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "Étang du Malnoy",
+    "city": "Champigneulles",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/9c/df/9cdfbc0ade9fe2bac9efe6c6ca73aa6e4411c1b2f212fadbb91374e950b5a699-large.jpg",
+    "url": "https://www.alentoor.fr/champigneulles/agenda/6077518-initiation-peche-pour-enfants",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6012062",
+    "title": "Visite des Brasseries de Champigneulles",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "Rue Gabriel Bour",
+    "city": "Champigneulles",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.alentoor.fr/photos/classifieds/49/41/4941b2d69300ef60213140a29f2ce67c6ee99dbf81687260aa7ae01d95db0549-large.jpg",
+    "url": "https://www.alentoor.fr/champigneulles/agenda/6012062-visite-des-brasseries-de-champigneulles",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5279789",
+    "title": "Atelier - Travail du verre au fusing",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "Esprit Verre",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.alentoor.fr/photos/classifieds/84/12/8412a2df90936a63bba8b96525e1d23a7049d8da5826942d2bbb3837222a9afb-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5279789-atelier-travail-du-verre-au-fusing",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5179130",
+    "title": "Visite Guidée – Brasseurs de Lorraine",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-12-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "3 rue du Bois-le-Prêtre",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/00/09/000997627cf1ab657f187bbde84b90cbf519ccd1279bff7c8d1f62952084daf2-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5179130-visite-guidee-brasseurs-de-lorraine",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6120275",
@@ -3464,24 +2564,188 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e5/39/e5398850c57ea0044715bc15db0f5484b6ab0ebe874737c774feb9139a781ac7-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6120275-fete-de-la-musique-a-l-agora-de-pambio",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-6189839",
-    "title": "Conférence - Job raillé par la femme de Georges de la Tour par Gabriel Diss",
-    "category": "conference",
+    "uuid": "al-6191241",
+    "title": "Théâtre – la théorie des tranches de bacon",
+    "category": "spectacle",
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-06-19",
     "dateText": "",
     "schedule": "20h",
-    "place": "Musée Départemental Georges de la Tour",
-    "city": "Vic-sur-Seille",
+    "place": "Espace saint Laurent",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/3f/fa/3ffa0400d20716cc14b58124717cb26a641ae17e9bc9a21a3fb3df9dd8ebfa25-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6191241-theatre-la-theorie-des-tranches-de-bacon",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
+  },
+  {
+    "uuid": "al-5840754",
+    "title": "Exposition – le Fer en Héritage(s)",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "Abbaye des Prémontrés",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/exposition-medium.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5840754-exposition-le-fer-en-heritage-s",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6172477",
+    "title": "J'adopt'un Artiste",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Commerces du centre ville",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/c1/fb/c1fbf9ea3188340346e37489d93f20b2dbafe86b0021c939df7ca782dd03fc88-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172477-j-adopt-un-artiste",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5283143",
+    "title": "Visite Guidée de la Bibliothèque",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "9 rue saint Martin",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/e8/92/e892e2abd2cc1da51118434c04b601bcebb893dc177e7164529e9851051453f5-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5283143-visite-guidee-de-la-bibliotheque",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6140544",
+    "title": "Ateliers Lumineux : abat-jour contrecollé",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "Boutique-Atelier Esprit Verre",
+    "city": "Pont-à-Mousson",
     "free": false,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/1b/a8/1ba8ca8afd624d3bd4deffa339f4fb9d0064aaf179a119e3808f12871d7e4954-large.jpg",
-    "url": "https://www.alentoor.fr/vic-sur-seille/agenda/6189839-conference-job-raille-par-la-femme-de-georges-de-la-tour-par-gabriel-diss",
-    "source": "alentoor"
+    "image": "https://www.alentoor.fr/photos/classifieds/77/2e/772eef893f9070d5de050d8039785e3247c7a81ff408eadf5fbcece5c963f435-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6140544-ateliers-lumineux-abat-jour-contrecolle",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6140521",
+    "title": "Exposition – la déportation pour motif d'homosexualité",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "Château de Dieulouard",
+    "city": "Dieulouard",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/6b/b5/6bb571ccc352bb642eaafd833b9306824e9d7d551612af1353c019d78c9282f0-large.jpg",
+    "url": "https://www.alentoor.fr/dieulouard/agenda/6140521-exposition-la-deportation-pour-motif-d-homosexualite",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5991601",
+    "title": "Bébés lecteurs",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque ludothèque intercommunale",
+    "city": "Delme",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/4b/72/4b7264693a9f3d817d5f6f9a41711d1d4bc32b525db36c7ca492364b11cdb3c2-large.jpg",
+    "url": "https://www.alentoor.fr/delme/agenda/5991601-bebes-lecteurs",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-3456541",
+    "title": "Marché hebdomadaire",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-12-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "Place du Général de Gaulle",
+    "city": "Delme",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/f1/b0/f1b06f1e0397badadec3ce16e5498789438de6bcf94cf4d605c3e504f45a0f00-large.jpg",
+    "url": "https://www.alentoor.fr/delme/agenda/3456541-marche-hebdomadaire",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6138278",
+    "title": "Lectures / Atelier '(Super) Héros'",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "7 impasse St Germain",
+    "city": "Delme",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.alentoor.fr/photos/classifieds/1e/15/1e159e447615e2e63a79b7578ae46a57dbedca8048c81aface6637106d30856d-large.jpg",
+    "url": "https://www.alentoor.fr/delme/agenda/6138278-lectures-atelier-super-heros",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6041089",
+    "title": "Programme animations Hôtel Abbatial",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel Abbatial",
+    "city": "Lunéville",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/87/2c/872c2b6d5f7db10f8572bcae0a9dd5ec8b477304890866f182f247dd383bac8b-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6041089-programme-animations-hotel-abbatial",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6144433",
@@ -3490,7 +2754,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-06-19",
     "endDate": "2026-06-20",
-    "dateText": "Du 19 au 20 juin 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Théâtre de Lunéville",
     "city": "Lunéville",
@@ -3498,7 +2762,260 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/86/4f/864f4e2d3cf8271c1bddb9754c9593a007a2e9a1629e69a41f2c4675853f8a0a-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6144433-gala-de-danse-de-la-mjc",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5873522",
+    "title": "Exposition - ‘Louis XVI, l’inconnu de Versailles‘",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel Abbatial",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/9a/f6/9af67cd4d4640e2537b5bc7c69781f7aa2a282f26cb6cbe973501bd6d3bf5c21-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5873522-exposition-louis-xvi-l-inconnu-de-versailles",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5485761",
+    "title": "Exposition reconstitution d'un appartement du XVIIIème siècle",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel Abbatial",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/51/a1/51a1251c3a65fd8a9aea890d8151fb8053f7dfac33e3c7fcda4332c768dfb525-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5485761-exposition-reconstitution-d-un-appartement-du-xviiieme-siecle",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6074343",
+    "title": "Exposition les visages de la ruralité volet II",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Commun Sud du Château Galerie du Cri des Lumières",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/ba/c5/bac5f88601f5f8990d1a06b28676021bfbb014467a576f2ce35a15a54e421040-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6074343-exposition-les-visages-de-la-ruralite-volet-ii",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6080735",
+    "title": "Brocante du comité des fêtes de Lamath Xermaménil",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Lamath",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/5f/f5/5ff5a3557becb10422dc4c0e87cc784802e5a0ed0ca83f928659c271dd85703e-large.jpg",
+    "url": "https://www.alentoor.fr/lamath/agenda/6080735-brocante-du-comite-des-fetes-de-lamath-xermamenil",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6123678",
+    "title": "Exposition \"Les oiseaux\" dans les faïences de Lunéville et Saint-Clément",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Vayringe au Château de Lunéville",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/14/65/14658d2e685a290205494b1316f5d046f3decf5164680eda5da68ab89e024e32-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6123678-exposition-les-oiseaux-dans-les-faiences-de-luneville-et-saint-clement",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5824718",
+    "title": "Exposition - \"Les grandes époques de la mode\"",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2027-03-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "Commun sud",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/a6/0f/a60ffa790396be4add3a8fdf7a0c862e57bc4d628e7a9686ae93675c55083d5e-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5824718-exposition-les-grandes-epoques-de-la-mode",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5909019",
+    "title": "Visites immersives des appartements ducaux !",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "5 place de la 2ème Dc",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/60/4d/604de7ffb25afa5fca39e5f6c9fb77409dbbc90f4b38754c7ba20760255c2043-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5909019-visites-immersives-des-appartements-ducaux",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6140624",
+    "title": "Exposition - Beaux Gestes ! savoir-faire d’exception XVIIIe – XXIe S.",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Boffrand - escalier d'honneur Nord",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/7a/cd/7acdf047cb6619b2d1e2757f31c8b4d43b9f13873c39d54d97b61ab9e6f50041-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6140624-exposition-beaux-gestes-savoir-faire-d-exception-xviiie-xxie-s",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5922412",
+    "title": "Exposition les belles heures du château de lunéville",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Commun Nord du Château",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/98/84/9884e14570646823d1c2876107ce9548f654625f6181117c6fee0e7cf8930e52-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5922412-exposition-les-belles-heures-du-chateau-de-luneville",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5922413",
+    "title": "Exposition Parade. métiers d’art en majesté chez les ducs et duchesses de Lorraine",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espaces Restaurés",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/77/5d/775d128b0abe13b3d632f99325dc726394d3b12ccf1eecc7838d425f99cf4f3d-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5922413-exposition-parade-metiers-d-art-en-majeste-chez-les-ducs-et-duchesses-de-lorraine",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5753332",
+    "title": "Exposition de Gilles Leimdorfer",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parc des Bosquets",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/c5/80/c5805c788f34bd494388b75a837c0e62c328c8f2709239b8b8572bc6d1e9d644-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5753332-exposition-de-gilles-leimdorfer",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6043554",
+    "title": "Visites libres et guidées de l'église jeanne d'arc",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-10-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "Église Jeanne d'arc",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/f4/a2/f4a21ba6cb4716c9fba66cfee5db1665561f2acf9a6a099422d16b1b43e43776-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6043554-visites-libres-et-guidees-de-l-eglise-jeanne-d-arc",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5840755",
+    "title": "Conférences Ahce",
+    "category": "conference",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "1er étage du Commun sud du Château",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/74/f0/74f030310f53fb4949cc05e54f91dd812f643e9dbaff7a63bb4c8a7d94000d08-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/5840755-conferences-ahce",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6086426",
+    "title": "Anim’ en terrasse",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-09-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bar le Progrès",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/26/42/26422eb2ab5a0cd8a195ab71fa74bbe4c53836ed5e145d9abf3441e91777e327-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6086426-anim-en-terrasse",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5856521",
@@ -3515,7 +3032,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/02/48/0248b57a8efcbf431aebe0b2f0254c67cc015b0b971d319263173c8b93e864a4-large.jpg",
     "url": "https://www.alentoor.fr/ludres/agenda/5856521-les-grands-enfants-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5875748",
@@ -3532,7 +3050,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e7/b6/e7b6e07b0616bf4f21e683a2ace04e77eb78250af8eb527a48c83d2435e6195d-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/5875748-concert-yacine-el-fath",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5802439",
@@ -3549,7 +3068,98 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/froville/agenda/5802439-festival-de-froville-musique-sacree-venezuelienne-instrumentale",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5957189",
+    "title": "Marché fermier de Haroué",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "place des landres",
+    "city": "Haroué",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/84/14/841483976e9cbf2a59a0c82f94538d456055657145f7ef83e006a1e777a47a3e-large.jpg",
+    "url": "https://www.alentoor.fr/haroue/agenda/5957189-marche-fermier-de-haroue",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6166669",
+    "title": "Festival - Map n'Roll - Son et lumière",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-06-19",
+    "dateText": "",
+    "schedule": "de 18h15 à 23h59",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/72/97/7297f313134273a571cf958a0e3016d80c1e5c9c6b6edbc578d44d235a3b60c1-large.jpg",
+    "url": "https://www.alentoor.fr/villers-les-nancy/agenda/6166669-festival-map-n-roll-son-et-lumiere",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
+  },
+  {
+    "uuid": "al-6011962",
+    "title": "Bistrot de Lulu itinérant",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-07-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Gerbécourt-et-Haplemont",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/34/81/3481dcf7ad59f3e53cd6bcca6e4d5c7dd98ea535eb92cca455695cae7cca4bb0-large.jpg",
+    "url": "https://www.alentoor.fr/gerbecourt-et-haplemont/agenda/6011962-bistrot-de-lulu-itinerant",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6087188",
+    "title": "L'art en campagne",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "Tem espace d'art contemporain et son jardin",
+    "city": "Goviller",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/fc/39/fc39ee4c287961dceef601e9893021ec9841e6e3c3336d51e85f7a26b6aa10e6-large.jpg",
+    "url": "https://www.alentoor.fr/goviller/agenda/6087188-l-art-en-campagne",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6089157",
+    "title": "Tem 34ème édition - l'art en campagne",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-19",
+    "endDate": "2026-08-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "Tem espace d'art contemporain",
+    "city": "Goviller",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/9a/cd/9acd31bd36f61a470b63fbd6b18525e2cc275e82bb5dfca0cf2db478d1333a29-large.jpg",
+    "url": "https://www.alentoor.fr/goviller/agenda/6089157-tem-34eme-edition-l-art-en-campagne",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "icn-974",
@@ -3566,7 +3176,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_grandsenfants.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/974-espace-chaudeau-ludres-les-grands-enfants/2026-06-19-20-00.html",
-    "source": "ici-c-nancy"
+    "source": "ici-c-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-gims",
@@ -3585,7 +3196,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Gims_NOA_40x60_originale-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/gims/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41642",
@@ -3602,7 +3214,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41642_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41642/map-n-roll-festival-son-lumiere-video-villers-les-nancy/meurthe-et-moselle-villers-les-nancy/fete-animation",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-petit-moment-juin",
@@ -3619,7 +3232,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09564.jpg?itok=c-M3ROhR",
     "url": "https://lautrecanalnancy.fr/agenda/petit-moment-juin",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-journee-mobilite-et-concerts-de-second-cockpit-live-8h30-12h30-17h",
@@ -3641,7 +3255,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/second_cockpit_-_photo_promo_3_-_avec_credit.jpg?itok=YBzysQhq",
     "url": "https://lautrecanalnancy.fr/agenda/journee-mobilite-et-concerts-de-second-cockpit-live-8h30-12h30-17h",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-second-cockpit",
@@ -3661,7 +3276,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-second-cockpit",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-map-n-roll-festival-son-lumiere-video-et-paillettes",
@@ -3681,7 +3297,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/mapping_2025_c_service_communication_de_villers-les-nancy_copie.jpg?itok=nVBrorrd",
     "url": "https://lautrecanalnancy.fr/agenda/map-n-roll-festival-son-lumiere-video-et-paillettes",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1673626443953272",
@@ -3700,7 +3317,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1673626443953272/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1386125846665334",
@@ -3719,7 +3337,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1386125846665334/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1626745411764082",
@@ -3738,7 +3357,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1626745411764082/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-994220203120780",
@@ -3757,7 +3377,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/994220203120780/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1526325142371702",
@@ -3776,7 +3397,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1526325142371702/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1035835259015107",
@@ -3795,7 +3417,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1035835259015107/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-26476834581968989",
@@ -3814,7 +3437,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/26476834581968989/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1157525029549790",
@@ -3833,7 +3457,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1157525029549790/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1521323683029501",
@@ -3852,7 +3477,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1521323683029501/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2975341715987958",
@@ -3871,7 +3497,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2975341715987958/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1024451006653756",
@@ -3890,7 +3517,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1024451006653756/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1007921308590524",
@@ -3909,7 +3537,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1007921308590524/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1527813452285468",
@@ -3928,7 +3557,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1527813452285468/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1408220664672003",
@@ -3947,7 +3577,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1408220664672003/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-966443452863163",
@@ -3966,7 +3597,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/966443452863163/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-la-fete-de-la-musique-est-de-retour",
@@ -3985,7 +3617,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2026/05/couv-fete-de-la-musique.jpg",
     "url": "https://www.ludres.com/liste-evenements/la-fete-de-la-musique-est-de-retour/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-permanence-de-police-nationale2",
@@ -4004,7 +3637,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2025/08/securite-du-quotidien.jpg",
     "url": "https://www.ludres.com/liste-evenements/permanence-de-police-nationale2/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "10d09ec4-6315-11f1-ac2d-a1e4194f8ea4",
@@ -4022,7 +3656,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/10d09ec4-6315-11f1-ac2d-a1e4194f8ea4/0/ORIGINE_M_6a267eeb5dad1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10d09ec4-6315-11f1-ac2d-a1e4194f8ea4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10d09ec4-6315-11f1-ac2d-a1e4194f8ea4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "258629b8-5fe8-11f1-b90c-9d53c5ea1dd0",
@@ -4041,7 +3676,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/258629b8-5fe8-11f1-b90c-9d53c5ea1dd0/0/ORIGINE_M_6a212b114274d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=258629b8-5fe8-11f1-b90c-9d53c5ea1dd0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=258629b8-5fe8-11f1-b90c-9d53c5ea1dd0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7d1974d2-55c5-11f1-89aa-0b45ed106a27",
@@ -4059,7 +3695,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7d1974d2-55c5-11f1-89aa-0b45ed106a27/0/ORIGINE_M_6a1029f430a93.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7d1974d2-55c5-11f1-89aa-0b45ed106a27"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7d1974d2-55c5-11f1-89aa-0b45ed106a27",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "71338384-2d01-11f1-a53c-094338ce44d9",
@@ -4077,7 +3714,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/71338384-2d01-11f1-a53c-094338ce44d9/0/ORIGINE_M_69cbc52c5810e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=71338384-2d01-11f1-a53c-094338ce44d9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=71338384-2d01-11f1-a53c-094338ce44d9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f952afb4-55de-11f1-92af-5555f0cb7018",
@@ -4096,7 +3734,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f952afb4-55de-11f1-92af-5555f0cb7018/0/1-1_M_6a1055008dd4e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f952afb4-55de-11f1-92af-5555f0cb7018"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f952afb4-55de-11f1-92af-5555f0cb7018",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "1cf50a12-4463-11f1-ac55-67027ee90f30",
@@ -4116,7 +3755,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1cf50a12-4463-11f1-ac55-67027ee90f30/0/ORIGINE_M_69f2ff766d8a2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1cf50a12-4463-11f1-ac55-67027ee90f30"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1cf50a12-4463-11f1-ac55-67027ee90f30",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "461997fa-5999-11f1-ac00-ad6d25847a82",
@@ -4134,7 +3774,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/461997fa-5999-11f1-ac00-ad6d25847a82/0/1-1_M_6a1699459db7d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=461997fa-5999-11f1-ac00-ad6d25847a82"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=461997fa-5999-11f1-ac00-ad6d25847a82",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22736",
@@ -4151,7 +3792,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/5b6/737-737019075_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/atelier-creatif-bois-dessous-de-plat/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20535",
@@ -4168,7 +3810,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/518/737-737012845_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-art-deco-au-parc-de-saurupt/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22280",
@@ -4185,7 +3828,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/f1c/737-737018619_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-art-deco-au-parc-de-saurupt-pmr/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23413",
@@ -4202,7 +3846,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0c8/737-737019235_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/vente-et-visite-100-bols/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23412",
@@ -4219,7 +3864,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/f95/737-737019234_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/fete-de-la-musique-concert-musique-electronique-et-harpe/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23406",
@@ -4236,7 +3882,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/cc5/737-737019228_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/danse-bollywood/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23418",
@@ -4253,7 +3900,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/e8b/737-737019241_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/la-grande-soiree-catch-impro-le-choc-des-titans/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-decouverte-du-shibari",
@@ -4270,7 +3918,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/05/69f48f136fb8b-decouverte-du-shibari.png",
     "url": "https://nancy.curieux.net/agenda/evenement/decouverte-du-shibari",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-15515",
@@ -4290,7 +3939,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/05/mediatheque-fete-musique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/la-mediatheque-fete-la-musique/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2040373309893756",
@@ -4311,7 +3961,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2040373309893756/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-23486",
@@ -4328,7 +3979,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/sensibilisation-aux-gestes-qui-sauvent-2/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-23731",
@@ -4345,7 +3997,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-de-musique-sacree/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28554",
@@ -4360,9 +4013,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/vandoeuvre-en-fete/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28657",
@@ -4377,9 +4031,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-450",
@@ -4399,7 +4054,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2025/FMJC.png",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/fete-de-quartier-de-la-mjc-jean-savine",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-232",
@@ -4418,7 +4074,368 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6185883",
+    "title": "Quand l’Art et la Neuro&Co se lient, il souffle une douce brise de bien-être",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dateText": "Du 20 au 21 juin 2026",
+    "schedule": "",
+    "place": "4 route de Bulligny",
+    "city": "Blénod-lès-Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/2c/00/2c00d65c8f4ebfe4b730ee8952399483d29619a421f58943778c1d6f76df2c4c-large.jpg",
+    "url": "https://www.alentoor.fr/blenod-les-toul/agenda/6185883-quand-l-art-et-la-neuro-co-se-lient-il-souffle-une-douce-brise-de-bien-etre",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6135786",
+    "title": "Concert - Animal Sound - Brasserie Cheval",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "L'Atelier",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/07/b0/07b0319fb621398f59d3542323b3e229aef207da5a2d0e4c4851a761a0e8bb37-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6135786-concert-animal-sound-brasserie-cheval",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6149645",
+    "title": "Brèves de comptoir - Tota Familia",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-07-04",
+    "dateText": "Du 20 juin au 4 juillet 2026",
+    "schedule": "",
+    "place": "Centre culturel Vauban",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/1e/1c/1e1ccf26750473a1e6ccaf029c91f84718c97da75349dd9ea81dc267ea4eed0c-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6149645-breves-de-comptoir-tota-familia",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6172411",
+    "title": "Concert - Saanjees, les Miches Tranquilles - Brasserie Cheval",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 18h à 23h30",
+    "place": "L'Atelier",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/ca/4e/ca4e2540381537b6c2cc56cde9c4745f368fea5f8962dc0fdbeeedba772e08eb-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6172411-concert-saanjees-les-miches-tranquilles-brasserie-cheval",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "lac-41627",
+    "title": "Toul flamboyante Fête Médiévale",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dateText": "Du 20 au 21 juin 2026",
+    "schedule": "",
+    "place": "Place Charles de Gaulle",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41627_min.png",
+    "url": "https://www.lorraineaucoeur.com/evt-41627/toul-flamboyante-fete-medievale/meurthe-et-moselle-toul/fete-animation",
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5984260",
+    "title": "Montée dans la tour sud de la cathédrale de Toul",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-09-20",
+    "dateText": "Du 20 juin au 20 septembre 2026",
+    "schedule": "",
+    "place": "Cathédrale Saint-Étienne de Toul",
+    "city": "Toul",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/19/8d/198dab1dc2a2d0e819f0aa93b16d11e87ae03bb88d0e03176468ead3a2f373f8-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/5984260-montee-dans-la-tour-sud-de-la-cathedrale-de-toul",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6180034",
+    "title": "Exposition Salle du Trésor - Croix pectorales",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-09-20",
+    "dateText": "Du 20 juin au 20 septembre 2026",
+    "schedule": "",
+    "place": "Cathédrale Saint-Étienne de Toul",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/ff/59/ff5980348b238ac4f018390205defcc8c5cf6d8a7b0727d187d4f6add6449393-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6180034-exposition-salle-du-tresor-croix-pectorales",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6149696",
+    "title": "Les Estivales : fête de la musique",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "Place de la Cagnotte",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/0e/f2/0ef2fcd1f5cb6260daea8fe140ef3fd105779feec36ba8b44537e70ee0703b51-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6149696-les-estivales-fete-de-la-musique",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6166663",
+    "title": "Festi'sport",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 10h à 16h",
+    "place": "1 rue de Quimper",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/8f/5b/8f5b082f754410b5c3401096c7f2321fd8abc21c4ed586571d424cf216e0a2c7-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6166663-festi-sport",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6180970",
+    "title": "Fête de la musique à Frouard",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 16h à 21h30",
+    "place": "99 avenue de la Libération",
+    "city": "Frouard",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/f3/06/f306be581d6281b527683515af07d11ce7a4d6392cc7d02968171df838428ceb-large.jpg",
+    "url": "https://www.alentoor.fr/frouard/agenda/6180970-fete-de-la-musique-a-frouard",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6108077",
+    "title": "Feux de la Saint Jean",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dateText": "Du 20 au 21 juin 2026",
+    "schedule": "",
+    "place": "Rue des dames Chanoinesses",
+    "city": "Bouxières-aux-Dames",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/98/4e/984e00b2de22ea9b8f056376dfbf4a94bd4e50c857042758e26a8bbe4d77aeb2-large.jpg",
+    "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6108077-feux-de-la-saint-jean",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6172486",
+    "title": "Feux de la Saint-Jean",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "Ile d'Esch",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/b8/a2/b8a2f35ed1c667bd6f44ab7762dee4fd475c368275df3d1fc6515c00141337e2-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172486-feux-de-la-saint-jean",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6148670",
+    "title": "Fête de la musique à Marbache",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "3 Voie de Liverdun",
+    "city": "Marbache",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/aa/00/aa0074c397cd886e607b8b1a3016cee64d6e2faecc75aa89ef2b2b02fe85f0bd-large.jpg",
+    "url": "https://www.alentoor.fr/marbache/agenda/6148670-fete-de-la-musique-a-marbache",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6188511",
+    "title": "Fête de la musique à Lay Saint-Christophe",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "1 chemin de la Jeune Rose",
+    "city": "Lay-Saint-Christophe",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/51/fe/51fe0e9f011c53f173e93752f0daf1bceed5f805b25068a34ad9834cccf305e2-large.jpg",
+    "url": "https://www.alentoor.fr/lay-saint-christophe/agenda/6188511-fete-de-la-musique-a-lay-saint-christophe",
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
+  },
+  {
+    "uuid": "al-6117803",
+    "title": "Théâtre – l'homme de parole",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 18h à 19h15",
+    "place": "Médiathèque Yvon Tondon",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/9c/04/9c0420742bdd243527d5627ae028f061968c0d1c81bde940e024d1f6be8dd553-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6117803-theatre-l-homme-de-parole",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6172402",
+    "title": "Atelier Scrapbooking – Mini album photos",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 10h30 à 12h30",
+    "place": "La Fabrique Colorée",
+    "city": "Pont-à-Mousson",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/7f/b8/7fb8d6826314ce9c3b56652b121836a1007bf373f803352c88d04f61104a7ae9-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172402-atelier-scrapbooking-mini-album-photos",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6148810",
+    "title": "Fête de la Musique à Blénod",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "19h",
+    "place": "Place du 8 Mai 1945",
+    "city": "Blénod-lès-Pont-À-Mousson",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/07/e2/07e2382d3bc36ef69253cb888a9cc84f1354fe71f6e35103a1bbaef20ecd994f-large.jpg",
+    "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/6148810-fete-de-la-musique-a-blenod",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6189919",
+    "title": "Feu de la Saint-Jean",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "Gare de Chambrey",
+    "city": "Chambrey",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/50/2a/502a3e3a844d3600a093a6c329e2c00092a4a528c57485c72a61ecbc390cfc89-large.jpg",
+    "url": "https://www.alentoor.fr/chambrey/agenda/6189919-feu-de-la-saint-jean",
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
+  },
+  {
+    "uuid": "al-5802441",
+    "title": "Festival de Froville - le cœur et la raison",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Prieuré de Froville",
+    "city": "Froville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
+    "url": "https://www.alentoor.fr/froville/agenda/5802441-festival-de-froville-le-c-ur-et-la-raison",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6186750",
+    "title": "Vide dressing",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "de 10h à 18h",
+    "place": "Salle des fêtes",
+    "city": "Diarville",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/a9/66/a9660e46f1207dd8fa933eda239b8d8a80ba89307b1ff2c6f8e7c953d516e219-large.jpg",
+    "url": "https://www.alentoor.fr/diarville/agenda/6186750-vide-dressing",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1508417196894781",
@@ -4437,7 +4454,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1508417196894781/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-976846605231997",
@@ -4456,7 +4474,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/976846605231997/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1483725983503022",
@@ -4475,398 +4494,26 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1483725983503022/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-6185883",
-    "title": "Quand l’Art et la Neuro&Co se lient, il souffle une douce brise de bien-être",
+    "uuid": "icn-1094",
+    "title": "NANCY : JOURNÉE MONDIALE DES RÉFUGIÉ.ES",
     "category": "autre",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dateText": "Du 20 au 21 juin 2026",
-    "schedule": "",
-    "place": "4 route de Bulligny",
-    "city": "Blénod-lès-Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/2c/00/2c00d65c8f4ebfe4b730ee8952399483d29619a421f58943778c1d6f76df2c4c-large.jpg",
-    "url": "https://www.alentoor.fr/blenod-les-toul/agenda/6185883-quand-l-art-et-la-neuro-co-se-lient-il-souffle-une-douce-brise-de-bien-etre",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6135786",
-    "title": "Concert - Animal Sound - Brasserie Cheval",
-    "category": "musiques-actuelles",
     "subcats": [],
     "date": "2026-06-20",
     "endDate": "2026-06-20",
     "dateText": "",
-    "schedule": "20h",
-    "place": "L'Atelier",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/07/b0/07b0319fb621398f59d3542323b3e229aef207da5a2d0e4c4851a761a0e8bb37-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6135786-concert-animal-sound-brasserie-cheval",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6149645",
-    "title": "Brèves de comptoir - Tota Familia",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-07-04",
-    "dateText": "Du 20 juin au 4 juillet 2026",
-    "schedule": "",
-    "place": "Centre culturel Vauban",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/1e/1c/1e1ccf26750473a1e6ccaf029c91f84718c97da75349dd9ea81dc267ea4eed0c-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6149645-breves-de-comptoir-tota-familia",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172411",
-    "title": "Concert - Saanjees, les Miches Tranquilles - Brasserie Cheval",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 18h à 23h30",
-    "place": "L'Atelier",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ca/4e/ca4e2540381537b6c2cc56cde9c4745f368fea5f8962dc0fdbeeedba772e08eb-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6172411-concert-saanjees-les-miches-tranquilles-brasserie-cheval",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "lac-41627",
-    "title": "Toul flamboyante Fête Médiévale",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dateText": "Du 20 au 21 juin 2026",
-    "schedule": "",
-    "place": "Place Charles de Gaulle",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41627_min.png",
-    "url": "https://www.lorraineaucoeur.com/evt-41627/toul-flamboyante-fete-medievale/meurthe-et-moselle-toul/fete-animation",
-    "source": "lorraineaucoeur"
-  },
-  {
-    "uuid": "al-5984260",
-    "title": "Montée dans la tour sud de la cathédrale de Toul",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-09-20",
-    "dateText": "Du 20 juin au 20 septembre 2026",
-    "schedule": "",
-    "place": "Cathédrale Saint-Étienne de Toul",
-    "city": "Toul",
+    "schedule": "10:30",
+    "place": "1 rue Jean Mihé (cuisine ouverte)",
+    "city": "Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/19/8d/198dab1dc2a2d0e819f0aa93b16d11e87ae03bb88d0e03176468ead3a2f373f8-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/5984260-montee-dans-la-tour-sud-de-la-cathedrale-de-toul",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6180034",
-    "title": "Exposition Salle du Trésor - Croix pectorales",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-09-20",
-    "dateText": "Du 20 juin au 20 septembre 2026",
-    "schedule": "",
-    "place": "Cathédrale Saint-Étienne de Toul",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/ff/59/ff5980348b238ac4f018390205defcc8c5cf6d8a7b0727d187d4f6add6449393-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6180034-exposition-salle-du-tresor-croix-pectorales",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6149696",
-    "title": "Les Estivales : fête de la musique",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Place de la Cagnotte",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/0e/f2/0ef2fcd1f5cb6260daea8fe140ef3fd105779feec36ba8b44537e70ee0703b51-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/6149696-les-estivales-fete-de-la-musique",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6166663",
-    "title": "Festi'sport",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 10h à 16h",
-    "place": "1 rue de Quimper",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/8f/5b/8f5b082f754410b5c3401096c7f2321fd8abc21c4ed586571d424cf216e0a2c7-large.jpg",
-    "url": "https://www.alentoor.fr/liverdun/agenda/6166663-festi-sport",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6180970",
-    "title": "Fête de la musique à Frouard",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 16h à 21h30",
-    "place": "99 avenue de la Libération",
-    "city": "Frouard",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/f3/06/f306be581d6281b527683515af07d11ce7a4d6392cc7d02968171df838428ceb-large.jpg",
-    "url": "https://www.alentoor.fr/frouard/agenda/6180970-fete-de-la-musique-a-frouard",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6148670",
-    "title": "Fête de la musique à Marbache",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "3 Voie de Liverdun",
-    "city": "Marbache",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/aa/00/aa0074c397cd886e607b8b1a3016cee64d6e2faecc75aa89ef2b2b02fe85f0bd-large.jpg",
-    "url": "https://www.alentoor.fr/marbache/agenda/6148670-fete-de-la-musique-a-marbache",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6108077",
-    "title": "Feux de la Saint Jean",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dateText": "Du 20 au 21 juin 2026",
-    "schedule": "",
-    "place": "Rue des dames Chanoinesses",
-    "city": "Bouxières-aux-Dames",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/98/4e/984e00b2de22ea9b8f056376dfbf4a94bd4e50c857042758e26a8bbe4d77aeb2-large.jpg",
-    "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6108077-feux-de-la-saint-jean",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172486",
-    "title": "Feux de la Saint-Jean",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Ile d'Esch",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/b8/a2/b8a2f35ed1c667bd6f44ab7762dee4fd475c368275df3d1fc6515c00141337e2-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172486-feux-de-la-saint-jean",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6188511",
-    "title": "Fête de la musique à Lay Saint-Christophe",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "1 chemin de la Jeune Rose",
-    "city": "Lay-Saint-Christophe",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/51/fe/51fe0e9f011c53f173e93752f0daf1bceed5f805b25068a34ad9834cccf305e2-large.jpg",
-    "url": "https://www.alentoor.fr/lay-saint-christophe/agenda/6188511-fete-de-la-musique-a-lay-saint-christophe",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6117803",
-    "title": "Théâtre – l'homme de parole",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 18h à 19h15",
-    "place": "Médiathèque Yvon Tondon",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/9c/04/9c0420742bdd243527d5627ae028f061968c0d1c81bde940e024d1f6be8dd553-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6117803-theatre-l-homme-de-parole",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172402",
-    "title": "Atelier Scrapbooking – Mini album photos",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 10h30 à 12h30",
-    "place": "La Fabrique Colorée",
-    "city": "Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/7f/b8/7fb8d6826314ce9c3b56652b121836a1007bf373f803352c88d04f61104a7ae9-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172402-atelier-scrapbooking-mini-album-photos",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6148810",
-    "title": "Fête de la Musique à Blénod",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "19h",
-    "place": "Place du 8 Mai 1945",
-    "city": "Blénod-lès-Pont-À-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/07/e2/07e2382d3bc36ef69253cb888a9cc84f1354fe71f6e35103a1bbaef20ecd994f-large.jpg",
-    "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/6148810-fete-de-la-musique-a-blenod",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6189919",
-    "title": "Feu de la Saint-Jean",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "Gare de Chambrey",
-    "city": "Chambrey",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/50/2a/502a3e3a844d3600a093a6c329e2c00092a4a528c57485c72a61ecbc390cfc89-large.jpg",
-    "url": "https://www.alentoor.fr/chambrey/agenda/6189919-feu-de-la-saint-jean",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5802441",
-    "title": "Festival de Froville - le cœur et la raison",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "Prieuré de Froville",
-    "city": "Froville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
-    "url": "https://www.alentoor.fr/froville/agenda/5802441-festival-de-froville-le-c-ur-et-la-raison",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6186750",
-    "title": "Vide dressing",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 10h à 18h",
-    "place": "Salle des fêtes",
-    "city": "Diarville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/a9/66/a9660e46f1207dd8fa933eda239b8d8a80ba89307b1ff2c6f8e7c953d516e219-large.jpg",
-    "url": "https://www.alentoor.fr/diarville/agenda/6186750-vide-dressing",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6175780",
-    "title": "L’Art et la neuroscience un souffle un air de de bien-être",
-    "category": "conference",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dateText": "Du 20 au 21 juin 2026",
-    "schedule": "",
-    "place": "Cabinet Neuro&Bien-Être Luminotherapie",
-    "city": "Blénod-lès-Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/a2/a9/a2a95a8b8890484675c98e70fee5088be47cb1bfd8a3b97e5fd7188b1d9f8265-large.jpg",
-    "url": "https://www.alentoor.fr/blenod-les-toul/agenda/6175780-l-art-et-la-neuroscience-un-souffle-un-air-de-de-bien-etre",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6185880",
-    "title": "Retrouver votre bien-être.",
-    "category": "conference",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-21",
-    "dateText": "Du 20 au 21 juin 2026",
-    "schedule": "",
-    "place": "3 route de Bulligny",
-    "city": "Blénod-lès-Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/3c/8f/3c8f256f65b8256e4b6f0d5f5c00b3cbbfb055d6f5fa3daf6b1ed0fefa9f6237-large.jpg",
-    "url": "https://www.alentoor.fr/blenod-les-toul/agenda/6185880-retrouver-votre-bien-etre",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6135782",
-    "title": "Visite nature - à la rencontre des papillons",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "de 20h à 23h59",
-    "place": "Plateau et fort de Domgermain",
-    "city": "Domgermain",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/photos/classifieds/f2/14/f21472146a525f05449f4232e6dad9835346b19b4d9302a0cb1f4087aa81717a-large.jpg",
-    "url": "https://www.alentoor.fr/domgermain/agenda/6135782-visite-nature-a-la-rencontre-des-papillons",
-    "source": "alentoor"
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_journee-refugies.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1094-nancy-journee-mondiale-des-refugie-es/2026-06-20-10-30.html",
+    "source": "ici-c-nancy",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "lcn-lanternes-memoire-nature",
@@ -4885,7 +4532,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-254.jpg?itok=7CcISis3",
     "url": "https://lautrecanalnancy.fr/agenda/lanternes-memoire-nature",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-ateliers-creatifs-expo-jeux-rencontrez-les-porteurs-de-projet-de-l-octroi",
@@ -4905,7 +4553,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09250.jpg?itok=qNn4nIEt",
     "url": "https://lautrecanalnancy.fr/agenda/ateliers-creatifs-expo-jeux-rencontrez-les-porteurs-de-projet-de-l-octroi",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-club-dancing-kids-allez-le-foot-boum-des-4-ans-de-bogdan-woodsdad",
@@ -4925,7 +4574,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignette2.jpg?itok=pRrjiYsP",
     "url": "https://lautrecanalnancy.fr/agenda/club-dancing-kids-allez-le-foot-boum-des-4-ans-de-bogdan-woodsdad",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-fanzone-rapzone",
@@ -4945,7 +4595,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_color3.jpg?itok=0kuG0S8Q",
     "url": "https://lautrecanalnancy.fr/agenda/fanzone-rapzone",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1728008164881218",
@@ -4964,7 +4615,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1728008164881218/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1717591736253900",
@@ -4983,7 +4635,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1717591736253900/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-950653494673683",
@@ -5002,7 +4655,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/950653494673683/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-866782422532807",
@@ -5021,7 +4675,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/866782422532807/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1186539187872720",
@@ -5040,7 +4695,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1186539187872720/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-27257648923867191",
@@ -5059,7 +4715,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/27257648923867191/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1562282152088621",
@@ -5078,7 +4735,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1562282152088621/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1029737976399004",
@@ -5097,7 +4755,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1029737976399004/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1488898839684500",
@@ -5116,7 +4775,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1488898839684500/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1344579897005704",
@@ -5135,7 +4795,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1344579897005704/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1655658875689748",
@@ -5154,7 +4815,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1655658875689748/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1733168814531713",
@@ -5173,7 +4835,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1733168814531713/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2082943495899622",
@@ -5192,7 +4855,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2082943495899622/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1032990849662490",
@@ -5211,7 +4875,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1032990849662490/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1293891169502814",
@@ -5230,7 +4895,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1293891169502814/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-880657425051366",
@@ -5249,7 +4915,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/880657425051366/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1549944016708360",
@@ -5268,7 +4935,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1549944016708360/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1337923131655853",
@@ -5287,7 +4955,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1337923131655853/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1000136819025654",
@@ -5306,7 +4975,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1000136819025654/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1852005029537606",
@@ -5325,7 +4995,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1852005029537606/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-27336373632716850",
@@ -5344,7 +5015,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/27336373632716850/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-787465447457269",
@@ -5363,7 +5035,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/787465447457269/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1312166087708532",
@@ -5382,7 +5055,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1312166087708532/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2206057473523426",
@@ -5401,7 +5075,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2206057473523426/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1372448698267706",
@@ -5420,7 +5095,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1372448698267706/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-995418403431314",
@@ -5439,7 +5115,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/995418403431314/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1543951830404617",
@@ -5458,7 +5135,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1543951830404617/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-973065862088364",
@@ -5477,7 +5155,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/973065862088364/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1866651427363263",
@@ -5496,7 +5175,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1866651427363263/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1923229471662677",
@@ -5515,7 +5195,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1923229471662677/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2221064661626497",
@@ -5534,7 +5215,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2221064661626497/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1334572195434713",
@@ -5553,7 +5235,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1334572195434713/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-951941127330048",
@@ -5572,7 +5255,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/951941127330048/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-bebes-lecteurs-16",
@@ -5592,7 +5276,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2022/09/heure-du-conte.jpg",
     "url": "https://www.ludres.com/liste-evenements/bebes-lecteurs-16/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-fete-de-la-musique-a-la-mediatheque-3",
@@ -5611,7 +5296,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2026/05/fete-musique-mediatheque.jpg",
     "url": "https://www.ludres.com/liste-evenements/fete-de-la-musique-a-la-mediatheque-3/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-coups-de-coeur-des-9-12-ans-2",
@@ -5630,7 +5316,8 @@ const EVENTS = [
     "reservation": false,
     "image": null,
     "url": "https://www.ludres.com/liste-evenements/coups-de-coeur-des-9-12-ans-2/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-spectacles-de-theatre-6",
@@ -5649,7 +5336,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2026/06/spectacles-theatre-centre-brassens.jpg",
     "url": "https://www.ludres.com/liste-evenements/spectacles-de-theatre-6/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lud-gala-de-patinage-sur-roulettes-3",
@@ -5669,7 +5357,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ludres.com/wp-content/uploads/2026/06/patinage-roulettes.jpg",
     "url": "https://www.ludres.com/liste-evenements/gala-de-patinage-sur-roulettes-3/",
-    "source": "ludres"
+    "source": "ludres",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "68cc3e44-f77c-11f0-beb3-6189d7a1084d",
@@ -5687,7 +5376,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/68cc3e44-f77c-11f0-beb3-6189d7a1084d/0/ORIGINE_M_6971faa7878c5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=68cc3e44-f77c-11f0-beb3-6189d7a1084d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=68cc3e44-f77c-11f0-beb3-6189d7a1084d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d84c55be-6988-11f1-92a2-7105e1fccab3",
@@ -5705,7 +5395,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d84c55be-6988-11f1-92a2-7105e1fccab3/0/ORIGINE_M_6a315225269d9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d84c55be-6988-11f1-92a2-7105e1fccab3"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d84c55be-6988-11f1-92a2-7105e1fccab3",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "42ce779e-64d6-11f1-a571-d1600cceccab",
@@ -5724,7 +5415,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/42ce779e-64d6-11f1-a571-d1600cceccab/0/ORIGINE_M_6a29708b456e4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=42ce779e-64d6-11f1-a571-d1600cceccab"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=42ce779e-64d6-11f1-a571-d1600cceccab",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d3f17e2e-55e0-11f1-a846-9da8be697f9e",
@@ -5743,7 +5435,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d3f17e2e-55e0-11f1-a846-9da8be697f9e/0/1-1_M_6a105aae87018.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d3f17e2e-55e0-11f1-a846-9da8be697f9e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d3f17e2e-55e0-11f1-a846-9da8be697f9e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c48c5f4a-64d5-11f1-b028-7580ddb6ed49",
@@ -5763,7 +5456,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c48c5f4a-64d5-11f1-b028-7580ddb6ed49/0/ORIGINE_M_6a296fb76cdbf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c48c5f4a-64d5-11f1-b028-7580ddb6ed49"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c48c5f4a-64d5-11f1-b028-7580ddb6ed49",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7b58b726-5a8d-11f1-94bc-79fde6eb5876",
@@ -5784,7 +5478,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7b58b726-5a8d-11f1-94bc-79fde6eb5876/0/ORIGINE_M_6a182f7941e2e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b58b726-5a8d-11f1-94bc-79fde6eb5876"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b58b726-5a8d-11f1-94bc-79fde6eb5876",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20504",
@@ -5801,7 +5496,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/750/737-737018524_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/cycle-yoga-et-son-atelier-03-bain-sonore/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23230",
@@ -5818,7 +5514,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/876/737-737019203_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/concert-ensemble-lyrique-interlude-fete-de-la-musique/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-metal-night-la-fete-de-la-musique-en-plein-air-au-bbc",
@@ -5835,7 +5532,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a3039051d2db-metal-night-la-fete-de-la-musique-en-plein-air-au-bbc.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/metal-night-la-fete-de-la-musique-en-plein-air-au-bbc",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-marche-citoyenne-de-nancy",
@@ -5852,24 +5550,29 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/06/6a2a6e2f3da7b-marche-citoyenne-de-nancy.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/marche-citoyenne-de-nancy",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-6144395",
-    "title": "Fête de la musique",
-    "category": "musiques-actuelles",
-    "subcats": [],
+    "uuid": "vln-576",
+    "title": "Fête de la Musique : le quartier du Jardin Botanique en fête",
+    "category": "festival",
+    "subcats": [
+      "Citoyenneté",
+      "Culture"
+    ],
     "date": "2026-06-21",
     "endDate": "2026-06-21",
     "dateText": "",
-    "schedule": "",
+    "schedule": "14h à 19h",
     "place": "",
-    "city": "Lunéville",
-    "free": true,
+    "city": "Villers-lès-Nancy",
+    "free": false,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/b5/65/b565ba7f767678ed3968abf3fb524308696b0961d740e01388228ad7d62c1fa3-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6144395-fete-de-la-musique",
-    "source": "alentoor"
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/fmb.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/fete-de-la-musique-le-quartier-du-jardin-botanique-en-fete",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6172407",
@@ -5886,7 +5589,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ed/f7/edf73457a12c2f2b86fe887397a1cb2ef3631cc8aa5e89375aef0b37ace05950-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6172407-concert-les-ra",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6168332",
@@ -5903,7 +5607,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/55/a7/55a7307a91d723cd23055dbdd81848809bad25e229b2727ef4e12f6d257a6e8c-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6168332-fete-de-la-musique-le-fin-plateau",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6178700",
@@ -5920,7 +5625,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/3d/ce/3dce34ff5f498de61cedffba196d419902c52467d8e241c7e499bcf9f1f98de0-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6178700-fete-de-la-musique-a-toul",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149607",
@@ -5937,7 +5643,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/24/50/245025f5773309df7505d100efdfdf1e232ee43f12d5be1c86b103b168d26011-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149607-fete-de-la-musique-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6188504",
@@ -5954,7 +5661,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a7/60/a76073c2771d781c5466929476822e84fcb7e3474b409883b484bc71d5176e61-large.jpg",
     "url": "https://www.alentoor.fr/saizerais/agenda/6188504-spectacle-equestre-medieval",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-6108124",
@@ -5971,7 +5679,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/44/22/44222b2acab4e6c1ba3c0c7344f06e9fa0a8d59b2b7cb2d55cfbf6c8363d8c4f-large.jpg",
     "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6108124-fete-des-tilleuls",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6188945",
@@ -5988,7 +5697,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/45/69/456960262de1ba9d22622a89f99dddef7107647896f55a9a9049784a32546e93-large.jpg",
     "url": "https://www.alentoor.fr/champigneulles/agenda/6188945-vide-greniers-du-rcc",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-6180999",
@@ -6005,7 +5715,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/78/6d/786dd7edc4e75f4632947c06c0889b0aab853d862c1b5487e76a5ca090569a98-large.jpg",
     "url": "https://www.alentoor.fr/faulx/agenda/6180999-vide-grenier-a-faulx",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6120270",
@@ -6022,7 +5733,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/dc/c7/dcc766e553f0dbdf6f2a2f16d49c076aa1429c884a686b968affbb84429f47e5-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6120270-fete-de-la-musique-au-boulevard-de-riolle",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6172447",
@@ -6039,7 +5751,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e8/de/e8de3f058e6ecde1c72eccec8b7553735fbbf6c25acdcb72146d128fbff11fa3-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6172447-fete-de-la-musique-a-pont-a-mousson",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-4891328",
@@ -6056,7 +5769,44 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/65/f1/65f1d03517b8cfecdf01fcf4a9bfc237853e1bb649776afb5dad03d794762872-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/4891328-brocante-salle-des-ventes-sni",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5283137",
+    "title": "Visite Guidée du Monument Historique",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-21",
+    "endDate": "2026-10-13",
+    "dateText": "Du 21 juin au 13 octobre 2026",
+    "schedule": "",
+    "place": "9 rue saint Martin",
+    "city": "Pont-à-Mousson",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.alentoor.fr/photos/classifieds/6f/30/6f304f7ccfbae5f7f88f4104459cc6d57c549473195ec61b77bb16b4382fe8aa-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5283137-visite-guidee-du-monument-historique",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6190236",
+    "title": "Vide grenier",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-21",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "de 6h à 17h",
+    "place": "",
+    "city": "Ville-au-Val",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/ec/c4/ecc4e443f3d2a57aa3c92b939455abf27f365e29d5e4ae22dcd1dc1d4a885c86-large.jpg",
+    "url": "https://www.alentoor.fr/ville-au-val/agenda/6190236-vide-grenier",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-5878694",
@@ -6073,7 +5823,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ec/5f/ec5fc23d710c77796925cc82c7ea89700492787c2bc3afbffdd26f1d8f7a9be8-large.jpg",
     "url": "https://www.alentoor.fr/belleau-54/agenda/5878694-vide-grenier-de-belleau",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191204",
+    "title": "Course – le Pont-à-Mou100",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-21",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "de 6h à 16h",
+    "place": "Parking Principal",
+    "city": "Mousson",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/f2/da/f2dacd56483617d2ded681e1db98e00b46c5a5f04f5c239a704b7aa73946eb04-large.jpg",
+    "url": "https://www.alentoor.fr/mousson/agenda/6191204-course-le-pont-a-mou100",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6152595",
@@ -6090,7 +5859,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ee/5f/ee5f0c4a719cb04295830b89322e54eb21e6e5a7b564239ada262972f1f191c7-large.jpg",
     "url": "https://www.alentoor.fr/goin/agenda/6152595-puces-des-couturieres-et-des-loisirs-creatifs",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6162624",
@@ -6107,24 +5877,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/84/3f/843fbd95425291b9b713a1ef9f986f5906607e6127491436d97c0d79d8aa427c-large.jpg",
     "url": "https://www.alentoor.fr/delme/agenda/6162624-foire-de-delme",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6188553",
-    "title": "Fête de la Saint-Jean et du Solstice d'été",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-21",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "de 9h30 à 18h",
-    "place": "Musée Départemental Georges de la Tour",
-    "city": "Vic-sur-Seille",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/e7/86/e786c05136db0fc32f3672867409571c914311e0bdc51b7e1070c7fe5a0b2d96-large.jpg",
-    "url": "https://www.alentoor.fr/vic-sur-seille/agenda/6188553-fete-de-la-saint-jean-et-du-solstice-d-ete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6144440",
@@ -6141,7 +5895,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ac/ee/acee3a61ccb3f9d8c8ed276e7545a812480a04c7fc15b90915af0b70954591bf-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6144440-concerts-choeurs-en-fete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6144395",
+    "title": "Fête de la musique",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-21",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/b5/65/b565ba7f767678ed3968abf3fb524308696b0961d740e01388228ad7d62c1fa3-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6144395-fete-de-la-musique",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6092377",
@@ -6158,7 +5931,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/4b/b0/4bb0e3e740828747ab6abbee6ed60c6d71602a86fc63e819900ee3ba8135c533-large.jpg",
     "url": "https://www.alentoor.fr/benney/agenda/6092377-vide-greniers",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5802451",
@@ -6175,7 +5949,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/froville/agenda/5802451-festival-de-froville-baroque-playground",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "icn-1093",
@@ -6192,7 +5967,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_ugc-bandeau-caisse-matin-heros-800x480-toystory.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1093-matin-des-heros-toy-story-5/2026-06-21-10-00.html",
-    "source": "ici-c-nancy"
+    "source": "ici-c-nancy",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "lcn-atelier-yoga-et-son-par-sphaera-mundi",
@@ -6211,7 +5987,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/atelier_3._bain_sonore_c_cottonbro_studio.jpg?itok=DAirBXMz",
     "url": "https://lautrecanalnancy.fr/agenda/atelier-yoga-et-son-par-sphaera-mundi",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-la-grande-tablee",
@@ -6230,7 +6007,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-034.jpg?itok=Xkyo7t-0",
     "url": "https://lautrecanalnancy.fr/agenda/la-grande-tablee",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-scene-ouverte-de-la-fete-de-la-musique",
@@ -6250,7 +6028,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250516_bon_moment_clautre_canal15.jpeg?itok=l2FF32SB",
     "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-de-la-fete-de-la-musique",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1300016105559333",
@@ -6269,7 +6048,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1300016105559333/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2786666761711177",
@@ -6288,7 +6068,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2786666761711177/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1710842220077729",
@@ -6307,7 +6088,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1710842220077729/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1625512198500769",
@@ -6326,7 +6108,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1625512198500769/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1105260379344603",
@@ -6345,7 +6128,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1105260379344603/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2060705698663124",
@@ -6364,7 +6148,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2060705698663124/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1457894772722296",
@@ -6383,7 +6168,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1457894772722296/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2082657915972856",
@@ -6402,7 +6188,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2082657915972856/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1373536324799359",
@@ -6421,7 +6208,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1373536324799359/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1319565799680827",
@@ -6440,7 +6228,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1319565799680827/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-964704616401607",
@@ -6459,7 +6248,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/964704616401607/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-983155324529153",
@@ -6478,7 +6268,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/983155324529153/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2209023842966958",
@@ -6497,7 +6288,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2209023842966958/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1542578827225008",
@@ -6516,7 +6308,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1542578827225008/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-fete-de-quartier-des-hauts-dessey-0",
@@ -6535,7 +6328,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/site-fetedesvoisins_haut_essey_0.jpg?itok=J5QLtzw6",
     "url": "https://www.esseylesnancy.fr/agenda/fete-de-quartier-des-hauts-dessey-0",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c582c77a-5456-11f1-b6eb-870ee69f7597",
@@ -6555,7 +6349,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c582c77a-5456-11f1-b6eb-870ee69f7597/0/ORIGINE_M_6a0dc2b45db8f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c582c77a-5456-11f1-b6eb-870ee69f7597"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c582c77a-5456-11f1-b6eb-870ee69f7597",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9323f8c6-fd1c-11f0-afb4-cd45c314adc0",
@@ -6573,7 +6368,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9323f8c6-fd1c-11f0-afb4-cd45c314adc0/0/1-1_M_6a194f2969d03.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9323f8c6-fd1c-11f0-afb4-cd45c314adc0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9323f8c6-fd1c-11f0-afb4-cd45c314adc0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "261b8814-38b0-11f1-94b9-17aa376351a2",
@@ -6595,7 +6391,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/261b8814-38b0-11f1-94b9-17aa376351a2/0/ORIGINE_M_69df615e9293c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=261b8814-38b0-11f1-94b9-17aa376351a2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=261b8814-38b0-11f1-94b9-17aa376351a2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ba75abb6-58e0-11f1-b763-c1a9d1e2d829",
@@ -6616,7 +6413,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ba75abb6-58e0-11f1-b763-c1a9d1e2d829/0/ORIGINE_M_6a1560250731b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba75abb6-58e0-11f1-b763-c1a9d1e2d829"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba75abb6-58e0-11f1-b763-c1a9d1e2d829",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23191",
@@ -6633,7 +6431,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/8c7/737-737019111_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/exposition-tactile-tour/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-5365",
@@ -6650,7 +6449,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28403",
@@ -6665,9 +6465,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/recital-de-fin-de-scolarite-julie-baroukel/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148616",
@@ -6684,7 +6485,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/02/6b/026b5b0be785c12c71b09566e4c4dc37e97228d4af52795cd48e187d8dd7f64e-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6148616-construction-d-une-oeuvre-ephemere-en-carton",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1023530036677564",
@@ -6703,7 +6505,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1023530036677564/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-834304776156781",
@@ -6722,7 +6525,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/834304776156781/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1713628592968794",
@@ -6741,7 +6545,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1713628592968794/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-744091248640120",
@@ -6760,7 +6565,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/744091248640120/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-leskale-90-ans-du-front-populaire",
@@ -6777,7 +6583,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/leskale-90ans-front-pop.jpg?itok=nxp89o5R",
     "url": "https://www.esseylesnancy.fr/agenda/leskale-90-ans-du-front-populaire",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7996b680-5fe8-11f1-a7cf-a30279e3a36e",
@@ -6795,7 +6602,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7996b680-5fe8-11f1-a7cf-a30279e3a36e/0/ORIGINE_M_6a212b9e4bcf7.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7996b680-5fe8-11f1-a7cf-a30279e3a36e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7996b680-5fe8-11f1-a7cf-a30279e3a36e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8dea75dc-3cbf-11f1-8920-a9350fbced57",
@@ -6815,7 +6623,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8dea75dc-3cbf-11f1-8920-a9350fbced57/0/ORIGINE_M_69e62e94599f4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8dea75dc-3cbf-11f1-8920-a9350fbced57"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8dea75dc-3cbf-11f1-8920-a9350fbced57",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "100ae99e-c5f0-11f0-b691-a98b289b3fb3",
@@ -6837,7 +6646,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/100ae99e-c5f0-11f0-b691-a98b289b3fb3/0/ORIGINE_M_691ed9da22b20.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=100ae99e-c5f0-11f0-b691-a98b289b3fb3"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=100ae99e-c5f0-11f0-b691-a98b289b3fb3",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6166645",
@@ -6854,7 +6664,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/fa/15/fa15711ec62a38769f39d7585c0b36ffe7ecbd488ea04855f489e6676a524a1f-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6166645-concert-d-ete-la-chorale-des-lundis-qui-chantent",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5798666",
@@ -6871,7 +6682,26 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/assets/img/event/default/loisirs-medium.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5798666-atelier-de-vannerie-fabrication-d-une-corbeille-pirogue",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191275",
+    "title": "L'histoire du Maréchal Lyautey",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-23",
+    "endDate": "2026-06-23",
+    "dateText": "",
+    "schedule": "de 20h à 22h30",
+    "place": "1 place des Anciens-Combattants",
+    "city": "Tantonville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/d5/68/d5683ce4682675580750c41c64cc6af14451a41aaf73ff37607fcaa8ba1a4f77-large.jpg",
+    "url": "https://www.alentoor.fr/tantonville/agenda/6191275-l-histoire-du-marechal-lyautey",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "fb-985985237688880",
@@ -6890,7 +6720,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/985985237688880/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1563318142108945",
@@ -6909,7 +6740,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1563318142108945/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4328473457376698",
@@ -6928,7 +6760,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4328473457376698/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1843683349922879",
@@ -6947,7 +6780,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1843683349922879/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1323622826394285",
@@ -6966,7 +6800,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1323622826394285/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9e3186a2-5e7e-11f1-9328-29911c1b2972",
@@ -6984,7 +6819,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9e3186a2-5e7e-11f1-9328-29911c1b2972/0/1-1_M_6a1ece8919157.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9e3186a2-5e7e-11f1-9328-29911c1b2972"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9e3186a2-5e7e-11f1-9328-29911c1b2972",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5bb92988-6315-11f1-9e0f-418a2d200a1d",
@@ -7002,7 +6838,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5bb92988-6315-11f1-9e0f-418a2d200a1d/0/ORIGINE_M_6a267f690b412.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5bb92988-6315-11f1-9e0f-418a2d200a1d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5bb92988-6315-11f1-9e0f-418a2d200a1d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8d63f91c-3346-11f1-bb73-b3a5c16f1d29",
@@ -7020,7 +6857,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8d63f91c-3346-11f1-bb73-b3a5c16f1d29/0/1-1_M_69d64a29b076b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8d63f91c-3346-11f1-bb73-b3a5c16f1d29"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8d63f91c-3346-11f1-bb73-b3a5c16f1d29",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f4bb2bde-220d-11f1-8aca-55d399f08bfa",
@@ -7038,7 +6876,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f4bb2bde-220d-11f1-8aca-55d399f08bfa/0/1-1_M_69b965d175dc5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f4bb2bde-220d-11f1-8aca-55d399f08bfa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f4bb2bde-220d-11f1-8aca-55d399f08bfa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23414",
@@ -7055,7 +6894,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/53c/737-737019237_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/exposition-pots-plantes-et-cie-balade-ceramique-au-jardin/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22595",
@@ -7072,7 +6912,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/f2f/737-737019036_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-une-heure-une-oeuvre-jael-et-sisera-carle-van-loo/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23220",
@@ -7089,7 +6930,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/7d7/737-737019192_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/fete-de-lecole-des-musiques/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28506",
@@ -7104,9 +6946,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projections-fifn/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28674",
@@ -7123,9 +6966,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/spectacle-tous-en-scene/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-103",
@@ -7144,7 +6988,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-249",
@@ -7165,7 +7010,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/DSC05831.JPG",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/transhumance-des-brebis-du-grand-nancy-au-parc-de-brabois",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6089567",
@@ -7182,7 +7028,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ef/45/ef45baacdfbd3f79e80a90ec6b2881922ce5fa8f7316380dfbb504f91406f8d3-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6089567-debat-culture-et-integration",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149659",
@@ -7199,7 +7046,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/ae/fd/aefd240802657815cb089d6082579596f1aa3c297e99f3429af8d9fcc09a46e2-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149659-tota-familia-les-3-brigands",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149639",
@@ -7216,7 +7064,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/d6/27/d627d5f8d6d8f178164faa6545e3ab482cd437246d50a231182ce35f9a3a68f9-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149639-tota-familia-le-dragon",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6117820",
@@ -7233,7 +7082,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/7a/0f/7a0f988853e33c5b4d401958f5c412e9bacaa9185e0349162304f5408847c321-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6117820-sensibilisation-a-la-surdicecite",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148672",
@@ -7250,7 +7100,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ad/db/addbe27f0ffcaf29a4d22a1e2ee84a26e98b8a1d4431ed005a62f70ad82c9f0c-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6148672-auditions-de-l-ecole-de-musique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189899",
@@ -7267,7 +7118,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/86/03/8603cc35164c441be0aab0a1eb1a1b03115b546a04d2c30c026c31626a041b4b-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6189899-concert-de-fin-d-annee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "zen-neil-young",
@@ -7286,7 +7138,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/GDP_NeilYoung-2026-META-StoryInstaFB-1080x1920_Nancy-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/neil-young/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-868100062380836",
@@ -7305,7 +7158,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/868100062380836/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3467010313449879",
@@ -7324,7 +7178,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3467010313449879/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2267128650358228",
@@ -7343,7 +7198,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2267128650358228/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-994577972936196",
@@ -7362,7 +7218,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/994577972936196/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1511693610412772",
@@ -7381,7 +7238,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1511693610412772/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2401304050366501",
@@ -7400,7 +7258,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2401304050366501/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2009904993152620",
@@ -7419,7 +7278,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2009904993152620/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1534008771512083",
@@ -7438,7 +7298,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1534008771512083/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2116577262596558",
@@ -7457,7 +7318,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2116577262596558/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-atelier-confiture",
@@ -7474,7 +7336,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/227/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-atelier-confiture_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-annonce-transhumance-laxou-brabois",
@@ -7491,7 +7354,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/240/1200_630_7_capture-decran-2026-05-12-160313.png",
     "url": "https://www.laxou.fr/fr/agenda/annonce-transhumance-laxou-brabois_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b6b98f2c-64d6-11f1-8ad8-81cfc9e6006b",
@@ -7510,7 +7374,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b6b98f2c-64d6-11f1-8ad8-81cfc9e6006b/0/ORIGINE_M_6a29714db8954.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b6b98f2c-64d6-11f1-8ad8-81cfc9e6006b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b6b98f2c-64d6-11f1-8ad8-81cfc9e6006b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5b114b02-4914-11f1-b6a8-d57c6898b9f4",
@@ -7528,7 +7393,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5b114b02-4914-11f1-b6a8-d57c6898b9f4/0/ORIGINE_M_69faded05b2fe.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5b114b02-4914-11f1-b6a8-d57c6898b9f4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5b114b02-4914-11f1-b6a8-d57c6898b9f4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "441c4aea-396b-11f1-acb8-8bf5df0a52ed",
@@ -7547,7 +7413,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/441c4aea-396b-11f1-acb8-8bf5df0a52ed/0/ORIGINE_M_69e098ad4dc59.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=441c4aea-396b-11f1-acb8-8bf5df0a52ed"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=441c4aea-396b-11f1-acb8-8bf5df0a52ed",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b438833c-658c-11f1-a657-31de299ad7f3",
@@ -7567,7 +7434,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b438833c-658c-11f1-a657-31de299ad7f3/0/ORIGINE_M_6a2aa2a1ef028.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b438833c-658c-11f1-a657-31de299ad7f3"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b438833c-658c-11f1-a657-31de299ad7f3",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ffb4460c-6988-11f1-96a6-8965daab24e1",
@@ -7586,7 +7454,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ffb4460c-6988-11f1-96a6-8965daab24e1/0/ORIGINE_M_6a3152673db4d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ffb4460c-6988-11f1-96a6-8965daab24e1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ffb4460c-6988-11f1-96a6-8965daab24e1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2d426d9e-b05c-11ee-9a01-db475e605a50",
@@ -7604,7 +7473,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2d426d9e-b05c-11ee-9a01-db475e605a50/0/1-1_M_65a7cf35a3f5e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d426d9e-b05c-11ee-9a01-db475e605a50"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d426d9e-b05c-11ee-9a01-db475e605a50",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22145",
@@ -7621,7 +7491,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/086/737-737018992_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-terra-loreina-2-son-et-lumiere/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-terra-loreina-2-le-nouveau-spectacle-son-et-lumiere-monumental-de-damien-fontaine",
@@ -7638,7 +7509,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a20605e4bc26-terra-loreina-2-le-nouveau-spectacle-son-et-lumiere-monumental-de-damien-fontaine.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/terra-loreina-2-le-nouveau-spectacle-son-et-lumiere-monumental-de-damien-fontaine",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-23267",
@@ -7655,7 +7527,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/barbecue-du-ccas/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-505",
@@ -7677,7 +7550,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2025/depistage.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/depistage-gratuit-du-diabete-de-type-2",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180080",
@@ -7694,7 +7568,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/52/72/5272dc4102131df75870927ded97b0bd0f54885ce29b28891faaafcd0296af1f-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6180080-concert-chorale-rock-choeur-arsenal",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189912",
@@ -7711,41 +7586,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/47/55/47556cd38a968e163f8fa54a6fb9cf2b14185da6a1683c34ce0c3d2eff240979-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6189912-exposition-photo-la-paix",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6108099",
-    "title": "Act Radio Déclic 40 ans - Impression Jazz",
-    "category": "conference",
-    "subcats": [],
-    "date": "2026-06-25",
-    "endDate": "2026-06-25",
-    "dateText": "",
-    "schedule": "de 17h30 à 20h30",
-    "place": "1 place de l'Église",
-    "city": "Villey-le-Sec",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/1e/fa/1efac4c6f8b85e1aeba9d611c31731cc4f3798cae8dc0eb0a2ede56ac3cb6cad-large.jpg",
-    "url": "https://www.alentoor.fr/villey-le-sec/agenda/6108099-act-radio-declic-40-ans-impression-jazz",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6089578",
-    "title": "Impressions Jazz",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-25",
-    "endDate": "2026-06-25",
-    "dateText": "",
-    "schedule": "de 17h30 à 20h",
-    "place": "Salle de la communication",
-    "city": "Villey-le-Sec",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/44/14/4414a62d367833f5d38b6fa659ee7fba183480a6435694ccf48ca9d4eee26a19-large.jpg",
-    "url": "https://www.alentoor.fr/villey-le-sec/agenda/6089578-impressions-jazz",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "fb-1357490996267361",
@@ -7764,7 +7606,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1357490996267361/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-34812176435096564",
@@ -7783,7 +7626,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/34812176435096564/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1505224764466669",
@@ -7802,7 +7646,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1505224764466669/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4400172213560390",
@@ -7821,7 +7666,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4400172213560390/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-751020024764595",
@@ -7840,7 +7686,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/751020024764595/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ae997b7c-5fea-11f1-85a7-8dba624d7fd0",
@@ -7860,7 +7707,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ae997b7c-5fea-11f1-85a7-8dba624d7fd0/0/ORIGINE_M_6a212f523cd17.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ae997b7c-5fea-11f1-85a7-8dba624d7fd0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ae997b7c-5fea-11f1-85a7-8dba624d7fd0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-maudit-festival-1",
@@ -7881,26 +7729,28 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/04/69ede850c9e90-maudit-festival.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/maudit-festival-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "9c9da8ba-2d01-11f1-a03f-c574474048e5",
+    "uuid": "7b112c88-5d60-11f0-800e-17bbff828828",
     "title": "Oh La La La !",
-    "category": "musique-classique",
+    "category": "spectacle",
     "subcats": [
       "Opéra / lyrique",
       "Culture"
     ],
     "date": "2026-06-26",
     "endDate": "2026-07-01",
-    "dateText": "Les 26, 30 juin et 1er juillet 2026",
+    "dateText": "Du 26 juin au 1er juillet 2026",
     "schedule": "20h",
     "place": "Opéra national de Nancy-Lorraine",
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c9da8ba-2d01-11f1-a03f-c574474048e5/0/ORIGINE_M_69cbc5752eb7c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c9da8ba-2d01-11f1-a03f-c574474048e5"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7b112c88-5d60-11f0-800e-17bbff828828/0/ORIGINE_M_686f6d4d89758.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b112c88-5d60-11f0-800e-17bbff828828",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "008c9a94-4494-11f1-9457-4f2974f96cd8",
@@ -7918,7 +7768,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/008c9a94-4494-11f1-9457-4f2974f96cd8/0/1-1_M_69f35fcbb65fa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=008c9a94-4494-11f1-9457-4f2974f96cd8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=008c9a94-4494-11f1-9457-4f2974f96cd8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23043",
@@ -7935,7 +7786,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/28c/737-737019137_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/exposition-paul-emile-colin-et-la-bibliophilie-graver-le-bois-moderne/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20612",
@@ -7952,7 +7804,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/085/737-737018825_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-daum-et-lamour-du-verre/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20531",
@@ -7969,7 +7822,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/991/737-737013846_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-autour-de-nancy-thermal/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22278",
@@ -7986,7 +7840,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0e9/737-737016880_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-autour-de-nancy-thermal-pmr/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180957",
@@ -8003,7 +7858,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a2/9f/a29ff051102671a96a4c5be30f50f15b5cf3d88296e4fc2b7708b6cdff5962db-large.jpg",
     "url": "https://www.alentoor.fr/malzeville/agenda/6180957-guinguette-estivale-le-peuple-en-fete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20491",
@@ -8020,7 +7876,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/88a/737-737017668_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/representation-lyrique-oh-la-la-la/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-564",
@@ -8039,7 +7896,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/roele.png",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/theatre-en-plein-air",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1006364721822530",
@@ -8058,7 +7916,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1006364721822530/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6135826",
@@ -8075,7 +7934,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/26/17/261792c12f1241c99a4f37964447a42776230c1cee40b59fa9edac7a06f0e9b0-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6135826-friperie-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6140588",
@@ -8092,7 +7952,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/67/70/6770d3a4462e13fc8b01d0919c23ffa6b05941f5bb19aded0bb842c438d37a29-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6140588-concert-les-estivales-dusty-f-rocks",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5840768",
@@ -8109,7 +7970,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/5840768-pratiqu-am-red-hat-chicky-players",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148627",
@@ -8126,7 +7988,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/d2/5b/d25b61ed5e9c5d575c0263811c762b93709d8d1eeab2e2d38c5909dc5e3742ef-large.jpg",
     "url": "https://www.alentoor.fr/jezainville/agenda/6148627-les-soirees-de-jezainville",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6140583",
@@ -8143,24 +8006,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/80/70/8070fd93dd9be2286eb3e4759f7c5206aefa6f60cb149a2a47fa27a8cd0eddaa-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6140583-graver-le-bois-moderne-paul-emile-colin-1867-1949-de-pont-aven-a-l-art-deco",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6135831",
-    "title": "Concert - Ghost Bastards - Chaudeney-sur-Moselle",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-26",
-    "endDate": "2026-06-26",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "Rap’tout Kustom Rodz",
-    "city": "Chaudeney-sur-Moselle",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/5a/e5/5ae5f3dfda950350fee06fc5caf8fd8443c4a9e94019902a0c49f718d01e7fba-large.jpg",
-    "url": "https://www.alentoor.fr/chaudeney-sur-moselle/agenda/6135831-concert-ghost-bastards-chaudeney-sur-moselle",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-27094669986880065",
@@ -8179,7 +8026,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/27094669986880065/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1941600823170954",
@@ -8198,7 +8046,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1941600823170954/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2172531940268222",
@@ -8217,7 +8066,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2172531940268222/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3920315201609882",
@@ -8236,7 +8086,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3920315201609882/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1237494854984516",
@@ -8255,7 +8106,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1237494854984516/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2193058121512976",
@@ -8274,7 +8126,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2193058121512976/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4007293552896566",
@@ -8293,7 +8146,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4007293552896566/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1535334501469902",
@@ -8312,7 +8166,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1535334501469902/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-978539734898020",
@@ -8331,7 +8186,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/978539734898020/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-822634410697917",
@@ -8350,7 +8206,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/822634410697917/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2462017544248011",
@@ -8369,7 +8226,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2462017544248011/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-places-vivres-sante-mentale",
@@ -8388,7 +8246,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/place-a-vivres-sante.jpg?itok=0l8nrmyy",
     "url": "https://www.esseylesnancy.fr/agenda/places-vivres-sante-mentale",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-inscriptions-au-club-informatique",
@@ -8407,7 +8266,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_706474685_1.jpeg?itok=1OKlh1dp",
     "url": "https://www.esseylesnancy.fr/agenda/inscriptions-au-club-informatique",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-experimentation-police-population-jeunesse-aux-provinces",
@@ -8424,7 +8284,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/244/1200_630_7_affiche-du-film-police-population-jeunesse-26-juin.jpg",
     "url": "https://www.laxou.fr/fr/agenda/experimentation-police-population-jeunesse-aux-provinces_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-paroles-de-nos-quartier",
@@ -8441,7 +8302,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/246/1200_630_7_police-population-jeunesse-26-juin.jpg",
     "url": "https://www.laxou.fr/fr/agenda/paroles-de-nos-quartier_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c187f124-6007-11f1-a92e-1b08844719dc",
@@ -8459,7 +8321,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c187f124-6007-11f1-a92e-1b08844719dc/0/1-1_M_6a21609a0d2a1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c187f124-6007-11f1-a92e-1b08844719dc"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c187f124-6007-11f1-a92e-1b08844719dc",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e031151e-64d6-11f1-b468-f511bb172b94",
@@ -8477,7 +8340,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e031151e-64d6-11f1-b468-f511bb172b94/0/ORIGINE_M_6a2971934f227.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e031151e-64d6-11f1-b468-f511bb172b94"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e031151e-64d6-11f1-b468-f511bb172b94",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "18508dbc-f772-11f0-820f-e58cb05e3cbb",
@@ -8496,7 +8360,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/18508dbc-f772-11f0-820f-e58cb05e3cbb/0/ORIGINE_M_6971e9598bdab.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=18508dbc-f772-11f0-820f-e58cb05e3cbb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=18508dbc-f772-11f0-820f-e58cb05e3cbb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dafc483a-05bc-11f1-90da-a78545706897",
@@ -8516,17 +8381,18 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dafc483a-05bc-11f1-90da-a78545706897/0/ORIGINE_M_6989e3bb34387.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dafc483a-05bc-11f1-90da-a78545706897"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dafc483a-05bc-11f1-90da-a78545706897",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "66585db0-396b-11f1-9985-bdb14bb8b77d",
+    "uuid": "21ef6518-5457-11f1-9183-8b3465140f6c",
     "title": "Singen, klingen, Rhythmus finden",
     "category": "jeune-public",
     "subcats": [
+      "Atelier / jeux",
       "Musique",
       "Atelier",
-      "Jeune public",
-      "Atelier / jeux"
+      "Jeune public"
     ],
     "date": "2026-06-27",
     "endDate": "2026-06-27",
@@ -8536,8 +8402,9 @@ const EVENTS = [
     "city": "Nancy",
     "free": true,
     "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/66585db0-396b-11f1-9985-bdb14bb8b77d/0/ORIGINE_M_69e098e6b7e8b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=66585db0-396b-11f1-9985-bdb14bb8b77d"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/21ef6518-5457-11f1-9183-8b3465140f6c/0/ORIGINE_M_6a0dc34f6cb9a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=21ef6518-5457-11f1-9183-8b3465140f6c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "39e4d62a-6989-11f1-aecb-a5e9d8366ca1",
@@ -8556,7 +8423,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/39e4d62a-6989-11f1-aecb-a5e9d8366ca1/0/ORIGINE_M_6a3152c8d9acb.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=39e4d62a-6989-11f1-aecb-a5e9d8366ca1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=39e4d62a-6989-11f1-aecb-a5e9d8366ca1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "844a6544-f158-11f0-990f-15224fa28e00",
@@ -8574,7 +8442,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/844a6544-f158-11f0-990f-15224fa28e00/0/ORIGINE_M_6967ad74ce93d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=844a6544-f158-11f0-990f-15224fa28e00"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=844a6544-f158-11f0-990f-15224fa28e00",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20536",
@@ -8591,7 +8460,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/2d4/737-737009875_5-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-de-lexcelsior-a-la-villa-majorelle/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6126803",
@@ -8608,7 +8478,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/53/25/53250b7c4ae468151474f4551f12deccc7ad5b6b0b723e6e2a6ff184f36adc65-large.jpg",
     "url": "https://www.alentoor.fr/houdemont/agenda/6126803-course-la-bonnet-d-ale",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23345",
@@ -8625,7 +8496,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/261/737-737019221_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/festival-donke-19eme-edition/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23497",
@@ -8642,7 +8514,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/5cf/737-737019267_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/concert-choeur-nancy-ducale-magnificat/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-rencontre-avec-regine-cernier-nathalie-fagot",
@@ -8659,7 +8532,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a2aa8dc79126-rencontre-avec-regine-cernier-nathalie-fagot.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/rencontre-avec-regine-cernier-nathalie-fagot",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-le-tango-en-resonance-conference-experientielle-et-dansee-avec-nabil-fchouch",
@@ -8676,7 +8550,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/05/6a12aec437581-le-tango-en-resonance-conference-experientielle-et-dansee-avec-nabil-fchouch.png",
     "url": "https://nancy.curieux.net/agenda/evenement/le-tango-en-resonance-conference-experientielle-et-dansee-avec-nabil-fchouch",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-rouages-intemporels-3e-edition",
@@ -8693,24 +8568,28 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/05/6a132d72bb11e-rouages-intemporels-3e-edition.png",
     "url": "https://nancy.curieux.net/agenda/evenement/rouages-intemporels-3e-edition",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "vdv-27506",
-    "title": "Randonnée culturelle",
+    "uuid": "vdv-22613",
+    "title": "Stage de sculpture enfant",
     "category": "autre",
-    "subcats": [],
+    "subcats": [
+      "Famille"
+    ],
     "date": "2026-06-27",
     "endDate": "2026-06-27",
     "dateText": "",
-    "schedule": "10h",
-    "place": "",
+    "schedule": "De 10h à 11h30",
+    "place": "Maison des Jeunes et de la Culture",
     "city": "Vandœuvre-lès-Nancy",
-    "free": true,
+    "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/randonnee-culturelle/",
-    "source": "vandoeuvre"
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/stage-de-sculpture-enfant/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "vdv-28427",
@@ -8727,13 +8606,14 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28478",
-    "title": "Randonnée patrimoniale",
+    "title": "Randonnée patrimoniale “Les Secrets de Vandœuvre”",
     "category": "autre",
     "subcats": [],
     "date": "2026-06-27",
@@ -8744,9 +8624,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/randonnee-patrimoniale/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28502",
@@ -8761,9 +8642,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28579",
@@ -8778,9 +8660,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-448",
@@ -8799,7 +8682,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/gala-de-danse",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152152",
@@ -8816,7 +8700,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/9b/b5/9bb53c333bd91609ef15f15b6899db90a8b989d6434911a59d6e5fd086ef8263-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6152152-fete-de-la-musique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6089150",
@@ -8833,7 +8718,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/db/bf/dbbfa450ff9f83e3712eae3e95296399003ac25b1159a334da35a1bcaaa2c1cf-large.jpg",
     "url": "https://www.alentoor.fr/xirocourt/agenda/6089150-fete-de-la-musique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6135836",
@@ -8850,7 +8736,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/14/47/14477f2167b73abc2624c6443f2d2e61fe0e811b987314081533ad8332d3c6cd-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6135836-grand-gouter-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149618",
@@ -8867,7 +8754,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/57/c5/57c57bccac62615f851d89cc85e475a1210363057d2f78ea28ade014105cd6c2-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149618-spectacle-une-veille-de-mardi-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149608",
@@ -8884,7 +8772,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/4e/44/4e44c63e2d025eefc38b011e319d305bd469a274ca3d87de69009e335f013a3a-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149608-concert-tota-familia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6113379",
@@ -8901,7 +8790,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/1c/99/1c992a52be72ef9f5d324586a7ecc284636865fe891d5c1ecf1ade7249bcd9c7-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6113379-rouages-intemporels-convention-steampunk-toul",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6178693",
@@ -8918,24 +8808,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/6c/cb/6ccb65e1dd04928c65419248a0dbfa37c8c997ca73ec4248520391703704e33d-large.jpg",
     "url": "https://www.alentoor.fr/saizerais/agenda/6178693-saiz-rock-festival",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6136687",
-    "title": "Portes ouvertes Céramique - Cpifac - Al Terre Native",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-27",
-    "endDate": "2026-06-28",
-    "dateText": "Du 27 au 28 juin 2026",
-    "schedule": "",
-    "place": "Bâtiments 121 - 272 - 161 - Parc forêt de Haye",
-    "city": "Velaine-en-Haye",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/cc/0f/cc0febcbbe6f3f654ac550ee2453030643143a987ec20b79efaa14af9c0e3e15-large.jpg",
-    "url": "https://www.alentoor.fr/velaine-en-haye/agenda/6136687-portes-ouvertes-ceramique-cpifac-al-terre-native",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5932603",
@@ -8952,7 +8826,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/loisirs-medium.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5932603-dedicace-ladybulle-studio",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6188570",
@@ -8969,7 +8844,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/eb/a5/eba5b7b57ac25feb29cce66720063366d8e4cff63f59abe52dcd83193d5920e4-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6188570-grande-braderie-de-pont-a-mousson",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-5998475",
@@ -8986,7 +8862,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/42/30/4230a2fdc2c621d494b08f12d0b02100742b7dcda0cde89d3fc005ebdae88fda-large.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/5998475-conference-la-gouvy-et-la-snap-deux-usines-une-histoire-commune",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6175313",
@@ -9003,7 +8880,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/8e/9e/8e9ec0a467780201262ad6c16f3a1892cade6321e4c66cb97fd18f25bd91d3d4-large.jpg",
     "url": "https://www.alentoor.fr/ville-au-val/agenda/6175313-une-journee-au-chateau",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189931",
@@ -9020,7 +8898,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/c3/69/c3693a195d7869aff839d4b0550dae88bf9e98ce9720f385600acfc34fd4f859-large.jpg",
     "url": "https://www.alentoor.fr/moncel-les-luneville/agenda/6189931-evenement-course-d-orientation",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-6157328",
@@ -9037,7 +8916,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/65/5c/655c0ea2f625686730a4de57a1de20680754bf17361d155b8b28336f1e6fb906-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6157328-la-frappajeune",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148790",
@@ -9054,7 +8934,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/5c/c7/5cc70510e0032839584c8ae59182b41598cb4e4acc44a01db5ea03bd25589402-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6148790-la-frappadingue",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5942738",
@@ -9071,24 +8952,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/9b/00/9b00d0dd3ce0e277bda20b416b5c323d73355ebb6a7e56e786d416e752bc2410-large.jpg",
     "url": "https://www.alentoor.fr/affracourt/agenda/5942738-gnomania-festival-de-jeux",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-6089585",
-    "title": "Rallye Mission Libre !",
-    "category": "autre",
+    "uuid": "al-6191299",
+    "title": "Expo photos",
+    "category": "exposition",
     "subcats": [],
     "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "de 9h30 à 17h",
-    "place": "1 place de l'Église",
-    "city": "Villey-le-Sec",
+    "endDate": "2026-06-28",
+    "dateText": "Du 27 au 28 juin 2026",
+    "schedule": "",
+    "place": "Le Grenier des Halles",
+    "city": "Vézelise",
     "free": true,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/df/29/df29ee857cfc84bedc78ae65c3dbc54b156f554aa592b87a31802a7549d5fa00-large.jpg",
-    "url": "https://www.alentoor.fr/villey-le-sec/agenda/6089585-rallye-mission-libre",
-    "source": "alentoor"
+    "image": "https://www.alentoor.fr/photos/classifieds/f9/61/f96155563bb197cb662c848e1d099a904ac37276174136ad409aa6553fccef59-large.jpg",
+    "url": "https://www.alentoor.fr/vezelise/agenda/6191299-expo-photos",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "icn-1078",
@@ -9105,7 +8988,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_affichegnomania2gnomyaveclogos.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1078-plombieres-les-bains-salon-du-jeu-gnomania/2026-06-27-10-00.html",
-    "source": "ici-c-nancy"
+    "source": "ici-c-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-orelsan",
@@ -9124,7 +9008,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Orelsan_NOA_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/orelsan/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41656",
@@ -9141,7 +9026,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41656_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41656/marche-des-metiers-d-art-de-nancy-pepiniere/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-160e-anniversaire-du-sport-nautique-de-nancy",
@@ -9161,7 +9047,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/benpi_bm2455j3_bon_moment_2024_benpi.jpg?itok=KQNTOIZu",
     "url": "https://lautrecanalnancy.fr/agenda/160e-anniversaire-du-sport-nautique-de-nancy",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2472370159882374",
@@ -9180,7 +9067,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2472370159882374/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1306023751556240",
@@ -9199,7 +9087,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1306023751556240/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1033612735688961",
@@ -9218,7 +9107,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1033612735688961/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1619059042504664",
@@ -9237,7 +9127,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1619059042504664/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1341611027352116",
@@ -9256,7 +9147,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1341611027352116/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1214181737327909",
@@ -9275,7 +9167,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1214181737327909/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1691475952036657",
@@ -9294,7 +9187,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1691475952036657/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1026608176475254",
@@ -9313,7 +9207,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1026608176475254/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-770081412857774",
@@ -9332,7 +9227,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/770081412857774/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2879396185740196",
@@ -9351,7 +9247,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2879396185740196/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2841872136158997",
@@ -9370,7 +9267,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2841872136158997/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1651677316114310",
@@ -9389,7 +9287,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1651677316114310/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1319906600231415",
@@ -9408,7 +9307,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1319906600231415/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1622689255474929",
@@ -9427,7 +9327,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1622689255474929/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-994178410061248",
@@ -9446,7 +9347,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/994178410061248/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1671374044105167",
@@ -9465,7 +9367,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1671374044105167/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1667405990954553",
@@ -9484,7 +9387,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1667405990954553/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1217973596978674",
@@ -9503,7 +9407,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1217973596978674/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2063233717806618",
@@ -9522,7 +9427,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2063233717806618/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-895717509760181",
@@ -9541,7 +9447,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/895717509760181/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-855926603902260",
@@ -9560,7 +9467,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/855926603902260/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-fete-de-lete",
@@ -9579,7 +9487,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/fete_de_lete_bis.jpg?itok=9vwX1Mw8",
     "url": "https://www.esseylesnancy.fr/agenda/fete-de-lete",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-sortie-temps-nature-a-laxou-decouverte-de-la-mare",
@@ -9596,7 +9505,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/237/1200_630_7_decouverte-de-la-mare.jpg",
     "url": "https://www.laxou.fr/fr/agenda/sortie-temps-nature-a-laxou-decouverte-de-la-mare_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2059f7f0-64d7-11f1-9f6e-9bb96dd064eb",
@@ -9614,7 +9524,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2059f7f0-64d7-11f1-9f6e-9bb96dd064eb/0/ORIGINE_M_6a2971feede83.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2059f7f0-64d7-11f1-9f6e-9bb96dd064eb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2059f7f0-64d7-11f1-9f6e-9bb96dd064eb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b0ad2dca-05ca-11f1-8140-615365ee25e1",
@@ -9632,7 +9543,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b0ad2dca-05ca-11f1-8140-615365ee25e1/0/ORIGINE_M_6989faf12c78c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b0ad2dca-05ca-11f1-8140-615365ee25e1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b0ad2dca-05ca-11f1-8140-615365ee25e1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dd485b98-4233-11f1-b67f-67010f40c531",
@@ -9650,7 +9562,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dd485b98-4233-11f1-b67f-67010f40c531/0/ORIGINE_M_69ef5532e7e56.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dd485b98-4233-11f1-b67f-67010f40c531"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dd485b98-4233-11f1-b67f-67010f40c531",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "47c6208c-2d02-11f1-9a83-cb932e759728",
@@ -9669,7 +9582,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/47c6208c-2d02-11f1-9a83-cb932e759728/0/ORIGINE_M_69cbc69455914.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=47c6208c-2d02-11f1-9a83-cb932e759728"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=47c6208c-2d02-11f1-9a83-cb932e759728",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "50a12b90-3e30-11f1-8a89-870f6d176709",
@@ -9687,7 +9601,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/50a12b90-3e30-11f1-8a89-870f6d176709/0/1-1_M_69e89b0fe3c2e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=50a12b90-3e30-11f1-8a89-870f6d176709"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=50a12b90-3e30-11f1-8a89-870f6d176709",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20543",
@@ -9704,7 +9619,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/48c/737-737016588_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/les-dimanches-jardines/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20510",
@@ -9721,7 +9637,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/ce9/737-737018536_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/opera-les-ateliers-du-dimanche-oh-la-la-la/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22596",
@@ -9738,7 +9655,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/7d2/737-737019030_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/choeur-tic-tac-pop-chansons-de-disney/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22332",
@@ -9755,7 +9673,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/659/737-737015425_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/lete-des-createurs/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-concert-chorale-d-enfants-les-mirabelles-comedies-musicales",
@@ -9772,7 +9691,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a27346ff1c5e-concert-chorale-d-enfants-les-mirabelles-comedies-musicales.png",
     "url": "https://nancy.curieux.net/agenda/evenement/concert-chorale-d-enfants-les-mirabelles-comedies-musicales",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-jazz-a-l-abbaye-concert-damien-prud-homme-medium-ensemble",
@@ -9789,7 +9709,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a1d34c74d463-jazz-a-l-abbaye-concert-damien-prud-homme-medium-ensemble.png",
     "url": "https://nancy.curieux.net/agenda/evenement/jazz-a-l-abbaye-concert-damien-prud-homme-medium-ensemble",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-9732",
@@ -9812,7 +9733,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/fete-associations-2023.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-des-associations/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-566",
@@ -9831,177 +9753,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/Illustration_seule_concert_Arcovivo_ensemble_vocal_28_juin_2026.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-musiques-pour-cordes-et-choeur",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "al-6149613",
-    "title": "La Tota à un incroyable talent - Tota Familia",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Centre culturel Vauban",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/49/d2/49d24232ecebb4440ba3146ab091ff23b3c858f85ad1cd639095bfba544ac15b-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6149613-la-tota-a-un-incroyable-talent-tota-familia",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172441",
-    "title": "Banquet de la Rose à la Chapelle Libdeau",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "11h30",
-    "place": "Lieu-dit ferme de Libdeau",
-    "city": "Toul",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/8e/87/8e87da3d109f2984338c9a41d6ea1bd39ce72761b4b0a384d716e9a858f90bb3-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6172441-banquet-de-la-rose-a-la-chapelle-libdeau",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6188508",
-    "title": "Concert de l'été – Chorales à l'église Saint Martin",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "16h",
-    "place": "Eglise Saint Martin",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/e8/28/e828c644c1cf63122a3edde9eeeaa501011dde29516eaa803078f1d54245edee-large.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6188508-concert-de-l-ete-chorales-a-l-eglise-saint-martin",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6083709",
-    "title": "Bourse aux livres",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "de 9h à 13h",
-    "place": "Salle Communale",
-    "city": "Bouxières-sous-Froidmont",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
-    "url": "https://www.alentoor.fr/bouxieres-sous-froidmont/agenda/6083709-bourse-aux-livres",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6041931",
-    "title": "Braderie et brocante",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "de 8h à 17h",
-    "place": "rue de la République",
-    "city": "Jarville-la-Malgrange",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/f2/02/f2024e499bf0e886c4664d953ee09bcdc6eed40154b88dcdb03315bdf1bb1cb6-large.jpg",
-    "url": "https://www.alentoor.fr/jarville-la-malgrange/agenda/6041931-braderie-et-brocante",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6015538",
-    "title": "Festival Scène de Crime",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "de 10h à 18h",
-    "place": "Parc du Casino Solvay",
-    "city": "Dombasle-sur-Meurthe",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/93/d0/93d0e97e69f137b88726489c5b9c699d92fe57b6c6c26a8066f3aab87ac0dab6-large.jpg",
-    "url": "https://www.alentoor.fr/dombasle-sur-meurthe/agenda/6015538-festival-scene-de-crime",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6148667",
-    "title": "Les caisses à savon en folie",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "de 10h à 18h",
-    "place": "",
-    "city": "Einville-au-Jard",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/36/c8/36c87ddea89685174e33afcfb682e4417f0f843a2755a81045ef170cf7dce11e-large.jpg",
-    "url": "https://www.alentoor.fr/einville-au-jard/agenda/6148667-les-caisses-a-savon-en-folie",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5899437",
-    "title": "12ème vide grenier",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "de 8h à 18h",
-    "place": "place de la mairie",
-    "city": "Moncel-lès-Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/12/f9/12f9885bcd5b216bbd5ca0e6a79d060a9e63a3a4775675caccc429f8cf5f4c84-large.jpg",
-    "url": "https://www.alentoor.fr/moncel-les-luneville/agenda/5899437-12eme-vide-grenier",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6140525",
-    "title": "Concert - Félicien Brut et Édouard Macarez",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "16h",
-    "place": "Chapelle du Château",
-    "city": "Lunéville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/07/b0/07b09f9889ef20d2ab44f19a6eb2be82bf23904e6d609e8f0303783dad68b2e3-large.jpg",
-    "url": "https://www.alentoor.fr/luneville/agenda/6140525-concert-felicien-brut-et-edouard-macarez",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5802440",
-    "title": "Festival de Froville - une nuit en Flandres",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "Prieuré de Froville",
-    "city": "Froville",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
-    "url": "https://www.alentoor.fr/froville/agenda/5802440-festival-de-froville-une-nuit-en-flandres",
-    "source": "alentoor"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6116907",
@@ -10018,7 +9771,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/64/e6/64e699a1cd66eea833f5653bf8786aef24cb1250507c64a4cede111f5aa47fdb-large.jpg",
     "url": "https://www.alentoor.fr/chamagne/agenda/6116907-vide-grenier",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6176102",
@@ -10035,24 +9789,206 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/f6/70/f6706e60de14e85a1d3e4af3cf838bffa766e4271aff7f8bacfd8852a7e07c06-large.jpg",
     "url": "https://www.alentoor.fr/vezelise/agenda/6176102-vide-grenier",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-5966208",
-    "title": "5 ème vide grenier",
+    "uuid": "al-6149613",
+    "title": "La Tota à un incroyable talent - Tota Familia",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "Centre culturel Vauban",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/49/d2/49d24232ecebb4440ba3146ab091ff23b3c858f85ad1cd639095bfba544ac15b-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6149613-la-tota-a-un-incroyable-talent-tota-familia",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6172441",
+    "title": "Banquet de la Rose à la Chapelle Libdeau",
     "category": "autre",
     "subcats": [],
     "date": "2026-06-28",
     "endDate": "2026-06-28",
     "dateText": "",
-    "schedule": "de 7h30 à 18h",
-    "place": "rue grand'voix et rue des jardins",
-    "city": "Martigny-les-Gerbonvaux",
+    "schedule": "11h30",
+    "place": "Lieu-dit ferme de Libdeau",
+    "city": "Toul",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/8e/87/8e87da3d109f2984338c9a41d6ea1bd39ce72761b4b0a384d716e9a858f90bb3-large.jpg",
+    "url": "https://www.alentoor.fr/toul/agenda/6172441-banquet-de-la-rose-a-la-chapelle-libdeau",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191274",
+    "title": "Zumba plein air et Barbecue",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "10h",
+    "place": "Plateau des Rays",
+    "city": "Frouard",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/44/61/4461df9d80c89f471fcaee21f97f5064dd71014e7d8c93d0b2ef69fa2f32360a-large.jpg",
+    "url": "https://www.alentoor.fr/frouard/agenda/6191274-zumba-plein-air-et-barbecue",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
+  },
+  {
+    "uuid": "al-6188508",
+    "title": "Concert de l'été – Chorales à l'église Saint Martin",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "16h",
+    "place": "Eglise Saint Martin",
+    "city": "Pont-à-Mousson",
     "free": true,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/87/92/8792cd67f93d075d56dfed1f870dc41d9917c240a4c593106d866f85035f9259-large.jpg",
-    "url": "https://www.alentoor.fr/martigny-les-gerbonvaux/agenda/5966208-5-eme-vide-grenier",
-    "source": "alentoor"
+    "image": "https://www.alentoor.fr/photos/classifieds/e8/28/e828c644c1cf63122a3edde9eeeaa501011dde29516eaa803078f1d54245edee-large.jpg",
+    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6188508-concert-de-l-ete-chorales-a-l-eglise-saint-martin",
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
+  },
+  {
+    "uuid": "al-6083709",
+    "title": "Bourse aux livres",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "de 9h à 13h",
+    "place": "Salle Communale",
+    "city": "Bouxières-sous-Froidmont",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
+    "url": "https://www.alentoor.fr/bouxieres-sous-froidmont/agenda/6083709-bourse-aux-livres",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6041931",
+    "title": "Braderie et brocante",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "de 8h à 17h",
+    "place": "rue de la République",
+    "city": "Jarville-la-Malgrange",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/f2/02/f2024e499bf0e886c4664d953ee09bcdc6eed40154b88dcdb03315bdf1bb1cb6-large.jpg",
+    "url": "https://www.alentoor.fr/jarville-la-malgrange/agenda/6041931-braderie-et-brocante",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6015538",
+    "title": "Festival Scène de Crime",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "de 10h à 18h",
+    "place": "Parc du Casino Solvay",
+    "city": "Dombasle-sur-Meurthe",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/93/d0/93d0e97e69f137b88726489c5b9c699d92fe57b6c6c26a8066f3aab87ac0dab6-large.jpg",
+    "url": "https://www.alentoor.fr/dombasle-sur-meurthe/agenda/6015538-festival-scene-de-crime",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6148667",
+    "title": "Les caisses à savon en folie",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "de 10h à 18h",
+    "place": "",
+    "city": "Einville-au-Jard",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/36/c8/36c87ddea89685174e33afcfb682e4417f0f843a2755a81045ef170cf7dce11e-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/6148667-les-caisses-a-savon-en-folie",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5899437",
+    "title": "12ème vide grenier",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "de 8h à 18h",
+    "place": "place de la mairie",
+    "city": "Moncel-lès-Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/12/f9/12f9885bcd5b216bbd5ca0e6a79d060a9e63a3a4775675caccc429f8cf5f4c84-large.jpg",
+    "url": "https://www.alentoor.fr/moncel-les-luneville/agenda/5899437-12eme-vide-grenier",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6140525",
+    "title": "Concert - Félicien Brut et Édouard Macarez",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "16h",
+    "place": "Chapelle du Château",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/07/b0/07b09f9889ef20d2ab44f19a6eb2be82bf23904e6d609e8f0303783dad68b2e3-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6140525-concert-felicien-brut-et-edouard-macarez",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5802440",
+    "title": "Festival de Froville - une nuit en Flandres",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-06-28",
+    "endDate": "2026-06-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "Prieuré de Froville",
+    "city": "Froville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
+    "url": "https://www.alentoor.fr/froville/agenda/5802440-festival-de-froville-une-nuit-en-flandres",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "icn-1091",
@@ -10069,7 +10005,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_affichetictacpop.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1091-laneuveville-devant-nancy-le-choeur-tic-tac-pop/2026-06-28-17-00.html",
-    "source": "ici-c-nancy"
+    "source": "ici-c-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1764879277828631",
@@ -10088,7 +10025,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1764879277828631/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1505680797620509",
@@ -10107,7 +10045,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1505680797620509/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-845464451510860",
@@ -10126,7 +10065,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/845464451510860/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1010409045265693",
@@ -10145,7 +10085,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1010409045265693/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-968260826128604",
@@ -10164,7 +10105,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/968260826128604/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-26284389284537516",
@@ -10183,7 +10125,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/26284389284537516/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-837132712461528",
@@ -10202,7 +10145,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/837132712461528/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1546976823803610",
@@ -10221,7 +10165,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1546976823803610/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1617429832716201",
@@ -10240,7 +10185,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1617429832716201/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-conseil-municipal-du-29-juin-2026",
@@ -10259,7 +10205,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-29-juin-2026",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-9636",
@@ -10276,7 +10223,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/don-du-sang.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/don-de-sang/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5984307",
+    "title": "Ateliers gratuits \"Bienvenue à la Retraite\"",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-06-30",
+    "endDate": "2026-06-30",
+    "dateText": "",
+    "schedule": "de 14h à 16h30",
+    "place": "Association Familles Rurales Einville et environs",
+    "city": "Einville-au-Jard",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/bd/8f/bd8faa987e55e0cf465427d5b0bf34b7a60f16b70712183341b7bafa458f9eae-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/5984307-ateliers-gratuits-bienvenue-a-la-retraite",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "fb-1506259587520571",
@@ -10295,7 +10261,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1506259587520571/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1309554711148879",
@@ -10314,7 +10281,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1309554711148879/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8cf0d73a-4475-11f1-90a7-e154a7b8d21a",
@@ -10335,7 +10303,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8cf0d73a-4475-11f1-90a7-e154a7b8d21a/0/ORIGINE_M_69f31e6540a0c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8cf0d73a-4475-11f1-90a7-e154a7b8d21a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8cf0d73a-4475-11f1-90a7-e154a7b8d21a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "976dc324-05ca-11f1-9a62-61234fd899ec",
@@ -10353,7 +10322,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/976dc324-05ca-11f1-9a62-61234fd899ec/0/ORIGINE_M_6989fac6ca9bd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=976dc324-05ca-11f1-9a62-61234fd899ec"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=976dc324-05ca-11f1-9a62-61234fd899ec",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9bf1826a-5a8d-11f1-b554-b9c2ec7247ed",
@@ -10373,7 +10343,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9bf1826a-5a8d-11f1-b554-b9c2ec7247ed/0/ORIGINE_M_6a182fafe6887.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9bf1826a-5a8d-11f1-b554-b9c2ec7247ed"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9bf1826a-5a8d-11f1-b554-b9c2ec7247ed",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c01d256c-f512-11f0-8286-5951fa71c53e",
@@ -10392,7 +10363,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c01d256c-f512-11f0-8286-5951fa71c53e/0/ORIGINE_M_696dee6512c6d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c01d256c-f512-11f0-8286-5951fa71c53e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c01d256c-f512-11f0-8286-5951fa71c53e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fe4559de-3cb8-11f1-ab08-15a1a1dd8dd8",
@@ -10410,7 +10382,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fe4559de-3cb8-11f1-ab08-15a1a1dd8dd8/0/1-1_M_69e623c40f769.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fe4559de-3cb8-11f1-ab08-15a1a1dd8dd8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fe4559de-3cb8-11f1-ab08-15a1a1dd8dd8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b69acc04-3183-11f0-ad60-81eba2941c3f",
@@ -10429,7 +10402,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b69acc04-3183-11f0-ad60-81eba2941c3f/0/1-1_M_6825d9a29c72a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b69acc04-3183-11f0-ad60-81eba2941c3f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b69acc04-3183-11f0-ad60-81eba2941c3f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ee35bc7c-163a-11f1-8694-bb02b2cd4fee",
@@ -10447,7 +10421,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee35bc7c-163a-11f1-8694-bb02b2cd4fee/0/1-1_M_69a58fe21ba6d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee35bc7c-163a-11f1-8694-bb02b2cd4fee"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee35bc7c-163a-11f1-8694-bb02b2cd4fee",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ef7ecadc-1645-11f1-853f-0f09e7bc274e",
@@ -10465,7 +10440,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ef7ecadc-1645-11f1-853f-0f09e7bc274e/0/1-1_M_69a5a1fc97cde.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ef7ecadc-1645-11f1-853f-0f09e7bc274e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ef7ecadc-1645-11f1-853f-0f09e7bc274e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-22411",
@@ -10482,7 +10458,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-sport/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28685",
@@ -10499,9 +10476,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1250415783584062",
@@ -10520,7 +10498,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1250415783584062/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5909003",
@@ -10537,7 +10516,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e0/a9/e0a9c82c3892b0bfdda4967d5b31cbad87562326517505ee56208132576549e4-large.jpg",
     "url": "https://www.alentoor.fr/ville-au-val/agenda/5909003-visite-guidee-chateau-de-ville-au-val",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180025",
@@ -10554,7 +10534,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e7/eb/e7eb3c4aa2555a468e77dfd40a10f84658f6964ae24240684d97069d29bde63d-large.jpg",
     "url": "https://www.alentoor.fr/blainville-sur-l-eau/agenda/6180025-jeu-concours-de-l-ete-a-la-mediatheque",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180030",
@@ -10571,7 +10552,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/14/4c/144c5445dfc9cf6fe9445e6b4e44b4c0a674743b484ce1e1b506317b7cc9d694-large.jpg",
     "url": "https://www.alentoor.fr/blainville-sur-l-eau/agenda/6180030-exposition-l-ocean-un-colosse-aux-pieds-d-argile",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6169589",
@@ -10588,7 +10570,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/db/a8/dba89ac012f898db03e44fa094533f82ce6a693edaebcd8e55969b7e415a3fea-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6169589-bal-des-terminales",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6169596",
@@ -10605,7 +10588,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/67/bd/67bdb6ce6d89859dd85befb2e481281b31cd18872b37216f65299beff352f44a-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6169596-exposition-architectures",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6102188",
@@ -10622,7 +10606,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/45/d9/45d99840e702bdc0d2a8f7039ddb0e900edc70b89e2e6b8e471d52af876e081a-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6102188-la-route-des-orgues-orgue-au-marche-avec-dominique-breda",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-tayc-jokair-bekar-dakeez",
@@ -10641,7 +10626,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2024/01/Plateau-Rap_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/tayc-jokair-bekar-dakeez/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-amours-d-ete-2026",
@@ -10660,7 +10646,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/avatar_ade.png?itok=WBzN_c6g",
     "url": "https://lautrecanalnancy.fr/agenda/amours-d-ete-2026",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-chaleur-latine-coucher-de-soleil-sr-tumbao-dj-set-danse-salsa",
@@ -10680,7 +10667,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/1_rouge_tumbao_copie.jpg?itok=gPIQLsRP",
     "url": "https://lautrecanalnancy.fr/agenda/chaleur-latine-coucher-de-soleil-sr-tumbao-dj-set-danse-salsa",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1633471284389952",
@@ -10699,7 +10687,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1633471284389952/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1510262387217044",
@@ -10718,7 +10707,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1510262387217044/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3012295948980517",
@@ -10737,7 +10727,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3012295948980517/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-mobilogement",
@@ -10754,7 +10745,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/250/1200_630_7_affichesmobilogement-2026-cascades-2.jpg",
     "url": "https://www.laxou.fr/fr/agenda/mobilogement_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "52606ca2-64d7-11f1-b9e2-b7f76ce9932e",
@@ -10773,7 +10765,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/52606ca2-64d7-11f1-b9e2-b7f76ce9932e/0/ORIGINE_M_6a297252dc549.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52606ca2-64d7-11f1-b9e2-b7f76ce9932e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52606ca2-64d7-11f1-b9e2-b7f76ce9932e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0624820a-487c-11f1-9827-ab8ab87e5f18",
@@ -10792,7 +10785,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0624820a-487c-11f1-9827-ab8ab87e5f18/0/ORIGINE_M_69f9df3e3b3da.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0624820a-487c-11f1-9827-ab8ab87e5f18"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0624820a-487c-11f1-9827-ab8ab87e5f18",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "59959acc-3fae-11f1-9147-317cb6e4c8c2",
@@ -10810,7 +10804,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/59959acc-3fae-11f1-9147-317cb6e4c8c2/0/1-1_M_69eb1a5ec6752.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=59959acc-3fae-11f1-9147-317cb6e4c8c2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=59959acc-3fae-11f1-9147-317cb6e4c8c2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b5782404-6a51-11f1-996e-5b600a662f43",
@@ -10828,7 +10823,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b5782404-6a51-11f1-996e-5b600a662f43/0/ORIGINE_M_6a32a323881be.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b5782404-6a51-11f1-996e-5b600a662f43"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b5782404-6a51-11f1-996e-5b600a662f43",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "dn-22279",
@@ -10845,7 +10841,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/5e7/737-737018617_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-en-centre-ville-pmr/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20534",
@@ -10862,7 +10859,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a38/737-737016583_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-en-centre-ville/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-567",
@@ -10881,7 +10879,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/un_cafe__dans_votre_quartier.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/un-sourire-un-cafe-dans-ton-quartier",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b77aedf6-4475-11f1-a4f4-2b355947fea1",
@@ -10902,7 +10901,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b77aedf6-4475-11f1-a4f4-2b355947fea1/0/ORIGINE_M_69f31eac9bba8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b77aedf6-4475-11f1-a4f4-2b355947fea1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b77aedf6-4475-11f1-a4f4-2b355947fea1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7ae05e80-64d7-11f1-b796-1bc6df0decdf",
@@ -10921,7 +10921,29 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7ae05e80-64d7-11f1-b796-1bc6df0decdf/0/ORIGINE_M_6a297296cb867.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7ae05e80-64d7-11f1-b796-1bc6df0decdf"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7ae05e80-64d7-11f1-b796-1bc6df0decdf",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "7c76f784-6af6-11f1-8fcf-cf755afafb33",
+    "title": "Fête de l'auto",
+    "category": "festival",
+    "subcats": [
+      "Conférence - Rencontre",
+      "Activité - Animation",
+      "Exposition"
+    ],
+    "date": "2026-07-03",
+    "endDate": "2026-07-03",
+    "dateText": "Vendredi 3 juillet 2026",
+    "schedule": "de 14h à 19h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7c76f784-6af6-11f1-8fcf-cf755afafb33/0/ORIGINE_M_6a33b796dd020.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7c76f784-6af6-11f1-8fcf-cf755afafb33",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "f90a441c-64a3-11f1-bad5-115aa2d7aa44",
@@ -10940,7 +10962,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f90a441c-64a3-11f1-bad5-115aa2d7aa44/0/1-1_M_6a291cd8ec69d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f90a441c-64a3-11f1-bad5-115aa2d7aa44"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f90a441c-64a3-11f1-bad5-115aa2d7aa44",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d354561e-6989-11f1-9b87-d1d00a503f1a",
@@ -10960,7 +10983,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d354561e-6989-11f1-9b87-d1d00a503f1a/0/ORIGINE_M_6a3153ca4c4c9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d354561e-6989-11f1-9b87-d1d00a503f1a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d354561e-6989-11f1-9b87-d1d00a503f1a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6158334",
@@ -10977,7 +11001,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/marche-medium.jpg",
     "url": "https://www.alentoor.fr/vandoeuvre-les-nancy/agenda/6158334-marche-du-florain",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23408",
@@ -10994,7 +11019,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a36/737-737019231_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/cinema-plein-air-parc-mme-de-graffini/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28590",
@@ -11011,9 +11037,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-226",
@@ -11032,7 +11059,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-asterix-et-obelix-mission-cleopatre",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152157",
@@ -11049,7 +11077,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/25/c9/25c99f225fda52536a0aa0e9e4f2456b98623119f10f56c6163534a63b0c2931-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6152157-soiree-concert-beats-in-garden-parc-de-l-hotel-de-ville",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6149671",
@@ -11066,7 +11095,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/1d/1f/1d1f47e99b6822593ecda36f9547553fb13594aed7b09f7a9a31c0472a99e4ce-large.jpg",
     "url": "https://www.alentoor.fr/toul/agenda/6149671-tota-familia-alice-et-le-miroir",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180096",
@@ -11083,7 +11113,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/80/5b/805b51b699243f54c54e621e43cbac6b7989e3df0129de9c25e0cbfcf70783aa-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6180096-estivales-de-pont-a-mousson",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6146486",
@@ -11100,7 +11131,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/6146486-concerts-a-blenod-soirees-estivales",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6144386",
@@ -11117,7 +11149,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/6144386-les-estivales-de-blenod",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180092",
@@ -11134,24 +11167,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/44/3f/443f251d17d9a32ffb81fcaaa125b91274a3fb9dc29470fc79a0879102cce553-large.jpg",
     "url": "https://www.alentoor.fr/laneuveville-aux-bois/agenda/6180092-guinguette-des-loups",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5952524",
-    "title": "Les arbres guérisseurs : des plantes médicinales comme les autres",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-07-03",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "de 18h30 à 21h30",
-    "place": "",
-    "city": "Vic-sur-Seille",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/03/3e/033e55ba5762e1b91613b1f27cbd6e53369d2f6cad22325c2f06c3608e2c9f83-large.jpg",
-    "url": "https://www.alentoor.fr/vic-sur-seille/agenda/5952524-les-arbres-guerisseurs-des-plantes-medicinales-comme-les-autres",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6169573",
@@ -11168,7 +11185,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/95/38/953895e8779498cd3c7f0ca51748ad5f8d86d0dc845d10d501823904c11f7ba8-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6169573-evenement-estival",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6099708",
@@ -11185,7 +11203,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/93/2d/932d97ec8000692c12cf6c8fdcf57c7a9e1d4faeb611cf961c49af4cddab92c7-large.jpg",
     "url": "https://www.alentoor.fr/neuves-maisons/agenda/6099708-voices-of-legacy-spectacle-diva",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "icn-1095",
+    "title": "GRAND DÉBALLAGE DE NANCY",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-03",
+    "endDate": "2026-07-04",
+    "dateText": "Du 3 au 4 juillet 2026",
+    "schedule": "10:00",
+    "place": "Centre-ville de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_grand-deballage.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1095-grand-deballage-de-nancy/2026-07-03-10-00.html",
+    "source": "ici-c-nancy",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "icn-1092",
@@ -11202,7 +11239,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_affichevoicesoflegacy.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1092-neuves-maisons-voices-of-legacy/2026-07-03-20-30.html",
-    "source": "ici-c-nancy"
+    "source": "ici-c-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bal-swing-en-plein-air-la-fanfare-des-enfants-du-boucher-dj-manu-lindy-hop",
@@ -11223,7 +11261,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/2_jaune_fanfare_copie.jpg?itok=kRl4j6rx",
     "url": "https://lautrecanalnancy.fr/agenda/bal-swing-en-plein-air-la-fanfare-des-enfants-du-boucher-dj-manu-lindy-hop",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4200929763491303",
@@ -11242,7 +11281,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4200929763491303/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1526259585790714",
@@ -11261,7 +11301,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1526259585790714/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1333367512019216",
@@ -11280,7 +11321,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1333367512019216/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-978869844649029",
@@ -11299,7 +11341,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/978869844649029/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1769606634422824",
@@ -11318,7 +11361,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1769606634422824/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1511443507350777",
@@ -11337,7 +11381,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1511443507350777/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-aperitif-dinatoire-du-conseil-de-quartier-centre-0",
@@ -11356,7 +11401,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/aperitifs_dinatoires.jpeg?itok=GD7-DnBK",
     "url": "https://www.esseylesnancy.fr/agenda/aperitif-dinatoire-du-conseil-de-quartier-centre-0",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-venez-en-voisins",
@@ -11373,7 +11419,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/249/1200_630_7_plateaude-haye-juillet2026.png",
     "url": "https://www.laxou.fr/fr/agenda/venez-en-voisins_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "88f19e42-3cc0-11f1-92e2-b1fe6ee73c30",
@@ -11391,7 +11438,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/88f19e42-3cc0-11f1-92e2-b1fe6ee73c30/0/ORIGINE_M_69e630397cdf8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=88f19e42-3cc0-11f1-92e2-b1fe6ee73c30"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=88f19e42-3cc0-11f1-92e2-b1fe6ee73c30",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e",
@@ -11409,7 +11457,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e/0/ORIGINE_M_6a32622a0a451.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "f4390f00-43d7-11f1-bef5-ef632451919a",
@@ -11427,7 +11476,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f4390f00-43d7-11f1-bef5-ef632451919a/0/ORIGINE_M_69f215fe110b8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f4390f00-43d7-11f1-bef5-ef632451919a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f4390f00-43d7-11f1-bef5-ef632451919a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9316b598-f516-11f0-8295-491c60facc11",
@@ -11445,7 +11495,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9316b598-f516-11f0-8295-491c60facc11/0/ORIGINE_M_696df4cf8094c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9316b598-f516-11f0-8295-491c60facc11"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9316b598-f516-11f0-8295-491c60facc11",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ca0bc57e-43af-11f1-ac34-8976538d1a0a",
@@ -11463,7 +11514,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ca0bc57e-43af-11f1-ac34-8976538d1a0a/0/ORIGINE_M_69f1d29b6ab47.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ca0bc57e-43af-11f1-ac34-8976538d1a0a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ca0bc57e-43af-11f1-ac34-8976538d1a0a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "292be750-43b0-11f1-961c-f5d142ec3ec8",
@@ -11481,7 +11533,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/292be750-43b0-11f1-961c-f5d142ec3ec8/0/ORIGINE_M_69f1d33b02e09.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=292be750-43b0-11f1-961c-f5d142ec3ec8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=292be750-43b0-11f1-961c-f5d142ec3ec8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d730d27a-4234-11f1-bbd9-9f5d573aeaeb",
@@ -11503,7 +11556,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d730d27a-4234-11f1-bbd9-9f5d573aeaeb/0/ORIGINE_M_69ef56d63579d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d730d27a-4234-11f1-bbd9-9f5d573aeaeb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d730d27a-4234-11f1-bbd9-9f5d573aeaeb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f0dcbe10-5291-11f1-85fa-b7bec1785a48",
@@ -11521,7 +11575,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f0dcbe10-5291-11f1-85fa-b7bec1785a48/0/ORIGINE_M_6a0acc78ea14f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f0dcbe10-5291-11f1-85fa-b7bec1785a48"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f0dcbe10-5291-11f1-85fa-b7bec1785a48",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c3136f14-4487-11f1-8a75-71a4411b1823",
@@ -11540,7 +11595,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c3136f14-4487-11f1-8a75-71a4411b1823/0/1-1_M_69f33f8f0d9dc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c3136f14-4487-11f1-8a75-71a4411b1823"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c3136f14-4487-11f1-8a75-71a4411b1823",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8bda42fa-3fd9-11f1-86d9-a5b6f2a91c0a",
@@ -11559,7 +11615,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8bda42fa-3fd9-11f1-86d9-a5b6f2a91c0a/0/1-1_M_69eb672d29336.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8bda42fa-3fd9-11f1-86d9-a5b6f2a91c0a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8bda42fa-3fd9-11f1-86d9-a5b6f2a91c0a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21707",
@@ -11576,7 +11633,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/46c/737-737017492_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/marche-de-lartisanat-2026/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22604",
@@ -11593,7 +11651,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/45e/737-737019041_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-atelier-a-la-rencontre-de-la-gravure-des-oeuvres-a-la-pratique/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20527",
@@ -11610,7 +11669,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b1e/737-737018590_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/commemoration-mort-demile-coue/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22759",
@@ -11627,7 +11687,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/304/737-737019094_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-bonnetniversaire-les-5-ans-de-la-bande-a-bonnet/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22606",
@@ -11644,7 +11705,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/d1f/737-737019044_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-lheure-exquise-liam-dugelay/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23415",
@@ -11661,7 +11723,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/287/737-737019233_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/atelier-a-la-decouverte-des-huiles-essentielles/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22608",
@@ -11678,24 +11741,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/fc8/737-737019045_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-lheure-exquise-xinyao-shen/",
-    "source": "destination-nancy"
-  },
-  {
-    "uuid": "lac-41583",
-    "title": "Nancyphonies",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-07-04",
-    "endDate": "2026-07-18",
-    "dateText": "Du 4 au 18 juillet 2026",
-    "schedule": "",
-    "place": "1",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41583_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41583/nancyphonies/meurthe-et-moselle-nancy/festival",
-    "source": "lorraineaucoeur"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-15849",
@@ -11712,7 +11759,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/06/kermesse-avec.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/kermesse-avec/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-24385",
@@ -11729,9 +11777,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-27314",
@@ -11746,9 +11795,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/20-000-jeux-sous-les-pixels-3/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6166648",
@@ -11765,7 +11815,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ef/a5/efa51ae24e7e22bc2c42eaf33ac0d5229818f9ccdcdf4ef83ab54d1ae3a88195-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6166648-les-estivales-aperos-salsa",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6162712",
@@ -11782,7 +11833,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/46/8e/468ebd33c1be25536cf0577d378d12393f1815e1c780a1068668a49b67aa7562-large.jpg",
     "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6162712-randonnee-entre-chien-et-loup",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6105037",
@@ -11799,7 +11851,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/58/cc/58ccf2f939b8a7deab8ec5078d82cf173640a482270ef4a3b4af4d45044832d1-large.jpg",
     "url": "https://www.alentoor.fr/maxeville/agenda/6105037-le-roi-soleil-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6095883",
@@ -11816,7 +11869,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/35/aa/35aa51016f82ac928fd7b9ff5714fc1b5231d5c50a273a529ec8cefbff9e714f-large.jpg",
     "url": "https://www.alentoor.fr/gezoncourt/agenda/6095883-balade-et-conte-botanique-en-petite-suisse-lorraine",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6085514",
@@ -11833,7 +11887,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ee/ac/eeacecacd53cac9e296ee1c1b59945a2cd50b90de56f60d8d1f990a11b3516da-large.jpg",
     "url": "https://www.alentoor.fr/goin/agenda/6085514-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6172416",
@@ -11850,24 +11905,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/7d/9c/7d9ca96ed1fc13fc3664e34143faebbc25609a17a9e5fc89d0143f3d0968d06e-large.jpg",
     "url": "https://www.alentoor.fr/blainville-sur-l-eau/agenda/6172416-fete-du-jeu-et-des-familles",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6059875",
-    "title": "Les Nuits du Cloître - 6e édition",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-07-04",
-    "endDate": "2026-07-05",
-    "dateText": "Du 4 au 5 juillet 2026",
-    "schedule": "",
-    "place": "2 rue du Secours",
-    "city": "Vic-sur-Seille",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/1e/c0/1ec06cbcbcd65bfb0f9cebe21310428a8d1a12abcf5b20c898df84cdb68eab8d-large.jpg",
-    "url": "https://www.alentoor.fr/vic-sur-seille/agenda/6059875-les-nuits-du-cloitre-6e-edition",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6169599",
@@ -11884,7 +11923,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/d7/77/d77790017fee45dbca5cb9a8abd07e03392450cdfee287cc923bdfd6cff72083-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6169599-le-jardin-des-jeux",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6157309",
@@ -11901,7 +11941,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/f0/f8/f0f88bfeb07152047254069b97d9b3216c212efe08b531d566aa1a6f8db52593-large.jpg",
     "url": "https://www.alentoor.fr/luneville/agenda/6157309-la-grande-guinguette-d-elisabeth-l-autre-fete-foraine",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6190434",
+    "title": "Braderie d'été du secours populaire",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-04",
+    "endDate": "2026-07-04",
+    "dateText": "",
+    "schedule": "de 9h à 16h",
+    "place": "A droite de l'église de Neuves-Maisons",
+    "city": "Neuves-Maisons",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6190434-braderie-d-ete-du-secours-populaire",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "zen-le-roi-soleil",
@@ -11920,7 +11979,26 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Le-Roi-Soleil_NOA_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/le-roi-soleil/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "lac-41583",
+    "title": "Nancyphonies",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-07-04",
+    "endDate": "2026-07-18",
+    "dateText": "Du 4 au 18 juillet 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41583_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-41583/nancyphonies/meurthe-et-moselle-nancy/festival",
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-traversee-andalouse-rythmes-en-mouvement-caravela",
@@ -11941,7 +12019,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/3_rouge_caravela_copie.jpg?itok=i869cg3K",
     "url": "https://lautrecanalnancy.fr/agenda/traversee-andalouse-rythmes-en-mouvement-caravela",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1031626159339849",
@@ -11960,7 +12039,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1031626159339849/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1301187592144614",
@@ -11979,7 +12059,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1301187592144614/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1481612636459993",
@@ -11998,7 +12079,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1481612636459993/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2090257574882115",
@@ -12017,7 +12099,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2090257574882115/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1739842480523798",
@@ -12036,7 +12119,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1739842480523798/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1424644066363512",
@@ -12055,7 +12139,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1424644066363512/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2120768848482148",
@@ -12074,7 +12159,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2120768848482148/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-910700111418679",
@@ -12093,7 +12179,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/910700111418679/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-791424937256870",
@@ -12112,7 +12199,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/791424937256870/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-955282557338790",
@@ -12131,7 +12219,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/955282557338790/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1249960783723330",
@@ -12150,7 +12239,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1249960783723330/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-la-fete-mouzim",
@@ -12169,7 +12259,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/site-web_lafeteamouzim-2025_0.jpg?itok=XHNSSeg5",
     "url": "https://www.esseylesnancy.fr/agenda/la-fete-mouzim",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2aa79c6a-c533-11f0-97fe-7f62318328b7",
@@ -12187,7 +12278,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2aa79c6a-c533-11f0-97fe-7f62318328b7/0/1-1_M_6a16a7fedf615.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2aa79c6a-c533-11f0-97fe-7f62318328b7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2aa79c6a-c533-11f0-97fe-7f62318328b7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bf8500c6-5a8d-11f1-a328-e9e2e945b187",
@@ -12207,7 +12299,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bf8500c6-5a8d-11f1-a328-e9e2e945b187/0/ORIGINE_M_6a182feb9b6cc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bf8500c6-5a8d-11f1-a328-e9e2e945b187"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bf8500c6-5a8d-11f1-a328-e9e2e945b187",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "35d18566-58d0-11f1-81dd-f19caeb245e8",
@@ -12225,7 +12318,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/35d18566-58d0-11f1-81dd-f19caeb245e8/0/1-1_M_6a154b7173f1e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d18566-58d0-11f1-81dd-f19caeb245e8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d18566-58d0-11f1-81dd-f19caeb245e8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a51caf66-34b6-11f0-a963-c7dff802c131",
@@ -12243,7 +12337,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a51caf66-34b6-11f0-a963-c7dff802c131/0/1-1_M_682b34c6a4e76.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a51caf66-34b6-11f0-a963-c7dff802c131"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a51caf66-34b6-11f0-a963-c7dff802c131",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "904eccc6-528e-11f1-a220-95a1c67c334f",
@@ -12261,7 +12356,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/904eccc6-528e-11f1-a220-95a1c67c334f/0/ORIGINE_M_6a0ac550960c5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=904eccc6-528e-11f1-a220-95a1c67c334f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=904eccc6-528e-11f1-a220-95a1c67c334f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5a912cf6-43b0-11f1-91eb-514b13c49ed1",
@@ -12279,7 +12375,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a912cf6-43b0-11f1-91eb-514b13c49ed1/0/ORIGINE_M_69f1d38dda45a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a912cf6-43b0-11f1-91eb-514b13c49ed1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a912cf6-43b0-11f1-91eb-514b13c49ed1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "45bbf914-0b16-11f1-a747-03084afe0a49",
@@ -12297,7 +12394,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/45bbf914-0b16-11f1-a747-03084afe0a49/0/ORIGINE_M_6a2c00d0ea447.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=45bbf914-0b16-11f1-a747-03084afe0a49"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=45bbf914-0b16-11f1-a747-03084afe0a49",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a65ba97a-64d7-11f1-85c4-e3ead7808d68",
@@ -12315,7 +12413,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a65ba97a-64d7-11f1-85c4-e3ead7808d68/0/ORIGINE_M_6a2972dfc1f88.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a65ba97a-64d7-11f1-85c4-e3ead7808d68"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a65ba97a-64d7-11f1-85c4-e3ead7808d68",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21455",
@@ -12332,7 +12431,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/627/737-737015517_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/les-puces-en-vieille-ville/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22609",
@@ -12349,7 +12449,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/acf/737-737019046_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-lheure-exquise-yuna-tashiro/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22610",
@@ -12366,7 +12467,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/969/737-737019048_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-lheure-exquise-pierre-rouinvy/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-134",
@@ -12385,7 +12487,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marchedenettoyage.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/marche-de-nettoyage",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6124098",
@@ -12402,7 +12505,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/34/03/3403a0d48c8c6182d154b7439094f98c8dd5f5fbebecba26e14a51ee5996e6f5-large.jpg",
     "url": "https://www.alentoor.fr/lamath/agenda/6124098-vide-grenier",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6099739",
@@ -12419,7 +12523,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/belleville-54/agenda/6099739-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5979937",
@@ -12436,7 +12541,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/chenicourt/agenda/5979937-brocante-vide-greniers",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6130451",
+    "title": "Un dimanche près du kiosque à musique",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-05",
+    "endDate": "2026-08-30",
+    "dateText": "Du 5 juillet au 30 août 2026",
+    "schedule": "",
+    "place": "Parc des Bosquets du Château de Lunéville",
+    "city": "Lunéville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/d2/fb/d2fbb122034f8a4fe513d2034b9237781d7914687e43f44e1671bb5ba7df4db9-large.jpg",
+    "url": "https://www.alentoor.fr/luneville/agenda/6130451-un-dimanche-pres-du-kiosque-a-musique",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6134722",
@@ -12453,7 +12577,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/4e/e4/4ee4d3c80b9ab9f97573734ee539f8497633eb82900ab02ad06b5694fb6d8f2c-large.jpg",
     "url": "https://www.alentoor.fr/laxou/agenda/6134722-vide-grenier-de-l-avanue-sainte-anne",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5959942",
@@ -12470,7 +12595,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/46/51/4651e6874bab4c0208f9443fb1f603bd1be07ad07cb5ece02856bf9d6c248736-large.jpg",
     "url": "https://www.alentoor.fr/xaronval/agenda/5959942-village-1900-voitures-anciennes",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-star-academy",
@@ -12489,7 +12615,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Star-Academy_40x60_originale-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/star-academy/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-reverie-synthetique-grands-espaces-caprice-german-lola-jaguare",
@@ -12509,7 +12636,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/4_jaune_caprice_copie.jpg?itok=_4hocI84",
     "url": "https://lautrecanalnancy.fr/agenda/reverie-synthetique-grands-espaces-caprice-german-lola-jaguare",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3224238221080656",
@@ -12528,7 +12656,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3224238221080656/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1535318728190179",
@@ -12547,7 +12676,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1535318728190179/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d7051d82-528e-11f1-9d52-61c0871f7b05",
@@ -12565,7 +12695,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d7051d82-528e-11f1-9d52-61c0871f7b05/0/ORIGINE_M_6a0ac5c73c5e2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7051d82-528e-11f1-9d52-61c0871f7b05"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7051d82-528e-11f1-9d52-61c0871f7b05",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7b0404a4-6408-11f1-ac77-710295787ba7",
@@ -12583,7 +12714,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7b0404a4-6408-11f1-ac77-710295787ba7/0/1-1_M_6a2819fad9b97.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b0404a4-6408-11f1-ac77-710295787ba7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7b0404a4-6408-11f1-ac77-710295787ba7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "024be002-f1ff-11f0-8d58-a3588f4bf5b1",
@@ -12603,7 +12735,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/024be002-f1ff-11f0-8d58-a3588f4bf5b1/0/ORIGINE_M_6968c4c8a81bf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=024be002-f1ff-11f0-8d58-a3588f4bf5b1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=024be002-f1ff-11f0-8d58-a3588f4bf5b1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b75acd54-3710-11f1-a0c0-bbd62e1e1f55",
@@ -12625,7 +12758,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b75acd54-3710-11f1-a0c0-bbd62e1e1f55/0/ORIGINE_M_69dca5c42247d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b75acd54-3710-11f1-a0c0-bbd62e1e1f55"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b75acd54-3710-11f1-a0c0-bbd62e1e1f55",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "564e1d40-6659-11f1-9b9a-6baedcc739c5",
@@ -12643,7 +12777,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/564e1d40-6659-11f1-9b9a-6baedcc739c5/0/1-1_M_6a2bfa2289f9f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=564e1d40-6659-11f1-9b9a-6baedcc739c5"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=564e1d40-6659-11f1-9b9a-6baedcc739c5",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d305029e-3fd6-11f1-804d-5fa3a4284a29",
@@ -12661,7 +12796,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d305029e-3fd6-11f1-804d-5fa3a4284a29/0/1-1_M_69eb61835e3e4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d305029e-3fd6-11f1-804d-5fa3a4284a29"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d305029e-3fd6-11f1-804d-5fa3a4284a29",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "3ae5c132-2f60-11f1-a69a-c7cdd9369f57",
@@ -12679,7 +12815,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3ae5c132-2f60-11f1-a69a-c7cdd9369f57/0/ORIGINE_M_69cfbf31bfeba.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3ae5c132-2f60-11f1-a69a-c7cdd9369f57"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3ae5c132-2f60-11f1-a69a-c7cdd9369f57",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21745",
@@ -12696,7 +12833,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b40/737-737018935_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/atelier-darts-plastiques-tropical/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22611",
@@ -12713,7 +12851,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/edb/737-737019049_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-lheure-exquise-gregoire-camerlo-gabillard/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-572",
@@ -12734,7 +12873,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/grafiteria.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/gratiferia-speciale-rentree-scolaire-le-bon-plan-pour-preparer-la-rentree",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-5985528",
+    "title": "Accueil de loisirs - les voyages fantastiques",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-06",
+    "endDate": "2026-07-31",
+    "dateText": "Du 6 au 31 juillet 2026",
+    "schedule": "",
+    "place": "Espace Enfance \"Les Brasseries\"",
+    "city": "Einville-au-Jard",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/5c/1b/5c1baf82c9e887098d49bdb2f1bf785bc3bda67baa8933ca7d6bf3f24e58ab77-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/5985528-accueil-de-loisirs-les-voyages-fantastiques",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "fb-1366348515340140",
@@ -12753,7 +12911,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1366348515340140/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1542715434044571",
@@ -12772,7 +12931,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1542715434044571/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2805173553179711",
@@ -12791,7 +12951,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2805173553179711/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-982028974176001",
@@ -12810,7 +12971,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/982028974176001/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "79305304-43af-11f1-b87c-734a491cd80b",
@@ -12828,7 +12990,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/79305304-43af-11f1-b87c-734a491cd80b/0/ORIGINE_M_69f1d213c0af4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=79305304-43af-11f1-b87c-734a491cd80b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=79305304-43af-11f1-b87c-734a491cd80b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "01d61fc6-64a9-11f1-89c2-bd85b8a6fc16",
@@ -12846,7 +13009,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/01d61fc6-64a9-11f1-89c2-bd85b8a6fc16/0/1-1_M_6a2925131c9e8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01d61fc6-64a9-11f1-89c2-bd85b8a6fc16"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01d61fc6-64a9-11f1-89c2-bd85b8a6fc16",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb2d446a-64cb-11f1-96c1-8f81dec09f8d",
@@ -12864,7 +13028,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fb2d446a-64cb-11f1-96c1-8f81dec09f8d/0/1-1_M_6a295f73f1e4a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fb2d446a-64cb-11f1-96c1-8f81dec09f8d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fb2d446a-64cb-11f1-96c1-8f81dec09f8d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5a746a4e-3d84-11f1-bf67-9b5149fe980d",
@@ -12882,7 +13047,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a746a4e-3d84-11f1-bf67-9b5149fe980d/0/ORIGINE_M_69e778c0d4ec3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a746a4e-3d84-11f1-bf67-9b5149fe980d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a746a4e-3d84-11f1-bf67-9b5149fe980d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7e53fb24-58ea-11f1-85ad-1d89adc8a2b4",
@@ -12900,7 +13066,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7e53fb24-58ea-11f1-85ad-1d89adc8a2b4/0/16-9_M_6a1570d98c716.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7e53fb24-58ea-11f1-85ad-1d89adc8a2b4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7e53fb24-58ea-11f1-85ad-1d89adc8a2b4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22612",
@@ -12917,7 +13084,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/975/737-737019051_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-piano-bertrand-chamayou/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lac-41639",
@@ -12934,7 +13102,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41639_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41639/lectures-estivales-parcs-et-jardins-du-grand-nancy/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1620705959001121",
@@ -12953,7 +13122,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1620705959001121/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1506046140964734",
@@ -12972,7 +13142,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1506046140964734/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9c12b6e2-448a-11f1-b12c-adbf467f7b77",
@@ -12990,7 +13161,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c12b6e2-448a-11f1-b12c-adbf467f7b77/0/1-1_M_69f3429305199.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c12b6e2-448a-11f1-b12c-adbf467f7b77"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c12b6e2-448a-11f1-b12c-adbf467f7b77",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "483d57d0-528f-11f1-9d06-fdf3b8ff86e6",
@@ -13008,7 +13180,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/483d57d0-528f-11f1-9d06-fdf3b8ff86e6/0/ORIGINE_M_6a0ac685338ad.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=483d57d0-528f-11f1-9d06-fdf3b8ff86e6"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=483d57d0-528f-11f1-9d06-fdf3b8ff86e6",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "28cafc0e-64c8-11f1-9dd2-bb893822e168",
@@ -13027,7 +13200,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/28cafc0e-64c8-11f1-9dd2-bb893822e168/0/1-1_M_6a295960e6ac1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=28cafc0e-64c8-11f1-9dd2-bb893822e168"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=28cafc0e-64c8-11f1-9dd2-bb893822e168",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "04e85fbc-632d-11f1-933f-ef9af172657b",
@@ -13045,7 +13219,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/04e85fbc-632d-11f1-933f-ef9af172657b/0/1-1_M_6a26a8bb4e0f3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=04e85fbc-632d-11f1-933f-ef9af172657b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=04e85fbc-632d-11f1-933f-ef9af172657b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7109cc60-3cb5-11f1-8011-63e546697d8e",
@@ -13064,7 +13239,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7109cc60-3cb5-11f1-8011-63e546697d8e/0/1-1_M_69e61e060d436.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7109cc60-3cb5-11f1-8011-63e546697d8e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7109cc60-3cb5-11f1-8011-63e546697d8e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a9a6b1ce-3cb4-11f1-82ec-f5fe9eac60b9",
@@ -13083,7 +13259,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a9a6b1ce-3cb4-11f1-82ec-f5fe9eac60b9/0/1-1_M_69ef1ddd63096.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a9a6b1ce-3cb4-11f1-82ec-f5fe9eac60b9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a9a6b1ce-3cb4-11f1-82ec-f5fe9eac60b9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9f3eddfc-2497-11ee-a361-3f171121f97b",
@@ -13101,7 +13278,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9f3eddfc-2497-11ee-a361-3f171121f97b/0/1-1_M_68492d146e068.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f3eddfc-2497-11ee-a361-3f171121f97b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f3eddfc-2497-11ee-a361-3f171121f97b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "392fdf5c-da6b-11f0-a016-db8ba46fe67f",
@@ -13119,7 +13297,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/392fdf5c-da6b-11f0-a016-db8ba46fe67f/0/1-1_M_6a155598f121f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=392fdf5c-da6b-11f0-a016-db8ba46fe67f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=392fdf5c-da6b-11f0-a016-db8ba46fe67f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "293e8b9a-da6e-11f0-b68d-bbb3df01279c",
@@ -13137,7 +13316,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/293e8b9a-da6e-11f0-b68d-bbb3df01279c/0/1-1_M_6a15577841070.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=293e8b9a-da6e-11f0-b68d-bbb3df01279c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=293e8b9a-da6e-11f0-b68d-bbb3df01279c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23445",
@@ -13154,7 +13334,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/2cc/737-737019245_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/atelier-les-ptites-experiences-la-cuisine-moleculaire/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22760",
@@ -13171,7 +13352,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/37a/737-737019095_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/festival-ludolyre-petits-et-grands-heros/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20587",
@@ -13188,7 +13370,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/62a/737-737018746_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-patrimoine-industriel-parcours-theatre-de-la-manufacture/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22613",
@@ -13205,7 +13388,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/d25/737-737019054_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-piano-emil-ribarski/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1481485876799874",
@@ -13224,7 +13408,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1481485876799874/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-alpe",
@@ -13241,7 +13426,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/228/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-alpe_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d7367bf6-64d7-11f1-a756-2f7e389fddae",
@@ -13260,7 +13446,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d7367bf6-64d7-11f1-a756-2f7e389fddae/0/ORIGINE_M_6a297331b97a4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7367bf6-64d7-11f1-a756-2f7e389fddae"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7367bf6-64d7-11f1-a756-2f7e389fddae",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "05969a80-6a46-11f1-93f3-f3ae118a9623",
@@ -13278,7 +13465,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/05969a80-6a46-11f1-93f3-f3ae118a9623/0/ORIGINE_M_6a328fed00912.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=05969a80-6a46-11f1-93f3-f3ae118a9623"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=05969a80-6a46-11f1-93f3-f3ae118a9623",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "7a55a97a-3cb9-11f1-96a7-b144d6615395",
@@ -13297,7 +13485,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7a55a97a-3cb9-11f1-96a7-b144d6615395/0/1-1_M_69e624878d78d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a55a97a-3cb9-11f1-96a7-b144d6615395"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a55a97a-3cb9-11f1-96a7-b144d6615395",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "10b56fbe-528f-11f1-a946-e3993bc5dc60",
@@ -13315,7 +13504,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/10b56fbe-528f-11f1-a946-e3993bc5dc60/0/ORIGINE_M_6a0ac62808119.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10b56fbe-528f-11f1-a946-e3993bc5dc60"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10b56fbe-528f-11f1-a946-e3993bc5dc60",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8cc644fc-64d7-11f1-b04a-511d0a3cbb28",
@@ -13333,7 +13523,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8cc644fc-64d7-11f1-b04a-511d0a3cbb28/0/1-1_M_6a2972ddd0251.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8cc644fc-64d7-11f1-b04a-511d0a3cbb28"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8cc644fc-64d7-11f1-b04a-511d0a3cbb28",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0d308f34-665a-11f1-bca9-6f217d329b7e",
@@ -13351,7 +13542,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0d308f34-665a-11f1-bca9-6f217d329b7e/0/1-1_M_6a2bfb4dd184a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0d308f34-665a-11f1-bca9-6f217d329b7e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0d308f34-665a-11f1-bca9-6f217d329b7e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6455718e-3cbc-11f1-8387-19a12378af21",
@@ -13370,7 +13562,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6455718e-3cbc-11f1-8387-19a12378af21/0/1-1_M_69e6297c9a0ea.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6455718e-3cbc-11f1-8387-19a12378af21"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6455718e-3cbc-11f1-8387-19a12378af21",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bc13386e-3cbe-11f1-bf53-3718ae947a73",
@@ -13389,7 +13582,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bc13386e-3cbe-11f1-bf53-3718ae947a73/0/1-1_M_69e62d7e86a78.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bc13386e-3cbe-11f1-bf53-3718ae947a73"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bc13386e-3cbe-11f1-bf53-3718ae947a73",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9504bdcc-3cb6-11f1-9b1f-d7127452ffaa",
@@ -13408,7 +13602,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9504bdcc-3cb6-11f1-9b1f-d7127452ffaa/0/1-1_M_69e61fadad0ad.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9504bdcc-3cb6-11f1-9b1f-d7127452ffaa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9504bdcc-3cb6-11f1-9b1f-d7127452ffaa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "002d37bc-43a8-11f1-879d-4d14d89f0f7c",
@@ -13426,7 +13621,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/002d37bc-43a8-11f1-879d-4d14d89f0f7c/0/1-1_M_69f1c5cad7eb4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=002d37bc-43a8-11f1-879d-4d14d89f0f7c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=002d37bc-43a8-11f1-879d-4d14d89f0f7c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6f2aae94-43b0-11f1-9b89-ef4890d4a91d",
@@ -13444,7 +13640,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6f2aae94-43b0-11f1-9b89-ef4890d4a91d/0/1-1_M_69f86f4a7ff0f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6f2aae94-43b0-11f1-9b89-ef4890d4a91d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6f2aae94-43b0-11f1-9b89-ef4890d4a91d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23451",
@@ -13461,7 +13658,26 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/010/737-737019255_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/jeux-ludiques-mystere-en-cuisine/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "dn-23596",
+    "title": "Visite Guidée - Grands Salons de l'Hôtel de Ville",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-09",
+    "endDate": "2026-07-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/949/737-737019248_4-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-grands-salons-de-lhotel-de-ville/",
+    "source": "destination-nancy",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "dn-22614",
@@ -13478,7 +13694,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/133/737-737019055_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-la-voix-humaine-julie-cherrier-hoffmann/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20548",
@@ -13495,7 +13712,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/3e0/737-737018620_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-theatralisee-autour-de-lart-nouveau-parc-sainte-marie/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189858",
@@ -13512,7 +13730,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/d2/7d/d27d9699ff8cfbbaa6268276b5a15e0753409dc34cfc37b7be015c97da781581-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6189858-la-p-tite-boudeuse-exposition",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "fb-931076176596805",
@@ -13531,7 +13750,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/931076176596805/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-936563669346438",
@@ -13550,7 +13770,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/936563669346438/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-860547056847255",
@@ -13569,7 +13790,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/860547056847255/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-9-juillet",
@@ -13588,7 +13810,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-9-juillet",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9891c08e-448b-11f1-bd55-fd5ca50693e6",
@@ -13606,7 +13829,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9891c08e-448b-11f1-bd55-fd5ca50693e6/0/1-1_M_69f346eb030aa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9891c08e-448b-11f1-bd55-fd5ca50693e6"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9891c08e-448b-11f1-bd55-fd5ca50693e6",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cfdd2a3e-430e-11f1-b155-8f014d7fc4a9",
@@ -13624,7 +13848,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cfdd2a3e-430e-11f1-b155-8f014d7fc4a9/0/ORIGINE_M_69f0c48832f05.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfdd2a3e-430e-11f1-b155-8f014d7fc4a9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfdd2a3e-430e-11f1-b155-8f014d7fc4a9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9dd8673e-528f-11f1-8ad9-7f0a9c7fbc2c",
@@ -13642,7 +13867,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9dd8673e-528f-11f1-8ad9-7f0a9c7fbc2c/0/ORIGINE_M_6a0ac714c905a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dd8673e-528f-11f1-8ad9-7f0a9c7fbc2c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dd8673e-528f-11f1-8ad9-7f0a9c7fbc2c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c5d4d14e-665a-11f1-926a-3126244aa388",
@@ -13660,7 +13886,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c5d4d14e-665a-11f1-926a-3126244aa388/0/1-1_M_6a2bfc7c3dd20.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c5d4d14e-665a-11f1-926a-3126244aa388"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c5d4d14e-665a-11f1-926a-3126244aa388",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "901a6c9c-64d6-11f1-b8eb-b78eaa073fa0",
@@ -13678,7 +13905,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/901a6c9c-64d6-11f1-b8eb-b78eaa073fa0/0/1-1_M_6a29713a15d9c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=901a6c9c-64d6-11f1-b8eb-b78eaa073fa0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=901a6c9c-64d6-11f1-b8eb-b78eaa073fa0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bb6c639c-3cb7-11f1-b446-fb67804088ad",
@@ -13696,7 +13924,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bb6c639c-3cb7-11f1-b446-fb67804088ad/0/1-1_M_69f8761ec68e7.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bb6c639c-3cb7-11f1-b446-fb67804088ad"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bb6c639c-3cb7-11f1-b446-fb67804088ad",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23148",
@@ -13713,7 +13942,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/8a7/737-737015490_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-un-soir-une-commune-laxou/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20588",
@@ -13730,7 +13960,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/068/737-737016917_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-theatralisee-place-stanislas/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22615",
@@ -13747,7 +13978,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/8aa/737-737019056_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-piano-arielle-beck/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6111617",
@@ -13764,7 +13996,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/30/22/30225351ca8d9d7c398e49c0211bdff51de92fa4ca146513bf8aa59cd1cff2b5-large.jpg",
     "url": "https://www.alentoor.fr/delme/agenda/6111617-vernissage-de-l-exposition-l-envers-de-l-ordinaire",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6172444",
@@ -13781,7 +14014,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a3/ab/a3ab1104f968aee806e033c9e6736ca4a4abdec2ebbb1ada5f03dafb05919c1a-large.jpg",
     "url": "https://www.alentoor.fr/blainville-sur-l-eau/agenda/6172444-a-vos-baskets",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-839581779224131",
@@ -13800,7 +14034,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/839581779224131/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1349459927106555",
@@ -13819,7 +14054,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1349459927106555/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4387545191513829",
@@ -13838,7 +14074,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4387545191513829/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-986756463908045",
@@ -13857,7 +14094,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/986756463908045/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d7901206-4475-11f1-a676-efed1797be7a",
@@ -13878,7 +14116,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d7901206-4475-11f1-a676-efed1797be7a/0/ORIGINE_M_69f31ee272024.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7901206-4475-11f1-a676-efed1797be7a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d7901206-4475-11f1-a676-efed1797be7a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f5da4b78-64d7-11f1-be39-27ebe2a525fb",
@@ -13896,7 +14135,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f5da4b78-64d7-11f1-be39-27ebe2a525fb/0/ORIGINE_M_6a2973652872b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f5da4b78-64d7-11f1-be39-27ebe2a525fb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f5da4b78-64d7-11f1-be39-27ebe2a525fb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9b57c986-63de-11f1-95f5-7b6de6547baa",
@@ -13914,7 +14154,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9b57c986-63de-11f1-95f5-7b6de6547baa/0/1-1_M_6a27d20f9d3ca.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9b57c986-63de-11f1-95f5-7b6de6547baa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9b57c986-63de-11f1-95f5-7b6de6547baa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d8ded2ba-396b-11f1-9241-9fa11b71ebf7",
@@ -13936,7 +14177,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d8ded2ba-396b-11f1-9241-9fa11b71ebf7/0/ORIGINE_M_69e099a6dcc55.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d8ded2ba-396b-11f1-9241-9fa11b71ebf7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d8ded2ba-396b-11f1-9241-9fa11b71ebf7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6100825",
@@ -13953,7 +14195,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/34/2b/342b62c56c66638a1e799939bf98ff90301e0f8d150ffc3452753c01f06dbba5-large.jpg",
     "url": "https://www.alentoor.fr/seichamps/agenda/6100825-nancyphonies-2026-quatuor-citadelle",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21684",
@@ -13970,7 +14213,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/9ae/737-737017156_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-theatralisee-les-amoureux-le-long-du-canal/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6166637",
@@ -13987,7 +14231,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/4b/0e/4b0ece8e517c340edec84574e34a986ae29cdc6ad3d45ab6148b8118ea15ec73-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6166637-les-estivales-c-est-pour-les-enfants",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5898008",
@@ -14004,7 +14249,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/a6/b6/a6b6eeecb3b90b4634fbd38aee5b6989437b8ffd847e47cf0da08bb9d141e934-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5898008-atelier-de-vannerie-fabrication-d-un-vide-poche-catalan",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189861",
@@ -14021,7 +14267,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/47/bd/47bd3ffc84b585f150012d12cb3c658fc6e986b8556373145c88b3179b27446b-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6189861-atelier-philo-se-souvenir-pour-quoi-faire",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-5840856",
@@ -14038,7 +14285,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/exposition-medium.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5840856-exposition-les-sorciers-du-feu-joseph-et-pierre-mougin",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5957176",
@@ -14055,24 +14303,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/12/5e/125eb4ee4e9fb0e70c461e88189153d344309c928fbcffa50fed3ba247d749ac-large.jpg",
     "url": "https://www.alentoor.fr/vezelise/agenda/5957176-marche-de-producteurs",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6172412",
-    "title": "Dom'en fête",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-07-11",
-    "endDate": "2026-07-11",
-    "dateText": "",
-    "schedule": "de 8h à 22h",
-    "place": "3 rue de l'Aviot",
-    "city": "Dommartin-lès-Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/8e/d3/8ed3195494aef2becf52d5bf9a4b421ae40d0577dbba34e0a2e2ea0a3403d246-large.jpg",
-    "url": "https://www.alentoor.fr/dommartin-les-toul/agenda/6172412-dom-en-fete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-nuit-electrique-energie-folle-contremeute-maguy-von-maguy-rock-n-roll",
@@ -14092,7 +14324,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/5_rouge_contremeute_copie.jpg?itok=p8dZG_Pc",
     "url": "https://lautrecanalnancy.fr/agenda/nuit-electrique-energie-folle-contremeute-maguy-von-maguy-rock-n-roll",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-981556218089051",
@@ -14111,7 +14344,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/981556218089051/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1442057634346561",
@@ -14130,7 +14364,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1442057634346561/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3881398135502227",
@@ -14149,7 +14384,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3881398135502227/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1306770834245612",
@@ -14168,7 +14404,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1306770834245612/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1184263410513935",
@@ -14187,7 +14424,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1184263410513935/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "af84936c-6a46-11f1-963a-e70cdf466ee9",
@@ -14205,7 +14443,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/af84936c-6a46-11f1-963a-e70cdf466ee9/0/ORIGINE_M_6a329107bda9e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af84936c-6a46-11f1-963a-e70cdf466ee9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af84936c-6a46-11f1-963a-e70cdf466ee9",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "f13e5454-58d6-11f1-acd0-3386a0434b8e",
@@ -14223,7 +14462,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f13e5454-58d6-11f1-acd0-3386a0434b8e/0/1-1_M_6a1551df9de61.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f13e5454-58d6-11f1-acd0-3386a0434b8e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f13e5454-58d6-11f1-acd0-3386a0434b8e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e8b61b42-f516-11f0-97e0-6b19f55dcf7f",
@@ -14242,7 +14482,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e8b61b42-f516-11f0-97e0-6b19f55dcf7f/0/ORIGINE_M_696df55f2b6ec.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e8b61b42-f516-11f0-97e0-6b19f55dcf7f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e8b61b42-f516-11f0-97e0-6b19f55dcf7f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e1996d4c-528f-11f1-9cb8-d32f18f92757",
@@ -14260,7 +14501,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e1996d4c-528f-11f1-9cb8-d32f18f92757/0/ORIGINE_M_6a0ac78677386.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e1996d4c-528f-11f1-9cb8-d32f18f92757"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e1996d4c-528f-11f1-9cb8-d32f18f92757",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "125d09d4-64d8-11f1-8ad4-5f15766dc0b6",
@@ -14280,7 +14522,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/125d09d4-64d8-11f1-8ad4-5f15766dc0b6/0/ORIGINE_M_6a297394f26fd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=125d09d4-64d8-11f1-8ad4-5f15766dc0b6"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=125d09d4-64d8-11f1-8ad4-5f15766dc0b6",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "66dd3df0-fd94-11ef-b83e-5365853cbbcb",
@@ -14298,7 +14541,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/66dd3df0-fd94-11ef-b83e-5365853cbbcb/0/1-1_M_6a156ad1ddd30.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=66dd3df0-fd94-11ef-b83e-5365853cbbcb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=66dd3df0-fd94-11ef-b83e-5365853cbbcb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22617",
@@ -14315,24 +14559,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a66/737-737019059_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-double-concerto-ensemble-les-virtuoses/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "al-6136689",
-    "title": "Visite nature - les plantes sauvages comestibles et médicinales",
-    "category": "activite",
+    "uuid": "al-6080738",
+    "title": "Vacances d'été au Moulin de Fraispertuis !",
+    "category": "autre",
     "subcats": [],
     "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "dateText": "",
+    "endDate": "2026-08-01",
+    "dateText": "Du 12 juillet au 1 août 2026",
     "schedule": "",
-    "place": "",
-    "city": "Velaine-en-Haye",
+    "place": "Moulin de Fraispertuis",
+    "city": "Einville-au-Jard",
     "free": true,
     "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/19/49/194989e4a9ed5ab1783cd95fa8e3f4b4c480e4d1a92880883df4a65be0c73c42-large.jpg",
-    "url": "https://www.alentoor.fr/velaine-en-haye/agenda/6136689-visite-nature-les-plantes-sauvages-comestibles-et-medicinales",
-    "source": "alentoor"
+    "image": "https://www.alentoor.fr/photos/classifieds/dc/26/dc2699d7860b88a4fd30760fa997d2f84252fcb62b878d45ce7f1e2896bf2675-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/6080738-vacances-d-ete-au-moulin-de-fraispertuis",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-5974909",
@@ -14349,24 +14595,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a2/5f/a25f80a5fbc33e60f2db2a57e0f50f05fd171d487901a6828778ff5c0f3d5064-large.jpg",
     "url": "https://www.alentoor.fr/xaronval/agenda/5974909-village-1900-les-noces-en-1900",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6104963",
-    "title": "Visite libre de l'église Saint-Martin",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-07-12",
-    "endDate": "2026-08-16",
-    "dateText": "Du 12 juillet au 16 août 2026",
-    "schedule": "",
-    "place": "Église Saint-Martin",
-    "city": "Vomécourt-sur-Madon",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/28/11/281141c7abbefdc92fe2230c57c3826108ff9f42dcc3f9f359ecb75eadd9fab7-large.jpg",
-    "url": "https://www.alentoor.fr/vomecourt-sur-madon/agenda/6104963-visite-libre-de-l-eglise-saint-martin",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-katy-perry",
@@ -14385,7 +14615,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Katy-Perry_NOA_40x60_originale-4-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/katy-perry/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-24773637718911271",
@@ -14404,7 +14635,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/24773637718911271/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1902662803949563",
@@ -14423,7 +14655,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1902662803949563/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-4510985582482661",
@@ -14442,7 +14675,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/4510985582482661/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9f790e5c-6989-11f1-b817-578c1ff18257",
@@ -14462,7 +14696,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9f790e5c-6989-11f1-b817-578c1ff18257/0/ORIGINE_M_6a3153734e523.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f790e5c-6989-11f1-b817-578c1ff18257"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f790e5c-6989-11f1-b817-578c1ff18257",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4f782962-64aa-11f1-bd7c-add44b390946",
@@ -14480,7 +14715,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4f782962-64aa-11f1-bd7c-add44b390946/0/1-1_M_6a292782a6b7f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4f782962-64aa-11f1-bd7c-add44b390946"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4f782962-64aa-11f1-bd7c-add44b390946",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "1ec02fda-5290-11f1-a62d-037b5e22df8d",
@@ -14498,7 +14734,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1ec02fda-5290-11f1-a62d-037b5e22df8d/0/ORIGINE_M_6a0ac7ed1889d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ec02fda-5290-11f1-a62d-037b5e22df8d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ec02fda-5290-11f1-a62d-037b5e22df8d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "405711ae-64d8-11f1-9ac0-ed13c099eb61",
@@ -14517,7 +14754,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/405711ae-64d8-11f1-9ac0-ed13c099eb61/0/ORIGINE_M_6a2973e21d393.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=405711ae-64d8-11f1-9ac0-ed13c099eb61"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=405711ae-64d8-11f1-9ac0-ed13c099eb61",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2020c9e8-3cba-11f1-9371-018f9694b4c7",
@@ -14535,7 +14773,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2020c9e8-3cba-11f1-9371-018f9694b4c7/0/1-1_M_69e625b0354a8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2020c9e8-3cba-11f1-9371-018f9694b4c7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2020c9e8-3cba-11f1-9371-018f9694b4c7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22618",
@@ -14552,7 +14791,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/1fd/737-737019058_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-quatuor-aiguetta/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-228",
@@ -14572,7 +14812,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/fetenat.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/13-juillet-x-amours-dete",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148650",
@@ -14589,7 +14830,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/46/ac/46ac2bd52823fa05a76200ba14547de872464f21e54a314244ad1c6ce51248e9-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6148650-les-estivales-fete-nationale",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6108118",
@@ -14606,7 +14848,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/b0/db/b0db507556eeb05d76a75363b1a480ae80180db82f3d3f41b9c51e453e5f186d-large.jpg",
     "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6108118-fete-nationale",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152139",
@@ -14623,7 +14866,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/aa/a0/aaa095f7d92916b93bf9cf0c89a3972892257ef89b536129b0db57ed891fec4d-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6152139-fete-nationale",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-nuit-latine-feu-d-artifice-super-son-heroes-feu-d-artifice-salsa",
@@ -14643,7 +14887,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/6_jaune_feu_copie.jpg?itok=7ysV2iVI",
     "url": "https://lautrecanalnancy.fr/agenda/nuit-latine-feu-d-artifice-super-son-heroes-feu-d-artifice-salsa",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1348279787213812",
@@ -14662,7 +14907,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1348279787213812/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2187288802046664",
@@ -14681,7 +14927,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2187288802046664/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2756328608087645",
@@ -14700,7 +14947,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2756328608087645/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1024637786561886",
@@ -14719,7 +14967,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1024637786561886/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "547b251a-64da-11f1-9860-c3c481d44ca0",
@@ -14737,7 +14986,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/547b251a-64da-11f1-9860-c3c481d44ca0/0/ORIGINE_M_6a29775edcce9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=547b251a-64da-11f1-9860-c3c481d44ca0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=547b251a-64da-11f1-9860-c3c481d44ca0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "663a3f86-5290-11f1-9b55-4d0843f0caf3",
@@ -14755,7 +15005,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/663a3f86-5290-11f1-9b55-4d0843f0caf3/0/ORIGINE_M_6a0ac86500542.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=663a3f86-5290-11f1-9b55-4d0843f0caf3"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=663a3f86-5290-11f1-9b55-4d0843f0caf3",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23452",
@@ -14772,7 +15023,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b29/737-737019252_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/brocante-musicale-guinguette-du-14-juillet/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22619",
@@ -14789,7 +15041,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/af7/737-737019057_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-piano-alexandra-dovgan/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-brocante-musicale-1",
@@ -14806,7 +15059,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/06/6a2037c9b202c-brocante-musicale.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/brocante-musicale-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-15796",
@@ -14823,7 +15077,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/06/vide-grenier-tourtel.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/vide-grenier-quartier-tourtel/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6120672",
@@ -14840,7 +15095,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/71/ac/71ac25db46db14409ee58c19e467720caa628f6922138a9dbcb52a30901429c4-large.jpg",
     "url": "https://www.alentoor.fr/marbache/agenda/6120672-vide-greniers",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6118081",
@@ -14857,7 +15113,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e5/41/e541701ef03c898db755b02b3fc6180ace262cb59a2be1a64bbda91f0e4b8ede-large.jpg",
     "url": "https://www.alentoor.fr/champigneulles/agenda/6118081-brocante-enfant",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191231",
+    "title": "Tournoi de pétanque",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-14",
+    "endDate": "2026-07-14",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "City Stade",
+    "city": "Einville-au-Jard",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/8c/13/8c139bc3a8e023c5858af5450132535350ceeb391100dc191e75644f81eaeb7d-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/6191231-tournoi-de-petanque",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "lac-41657",
@@ -14874,7 +15149,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41657_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41657/feu-d-artifice-nancy-14-juillet/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bal-des-sapeurs-pompiers",
@@ -14894,7 +15170,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_color2.jpg?itok=f7Vqvtyp",
     "url": "https://lautrecanalnancy.fr/agenda/bal-des-sapeurs-pompiers",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1015020984281242",
@@ -14913,7 +15190,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1015020984281242/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1511841197312557",
@@ -14932,7 +15210,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1511841197312557/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-essey-en-guinguette-et-brocante-musicale",
@@ -14951,7 +15230,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/site-essey_en_guinguette_1.jpg?itok=AmYorJLq",
     "url": "https://www.esseylesnancy.fr/agenda/essey-en-guinguette-et-brocante-musicale",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bb50bf18-5290-11f1-8063-87191d09dbde",
@@ -14969,11 +15249,12 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bb50bf18-5290-11f1-8063-87191d09dbde/0/ORIGINE_M_6a0ac8f3bfeee.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bb50bf18-5290-11f1-8063-87191d09dbde"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bb50bf18-5290-11f1-8063-87191d09dbde",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b6db799a-6010-11f1-9309-eb8e978751c1",
-    "title": "Plantes et espaces protégées des Vosges",
+    "title": "Plantes et espaces protégés des Vosges",
     "category": "activite",
     "subcats": [
       "Visite guidée",
@@ -14988,7 +15269,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b6db799a-6010-11f1-9309-eb8e978751c1/0/1-1_M_6a2171a61da23.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b6db799a-6010-11f1-9309-eb8e978751c1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b6db799a-6010-11f1-9309-eb8e978751c1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20521",
@@ -15005,7 +15287,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/8e4/737-737015270_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-balade-gourmande-cote-ville-neuve/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22620",
@@ -15022,24 +15305,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/fc2/737-737019053_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-les-jours-heureux-quintette-le-bateau-ivre/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
-    "uuid": "vdv-28548",
-    "title": "Bal-Guinguette pour tous",
-    "category": "citoyennete",
+    "uuid": "vdv-28641",
+    "title": "Bal-guinguette pour tous",
+    "category": "autre",
     "subcats": [],
     "date": "2026-07-15",
     "endDate": "2026-07-15",
     "dateText": "",
-    "schedule": "",
+    "schedule": "De 17h à 21h",
     "place": "Parc Richard Pouille",
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous/",
-    "source": "vandoeuvre"
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6189927",
@@ -15056,7 +15341,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/87/5e/875e1cf528fdc7d744ffb06299401851f85623c94c1bd9e5d86647add856a505-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6189927-la-p-tite-boudeuse-spectacle",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "fb-1577585729975101",
@@ -15075,7 +15361,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1577585729975101/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-flore-54-1",
@@ -15092,7 +15379,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/229/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-flore-54-1_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "384461ea-64da-11f1-8e35-e50a72b8ccfd",
@@ -15111,7 +15399,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/384461ea-64da-11f1-8e35-e50a72b8ccfd/0/ORIGINE_M_6a29772f8e581.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=384461ea-64da-11f1-8e35-e50a72b8ccfd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=384461ea-64da-11f1-8e35-e50a72b8ccfd",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c773a954-3cba-11f1-868c-ff5de5c718d8",
@@ -15129,7 +15418,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c773a954-3cba-11f1-868c-ff5de5c718d8/0/1-1_M_69e626ba63c86.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c773a954-3cba-11f1-868c-ff5de5c718d8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c773a954-3cba-11f1-868c-ff5de5c718d8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c6ce7c90-64ab-11f1-afad-73f8eb45d2d6",
@@ -15147,7 +15437,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c6ce7c90-64ab-11f1-afad-73f8eb45d2d6/0/1-1_M_6a29296811efd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c6ce7c90-64ab-11f1-afad-73f8eb45d2d6"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c6ce7c90-64ab-11f1-afad-73f8eb45d2d6",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "8c3cf254-5291-11f1-bfa7-09582365e62d",
@@ -15165,7 +15456,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8c3cf254-5291-11f1-bfa7-09582365e62d/0/ORIGINE_M_6a0aca5241e17.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8c3cf254-5291-11f1-bfa7-09582365e62d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8c3cf254-5291-11f1-bfa7-09582365e62d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "62dd46dc-3cbd-11f1-a3e5-2b686ed7c987",
@@ -15184,7 +15476,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/62dd46dc-3cbd-11f1-a3e5-2b686ed7c987/0/1-1_M_69e62b3009cf2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62dd46dc-3cbd-11f1-a3e5-2b686ed7c987"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62dd46dc-3cbd-11f1-a3e5-2b686ed7c987",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "47468594-3cbf-11f1-b1d7-f75b2861fec4",
@@ -15203,7 +15496,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/47468594-3cbf-11f1-b1d7-f75b2861fec4/0/1-1_M_69e62e45dd4f2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=47468594-3cbf-11f1-b1d7-f75b2861fec4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=47468594-3cbf-11f1-b1d7-f75b2861fec4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "726bbde8-448f-11f1-b153-edd069ce49bc",
@@ -15221,7 +15515,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/726bbde8-448f-11f1-b153-edd069ce49bc/0/1-1_M_69f34a7063dd2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=726bbde8-448f-11f1-b153-edd069ce49bc"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=726bbde8-448f-11f1-b153-edd069ce49bc",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20537",
@@ -15238,7 +15533,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/6d1/737-737016700_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-parcours-brassicole/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22621",
@@ -15255,7 +15551,44 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/6cf/737-737019052_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-piano-albert-mamriev/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191212",
+    "title": "Visite guidée du parc du domaine des eaux bleues et villa de la garenne",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-16",
+    "endDate": "2026-08-06",
+    "dateText": "Du 16 juillet au 6 août 2026",
+    "schedule": "",
+    "place": "Domaine des Eaux Bleues",
+    "city": "Liverdun",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/c8/da/c8da03d2c6c4de4bcf477a738feb65636fa9ca68c054b8ae8bbd26356b6e6521-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6191212-visite-guidee-du-parc-du-domaine-des-eaux-bleues-et-villa-de-la-garenne",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
+  },
+  {
+    "uuid": "al-6191242",
+    "title": "Visites guidées",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-16",
+    "endDate": "2026-09-12",
+    "dateText": "Du 16 juillet au 12 septembre 2026",
+    "schedule": "",
+    "place": "13 place de la Cagnotte",
+    "city": "Liverdun",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/assets/img/event/default/visite-medium.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6191242-visites-guidees",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "fb-2217061662379012",
@@ -15274,7 +15607,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2217061662379012/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "15ba3344-5291-11f1-87c2-cd67739dde41",
@@ -15292,7 +15626,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/15ba3344-5291-11f1-87c2-cd67739dde41/0/ORIGINE_M_6a0ac98b78f92.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=15ba3344-5291-11f1-87c2-cd67739dde41"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=15ba3344-5291-11f1-87c2-cd67739dde41",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22622",
@@ -15309,7 +15644,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/e10/737-737019050_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-soiree-lyrique-charlotte-aaron-wajnberg/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148644",
@@ -15326,7 +15662,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/3c/99/3c992bd2ec19234ccc3b11d6c6cae6e10039c6f91a1ea9b64608a1759e4b5fe7-large.jpg",
     "url": "https://www.alentoor.fr/jezainville/agenda/6148644-les-soirees-de-jezainville",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191211",
+    "title": "Lay-Saint-Christophe - au fil de l'eau",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-17",
+    "endDate": "2026-07-31",
+    "dateText": "Du 17 au 31 juillet 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Lay-Saint-Christophe",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/64/39/6439f79d3eecc0c46f290981eca084c43e69fc483dab8ca585a9644569a68f03-large.jpg",
+    "url": "https://www.alentoor.fr/lay-saint-christophe/agenda/6191211-lay-saint-christophe-au-fil-de-l-eau",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6172490",
@@ -15343,7 +15698,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/39/fa/39fa3dc51c25f9a0a88471a9b4d01b7299478df45dff7079854d17d950d1ec87-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6172490-concert-the-heaven-treep",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-peignoir-tapis",
@@ -15363,7 +15719,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web6.jpg?itok=5ldoYiVj",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-peignoir-tapis",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2814265938912663",
@@ -15382,7 +15739,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2814265938912663/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1816572885986221",
@@ -15401,7 +15759,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1816572885986221/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-defile-de-mode-par-fayezo",
@@ -15420,7 +15779,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_210713066.jpeg?itok=PMOxB02W",
     "url": "https://www.esseylesnancy.fr/agenda/defile-de-mode-par-fayezo",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f0f9a194-4475-11f1-a1a9-950855627696",
@@ -15441,7 +15801,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f0f9a194-4475-11f1-a1a9-950855627696/0/ORIGINE_M_69f31f0d1b065.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f0f9a194-4475-11f1-a1a9-950855627696"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f0f9a194-4475-11f1-a1a9-950855627696",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "10c2de5c-64db-11f1-b7b0-c3d75fffb374",
@@ -15459,7 +15820,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/10c2de5c-64db-11f1-b7b0-c3d75fffb374/0/ORIGINE_M_6a29789abeacd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10c2de5c-64db-11f1-b7b0-c3d75fffb374"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10c2de5c-64db-11f1-b7b0-c3d75fffb374",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22623",
@@ -15476,7 +15838,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/87b/737-737019047_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/nancyphonies-2026-recital-de-clavecin-jerome-mondesert/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180021",
@@ -15493,7 +15856,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/53/0c/530cd04a624d85cea35768b959d06f02f973dbb520a34c0fccf578388c233df6-large.jpg",
     "url": "https://www.alentoor.fr/houdemont/agenda/6180021-soiree-des-etoiles",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6172442",
@@ -15510,7 +15874,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ec/b0/ecb074102a2d17ff33fcece3450de104e468f99ec432dbddc6470650700faba7-large.jpg",
     "url": "https://www.alentoor.fr/blainville-sur-l-eau/agenda/6172442-bal-des-pompiers",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-nuit-chaude-aux-accents-mediterraneens-exotica-lunatica-zouzou-airlines-blindtest",
@@ -15530,7 +15895,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/7_rouge_exotica_copie.jpg?itok=8q9PRMKt",
     "url": "https://lautrecanalnancy.fr/agenda/nuit-chaude-aux-accents-mediterraneens-exotica-lunatica-zouzou-airlines-blindtest",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1934336980678509",
@@ -15549,7 +15915,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1934336980678509/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3304932976333781",
@@ -15568,7 +15935,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3304932976333781/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9376c864-4478-11f1-9979-e52e526ad48c",
@@ -15588,7 +15956,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9376c864-4478-11f1-9979-e52e526ad48c/0/ORIGINE_M_69f32378aea29.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9376c864-4478-11f1-9979-e52e526ad48c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9376c864-4478-11f1-9979-e52e526ad48c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "58a51d84-64db-11f1-9756-b9ccc871447c",
@@ -15608,7 +15977,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/58a51d84-64db-11f1-9756-b9ccc871447c/0/ORIGINE_M_6a2979136382b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58a51d84-64db-11f1-9756-b9ccc871447c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58a51d84-64db-11f1-9756-b9ccc871447c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dff4938a-5a8d-11f1-a48c-ddfe43767f47",
@@ -15628,24 +15998,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dff4938a-5a8d-11f1-a48c-ddfe43767f47/0/ORIGINE_M_6a1830220a4d1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dff4938a-5a8d-11f1-a48c-ddfe43767f47"
-  },
-  {
-    "uuid": "al-5989078",
-    "title": "Vide greniers",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "dateText": "",
-    "schedule": "de 8h à 18h",
-    "place": "Centre du village",
-    "city": "Mont-l'Étroit",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/33/be/33bec7ad99698d514d66a008b0870bab388e5a0e82657624a858fdfd2d382d3c-large.jpg",
-    "url": "https://www.alentoor.fr/mont-l-etroit/agenda/5989078-vide-greniers",
-    "source": "alentoor"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dff4938a-5a8d-11f1-a48c-ddfe43767f47",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6108426",
@@ -15662,7 +16016,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/jolivet/agenda/6108426-vide-grenier-de-l-us-jolivet",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5989647",
@@ -15679,24 +16034,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/24/2d/242d59950d8f470c8364a2abb5e34250b63be6148b3155a612940bf5cd849f34-large.jpg",
     "url": "https://www.alentoor.fr/xaronval/agenda/5989647-village-1900-les-uniformes-dans-l-histoire",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6170351",
-    "title": "Vide grenier - marché artisanal",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "dateText": "",
-    "schedule": "de 8h à 18h",
-    "place": "1 grande rue",
-    "city": "Tramont-Saint-André",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/2d/ed/2deddfb3724fc2d8f46459905be3dde774424758ada54c62184c40f5aa09e22b-large.jpg",
-    "url": "https://www.alentoor.fr/tramont-saint-andre/agenda/6170351-vide-grenier-marche-artisanal",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-voix-envoutantes-rythmes-lumineux-essiana-ladislava",
@@ -15718,7 +16057,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/8_jaune_ladislava_copie.jpg?itok=BcK8AOYL",
     "url": "https://lautrecanalnancy.fr/agenda/voix-envoutantes-rythmes-lumineux-essiana-ladislava",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-energie-solaire-rythmes-du-monde-daka-sound",
@@ -15738,7 +16078,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/9_rouge_daka_copie.jpg?itok=kSFnmUcf",
     "url": "https://lautrecanalnancy.fr/agenda/energie-solaire-rythmes-du-monde-daka-sound",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2905942376242812",
@@ -15757,7 +16098,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2905942376242812/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1929462000989222",
@@ -15776,7 +16118,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1929462000989222/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1293475149419421",
@@ -15795,7 +16138,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1293475149419421/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20581",
@@ -15812,7 +16156,26 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/6da/737-737018735_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-basilique-saint-epvre/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-2578071",
+    "title": "A la recherche du trésor de Liverdun",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-07-22",
+    "endDate": "2026-08-26",
+    "dateText": "Du 22 juillet au 26 août 2026",
+    "schedule": "",
+    "place": "Accueil touristique du Bassin de Pompey",
+    "city": "Liverdun",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/59/17/59174b1bcf0ec0f01b2d2e7ebef9106c676baea7c9bb551375df299fbc834b6f-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/2578071-a-la-recherche-du-tresor-de-liverdun",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-flore-54-2",
@@ -15829,7 +16192,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/230/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-flore-54-2_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bdc7c89c-64db-11f1-a05e-b7e560556f88",
@@ -15848,7 +16212,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bdc7c89c-64db-11f1-a05e-b7e560556f88/0/ORIGINE_M_6a2979bd12630.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bdc7c89c-64db-11f1-a05e-b7e560556f88"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bdc7c89c-64db-11f1-a05e-b7e560556f88",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "70b31540-6a47-11f1-8d2d-3142dcf0995c",
@@ -15866,7 +16231,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/70b31540-6a47-11f1-8d2d-3142dcf0995c/0/ORIGINE_M_6a329229c363c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=70b31540-6a47-11f1-8d2d-3142dcf0995c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=70b31540-6a47-11f1-8d2d-3142dcf0995c",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "0da6e500-64dc-11f1-9666-91fb6987918c",
@@ -15884,7 +16250,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0da6e500-64dc-11f1-9666-91fb6987918c/0/ORIGINE_M_6a297a4313a25.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0da6e500-64dc-11f1-9666-91fb6987918c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0da6e500-64dc-11f1-9666-91fb6987918c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f82321f8-3cbd-11f1-8e9f-85423cf8e8dd",
@@ -15903,7 +16270,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f82321f8-3cbd-11f1-8e9f-85423cf8e8dd/0/1-1_M_69e62c24ee708.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f82321f8-3cbd-11f1-8e9f-85423cf8e8dd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f82321f8-3cbd-11f1-8e9f-85423cf8e8dd",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23215",
@@ -15920,7 +16288,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/bb4/737-737008553_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-un-soir-une-commune-malzeville/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-574",
@@ -15939,7 +16308,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-retour-vers-le-futur",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191244",
+    "title": "Visite guidée Pompey de la fonte à l'acier",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-07-24",
+    "endDate": "2026-08-21",
+    "dateText": "Du 24 juillet au 21 août 2026",
+    "schedule": "",
+    "place": "Parking de covoiturage",
+    "city": "Pompey",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/fa/ae/faae3ae7bf507f9f8ef6f5e88743d01575c08ca84fb9f33b6f91bb970827ec7e-large.jpg",
+    "url": "https://www.alentoor.fr/pompey/agenda/6191244-visite-guidee-pompey-de-la-fonte-a-l-acier",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6188563",
@@ -15956,24 +16344,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a8/db/a8db40e00b1a426d920c0ea728cab4d9bc1828ef36bbd8c28840556e75eee3bc-large.jpg",
     "url": "https://www.alentoor.fr/pettoncourt/agenda/6188563-le-saulnois-fait-son-cinema-pettoncourt",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5996116",
-    "title": "Festival - le Val des Skrouf",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-07-24",
-    "endDate": "2026-07-26",
-    "dateText": "Du 24 au 26 juillet 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Domgermain",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/b3/64/b364773ba5b7f59c8fd735713878e6ee89833c5956a2d54877d3f1f70316d2ce-large.jpg",
-    "url": "https://www.alentoor.fr/domgermain/agenda/5996116-festival-le-val-des-skrouf",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "vdv-28587",
@@ -15988,9 +16360,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1250821310254203",
@@ -16009,7 +16382,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1250821310254203/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-932502256061874",
@@ -16028,7 +16402,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/932502256061874/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cfb50b60-4478-11f1-b9c3-9db2f0098b8c",
@@ -16048,24 +16423,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cfb50b60-4478-11f1-b9c3-9db2f0098b8c/0/ORIGINE_M_69f323ddbc66f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfb50b60-4478-11f1-b9c3-9db2f0098b8c"
-  },
-  {
-    "uuid": "al-6150528",
-    "title": "Vide-Grenier",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-07-26",
-    "endDate": "2026-07-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Aroffe",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/e3/22/e322c64e282dffc5f32f9603025728e78695058b76d0c4d905c50a82b08cebf2-large.jpg",
-    "url": "https://www.alentoor.fr/aroffe/agenda/6150528-vide-grenier",
-    "source": "alentoor"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfb50b60-4478-11f1-b9c3-9db2f0098b8c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6004145",
@@ -16082,7 +16441,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/5d/8c/5d8c51f8c8ec77287da19b92fef8fb1f5f77ae986507927855cb0ae26a438474-large.jpg",
     "url": "https://www.alentoor.fr/xaronval/agenda/6004145-village-1900-les-annees-60",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-derives-electriques-energie-indocile-prairie-mairie-devore",
@@ -16103,7 +16463,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/10_jaune_prairie_copie.jpg?itok=p4-gQvMw",
     "url": "https://lautrecanalnancy.fr/agenda/derives-electriques-energie-indocile-prairie-mairie-devore",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1037777542101411",
@@ -16122,7 +16483,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1037777542101411/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180026",
@@ -16139,7 +16501,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/96/ed/96edb9bb26ba2b4c87fec3d3cb9e382feb2da8efba449c64e0205fe291dce10d-large.jpg",
     "url": "https://www.alentoor.fr/laneuveville-aux-bois/agenda/6180026-mo-bilan-sante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20589",
@@ -16156,7 +16519,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/19a/737-737018749_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-eglise-notre-dame-de-bonsecours/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189890",
@@ -16173,7 +16537,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/35/d8/35d8036656b1fb021f7088a4f321f32a2108ee6c8fbe2ef6da106ed99af33ed5-large.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/6189890-balade-botanique-murs-en-pierre-seche-et-plantes-sauvages",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-6180112",
@@ -16190,7 +16555,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a5/28/a52843a9a3ae4a8b99a1ef287232ebe7e414b74156a5b28c9073f3857e34c3da-large.jpg",
     "url": "https://www.alentoor.fr/jezainville/agenda/6180112-sortie-nature-l-ete-sur-la-pelouse",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1370173258496610",
@@ -16209,7 +16575,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1370173258496610/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "52c10a6c-64dc-11f1-a021-9f83e2d750ef",
@@ -16228,7 +16595,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/52c10a6c-64dc-11f1-a021-9f83e2d750ef/0/ORIGINE_M_6a297ab703348.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52c10a6c-64dc-11f1-a021-9f83e2d750ef"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52c10a6c-64dc-11f1-a021-9f83e2d750ef",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-950065671398481",
@@ -16247,7 +16615,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/950065671398481/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "caf2cbfa-64dd-11f1-ad66-a52a6c52446c",
@@ -16266,7 +16635,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/caf2cbfa-64dd-11f1-ad66-a52a6c52446c/0/ORIGINE_M_6a297dc02626b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=caf2cbfa-64dd-11f1-ad66-a52a6c52446c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=caf2cbfa-64dd-11f1-ad66-a52a6c52446c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180956",
@@ -16283,7 +16653,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/8c/35/8c359a1d07e2d1b4eb6152d31acce6504148bba817c01b122162bc1495bd0cde-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6180956-les-estivales-concert-pizza-petrole",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180065",
@@ -16300,7 +16671,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/98/c8/98c857cbbf25fe83747096477ec2d155af26c6e2c1443e9aa3976444c06c84f8-large.jpg",
     "url": "https://www.alentoor.fr/laneuveville-aux-bois/agenda/6180065-brin-de-lecture",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-761375290244404",
@@ -16319,7 +16691,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/761375290244404/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180109",
@@ -16336,7 +16709,26 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/98/32/9832ae46102c67a44c9903599d801d15e7c38083ccc52e773f2703b0d06f3f97-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6180109-estivales-de-pont-a-mousson",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191296",
+    "title": "Visite guidée de la cité médiévale de Liverdun",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-08-01",
+    "endDate": "2026-08-22",
+    "dateText": "Du 1 au 22 août 2026",
+    "schedule": "",
+    "place": "Maison du tourisme du Bassin de Pompey",
+    "city": "Liverdun",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/6e/43/6e43d35c68da69dfcd28cb7d563132aded33de5cee6b990d5d921ea8161cedfd-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6191296-visite-guidee-de-la-cite-medievale-de-liverdun",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "14ff4f5a-4479-11f1-b8d9-1f5e87a22ccf",
@@ -16356,24 +16748,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/14ff4f5a-4479-11f1-b8d9-1f5e87a22ccf/0/ORIGINE_M_69f324520887c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=14ff4f5a-4479-11f1-b8d9-1f5e87a22ccf"
-  },
-  {
-    "uuid": "al-5973905",
-    "title": "Vide grenier",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-08-02",
-    "endDate": "2026-08-02",
-    "dateText": "",
-    "schedule": "de 6h à 18h",
-    "place": "Pagny-la-Blanche-Côte",
-    "city": "Pagny-la-Blanche-Côte",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
-    "url": "https://www.alentoor.fr/pagny-la-blanche-cote/agenda/5973905-vide-grenier",
-    "source": "alentoor"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=14ff4f5a-4479-11f1-b8d9-1f5e87a22ccf",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5911670",
@@ -16390,7 +16766,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/morville-sur-seille/agenda/5911670-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180089",
@@ -16407,7 +16784,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/2b/b5/2bb53dce78db72d69ea698d14c65a453c21b96aeab5099d9e56324bc40fc51f5-large.jpg",
     "url": "https://www.alentoor.fr/laneuveville-aux-bois/agenda/6180089-montee-historique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5881999",
@@ -16424,7 +16802,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/c7/77/c77764315e2c80a581f1fc152b4f88005099a3a0079768cdb928afedee47ca9d-large.jpg",
     "url": "https://www.alentoor.fr/xaronval/agenda/5881999-village-1900-festival-de-musique-mecanique",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-clairs-obscurs-vibrations-sensibles-abyssan-rosaly",
@@ -16444,7 +16823,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/11_rouge_abyss_copie.jpg?itok=J_fLWQzO",
     "url": "https://lautrecanalnancy.fr/agenda/clairs-obscurs-vibrations-sensibles-abyssan-rosaly",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1468145101731178",
@@ -16463,7 +16843,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1468145101731178/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-886487994342895",
@@ -16482,7 +16863,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/886487994342895/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1534457655356972",
@@ -16501,7 +16883,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1534457655356972/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0231c2fe-4492-11f1-b2d1-a9c2589f60ec",
@@ -16519,7 +16902,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0231c2fe-4492-11f1-b2d1-a9c2589f60ec/0/1-1_M_69f34ec220f36.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0231c2fe-4492-11f1-b2d1-a9c2589f60ec"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0231c2fe-4492-11f1-b2d1-a9c2589f60ec",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7f90540c-64c9-11f1-8d57-d7a674d39a83",
@@ -16538,7 +16922,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7f90540c-64c9-11f1-8d57-d7a674d39a83/0/1-1_M_6a295b686d90b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7f90540c-64c9-11f1-8d57-d7a674d39a83"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7f90540c-64c9-11f1-8d57-d7a674d39a83",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "42c42c14-6565-11f1-950f-0b1b2a66da14",
@@ -16557,7 +16942,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/42c42c14-6565-11f1-950f-0b1b2a66da14/0/ORIGINE_M_6a2a6088d3126.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=42c42c14-6565-11f1-950f-0b1b2a66da14"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=42c42c14-6565-11f1-950f-0b1b2a66da14",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1667646297713963",
@@ -16576,7 +16962,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1667646297713963/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6138327",
@@ -16593,7 +16980,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/05/29/0529ab05a40047bdbfb930c79867e8264d326602443a80874931829d5cada488-large.jpg",
     "url": "https://www.alentoor.fr/ludres/agenda/6138327-visite-un-soir-une-commune-ludres",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-575",
@@ -16612,7 +17000,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-le-comte-de-monte-cristo",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1276006754495773",
@@ -16631,7 +17020,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1276006754495773/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3564405017056202",
@@ -16650,7 +17040,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3564405017056202/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1622789495504774",
@@ -16669,7 +17060,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1622789495504774/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c1fe2552-447c-11f1-9a36-05d99ba9c316",
@@ -16689,11 +17081,12 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c1fe2552-447c-11f1-9a36-05d99ba9c316/0/ORIGINE_M_69f32a7cbb231.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c1fe2552-447c-11f1-9a36-05d99ba9c316"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c1fe2552-447c-11f1-9a36-05d99ba9c316",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6009896",
-    "title": "Brocante",
+    "title": "Vide-Grenier",
     "category": "festival",
     "subcats": [],
     "date": "2026-08-09",
@@ -16705,8 +17098,9 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
-    "url": "https://www.alentoor.fr/sillegny/agenda/6009896-brocante",
-    "source": "alentoor"
+    "url": "https://www.alentoor.fr/sillegny/agenda/6009896-vide-grenier",
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180988",
@@ -16723,7 +17117,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e2/6b/e26bc711678d7b28f5581a103858090b6a7738c7741e6c7337f081c5389dc747-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6180988-le-parc-des-artistes",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-elegance-rock-energie-debridee-derwich-nucleons-project",
@@ -16743,7 +17138,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/12_jaune_derwich_copie.jpg?itok=kgKvp8L9",
     "url": "https://lautrecanalnancy.fr/agenda/elegance-rock-energie-debridee-derwich-nucleons-project",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1745555886638602",
@@ -16762,7 +17158,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1745555886638602/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6189854",
@@ -16779,7 +17176,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/3f/9b/3f9b2edd81904f4008e45b843d6c623bae1ff033b6183932645dec3e576e9a7e-large.jpg",
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6189854-atelier-theatre-de-la-mousson-d-ete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "cf24baa8-64c4-11f1-97a7-f5205e6df6e5",
@@ -16799,7 +17197,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cf24baa8-64c4-11f1-97a7-f5205e6df6e5/0/1-1_M_6a2953ce4d1b5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf24baa8-64c4-11f1-97a7-f5205e6df6e5"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf24baa8-64c4-11f1-97a7-f5205e6df6e5",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-lecturique",
@@ -16816,7 +17215,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/231/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-lecturique_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
@@ -16835,7 +17235,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5c0eb80a-6566-11f1-abb4-51cbbe4b0b91/0/ORIGINE_M_6a2a624d2a785.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c0eb80a-6566-11f1-abb4-51cbbe4b0b91"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1513624176978814",
@@ -16854,7 +17255,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1513624176978814/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1009122542084694",
@@ -16873,7 +17275,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1009122542084694/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-13-aout",
@@ -16892,7 +17295,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-13-aout",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "33b736b6-6566-11f1-8095-891fc37b61be",
@@ -16912,7 +17316,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/33b736b6-6566-11f1-8095-891fc37b61be/0/ORIGINE_M_6a2a620974216.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=33b736b6-6566-11f1-8095-891fc37b61be"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=33b736b6-6566-11f1-8095-891fc37b61be",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "eaf0b650-447c-11f1-a7be-91d5543de982",
@@ -16932,7 +17337,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/eaf0b650-447c-11f1-a7be-91d5543de982/0/ORIGINE_M_69f32ac1700c1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=eaf0b650-447c-11f1-a7be-91d5543de982"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=eaf0b650-447c-11f1-a7be-91d5543de982",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6166668",
@@ -16949,7 +17355,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/db/98/db98bce86f55e18848883fb962f5bb039cfc5a231086aafd18affe231dfd69af-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6166668-les-estivales-la-fete-des-lucioles",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1305537541740059",
@@ -16968,7 +17375,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1305537541740059/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1468259288144569",
@@ -16987,7 +17395,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1468259288144569/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0ed95f36-6566-11f1-9c56-2370aa3df411",
@@ -17005,7 +17414,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0ed95f36-6566-11f1-9c56-2370aa3df411/0/ORIGINE_M_6a2a61cb9a16c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0ed95f36-6566-11f1-9c56-2370aa3df411"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0ed95f36-6566-11f1-9c56-2370aa3df411",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2454035158394567",
@@ -17024,7 +17434,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2454035158394567/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1849860542326355",
@@ -17043,7 +17454,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1849860542326355/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4d34f860-58d9-11f1-996a-c768a5df1914",
@@ -17061,7 +17473,26 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4d34f860-58d9-11f1-996a-c768a5df1914/0/1-1_M_6a1557f6ae7ba.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d34f860-58d9-11f1-996a-c768a5df1914"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d34f860-58d9-11f1-996a-c768a5df1914",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191247",
+    "title": "Vaudéville",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-08-16",
+    "endDate": "2026-08-16",
+    "dateText": "",
+    "schedule": "de 14h à 15h30",
+    "place": "",
+    "city": "Vaudeville",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/73/f5/73f5672e51a8f38efd05665fb1583c592cd65ab39231681ca868b27e24e4607e-large.jpg",
+    "url": "https://www.alentoor.fr/vaudeville-54/agenda/6191247-vaudeville",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6180981",
@@ -17078,7 +17509,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/62/3c/623c6bdd107171f21880250dce45d8c9d4a6b4b5af16817f5a610917e93c47a5-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6180981-les-estivales-concert-de-l-academie-de-musique-ancienne",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-943430835039534",
@@ -17097,7 +17529,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/943430835039534/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1529804435207329",
@@ -17116,7 +17549,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1529804435207329/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "755b6e94-2456-11f1-a504-c790f43fd443",
@@ -17135,24 +17569,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/755b6e94-2456-11f1-a504-c790f43fd443/0/1-1_M_69bd3bb1ca3ea.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=755b6e94-2456-11f1-a504-c790f43fd443"
-  },
-  {
-    "uuid": "al-6020869",
-    "title": "Concert – les Quatre Saisons de Vivaldi",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-08-18",
-    "endDate": "2026-08-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Eglise Saint Laurent",
-    "city": "Pont-à-Mousson",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
-    "url": "https://www.alentoor.fr/pont-a-mousson/agenda/6020869-concert-les-quatre-saisons-de-vivaldi",
-    "source": "alentoor"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=755b6e94-2456-11f1-a504-c790f43fd443",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cc1faaea-6012-11f1-94f2-63540d9e65d2",
@@ -17171,7 +17589,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cc1faaea-6012-11f1-94f2-63540d9e65d2/0/1-1_M_6a21742442ad1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cc1faaea-6012-11f1-94f2-63540d9e65d2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cc1faaea-6012-11f1-94f2-63540d9e65d2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20590",
@@ -17188,7 +17607,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/1f3/737-737018747_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-patrimoine-industriel-parcours-rives-de-meurthe/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f09668a2-6565-11f1-a26c-299fe1cfef6b",
@@ -17207,7 +17627,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f09668a2-6565-11f1-a26c-299fe1cfef6b/0/ORIGINE_M_6a2a6198d460c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f09668a2-6565-11f1-a26c-299fe1cfef6b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f09668a2-6565-11f1-a26c-299fe1cfef6b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d83841fe-6a47-11f1-97a9-c3beefb82db0",
@@ -17225,7 +17646,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d83841fe-6a47-11f1-97a9-c3beefb82db0/0/ORIGINE_M_6a3292e2ed923.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d83841fe-6a47-11f1-97a9-c3beefb82db0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d83841fe-6a47-11f1-97a9-c3beefb82db0",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "557349f2-6a48-11f1-bb1a-8f80c5286859",
@@ -17243,7 +17665,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/557349f2-6a48-11f1-bb1a-8f80c5286859/0/ORIGINE_M_6a32943fb2328.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=557349f2-6a48-11f1-bb1a-8f80c5286859"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=557349f2-6a48-11f1-bb1a-8f80c5286859",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "al-6148591",
@@ -17260,7 +17683,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/11/33/1133d957b652f30a5ae839a7b8fee71763e8f05dd06c5f71859128daa6798420-large.jpg",
     "url": "https://www.alentoor.fr/jezainville/agenda/6148591-les-soirees-de-jezainville",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1780890996225316",
@@ -17279,7 +17703,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1780890996225316/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-un-soir-une-commune",
@@ -17298,7 +17723,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/2024_06_13_077.jpg?itok=lXO7_283",
     "url": "https://www.esseylesnancy.fr/agenda/un-soir-une-commune",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "1ca3e3d4-447d-11f1-84c1-37d0fc7d326a",
@@ -17319,7 +17745,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1ca3e3d4-447d-11f1-84c1-37d0fc7d326a/0/ORIGINE_M_69f32b14ccc68.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ca3e3d4-447d-11f1-84c1-37d0fc7d326a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ca3e3d4-447d-11f1-84c1-37d0fc7d326a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-fete-celtique-ciel-ouvert-celtic-tramps-dj-et-danse-irlandaise",
@@ -17339,7 +17766,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/14_jaune_celtiq_copie.jpg?itok=romPr0H4",
     "url": "https://lautrecanalnancy.fr/agenda/fete-celtique-ciel-ouvert-celtic-tramps-dj-et-danse-irlandaise",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1435381031686320",
@@ -17358,7 +17786,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1435381031686320/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1287870726892702",
@@ -17377,7 +17806,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1287870726892702/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1654638209043952",
@@ -17396,7 +17826,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1654638209043952/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2d590d20-6a49-11f1-b123-eff072c076ed",
@@ -17414,7 +17845,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2d590d20-6a49-11f1-b123-eff072c076ed/0/ORIGINE_M_6a32957703bd8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d590d20-6a49-11f1-b123-eff072c076ed"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d590d20-6a49-11f1-b123-eff072c076ed",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "bd6f6028-6565-11f1-b846-efd79e7e5f1a",
@@ -17432,7 +17864,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bd6f6028-6565-11f1-b846-efd79e7e5f1a/0/ORIGINE_M_6a2a61430995b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bd6f6028-6565-11f1-b846-efd79e7e5f1a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bd6f6028-6565-11f1-b846-efd79e7e5f1a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6108122",
@@ -17449,7 +17882,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/23/cb/23cb23a49d2d27f01c454151b5204eb7e08495946b0876b5195d9ad5dceb516d-large.jpg",
     "url": "https://www.alentoor.fr/bouxieres-aux-dames/agenda/6108122-brocante-de-bouxieres-aux-dames",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-energie-indie-frissons-d-ete-ellie-s-comics",
@@ -17469,7 +17903,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ellie_rouge.jpg?itok=lLpfRAJ7",
     "url": "https://lautrecanalnancy.fr/agenda/energie-indie-frissons-d-ete-ellie-s-comics",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-douceur-pop-recits-sensibles-lust-valentine-laurent",
@@ -17490,7 +17925,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/val_jaune.jpg?itok=_uSE1u4C",
     "url": "https://lautrecanalnancy.fr/agenda/douceur-pop-recits-sensibles-lust-valentine-laurent",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1989981198313735",
@@ -17509,7 +17945,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1989981198313735/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-36357474057232133",
@@ -17528,7 +17965,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/36357474057232133/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1403974617975424",
@@ -17547,7 +17985,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1403974617975424/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "24b28254-f1ff-11f0-b2e0-e356e4754a5c",
@@ -17567,7 +18006,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/24b28254-f1ff-11f0-b2e0-e356e4754a5c/0/ORIGINE_M_6968c50262b63.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=24b28254-f1ff-11f0-b2e0-e356e4754a5c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=24b28254-f1ff-11f0-b2e0-e356e4754a5c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9fbe3448-5feb-11f1-a9f3-2d75b4f5c7b6",
@@ -17586,7 +18026,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9fbe3448-5feb-11f1-a9f3-2d75b4f5c7b6/0/ORIGINE_M_6a2130e6c9d55.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9fbe3448-5feb-11f1-a9f3-2d75b4f5c7b6"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9fbe3448-5feb-11f1-a9f3-2d75b4f5c7b6",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20544",
@@ -17603,7 +18044,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a34/737-737016586_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/mercredis-de-la-pep/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9efcfbbe-6565-11f1-998d-b7486db60d48",
@@ -17622,7 +18064,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9efcfbbe-6565-11f1-998d-b7486db60d48/0/ORIGINE_M_6a2a610febdb3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9efcfbbe-6565-11f1-998d-b7486db60d48"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9efcfbbe-6565-11f1-998d-b7486db60d48",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cd75ec88-4483-11f1-bb6c-cb7df099e86c",
@@ -17643,7 +18086,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd75ec88-4483-11f1-bb6c-cb7df099e86c/0/ORIGINE_M_69f3364e734bf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd75ec88-4483-11f1-bb6c-cb7df099e86c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd75ec88-4483-11f1-bb6c-cb7df099e86c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cd56c5d8-6a49-11f1-9e68-71fb236aafcd",
@@ -17661,7 +18105,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd56c5d8-6a49-11f1-9e68-71fb236aafcd/0/ORIGINE_M_6a32969c4b52f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd56c5d8-6a49-11f1-9e68-71fb236aafcd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd56c5d8-6a49-11f1-9e68-71fb236aafcd",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "f8fabada-5a8d-11f1-89b2-b38054c840da",
@@ -17683,7 +18128,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f8fabada-5a8d-11f1-89b2-b38054c840da/0/ORIGINE_M_6a18304c08e1e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f8fabada-5a8d-11f1-89b2-b38054c840da"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f8fabada-5a8d-11f1-89b2-b38054c840da",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-afrobeat-en-mouvement-et-rythmes-d-ete-lisko-khalil-danses-africaines",
@@ -17703,7 +18149,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/17_rouge_lisko_copie.jpg?itok=wpZ8IOWc",
     "url": "https://lautrecanalnancy.fr/agenda/afrobeat-en-mouvement-et-rythmes-d-ete-lisko-khalil-danses-africaines",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2015985562619874",
@@ -17722,7 +18169,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2015985562619874/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-970501795603120",
@@ -17741,7 +18189,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/970501795603120/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1639379687185016",
@@ -17760,7 +18209,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1639379687185016/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7beea48a-6a4a-11f1-92ef-0199af6da113",
@@ -17778,7 +18228,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7beea48a-6a4a-11f1-92ef-0199af6da113/0/ORIGINE_M_6a3297331c977.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7beea48a-6a4a-11f1-92ef-0199af6da113"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7beea48a-6a4a-11f1-92ef-0199af6da113",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "83eedeaa-6565-11f1-afab-b11410a29d50",
@@ -17796,7 +18247,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83eedeaa-6565-11f1-afab-b11410a29d50/0/ORIGINE_M_6a2a60e28acca.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83eedeaa-6565-11f1-afab-b11410a29d50"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83eedeaa-6565-11f1-afab-b11410a29d50",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6138292",
@@ -17813,7 +18265,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/18/fa/18fa91dab9fbecc9ecd9ad8f8edda3e9ef11184059a54c42b0ab42e21d461912-large.jpg",
     "url": "https://www.alentoor.fr/houdemont/agenda/6138292-visite-un-soir-une-commune-houdemont",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6181003",
@@ -17830,7 +18283,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/f3/ed/f3ed7945f3845b5dd17fed16f92ce5d7e7eb810dd3e81df8fb9393c3a16aab64-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6181003-les-estivales-concert-super-k7",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6172421",
@@ -17847,7 +18301,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/2e/81/2e81d4941f0baf5fcd5adb18863c7b64d4a7ccaca6ce072fdf2df377601608c5-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6172421-concert-expresso",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-duel-ome-festival",
@@ -17867,7 +18322,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-duel-ome-festival",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-groove-brut-energie-live-johnny-jangle",
@@ -17888,7 +18344,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/18_jaune_johnny_copie.jpg?itok=g2U8Hq7_",
     "url": "https://lautrecanalnancy.fr/agenda/groove-brut-energie-live-johnny-jangle",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1650524122941376",
@@ -17907,7 +18364,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1650524122941376/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1690543512277691",
@@ -17926,7 +18384,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1690543512277691/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-aperitif-dinatoire-du-conseil-de-quartier-centre",
@@ -17945,7 +18404,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/aperitifs_dinatoires.jpeg?itok=GD7-DnBK",
     "url": "https://www.esseylesnancy.fr/agenda/aperitif-dinatoire-du-conseil-de-quartier-centre",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "478fc042-4480-11f1-8d9d-497594fadc5e",
@@ -17965,7 +18425,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/478fc042-4480-11f1-8d9d-497594fadc5e/0/ORIGINE_M_69f3306552d68.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=478fc042-4480-11f1-8d9d-497594fadc5e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=478fc042-4480-11f1-8d9d-497594fadc5e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a77aae38-3eed-11f1-880f-0947d6ffb1af",
@@ -17983,7 +18444,26 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a77aae38-3eed-11f1-880f-0947d6ffb1af/0/1-1_M_69e9d7080b1f0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a77aae38-3eed-11f1-880f-0947d6ffb1af"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a77aae38-3eed-11f1-880f-0947d6ffb1af",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191205",
+    "title": "Tout tourne autour des contours de la Moselle",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-08-29",
+    "endDate": "2026-08-30",
+    "dateText": "Du 29 au 30 août 2026",
+    "schedule": "",
+    "place": "Place de la Cagnotte",
+    "city": "Liverdun",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/db/69/db69d8623f4a0b4fdb01b13bee1a672e5949ae003a054b7b8b5df70fb124bc48-large.jpg",
+    "url": "https://www.alentoor.fr/liverdun/agenda/6191205-tout-tourne-autour-des-contours-de-la-moselle",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-6180070",
@@ -18000,7 +18480,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e3/ea/e3ea43c710e041b4edf6ee5cd9e5e954436818aca8b0133996414f3677a1f5b6-large.jpg",
     "url": "https://www.alentoor.fr/laneuveville-aux-bois/agenda/6180070-marche-nocturne",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152137",
@@ -18017,7 +18498,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/09/6c/096c8897c4f3bb117595d7dab482cc08b3a2bb527ac4049acad970476459c560-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6152137-les-fm-air",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-chansons-solaires-karaoke-collectif-louise-xiv-leopard-da-vinci-karaoke",
@@ -18037,7 +18519,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/19_rouge_louise_copie2.jpg?itok=MAlrtwUG",
     "url": "https://lautrecanalnancy.fr/agenda/chansons-solaires-karaoke-collectif-louise-xiv-leopard-da-vinci-karaoke",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-fusion-en-mouvement-shehili-lisko-djibril-cisse",
@@ -18058,7 +18541,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20_jaune_shehili_copie.jpg?itok=1bVnt_3t",
     "url": "https://lautrecanalnancy.fr/agenda/fusion-en-mouvement-shehili-lisko-djibril-cisse",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2197074877813506",
@@ -18077,7 +18561,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2197074877813506/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1072589831777493",
@@ -18096,7 +18581,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1072589831777493/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-accueil-des-nouveaux-habitants-1",
@@ -18113,7 +18599,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2027694468.jpeg?itok=v7S9S8c5",
     "url": "https://www.esseylesnancy.fr/agenda/accueil-des-nouveaux-habitants-1",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-amours-dete",
@@ -18132,7 +18619,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/21_rouge_tema_copie_1.jpg?h=a9d1a69a&amp;itok=YW7wpzXC",
     "url": "https://www.esseylesnancy.fr/agenda/amours-dete",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "69dcc55e-6565-11f1-be7e-d1916a84f637",
@@ -18150,7 +18638,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/69dcc55e-6565-11f1-be7e-d1916a84f637/0/ORIGINE_M_6a2a60b6cba7c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=69dcc55e-6565-11f1-be7e-d1916a84f637"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=69dcc55e-6565-11f1-be7e-d1916a84f637",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6081421",
@@ -18167,24 +18656,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/b7/46/b746cfbe57e07be3e9ad0513757dfd3c783fab1ad309ddb3dd422f0fcf861e05-large.jpg",
     "url": "https://www.alentoor.fr/gripport/agenda/6081421-vide-greniers",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-6175347",
-    "title": "Ata - Trail des abeilles",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-08-30",
-    "endDate": "2026-08-30",
-    "dateText": "",
-    "schedule": "de 8h à 18h",
-    "place": "",
-    "city": "Villey-Saint-Étienne",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/dd/2a/dd2a57151f358b0c87640ab931004bc5b97900acae5822073fc719b95188d09c-large.jpg",
-    "url": "https://www.alentoor.fr/villey-saint-etienne/agenda/6175347-ata-trail-des-abeilles",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6186071",
@@ -18201,7 +18674,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/06/2d/062d2679ebe080962e6ce4efdd0c24e70c8b98bdd4118a5a872bd6e6451697ea-large.jpg",
     "url": "https://www.alentoor.fr/bouxieres-aux-chenes/agenda/6186071-vide-grenier-bouxieres-aux-chenes",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-rap-en-liberte-energie-freestyle-tema-initiation-hip-hop",
@@ -18221,7 +18695,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/21_rouge_tema_copie.jpg?itok=TU1u7Mep",
     "url": "https://lautrecanalnancy.fr/agenda/rap-en-liberte-energie-freestyle-tema-initiation-hip-hop",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-831178533151259",
@@ -18240,7 +18715,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/831178533151259/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1234910572083976",
@@ -18259,7 +18735,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1234910572083976/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c374433c-487b-11f1-afe6-4d60c234a832",
@@ -18278,7 +18755,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c374433c-487b-11f1-afe6-4d60c234a832/0/ORIGINE_M_69f9dece56a90.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c374433c-487b-11f1-afe6-4d60c234a832"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c374433c-487b-11f1-afe6-4d60c234a832",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a111ed22-5031-11f1-b810-55e7c04e6f97",
@@ -18297,7 +18775,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a111ed22-5031-11f1-b810-55e7c04e6f97/0/1-1_M_6a06cebe68262.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a111ed22-5031-11f1-b810-55e7c04e6f97"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a111ed22-5031-11f1-b810-55e7c04e6f97",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "10651740-13bf-11f0-ac68-0db5bc79ebb1",
@@ -18315,7 +18794,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/10651740-13bf-11f0-ac68-0db5bc79ebb1/0/1-1_M_67f3e5efb5d8b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10651740-13bf-11f0-ac68-0db5bc79ebb1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10651740-13bf-11f0-ac68-0db5bc79ebb1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7e66e8dc-3258-11f1-a4db-ff95faab30af",
@@ -18333,7 +18813,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7e66e8dc-3258-11f1-a4db-ff95faab30af/0/ORIGINE_M_69d4bab48136d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7e66e8dc-3258-11f1-a4db-ff95faab30af"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7e66e8dc-3258-11f1-a4db-ff95faab30af",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20549",
@@ -18350,7 +18831,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/26b/737-737015558_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/marche-pepiniere-en-vert/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6180975",
@@ -18367,7 +18849,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/61/32/613292db07f036d3081807577354165f5b78c142439d560418307a3cfe6dd6d9-large.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6180975-les-estivales-exposition-chronique-d-un-regard",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152156",
@@ -18384,24 +18867,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/cc/d0/ccd00fde1a01dad11b477282d0fa90ac882f1963db10bc5500f53aa804aac6af-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6152156-forum-des-associations",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5985560",
-    "title": "Concert de l'Ensemble Double Face - \"Floraisons baroques\"",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "Église Saint-Maurice de Domgermain",
-    "city": "Domgermain",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/5d/be/5dbee056f7ba86c37a01c3538bed40b1b86582f76d1909671f8a085d6b44db54-large.jpg",
-    "url": "https://www.alentoor.fr/domgermain/agenda/5985560-concert-de-l-ensemble-double-face-floraisons-baroques",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1427850656023688",
@@ -18420,7 +18887,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1427850656023688/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-1493722549216535",
@@ -18439,7 +18907,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/1493722549216535/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-ceremonie-d-accueil-des-nouveaux-laxoviens",
@@ -18456,7 +18925,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/216/1200_630_7_accueil-des-nouveaux.jpg",
     "url": "https://www.laxou.fr/fr/agenda/ceremonie-d-accueil-des-nouveaux-laxoviens_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6c2b7732-4234-11f1-ae4d-29d3dcc1907e",
@@ -18474,7 +18944,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6c2b7732-4234-11f1-ae4d-29d3dcc1907e/0/ORIGINE_M_69ef5622a6423.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c2b7732-4234-11f1-ae4d-29d3dcc1907e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c2b7732-4234-11f1-ae4d-29d3dcc1907e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "54532f96-58e2-11f1-a49a-65a254c53742",
@@ -18492,7 +18963,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/54532f96-58e2-11f1-a49a-65a254c53742/0/ORIGINE_M_6a1562d4a5ccc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=54532f96-58e2-11f1-a49a-65a254c53742"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=54532f96-58e2-11f1-a49a-65a254c53742",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152132",
@@ -18509,7 +18981,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/8b/8d/8b8d6966afdb859d41091c1cacf02fcd1bb8545dfe30c48166a2162053a405b9-large.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6152132-vide-grenier",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6101110",
@@ -18526,7 +18999,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/liverdun/agenda/6101110-vide-grenier-de-la-fete-des-madeleines",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6098348",
@@ -18543,24 +19017,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/loisirs-medium.jpg",
     "url": "https://www.alentoor.fr/aulnois-sur-seille/agenda/6098348-fete-patronale-et-vide-grenier",
-    "source": "alentoor"
-  },
-  {
-    "uuid": "al-5859943",
-    "title": "Course à pied la Caldéniacienne",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Salle polyvante Maurice Bouchot",
-    "city": "Chaudeney-sur-Moselle",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.alentoor.fr/assets/img/event/default/sport-medium.jpg",
-    "url": "https://www.alentoor.fr/chaudeney-sur-moselle/agenda/5859943-course-a-pied-la-caldeniacienne",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-969107719346378",
@@ -18579,7 +19037,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/969107719346378/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-926770036729828",
@@ -18598,7 +19057,28 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/926770036729828/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "vln-301",
+    "title": "Groupes de parole pour les proches aidants Orchidée",
+    "category": "citoyennete",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-09-08",
+    "endDate": "2027-06-29",
+    "dateText": "Du 8 septembre 2026 au 29 juin 2027",
+    "schedule": "14 à 16h",
+    "place": "Résidence autonomie Paul Adam",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "cbcd9436-3faf-11f1-8393-e5dbcf7282fd",
@@ -18616,7 +19096,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cbcd9436-3faf-11f1-8393-e5dbcf7282fd/0/1-1_M_69eb1f45546c9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cbcd9436-3faf-11f1-8393-e5dbcf7282fd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cbcd9436-3faf-11f1-8393-e5dbcf7282fd",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "612b7774-654f-11ef-81d2-c56208b6c678",
@@ -18634,7 +19115,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/612b7774-654f-11ef-81d2-c56208b6c678/0/1-1_M_66cf3e6a110b0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=612b7774-654f-11ef-81d2-c56208b6c678"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=612b7774-654f-11ef-81d2-c56208b6c678",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e4d1db92-3fad-11f1-9a48-5923602d47cf",
@@ -18652,7 +19134,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e4d1db92-3fad-11f1-9a48-5923602d47cf/0/1-1_M_69eb199416b69.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e4d1db92-3fad-11f1-9a48-5923602d47cf"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e4d1db92-3fad-11f1-9a48-5923602d47cf",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-10-septembre",
@@ -18671,7 +19154,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-10-septembre",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-3009767279411777",
@@ -18690,7 +19174,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/3009767279411777/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5a2d205c-32d9-11ee-b26b-07c04d2871b3",
@@ -18708,7 +19193,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a2d205c-32d9-11ee-b26b-07c04d2871b3/0/1-1_M_64cd15a97d61e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a2d205c-32d9-11ee-b26b-07c04d2871b3"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a2d205c-32d9-11ee-b26b-07c04d2871b3",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21955",
@@ -18725,7 +19211,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/0b1/737-737018971_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/rencontre-le-livre-sur-la-place-club-de-lecture-emile-coue/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-945889071758809",
@@ -18744,7 +19231,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/945889071758809/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fb-2855897638096704",
@@ -18763,7 +19251,8 @@ const EVENTS = [
     "url": "https://www.facebook.com/events/2855897638096704/",
     "source": "facebook",
     "rsvp": "",
-    "online": false
+    "online": false,
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-9710",
@@ -18782,7 +19271,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/aremig.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-rando/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6099921",
@@ -18799,7 +19289,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/hudiviller/agenda/6099921-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6008958",
@@ -18816,7 +19307,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/velle-sur-moselle/agenda/6008958-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6083901",
@@ -18833,7 +19325,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/8e/40/8e40f5640166ab3981da91f592511f60390a859399338cd42ab63d39fed5da8a-large.jpg",
     "url": "https://www.alentoor.fr/clayeures/agenda/6083901-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6152129",
@@ -18850,7 +19343,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/07/45/07453d181b64290bc4385a757d4060093e0a675168cd0b1e0d826bc9eaabb8f4-large.jpg",
     "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/6152129-visite-guidee-la-polonia",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6060876",
@@ -18867,7 +19361,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/27/bd/27bdad988277d6c1741a79f04f56d9b792696e1cc36c4e7b777b98fe3bf0849a-large.jpg",
     "url": "https://www.alentoor.fr/belleau-54/agenda/6060876-vide-greniers-de-lixieres",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-27e-brocante",
@@ -18886,7 +19381,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/brocante_1.jpg?itok=Ua3rhwIa",
     "url": "https://www.esseylesnancy.fr/agenda/27e-brocante",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a2851462-3fac-11f1-9115-0d10c846c749",
@@ -18904,7 +19400,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a2851462-3fac-11f1-9115-0d10c846c749/0/1-1_M_69eb1892d4685.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a2851462-3fac-11f1-9115-0d10c846c749"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a2851462-3fac-11f1-9115-0d10c846c749",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5791889",
@@ -18921,7 +19418,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/c2/b1/c2b1258703fb18b6735da5355c334bd5e95fe2b1343859bd11e7f8113f2de30f-large.jpg",
     "url": "https://www.alentoor.fr/moncel-les-luneville/agenda/5791889-ateliers-yoga-du-rire",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-1",
@@ -18938,7 +19436,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/232/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-1_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-la-dame-de-pierre",
@@ -18957,7 +19456,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/LaDamedePierre-350x524.jpeg",
     "url": "https://www.zenith-de-nancy.com/evenement/la-dame-de-pierre/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5793009",
@@ -18974,7 +19474,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/b9/b5/b9b580358df3a581b5f8747783211720637657444761be4b2974e62f8809f3f1-large.jpg",
     "url": "https://www.alentoor.fr/maxeville/agenda/5793009-la-dame-de-pierre-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-petit-moment-septembre",
@@ -18991,7 +19492,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-034.jpg?itok=Xkyo7t-0",
     "url": "https://lautrecanalnancy.fr/agenda/petit-moment-septembre",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "3164f89c-6a2c-11f1-b8f9-af968f76271f",
@@ -19011,7 +19513,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3164f89c-6a2c-11f1-b8f9-af968f76271f/0/ORIGINE_M_6a32643295c73.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3164f89c-6a2c-11f1-b8f9-af968f76271f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3164f89c-6a2c-11f1-b8f9-af968f76271f",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "819c25c6-ca0c-11f0-87e7-690e4471a3e0",
@@ -19029,7 +19532,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/819c25c6-ca0c-11f0-87e7-690e4471a3e0/0/1-1_M_6925bfab8864a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=819c25c6-ca0c-11f0-87e7-690e4471a3e0"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=819c25c6-ca0c-11f0-87e7-690e4471a3e0",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148684",
@@ -19046,7 +19550,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/29/33/29334bf3d7cb341477f24c5ed6a38793e7ea5c67645bdad55a3fc27e8f06ee1e-large.jpg",
     "url": "https://www.alentoor.fr/jezainville/agenda/6148684-les-soirees-de-jezainville",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6123716",
@@ -19063,7 +19568,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/d0/ed/d0edfb3fea351e0f19142e6cc84b371819ebb46b9996a4029df14b3e59bbd251-large.jpg",
     "url": "https://www.alentoor.fr/benney/agenda/6123716-spectacle-equestre-le-musee-imaginaire-du-menil",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5927235",
@@ -19080,7 +19586,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/53/e0/53e07562b09d63312973abf98421fdd9150cebc470d1670dbdd8815eb8e95de8-large.jpg",
     "url": "https://www.alentoor.fr/tantonville/agenda/5927235-a-la-decouverte-de-tantonville-visite-guidee-aperitive",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-dinguerie-sept-2026",
@@ -19099,7 +19606,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/photo_fond_cvalentin_frenot.jpg?itok=0VbAnmXn",
     "url": "https://lautrecanalnancy.fr/agenda/dinguerie-sept-2026",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-places-vivres-sante-festive",
@@ -19118,7 +19626,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/place-a-vivres-sante.jpg?itok=0l8nrmyy",
     "url": "https://www.esseylesnancy.fr/agenda/places-vivres-sante-festive",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "936cf926-6316-11f1-b5f6-892e36db7348",
@@ -19140,7 +19649,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/936cf926-6316-11f1-b5f6-892e36db7348/0/ORIGINE_M_6a26817402f27.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=936cf926-6316-11f1-b5f6-892e36db7348"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=936cf926-6316-11f1-b5f6-892e36db7348",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d815f2a8-6316-11f1-8746-4f2cb3defd68",
@@ -19161,7 +19671,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d815f2a8-6316-11f1-8746-4f2cb3defd68/0/ORIGINE_M_6a2681e732715.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d815f2a8-6316-11f1-8746-4f2cb3defd68"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d815f2a8-6316-11f1-8746-4f2cb3defd68",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fbc453c4-6317-11f1-8e5e-e3303d01e081",
@@ -19182,7 +19693,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fbc453c4-6317-11f1-8e5e-e3303d01e081/0/ORIGINE_M_6a2683d08df05.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fbc453c4-6317-11f1-8e5e-e3303d01e081"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fbc453c4-6317-11f1-8e5e-e3303d01e081",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2de0ab4c-6317-11f1-8ba7-a1dab1524dcd",
@@ -19202,7 +19714,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2de0ab4c-6317-11f1-8ba7-a1dab1524dcd/0/ORIGINE_M_6a26827722b97.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2de0ab4c-6317-11f1-8ba7-a1dab1524dcd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2de0ab4c-6317-11f1-8ba7-a1dab1524dcd",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4369fd60-3cc0-11f1-9009-a53a9785f17b",
@@ -19220,7 +19733,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4369fd60-3cc0-11f1-9009-a53a9785f17b/0/ORIGINE_M_69e62fc4d2d33.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4369fd60-3cc0-11f1-9009-a53a9785f17b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4369fd60-3cc0-11f1-9009-a53a9785f17b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "861cb980-5daf-11f1-aee2-41b0477061fa",
@@ -19240,7 +19754,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/861cb980-5daf-11f1-aee2-41b0477061fa/0/ORIGINE_M_6a1d7113a967d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=861cb980-5daf-11f1-aee2-41b0477061fa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=861cb980-5daf-11f1-aee2-41b0477061fa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fea00764-6989-11f1-86e5-29688f533964",
@@ -19258,7 +19773,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fea00764-6989-11f1-86e5-29688f533964/0/ORIGINE_M_6a315412ea71e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fea00764-6989-11f1-86e5-29688f533964"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fea00764-6989-11f1-86e5-29688f533964",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "27c9f464-64db-11f1-8800-770ee1bf9fc8",
@@ -19279,7 +19795,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27c9f464-64db-11f1-8800-770ee1bf9fc8/0/ORIGINE_M_6a2978c169ae1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=27c9f464-64db-11f1-8800-770ee1bf9fc8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=27c9f464-64db-11f1-8800-770ee1bf9fc8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f522ee26-5daf-11f1-8d40-9d1231851c1e",
@@ -19300,7 +19817,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f522ee26-5daf-11f1-8d40-9d1231851c1e/0/ORIGINE_M_6a1d71cde9a45.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f522ee26-5daf-11f1-8d40-9d1231851c1e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f522ee26-5daf-11f1-8d40-9d1231851c1e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c703aabc-5daf-11f1-939c-a943e04f7e67",
@@ -19320,7 +19838,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c703aabc-5daf-11f1-939c-a943e04f7e67/0/ORIGINE_M_6a1d71808d7d3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c703aabc-5daf-11f1-939c-a943e04f7e67"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c703aabc-5daf-11f1-939c-a943e04f7e67",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "53cecea0-3fb4-11f1-b3a9-1db07f812229",
@@ -19338,7 +19857,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/53cecea0-3fb4-11f1-b3a9-1db07f812229/0/1-1_M_69eb24889a353.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=53cecea0-3fb4-11f1-b3a9-1db07f812229"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=53cecea0-3fb4-11f1-b3a9-1db07f812229",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20592",
@@ -19355,7 +19875,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/7c1/737-737018753_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-art-nouveau-art-deco-au-parc-de-saurupt/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20593",
@@ -19372,7 +19893,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a9e/737-737018751_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-art-nouveau-art-deco-en-centre-ville/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6148828",
@@ -19389,7 +19911,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/06/a4/06a42f5a369b4edc48089ebbfa382327bd5c9b241f15b465d794145cb9bc1d77-large.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/6148828-les-delices-et-tresors-de-scarpone",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6001509",
@@ -19406,7 +19929,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/loisirs-medium.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/6001509-journee-europeenne-du-patrimoine-chateau-de-dieulouard",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5991613",
@@ -19423,7 +19947,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/70/7f/707fd0548d3a4b79229a8d326ae3741c710315e6eb5874f8f4a7fdbb9da5fd5f-large.jpg",
     "url": "https://www.alentoor.fr/alaincourt-la-cote/agenda/5991613-marche-des-artisans-et-producteurs-locaux",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "53f57420-6317-11f1-812d-c3cfd80b2888",
@@ -19444,7 +19969,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/53f57420-6317-11f1-812d-c3cfd80b2888/0/ORIGINE_M_6a2682b7086af.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=53f57420-6317-11f1-812d-c3cfd80b2888"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=53f57420-6317-11f1-812d-c3cfd80b2888",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b33b6e30-6317-11f1-ade9-71331ff7891d",
@@ -19466,7 +19992,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b33b6e30-6317-11f1-ade9-71331ff7891d/0/ORIGINE_M_6a268356d6ae5.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b33b6e30-6317-11f1-ade9-71331ff7891d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b33b6e30-6317-11f1-ade9-71331ff7891d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "da934098-6317-11f1-af00-7dbf9cd6f1bc",
@@ -19487,7 +20014,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/da934098-6317-11f1-af00-7dbf9cd6f1bc/0/ORIGINE_M_6a268398d428f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=da934098-6317-11f1-af00-7dbf9cd6f1bc"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=da934098-6317-11f1-af00-7dbf9cd6f1bc",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20594",
@@ -19504,7 +20032,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/e44/737-737018752_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-de-lexcelsior-a-la-villa-majorelle/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6113960",
@@ -19521,7 +20050,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/villacourt/agenda/6113960-la-route-des-orgues-concert-orgue-et-voix",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5874976",
@@ -19538,7 +20068,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/3e/50/3e50174f73b53efc1ef270c006fcd9318d10f1ec917155b3ec42224e5e2fa93b-large.jpg",
     "url": "https://www.alentoor.fr/selaincourt/agenda/5874976-brocante-vide-grenier",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-bulletins-d-inscription-du-vide-greniers-et-de-la-braderie",
@@ -19555,7 +20086,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_vide-greniers-braderie.jpg",
     "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-conseil-municipal-du-21-septembre-2026",
@@ -19574,7 +20106,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-21-septembre-2026",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cab7737e-21ef-11f1-a12b-89d70e309b84",
@@ -19592,7 +20125,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cab7737e-21ef-11f1-a12b-89d70e309b84/0/1-1_M_69b9333239490.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cab7737e-21ef-11f1-a12b-89d70e309b84"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cab7737e-21ef-11f1-a12b-89d70e309b84",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "67e9d018-ca0e-11f0-b7df-7512e0921a32",
@@ -19610,7 +20144,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/67e9d018-ca0e-11f0-b7df-7512e0921a32/0/1-1_M_6925c2fb6346c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=67e9d018-ca0e-11f0-b7df-7512e0921a32"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=67e9d018-ca0e-11f0-b7df-7512e0921a32",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c7e45f40-4216-11f0-8aab-47aa94639ed4",
@@ -19629,7 +20164,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c7e45f40-4216-11f0-8aab-47aa94639ed4/0/ORIGINE_M_6841a53df0994.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c7e45f40-4216-11f0-8aab-47aa94639ed4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c7e45f40-4216-11f0-8aab-47aa94639ed4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23498",
@@ -19646,7 +20182,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a4b/737-737019268_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/theatre-eclats-de-verres/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5474634",
@@ -19663,7 +20200,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/4a/76/4a766ff1c56b55685e66c936873e5d56f309b98ca1da08cdaac48954b23ee994-large.jpg",
     "url": "https://www.alentoor.fr/maxeville/agenda/5474634-mania-the-abba-tribute-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "97369654-21e7-11f1-9270-8d695d0f809c",
@@ -19682,7 +20220,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/97369654-21e7-11f1-9270-8d695d0f809c/0/1-1_M_69b9262421d90.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=97369654-21e7-11f1-9270-8d695d0f809c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=97369654-21e7-11f1-9270-8d695d0f809c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "07427044-6a2c-11f1-9cb4-413432c7d1ec",
@@ -19702,7 +20241,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/07427044-6a2c-11f1-9cb4-413432c7d1ec/0/ORIGINE_M_6a3263ebe09bf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=07427044-6a2c-11f1-9cb4-413432c7d1ec"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=07427044-6a2c-11f1-9cb4-413432c7d1ec",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "dn-20464",
@@ -19719,7 +20259,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/01a/737-737015269_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-balade-gourmande-cote-ville-vieille/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20595",
@@ -19736,7 +20277,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/47d/737-737016879_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-balade-gourmande-ville-vieille-lsf/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6140609",
@@ -19753,7 +20295,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/2c/35/2c35bbde369c67a46c12dca281e2daa0b8f56dd79e50101e2ea0fa0770decac5-large.jpg",
     "url": "https://www.alentoor.fr/bainville-aux-miroirs/agenda/6140609-attention-envahissantes-la-moselle-sauvage-en-fete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-peet",
@@ -19773,7 +20316,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_3_-_dominique_brion.jpeg?itok=rgeC9G67",
     "url": "https://lautrecanalnancy.fr/agenda/peet",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "8b1e7358-84aa-11f0-9590-23d08885f6de",
@@ -19791,7 +20335,26 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8b1e7358-84aa-11f0-9590-23d08885f6de/0/1-1_M_68b15825f2b1c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8b1e7358-84aa-11f0-9590-23d08885f6de"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8b1e7358-84aa-11f0-9590-23d08885f6de",
+    "addedAt": "2026-05-03"
+  },
+  {
+    "uuid": "al-6191199",
+    "title": "Brocante",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-09-27",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "de 8h à 17h",
+    "place": "centre ville",
+    "city": "Einville-au-Jard",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/65/04/65045e138122a3e9893ec605b717aaa1447f0d602ca2ad08845f4cc2e3fba0a4-large.jpg",
+    "url": "https://www.alentoor.fr/einville-au-jard/agenda/6191199-brocante",
+    "source": "alentoor",
+    "addedAt": "2026-06-19"
   },
   {
     "uuid": "al-5826121",
@@ -19808,7 +20371,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/17/c7/17c7af4bbfe41dcdec62d05af62906f335ef45de76ce9f7652db70bd5dd41fe7-large.jpg",
     "url": "https://www.alentoor.fr/saint-max/agenda/5826121-geek-collector",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ee763720-4dda-11f1-9127-ef09da4c0ad2",
@@ -19826,7 +20390,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee763720-4dda-11f1-9127-ef09da4c0ad2/0/ORIGINE_M_6a02e1f478b71.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee763720-4dda-11f1-9127-ef09da4c0ad2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee763720-4dda-11f1-9127-ef09da4c0ad2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c1cd34f6-3fae-11f1-b846-01e8924fc741",
@@ -19844,7 +20409,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c1cd34f6-3fae-11f1-b846-01e8924fc741/0/1-1_M_69eb1b00e7d16.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c1cd34f6-3fae-11f1-b846-01e8924fc741"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c1cd34f6-3fae-11f1-b846-01e8924fc741",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b54fc998-db9a-11ee-96ce-9fb359df710b",
@@ -19862,7 +20428,8 @@ const EVENTS = [
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b54fc998-db9a-11ee-96ce-9fb359df710b/0/16-9_M_69f8671ee69ae.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b54fc998-db9a-11ee-96ce-9fb359df710b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b54fc998-db9a-11ee-96ce-9fb359df710b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "eef05470-6a2b-11f1-93b1-3f14fbcb8e44",
@@ -19883,7 +20450,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/eef05470-6a2b-11f1-93b1-3f14fbcb8e44/0/ORIGINE_M_6a3263c3184e0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=eef05470-6a2b-11f1-93b1-3f14fbcb8e44"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=eef05470-6a2b-11f1-93b1-3f14fbcb8e44",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "ee2f2eae-4883-11f1-b6e5-2524aa61e1f4",
@@ -19902,7 +20470,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee2f2eae-4883-11f1-b6e5-2524aa61e1f4/0/ORIGINE_M_69f9ec82053f4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee2f2eae-4883-11f1-b6e5-2524aa61e1f4"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee2f2eae-4883-11f1-b6e5-2524aa61e1f4",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c153c042-13f5-11f1-8d2a-833c0d5a15fa",
@@ -19922,7 +20491,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c153c042-13f5-11f1-8d2a-833c0d5a15fa/0/ORIGINE_M_69a1c025b8255.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c153c042-13f5-11f1-8d2a-833c0d5a15fa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c153c042-13f5-11f1-8d2a-833c0d5a15fa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6259f984-9ab6-11f0-897d-73d8e70d7931",
@@ -19944,7 +20514,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6259f984-9ab6-11f0-897d-73d8e70d7931/0/ORIGINE_M_6a21463225ebf.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6259f984-9ab6-11f0-897d-73d8e70d7931"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6259f984-9ab6-11f0-897d-73d8e70d7931",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20530",
@@ -19961,7 +20532,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a71/737-737018616_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-centre-historique-stadtfuhrung-auf-deutsch-vom-historischen-zentrum/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-23422",
@@ -19978,7 +20550,8 @@ const EVENTS = [
     "reservation": false,
     "image": null,
     "url": "https://www.destination-nancy.com/fete-manifestation/nancy-jazz-pulsations/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-worlds-apart",
@@ -19995,7 +20568,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d592058f-worlds-apart.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/worlds-apart",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-on-divorce-quand-1",
@@ -20012,7 +20586,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c11b0e3c1f-on-divorce-quand-1.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/on-divorce-quand-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5807032",
@@ -20029,7 +20604,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/b9/ae/b9ae7483915d98971e680614d4e912aa11b643a88340ca9833fc6df1b22367c1-large.jpg",
     "url": "https://www.alentoor.fr/ludres/agenda/5807032-worlds-apart-30th-anniversary",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-njp-2026",
@@ -20046,7 +20622,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-26_a_15.40.33.png?itok=uE0mx8Ed",
     "url": "https://lautrecanalnancy.fr/agenda/njp-2026",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-big-big-train",
@@ -20063,7 +20640,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/6991e6162f7d1-big-big-train.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/big-big-train",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "100f260a-5fef-11f1-bfe8-87c274dd08b9",
@@ -20082,7 +20660,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/100f260a-5fef-11f1-bfe8-87c274dd08b9/0/ORIGINE_M_6a2136abb3e80.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=100f260a-5fef-11f1-bfe8-87c274dd08b9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=100f260a-5fef-11f1-bfe8-87c274dd08b9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vln-124",
@@ -20101,7 +20680,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/compost.webp",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/restitution-de-compost",
-    "source": "villers-les-nancy"
+    "source": "villers-les-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-2",
@@ -20118,7 +20698,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/233/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-2_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a76a6f78-5fef-11f1-84f2-e36a1ea2236d",
@@ -20137,7 +20718,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a76a6f78-5fef-11f1-84f2-e36a1ea2236d/0/ORIGINE_M_6a2137a9a9e28.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a76a6f78-5fef-11f1-84f2-e36a1ea2236d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a76a6f78-5fef-11f1-84f2-e36a1ea2236d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a127a648-5ff0-11f1-a123-792b39b23a91",
@@ -20157,7 +20739,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a127a648-5ff0-11f1-a123-792b39b23a91/0/ORIGINE_M_6a21394ca721f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a127a648-5ff0-11f1-a123-792b39b23a91"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a127a648-5ff0-11f1-a123-792b39b23a91",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "308628f0-5ff1-11f1-94f5-d7b00ed151dc",
@@ -20176,7 +20759,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/308628f0-5ff1-11f1-94f5-d7b00ed151dc/0/ORIGINE_M_6a213a3d2fba0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=308628f0-5ff1-11f1-94f5-d7b00ed151dc"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=308628f0-5ff1-11f1-94f5-d7b00ed151dc",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c",
@@ -20195,7 +20779,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c/0/ORIGINE_M_6a2139e6462a9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-emile-londonien",
@@ -20216,7 +20801,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/emile_londonien.jpg?itok=T_dLEklH",
     "url": "https://lautrecanalnancy.fr/agenda/emile-londonien",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-8-octobre",
@@ -20235,7 +20821,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-8-octobre",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f924cd76-ca0e-11f0-9f86-1db808719dc2",
@@ -20253,7 +20840,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f924cd76-ca0e-11f0-9f86-1db808719dc2/0/1-1_M_6925c3e613139.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f924cd76-ca0e-11f0-9f86-1db808719dc2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f924cd76-ca0e-11f0-9f86-1db808719dc2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7335b724-5ff1-11f1-8600-a9cd275c8cd8",
@@ -20272,7 +20860,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7335b724-5ff1-11f1-8600-a9cd275c8cd8/0/ORIGINE_M_6a213aad17cc3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7335b724-5ff1-11f1-8600-a9cd275c8cd8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7335b724-5ff1-11f1-8600-a9cd275c8cd8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "bd19c6be-5ff1-11f1-a4a5-2d0b02f43ef5",
@@ -20291,7 +20880,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bd19c6be-5ff1-11f1-a4a5-2d0b02f43ef5/0/ORIGINE_M_6a213b290f056.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bd19c6be-5ff1-11f1-a4a5-2d0b02f43ef5"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=bd19c6be-5ff1-11f1-a4a5-2d0b02f43ef5",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9f5d920a-5ffa-11f1-b84a-a309bf180951",
@@ -20309,7 +20899,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9f5d920a-5ffa-11f1-b84a-a309bf180951/0/ORIGINE_M_6a214a109d109.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f5d920a-5ffa-11f1-b84a-a309bf180951"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f5d920a-5ffa-11f1-b84a-a309bf180951",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-forever-nu",
@@ -20326,7 +20917,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/6991e61673def-forever-nu.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/forever-nu",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f3896b00-5ff1-11f1-8c80-691a86cdaa7c",
@@ -20345,7 +20937,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f3896b00-5ff1-11f1-8c80-691a86cdaa7c/0/ORIGINE_M_6a213b84600dd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3896b00-5ff1-11f1-8c80-691a86cdaa7c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3896b00-5ff1-11f1-8c80-691a86cdaa7c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a7686a68-5ff2-11f1-82e0-a3c1a22cdd2f",
@@ -20364,7 +20957,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a7686a68-5ff2-11f1-82e0-a3c1a22cdd2f/0/ORIGINE_M_6a213cb22c7ca.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a7686a68-5ff2-11f1-82e0-a3c1a22cdd2f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a7686a68-5ff2-11f1-82e0-a3c1a22cdd2f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "23839cc2-5ff2-11f1-b272-8f3279bfe5d2",
@@ -20383,7 +20977,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/23839cc2-5ff2-11f1-b272-8f3279bfe5d2/0/ORIGINE_M_6a213bd4d4bfa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=23839cc2-5ff2-11f1-b272-8f3279bfe5d2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=23839cc2-5ff2-11f1-b272-8f3279bfe5d2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "52da0c86-5ff2-11f1-92c6-03df1e0611d7",
@@ -20402,7 +20997,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/52da0c86-5ff2-11f1-92c6-03df1e0611d7/0/ORIGINE_M_6a213c24496af.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52da0c86-5ff2-11f1-92c6-03df1e0611d7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=52da0c86-5ff2-11f1-92c6-03df1e0611d7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "vdv-28645",
@@ -20417,9 +21013,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
-    "source": "vandoeuvre"
+    "source": "vandoeuvre",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bon-entendeur-guests",
@@ -20439,7 +21036,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/751-field_illustration_id-1779781260.png?itok=Xr2ThbQU",
     "url": "https://lautrecanalnancy.fr/agenda/bon-entendeur-guests",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6113959",
@@ -20456,7 +21054,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/concert-medium.jpg",
     "url": "https://www.alentoor.fr/bayon/agenda/6113959-la-route-des-orgues-concert-a-deux-orgues",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dbef6534-5ff2-11f1-9f5b-a389f542e619",
@@ -20475,7 +21074,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dbef6534-5ff2-11f1-9f5b-a389f542e619/0/ORIGINE_M_6a213d0a42981.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dbef6534-5ff2-11f1-9f5b-a389f542e619"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dbef6534-5ff2-11f1-9f5b-a389f542e619",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b869769e-5ff3-11f1-abaa-affe143f2503",
@@ -20494,7 +21094,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b869769e-5ff3-11f1-abaa-affe143f2503/0/ORIGINE_M_6a213e7c32541.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b869769e-5ff3-11f1-abaa-affe143f2503"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b869769e-5ff3-11f1-abaa-affe143f2503",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "3bc84ce6-5ff3-11f1-aa95-21db2648373e",
@@ -20513,7 +21114,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3bc84ce6-5ff3-11f1-aa95-21db2648373e/0/ORIGINE_M_6a213dab1a722.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3bc84ce6-5ff3-11f1-aa95-21db2648373e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3bc84ce6-5ff3-11f1-aa95-21db2648373e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0bb5f1fc-5ff3-11f1-8add-e9e21436f411",
@@ -20532,7 +21134,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0bb5f1fc-5ff3-11f1-8add-e9e21436f411/0/ORIGINE_M_6a213d5a677d6.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0bb5f1fc-5ff3-11f1-8add-e9e21436f411"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0bb5f1fc-5ff3-11f1-8add-e9e21436f411",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f7aee05e-5f2c-11f1-bc0b-4fbb975b8308",
@@ -20550,7 +21153,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f7aee05e-5f2c-11f1-bc0b-4fbb975b8308/0/ORIGINE_M_6a1ff1087806a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f7aee05e-5f2c-11f1-bc0b-4fbb975b8308"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f7aee05e-5f2c-11f1-bc0b-4fbb975b8308",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "788bc766-5ff3-11f1-bdcd-1b33bd04f0f1",
@@ -20569,7 +21173,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/788bc766-5ff3-11f1-bdcd-1b33bd04f0f1/0/ORIGINE_M_6a213e110a955.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=788bc766-5ff3-11f1-bdcd-1b33bd04f0f1"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=788bc766-5ff3-11f1-bdcd-1b33bd04f0f1",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-temples",
@@ -20589,7 +21194,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/702-illustration_id-1775744191.jpg?itok=vsW0rIfD",
     "url": "https://lautrecanalnancy.fr/agenda/temples",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4b45b9aa-5ff4-11f1-972c-7f7741bd1b32",
@@ -20608,7 +21214,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4b45b9aa-5ff4-11f1-972c-7f7741bd1b32/0/ORIGINE_M_6a213f728c9a8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b45b9aa-5ff4-11f1-972c-7f7741bd1b32"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4b45b9aa-5ff4-11f1-972c-7f7741bd1b32",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "1ee22fba-5ff4-11f1-8664-f56d6503a1aa",
@@ -20627,7 +21234,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1ee22fba-5ff4-11f1-8664-f56d6503a1aa/0/ORIGINE_M_6a213f2815093.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ee22fba-5ff4-11f1-8664-f56d6503a1aa"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ee22fba-5ff4-11f1-8664-f56d6503a1aa",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e8507cf4-5ff3-11f1-9df6-d59a4abe1329",
@@ -20646,7 +21254,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e8507cf4-5ff3-11f1-9df6-d59a4abe1329/0/ORIGINE_M_6a213ecc874ba.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e8507cf4-5ff3-11f1-9df6-d59a4abe1329"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e8507cf4-5ff3-11f1-9df6-d59a4abe1329",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "71d38ff2-5ff4-11f1-8ded-bbae261b2c63",
@@ -20665,7 +21274,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/71d38ff2-5ff4-11f1-8ded-bbae261b2c63/0/ORIGINE_M_6a213fb33ec5c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=71d38ff2-5ff4-11f1-8ded-bbae261b2c63"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=71d38ff2-5ff4-11f1-8ded-bbae261b2c63",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b09cab38-5ff4-11f1-9de1-b147d577542e",
@@ -20684,7 +21294,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b09cab38-5ff4-11f1-9de1-b147d577542e/0/ORIGINE_M_6a21401c9026e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b09cab38-5ff4-11f1-9de1-b147d577542e"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b09cab38-5ff4-11f1-9de1-b147d577542e",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "084c5e82-5ff5-11f1-adb5-c91010d93876",
@@ -20703,7 +21314,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/084c5e82-5ff5-11f1-adb5-c91010d93876/0/ORIGINE_M_6a2140afaebfb.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=084c5e82-5ff5-11f1-adb5-c91010d93876"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=084c5e82-5ff5-11f1-adb5-c91010d93876",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e13bfcc6-5ff4-11f1-8720-25d4b9de570c",
@@ -20722,7 +21334,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e13bfcc6-5ff4-11f1-8720-25d4b9de570c/0/ORIGINE_M_6a21406e28545.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e13bfcc6-5ff4-11f1-8720-25d4b9de570c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e13bfcc6-5ff4-11f1-8720-25d4b9de570c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6ecb5bd6-5ff5-11f1-882d-c1e33bb3b353",
@@ -20741,7 +21354,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ecb5bd6-5ff5-11f1-882d-c1e33bb3b353/0/ORIGINE_M_6a21415ba0c94.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ecb5bd6-5ff5-11f1-882d-c1e33bb3b353"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ecb5bd6-5ff5-11f1-882d-c1e33bb3b353",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-altin-gun-yuuf",
@@ -20762,7 +21376,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/720-field_illustration_id-1779781162.png?itok=JSlyAUC1",
     "url": "https://lautrecanalnancy.fr/agenda/altin-gun-yuuf",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e98ce54c-5ff5-11f1-9ff9-e5f34b07308c",
@@ -20781,7 +21396,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e98ce54c-5ff5-11f1-9ff9-e5f34b07308c/0/ORIGINE_M_6a21422993c9e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e98ce54c-5ff5-11f1-9ff9-e5f34b07308c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e98ce54c-5ff5-11f1-9ff9-e5f34b07308c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5b2819a6-5ff6-11f1-88da-8f7fbfcb005a",
@@ -20800,7 +21416,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5b2819a6-5ff6-11f1-88da-8f7fbfcb005a/0/ORIGINE_M_6a2142e834911.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5b2819a6-5ff6-11f1-88da-8f7fbfcb005a"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5b2819a6-5ff6-11f1-88da-8f7fbfcb005a",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "3535cac2-5ff6-11f1-8bd7-d3ca240fb437",
@@ -20819,7 +21436,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3535cac2-5ff6-11f1-8bd7-d3ca240fb437/0/ORIGINE_M_6a2142a88a5c8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3535cac2-5ff6-11f1-8bd7-d3ca240fb437"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3535cac2-5ff6-11f1-8bd7-d3ca240fb437",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "be6dc614-ca0f-11f0-95d7-839e5f97564d",
@@ -20837,7 +21455,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/be6dc614-ca0f-11f0-95d7-839e5f97564d/0/1-1_M_6925c7f3e9b03.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=be6dc614-ca0f-11f0-95d7-839e5f97564d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=be6dc614-ca0f-11f0-95d7-839e5f97564d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-calogero-4",
@@ -20854,7 +21473,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d59a8ec6-calogero.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/calogero-4",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5321456",
@@ -20871,7 +21491,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/d3/b5/d3b57d0b55f867422c8e8a45617c8f998f6256cbcc7b4811ae9010f07375aba7-large.jpg",
     "url": "https://www.alentoor.fr/ludres/agenda/5321456-calogero-un-soir-dans-les-theatres",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6056294",
@@ -20888,7 +21509,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/e5/eb/e5ebe7284cb8fa6d339e738fa5a409e2f52c159433037748dea6ff3b70d3df0a-large.jpg",
     "url": "https://www.alentoor.fr/neuves-maisons/agenda/6056294-marine-leonardi-mauvaise-graine-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4c1bb636-5fef-11f1-8a97-1775f6a02b92",
@@ -20907,7 +21529,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4c1bb636-5fef-11f1-8a97-1775f6a02b92/0/ORIGINE_M_6a21371075334.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4c1bb636-5fef-11f1-8a97-1775f6a02b92"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4c1bb636-5fef-11f1-8a97-1775f6a02b92",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b4ded796-5ff6-11f1-8a09-0fd4e962a766",
@@ -20926,7 +21549,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b4ded796-5ff6-11f1-8a09-0fd4e962a766/0/ORIGINE_M_6a21437eb404a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b4ded796-5ff6-11f1-8a09-0fd4e962a766"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b4ded796-5ff6-11f1-8a09-0fd4e962a766",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e0965ac6-5ff6-11f1-ac71-bbfa2eec290f",
@@ -20945,7 +21569,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e0965ac6-5ff6-11f1-ac71-bbfa2eec290f/0/ORIGINE_M_6a2143c8122a3.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e0965ac6-5ff6-11f1-ac71-bbfa2eec290f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e0965ac6-5ff6-11f1-ac71-bbfa2eec290f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20596",
@@ -20962,7 +21587,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/4e8/737-737009940_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-halloween-porte-de-la-craffe/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22282",
@@ -20979,7 +21605,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/373/737-737018999_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/coulees-de-bergamote-de-nancy-30-ans-igp/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6024871",
@@ -20996,7 +21623,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/60/ee/60ee8dd6c9075c8f5cb31bb7e9ad4846ad8811234711994c29b02fa69deccd94-large.jpg",
     "url": "https://www.alentoor.fr/saxon-sion/agenda/6024871-inauguration-sauvage-art-et-nature-en-dialogue-la-moselle-sauvage-en-fete",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20545",
@@ -21013,7 +21641,8 @@ const EVENTS = [
     "reservation": false,
     "image": null,
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-destination-nancy-art-nouveau-maison-bergeret/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20541",
@@ -21030,7 +21659,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/861/737-737016587_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/mardis-aux-serres/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cf5da180-6a2b-11f1-bd13-9944ffd3df61",
@@ -21051,7 +21681,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cf5da180-6a2b-11f1-bd13-9944ffd3df61/0/ORIGINE_M_6a32638e2238b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf5da180-6a2b-11f1-bd13-9944ffd3df61"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cf5da180-6a2b-11f1-bd13-9944ffd3df61",
+    "addedAt": "2026-06-18"
   },
   {
     "uuid": "864ab928-eade-11f0-bdc5-a765d39e7aeb",
@@ -21070,7 +21701,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/864ab928-eade-11f0-bdc5-a765d39e7aeb/0/ORIGINE_M_695ccfce94a82.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=864ab928-eade-11f0-bdc5-a765d39e7aeb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=864ab928-eade-11f0-bdc5-a765d39e7aeb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-akim-omiri-1",
@@ -21087,7 +21719,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0974c4f-akim-omiri.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/akim-omiri-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-guy2bezbar",
@@ -21107,7 +21740,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/684-illustration_id-1773928050.png?itok=ZqQI14xn",
     "url": "https://lautrecanalnancy.fr/agenda/guy2bezbar",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-carpenter-brut",
@@ -21127,7 +21761,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd847805a-carpenter-brut.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/carpenter-brut",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6024866",
@@ -21144,7 +21779,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/cf/fd/cffd49014c1332592617f9e270a3e0762eaee8333dcc19477103251eb01ae406-large.jpg",
     "url": "https://www.alentoor.fr/benney/agenda/6024866-spectacle-equestre-koko-le-souffle-des-ancetres",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-petit-moment-octobre",
@@ -21161,7 +21797,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-301.jpg?itok=W6o3o13n",
     "url": "https://lautrecanalnancy.fr/agenda/petit-moment-octobre",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "3bfe0456-ae61-11f0-a5d9-6768d717aefd",
@@ -21181,7 +21818,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3bfe0456-ae61-11f0-a5d9-6768d717aefd/0/ORIGINE_M_68f753cd42c57.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3bfe0456-ae61-11f0-a5d9-6768d717aefd"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3bfe0456-ae61-11f0-a5d9-6768d717aefd",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20597",
@@ -21198,7 +21836,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/15d/737-737016886_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-halloween-a-la-porte-de-la-craffe-lsf/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-patrick-bruel",
@@ -21217,7 +21856,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-elles-pardonnent-mais-n-oublient-jamais-1",
@@ -21234,7 +21874,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c1179b9a94-elles-pardonnent-mais-n-oublient-jamais.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/elles-pardonnent-mais-n-oublient-jamais-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5899378",
@@ -21251,7 +21892,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/fe/cf/fecf1d3b23ce0b0d6cb999667a70bf2ba7589b8129e90dfd6caa45f071b4aeb4-large.jpg",
     "url": "https://www.alentoor.fr/maxeville/agenda/5899378-patrick-bruel-alors-regarde-35",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repas-des-seniors-dansant-0",
@@ -21270,7 +21912,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repas-des-seniors.jpg?itok=hDXj6Tce",
     "url": "https://www.esseylesnancy.fr/agenda/repas-des-seniors-dansant-0",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repas-des-seniors-non-dansant-0",
@@ -21289,7 +21932,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repas-des-seniors.jpg?itok=hDXj6Tce",
     "url": "https://www.esseylesnancy.fr/agenda/repas-des-seniors-non-dansant-0",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-yvnnis",
@@ -21309,7 +21953,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/697-illustration_id-1775658263.jpg?itok=WBec3WIf",
     "url": "https://lautrecanalnancy.fr/agenda/yvnnis",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-my-sleeping-karma-obsessed",
@@ -21329,7 +21974,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_my_sleeping_karma_maren_michaelis_1.jpeg?itok=wRH4Gp3Q",
     "url": "https://lautrecanalnancy.fr/agenda/my-sleeping-karma-obsessed",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb",
@@ -21348,7 +21994,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb/0/ORIGINE_M_691c3a796e01d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-ensemble-1",
@@ -21368,7 +22015,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd85b4048-ensemble.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/ensemble-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "56a70f60-da8e-11f0-af97-71111171b359",
@@ -21386,7 +22034,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/56a70f60-da8e-11f0-af97-71111171b359/0/ORIGINE_M_6960da36839fc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=56a70f60-da8e-11f0-af97-71111171b359"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=56a70f60-da8e-11f0-af97-71111171b359",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6001520",
@@ -21403,7 +22052,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/loisirs-medium.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/6001520-halloween-au-chateau-de-dieulouard",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6044547",
@@ -21420,7 +22070,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ac/3d/ac3dcc435095a84f665da973ce284789fffb3233ae8e87e79ecb9e2f6fce6184-large.jpg",
     "url": "https://www.alentoor.fr/vandoeuvre-les-nancy/agenda/6044547-dinosaures-le-voyage-de-bumpy-l-exposition-spectacle-tour-2026",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-road-invasion-halloween-edition",
@@ -21437,7 +22088,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/737-field_illustration_id-1778074393.jpg?itok=7TFlMlE-",
     "url": "https://lautrecanalnancy.fr/agenda/road-invasion-halloween-edition",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-distribution-de-compost",
@@ -21454,7 +22106,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/190/1200_630_7_compost-laxou-2-nove2026.png",
     "url": "https://www.laxou.fr/fr/agenda/distribution-de-compost_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "481741b8-13f5-11f1-a372-9bbc33408a3b",
@@ -21473,7 +22126,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/481741b8-13f5-11f1-a372-9bbc33408a3b/0/ORIGINE_M_69c2560a50814.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=481741b8-13f5-11f1-a372-9bbc33408a3b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=481741b8-13f5-11f1-a372-9bbc33408a3b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-lisa-pariente-arthur-ely",
@@ -21493,7 +22147,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/652-field_illustration_id-1780585301.jpg?itok=PksYdVtw",
     "url": "https://lautrecanalnancy.fr/agenda/lisa-pariente-arthur-ely",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7eed200e-13f5-11f1-9962-8ddab606659f",
@@ -21512,7 +22167,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7eed200e-13f5-11f1-9962-8ddab606659f/0/ORIGINE_M_69a1bfb65588c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7eed200e-13f5-11f1-9962-8ddab606659f"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7eed200e-13f5-11f1-9962-8ddab606659f",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-broken-back",
@@ -21533,7 +22189,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd86910d3-broken-back.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/broken-back",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-philippe-lellouche-1",
@@ -21550,7 +22207,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0b82e3c-philippe-lellouche.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/philippe-lellouche-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cd8ecf24-ca11-11f0-af03-990b5c843bd9",
@@ -21568,7 +22226,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd8ecf24-ca11-11f0-af03-990b5c843bd9/0/1-1_M_6925c890728e4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd8ecf24-ca11-11f0-af03-990b5c843bd9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd8ecf24-ca11-11f0-af03-990b5c843bd9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "becb85dc-eae5-11f0-9e10-8db86d4ee626",
@@ -21587,7 +22246,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/becb85dc-eae5-11f0-9e10-8db86d4ee626/0/ORIGINE_M_695cdbebd88da.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=becb85dc-eae5-11f0-9e10-8db86d4ee626"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=becb85dc-eae5-11f0-9e10-8db86d4ee626",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20528",
@@ -21604,7 +22264,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/b81/737-737018592_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/congres-coue-troisieme-edition/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-lynda-lemay-jean-felix-lalanne-1",
@@ -21621,7 +22282,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0c51b8d-lynda-lemay-jean-felix-lalanne.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/lynda-lemay-jean-felix-lalanne-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-legendary-rock-voices",
@@ -21640,7 +22302,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/LRV_nancy_artwork3_1080x1920-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/legendary-rock-voices/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-elmer-food-beat-2",
@@ -21660,7 +22323,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd8754cd6-elmer-food-beat.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/elmer-food-beat-2",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-distribution-de-compost-1",
@@ -21679,7 +22343,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/images.jpeg?itok=7x_kxld3",
     "url": "https://www.esseylesnancy.fr/agenda/distribution-de-compost-1",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-linh",
@@ -21696,7 +22361,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5a41473-linh.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/linh",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6001513",
@@ -21713,7 +22379,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/conference-medium.jpg",
     "url": "https://www.alentoor.fr/dieulouard/agenda/6001513-conference-l-histoire-des-rues-de-dieulouard",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5823514",
@@ -21730,7 +22397,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/ab/bb/abbbfe6274d1cee22ca4e64713c77f3f9ce2a41141c2887bc8bc44a2a0b7687a-large.jpg",
     "url": "https://www.alentoor.fr/ludres/agenda/5823514-linh-la-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-the-5-rosies-tribute-to-ac-dc",
@@ -21747,7 +22415,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5b1c16b-the-5-rosies-tribute-to-ac-dc.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/the-5-rosies-tribute-to-ac-dc",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "58bd62ec-afee-11f0-904d-8957f8295ceb",
@@ -21767,7 +22436,8 @@ const EVENTS = [
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/58bd62ec-afee-11f0-904d-8957f8295ceb/0/ORIGINE_M_68f9ee0b84f6a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58bd62ec-afee-11f0-904d-8957f8295ceb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58bd62ec-afee-11f0-904d-8957f8295ceb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-jazzy-bazz",
@@ -21787,7 +22457,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd881a7e1-jazzy-bazz.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/jazzy-bazz",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-12-novembre",
@@ -21806,7 +22477,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-12-novembre",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6024865",
@@ -21823,7 +22495,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.alentoor.fr/photos/classifieds/92/a8/92a82b85d6b9629ece62348a8f88abd506f56d51c81e3cd6badd49191d85072c-large.jpg",
     "url": "https://www.alentoor.fr/benney/agenda/6024865-spectacle-equestre-femmes",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b8243926-43d8-11f1-8656-7338c7a24b73",
@@ -21842,7 +22515,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b8243926-43d8-11f1-8656-7338c7a24b73/0/ORIGINE_M_69f21746b8c4b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b8243926-43d8-11f1-8656-7338c7a24b73"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b8243926-43d8-11f1-8656-7338c7a24b73",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fa2ee02c-21cf-11f0-b087-374be7f1dc75",
@@ -21861,7 +22535,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa2ee02c-21cf-11f0-b087-374be7f1dc75/0/ORIGINE_M_680b7e8ed6838.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa2ee02c-21cf-11f0-b087-374be7f1dc75"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa2ee02c-21cf-11f0-b087-374be7f1dc75",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-poetic-lover-tour-1",
@@ -21878,7 +22553,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5ba7d33-poetic-lover-tour.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/poetic-lover-tour-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-michele-laroque-et-kad-merad",
@@ -21895,7 +22571,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c10361d9b8-michele-laroque-et-kad-merad.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/michele-laroque-et-kad-merad",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-laurent-barat-1",
@@ -21912,7 +22589,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c11ef43b10-laurent-barat.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/laurent-barat-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5924015",
@@ -21929,7 +22607,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/7c/5e/7c5e18c634b4705a1f6875716a1e8032e2ab981e6e7a2b3fe1814658a5ea9368-large.jpg",
     "url": "https://www.alentoor.fr/blenod-les-pont-a-mousson/agenda/5924015-laurent-barat-s-enchaine-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5984556",
@@ -21946,7 +22625,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/varangeville/agenda/5984556-bourse-aux-jouets",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-kad-merad-michele-laroque",
@@ -21965,7 +22645,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/03/LAgeBete_Tournee_1080x1350_Nancy-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/kad-merad-michele-laroque/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "436a7fc0-4ddb-11f1-bbde-f1808760fb6b",
@@ -21983,7 +22664,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/436a7fc0-4ddb-11f1-bbde-f1808760fb6b/0/ORIGINE_M_6a02e2830880c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=436a7fc0-4ddb-11f1-bbde-f1808760fb6b"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=436a7fc0-4ddb-11f1-bbde-f1808760fb6b",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "0a85fd04-6340-11f1-b729-73f13d2386e2",
@@ -22002,7 +22684,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a85fd04-6340-11f1-b729-73f13d2386e2/0/ORIGINE_M_6a26c7052a80e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a85fd04-6340-11f1-b729-73f13d2386e2"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a85fd04-6340-11f1-b729-73f13d2386e2",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-balavoine-ma-bataille",
@@ -22021,7 +22704,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Balavoine_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/balavoine-ma-bataille/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-cur-de-pirate",
@@ -22038,7 +22722,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd8963ee0-cur-de-pirate.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/cur-de-pirate",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-coeur-de-pirate-3",
@@ -22058,7 +22743,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/632-illustration_id-1762546970.jpg?itok=mwy528ve",
     "url": "https://lautrecanalnancy.fr/agenda/coeur-de-pirate-3",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-3",
@@ -22075,7 +22761,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/234/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-3_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-casse-noisette-ballet-et-orchestre-casse-noisette-1",
@@ -22092,7 +22779,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/699c1036d1cec-casse-noisette-ballet-et-orchestre-casse-noisette.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/casse-noisette-ballet-et-orchestre-casse-noisette-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-casse-noisette-3",
@@ -22111,7 +22799,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette-3/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-wallace-cleaver-0",
@@ -22131,7 +22820,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/692-illustration_id-1776087790.jpg?itok=H99f6h7E",
     "url": "https://lautrecanalnancy.fr/agenda/wallace-cleaver-0",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20598",
@@ -22148,7 +22838,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/691/737-737014735_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-sur-les-traces-de-saint-nicolas/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-les-fatals-picards-4",
@@ -22168,7 +22859,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd8a5bd51-les-fatals-picards.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/les-fatals-picards-4",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-barbara-par-pietragalla-1",
@@ -22185,7 +22877,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c10376c112-barbara-par-pietragalla.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/barbara-par-pietragalla-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-pietragalla-barbara",
@@ -22204,7 +22897,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Pietragalla-Barbara-affiche-WEB-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/pietragalla-barbara/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-moguiz-1",
@@ -22221,7 +22915,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5c3dcf1-moguiz.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/moguiz-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-les-musiques-de-hans-zimmer-alain-silvestri",
@@ -22240,7 +22935,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/2026-04_zimmer_williams_WEB_Zenith-Nancy-1191x1684-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alain-silvestri/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-rock-you-scolaires",
@@ -22260,7 +22956,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/copie_de_j4_babel_minots_2024_cnairi_-_20.jpg?itok=zRtjtVRD",
     "url": "https://lautrecanalnancy.fr/agenda/rock-you-scolaires",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-conseil-municipal-du-23-novembre-2026",
@@ -22279,7 +22976,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-23-novembre-2026",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "c4d3eb5a-f516-11f0-ae60-43b9cde3c7e5",
@@ -22298,7 +22996,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c4d3eb5a-f516-11f0-ae60-43b9cde3c7e5/0/ORIGINE_M_696df522ef238.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c4d3eb5a-f516-11f0-ae60-43b9cde3c7e5"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c4d3eb5a-f516-11f0-ae60-43b9cde3c7e5",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ebdd53a2-eae5-11f0-ac41-2b18dcdbbdab",
@@ -22318,7 +23017,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ebdd53a2-eae5-11f0-ac41-2b18dcdbbdab/0/ORIGINE_M_695cdc377a3ce.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ebdd53a2-eae5-11f0-ac41-2b18dcdbbdab"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ebdd53a2-eae5-11f0-ac41-2b18dcdbbdab",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-zamdane-le-spectacle-rahma",
@@ -22335,7 +23035,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd8ad793e-zamdane-le-spectacle-rahma.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/zamdane-le-spectacle-rahma",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-arnaud-tsamere-5",
@@ -22352,7 +23053,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5cc69b1-arnaud-tsamere.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/arnaud-tsamere-5",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-plk",
@@ -22371,24 +23073,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/PLK_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/plk/",
-    "source": "zenith-nancy"
-  },
-  {
-    "uuid": "al-5951224",
-    "title": "C'est Décidé, je Deviens une Connasse ! - Tournée",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-11-27",
-    "endDate": "2026-11-27",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "Impasse de l'Estournel Zone en Prave",
-    "city": "Allain",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/f0/ff/f0ffe19f6c8aea3343408459d8a0e921460f164e8a36e1d75be55c6f2ccccfd2-large.jpg",
-    "url": "https://www.alentoor.fr/allain/agenda/5951224-c-est-decide-je-deviens-une-connasse-tournee",
-    "source": "alentoor"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-magma-appartamento",
@@ -22408,7 +23094,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/685-field_illustration_id-1779815884.jpg?itok=Cf1fyiT0",
     "url": "https://lautrecanalnancy.fr/agenda/magma-appartamento",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-21834",
@@ -22425,7 +23112,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/d33/737-737018938_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/concert-the-music-of-queen-live/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-the-music-of-queen",
@@ -22444,7 +23132,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/affiche-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/the-music-of-queen/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2ed177e4-896e-11f0-ad6e-e31d65cdff98",
@@ -22463,7 +23152,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2ed177e4-896e-11f0-ad6e-e31d65cdff98/0/ORIGINE_M_68b9562569541.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2ed177e4-896e-11f0-ad6e-e31d65cdff98"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2ed177e4-896e-11f0-ad6e-e31d65cdff98",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-20599",
@@ -22480,7 +23170,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/a2c/737-737016887_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-thematique-sur-les-traces-de-saint-nicolas-lsf/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lx-jardin-des-1000-fleurs-4",
@@ -22497,7 +23188,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/235/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-4_-d.html",
-    "source": "laxou"
+    "source": "laxou",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bilal-hassani",
@@ -22517,7 +23209,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/659-illustration_id-1772637607.jpg?itok=A6Tuf9uu",
     "url": "https://lautrecanalnancy.fr/agenda/bilal-hassani",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-soen-tribulation",
@@ -22537,7 +23230,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_lindaflorin_2025-2_copie.jpg?itok=GX3B4CvU",
     "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-transformer-le-negatif-en-positif-cycle-4-de-la-5e-la-terminale",
@@ -22557,7 +23251,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/tlnep_photo_c_maxime_delporte16.png?itok=ThynMJsa",
     "url": "https://lautrecanalnancy.fr/agenda/transformer-le-negatif-en-positif-cycle-4-de-la-5e-la-terminale",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-garou-1",
@@ -22574,7 +23269,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5d6c550-garou.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/garou-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-ladaniva",
@@ -22594,7 +23290,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_ladaniva.jpg?itok=7QJV1m2C",
     "url": "https://lautrecanalnancy.fr/agenda/ladaniva",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-repair-cafe-du-10-decembre",
@@ -22613,7 +23310,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-10-decembre",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-isha-limsa-d-aulnay",
@@ -22633,7 +23331,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.curieux.net/img/e/2026/02/6991dd8b912ec-isha-limsa-d-aulnay.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/isha-limsa-d-aulnay",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-benighted",
@@ -22653,7 +23352,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/631-illustration_id-1772641063.jpg?itok=MCkS6xHe",
     "url": "https://lautrecanalnancy.fr/agenda/benighted",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "7dc32316-4ddb-11f1-b7fb-236d105bfd70",
@@ -22671,7 +23371,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7dc32316-4ddb-11f1-b7fb-236d105bfd70/0/ORIGINE_M_6a02e2e4df76a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7dc32316-4ddb-11f1-b7fb-236d105bfd70"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7dc32316-4ddb-11f1-b7fb-236d105bfd70",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "dn-22739",
@@ -22688,7 +23389,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/uploads/destination_nancy/sizes/805/737-737019063_4-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/conte-musical-malevolo-et-loiseau-qui-fait-venir-le-jour/",
-    "source": "destination-nancy"
+    "source": "destination-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-chantal-goya",
@@ -22707,7 +23409,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2024/10/Chantal-Goya_40x60_originale-avec-logos-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/chantal-goya/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "essey-conseil-municipal-du-14-decembre-2026",
@@ -22726,7 +23429,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-14-decembre-2026",
-    "source": "essey"
+    "source": "essey",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6024855",
@@ -22743,7 +23447,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/a2/58/a2586eba90725ab89db2d8b4a0c03241e058fc7f6c49b53c529a0f0d94788f8b-large.jpg",
     "url": "https://www.alentoor.fr/benney/agenda/6024855-spectacle-equestre-le-noel-du-chat-botte",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-les-4-saisons-un-ballet-sur-la-musique-d-antonio-vivaldi-1",
@@ -22760,7 +23465,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c103aa5d70-les-4-saisons-un-ballet-sur-la-musique-d-antonio-vivaldi.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/les-4-saisons-un-ballet-sur-la-musique-d-antonio-vivaldi-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-les-quatre-saisons",
@@ -22779,7 +23485,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2b863c26-4212-11f0-a885-5b7411380fb9",
@@ -22799,7 +23506,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2b863c26-4212-11f0-a885-5b7411380fb9/0/ORIGINE_M_68419d819cf17.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2b863c26-4212-11f0-a885-5b7411380fb9"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2b863c26-4212-11f0-a885-5b7411380fb9",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d4f51eb8-05ca-11f1-9592-83ea71871cea",
@@ -22818,7 +23526,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d4f51eb8-05ca-11f1-9592-83ea71871cea/0/ORIGINE_M_6989fb2e0d784.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d4f51eb8-05ca-11f1-9592-83ea71871cea"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d4f51eb8-05ca-11f1-9592-83ea71871cea",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-amine-radi-1",
@@ -22835,7 +23544,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0d386ae-amine-radi.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/amine-radi-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-laurent-voulzy-4",
@@ -22852,7 +23562,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5dd853f-laurent-voulzy.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/laurent-voulzy-4",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "58e38396-3c89-11f1-bb39-bfbd75f2cbde",
@@ -22870,7 +23581,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/58e38396-3c89-11f1-bb39-bfbd75f2cbde/0/ORIGINE_M_69e5d3a28fe8a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58e38396-3c89-11f1-bb39-bfbd75f2cbde"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=58e38396-3c89-11f1-bb39-bfbd75f2cbde",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-5943999",
@@ -22887,7 +23599,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/82/0a/820a890336dec9535d134982c2d16726adf47afe0ac8e70f567caa084859c376-large.jpg",
     "url": "https://www.alentoor.fr/neuves-maisons/agenda/5943999-gauvain-sers-tournee",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9a24fe06-43d8-11f1-9ec6-cf63d2b775c8",
@@ -22907,7 +23620,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9a24fe06-43d8-11f1-9ec6-cf63d2b775c8/0/ORIGINE_M_69f2171467f75.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9a24fe06-43d8-11f1-9ec6-cf63d2b775c8"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9a24fe06-43d8-11f1-9ec6-cf63d2b775c8",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "aadd11d4-f77f-11f0-ae07-67797396b944",
@@ -22925,7 +23639,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/aadd11d4-f77f-11f0-ae07-67797396b944/0/ORIGINE_M_6972001edbeb4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=aadd11d4-f77f-11f0-ae07-67797396b944"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=aadd11d4-f77f-11f0-ae07-67797396b944",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-festival-mondial-de-la-magie",
@@ -22944,7 +23659,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/festival-mondial-magie-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/festival-mondial-de-la-magie/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-madame-arthur-chante-celine-diam-s",
@@ -22965,7 +23681,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/madame_arthur_1080x1080_copie.jpg?itok=Apu5cocN",
     "url": "https://lautrecanalnancy.fr/agenda/madame-arthur-chante-celine-diam-s",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-bernard-lavilliers",
@@ -22984,7 +23701,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/02/BERNARD-LAVILLIERS_2026_affiche_40x60_HD-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/bernard-lavilliers/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cfb19798-4ddb-11f1-b478-9d28cea11105",
@@ -23002,7 +23720,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cfb19798-4ddb-11f1-b478-9d28cea11105/0/ORIGINE_M_6a02e36e5d182.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfb19798-4ddb-11f1-b478-9d28cea11105"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cfb19798-4ddb-11f1-b478-9d28cea11105",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-clement-viktorovitch",
@@ -23021,7 +23740,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Clement-Viktorovitch_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/clement-viktorovitch/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-marguerite",
@@ -23041,7 +23761,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/708-field_illustration_id-1776695357.jpg?itok=XQOGVjwZ",
     "url": "https://lautrecanalnancy.fr/agenda/marguerite",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-orange-blossom",
@@ -23061,7 +23782,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_credit_-_ernest_sarino_mandap.jpeg?itok=VVw10TVQ",
     "url": "https://lautrecanalnancy.fr/agenda/orange-blossom",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-l-appel-du-tsar-du-cycle-2-cp-jusqu-la-5e",
@@ -23080,7 +23802,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2023-06-20_a_15.27.35.png?itok=bixwY330",
     "url": "https://lautrecanalnancy.fr/agenda/l-appel-du-tsar-du-cycle-2-cp-jusqu-la-5e",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d6838784-f511-11f0-8410-39fa44be7276",
@@ -23100,14 +23823,15 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d6838784-f511-11f0-8410-39fa44be7276/0/ORIGINE_M_696decdd27ea4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d6838784-f511-11f0-8410-39fa44be7276"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d6838784-f511-11f0-8410-39fa44be7276",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-veronic-dicaire",
     "title": "Véronic Dicaire",
-    "category": "musiques-actuelles",
+    "category": "spectacle",
     "subcats": [
-      "Concert"
+      "Spectacle"
     ],
     "date": "2027-02-03",
     "endDate": "2027-02-03",
@@ -23117,9 +23841,10 @@ const EVENTS = [
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2021/02/Veronic-Dicaire_40x60_originale-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Veronic-Dicaire_40x60_originale-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/veronic-dicaire/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-kid-francescoli",
@@ -23140,7 +23865,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/753-field_illustration_id-1779383062.jpg?itok=nB-nXe9p",
     "url": "https://lautrecanalnancy.fr/agenda/kid-francescoli",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "4bb3f678-43d8-11f1-ad09-57f47d5e5def",
@@ -23159,7 +23885,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4bb3f678-43d8-11f1-ad09-57f47d5e5def/0/ORIGINE_M_69f21862b4e6e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bb3f678-43d8-11f1-ad09-57f47d5e5def"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bb3f678-43d8-11f1-ad09-57f47d5e5def",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "48b444a0-6340-11f1-a5e2-fb334d604793",
@@ -23178,7 +23905,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/48b444a0-6340-11f1-a5e2-fb334d604793/0/ORIGINE_M_6a26c76d7f10c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=48b444a0-6340-11f1-a5e2-fb334d604793"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=48b444a0-6340-11f1-a5e2-fb334d604793",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b4e0c020-eade-11f0-8e7b-378ba6bae0ca",
@@ -23197,7 +23925,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b4e0c020-eade-11f0-8e7b-378ba6bae0ca/0/ORIGINE_M_695cd01cc1800.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b4e0c020-eade-11f0-8e7b-378ba6bae0ca"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b4e0c020-eade-11f0-8e7b-378ba6bae0ca",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-edgar-yves-jr",
@@ -23214,7 +23943,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0f15306-edgar-yves-jr.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/edgar-yves-jr",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-skip-use-1",
@@ -23234,7 +23964,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/skip_the_use.jpg?itok=BIknsvTv",
     "url": "https://lautrecanalnancy.fr/agenda/skip-use-1",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "69d29114-43d8-11f1-8fd6-374aad76cf31",
@@ -23253,7 +23984,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/69d29114-43d8-11f1-8fd6-374aad76cf31/0/ORIGINE_M_69f216c356bbe.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=69d29114-43d8-11f1-8fd6-374aad76cf31"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=69d29114-43d8-11f1-8fd6-374aad76cf31",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f2f74dd6-6340-11f1-9adb-036f869b87bb",
@@ -23273,7 +24005,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f2f74dd6-6340-11f1-9adb-036f869b87bb/0/ORIGINE_M_6a26c88b243a4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f2f74dd6-6340-11f1-9adb-036f869b87bb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f2f74dd6-6340-11f1-9adb-036f869b87bb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-jonathan-dassin-chante-joe-dassin-2",
@@ -23290,7 +24023,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5e5ac9c-jonathan-dassin-chante-joe-dassin.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/jonathan-dassin-chante-joe-dassin-2",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "1de03e3e-8810-11f0-bfcc-abbc252f2115",
@@ -23309,7 +24043,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1de03e3e-8810-11f0-bfcc-abbc252f2115/0/ORIGINE_M_68b70ad524ea6.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1de03e3e-8810-11f0-bfcc-abbc252f2115"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1de03e3e-8810-11f0-bfcc-abbc252f2115",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-thomas-marty",
@@ -23328,7 +24063,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/Thomas-Marty_1080x1350-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/thomas-marty/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "2a1ab8fe-3c93-11f1-956f-cdf33b40c453",
@@ -23347,7 +24083,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a1ab8fe-3c93-11f1-956f-cdf33b40c453/0/ORIGINE_M_69e5e41b0b4b9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a1ab8fe-3c93-11f1-956f-cdf33b40c453"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a1ab8fe-3c93-11f1-956f-cdf33b40c453",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
@@ -23366,7 +24103,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/13d9d68c-f513-11f0-bf2f-71f3ee1d58fb/0/ORIGINE_M_696deef18af87.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=13d9d68c-f513-11f0-bf2f-71f3ee1d58fb"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-seth-gueko",
@@ -23386,7 +24124,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/741-field_illustration_id-1779366374.jpg?itok=xD8U2fXE",
     "url": "https://lautrecanalnancy.fr/agenda/seth-gueko",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-les-grands-enfants",
@@ -23403,7 +24142,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c0d0fbd391-les-grands-enfants.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/les-grands-enfants",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "fd604d74-4ddb-11f1-8f69-4568db725775",
@@ -23421,7 +24161,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fd604d74-4ddb-11f1-8f69-4568db725775/0/ORIGINE_M_6a02e3bb09b9e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fd604d74-4ddb-11f1-8f69-4568db725775"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fd604d74-4ddb-11f1-8f69-4568db725775",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-somnelie-scolaires",
@@ -23441,7 +24182,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/somnelie.png?itok=zo76h_Np",
     "url": "https://lautrecanalnancy.fr/agenda/somnelie-scolaires",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "cx-messmer-13hz-1",
@@ -23458,7 +24200,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/02/699c1042cd107-messmer-13hz.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/messmer-13hz-1",
-    "source": "curieux-net"
+    "source": "curieux-net",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-messmer",
@@ -23477,7 +24220,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/09/Messmer_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/messmer/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "01bad2f8-4217-11f0-8d71-bdccb3db1929",
@@ -23496,7 +24240,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/01bad2f8-4217-11f0-8d71-bdccb3db1929/0/ORIGINE_M_6841a59f034cd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01bad2f8-4217-11f0-8d71-bdccb3db1929"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01bad2f8-4217-11f0-8d71-bdccb3db1929",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-jeanneto",
@@ -23518,7 +24263,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/757-field_illustration_id-1779887187.jpg?itok=175u8s9B",
     "url": "https://lautrecanalnancy.fr/agenda/jeanneto",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-shredfest-obscura-pestilence-cryptic-shift-thus-dvrk",
@@ -23538,7 +24284,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/2027_01_shred_fest_eu_poster_copie_2.png?itok=8meRT-zZ",
     "url": "https://lautrecanalnancy.fr/agenda/shredfest-obscura-pestilence-cryptic-shift-thus-dvrk",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-busta-flex-scred-connexion",
@@ -23558,7 +24305,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/unknown-3_0.jpeg?itok=dZ8SOfAT",
     "url": "https://lautrecanalnancy.fr/agenda/busta-flex-scred-connexion",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-la-p-tite-fumee",
@@ -23578,7 +24326,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/presskit2.jpg?itok=c_jfPulc",
     "url": "https://lautrecanalnancy.fr/agenda/la-p-tite-fumee",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "f3dbccd2-f512-11f0-84e3-5fa7c19294ee",
@@ -23597,7 +24346,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f3dbccd2-f512-11f0-84e3-5fa7c19294ee/0/ORIGINE_M_696deebbd91f7.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3dbccd2-f512-11f0-84e3-5fa7c19294ee"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3dbccd2-f512-11f0-84e3-5fa7c19294ee",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bamby",
@@ -23617,7 +24367,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/760-field_illustration_id-1780409043.png?itok=pjCyEBqt",
     "url": "https://lautrecanalnancy.fr/agenda/bamby",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "d88af90c-6340-11f1-98b4-77db7156b741",
@@ -23636,7 +24387,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d88af90c-6340-11f1-98b4-77db7156b741/0/ORIGINE_M_6a26c85ec6dd0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d88af90c-6340-11f1-98b4-77db7156b741"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d88af90c-6340-11f1-98b4-77db7156b741",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-dany-boon",
@@ -23655,7 +24407,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Dany-Boon_40x60_originale-2-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/dany-boon/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "572b37f6-ca15-11f0-9bf7-1b4eef81f9d5",
@@ -23673,7 +24426,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/572b37f6-ca15-11f0-9bf7-1b4eef81f9d5/0/ORIGINE_M_6925ce617cd48.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=572b37f6-ca15-11f0-9bf7-1b4eef81f9d5"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=572b37f6-ca15-11f0-9bf7-1b4eef81f9d5",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "43d3cbaa-4ddc-11f1-a258-a5bba5061957",
@@ -23691,7 +24445,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/43d3cbaa-4ddc-11f1-a258-a5bba5061957/0/ORIGINE_M_6a02e43136459.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=43d3cbaa-4ddc-11f1-a258-a5bba5061957"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=43d3cbaa-4ddc-11f1-a258-a5bba5061957",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "a58d3d4e-43b0-11f1-9db2-e7c73d3210a7",
@@ -23710,7 +24465,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a58d3d4e-43b0-11f1-9db2-e7c73d3210a7/0/ORIGINE_M_69f1d40ba9f22.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a58d3d4e-43b0-11f1-9db2-e7c73d3210a7"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a58d3d4e-43b0-11f1-9db2-e7c73d3210a7",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-sniper",
@@ -23730,7 +24486,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/755-field_illustration_id-1779797573.jpg?itok=kl8lr-Qk",
     "url": "https://lautrecanalnancy.fr/agenda/sniper",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-jahneration-0",
@@ -23750,7 +24507,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/761-field_illustration_id-1780407808.png?itok=C_6il-8B",
     "url": "https://lautrecanalnancy.fr/agenda/jahneration-0",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "9c404412-f512-11f0-9e33-7909dc546817",
@@ -23769,7 +24527,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c404412-f512-11f0-9e33-7909dc546817/0/ORIGINE_M_696dee28de3cc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c404412-f512-11f0-9e33-7909dc546817"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c404412-f512-11f0-9e33-7909dc546817",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-flrsn-du-cycle-4-4e-la-terminale",
@@ -23789,7 +24548,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/331746580_965931317662341_5070897150008864832_n.jpg?itok=6ZL0Pw83",
     "url": "https://lautrecanalnancy.fr/agenda/flrsn-du-cycle-4-4e-la-terminale",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-hatik",
@@ -23810,7 +24570,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/low_def_hatik_2024-25_refonte_elts-promoteur_draft1_copie.jpg?itok=1oXyY9UR",
     "url": "https://lautrecanalnancy.fr/agenda/hatik",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-vianney",
@@ -23829,7 +24590,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/05/AFF-VIAN-27_28-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/vianney/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6c7ebedc-c0a8-11f0-a520-459192b1d604",
@@ -23848,7 +24610,8 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6c7ebedc-c0a8-11f0-a520-459192b1d604/0/ORIGINE_M_6915fe2da4021.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c7ebedc-c0a8-11f0-a520-459192b1d604"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c7ebedc-c0a8-11f0-a520-459192b1d604",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-covertramp",
@@ -23867,7 +24630,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/05/covertramp-v2-350x524.jpeg",
     "url": "https://www.zenith-de-nancy.com/evenement/covertramp/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-winter-story-cine-scolaire",
@@ -23887,7 +24651,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-12_a_16.05.18.png?itok=g-OI-6wK",
     "url": "https://lautrecanalnancy.fr/agenda/winter-story-cine-scolaire",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-rodrigo-y-gabriela",
@@ -23907,7 +24672,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/698-field_illustration_id-1780577210.jpg?itok=ZVgOAmqO",
     "url": "https://lautrecanalnancy.fr/agenda/rodrigo-y-gabriela",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-adele-castillon",
@@ -23927,7 +24693,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/adele_castillon_-_2011x1340_copie.jpg?itok=Ns6FAYeo",
     "url": "https://lautrecanalnancy.fr/agenda/adele-castillon",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-keenv",
@@ -23946,7 +24713,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/KeenV-A-nos-20-ans-Visuel-de-MEV-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/keenv/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "al-6083713",
@@ -23963,7 +24731,8 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/assets/img/event/default/brocante-medium.jpg",
     "url": "https://www.alentoor.fr/laneuveville-devant-nancy/agenda/6083713-brocante",
-    "source": "alentoor"
+    "source": "alentoor",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "6ef6032a-4ddc-11f1-a84a-29adf486a615",
@@ -23981,7 +24750,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6ef6032a-4ddc-11f1-a84a-29adf486a615/0/ORIGINE_M_6a02e479916e4.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ef6032a-4ddc-11f1-a84a-29adf486a615"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6ef6032a-4ddc-11f1-a84a-29adf486a615",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "lcn-bon-moment-2027",
@@ -24001,7 +24771,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
+    "source": "autre-canal",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "b1e4d756-4ddc-11f1-974e-490e05872269",
@@ -24019,7 +24790,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b1e4d756-4ddc-11f1-974e-490e05872269/0/ORIGINE_M_6a02e4e9d656a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b1e4d756-4ddc-11f1-974e-490e05872269"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b1e4d756-4ddc-11f1-974e-490e05872269",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-nino-arial",
@@ -24038,7 +24810,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/03/NINO-ARIAL-1080x1920-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/nino-arial/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-philippe-caveriviere",
@@ -24057,7 +24830,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Philippe-Caveriviere_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/philippe-caveriviere/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-gael-faye",
@@ -24076,7 +24850,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/GAEL-FAYE-TOURNEE-ZENITH-1080-1920-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/gael-faye/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "5a889812-f512-11f0-96d6-05d356c42e9d",
@@ -24095,7 +24870,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a889812-f512-11f0-96d6-05d356c42e9d/0/ORIGINE_M_696dedba9eb2b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a889812-f512-11f0-96d6-05d356c42e9d"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a889812-f512-11f0-96d6-05d356c42e9d",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "11001ae8-eae6-11f0-b2c4-b55d4eac594c",
@@ -24114,7 +24890,8 @@ const EVENTS = [
     "free": false,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/11001ae8-eae6-11f0-b2c4-b55d4eac594c/0/ORIGINE_M_695cdc75c5487.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=11001ae8-eae6-11f0-b2c4-b55d4eac594c"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=11001ae8-eae6-11f0-b2c4-b55d4eac594c",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "zen-mousquetaire",
@@ -24133,7 +24910,8 @@ const EVENTS = [
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Mousquetaire_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/mousquetaire/",
-    "source": "zenith-nancy"
+    "source": "zenith-nancy",
+    "addedAt": "2026-05-03"
   },
   {
     "uuid": "ba268df0-6340-11f1-b100-633f006ec353",
@@ -24152,6 +24930,7 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ba268df0-6340-11f1-b100-633f006ec353/0/ORIGINE_M_6a26c82bca675.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba268df0-6340-11f1-b100-633f006ec353"
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ba268df0-6340-11f1-b100-633f006ec353",
+    "addedAt": "2026-05-03"
   }
 ];

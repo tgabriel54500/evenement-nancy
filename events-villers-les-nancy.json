@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-18",
+    "date": "2026-06-19",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -64,29 +64,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-542",
-    "title": "Café solidaire - Espace de vie sociale",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité",
-      "Culture",
-      "Petite enfance"
-    ],
-    "date": "2026-06-18",
-    "endDate": "2026-06-18",
-    "dateText": "",
-    "schedule": "14h à 17h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/cafes_solidaires_evs_mjc_jean_savine.jpeg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cafe-solidaire-espace-de-vie-sociale",
     "source": "villers-les-nancy"
   },
   {
@@ -151,6 +128,28 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-576",
+    "title": "Fête de la Musique : le quartier du Jardin Botanique en fête",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Citoyenneté",
+      "Culture"
+    ],
+    "date": "2026-06-21",
+    "endDate": "2026-06-21",
+    "dateText": "",
+    "schedule": "14h à 19h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/fmb.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/fete-de-la-musique-le-quartier-du-jardin-botanique-en-fete",
     "source": "villers-les-nancy"
   },
   {
@@ -432,6 +431,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-le-comte-de-monte-cristo",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-301",
+    "title": "Groupes de parole pour les proches aidants Orchidée",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-09-08",
+    "endDate": "2027-06-29",
+    "dateText": "",
+    "schedule": "14 à 16h",
+    "place": "Résidence autonomie Paul Adam",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
     "source": "villers-les-nancy"
   },
   {

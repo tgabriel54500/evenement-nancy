@@ -19,6 +19,25 @@
     "source": "ici-c-nancy"
   },
   {
+    "uuid": "icn-1094",
+    "title": "NANCY : JOURNÉE MONDIALE DES RÉFUGIÉ.ES",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-20",
+    "dateText": "",
+    "schedule": "10:30",
+    "place": "1 rue Jean Mihé (cuisine ouverte)",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_journee-refugies.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1094-nancy-journee-mondiale-des-refugie-es/2026-06-20-10-30.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1093",
     "title": "MATIN DES HÉROS : TOY STORY 5",
     "category": "spectacle",
@@ -73,6 +92,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_affichetictacpop.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1091-laneuveville-devant-nancy-le-choeur-tic-tac-pop/2026-06-28-17-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1095",
+    "title": "GRAND DÉBALLAGE DE NANCY",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-07-03",
+    "endDate": "2026-07-04",
+    "dateText": "Du 3 au 4 juillet 2026",
+    "schedule": "10:00",
+    "place": "Centre-ville de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_grand-deballage.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1095-grand-deballage-de-nancy/2026-07-03-10-00.html",
     "source": "ici-c-nancy"
   },
   {
