@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-974",
-    "title": "ESPACE CHAUDEAU LUDRES : LES GRANDS ENFANTS",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
-    "dateText": "",
-    "schedule": "20:00",
-    "place": "Espace Chaudeau",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_grandsenfants.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/974-espace-chaudeau-ludres-les-grands-enfants/2026-06-19-20-00.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1094",
     "title": "NANCY : JOURNÉE MONDIALE DES RÉFUGIÉ.ES",
     "category": "autre",
@@ -35,6 +16,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_journee-refugies.png",
     "url": "https://www.ici-c-nancy.fr/agenda/1094-nancy-journee-mondiale-des-refugie-es/2026-06-20-10-30.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1096",
+    "title": "TOUL FLAMBOYANTE",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-06-20",
+    "endDate": "2026-06-21",
+    "dateText": "Du 20 au 21 juin 2026",
+    "schedule": "11:00",
+    "place": "Cathédrale Saint-Étienne",
+    "city": "Toul",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_flamboyante.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1096-toul-flamboyante/2026-06-20-11-00.html",
     "source": "ici-c-nancy"
   },
   {

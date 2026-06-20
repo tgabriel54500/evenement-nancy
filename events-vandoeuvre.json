@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1008,7 +1008,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/rendez-vous-aux-jardins/",
     "source": "vandoeuvre"
   },
@@ -1021,7 +1021,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-06-19",
+    "date": "2026-06-20",
     "endDate": "2026-06-24",
     "dateText": "Du 3 septembre 2025 au 24 juin 2026",
     "schedule": "",
@@ -1031,27 +1031,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-19179",
-    "title": "Concert final des Orchestres à l’école",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Salle des Fêtes",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/05/voyage-autour-du-monde.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/concert-final-des-orchestres-a-lecole/",
     "source": "vandoeuvre"
   },
   {
@@ -1150,7 +1129,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/vandoeuvre-en-fete/",
     "source": "vandoeuvre"
   },
@@ -1169,7 +1148,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
     "source": "vandoeuvre"
   },
@@ -1207,7 +1186,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/recital-de-fin-de-scolarite-julie-baroukel/",
     "source": "vandoeuvre"
   },
@@ -1226,7 +1205,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projections-fifn/",
     "source": "vandoeuvre"
   },
@@ -1247,7 +1226,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/spectacle-tous-en-scene/",
     "source": "vandoeuvre"
   },
@@ -1308,7 +1287,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
     "source": "vandoeuvre"
   },
@@ -1327,7 +1306,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/randonnee-patrimoniale/",
     "source": "vandoeuvre"
   },
@@ -1346,7 +1325,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
     "source": "vandoeuvre"
   },
@@ -1365,7 +1344,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
     "source": "vandoeuvre"
   },
@@ -1449,7 +1428,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
     "source": "vandoeuvre"
   },
@@ -1470,7 +1449,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1510,7 +1489,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
     "source": "vandoeuvre"
   },
@@ -1529,7 +1508,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/20-000-jeux-sous-les-pixels-3/",
     "source": "vandoeuvre"
   },
@@ -1567,8 +1546,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-28754",
+    "title": "Seniors : Croisière sur le Doubs et visite de la Citadelle de Besançon",
+    "category": "seniors",
+    "catLabel": "Seniors",
+    "catEmoji": "👵",
+    "subcats": [],
+    "date": "2026-07-24",
+    "endDate": "2026-07-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
   {
@@ -1586,7 +1584,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1626,7 +1624,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/chasseur-recit.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }
