@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1008,7 +1008,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/rendez-vous-aux-jardins/",
     "source": "vandoeuvre"
   },
@@ -1021,7 +1021,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "endDate": "2026-06-24",
     "dateText": "Du 3 septembre 2025 au 24 juin 2026",
     "schedule": "",
@@ -1031,125 +1031,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-15515",
-    "title": "La médiathèque fête la musique",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille",
-      "Jeunes"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "Dés 14h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/05/mediatheque-fete-musique.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/la-mediatheque-fete-la-musique/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-18044",
-    "title": "Au 2, rue de Malines",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "10h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/09/2-rue-de-malines.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/au-2-rue-de-malines/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-23486",
-    "title": "Sensibilisation aux Gestes Qui Sauvent",
-    "category": "sante",
-    "catLabel": "Santé",
-    "catEmoji": "🩺",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "De 10h à 12h30",
-    "place": "Ferme du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/sensibilisation-aux-gestes-qui-sauvent-2/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-23731",
-    "title": "Concert de musique sacrée",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Eglise Saint Melaine",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/concert-de-musique-sacree/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28554",
-    "title": "Vandœuvre en fête",
-    "category": "sport",
-    "catLabel": "Sport",
-    "catEmoji": "⚽",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "De 17h à 22h",
-    "place": "Parc Richard Pouille",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/vandoeuvre-en-fete/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28657",
-    "title": "Kermesse Alyatim solidaire",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "De 11h à 19h",
-    "place": "Esplanade Simone Veil",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
     "source": "vandoeuvre"
   },
   {
@@ -1186,7 +1067,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/recital-de-fin-de-scolarite-julie-baroukel/",
     "source": "vandoeuvre"
   },
@@ -1205,7 +1086,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projections-fifn/",
     "source": "vandoeuvre"
   },
@@ -1226,7 +1107,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/spectacle-tous-en-scene/",
     "source": "vandoeuvre"
   },
@@ -1287,7 +1168,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
     "source": "vandoeuvre"
   },
@@ -1306,7 +1187,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/randonnee-patrimoniale/",
     "source": "vandoeuvre"
   },
@@ -1325,7 +1206,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
     "source": "vandoeuvre"
   },
@@ -1344,7 +1225,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
     "source": "vandoeuvre"
   },
@@ -1428,7 +1309,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
     "source": "vandoeuvre"
   },
@@ -1449,7 +1330,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1508,7 +1389,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/20-000-jeux-sous-les-pixels-3/",
     "source": "vandoeuvre"
   },
@@ -1546,7 +1427,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1565,7 +1446,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1584,7 +1465,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1624,7 +1505,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/ondes-du-monde.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }

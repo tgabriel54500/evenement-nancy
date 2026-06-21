@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-gims",
-    "title": "GIMS",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "Samedi 20 juin 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Gims_NOA_40x60_originale-1-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/gims/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-neil-young",
     "title": "Neil Young and The Chrome Hearts",
     "category": "musiques-actuelles",

@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -67,28 +67,6 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-450",
-    "title": "Fête de quartier de la MJC Jean Savine",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "A ne pas manquer",
-      "Citoyenneté"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "À partir de 15h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2025/FMJC.png",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/fete-de-quartier-de-la-mjc-jean-savine",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-232",
     "title": "Semaine musicale de MusicaVillers",
     "category": "musique-classique",
@@ -97,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-20",
+    "date": "2026-06-21",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "",
