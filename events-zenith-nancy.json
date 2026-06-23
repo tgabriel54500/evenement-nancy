@@ -834,7 +834,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/GAEL-FAYE-TOURNEE-ZENITH-1080-1920-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/gael-faye/",
     "source": "zenith-nancy"
