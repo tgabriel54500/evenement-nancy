@@ -650,6 +650,21 @@ function openLightbox(ev) {
 
 let lbOpen = false;
 
+// Remet à jour l'état visuel des petits cœurs des affiches selon les favoris
+// courants, SANS reconstruire la grille. Indispensable après un toggle depuis la
+// lightbox : sinon le cœur de l'affiche reste gris alors que l'event est en favori.
+function syncHearts() {
+  els.gallery.querySelectorAll(".fav-btn").forEach(btn => {
+    const ev = visible[Number(btn.dataset.i)];
+    if (!ev) return;
+    const f = isFav(ev);
+    btn.classList.toggle("is-fav", f);
+    btn.setAttribute("aria-pressed", String(f));
+    btn.setAttribute("aria-label", f ? "Retirer des favoris" : "Ajouter aux favoris");
+    btn.title = f ? "Retirer des favoris" : "Ajouter aux favoris";
+  });
+}
+
 // Masquage réel (DOM + scroll). Appelé via popstate, donc unique point de sortie.
 function hideLightbox() {
   lbOpen = false;
@@ -657,8 +672,10 @@ function hideLightbox() {
   els.lightboxInner.innerHTML = "";
   document.body.style.overflow = "";
   // En mode « favoris seuls », un favori retiré depuis la lightbox doit
-  // disparaître de la grille à la fermeture.
+  // disparaître de la grille à la fermeture (re-render complet). Sinon, on
+  // resynchronise juste les cœurs pour refléter un ajout/retrait fait dans la lightbox.
   if (state.favOnly) render();
+  else syncHearts();
 }
 
 // Fermeture demandée par l'utilisateur (croix, fond, Échap) : on « revient en
