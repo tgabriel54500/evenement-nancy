@@ -228,7 +228,11 @@
   launchd, cf. plus bas) qui rafraîchit les snapshots sur disque — pas besoin de double-crawler dans le serveur.
 - ⚠️⚠️ PRODUCTION = **CLOUDFLARE (Workers Static Assets)**, PLUS Netlify (2026-06). Domaine public https://agenda-grandnancy.fr.
   Déploiement = `npx wrangler deploy` (config `wrangler.jsonc`, worker `evenement-nancy`, account tgabriel, url technique
-  evenement-nancy.tgabriel.workers.dev). Auth = `npx wrangler login` (OAuth navigateur, PAS de token en env).
+  evenement-nancy.tgabriel.workers.dev). Auth = `npx wrangler login` (OAuth navigateur) OU **token API durable**
+  (recommandé pour le cron) : `deploy-cloudflare.sh` lit `.cloudflare-token` (gitignored, racine, 1 ligne =
+  le token, permission *Workers Scripts:Edit* + Account/Zone Read) et l'exporte en `CLOUDFLARE_API_TOKEN`.
+  ⚠️ L'OAuth `wrangler login` EXPIRE → casse le deploy cron (« auth token has expired … non-interactive ») ;
+  le token API ne dépend pas d'une session. Deploy = `wrangler deploy --env=""` (wrangler.jsonc a plusieurs envs).
   ⚠️ MAJ 2026-06-17 : `wrangler.jsonc` pointe désormais `assets.directory` sur **`dist`** (build DURCI), PLUS sur la racine `.`.
   → On ne déploie plus les fichiers bruts : `deploy-cloudflare.sh` assemble `dist/` (front public uniquement), MINIFIE data.js
   en RETIRANT `source`+`uuid` (mais GARDE `addedAt`), injecte GoatCounter + `?v=` anti-cache, puis `wrangler deploy`. Du coup

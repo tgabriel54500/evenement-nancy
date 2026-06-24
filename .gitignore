@@ -24,3 +24,6 @@ dist-staging/
 
 # Local Netlify folder
 .netlify
+
+# Token API Cloudflare (deploy non-interactif du cron) — SECRET, jamais commité
+.cloudflare-token

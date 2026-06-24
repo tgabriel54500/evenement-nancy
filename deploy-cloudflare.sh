@@ -19,6 +19,16 @@ PROJ="/Users/tristan/Documents/Événement Nancy"
 export PATH="/Users/tristan/.nvm/versions/node/v24.14.0/bin:$PATH"
 cd "$PROJ" || exit 1
 
+# AUTH NON-INTERACTIVE (cron) : si un token API Cloudflare est présent dans
+# .cloudflare-token (gitignored, JAMAIS commité), on l'exporte → wrangler déploie
+# sans OAuth. C'est le fix durable : l'OAuth `wrangler login` expire et casse le
+# cron (« auth token has expired … non-interactive »). À défaut de token, on
+# retombe sur l'éventuel login OAuth encore valide.
+if [ -z "${CLOUDFLARE_API_TOKEN:-}" ] && [ -f "$PROJ/.cloudflare-token" ]; then
+  CLOUDFLARE_API_TOKEN="$(tr -d ' \t\r\n' < "$PROJ/.cloudflare-token")"
+  export CLOUDFLARE_API_TOKEN
+fi
+
 DIST="$PROJ/dist"
 mkdir -p "$DIST"
 
@@ -118,8 +128,19 @@ echo "dist/ assemblé ($(ls -1A "$DIST" | wc -l | tr -d ' ') fichiers, Galerie +
 
 # Publication sur Cloudflare. wrangler.jsonc → assets.directory = "dist".
 # OAuth déjà configuré (npx wrangler login) → non interactif en cron.
+# MODE APERÇU LOCAL : `deploy-cloudflare.sh --build-only` (ou BUILD_ONLY=1) construit
+# le dossier dist/ EXACTEMENT comme la version publiée (Sport/Publier masqués, data.js
+# durci) mais NE déploie RIEN. Sert à tester sur le Mac avant de publier pour de vrai.
+if [ "${1:-}" = "--build-only" ] || [ "${BUILD_ONLY:-}" = "1" ]; then
+  echo "✓ build dist/ prêt (APERÇU LOCAL — rien n'a été publié)."
+  echo "  Fichier à ouvrir : $DIST/index.html"
+  exit 0
+fi
+
 echo "→ wrangler deploy…"
-if npx --yes wrangler deploy; then
+# --env="" cible l'environnement top-level (wrangler.jsonc définit plusieurs envs →
+# sinon avertissement « no target environment specified »).
+if npx --yes wrangler deploy --env=""; then
   echo "✓ déployé sur Cloudflare (agenda-grandnancy.fr)."
   exit 0
 else
