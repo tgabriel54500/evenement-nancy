@@ -1021,7 +1021,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "endDate": "2026-06-24",
     "dateText": "Du 3 septembre 2025 au 24 juin 2026",
     "schedule": "",
@@ -1031,25 +1031,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28506",
-    "title": "Projections FIFN",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "De 14h30 à 17h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/projections-fifn/",
     "source": "vandoeuvre"
   },
   {
@@ -1135,25 +1116,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28478",
-    "title": "Randonnée patrimoniale “Les Secrets de Vandœuvre”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "De 10h à 17h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/randonnee-patrimoniale/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28502",
     "title": "Concert des Orchestres à Vents",
     "category": "culture",
@@ -1193,7 +1155,7 @@
   },
   {
     "uuid": "vdv-9732",
-    "title": "Fête des Associations",
+    "title": "Fête des Associations – ANNULE",
     "category": "culture",
     "catLabel": "Culture",
     "catEmoji": "🎭",

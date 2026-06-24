@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -75,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-23",
+    "date": "2026-06-24",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "",
@@ -122,7 +122,7 @@
     "date": "2026-06-24",
     "endDate": "2026-06-24",
     "dateText": "",
-    "schedule": "9h30 à 12h30",
+    "schedule": "7h à 12h",
     "place": "Parc de Brabois",
     "city": "Villers-lès-Nancy",
     "free": false,
@@ -157,7 +157,7 @@
   },
   {
     "uuid": "vln-564",
-    "title": "Théâtre en plein air",
+    "title": "Théâtre en plein air // ANNULÉ",
     "category": "spectacle",
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
