@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Agenda Nancy">
+  <!-- map pin -->
+  <path d="M50 8 C30 8 18 23 18 41 C18 64 50 92 50 92 C50 92 82 64 82 41 C82 23 70 8 50 8 Z" fill="#c4452f"/>
+  <!-- inner disc -->
+  <circle cx="50" cy="41" r="22" fill="#faf7f2"/>
+  <!-- Arc Héré silhouette (Place Stanislas) -->
+  <g fill="#c4452f">
+    <rect x="34" y="31" width="32" height="4.5" rx="1.5"/>
+    <rect x="36" y="35.5" width="7" height="16.5"/>
+    <rect x="57" y="35.5" width="7" height="16.5"/>
+    <path d="M44 52 V44 q6 -7 12 0 V52 H52 V45 q0-3 -2-3 q-2 0 -2 3 V52 Z"/>
+  </g>
+</svg>

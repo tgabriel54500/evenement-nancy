@@ -26,6 +26,10 @@ mkdir -p "$DIST"
 #   index.html → galerie.js ; cartes.html → app.js ; nouveautes.html → galerie.js
 #   (mode data-view) ; toutes → data.js + style.css. On NE publie PAS
 #   base.html/base.js/base.css ni details.js ni server.js (réservés au local).
+# NOTE : la feature "Sport / Publier" (clubs amateurs, Supabase) est EN COURS et
+# ne vit que sur STAGING (deploy-staging.sh). On NE l'inclut PAS dans le build
+# prod : ni sport.html/sport.js/config-supabase.js, ni les liens de nav (strippés
+# plus bas). Le working tree garde la feature — seul le build prod la masque.
 FILES="index.html cartes.html nouveautes.html galerie.js app.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
@@ -36,6 +40,28 @@ for f in $FILES; do
   else
     echo "⚠ fichier front manquant, ignoré : $f"
   fi
+done
+
+# Affiches des événements Facebook, réhébergées en local (cf. fb-posters.js). data.js
+# référence images/fb/<id>.jpg → on copie tout le dossier dans le build public.
+if [ -d "$PROJ/images/fb" ]; then
+  mkdir -p "$DIST/images/fb"
+  cp "$PROJ"/images/fb/*.jpg "$DIST/images/fb/" 2>/dev/null
+  echo "  affiches FB copiées : $(ls -1 "$DIST/images/fb" 2>/dev/null | wc -l | tr -d ' ')"
+fi
+
+# GATE PROD : retire les liens de nav de la feature en cours (Sport / Publier) du
+# build prod uniquement. agenda-grandnancy.fr ne doit PAS exposer ces onglets tant
+# que la feature clubs/Supabase n'est pas validée (elle est testable sur staging).
+for page in index.html cartes.html nouveautes.html; do
+  [ -f "$DIST/$page" ] || continue
+  node -e '
+    const fs = require("fs");
+    const p = process.argv[1];
+    let h = fs.readFileSync(p, "utf8");
+    h = h.replace(/^[ \t]*<a class="view-switch" href="(?:sport|compte)\.html">.*<\/a>[ \t]*\r?\n/gm, "");
+    fs.writeFileSync(p, h);
+  ' "$DIST/$page"
 done
 
 # Sur chaque page publiée on injecte le compteur de visites GoatCounter (privé, sans

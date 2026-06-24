@@ -41,6 +41,10 @@ into your terminal:
 
 ### Golden rule (otherwise the lock is useless)
 - **ALWAYS edit via the Write / Edit / MultiEdit / NotebookEdit tools.** NEVER write
-  to a file via Bash (`sed -i`, `echo >`, `>>`, formatters type `prettier --write`): these writes **bypass the lock** and
+  to a file via Bash (`sed -i`, `echo >`, `>>`, formatters type `prettier --write`, `git checkout/restore`): these writes **bypass the lock** and
   can overwrite another session's work in this shared folder.
+
+### Commits
+- Make **atomic commits**. No worktree, **no merge**: everyone
+  commits on the same branch of the shared checkout.
 <!-- capybavibe:end -->

@@ -44,7 +44,7 @@ run_step() {
 
 log "===== DEBUT refresh-all (node $("$NODE_BIN" --version 2>/dev/null)) ====="
 
-# --- 1. Les 7 scrapers, séquentiels, chacun protégé ---
+# --- 1. Les scrapers, séquentiels, chacun protégé ---
 for s in \
   destination-nancy.js \
   curieux-net.js \
@@ -55,7 +55,10 @@ for s in \
   zenith-nancy.js \
   poirel.js \
   laxou.js \
-  ludres.js
+  ludres.js \
+  autre-canal.js \
+  essey.js \
+  lorraineaucoeur.js
 do
   run_step "$s"
 done
@@ -70,13 +73,15 @@ fi
 # --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
 run_step "update-events.js"
 
-# --- 4. Publication du site statique sur Netlify (sauté proprement si non configuré) ---
-if [ -f "$PROJECT_DIR/deploy-site.sh" ]; then
-  log "START deploy-site.sh"
-  if bash "$PROJECT_DIR/deploy-site.sh" >> "$LOG" 2>&1; then
-    log "OK    deploy-site.sh"
+# --- 4. Publication du site statique LIVE sur CLOUDFLARE (Workers static assets).
+# Remplace l'ancien deploy-site.sh → Netlify (abandonné : Netlify n'est plus
+# l'origine de agenda-grandnancy.fr). Sauté proprement si le script est absent. ---
+if [ -f "$PROJECT_DIR/deploy-cloudflare.sh" ]; then
+  log "START deploy-cloudflare.sh"
+  if bash "$PROJECT_DIR/deploy-cloudflare.sh" >> "$LOG" 2>&1; then
+    log "OK    deploy-cloudflare.sh"
   else
-    log "FAIL  deploy-site.sh (code $?) — data.js a tout de même été régénéré"
+    log "FAIL  deploy-cloudflare.sh (code $?) — data.js a tout de même été régénéré"
   fi
 fi
 

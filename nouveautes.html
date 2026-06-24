@@ -17,7 +17,12 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Nouveautés — Que faire dans le Grand-Nancy ?">
   <meta name="twitter:description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='88'%3E👑%3C/text%3E%3C/svg%3E">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#c4452f">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,7 +34,7 @@
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
       <h1 class="hero__title">🆕 Les <span>nouveautés</span></h1>
       <p class="hero__tagline">Les derniers événements ajoutés à l'agenda, des plus récents aux plus anciens.</p>
-      <p class="hero__subtitle">Les événements tout juste ajoutés à l'agenda (7 derniers jours), regroupés par date d'ajout. Cliquez sur une affiche pour la voir en grand.</p>
+      <p class="hero__subtitle">Les événements tout juste ajoutés à l'agenda (3 derniers jours), regroupés par date d'ajout. Cliquez sur une affiche pour la voir en grand.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
         <input type="search" id="search" placeholder="Rechercher un événement, un lieu…" aria-label="Rechercher un événement">
@@ -38,6 +43,8 @@
         <a class="view-switch" href="index.html">🖼️ Galerie</a>
         <a class="view-switch" href="cartes.html">🗂️ Cartes</a>
         <span class="view-switch is-active" aria-current="page">🆕 Nouveautés</span>
+        <a class="view-switch" href="sport.html">🏅 Sport</a>
+        <a class="view-switch" href="compte.html">➕ Publier</a>
       </div>
     </div>
   </header>
@@ -61,6 +68,9 @@
   </div>
 
   <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config-supabase.js"></script>
+  <script src="user-events.js"></script>
   <script src="galerie.js"></script>
 </body>
 </html>

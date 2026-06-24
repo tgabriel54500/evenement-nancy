@@ -65,13 +65,13 @@ const TODAY_ISO = (() => { const d = new Date();
 const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
 
 // ── Nouveautés ──────────────────────────────────────────────────────────────
-// Un événement est « nouveau » pendant 7 JOURS à compter de son AJOUT sur une
+// Un événement est « nouveau » pendant 3 JOURS à compter de son AJOUT sur une
 // source (champ addedAt posé par update-events.js, indexé sur l'uuid stable).
 // Le ruban 🆕 apparaît partout (galerie + cartes) et la page Nouveautés
-// (body[data-view="nouveautes"]) liste ces ajouts des 7 derniers jours.
+// (body[data-view="nouveautes"]) liste ces ajouts des 3 derniers jours.
 const daysAgoISO = (n) => { const d = new Date(); d.setDate(d.getDate() - n);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; };
-const NEW_SINCE_ISO = daysAgoISO(7);
+const NEW_SINCE_ISO = daysAgoISO(3);
 const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
 const NOUVEAUTES = document.body.dataset.view === "nouveautes";
 
@@ -80,8 +80,12 @@ const NOUVEAUTES = document.body.dataset.view === "nouveautes";
 const isMulti = (ev) => { const s = (ev.date || "").slice(0, 10), e = (ev.endDate || "").slice(0, 10); return !!e && e > s; };
 // Tri : d'abord TOUS les mono-jour (par date croissante), puis TOUS les
 // multi-jours (par date croissante). render() insère un titre à la bascule.
-const sortedEvents = dedupEvents(EVENTS).filter(notPast).sort((a, b) =>
-  (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || ""));
+const sortEvents = (a, b) => (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || "");
+// `extra` = événements approuvés soumis par les utilisateurs (Supabase, via
+// user-events.js), fusionnés aux events statiques. `let` car re-calculé après
+// le chargement asynchrone des events utilisateurs.
+const buildSorted = (extra) => dedupEvents(EVENTS.concat(extra || [])).filter(notPast).sort(sortEvents);
+let sortedEvents = buildSorted();
 
 // ---------- Favoris (persistés dans le navigateur via localStorage) ----------
 // Clé stable = titre + date (le data.js de prod est minifié SANS uuid). On stocke
@@ -92,7 +96,10 @@ function favLoad() { try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {
 function favSave() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {} }
 let favs = favLoad();
 (function prunePast() { let ch = false; for (const k of Object.keys(favs)) if ((favs[k] || "") < TODAY_ISO) { delete favs[k]; ch = true; } if (ch) favSave(); })();
-function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || ""); }
+// Clé stable = titre + date + lieu + ville. Le lieu/ville distingue les fiches
+// homonymes du même jour dans deux communes (dedupEvents en garde une par lieu) :
+// sans eux, un seul favori marquerait toutes ces fiches et fausserait le compteur.
+function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || "") + "|" + normKey(ev.place) + "|" + normKey(ev.city); }
 function isFav(ev) { return favKey(ev) in favs; }
 function toggleFav(ev) {
   const k = favKey(ev);
@@ -527,17 +534,19 @@ function updateFilterCounts() {
   });
 }
 
-// Page « Nouveautés » : ajouts des 7 derniers jours (nouvel événement apparu sur
+// Page « Nouveautés » : ajouts des 3 derniers jours (nouvel événement apparu sur
 // une source), groupés par récence et triés du plus récent au plus ancien.
 // Réutilise tileHTML + la lightbox.
 function renderNouveautes() {
   const base = sortedEvents
     .filter(ev => ev.addedAt && ev.addedAt >= NEW_SINCE_ISO)
+    .filter(ev => !state.favOnly || isFav(ev))   // bouton « Mes favoris » actif aussi ici
     .filter(matchesNonCategory)
-    .sort((a, b) => (b.addedAt || "").localeCompare(a.addedAt || "") || (a.date || "").localeCompare(b.date || ""));
+    // Même esprit que la galerie/cartes : à récence égale, mono-jour AVANT multi-jours.
+    .sort((a, b) => (b.addedAt || "").localeCompare(a.addedAt || "") || (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || ""));
   const groups = [
     { label: "Ajoutés aujourd'hui", test: e => e.addedAt === TODAY_ISO },
-    { label: "Ajoutés ces 7 derniers jours", test: e => e.addedAt < TODAY_ISO && e.addedAt >= NEW_SINCE_ISO },
+    { label: "Ajoutés ces 3 derniers jours", test: e => e.addedAt < TODAY_ISO && e.addedAt >= NEW_SINCE_ISO },
   ];
   visible = [];
   let html = "";
@@ -545,12 +554,17 @@ function renderNouveautes() {
     const items = base.filter(g.test);
     if (!items.length) continue;
     html += `<h2 class="nouv-group">${g.label}<span>${items.length}</span></h2>`;
-    for (const ev of items) html += tileHTML(ev, visible.push(ev) - 1);
+    const firstMulti = items.findIndex(isMulti);   // titre de bascule dans le groupe
+    items.forEach((ev, k) => {
+      if (k === firstMulti) html += `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${items.length - firstMulti}</span></h2>`;
+      html += tileHTML(ev, visible.push(ev) - 1);
+    });
   }
   els.gallery.innerHTML = html;
   els.empty.hidden = visible.length > 0;
-  if (!visible.length) els.empty.textContent =
-    "Aucune nouveauté ces 7 derniers jours pour le moment. Revenez bientôt : de nouveaux événements sont ajoutés régulièrement !";
+  if (!visible.length) els.empty.textContent = state.favOnly
+    ? "Aucun favori parmi les nouveautés. Cliquez sur le ♥ d'une affiche pour l'ajouter ici."
+    : "Aucune nouveauté ces 3 derniers jours pour le moment. Revenez bientôt : de nouveaux événements sont ajoutés régulièrement !";
   els.count.textContent = visible.length ? `${visible.length} nouveauté${visible.length > 1 ? "s" : ""}` : "";
   els.gallery.querySelectorAll(".poster").forEach(btn =>
     btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
@@ -592,6 +606,7 @@ const lbIcon = {
 };
 
 function openLightbox(ev) {
+  if (window.trackUserEventClick) trackUserEventClick(ev);   // compteur de clics (events utilisateurs)
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const place = [ev.place, ev.city].filter(Boolean).join(" — ");
   const badges =
@@ -673,4 +688,15 @@ if (NOUVEAUTES) {
   buildFilters();
   buildToolbar();
   render();
+}
+
+// Fusion asynchrone des événements approuvés soumis par les utilisateurs
+// (Supabase). Le site statique s'affiche d'abord ; on ré-injecte ensuite.
+if (window.loadApprovedUserEvents) {
+  loadApprovedUserEvents().then((extra) => {
+    if (!extra || !extra.length) return;
+    sortedEvents = buildSorted(extra);
+    if (!NOUVEAUTES) buildFilters();   // recalcule les compteurs de catégories
+    render();
+  });
 }

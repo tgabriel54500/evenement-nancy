@@ -26,7 +26,7 @@ mkdir -p "$DIST"
 # On publie les fichiers chargés par index.html (galerie) ET cartes.html :
 #   index.html → galerie.js ; cartes.html → app.js ; les deux → data.js + style.css.
 # On NE publie PAS base.html/base.js/base.css ni details.js (réservés au local).
-FILES="index.html cartes.html galerie.js app.js style.css data.js _headers robots.txt sitemap.xml"
+FILES="index.html cartes.html nouveautes.html galerie.js app.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
 # On repart d'un dist/ propre pour ne pas laisser traîner d'anciens fichiers Base.
 rm -f "$DIST"/*.html "$DIST"/*.js "$DIST"/*.css 2>/dev/null
 for f in $FILES; do
@@ -43,15 +43,15 @@ done
 # (privé, sans cookie). Ces ajouts ne concernent QUE le build public dist/ : la
 # version locale reste propre et n'est pas comptabilisée.
 # GoatCounter ignore de toute façon localhost/file:// → seules les vraies visites comptent.
-for page in index.html cartes.html; do
+for page in index.html cartes.html nouveautes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
     const p = process.argv[1];
     let h = fs.readFileSync(p, "utf8");
-    // PAS d'injection de noindex : on VEUT être indexé par Google (le noindex
-    // n'arrête pas les scrapers, il ne fait que nous retirer des résultats).
-    // La protection anti-aspiration est assurée par Cloudflare (rate-limit + bots).
+    // Pas de noindex : on veut etre indexe par Google. Le noindex narrete pas
+    // les scrapers, il ne fait que nous retirer des resultats. La protection
+    // anti-aspiration est assuree par Cloudflare (rate-limit + bots).
     if (!/goatcounter/i.test(h)) {
       const gc = "  <script data-goatcounter=\"https://gabz.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>\n";
       h = h.replace(/<\/body>/i, gc + "</body>");
@@ -64,7 +64,7 @@ done
 # publié → les visiteurs (mobiles surtout, cache agressif) reçoivent bien chaque
 # mise à jour sans avoir à vider leur cache.
 VER="$(date +%Y%m%d%H%M)"
-for page in index.html cartes.html; do
+for page in index.html cartes.html nouveautes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");

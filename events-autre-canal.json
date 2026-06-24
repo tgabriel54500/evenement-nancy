@@ -1,71 +1,6 @@
 [
   {
-    "uuid": "lcn-thornhill-goya",
-    "title": "Thornhill",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Metal"
-    ],
-    "date": "2026-06-17",
-    "endDate": "2026-06-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/693-illustration_id-1775740277.jpg?itok=917W-lbM",
-    "url": "https://lautrecanalnancy.fr/agenda/thornhill-goya",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-petit-moment-juin",
-    "title": "Petit Moment – Juin",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09564.jpg?itok=c-M3ROhR",
-    "url": "https://lautrecanalnancy.fr/agenda/petit-moment-juin",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-journee-mobilite-et-concerts-de-second-cockpit-live-8h30-12h30-17h",
-    "title": "Journée mobilité et concerts de Second Cockpit",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Concert",
-      "Halle ouverte",
-      "Jazz",
-      "Rock"
-    ],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/second_cockpit_-_photo_promo_3_-_avec_credit.jpg?itok=YBzysQhq",
-    "url": "https://lautrecanalnancy.fr/agenda/journee-mobilite-et-concerts-de-second-cockpit-live-8h30-12h30-17h",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-marche-bio-et-local-concert-mensuel-second-cockpit",
+    "uuid": "lcn-marche-bio-et-local-12",
     "title": "Marché bio et local",
     "category": "activite",
     "catLabel": "Activités & ateliers",
@@ -74,189 +9,16 @@
       "Halle ouverte",
       "Rendez-vous"
     ],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
+    "date": "2026-06-26",
+    "endDate": "2026-06-26",
     "dateText": "",
     "schedule": "",
     "place": "L'Autre Canal",
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-second-cockpit",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-map-n-roll-festival-son-lumiere-video-et-paillettes",
-    "title": "Map N'Roll",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Concert",
-      "Evénement"
-    ],
-    "date": "2026-06-19",
-    "endDate": "2026-06-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/mapping_2025_c_service_communication_de_villers-les-nancy_copie.jpg?itok=nVBrorrd",
-    "url": "https://lautrecanalnancy.fr/agenda/map-n-roll-festival-son-lumiere-video-et-paillettes",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-lanternes-memoire-nature",
-    "title": "Lanternes, mémoire & nature",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-254.jpg?itok=7CcISis3",
-    "url": "https://lautrecanalnancy.fr/agenda/lanternes-memoire-nature",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ateliers-creatifs-expo-jeux-rencontrez-les-porteurs-de-projet-de-l-octroi",
-    "title": "Ateliers créatifs, expo & jeux",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Petite Halle",
-      "Rendez-vous"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09250.jpg?itok=qNn4nIEt",
-    "url": "https://lautrecanalnancy.fr/agenda/ateliers-creatifs-expo-jeux-rencontrez-les-porteurs-de-projet-de-l-octroi",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-club-dancing-kids-allez-le-foot-boum-des-4-ans-de-bogdan-woodsdad",
-    "title": "CLUB DANCING KIDS : ALLEZ LE FOOT",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Enfance",
-      "Halle ouverte"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignette2.jpg?itok=pRrjiYsP",
-    "url": "https://lautrecanalnancy.fr/agenda/club-dancing-kids-allez-le-foot-boum-des-4-ans-de-bogdan-woodsdad",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-fanzone-rapzone",
-    "title": "Fanzone Rapzone : Pays-Bas – Suède",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte",
-      "Rendez-vous"
-    ],
-    "date": "2026-06-20",
-    "endDate": "2026-06-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_color3.jpg?itok=0kuG0S8Q",
-    "url": "https://lautrecanalnancy.fr/agenda/fanzone-rapzone",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-atelier-yoga-et-son-par-sphaera-mundi",
-    "title": "ATELIER YOGA ET SON",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous"
-    ],
-    "date": "2026-06-21",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/atelier_3._bain_sonore_c_cottonbro_studio.jpg?itok=DAirBXMz",
-    "url": "https://lautrecanalnancy.fr/agenda/atelier-yoga-et-son-par-sphaera-mundi",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-la-grande-tablee",
-    "title": "La Grande Tablée",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte"
-    ],
-    "date": "2026-06-21",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-034.jpg?itok=Xkyo7t-0",
-    "url": "https://lautrecanalnancy.fr/agenda/la-grande-tablee",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-scene-ouverte-de-la-fete-de-la-musique",
-    "title": "Scène Ouverte de la fête de la musique",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Concert",
-      "Halle ouverte"
-    ],
-    "date": "2026-06-21",
-    "endDate": "2026-06-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250516_bon_moment_clautre_canal15.jpeg?itok=l2FF32SB",
-    "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-de-la-fete-de-la-musique",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-12",
     "source": "autre-canal"
   },
   {
@@ -303,7 +65,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-chaleur-latine-coucher-de-soleil-sr-tumbao-dj-set-danse-salsa",
+    "uuid": "lcn-chaleur-latine-coucher-de-soleil-sr-tumbao-johnny-bountard-danse-salsa",
     "title": "Chaleur latine & coucher de soleil",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -321,7 +83,29 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/1_rouge_tumbao_copie.jpg?itok=gPIQLsRP",
-    "url": "https://lautrecanalnancy.fr/agenda/chaleur-latine-coucher-de-soleil-sr-tumbao-dj-set-danse-salsa",
+    "url": "https://lautrecanalnancy.fr/agenda/chaleur-latine-coucher-de-soleil-sr-tumbao-johnny-bountard-danse-salsa",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-marche-bio-et-local-13",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-07-03",
+    "endDate": "2026-07-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web8.jpg?itok=ipKsVB-E",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-13",
     "source": "autre-canal"
   },
   {
@@ -390,6 +174,28 @@
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/4_jaune_caprice_copie.jpg?itok=_4hocI84",
     "url": "https://lautrecanalnancy.fr/agenda/reverie-synthetique-grands-espaces-caprice-german-lola-jaguare",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-marche-bio-et-local-8",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-07-10",
+    "endDate": "2026-07-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-8",
     "source": "autre-canal"
   },
   {
@@ -549,6 +355,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-marche-bio-et-local-14",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-07-24",
+    "endDate": "2026-07-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-14",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-derives-electriques-energie-indocile-prairie-mairie-devore",
     "title": "Dérives électriques & énergie indocile",
     "category": "musiques-actuelles",
@@ -594,6 +422,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-marche-bio-et-local-15",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-08-07",
+    "endDate": "2026-08-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web8.jpg?itok=ipKsVB-E",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-15",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-elegance-rock-energie-debridee-derwich-nucleons-project",
     "title": "Élégance rock & énergie débridée",
     "category": "musiques-actuelles",
@@ -616,6 +466,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-marche-bio-et-local-16",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-08-14",
+    "endDate": "2026-08-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web8.jpg?itok=ipKsVB-E",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-16",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-sonic-curves-2026",
     "title": "Sonic Curves 2026",
     "category": "musiques-actuelles",
@@ -634,6 +506,28 @@
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/13_rouge_sonic_copie.jpg?itok=5yg1DXry",
     "url": "https://lautrecanalnancy.fr/agenda/sonic-curves-2026",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-marche-bio-et-local-17",
+    "title": "Marché bio et local",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Halle ouverte",
+      "Rendez-vous"
+    ],
+    "date": "2026-08-21",
+    "endDate": "2026-08-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-17",
     "source": "autre-canal"
   },
   {
@@ -726,7 +620,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-marche-bio-et-local-concert-mensuel-duel-ome-festival",
+    "uuid": "lcn-marche-bio-et-local-concert-mensuel-duel",
     "title": "Marché bio et local",
     "category": "activite",
     "catLabel": "Activités & ateliers",
@@ -744,7 +638,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-duel-ome-festival",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-duel",
     "source": "autre-canal"
   },
   {
@@ -838,11 +732,33 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-congres-2026-du-sma",
+    "title": "Congrès 2026 du SMA",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Pro"
+    ],
+    "date": "2026-09-14",
+    "endDate": "2026-09-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/3-scaled_copie_2.jpg?itok=MGsznri0",
+    "url": "https://lautrecanalnancy.fr/agenda/congres-2026-du-sma",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-petit-moment-septembre",
     "title": "Petit Moment – Septembre",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
     "subcats": [],
     "date": "2026-09-17",
     "endDate": "2026-09-17",
@@ -850,8 +766,8 @@
     "schedule": "",
     "place": "L'Autre Canal",
     "city": "Nancy",
-    "free": true,
-    "reservation": false,
+    "free": false,
+    "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-034.jpg?itok=Xkyo7t-0",
     "url": "https://lautrecanalnancy.fr/agenda/petit-moment-septembre",
     "source": "autre-canal"
@@ -878,8 +794,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-peet",
-    "title": "Peet",
+    "uuid": "lcn-sync-peet-sozzaa",
+    "title": "SYNC",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -896,7 +812,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_3_-_dominique_brion.jpeg?itok=rgeC9G67",
-    "url": "https://lautrecanalnancy.fr/agenda/peet",
+    "url": "https://lautrecanalnancy.fr/agenda/sync-peet-sozzaa",
     "source": "autre-canal"
   },
   {
@@ -1510,6 +1426,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-les-femmes-s-en-melent",
+    "title": "Les Femmes s'en Mêlent",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Rap"
+    ],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/676-field_illustration_id-1780510116.jpg?itok=ZbkdlRPN",
+    "url": "https://lautrecanalnancy.fr/agenda/les-femmes-s-en-melent",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-transformer-le-negatif-en-positif-cycle-4-de-la-5e-la-terminale",
     "title": "Transformer le Négatif en Positif",
     "category": "jeune-public",
@@ -1753,6 +1691,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-les-louanges",
+    "title": "Les Louanges",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop"
+    ],
+    "date": "2027-02-11",
+    "endDate": "2027-02-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/745-field_illustration_id-1781268433.jpg?itok=YCX0zXp7",
+    "url": "https://lautrecanalnancy.fr/agenda/les-louanges",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-seth-gueko",
     "title": "Seth Gueko",
     "category": "musiques-actuelles",
@@ -1953,6 +1913,29 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-les-tambours-du-bronx-classic-show-ckraft",
+    "title": "Les Tambours du Bronx - Classic Show",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Jazz Metal",
+      "Percussion industrielle"
+    ],
+    "date": "2027-03-20",
+    "endDate": "2027-03-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/625-field_illustration_id-1780581089.jpg?itok=MAZwllYI",
+    "url": "https://lautrecanalnancy.fr/agenda/les-tambours-du-bronx-classic-show-ckraft",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-flrsn-du-cycle-4-4e-la-terminale",
     "title": "FLRSN",
     "category": "jeune-public",
@@ -2061,6 +2044,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/adele_castillon_-_2011x1340_copie.jpg?itok=Ns6FAYeo",
     "url": "https://lautrecanalnancy.fr/agenda/adele-castillon",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-deluxe",
+    "title": "Deluxe",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Electropop"
+    ],
+    "date": "2027-04-23",
+    "endDate": "2027-04-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dlx-25-v2_cpilou_1080x1350.jpg?itok=GaqeDMqJ",
+    "url": "https://lautrecanalnancy.fr/agenda/deluxe",
     "source": "autre-canal"
   },
   {

@@ -80,9 +80,9 @@ const TODAY_ISO = (() => { const d = new Date();
 // sans régénération de data.js.
 const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
 
-// Ruban « Nouveau » : événement ajouté il y a ≤ 7 jours (champ addedAt posé par
+// Ruban « Nouveau » : événement ajouté il y a ≤ 3 jours (champ addedAt posé par
 // update-events.js). Cohérent avec la galerie et la page Nouveautés.
-const NEW_SINCE_ISO = (() => { const d = new Date(); d.setDate(d.getDate() - 7);
+const NEW_SINCE_ISO = (() => { const d = new Date(); d.setDate(d.getDate() - 3);
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; })();
 const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
 
@@ -91,9 +91,11 @@ const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
 const isMulti = (ev) => { const s = (ev.date || "").slice(0, 10), e = (ev.endDate || "").slice(0, 10); return !!e && e > s; };
 // Tri : d'abord TOUS les mono-jour (par date croissante), puis TOUS les
 // multi-jours (par date croissante). render() insère un titre à la bascule.
-const sortedEvents = dedupEvents(EVENTS)
-  .filter(notPast)
-  .sort((a, b) => (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || ""));
+const sortEvents = (a, b) => (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || "");
+// `extra` = events approuvés soumis par les utilisateurs (Supabase, via
+// user-events.js), fusionnés aux events statiques ; re-calculé après chargement.
+const buildSorted = (extra) => dedupEvents(EVENTS.concat(extra || [])).filter(notPast).sort(sortEvents);
+let sortedEvents = buildSorted();
 
 // ---------- Favoris (persistés via localStorage, partagés avec la vue Galerie) ----------
 // Clé stable = titre + date (data.js de prod minifié SANS uuid). On stocke
@@ -104,7 +106,9 @@ function favLoad() { try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {
 function favSave() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {} }
 let favs = favLoad();
 (function prunePast() { let ch = false; for (const k of Object.keys(favs)) if ((favs[k] || "") < TODAY_ISO) { delete favs[k]; ch = true; } if (ch) favSave(); })();
-function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || ""); }
+// Clé stable = titre + date + lieu + ville (cf. galerie.js) : distingue les
+// fiches homonymes du même jour dans deux communes, sinon un favori les marque toutes.
+function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || "") + "|" + normKey(ev.place) + "|" + normKey(ev.city); }
 function isFav(ev) { return favKey(ev) in favs; }
 function toggleFav(ev) {
   const k = favKey(ev);
@@ -619,9 +623,9 @@ function cardHTML(ev, i) {
           <div>${icon.clock}<span>${escapeHtml(dateLabel(ev))}</span></div>
           ${place ? `<div>${icon.pin}<span>${escapeHtml(place)}</span></div>` : ""}
         </div>
-        <a class="card__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">
+        ${ev.url ? `<a class="card__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener" data-i="${i}">
           Plus d'infos ${icon.arrow}
-        </a>
+        </a>` : ""}
       </div>
     </article>`;
 }
@@ -642,6 +646,9 @@ function render() {
   els.count.textContent = n === 0 ? "" : `${n} événement${n > 1 ? "s" : ""} à venir`;
   els.grid.querySelectorAll(".fav-btn").forEach(btn =>
     btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(renderList[Number(btn.dataset.i)], btn); }));
+  // Compteur de clics (events utilisateurs) : ouverture de fiche = clic "Plus d'infos".
+  els.grid.querySelectorAll(".card__cta").forEach(a =>
+    a.addEventListener("click", () => { if (window.trackUserEventClick) trackUserEventClick(renderList[Number(a.dataset.i)]); }));
   updateFilterCounts();
 }
 
@@ -684,3 +691,13 @@ buildDateFilters();
 buildFilters();
 buildToolbar();
 render();
+
+// Fusion asynchrone des événements approuvés soumis par les utilisateurs (Supabase).
+if (window.loadApprovedUserEvents) {
+  loadApprovedUserEvents().then((extra) => {
+    if (!extra || !extra.length) return;
+    sortedEvents = buildSorted(extra);
+    buildFilters();
+    render();
+  });
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon espace — Agenda du Grand-Nancy</title>
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="compte.css">
+</head>
+<body data-view="compte">
+  <header class="site-header">
+    <h1><a href="index.html" class="home-link">Agenda du Grand-Nancy</a></h1>
+    <p class="tagline">Espace organisateur — publiez vos événements</p>
+  </header>
+
+  <main class="compte-main">
+    <!-- ÉTAT NON CONNECTÉ : lien magique -->
+    <section id="auth" class="card-pane" hidden>
+      <h2>Connexion / Inscription</h2>
+      <p>Recevez un lien de connexion par email. Pas de mot de passe.</p>
+      <form id="auth-form">
+        <label>Email
+          <input type="email" id="auth-email" required placeholder="vous@exemple.fr" autocomplete="email">
+        </label>
+        <button type="submit" class="btn-primary">Recevoir mon lien</button>
+      </form>
+      <p id="auth-msg" class="msg" hidden></p>
+    </section>
+
+    <!-- ÉTAT CONNECTÉ -->
+    <section id="app" class="card-pane" hidden>
+      <div class="app-head">
+        <span id="who"></span>
+        <button id="logout" class="btn-ghost">Se déconnecter</button>
+      </div>
+
+      <nav class="tabs">
+        <button class="tab is-active" data-tab="publish">Publier un événement</button>
+        <button class="tab" data-tab="mine">Mes événements</button>
+      </nav>
+
+      <!-- FORMULAIRE -->
+      <div id="tab-publish" class="tab-pane">
+        <form id="event-form">
+          <input type="hidden" id="ev-id">
+
+          <label>Type *
+            <select id="ev-kind">
+              <option value="event">Culturel / Événement</option>
+              <option value="sport">Sportif (club amateur)</option>
+            </select>
+          </label>
+
+          <label>Titre *
+            <input type="text" id="ev-title" required maxlength="140">
+          </label>
+
+          <label id="row-category">Catégorie *
+            <select id="ev-category" required></select>
+          </label>
+
+          <label id="row-sport" hidden>Sport *
+            <select id="ev-sport"></select>
+          </label>
+
+          <div class="row">
+            <label>Date de début *
+              <input type="date" id="ev-date" required>
+            </label>
+            <label>Date de fin <small>(si plusieurs jours)</small>
+              <input type="date" id="ev-end">
+            </label>
+          </div>
+
+          <label>Horaire <small>(ex : 20h30, 14h–18h)</small>
+            <input type="text" id="ev-schedule" maxlength="60">
+          </label>
+
+          <div class="row">
+            <label>Lieu *
+              <input type="text" id="ev-place" required maxlength="120">
+            </label>
+            <label>Ville *
+              <input type="text" id="ev-city" required maxlength="80">
+            </label>
+          </div>
+
+          <div id="row-sportextra" hidden>
+            <div class="row">
+              <label>Division <small>(optionnel)</small>
+                <input type="text" id="ev-division" maxlength="80">
+              </label>
+              <label>Catégorie d'âge <small>(optionnel)</small>
+                <input type="text" id="ev-age" maxlength="60" placeholder="U15, Séniors…">
+              </label>
+            </div>
+            <label>Adversaire <small>(optionnel)</small>
+              <input type="text" id="ev-opponent" maxlength="120">
+            </label>
+          </div>
+
+          <label id="row-desc">Description *
+            <textarea id="ev-desc" required rows="5" maxlength="2000"></textarea>
+          </label>
+
+          <label>Lien « Plus d'infos » <small>(optionnel)</small>
+            <input type="url" id="ev-url" placeholder="https://…">
+          </label>
+
+          <div class="checks">
+            <label class="inline"><input type="checkbox" id="ev-free"> Gratuit</label>
+            <label class="inline"><input type="checkbox" id="ev-resa"> Réservation requise</label>
+          </div>
+
+          <label id="row-image">Affiche / image * <small>(JPG ou PNG, 5 Mo max)</small>
+            <input type="file" id="ev-image" accept="image/png,image/jpeg">
+          </label>
+          <img id="ev-preview" class="preview" hidden alt="">
+
+          <button type="submit" class="btn-primary" id="ev-submit">Publier</button>
+          <button type="button" class="btn-ghost" id="ev-cancel" hidden>Annuler l'édition</button>
+          <p id="ev-msg" class="msg" hidden></p>
+        </form>
+        <p class="hint">Chaque événement est vérifié automatiquement par une IA avant
+          publication (contenu cohérent, image appropriée). Vous verrez son statut
+          dans « Mes événements » en quelques secondes.</p>
+      </div>
+
+      <!-- MES ÉVÉNEMENTS -->
+      <div id="tab-mine" class="tab-pane" hidden>
+        <p id="mine-empty" class="msg" hidden>Aucun événement pour l'instant.</p>
+        <ul id="mine-list" class="mine-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config-supabase.js"></script>
+  <script src="data.js"></script>
+  <script src="compte.js"></script>
+</body>
+</html>

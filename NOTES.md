@@ -120,6 +120,13 @@
   fausses polices (𝐒𝐚𝐥𝐬𝐚) normalisés par NFKC. Sur 1 vraie page: 274 events, 204 villes, 274 adresses. BRANCHÉ dans
   update-events.js (13e source, filtre date>=today, dédup inter-sources). Les fichiers view-source/.mhtml du dossier sont
   ignorés sans dommage (0 event). Pas dans refresh-all.sh (source perso, manuelle).
+  AFFICHES FB: la voie carte ne donne PAS d'image (`image:null`). `fb-posters.js` la récupère APRÈS facebook.js:
+  pour chaque uuid `fb-<id>`, l'URL stable `https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=<id>`
+  sert l'affiche en image/jpeg UNIQUEMENT à un UA crawler (`facebookexternalhit/1.1`) — un navigateur reçoit du HTML de
+  redirection, donc on DOIT télécharger côté serveur + réhéberger en local. Stocke `images/fb/<id>.jpg`, écrit
+  `image:"images/fb/<id>.jpg"` dans events-facebook.json, puis `node update-events.js` propage dans data.js. Resize
+  `sips -Z 900 -s formatOptions 68` (~118 Ko/img). `images/fb/**` ré-autorisé dans `.assetsignore`. ~319/342 ont une
+  affiche (23 events sans cover). Re-télécharge: `node fb-posters.js [--force]`.
 - import-ics.js expose désormais `resolveCategoryFrom({categories,title,description,location})`: essaie CATEGORIES puis
   titre, sinon titre+description+lieu réunis (rattrape les titres vagues). Réutilisé par facebook.js.
 - 14e SOURCE — L'Autre Canal (SMAC, musiques actuelles, lautrecanalnancy.fr): `autre-canal.js` → `events-autre-canal.json`
@@ -163,7 +170,19 @@
 - ⚠️ VUES (réorg demande user): GALERIE = vue PAR DÉFAUT → `index.html` + `galerie.js` (mur de posters, clic → lightbox).
   CARTES = `cartes.html` + `app.js`. BASE DE DONNÉES = `base.html`/`base.js`/`base.css` TOUJOURS PRÉSENTE mais RETIRÉE de
   la nav PROD (plus aucun lien depuis index/cartes ; accessible par URL directe seulement, outil de dev). Sélecteur de vue
-  = 2 entrées (Galerie/Cartes). galerie.html SUPPRIMÉ (contenu déplacé dans index.html). style.css partagé par les 2 vues.
+  = 3 entrées (Galerie/Cartes/Nouveautés). galerie.html SUPPRIMÉ (contenu déplacé dans index.html). style.css partagé.
+- NOUVEAUTÉS (demande user) : `nouveautes.html` (3e vue) RÉUTILISE `galerie.js` via `body[data-view="nouveautes"]` (flag
+  `NOUVEAUTES`) — pas de JS dédié. En ce mode : pas de filtres date/catégorie/avancés ni toolbar (juste recherche + lightbox) ;
+  `renderNouveautes()` liste les events `addedAt >= J-7` (FENÊTRE 7 JOURS), triés addedAt DESC, GROUPÉS (`<h2.nouv-group>`
+  grid-column:1/-1) : aujourd'hui / ces 7 derniers jours. Ruban 🆕 `.poster__new`/`.card__new` (vert #16a34a) sur galerie
+  ET cartes pour `addedAt >= J-7` (`isNew`). DÉFINITION user = « nouvel ajout sur une source, reste 7 j ».
+  ⚠️⚠️ DONNÉE : `addedAt` posé par update-events.js depuis `events-firstseen.json` {**uuid** → dateISO 1re vue}.
+  CLÉ = `uuid` (identifiant STABLE de la source), surtout PAS `titre|date` : `date` est recalé sur aujourd'hui pour les
+  events EN COURS (expos) → keying titre|date faisait apparaître ~150 events déjà présents comme « nouveaux » chaque jour
+  (bug corrigé 2026-06-17). Nouveau = date du jour, sinon conservé. 1er remplissage = PRÉ-DATAGE de l'existant à J-45 (sinon
+  tout serait "nouveau" le jour 1) → page démarre VIDE, se remplit aux vrais ajouts. ⚠️ Si on rechange la clé, SUPPRIMER
+  events-firstseen.json avant de relancer (sinon les anciennes clés font tout passer en "nouveau"). Purge des clés absentes
+  ET vues >60j. `addedAt` survit au durcissement dist/ (seuls source+uuid retirés). firstseen committé (`git add events-*.json`).
 - FILTRES DATE (demande user): uniquement Tout · Aujourd'hui · Ce week-end · « choisir des dates ». Cartes (app.js) =
   chips + CALENDRIER popover. Galerie (galerie.js) = chips + 2 champs date natifs (state.customFrom/customTo, when="custom").
   ⚠️ Si tu rebranches d'autres chips (semaine/mois), garde les 2 vues alignées.
@@ -207,7 +226,22 @@
   `GET /api/refresh` = recrawl des 7 sources en fond. `AUTO_REFRESH=1` (ex-`DN_AUTO_REFRESH`) = recrawl périodique
   échelonné toutes les SNAP_TTL (6h). ⚠️ Par défaut AUTO_REFRESH OFF: c'est le cron quotidien (refresh-all.sh +
   launchd, cf. plus bas) qui rafraîchit les snapshots sur disque — pas besoin de double-crawler dans le serveur.
-- PRODUCTION / DÉPLOIEMENT (site public pour d'autres) — site 100% statique hébergé sur **Netlify** :
+- ⚠️⚠️ PRODUCTION = **CLOUDFLARE (Workers Static Assets)**, PLUS Netlify (2026-06). Domaine public https://agenda-grandnancy.fr.
+  Déploiement = `npx wrangler deploy` (config `wrangler.jsonc`, worker `evenement-nancy`, account tgabriel, url technique
+  evenement-nancy.tgabriel.workers.dev). Auth = `npx wrangler login` (OAuth navigateur, PAS de token en env).
+  ⚠️ MAJ 2026-06-17 : `wrangler.jsonc` pointe désormais `assets.directory` sur **`dist`** (build DURCI), PLUS sur la racine `.`.
+  → On ne déploie plus les fichiers bruts : `deploy-cloudflare.sh` assemble `dist/` (front public uniquement), MINIFIE data.js
+  en RETIRANT `source`+`uuid` (mais GARDE `addedAt`), injecte GoatCounter + `?v=` anti-cache, puis `wrangler deploy`. Du coup
+  `.assetsignore` (allowlist racine) n'est PLUS utilisé (dist/ ne contient que le public). ⚠️ Tout nouveau fichier PUBLIC doit
+  être ajouté à la liste `FILES` de `deploy-cloudflare.sh` (et au `<script>/<link>` de la page), sinon absent en prod. ICÔNES
+  écran d'accueil (apple-touch 180, icon-192/512 + maskable, favicon-16/32) + `site.webmanifest` dans la liste FILES.
+- ✅ AUTOMATISATION CORRIGÉE (2026-06-17) : `refresh-all.sh` appelle désormais **`deploy-cloudflare.sh`** (build durci →
+  wrangler deploy sur Cloudflare), PLUS `deploy-site.sh` (Netlify mort). Le data.js régénéré chaque nuit arrive donc
+  directement en prod sur le domaine. ⚠️ Le cron local (launchd) déploie car `wrangler login` est fait sur le Mac ; GitHub
+  Actions ne déploie PAS (juste commit data.js) — il faudrait un CLOUDFLARE_API_TOKEN en secret pour l'y ajouter.
+  Cloudflare HÉBERGE les fichiers (site up 24/7 même Mac éteint) ; le Mac ne sert qu'à lancer le refresh+deploy quotidien.
+  `deploy-site.sh` (Netlify) n'est PLUS appelé — conservé pour mémoire mais à supprimer un jour. (ancien Netlify ci-dessous.)
+- PRODUCTION / DÉPLOIEMENT (HISTORIQUE Netlify, NE PLUS UTILISER) — site 100% statique :
   https://agenda-nancy.netlify.app (siteId dans `.netlify/state.json`). PAS de serveur Node en prod (le mode hors-ligne
   data.js suffit, maj 1×/jour). Chaîne: `refresh-all.sh` (launchd `com.evenement-nancy.refresh`, tous les jours 05h00)
   lance les 7 scrapers + `update-events.js` PUIS `deploy-site.sh`. ⚠️ PUBLIC = VUE CARTES UNIQUEMENT (pas de Base de

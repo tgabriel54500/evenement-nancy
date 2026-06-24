@@ -1,0 +1,68 @@
+/* compte.css — espace organisateur. Réutilise les variables de style.css. */
+.compte-main { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
+
+.card-pane {
+  background: var(--card, #fff);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 30px -12px rgba(0,0,0,.18);
+}
+.card-pane h2 { margin-top: 0; font-family: "Fraunces", serif; }
+
+.home-link { color: inherit; text-decoration: none; }
+
+form label { display: block; margin: .9rem 0 .2rem; font-weight: 600; font-size: .9rem; }
+form label small { font-weight: 400; opacity: .65; }
+form input, form select, form textarea {
+  width: 100%; padding: .6rem .7rem; margin-top: .25rem;
+  border: 1px solid rgba(0,0,0,.18); border-radius: 10px; font: inherit; box-sizing: border-box;
+}
+form textarea { resize: vertical; }
+.row { display: grid; grid-template-columns: 1fr 1fr; gap: .8rem; }
+.checks { display: flex; gap: 1.4rem; margin: 1rem 0; }
+label.inline { display: flex; align-items: center; gap: .4rem; font-weight: 500; margin: 0; }
+label.inline input { width: auto; margin: 0; }
+
+.btn-primary {
+  margin-top: 1.2rem; padding: .7rem 1.4rem; border: 0; border-radius: 999px;
+  background: var(--accent, #c9603f); color: #fff; font-weight: 700; cursor: pointer;
+}
+.btn-primary:disabled { opacity: .6; cursor: default; }
+.btn-ghost {
+  padding: .5rem 1rem; border: 1px solid rgba(0,0,0,.2); border-radius: 999px;
+  background: transparent; cursor: pointer; font: inherit; margin-top: 1.2rem;
+}
+.btn-ghost.danger { color: #b3261e; border-color: rgba(179,38,30,.4); }
+
+.preview { max-width: 220px; border-radius: 10px; margin-top: .6rem; display: block; }
+
+.msg { margin-top: .8rem; padding: .6rem .8rem; border-radius: 10px; background: rgba(0,0,0,.05); }
+.msg.ok { background: rgba(40,140,70,.12); color: #1c6b38; }
+.msg.err { background: rgba(179,38,30,.12); color: #b3261e; }
+.hint { font-size: .82rem; opacity: .7; margin-top: 1rem; }
+
+.app-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.app-head .btn-ghost { margin-top: 0; }
+#who { font-weight: 600; }
+
+.tabs { display: flex; gap: .5rem; margin: 1.2rem 0; border-bottom: 1px solid rgba(0,0,0,.1); }
+.tab { background: none; border: 0; padding: .6rem .9rem; cursor: pointer; font: inherit; font-weight: 600;
+  border-bottom: 3px solid transparent; opacity: .6; }
+.tab.is-active { opacity: 1; border-bottom-color: var(--accent, #c9603f); }
+
+.mine-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+.mine-item { display: flex; gap: 1rem; padding: 1rem; border: 1px solid rgba(0,0,0,.1); border-radius: 12px; }
+.mine-thumb { width: 90px; height: 90px; object-fit: cover; border-radius: 8px; flex: 0 0 auto; }
+.mine-body { flex: 1; display: flex; flex-direction: column; gap: .35rem; }
+.mine-meta { font-size: .85rem; opacity: .75; }
+.mine-reason { font-size: .82rem; color: #b3261e; }
+.mine-stats { font-size: .85rem; font-weight: 600; }
+.mine-actions { display: flex; gap: .6rem; margin-top: .3rem; }
+.mine-actions .btn-ghost { margin-top: 0; padding: .35rem .8rem; font-size: .85rem; }
+
+.badge { display: inline-block; padding: .15rem .55rem; border-radius: 999px; font-size: .78rem; font-weight: 700; width: fit-content; }
+.st-pending { background: rgba(200,150,0,.16); color: #8a6d00; }
+.st-ok { background: rgba(40,140,70,.16); color: #1c6b38; }
+.st-no { background: rgba(179,38,30,.14); color: #b3261e; }
+
+@media (max-width: 560px) { .row { grid-template-columns: 1fr; } }

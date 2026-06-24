@@ -19,5 +19,8 @@ ics-facebook/
 # Build du site statique publié sur Netlify (régénéré par deploy-site.sh)
 dist/
 
+# Build du site de staging (régénéré par deploy-staging.sh)
+dist-staging/
+
 # Local Netlify folder
 .netlify

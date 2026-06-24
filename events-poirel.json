@@ -1,23 +1,23 @@
 [
   {
-    "uuid": "po-8e28efd4-a907-11f0-84e1-bd2b83c22b6a",
-    "title": "ARTDECO)))",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
+    "uuid": "po-9323f8c6-fd1c-11f0-afb4-cd45c314adc0",
+    "title": "La Semaine du Théâtre",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
     "subcats": [
-      "Exposition"
+      "Evénement"
     ],
-    "date": "2026-06-14",
-    "endDate": "2026-06-21",
-    "dateText": "Du 21 novembre 2025 au 21 juin 2026",
-    "schedule": "de 14h à 18h",
-    "place": "Galerie Poirel",
+    "date": "2026-06-24",
+    "endDate": "2026-06-26",
+    "dateText": "Du 22 au 26 juin 2026",
+    "schedule": "18h30",
+    "place": "Conservatoire régional du Grand Nancy",
     "city": "Nancy",
     "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8e28efd4-a907-11f0-84e1-bd2b83c22b6a/0/1-1_M_68ee5ea0df49e.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8e28efd4-a907-11f0-84e1-bd2b83c22b6a",
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9323f8c6-fd1c-11f0-afb4-cd45c314adc0/0/1-1_M_6a194f2969d03.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=9323f8c6-fd1c-11f0-afb4-cd45c314adc0",
     "source": "poirel"
   },
   {
@@ -29,7 +29,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-06-14",
+    "date": "2026-06-24",
     "endDate": "2026-07-25",
     "dateText": "Du 10 juin au 25 juillet 2026",
     "schedule": "de 14h à 18h",
@@ -39,54 +39,6 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-c582c77a-5456-11f1-b6eb-870ee69f7597",
-    "title": "Cercles / Concert - Duo Fabrice Bez & Atsushi Sakai",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Spectacle",
-      "Concert",
-      "Culture"
-    ],
-    "date": "2026-06-22",
-    "endDate": "2026-06-22",
-    "dateText": "Lundi 22 juin 2026",
-    "schedule": "de 19h à 20h",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c582c77a-5456-11f1-b6eb-870ee69f7597/0/ORIGINE_M_6a0dc2b45db8f.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c582c77a-5456-11f1-b6eb-870ee69f7597",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-100ae99e-c5f0-11f0-b691-a98b289b3fb3",
-    "title": "Un monde de méchants",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Danse",
-      "Spectacle",
-      "Théâtre",
-      "Concert",
-      "Musique de chambre / chorale"
-    ],
-    "date": "2026-06-23",
-    "endDate": "2026-06-23",
-    "dateText": "Mardi 23 juin 2026",
-    "schedule": "de 19h30 à 21h30",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/100ae99e-c5f0-11f0-b691-a98b289b3fb3/0/ORIGINE_M_691ed9da22b20.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=100ae99e-c5f0-11f0-b691-a98b289b3fb3",
     "source": "poirel"
   },
   {
@@ -108,6 +60,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b0ad2dca-05ca-11f1-8140-615365ee25e1/0/ORIGINE_M_6989faf12c78c.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=b0ad2dca-05ca-11f1-8140-615365ee25e1",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e",
+    "title": "Concert caritatif au profit des blessés de l'armée de terre",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-07-04",
+    "endDate": "2026-07-04",
+    "dateText": "Samedi 4 juillet 2026",
+    "schedule": "de 19h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e/0/ORIGINE_M_6a32622a0a451.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=fb1a905e-6a2a-11f1-8a4b-27a894f2aa1e",
     "source": "poirel"
   },
   {

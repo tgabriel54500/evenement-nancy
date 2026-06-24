@@ -11,5 +11,18 @@
   "compatibility_date": "2025-06-01",
   "assets": {
     "directory": "dist"
+  },
+  // STAGING — bac à sable. `wrangler deploy --env staging` publie un 2e worker
+  // (evenement-nancy-staging) sur une URL gratuite *.workers.dev, séparé de la
+  // prod. Il déploie dist-staging/ (assemblé par deploy-staging.sh : noindex, sans
+  // GoatCounter). La prod (champ racine ci-dessus) n'est jamais touchée.
+  "env": {
+    "staging": {
+      "name": "evenement-nancy-staging",
+      "workers_dev": true,
+      "assets": {
+        "directory": "dist-staging"
+      }
+    }
   }
 }

@@ -23,9 +23,15 @@
 !sitemap.xml
 !_headers
 !site.webmanifest
+!logo.svg
 !apple-touch-icon.png
 !icon-192.png
 !icon-512.png
 !icon-maskable-512.png
 !favicon-16.png
 !favicon-32.png
+
+# 3) Page Sport amateur + config Supabase publique (anon key, sécurité = RLS).
+!sport.html
+!sport.js
+!config-supabase.js
