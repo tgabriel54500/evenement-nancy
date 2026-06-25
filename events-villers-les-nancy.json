@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -75,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-24",
+    "date": "2026-06-25",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "",
@@ -85,50 +85,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-103",
-    "title": "Repair café",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Environnement"
-    ],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "18h30 à 21h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-249",
-    "title": "Transhumance des brebis du Grand Nancy au parc de Brabois !",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Education",
-      "Environnement",
-      "Petite enfance"
-    ],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "7h à 12h",
-    "place": "Parc de Brabois",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/DSC05831.JPG",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/transhumance-des-brebis-du-grand-nancy-au-parc-de-brabois",
     "source": "villers-les-nancy"
   },
   {

@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-neil-young",
-    "title": "Neil Young and The Chrome Hearts",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "Mercredi 24 juin 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/GDP_NeilYoung-2026-META-StoryInstaFB-1080x1920_Nancy-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/neil-young/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-orelsan",
     "title": "ORELSAN",
     "category": "musiques-actuelles",
@@ -294,8 +273,8 @@
     "source": "zenith-nancy"
   },
   {
-    "uuid": "zen-les-musiques-de-hans-zimmer-alain-silvestri",
-    "title": "LES MUSIQUES DE HANS ZIMMER &#038; ALAIN SILVESTRI",
+    "uuid": "zen-les-musiques-de-hans-zimmer-alan-silvestri",
+    "title": "LES MUSIQUES DE HANS ZIMMER &#038; ALAN SILVESTRI",
     "category": "spectacle",
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
@@ -311,7 +290,7 @@
     "free": false,
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/2026-04_zimmer_williams_WEB_Zenith-Nancy-1191x1684-1-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alain-silvestri/",
+    "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alan-silvestri/",
     "source": "zenith-nancy"
   },
   {
