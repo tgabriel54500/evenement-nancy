@@ -954,6 +954,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-5364",
+    "title": "Inscriptions « Vand’sport et Eveil sportif »",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2025-09-03",
+    "endDate": "2026-06-24",
+    "dateText": "Du 3 septembre 2025 au 24 juin 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-26370",
     "title": "Mouv’Santé",
     "category": "sante",
@@ -1013,67 +1034,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-5364",
-    "title": "Inscriptions « Vand’sport et Eveil sportif »",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "Du 3 septembre 2025 au 24 juin 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28674",
-    "title": "Spectacle “Tous en scène”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Seniors"
-    ],
-    "date": "2026-06-24",
-    "endDate": "2026-06-24",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Ferme du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/spectacle-tous-en-scene/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-23267",
-    "title": "Barbecue du CCAS",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [],
-    "date": "2026-06-25",
-    "endDate": "2026-06-25",
-    "dateText": "",
-    "schedule": "12h",
-    "place": "Espace Prévert",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/barbecue-du-ccas/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-22613",
     "title": "Stage de sculpture enfant",
     "category": "culture",
@@ -1111,7 +1071,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
     "source": "vandoeuvre"
   },
@@ -1130,7 +1090,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
     "source": "vandoeuvre"
   },
@@ -1149,7 +1109,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
     "source": "vandoeuvre"
   },
@@ -1233,7 +1193,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
     "source": "vandoeuvre"
   },
@@ -1254,7 +1214,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1351,7 +1311,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1370,7 +1330,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1389,8 +1349,67 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-26341",
+    "title": "Visite libre – Guadeloupe-Martinique-Guyane",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-08-05",
+    "endDate": "2026-08-05",
+    "dateText": "",
+    "schedule": "De 14h30 à 17h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/visite-libre-guadeloupe-martinique-guyane/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-14945",
+    "title": "Discovery Tour – Égypte ancienne",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Jeunes"
+    ],
+    "date": "2026-08-12",
+    "endDate": "2026-08-12",
+    "dateText": "",
+    "schedule": "De 13h30 à 17h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/03/discovery-tour-ancienne-egypte.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/discovery-tour-egypte-ancienne/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-28825",
+    "title": "Conférence Hudson River School",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-08-29",
+    "endDate": "2026-08-29",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
   {
@@ -1429,7 +1448,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }

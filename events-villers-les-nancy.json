@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-25",
+    "date": "2026-06-26",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-06-25",
+    "date": "2026-06-26",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -54,7 +54,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-25",
+    "date": "2026-06-26",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -75,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-25",
+    "date": "2026-06-26",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "",
@@ -85,30 +85,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-505",
-    "title": "Dépistage gratuit du diabète de type 2",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Solidarité",
-      "Sénior",
-      "Sport",
-      "Petite enfance"
-    ],
-    "date": "2026-06-25",
-    "endDate": "2026-06-25",
-    "dateText": "",
-    "schedule": "9h à 16h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2025/depistage.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/depistage-gratuit-du-diabete-de-type-2",
     "source": "villers-les-nancy"
   },
   {
@@ -343,6 +319,28 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-299",
+    "title": "Les greniers de Clairlieu",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "",
+    "schedule": "7h à 18h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/grenier.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-greniers-de-clairlieu",
     "source": "villers-les-nancy"
   },
   {
