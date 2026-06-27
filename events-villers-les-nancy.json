@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-26",
+    "date": "2026-06-27",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -21,31 +21,6 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-569",
-    "title": "Permanences - Avec vous pour vos droits",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Citoyenneté",
-      "Solidarité",
-      "Sénior",
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-06-26",
-    "endDate": "2026-07-30",
-    "dateText": "",
-    "schedule": "15h30 > 18h",
-    "place": "Clairlieu",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-553",
     "title": "Exposition - Laque : 4 regards",
     "category": "exposition",
@@ -54,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-26",
+    "date": "2026-06-27",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -75,8 +50,8 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-26",
-    "endDate": "2026-06-27",
+    "date": "2026-06-27",
+    "endDate": "2026-06-29",
     "dateText": "",
     "schedule": "",
     "place": "",
@@ -96,7 +71,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-26",
+    "date": "2026-06-27",
     "endDate": "2026-06-27",
     "dateText": "",
     "schedule": "20h30",
@@ -169,6 +144,31 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/un_cafe__dans_votre_quartier.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/un-sourire-un-cafe-dans-ton-quartier",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-569",
+    "title": "Permanences - Avec vous pour vos droits",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-07-02",
+    "endDate": "2026-07-30",
+    "dateText": "",
+    "schedule": "15h30 > 18h",
+    "place": "Clairlieu",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
     "source": "villers-les-nancy"
   },
   {
@@ -259,6 +259,29 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-577",
+    "title": "Balade contée dans le parc de Brabois",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Education",
+      "Environnement",
+      "Culture"
+    ],
+    "date": "2026-07-20",
+    "endDate": "2026-07-20",
+    "dateText": "",
+    "schedule": "18h à 20h30",
+    "place": "Parc de Brabois",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/baladecontee.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/balade-contee-dans-le-parc-de-brabois",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-574",
     "title": "Ciné plein air - Retour vers le futur",
     "category": "conference",
@@ -298,6 +321,29 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-le-comte-de-monte-cristo",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-578",
+    "title": "Balade nature au fil de l'eau",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Education",
+      "Environnement",
+      "Culture"
+    ],
+    "date": "2026-08-25",
+    "endDate": "2026-08-25",
+    "dateText": "",
+    "schedule": "16h à 18h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/eau_parc.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/balade-nature-au-fil-de-leau",
     "source": "villers-les-nancy"
   },
   {

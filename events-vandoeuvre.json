@@ -1095,25 +1095,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28579",
-    "title": "Nuit des églises",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "20h et 22h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/nuit-des-eglises/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-9732",
     "title": "Fête des Associations – ANNULE",
     "category": "culture",

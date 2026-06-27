@@ -756,6 +756,27 @@
     "source": "zenith-nancy"
   },
   {
+    "uuid": "zen-le-lac-des-cygnes",
+    "title": "Le Lac des Cygnes",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Ballet"
+    ],
+    "date": "2027-04-29",
+    "endDate": "2027-04-29",
+    "dateText": "Jeudi 29 avril 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2024/04/LAC-27-vertical-low-res-FR-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/le-lac-des-cygnes/",
+    "source": "zenith-nancy"
+  },
+  {
     "uuid": "zen-nino-arial",
     "title": "Nino Arial",
     "category": "spectacle",
