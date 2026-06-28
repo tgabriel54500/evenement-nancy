@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-orelsan",
-    "title": "ORELSAN",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "Samedi 27 juin 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Orelsan_NOA_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/orelsan/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-tayc-jokair-bekar-dakeez",
     "title": "TAYC – JOK’AIR – BEKAR &#8211; DAKEEZ",
     "category": "musiques-actuelles",

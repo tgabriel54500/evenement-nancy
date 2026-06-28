@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-27",
+    "date": "2026-06-28",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-27",
+    "date": "2026-06-28",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -50,7 +50,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-27",
+    "date": "2026-06-28",
     "endDate": "2026-06-29",
     "dateText": "",
     "schedule": "",
@@ -60,48 +60,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-564",
-    "title": "Théâtre en plein air // ANNULÉ",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/roele.png",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/theatre-en-plein-air",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-448",
-    "title": "Gala de danse",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/gala-de-danse",
     "source": "villers-les-nancy"
   },
   {

@@ -1034,67 +1034,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-22613",
-    "title": "Stage de sculpture enfant",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "De 10h à 11h30",
-    "place": "Maison des Jeunes et de la Culture",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/stage-de-sculpture-enfant/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28427",
-    "title": "Junior Book Club",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "10h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/junior-book-club-2/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28502",
-    "title": "Concert des Orchestres à Vents",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-06-27",
-    "endDate": "2026-06-27",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Salle des Fêtes",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/concert-des-orchestres-a-vents/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-9732",
     "title": "Fête des Associations – ANNULE",
     "category": "culture",
@@ -1174,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
     "source": "vandoeuvre"
   },
@@ -1195,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1292,7 +1231,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1311,7 +1250,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1330,7 +1269,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1389,7 +1328,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1429,7 +1368,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/04/cluny-clunisien.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/gymnastique.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }
