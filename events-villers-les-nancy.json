@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-28",
+    "date": "2026-06-29",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-28",
+    "date": "2026-06-29",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -50,7 +50,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-28",
+    "date": "2026-06-29",
     "endDate": "2026-06-29",
     "dateText": "",
     "schedule": "",
@@ -60,27 +60,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-566",
-    "title": "Concert : Musiques pour cordes et chœur",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-28",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "16h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/Illustration_seule_concert_Arcovivo_ensemble_vocal_28_juin_2026.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-musiques-pour-cordes-et-choeur",
     "source": "villers-les-nancy"
   },
   {
