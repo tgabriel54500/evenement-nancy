@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-29",
+    "date": "2026-06-30",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-06-29",
+    "date": "2026-06-30",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -39,27 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-232",
-    "title": "Semaine musicale de MusicaVillers",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-06-29",
-    "endDate": "2026-06-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/semainemusicale.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/semaine-musicale-de-musicavillers",
     "source": "villers-les-nancy"
   },
   {
