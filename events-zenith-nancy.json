@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-tayc-jokair-bekar-dakeez",
-    "title": "TAYC – JOK’AIR – BEKAR &#8211; DAKEEZ",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-07-01",
-    "endDate": "2026-07-01",
-    "dateText": "Mercredi 1 juillet 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2024/01/Plateau-Rap_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/tayc-jokair-bekar-dakeez/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-le-roi-soleil",
     "title": "LE ROI SOLEIL",
     "category": "spectacle",

@@ -1059,46 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-22411",
-    "title": "Visite libre – Sport",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-07-01",
-    "endDate": "2026-07-01",
-    "dateText": "",
-    "schedule": "De 14h30 à 17h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/visite-libre-sport/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28685",
-    "title": "40 ans de l’association AVEC",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-07-01",
-    "endDate": "2026-07-01",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "Salle des Fêtes",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/40-ans-de-lassociation-avec/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28590",
     "title": "Concert “A Kind of Queen”",
     "category": "culture",
@@ -1115,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
     "source": "vandoeuvre"
   },
@@ -1195,7 +1155,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tournoi-landry-nguemo/",
     "source": "vandoeuvre"
   },
@@ -1233,7 +1193,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1254,7 +1214,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
     "source": "vandoeuvre"
   },
@@ -1273,7 +1233,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1292,7 +1252,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1351,7 +1311,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1391,7 +1351,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/kind-queen.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }
