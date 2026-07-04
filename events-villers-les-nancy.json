@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-07-03",
+    "date": "2026-07-04",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -64,27 +64,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-226",
-    "title": "Ciné plein air - Astérix et Obélix Mission Cléopâtre",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-07-03",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "22h30",
-    "place": "Parc Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-asterix-et-obelix-mission-cleopatre",
     "source": "villers-les-nancy"
   },
   {

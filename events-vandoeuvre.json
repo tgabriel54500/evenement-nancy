@@ -1059,27 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28590",
-    "title": "Concert “A Kind of Queen”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-07-03",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "Ecole de musique",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/concert-a-kind-of-magic/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-15849",
     "title": "Kermesse AVEC",
     "category": "famille",
@@ -1155,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tournoi-landry-nguemo/",
     "source": "vandoeuvre"
   },
@@ -1193,7 +1172,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1214,8 +1193,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-23211",
+    "title": "Concert Nancyphonies",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "dateText": "",
+    "schedule": "16h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/concert-nancyphonies/",
     "source": "vandoeuvre"
   },
   {
@@ -1233,7 +1231,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1252,7 +1250,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1311,7 +1309,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1351,7 +1349,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/bal-guinguette-pour-tous.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }
