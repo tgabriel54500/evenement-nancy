@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-le-roi-soleil",
-    "title": "LE ROI SOLEIL",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-07-04",
-    "endDate": "2026-07-04",
-    "dateText": "Samedi 4 juillet 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Le-Roi-Soleil_NOA_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/le-roi-soleil/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-star-academy",
     "title": "STAR ACADEMY",
     "category": "musiques-actuelles",

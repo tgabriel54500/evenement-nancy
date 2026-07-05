@@ -1059,65 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-15849",
-    "title": "Kermesse AVEC",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [],
-    "date": "2026-07-04",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "dés 11h30",
-    "place": "Place du marché",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/06/kermesse-avec.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/kermesse-avec/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-24385",
-    "title": "Club Lecture “Les chasseurs de récits”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-07-04",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "10h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-27314",
-    "title": "20 000 jeux sous les pixels",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-07-04",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "De 14h à 17h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/20-000-jeux-sous-les-pixels-3/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28836",
     "title": "Tournoi Landry Nguemo",
     "category": "jeunesse",
@@ -1134,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tournoi-landry-nguemo/",
     "source": "vandoeuvre"
   },
@@ -1172,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1193,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
     "source": "vandoeuvre"
   },
@@ -1231,7 +1172,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
     "source": "vandoeuvre"
   },
@@ -1250,7 +1191,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1309,7 +1250,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1349,7 +1290,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   }
