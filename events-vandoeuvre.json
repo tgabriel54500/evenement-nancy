@@ -1059,27 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28836",
-    "title": "Tournoi Landry Nguemo",
-    "category": "jeunesse",
-    "catLabel": "Jeunesse",
-    "catEmoji": "🧑",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-07-05",
-    "endDate": "2026-07-05",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "Parc des Sports",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/tournoi-landry-nguemo/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-15796",
     "title": "Vide grenier et soirée dansante Quartier Tourtel",
     "category": "famille",
