@@ -55,5 +55,24 @@
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_fete-nationale-neuvesmaisons.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1113-neuves-maisons-une-soiree-festive-et-un-feu-dartifice-pour-celebrer-la-fete-nationale/2026-07-11-20-00.html",
     "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1131",
+    "title": "KATY PERRY AU NANCY OPEN AIR 2026",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2026-07-12",
+    "endDate": "2026-07-12",
+    "dateText": "",
+    "schedule": "20:00",
+    "place": "Maxéville, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_concert-katy-perry-nancy.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1131-katy-perry-au-nancy-open-air-2026/2026-07-12-20-00.html",
+    "source": "ici-c-nancy"
   }
 ]
