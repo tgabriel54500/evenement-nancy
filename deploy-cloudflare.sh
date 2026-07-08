@@ -108,6 +108,113 @@ for page in index.html nouveautes.html; do
   ' "$DIST/$page" "$VER"
 done
 
+# ─────────────────────────────────────────────────────────────────────────────
+# SEO (build uniquement, sources intactes) : 3 ajouts auto-maintenus chaque nuit.
+#   1) og:image + twitter (aperçu visuel des partages WhatsApp/FB/LinkedIn/SMS)
+#   2) JSON-LD schema.org/Event (résultats enrichis Google : dates, lieux, carrousel)
+#   3) sitemap.xml régénéré (lastmod du jour, seulement les pages réellement publiées)
+TODAY="$(date +%F)"
+SITE="https://agenda-grandnancy.fr"
+
+# 1) og:image (partages) — injecté dans le <head> si absent. Image carrée 512 en v1
+#    (pas d'outil de génération 1200×630 sur la machine ; suffisant pour un aperçu).
+for page in index.html nouveautes.html; do
+  [ -f "$DIST/$page" ] || continue
+  node -e '
+    const fs = require("fs");
+    const [p, site] = process.argv.slice(1);
+    let h = fs.readFileSync(p, "utf8");
+    const img = site + "/icon-512.png";
+    if (!/property="og:image"/i.test(h)) {
+      const tags =
+        "  <meta property=\"og:image\" content=\"" + img + "\">\n" +
+        "  <meta property=\"og:image:width\" content=\"512\">\n" +
+        "  <meta property=\"og:image:height\" content=\"512\">\n" +
+        "  <meta property=\"og:image:alt\" content=\"Agenda Grand Nancy\">\n" +
+        "  <meta name=\"twitter:image\" content=\"" + img + "\">\n";
+      h = h.replace(/<\/head>/i, tags + "</head>");
+    }
+    fs.writeFileSync(p, h);
+  ' "$DIST/$page" "$SITE"
+done
+
+# 2) JSON-LD schema.org/Event — ItemList des événements À VENIR (date >= aujourd'hui),
+#    injecté seulement dans index.html (page d'accueil = la liste). Cap à 80 pour ne
+#    pas alourdir le HTML ; Google lit dates + lieux → résultats enrichis "Événements".
+if [ -f "$DIST/index.html" ] && [ -f "$DIST/data.js" ]; then
+  node -e '
+    const fs = require("fs");
+    const [pHtml, pData, today, site] = process.argv.slice(1);
+    const code = fs.readFileSync(pData, "utf8");
+    const { EVENTS } = new Function(code + "; return { EVENTS };")();
+    const esc = s => String(s == null ? "" : s);
+    const items = EVENTS
+      .filter(e => e && e.date && e.date >= today && e.title && e.place)
+      .sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0)
+      .slice(0, 80)
+      .map((e, i) => ({
+        "@type": "ListItem",
+        position: i + 1,
+        item: {
+          "@type": "Event",
+          name: esc(e.title),
+          startDate: esc(e.date),
+          endDate: esc(e.endDate || e.date),
+          eventStatus: "https://schema.org/EventScheduled",
+          eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+          location: {
+            "@type": "Place",
+            name: esc(e.place),
+            address: {
+              "@type": "PostalAddress",
+              addressLocality: esc(e.city || "Nancy"),
+              addressRegion: "Grand Est",
+              addressCountry: "FR"
+            }
+          },
+          ...(e.image ? { image: [esc(e.image)] } : {}),
+          ...(e.url ? { url: esc(e.url) } : {}),
+          isAccessibleForFree: !!e.free,
+          organizer: { "@type": "Organization", name: "Agenda Grand Nancy", url: site + "/" }
+        }
+      }));
+    const ld = {
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      name: "Événements à venir dans le Grand Nancy",
+      itemListElement: items
+    };
+    // </ dans le JSON casserait la balise <script> → on échappe le slash.
+    const json = JSON.stringify(ld).replace(/<\//g, "<\\/");
+    let h = fs.readFileSync(pHtml, "utf8");
+    h = h.replace(/\s*<script type="application\/ld\+json">[\s\S]*?<\/script>/i, "");
+    const tag = "  <script type=\"application/ld+json\">" + json + "</script>\n";
+    h = h.replace(/<\/head>/i, tag + "</head>");
+    fs.writeFileSync(pHtml, h);
+    console.log("  JSON-LD Event injecté : " + items.length + " événements à venir");
+  ' "$DIST/index.html" "$DIST/data.js" "$TODAY" "$SITE"
+fi
+
+# 3) sitemap.xml régénéré : lastmod du jour + SEULEMENT les pages publiées (index +
+#    nouveautes). L'ancien listait sport.html (masqué en prod → 404 pour Google) et
+#    avait des dates figées ; on écrase la copie du build (source inchangée).
+if [ -f "$DIST/sitemap.xml" ]; then
+  node -e '
+    const fs = require("fs");
+    const [p, today, site] = process.argv.slice(1);
+    const xml =
+      "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n" +
+      "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n" +
+      "  <url>\n    <loc>" + site + "/</loc>\n    <lastmod>" + today +
+      "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n" +
+      "  <url>\n    <loc>" + site + "/nouveautes.html</loc>\n    <lastmod>" + today +
+      "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n" +
+      "</urlset>\n";
+    fs.writeFileSync(p, xml);
+  ' "$DIST/sitemap.xml" "$TODAY" "$SITE"
+  echo "  sitemap.xml régénéré (lastmod $TODAY, sport.html retiré)"
+fi
+
 # DURCISSEMENT data.js : on retire les métadonnées internes qui révèlent la MÉTHODE
 # d'agrégation (champ `source` qui nomme chaque site, `uuid` préfixé par source) et
 # on minifie (JSON compact). app.js/galerie.js n'utilisent ni source ni uuid → 0
