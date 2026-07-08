@@ -137,6 +137,42 @@ function titleKey(title) {
     .trim();
 }
 
+// Mots vides / génériques (types d'événement, années, "nancy") : ignorés pour
+// comparer deux titres reformulés d'une source à l'autre. On ne garde que les
+// mots DISTINCTIFS (noms propres, sujet) qui identifient réellement l'événement.
+const TITLE_STOP = new Set(
+  ("de la le les des du un une et a au aux en dans par pour avec sur " +
+   "recital concert visite guidee guidees commentee flash spectacle exposition expo " +
+   "atelier ateliers festival soiree stage stages loisirs animations estivales edition " +
+   "nancy 2024 2025 2026 2027 2028").split(" "));
+
+function sigTokens(title) {
+  return new Set(slugKey(title).split(" ").filter((w) => w.length > 2 && !TITLE_STOP.has(w)));
+}
+function jaccard(a, b) {
+  if (!a.size || !b.size) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return inter / (a.size + b.size - inter);
+}
+// Deux titres désignent-ils le MÊME événement ? Vrai si : clés canoniques égales,
+// OU les mots distinctifs de l'un sont inclus dans l'autre (≥2 mots), OU fort
+// recouvrement (Jaccard ≥ 0,6) avec ≥2 mots distinctifs communs. Le double
+// garde-fou (≥2 mots) évite de fusionner deux titres courts qui ne partagent
+// qu'un mot ("Saison 2026" vs "La Saison des Jardiniers"). Attrape en revanche les
+// reformulations et inversions ("X - récital de piano" vs "Récital de piano - X").
+function titleSimilar(a, b) {
+  const ka = titleKey(a), kb = titleKey(b);
+  if (ka && ka === kb) return true;
+  const ta = sigTokens(a), tb = sigTokens(b);
+  if (!ta.size || !tb.size) return false;
+  const small = ta.size <= tb.size ? ta : tb, big = ta.size <= tb.size ? tb : ta;
+  if (small.size >= 2 && [...small].every((x) => big.has(x))) return true;
+  let shared = 0;
+  for (const x of ta) if (tb.has(x)) shared++;
+  return jaccard(ta, tb) >= 0.6 && shared >= 2;
+}
+
 // Deux intervalles [date, endDate] se chevauchent-ils ?
 function overlap(a, b) {
   const as = a.date || "", ae = a.endDate || a.date || "";
@@ -186,26 +222,23 @@ function mergeCluster(cluster) {
   };
 }
 
-// Regroupe par titre, puis fusionne au sein d'un groupe les fiches dont les dates
-// se chevauchent ET le lieu est compatible. Retourne la liste dédoublonnée triée.
+// Fusionne le MÊME événement listé par plusieurs sources : clustering glouton des
+// fiches dont les DATES se chevauchent, le LIEU est compatible ET le TITRE désigne
+// le même événement (exact OU reformulé, cf. titleSimilar). On ne préfiltre plus
+// par titre exact (sinon les reformulations inter-sources échappaient au dédoublon-
+// nage). L'ordre du prédicat court-circuite le coûteux titleSimilar : overlap()
+// (comparaison de chaînes) élimine d'emblée la quasi-totalité des paires (dates
+// différentes). Un titre vide n'est jamais fusionné (titleSimilar → false).
 function dedupeCrossSource(events) {
-  const byTitle = new Map();
+  const clusters = [];
   for (const e of events) {
-    const k = titleKey(e.title);
-    if (!k) { byTitle.set("∅" + (byTitle.size), [e]); continue; } // titre vide : jamais fusionné
-    if (!byTitle.has(k)) byTitle.set(k, []);
-    byTitle.get(k).push(e);
+    const c = clusters.find((cl) =>
+      cl.some((x) => overlap(x, e) && placeCompat(x, e) && titleSimilar(x.title, e.title)));
+    if (c) c.push(e); else clusters.push([e]);
   }
-  const out = [];
-  for (const group of byTitle.values()) {
-    const clusters = [];
-    for (const e of group) {
-      const c = clusters.find((cl) => cl.some((x) => overlap(x, e) && placeCompat(x, e)));
-      if (c) c.push(e); else clusters.push([e]);
-    }
-    for (const cl of clusters) out.push(cl.length > 1 ? mergeCluster(cl) : cl[0]);
-  }
-  return out.sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+  return clusters
+    .map((cl) => (cl.length > 1 ? mergeCluster(cl) : cl[0]))
+    .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
 }
 
 // ── 4. Période d'affichage pour les événements sur plusieurs jours ───────────

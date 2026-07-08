@@ -203,10 +203,17 @@
   (casse/accents/tirets via table CITY_CANON Grand Nancy + anneau; ex "NANCY"→"Nancy", "VANDOEUVRE LES NANCY"→
   "Vandœuvre-lès-Nancy") — INDISPENSABLE pour tout filtre/regroupement géo; (2) `remapCategory` replie les thèmes
   parasites (culture/famille/sport/nature/sante/social/…→canonique) → on RESTE à 10 catégories canoniques; (3)
-  `dedupeCrossSource` fusionne le même event listé par ≥2 sources (titre normalisé sans préfixe de type "Exposition –"
-  + CHEVAUCHEMENT de dates + lieu compatible), garde la fiche la plus riche (priorité source SRC_RANK). Effet mesuré:
-  1132→989 events (143 doublons fusionnés), 16→10 catégories. ⚠️ Les occurrences récurrentes à dates DISJOINTES restent
-  séparées (ce n'est PAS un doublon). (4) `fillPeriod` (session c15b829b): renseigne `dateText` des events MULTI-JOURS
+  `dedupeCrossSource` fusionne le même event listé par ≥2 sources. Clustering GLOUTON gardé par 3 conditions: (a)
+  CHEVAUCHEMENT de dates `overlap`, (b) lieu compatible `placeCompat` (identique/inclus/même ville), (c) titre = même
+  event `titleSimilar`. ⚠️ On ne préfiltre PLUS par titre exact (sinon les reformulations inter-sources "X - récital de
+  piano" vs "Récital de piano - X" échappaient). `titleSimilar`: clés égales OU mots DISTINCTIFS (hors stopwords
+  TITLE_STOP = types d'event/années/"nancy") de l'un ⊆ l'autre (≥2 mots) OU Jaccard≥0.6 avec ≥2 mots communs. Double
+  garde-fou ≥2 mots = évite de fusionner "Saison 2026" vs "La Saison des Jardiniers" (1 mot commun) ou 4 "Guinguette
+  Estivale - Cookoon/Carnot/Oasis/Laxou" (lieux distincts, 0 mot distinctif commun). Effet: ~280 doublons fusionnés.
+  Garde la fiche la plus riche (priorité source SRC_RANK). ⚠️ Résidus connus rares: typo dans un nom propre
+  (Arielle "Back" vs "Beck") + titre FB très court + `city` FB vide → pas fusionné. Les occurrences récurrentes à dates
+  DISJOINTES restent séparées (ce n'est PAS un doublon). L'ordre du prédicat court-circuite le coûteux titleSimilar
+  (overlap élimine d'emblée les paires à dates différentes). (4) `fillPeriod` (session c15b829b): renseigne `dateText` des events MULTI-JOURS
   qui en manquent → "Du J1 [mois] au J2 mois année", pour que la carte affiche la PÉRIODE et pas un jour unique
   (dateLabel front privilégie dateText). ⚠️ GARDE: seulement si `date > aujourd'hui` (futur), car `date` est calé sur
   aujourd'hui au tri pour les events EN COURS (vrai début perdu ici) → pour ceux-là on s'appuie sur le dateText posé
