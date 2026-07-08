@@ -2,11 +2,7 @@
 // Les données (CATEGORIES, EVENTS, GENERATED_AT) viennent de data.js,
 // régénéré depuis l'agenda officiel de Nancy via `node update-events.js`.
 
-const MONTHS_LONG = ["janvier", "février", "mars", "avril", "mai", "juin",
-  "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
-const MONTHS_SHORT = ["JANV", "FÉVR", "MARS", "AVR", "MAI", "JUIN",
-  "JUIL", "AOÛT", "SEPT", "OCT", "NOV", "DÉC"];
-
+// Cœur commun (MONTHS, dédoublonnage, dates, ruban Nouveautés, favoris) : events-core.js.
 // state.cats = ensemble des catégories cochées (multi-sélection, logique OU).
 // Vide = « Tout » (aucun filtre catégorie).
 const state = { cats: new Set(), query: "", when: "all", customFrom: "", customTo: "", price: "all", resa: "all", favOnly: false };
@@ -21,100 +17,8 @@ const els = {
   search: document.getElementById("search"),
 };
 
-function normKey(s) {
-  return String(s || "").trim().toLowerCase().replace(/\s+/g, " ");
-}
-
-// Fusionne plusieurs entrées d'un même événement en gardant les infos les plus
-// complètes (lieu/image renseignés, badges cumulés, sous-catégories réunies).
-function mergeOcc(occ) {
-  const rep = occ[0];
-  return {
-    ...rep,
-    place: rep.place || occ.map(e => e.place).find(Boolean) || "",
-    city: rep.city || occ.map(e => e.city).find(Boolean) || "",
-    image: rep.image || occ.map(e => e.image).find(Boolean) || null,
-    free: occ.some(e => e.free),
-    reservation: occ.some(e => e.reservation),
-    subcats: [...new Set(occ.flatMap(e => e.subcats || []))],
-    addedAt: occ.map(e => e.addedAt).filter(Boolean).sort().pop(),
-  };
-}
-
-// La source contient quelques doublons exacts (même titre, même date, même
-// lieu, uuid différents). On identifie un événement par titre + date + lieu :
-// ces doublons sont fusionnés, mais les occurrences d'un événement récurrent
-// (dates différentes) restent des fiches distinctes, chacune à sa date.
-// Un lieu manquant sur un doublon ne le distingue pas : il est rattaché à
-// l'entrée renseignée du même jour. Si un même intitulé se tient le même jour
-// dans deux lieux réels distincts, on conserve une fiche par lieu.
-function dedupEvents(events) {
-  const days = new Map();
-  for (const ev of events) {
-    const k = normKey(ev.title) + "|" + (ev.date || "");
-    if (!days.has(k)) days.set(k, []);
-    days.get(k).push(ev);
-  }
-  const merged = [];
-  for (const occ of days.values()) {
-    const venues = [...new Set(occ.map(e => normKey(e.place)).filter(Boolean))];
-    if (venues.length <= 1) {
-      merged.push(mergeOcc(occ));
-    } else {
-      // Lieux réels multiples : une fiche par lieu (les entrées sans lieu
-      // sont rattachées au premier).
-      venues.forEach((v, i) => {
-        merged.push(mergeOcc(occ.filter(e =>
-          normKey(e.place) === v || (i === 0 && !normKey(e.place)))));
-      });
-    }
-  }
-  return merged;
-}
-
-// Aujourd'hui (heure du navigateur) au format ISO, calculé une fois au chargement.
-const TODAY_ISO = (() => { const d = new Date();
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; })();
-// Un événement est PASSÉ si sa date de fin (ou sa date) est < aujourd'hui. On les
-// retire de l'affichage : le site se nettoie ainsi tout seul chaque jour, même
-// sans régénération de data.js.
-const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
-
-// Ruban « Nouveau » : événement ajouté il y a ≤ 3 jours (champ addedAt posé par
-// update-events.js). Cohérent avec la galerie et la page Nouveautés.
-const NEW_SINCE_ISO = (() => { const d = new Date(); d.setDate(d.getDate() - 3);
-  return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; })();
-const isNew = (ev) => !!(ev.addedAt && ev.addedAt >= NEW_SINCE_ISO);
-
-// Un événement est « multi-jours » si sa date de fin tombe un jour APRÈS son
-// début (comparaison sur la partie date seule, pas l'horaire).
-const isMulti = (ev) => { const s = (ev.date || "").slice(0, 10), e = (ev.endDate || "").slice(0, 10); return !!e && e > s; };
-// Tri : d'abord TOUS les mono-jour (par date croissante), puis TOUS les
-// multi-jours (par date croissante). render() insère un titre à la bascule.
-const sortEvents = (a, b) => (isMulti(a) - isMulti(b)) || (a.date || "").localeCompare(b.date || "");
-// `extra` = events approuvés soumis par les utilisateurs (Supabase, via
-// user-events.js), fusionnés aux events statiques ; re-calculé après chargement.
-const buildSorted = (extra) => dedupEvents(EVENTS.concat(extra || [])).filter(notPast).sort(sortEvents);
-let sortedEvents = buildSorted();
-
-// ---------- Favoris (persistés via localStorage, partagés avec la vue Galerie) ----------
-// Clé stable = titre + date (data.js de prod minifié SANS uuid). On stocke
-// {clé: endDate} et on PURGE au chargement les favoris dont l'événement est passé.
-const FAV_KEY = "agenda-nancy:favoris";
-const HEART = '<svg viewBox="0 0 24 24" class="heart" aria-hidden="true"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>';
-function favLoad() { try { return JSON.parse(localStorage.getItem(FAV_KEY)) || {}; } catch (e) { return {}; } }
-function favSave() { try { localStorage.setItem(FAV_KEY, JSON.stringify(favs)); } catch (e) {} }
-let favs = favLoad();
-(function prunePast() { let ch = false; for (const k of Object.keys(favs)) if ((favs[k] || "") < TODAY_ISO) { delete favs[k]; ch = true; } if (ch) favSave(); })();
-// Clé stable = titre + date + lieu + ville (cf. galerie.js) : distingue les
-// fiches homonymes du même jour dans deux communes, sinon un favori les marque toutes.
-function favKey(ev) { return normKey(ev.title) + "|" + (ev.date || "") + "|" + normKey(ev.place) + "|" + normKey(ev.city); }
-function isFav(ev) { return favKey(ev) in favs; }
-function toggleFav(ev) {
-  const k = favKey(ev);
-  if (k in favs) delete favs[k]; else favs[k] = ev.endDate || ev.date || "";
-  favSave();
-}
+// normKey / mergeOcc / dedupEvents / TODAY_ISO / notPast / isNew / isMulti /
+// sortEvents / buildSorted / sortedEvents / favoris → definis dans events-core.js.
 
 function dateParts(iso) {
   if (!iso) return { day: "?", month: "" };

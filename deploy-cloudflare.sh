@@ -2,7 +2,7 @@
 # Déploie le SITE STATIQUE (front public) sur CLOUDFLARE (Workers “Static Assets”).
 #
 # C'est le déploiement LIVE de agenda-grandnancy.fr. On assemble un dossier dist/
-# ne contenant QUE les fichiers réellement chargés par index.html / cartes.html /
+# ne contenant QUE les fichiers réellement chargés par index.html /
 # nouveautes.html (cf. leurs <script>/<link>) — surtout PAS les scrapers, snapshots
 # events-*.json ni NOTES.md — puis on publie via `wrangler deploy`.
 #
@@ -32,15 +32,17 @@ fi
 DIST="$PROJ/dist"
 mkdir -p "$DIST"
 
-# Version PUBLIQUE = Galerie (défaut) + Cartes + Nouveautés. PAS de Base de données.
-#   index.html → galerie.js ; cartes.html → app.js ; nouveautes.html → galerie.js
-#   (mode data-view) ; toutes → data.js + style.css. On NE publie PAS
+# Version PUBLIQUE = Galerie (défaut) + Nouveautés. PAS de Base de données NI de
+# vue Cartes.
+#   index.html → galerie.js ; nouveautes.html → galerie.js (mode data-view) ;
+#   toutes → data.js + events-core.js (cœur commun) + style.css. On NE publie PAS
+#   la vue Cartes (cartes.html/app.js, retirée de la nav, réservée au local), ni
 #   base.html/base.js/base.css ni details.js ni server.js (réservés au local).
 # NOTE : la feature "Sport / Publier" (clubs amateurs, Supabase) est EN COURS et
 # ne vit que sur STAGING (deploy-staging.sh). On NE l'inclut PAS dans le build
 # prod : ni sport.html/sport.js/config-supabase.js, ni les liens de nav (strippés
 # plus bas). Le working tree garde la feature — seul le build prod la masque.
-FILES="index.html cartes.html nouveautes.html galerie.js app.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
+FILES="index.html nouveautes.html galerie.js events-core.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
@@ -63,7 +65,7 @@ fi
 # GATE PROD : retire les liens de nav de la feature en cours (Sport / Publier) du
 # build prod uniquement. agenda-grandnancy.fr ne doit PAS exposer ces onglets tant
 # que la feature clubs/Supabase n'est pas validée (elle est testable sur staging).
-for page in index.html cartes.html nouveautes.html; do
+for page in index.html nouveautes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
@@ -77,7 +79,7 @@ done
 # Sur chaque page publiée on injecte le compteur de visites GoatCounter (privé, sans
 # cookie). Ces ajouts ne concernent QUE le build public dist/ : la version locale
 # reste propre. GoatCounter ignore localhost/file:// → seules les vraies visites comptent.
-for page in index.html cartes.html nouveautes.html; do
+for page in index.html nouveautes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
@@ -95,13 +97,13 @@ done
 # publié → les visiteurs (mobiles surtout, cache agressif) reçoivent chaque mise à
 # jour sans vider leur cache.
 VER="$(date +%Y%m%d%H%M)"
-for page in index.html cartes.html nouveautes.html; do
+for page in index.html nouveautes.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
     const [p, v] = process.argv.slice(1);
     let h = fs.readFileSync(p, "utf8");
-    h = h.replace(/(href|src)="(style\.css|app\.js|galerie\.js|data\.js)"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
+    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js)"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
     fs.writeFileSync(p, h);
   ' "$DIST/$page" "$VER"
 done
@@ -124,7 +126,7 @@ node -e '
   fs.writeFileSync(p, out);
 ' "$DIST/data.js"
 
-echo "dist/ assemblé ($(ls -1A "$DIST" | wc -l | tr -d ' ') fichiers, Galerie + Cartes + Nouveautés, data.js durci)."
+echo "dist/ assemblé ($(ls -1A "$DIST" | wc -l | tr -d ' ') fichiers, Galerie + Nouveautés, data.js durci)."
 
 # Publication sur Cloudflare. wrangler.jsonc → assets.directory = "dist".
 # OAuth déjà configuré (npx wrangler login) → non interactif en cron.

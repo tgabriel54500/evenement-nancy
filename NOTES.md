@@ -7,9 +7,14 @@
 ## Structure & conventions
 <!-- how things are arranged, naming, patterns to follow -->
 - Site statique pur (HTML/CSS/JS, aucun build). S'ouvre par double-clic sur index.html.
-- Vues: GALERIE (défaut)=index.html+galerie.js ; CARTES=cartes.html+app.js ; (style.css partagé). BASE DE DONNÉES=
-  base.html/base.js/base.css = hors nav prod (cf. section VUES plus bas).
+- Vues: GALERIE (défaut)=index.html+galerie.js ; CARTES=cartes.html+app.js (MASQUÉE: retirée de la nav + NON déployée
+  en prod, gardée en local seulement) ; (style.css partagé). BASE DE DONNÉES=base.html/base.js/base.css = hors nav prod.
 - data.js est GÉNÉRÉ (ne pas éditer à la main) — il définit CATEGORIES, GENERATED_AT, EVENTS.
+- CŒUR COMMUN = `events-core.js` (chargé <script> APRÈS data.js, AVANT galerie.js/app.js) : normKey, mergeOcc,
+  dedupEvents, TODAY_ISO, notPast, isNew, isMulti, sortEvents, buildSorted, `let sortedEvents`, `let favs`, FAV_KEY,
+  HEART, favLoad/Save, favKey, isFav, toggleFav. UNE seule source de vérité (avant: dupliqué dans galerie.js ET app.js).
+  ⚠️ galerie.js/app.js ne doivent PAS redéclarer ces symboles (scope lexical global partagé → SyntaxError sinon).
+  favKey = titre|date|lieu|ville (le lieu/ville distingue les fiches homonymes du même jour dans 2 communes).
 
 ## DRY — where things live
 <!-- components, pages, utils, hooks: paths + what they do -->
