@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -75,7 +75,7 @@
     "subcats": [
       "Environnement"
     ],
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "endDate": "2026-11-08",
     "dateText": "",
     "schedule": "10h",
@@ -98,7 +98,7 @@
       "Solidarité",
       "Petite enfance"
     ],
-    "date": "2026-07-08",
+    "date": "2026-07-09",
     "endDate": "2026-07-11",
     "dateText": "",
     "schedule": "",
@@ -156,6 +156,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-581",
+    "title": "Initiation à la pêche - Bassin de la Sance",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-07-22",
+    "endDate": "2026-08-19",
+    "dateText": "",
+    "schedule": "14h30 à 16h30",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2026/image-from-rawpixel-id-431179-original.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/initiation-a-la-peche-bassin-de-la-sance",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-574",
     "title": "Ciné plein air - Retour vers le futur",
     "category": "conference",
@@ -174,6 +195,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2024/cinemaplainair.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-plein-air-retour-vers-le-futur",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-580",
+    "title": "Un soir une commune : Camille Gauthier, ébéniste et industriel de l’Art nouveau ",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-07-31",
+    "endDate": "2026-07-31",
+    "dateText": "",
+    "schedule": "19h",
+    "place": "Le château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/Camille_Gauthier.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/un-soir-une-commune-camille-gauthier-ebeniste-et-industriel-de-lart-nouveau",
     "source": "villers-les-nancy"
   },
   {

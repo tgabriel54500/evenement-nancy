@@ -1092,7 +1092,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1113,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
     "source": "vandoeuvre"
   },
@@ -1132,7 +1132,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/deambulation-de-marionnettes-geantes/",
     "source": "vandoeuvre"
   },
@@ -1156,25 +1156,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28754",
-    "title": "Seniors : Croisière sur le Doubs et visite de la Citadelle de Besançon",
-    "category": "seniors",
-    "catLabel": "Seniors",
-    "catEmoji": "👵",
-    "subcats": [],
-    "date": "2026-07-24",
-    "endDate": "2026-07-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/seniors-croisiere-sur-le-doubs-et-visite-de-la-citadelle-de-besancon/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28587",
     "title": "Conférence “Le dragon oriental”",
     "category": "culture",
@@ -1189,7 +1170,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1248,7 +1229,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1288,7 +1269,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
