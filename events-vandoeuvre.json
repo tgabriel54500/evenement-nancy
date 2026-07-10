@@ -1255,6 +1255,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-11174",
+    "title": "Octobre rose",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Santé"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "De 10h à 17h",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/08/motyl.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/octobre-rose/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-28645",
     "title": "Grand concert ACCC",
     "category": "culture",
