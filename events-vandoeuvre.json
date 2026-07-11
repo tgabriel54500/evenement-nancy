@@ -1092,7 +1092,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1113,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
     "source": "vandoeuvre"
   },
@@ -1132,7 +1132,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/deambulation-de-marionnettes-geantes/",
     "source": "vandoeuvre"
   },
@@ -1170,7 +1170,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
     "source": "vandoeuvre"
   },
@@ -1229,8 +1229,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-28960",
+    "title": "Grande braderie sportive",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "",
+    "schedule": "De 10h à 16h",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
   {
@@ -1290,7 +1309,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/dragon-oriental.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },

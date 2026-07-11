@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1129",
-    "title": "JARVILLE-LA-MALGRANGE : LES GRANDS RENDEZ-VOUS DE LA COUPE DU MONDE DIFFUSÉS SUR ÉCRAN GÉANT",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-07-10",
-    "endDate": "2026-07-10",
-    "dateText": "",
-    "schedule": "21:00",
-    "place": "Jarville-la-Malgrange, France",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_soiree-foot.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1129-jarville-la-malgrange-les-grands-rendez-vous-de-la-coupe-du-monde-diffuses-sur-ecran-geant/2026-07-10-21-00.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1113",
     "title": "NEUVES-MAISONS : UNE SOIRÉE FESTIVE ET UN FEU D’ARTIFICE POUR CÉLÉBRER LA FÊTE NATIONALE",
     "category": "nature",
@@ -111,6 +92,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_dombasle-ceremonie-patriotique.png",
     "url": "https://www.ici-c-nancy.fr/agenda/1130-ceremonie-patriotique-lors-de-la-fete-nationale-a-dombasle-sur-meurthe/2026-07-13-18-30.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1111",
+    "title": "LUNÉVILLE : DÉFILÉ, BAL POPULAIRE ET FEU D’ARTIFICE POUR CÉLÉBRER LA FÊTE NATIONALE",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-07-13",
+    "endDate": "2026-07-13",
+    "dateText": "",
+    "schedule": "19:00",
+    "place": "Lunéville, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_fetenationale-luneville.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1111-luneville-defile-bal-populaire-et-feu-dartifice-pour-celebrer-la-fete-nationale/2026-07-13-19-00.html",
     "source": "ici-c-nancy"
   }
 ]
