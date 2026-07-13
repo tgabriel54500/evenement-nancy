@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-katy-perry",
-    "title": "KATY PERRY",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-07-12",
-    "endDate": "2026-07-12",
-    "dateText": "Dimanche 12 juillet 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/Katy-Perry_NOA_40x60_originale-4-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/katy-perry/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-la-dame-de-pierre",
     "title": "LA DAME DE PIERRE",
     "category": "spectacle",
