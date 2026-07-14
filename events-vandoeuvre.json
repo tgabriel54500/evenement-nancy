@@ -1314,6 +1314,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-28972",
+    "title": "Conférence sur l’héritage Prouvé",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-11934",
     "title": "Trail de Bois le Duc",
     "category": "sport",
@@ -1330,6 +1349,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/09/trail-bois-le-duc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/trail-de-bois-le-duc/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-28969",
+    "title": "Conférence sur les chevaliers",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
 ]

@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-13",
+    "date": "2026-07-14",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-13",
+    "date": "2026-07-14",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-07-13",
+    "date": "2026-07-16",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -67,46 +67,26 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-134",
-    "title": "Marche de nettoyage",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Environnement"
-    ],
-    "date": "2026-07-13",
-    "endDate": "2026-11-08",
-    "dateText": "",
-    "schedule": "10h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marchedenettoyage.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/marche-de-nettoyage",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-228",
-    "title": "13 juillet x Amours d’été",
+    "uuid": "vln-582",
+    "title": "UDPS - Réunion d'information ",
     "category": "citoyennete",
     "catLabel": "Citoyenneté",
     "catEmoji": "🤝",
     "subcats": [
+      "Associations",
       "Citoyenneté",
-      "Culture"
+      "Solidarité"
     ],
-    "date": "2026-07-13",
-    "endDate": "2026-07-13",
+    "date": "2026-07-16",
+    "endDate": "2026-07-16",
     "dateText": "",
-    "schedule": "",
-    "place": "Aire de jeux Graffigny",
+    "schedule": "18h",
+    "place": "",
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/fetenat.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/13-juillet-x-amours-dete",
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-13132892-original.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/udps-reunion-dinformation",
     "source": "villers-les-nancy"
   },
   {
@@ -193,6 +173,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/Camille_Gauthier.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/un-soir-une-commune-camille-gauthier-ebeniste-et-industriel-de-lart-nouveau",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-134",
+    "title": "Marches de nettoyage",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-08-02",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "10h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marchedenettoyage.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/marche-de-nettoyage",
     "source": "villers-les-nancy"
   },
   {
