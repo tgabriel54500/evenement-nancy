@@ -1059,25 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-15796",
-    "title": "Vide grenier et soirée dansante Quartier Tourtel",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [],
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "dateText": "",
-    "schedule": "de 8h30 à 23h",
-    "place": "Quartier Tourtel",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/06/vide-grenier-tourtel.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/vide-grenier-quartier-tourtel/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28641",
     "title": "Bal-guinguette pour tous",
     "category": "culture",
@@ -1092,7 +1073,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
     "source": "vandoeuvre"
   },
@@ -1113,7 +1094,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
     "source": "vandoeuvre"
   },
@@ -1132,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/deambulation-de-marionnettes-geantes/",
     "source": "vandoeuvre"
   },
@@ -1229,7 +1210,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1248,7 +1229,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1309,7 +1290,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1328,7 +1309,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1366,7 +1347,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/fabrique-livre-jeunesse.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
