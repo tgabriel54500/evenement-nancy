@@ -39,6 +39,12 @@ jobs:
           node alentoor.js          || echo "⚠ alentoor a échoué"
           node ici-c-nancy.js       || echo "⚠ ici-c-nancy a échoué"
           node zenith-nancy.js      || echo "⚠ zenith-nancy a échoué"
+          node poirel.js            || echo "⚠ poirel a échoué"
+          node laxou.js             || echo "⚠ laxou a échoué"
+          node ludres.js            || echo "⚠ ludres a échoué"
+          node autre-canal.js       || echo "⚠ autre-canal a échoué"
+          node essey.js             || echo "⚠ essey a échoué"
+          node lorraineaucoeur.js   || echo "⚠ lorraineaucoeur a échoué"
         # NB : on ne scrape PAS l'Est Républicain (réserve tdm-reservation:1).
         # L'import iCal ne traite que des .ics ajoutés manuellement au dépôt.
 

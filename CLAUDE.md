@@ -30,7 +30,7 @@ into your terminal:
 
 ### Messaging between sessions
 - Send a one-line note to a sibling session (or all of them):
-  `bash "$CAPYBAVIBE_DIR"/hooks/msg-send.sh <session-id|all> "message"`.
+  `node "$CAPYBAVIBE_DIR/hooks/hooks.mjs" msg-send <session-id|all> "message"`.
   Live session ids: `ls "$CAPYBAVIBE_DIR"/sessions/`.
 - Delivery is automatic — queued messages are injected into the target's context on
   its next tool call. **Never poll for messages yourself.**
@@ -48,3 +48,6 @@ into your terminal:
 - Make **atomic commits**. No worktree, **no merge**: everyone
   commits on the same branch of the shared checkout.
 <!-- capybavibe:end -->
+
+## Style
+- NEVER use em dashes (—) or en dashes (–) in any output. Use commas, parentheses, colons, or separate sentences instead.
