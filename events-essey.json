@@ -1,170 +1,44 @@
 [
   {
-    "uuid": "essey-places-vivres-sante-annule",
-    "title": "Places à VivreS Santé (annulé)",
+    "uuid": "essey-ouverture-au-public-du-terrain-synthetique-0",
+    "title": "Ouverture au public du terrain synthétique",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Vie sportive"
+    ],
+    "date": "2026-07-13",
+    "endDate": "2026-08-28",
+    "dateText": "",
+    "schedule": "9h à 12h",
+    "place": "Stade municipal (terrain synthétique)",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/terrain_synthetique_0_0_1.jpg?itok=U0NLBJsT",
+    "url": "https://www.esseylesnancy.fr/agenda/ouverture-au-public-du-terrain-synthetique-0",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-sortie-lac-de-la-madine",
+    "title": "Sortie Lac de la Madine",
     "category": "citoyennete",
     "catLabel": "Citoyenneté",
     "catEmoji": "🤝",
     "subcats": [
-      "Vie sociale"
+      "Vie municipale"
     ],
-    "date": "2026-06-26",
-    "endDate": "2026-06-26",
+    "date": "2026-07-16",
+    "endDate": "2026-07-16",
     "dateText": "",
-    "schedule": "15h30 à 18h30",
-    "place": "Allée Carl Fabergé",
+    "schedule": "9h à 19h",
+    "place": "Quartier Mouzimpré",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/place-a-vivres-sante.jpg?itok=0l8nrmyy",
-    "url": "https://www.esseylesnancy.fr/agenda/places-vivres-sante-annule",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-inscriptions-au-club-informatique",
-    "title": "Inscriptions au club informatique",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-06-26",
-    "endDate": "2026-06-26",
-    "dateText": "",
-    "schedule": "17h",
-    "place": "Maison des Associations",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_706474685_1.jpeg?itok=1OKlh1dp",
-    "url": "https://www.esseylesnancy.fr/agenda/inscriptions-au-club-informatique",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-fete-de-lete-annulee",
-    "title": "Fête de l'été (annulée)",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-06-27",
-    "endDate": "2026-06-28",
-    "dateText": "",
-    "schedule": "19h à 1h",
-    "place": "Parc Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/fete_de_lete_bis.jpg?itok=9vwX1Mw8",
-    "url": "https://www.esseylesnancy.fr/agenda/fete-de-lete-annulee",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-conseil-municipal-du-29-juin-2026",
-    "title": "Conseil municipal du 29 juin 2026",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Conseil municipal"
-    ],
-    "date": "2026-06-29",
-    "endDate": "2026-06-29",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Salle Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
-    "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-29-juin-2026",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-aperitif-dinatoire-du-conseil-de-quartier-centre-0",
-    "title": "Apéritif dînatoire du Conseil de quartier Centre",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Conseils de quartier"
-    ],
-    "date": "2026-07-03",
-    "endDate": "2026-07-03",
-    "dateText": "",
-    "schedule": "19h30 à 22h30",
-    "place": "Parc Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/aperitifs_dinatoires.jpeg?itok=GD7-DnBK",
-    "url": "https://www.esseylesnancy.fr/agenda/aperitif-dinatoire-du-conseil-de-quartier-centre-0",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-la-fete-mouzim",
-    "title": "La fête à Mouzim",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Manifestation culturelle"
-    ],
-    "date": "2026-07-04",
-    "endDate": "2026-07-04",
-    "dateText": "",
-    "schedule": "9h30 à 22h",
-    "place": "Espace Pierre de Lune",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/site-web_lafeteamouzim-2025_0.jpg?itok=XHNSSeg5",
-    "url": "https://www.esseylesnancy.fr/agenda/la-fete-mouzim",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-repair-cafe-du-9-juillet",
-    "title": "Repair Café du 9 juillet",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-07-09",
-    "endDate": "2026-07-09",
-    "dateText": "",
-    "schedule": "17h à 20h",
-    "place": "Foyer Foch",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
-    "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-9-juillet",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-essey-en-guinguette-et-brocante-musicale",
-    "title": "Essey en Guinguette et Brocante musicale",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Manifestation culturelle"
-    ],
-    "date": "2026-07-14",
-    "endDate": "2026-07-14",
-    "dateText": "",
-    "schedule": "14h30 à 21h",
-    "place": "Parc Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/site-essey_en_guinguette_1.jpg?itok=AmYorJLq",
-    "url": "https://www.esseylesnancy.fr/agenda/essey-en-guinguette-et-brocante-musicale",
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/sortie-lac-de-la-madine",
     "source": "essey"
   },
   {
@@ -186,6 +60,111 @@
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_210713066.jpeg?itok=PMOxB02W",
     "url": "https://www.esseylesnancy.fr/agenda/defile-de-mode-par-fayezo",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-sortie-parc-walygator",
+    "title": "Sortie parc Walygator",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-07-20",
+    "endDate": "2026-07-20",
+    "dateText": "",
+    "schedule": "9h à 19h",
+    "place": "Quartier Mouzimpré",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/sortie-parc-walygator",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-repas-partage-0",
+    "title": "Repas partagé",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-07-21",
+    "endDate": "2026-07-21",
+    "dateText": "",
+    "schedule": "10h à 14h",
+    "place": "Espace Pierre de Lune",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/repas-partage-0",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-atelier-creatif-2",
+    "title": "Atelier créatif",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-07-21",
+    "endDate": "2026-07-21",
+    "dateText": "",
+    "schedule": "14h à 16h",
+    "place": "Espace Pierre de Lune",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/atelier-creatif-2",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-sortie-parc-richard-pouille",
+    "title": "Sortie parc Richard Pouille",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-07-22",
+    "endDate": "2026-07-22",
+    "dateText": "",
+    "schedule": "10h à 17h",
+    "place": "Quartier Mouzimpré",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/sortie-parc-richard-pouille",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-sortie-parc-de-la-pepiniere",
+    "title": "Sortie parc de la Pépinière",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-07-23",
+    "endDate": "2026-07-23",
+    "dateText": "",
+    "schedule": "10h à 17h",
+    "place": "Quartier Mouzimpré",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/animtonquartier_long-illustration_0.jpg?h=5e467a33&amp;itok=2MHyrHky",
+    "url": "https://www.esseylesnancy.fr/agenda/sortie-parc-de-la-pepiniere",
     "source": "essey"
   },
   {
@@ -228,6 +207,27 @@
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/2024_06_13_077.jpg?itok=lXO7_283",
     "url": "https://www.esseylesnancy.fr/agenda/un-soir-une-commune",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-repetition-du-flash-mob-du-29-aout-0",
+    "title": "Répétition du Flash Mob du 29 août",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-08-26",
+    "endDate": "2026-08-26",
+    "dateText": "",
+    "schedule": "17h à 19h",
+    "place": "Salle Maringer",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_1767753983.jpeg?itok=rs8gbM8Y",
+    "url": "https://www.esseylesnancy.fr/agenda/repetition-du-flash-mob-du-29-aout-0",
     "source": "essey"
   },
   {
@@ -336,6 +336,27 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-reunion-publique-brocante-du-comite-des-fetes",
+    "title": "Réunion publique : Brocante du Comité des fêtes",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-09-02",
+    "endDate": "2026-09-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/brocante_1.jpg?itok=Ua3rhwIa",
+    "url": "https://www.esseylesnancy.fr/agenda/reunion-publique-brocante-du-comite-des-fetes",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-repair-cafe-du-10-septembre",
     "title": "Repair Café du 10 septembre",
     "category": "conference",
@@ -378,6 +399,27 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-theatre-oh-arrete-de-pleurer-penelope",
+    "title": "Théâtre : Oh ! Arrête de pleurer Pénélope !",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Vie culturelle"
+    ],
+    "date": "2026-09-16",
+    "endDate": "2026-09-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_64761036.jpeg?itok=uzKWFzs_",
+    "url": "https://www.esseylesnancy.fr/agenda/theatre-oh-arrete-de-pleurer-penelope",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-places-vivres-sante-festive",
     "title": "Places à VivreS Santé festive",
     "category": "citoyennete",
@@ -399,6 +441,48 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-journee-du-patrimoine",
+    "title": "Journée du Patrimoine",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Vie culturelle"
+    ],
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/journees-patrimoine-2026.jpg?itok=RQK6MNx0",
+    "url": "https://www.esseylesnancy.fr/agenda/journee-du-patrimoine",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-concert-du-choeur-des-cordeliers",
+    "title": "Concert du Chœur des Cordeliers",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Vie culturelle"
+    ],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_1929576451.jpeg?itok=oEcn0g4s",
+    "url": "https://www.esseylesnancy.fr/agenda/concert-du-choeur-des-cordeliers",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-conseil-municipal-du-21-septembre-2026",
     "title": "Conseil municipal du 21 septembre 2026",
     "category": "citoyennete",
@@ -417,6 +501,48 @@
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-21-septembre-2026",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-inauguration-de-lallee-victor-martin",
+    "title": "Inauguration de l'Allée Victor Martin",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/jardin-an-2000_0.jpg?itok=4eh5JWaG",
+    "url": "https://www.esseylesnancy.fr/agenda/inauguration-de-lallee-victor-martin",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-nuit-des-sports",
+    "title": "Nuit des sports",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Vie sportive"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2055406113.jpeg?itok=vj48cP9l",
+    "url": "https://www.esseylesnancy.fr/agenda/nuit-des-sports",
     "source": "essey"
   },
   {
