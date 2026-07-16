@@ -126,7 +126,7 @@
     "source": "zenith-nancy"
   },
   {
-    "uuid": "zen-casse-noisette-3",
+    "uuid": "zen-casse-noisette",
     "title": "Casse-Noisette",
     "category": "spectacle",
     "catLabel": "Spectacles",
@@ -141,9 +141,9 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette-3/",
+    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette/",
     "source": "zenith-nancy"
   },
   {
@@ -291,6 +291,27 @@
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
+    "source": "zenith-nancy"
+  },
+  {
+    "uuid": "zen-casse-noisette-2",
+    "title": "Casse-Noisette",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Danse"
+    ],
+    "date": "2027-01-07",
+    "endDate": "2027-01-07",
+    "dateText": "Jeudi 7 janvier 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/09/Casse-Noisette_40x60_originale-sans-logo-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette-2/",
     "source": "zenith-nancy"
   },
   {

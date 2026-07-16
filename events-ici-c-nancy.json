@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1116",
-    "title": "LANEUVEVILLE-DEVANT-NANCY : UNE FAN-ZONE POUR LES DEMI-FINALES ET LA FINALE DE LA COUPE DU MONDE DIFFUSÉES SUR ÉCRAN GÉANT",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-07-15",
-    "endDate": "2026-07-15",
-    "dateText": "",
-    "schedule": "21:00",
-    "place": "Laneuveville-devant-Nancy, France",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_fan-zone-laneuveville.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1116-laneuveville-devant-nancy-les-demi-finales-et-la-finale-de-la-coupe-du-monde-diffusees-sur-ecran-geant/2026-07-15-21-00.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1118",
     "title": "BLAINVILLE-DAMELEVIÈRES : LES POMPIERS RALLUMENT LE FEU DE LA FÊTE LE 18 JUILLET",
     "category": "autre",
@@ -35,6 +16,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_blainville-damelevieres.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1118-blainville-damelevieres-les-pompiers-rallument-le-feu-de-la-fete-le-18-juillet/2026-07-18-17-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1116",
+    "title": "LANEUVEVILLE-DEVANT-NANCY : UNE FAN-ZONE POUR LES DEMI-FINALES ET LA FINALE DE LA COUPE DU MONDE DIFFUSÉES SUR ÉCRAN GÉANT",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-07-19",
+    "endDate": "2026-07-19",
+    "dateText": "",
+    "schedule": "21:00",
+    "place": "Laneuveville-devant-Nancy, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_fan-zone-laneuveville.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1116-laneuveville-devant-nancy-les-demi-finales-et-la-finale-de-la-coupe-du-monde-diffusees-sur-ecran-geant/2026-07-19-21-00.html",
     "source": "ici-c-nancy"
   }
 ]

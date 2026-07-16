@@ -1059,46 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28641",
-    "title": "Bal-guinguette pour tous",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-07-15",
-    "endDate": "2026-07-15",
-    "dateText": "",
-    "schedule": "De 17h à 21h",
-    "place": "Parc Richard Pouille",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/bal-guinguette-pour-tous-2/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28863",
-    "title": "Le quartier de Venise fête l’été",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-07-15",
-    "endDate": "2026-07-15",
-    "dateText": "",
-    "schedule": "De 14h à 21h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/le-quartier-de-venise-fete-lete/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28892",
     "title": "Déambulation de marionnettes géantes",
     "category": "famille",
@@ -1113,7 +1073,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/deambulation-de-marionnettes-geantes/",
     "source": "vandoeuvre"
   },
@@ -1153,6 +1113,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-le-dragon-oriental-2/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-9675",
+    "title": "Exposition “Goûte l’Afrique”",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-08-05",
+    "endDate": "2026-08-05",
+    "dateText": "",
+    "schedule": "de 16h à 20h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/goute-afrique-2.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/exposition-goute-lafrique/",
     "source": "vandoeuvre"
   },
   {
@@ -1210,7 +1189,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1229,7 +1208,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1252,6 +1231,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/aremig.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-rando/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29001",
+    "title": "Réunion publique “Séjour seniors à Mittelwihr”",
+    "category": "seniors",
+    "catLabel": "Seniors",
+    "catEmoji": "👵",
+    "subcats": [],
+    "date": "2026-09-14",
+    "endDate": "2026-09-14",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
   {
@@ -1290,7 +1288,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/06/partir-en-livre.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1309,7 +1307,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1347,7 +1345,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
