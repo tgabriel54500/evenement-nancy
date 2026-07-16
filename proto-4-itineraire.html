@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Grand Nancy — Itinéraire</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===========================================================
+   D · ITINÉRAIRE — la ville comme un parcours. Une ligne tracée
+   relie les événements, groupés par moment de la journée
+   (Matin · Après-midi · Soir). Pierre claire, encre, or, bleu-route.
+   =========================================================== */
+:root{
+  --stone:#E9E9E2;          /* pierre claire de Nancy */
+  --stone-2:#F3F2EC;
+  --ink:#262521;
+  --ink-dim:#6B6960;
+  --gilt:#A9802E;           /* or des grilles, mat */
+  --route:#2E4B7A;          /* bleu itinéraire */
+  --rose:#B5594B;
+  --line:rgba(38,37,33,.14);
+  --display:"Fraunces",Georgia,serif;
+  --body:"Archivo",system-ui,sans-serif;
+  --maxw:1080px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--stone);color:var(--ink);font-family:var(--body);
+  line-height:1.55;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gilt);color:#fff}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,2rem)}
+.eyebrow{font-weight:600;text-transform:uppercase;letter-spacing:.24em;font-size:.68rem;color:var(--gilt)}
+
+.topbar{position:sticky;top:0;z-index:30;background:rgba(233,233,226,.85);
+  backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.topbar__in{display:flex;justify-content:space-between;align-items:center;
+  max-width:var(--maxw);margin:0 auto;padding:.8rem clamp(1.1rem,4vw,2rem)}
+.wordmark b{font-family:var(--display);font-weight:400;font-size:1.3rem}
+.wordmark span{font-size:.58rem;letter-spacing:.26em;text-transform:uppercase;color:var(--ink-dim);margin-left:.5rem}
+.topnav{display:flex;gap:1.4rem}.topnav a{font-size:.8rem;color:var(--ink-dim)}.topnav a:hover{color:var(--ink)}
+@media(max-width:640px){.topnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(2.5rem,6vw,4.5rem) 0 1.5rem;text-align:center;position:relative}
+.hero h1{font-family:var(--display);font-weight:300;font-size:clamp(2.6rem,7vw,5rem);
+  line-height:1;letter-spacing:-.01em;margin:1rem auto .9rem;max-width:14ch}
+.hero h1 em{font-style:italic;color:var(--gilt)}
+.hero p{color:var(--ink-dim);max-width:50ch;margin:0 auto;font-size:1.05rem}
+.hero__date{font-family:var(--display);font-style:italic;font-size:1.15rem;color:var(--route);margin-top:1.4rem}
+/* trait qui descend du hero vers le parcours */
+.lead-line{display:block;margin:1.6rem auto 0;width:2px;height:46px;
+  background:linear-gradient(var(--route),transparent)}
+
+/* contrôles disciplines */
+.cats{display:flex;flex-wrap:wrap;gap:.4rem;justify-content:center;margin:.5rem 0 2.5rem}
+.cat{border:1px solid var(--line);background:var(--stone-2);cursor:pointer;border-radius:999px;
+  font-family:var(--body);font-size:.8rem;color:var(--ink-dim);padding:.42rem .9rem;transition:.2s}
+.cat:hover{color:var(--ink)}
+.cat[aria-pressed="true"]{background:var(--ink);color:var(--stone);border-color:var(--ink)}
+
+/* ====== LE PARCOURS ====== */
+.route{position:relative;padding-left:clamp(2.2rem,7vw,4rem)}
+/* la ligne verticale du trajet */
+.route::before{content:"";position:absolute;left:clamp(.7rem,3.2vw,1.4rem);top:6px;bottom:40px;
+  width:2px;background:repeating-linear-gradient(var(--route) 0 8px,transparent 8px 16px)}
+.moment{margin-bottom:2.6rem}
+.moment__h{display:flex;align-items:center;gap:.8rem;margin:0 0 1.2rem;position:relative}
+.moment__h::before{content:"";position:absolute;left:calc(-1*clamp(2.2rem,7vw,4rem) + clamp(.7rem,3.2vw,1.4rem) - 6px);
+  width:14px;height:14px;border-radius:50%;background:var(--stone);border:2px solid var(--route)}
+.moment__h h2{font-family:var(--display);font-weight:400;font-size:1.5rem;margin:0}
+.moment__h .c{font-size:.74rem;color:var(--ink-dim);background:var(--stone-2);
+  border:1px solid var(--line);border-radius:999px;padding:.2rem .6rem}
+
+/* étapes = événements */
+.stops{display:flex;flex-direction:column;gap:.9rem}
+.stop{position:relative;display:grid;grid-template-columns:84px 1fr auto;gap:1rem;align-items:center;
+  background:var(--stone-2);border:1px solid var(--line);border-radius:12px;padding:.7rem;cursor:pointer;
+  transition:transform .25s,box-shadow .25s,border-color .25s}
+.stop:hover{transform:translateX(4px);border-color:rgba(169,128,46,.5);
+  box-shadow:0 14px 28px -22px rgba(38,37,33,.6)}
+/* puce sur la ligne */
+.stop::before{content:"";position:absolute;left:calc(-1*clamp(2.2rem,7vw,4rem) + clamp(.7rem,3.2vw,1.4rem) - 3px);
+  top:50%;transform:translateY(-50%);width:8px;height:8px;border-radius:50%;
+  background:var(--gilt);box-shadow:0 0 0 4px var(--stone)}
+.stop__img{width:84px;height:104px;object-fit:cover;border-radius:8px;background:#dcdcd4}
+.stop__noimg{width:84px;height:104px;border-radius:8px;background:var(--stone);display:grid;
+  place-items:center;font-family:var(--display);font-style:italic;color:var(--ink-dim);font-size:.8rem;text-align:center;padding:.3rem}
+.stop__cat{font-size:.6rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gilt)}
+.stop__title{font-family:var(--display);font-weight:500;font-size:1.18rem;line-height:1.12;margin:.25rem 0 .35rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.stop__meta{font-size:.78rem;color:var(--ink-dim)}
+.stop__meta .pin{color:var(--route)}
+.stop__time{font-family:var(--display);font-size:1.25rem;color:var(--ink);white-space:nowrap;padding-right:.4rem}
+.stop__time small{display:block;font-family:var(--body);font-size:.62rem;text-transform:uppercase;
+  letter-spacing:.1em;color:var(--ink-dim);text-align:right}
+.stop__free{font-size:.64rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:#2f6a4e}
+.stop__paid{font-size:.64rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--rose)}
+@media(max-width:560px){.stop{grid-template-columns:64px 1fr}.stop__time{display:none}
+  .stop__img,.stop__noimg{width:64px;height:80px}}
+
+.more{text-align:center;padding:1rem 0 4rem}
+.more button{font-family:var(--body);font-size:.82rem;cursor:pointer;background:var(--ink);
+  color:var(--stone);border:0;border-radius:999px;padding:.7rem 1.5rem}
+
+.foot{border-top:1px solid var(--line);padding:2.5rem 0;text-align:center}
+.foot .mk{font-family:var(--display);font-style:italic;font-size:1.4rem;color:var(--gilt)}
+.foot p{color:var(--ink-dim);font-size:.8rem}
+
+.reveal{opacity:0;transform:translateY(14px);transition:.6s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+:focus-visible{outline:2px solid var(--gilt);outline-offset:3px;border-radius:8px}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar__in">
+  <div class="wordmark"><b>Agenda</b><span>Grand Nancy</span></div>
+  <nav class="topnav"><a href="#parcours">Aujourd'hui</a><a href="#parcours">Ce week-end</a><a href="#parcours">Expositions</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <span class="eyebrow">Votre journée à Nancy</span>
+    <h1>Un <em>parcours</em> dans la ville.</h1>
+    <p>Suivez le fil de la journée — du matin au soir, étape par étape — et composez votre sortie au gré des événements.</p>
+    <div class="hero__date" id="heroDate"></div>
+    <span class="lead-line" aria-hidden="true"></span>
+  </section>
+
+  <div class="cats" id="cats"></div>
+
+  <section class="route" id="parcours"></section>
+  <div class="more"><button id="more" hidden>Voir les jours suivants</button></div>
+</main>
+
+<footer class="foot"><div class="mk">Agenda · Grand Nancy</div><p>Prototype « Itinéraire » — données réelles, non publié.</p></footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const EV=(window.EVENTS||[]).slice(),CATS=window.CATEGORIES||{};
+  const TODAY=new Date().toISOString().slice(0,10);
+  const up=EV.filter(e=>(e.endDate||e.date||"")>=TODAY).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  const mois=["janvier","février","mars","avril","mai","juin","juillet","août","septembre","octobre","novembre","décembre"];
+  const jours=["dimanche","lundi","mardi","mercredi","jeudi","vendredi","samedi"];
+  const dlabel=d=>{const[Y,M,D]=d.split("-");const dt=new Date(+Y,+M-1,+D);return `${jours[dt.getDay()]} ${+D} ${mois[+M-1]}`};
+  const hour=e=>{const m=(e.schedule||"").match(/(\d{1,2})\s*h\s*(\d{2})?/);return m?(+m[1]+(m[2]?+m[2]/60:0)):null};
+  const htxt=e=>{const m=(e.schedule||"").match(/\d{1,2}\s*h\s*\d{0,2}/);return m?m[0].replace(/\s/g,''):""};
+  const moment=e=>{const h=hour(e);if(h==null)return{k:"jour",label:"Dans la journée"};
+    if(h<12)return{k:"matin",label:"Matin"};if(h<18)return{k:"aprem",label:"Après-midi"};return{k:"soir",label:"Soirée"}};
+  const ORDER=["matin","aprem","soir","jour"];
+
+  // jour cible = le 1er jour à venir qui a des événements
+  const days=[...new Set(up.map(e=>(e.date||"").slice(0,10)).filter(Boolean))];
+  let dayIdx=0;
+  let active=null;
+
+  const heroDate=document.getElementById('heroDate');
+  const routeEl=document.getElementById('parcours');
+  const moreBtn=document.getElementById('more');
+
+  function render(){
+    const day=days[dayIdx];
+    heroDate.textContent=dlabel(day).replace(/^./,c=>c.toUpperCase());
+    let list=up.filter(e=>(e.date||"").slice(0,10)===day);
+    if(active)list=list.filter(e=>e.category===active);
+    // groupe par moment
+    const groups={};list.forEach(e=>{const m=moment(e);(groups[m.k]=groups[m.k]||{label:m.label,items:[]}).items.push(e);});
+    // tri intra-groupe par heure
+    Object.values(groups).forEach(g=>g.items.sort((a,b)=>(hour(a)??99)-(hour(b)??99)));
+    routeEl.innerHTML=ORDER.filter(k=>groups[k]).map(k=>{const g=groups[k];
+      return `<div class="moment"><div class="moment__h"><h2>${g.label}</h2><span class="c">${g.items.length}</span></div>
+        <div class="stops">${g.items.slice(0,12).map(stop).join("")}</div></div>`;}).join("")
+      || `<p style="color:var(--ink-dim);padding:2rem 0">Aucun événement ce jour pour ce filtre.</p>`;
+    moreBtn.hidden = dayIdx>=days.length-1;
+    obs();
+  }
+  function stop(e){
+    const img=e.image?`<img class="stop__img" src="${e.image}" alt="" loading="lazy" referrerpolicy="no-referrer">`
+      :`<div class="stop__noimg">${(e.title||"").slice(0,28)}</div>`;
+    const t=htxt(e);
+    return `<a class="stop reveal" href="${e.url||'#'}" target="_blank" rel="noopener">
+      ${img}
+      <div><span class="stop__cat">${(CATS[e.category]||{}).label||""}</span>
+        <div class="stop__title">${e.title||""}</div>
+        <div class="stop__meta"><span class="pin">◈</span> ${e.place||e.city||""}${e.city&&e.place?` · ${e.city}`:""}
+          &nbsp;·&nbsp; <span class="${e.free?'stop__free':'stop__paid'}">${e.free?'Gratuit':'Payant'}</span></div>
+      </div>
+      <div class="stop__time">${t||'—'}<small>${t?'départ':'horaire libre'}</small></div>
+    </a>`;
+  }
+  // filtres
+  const counts={};up.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+  const order=Object.keys(CATS).filter(k=>counts[k]).sort((a,b)=>counts[b]-counts[a]);
+  const cats_el=document.getElementById('cats');
+  cats_el.innerHTML=`<button class="cat" data-k="" aria-pressed="true">Tout</button>`+
+    order.map(k=>`<button class="cat" data-k="${k}" aria-pressed="false">${(CATS[k]||{}).label||k}</button>`).join("");
+  cats_el.querySelectorAll('.cat').forEach(b=>b.onclick=()=>{active=b.dataset.k||null;
+    cats_el.querySelectorAll('.cat').forEach(x=>x.setAttribute('aria-pressed',x===b));render();});
+  moreBtn.onclick=()=>{if(dayIdx<days.length-1){dayIdx++;render();window.scrollTo({top:0,behavior:'smooth'});}};
+
+  let io;
+  function obs(){if(io)io.disconnect();io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.1});
+    routeEl.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,8)*55)+'ms';io.observe(el);});}
+
+  render();
+})();
+</script>
+</body>
+</html>

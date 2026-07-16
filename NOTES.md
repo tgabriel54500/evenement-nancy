@@ -304,6 +304,12 @@
 
 ## Pitfalls / gotchas
 <!-- non-obvious things, debt, traps that already cost time -->
+- GIT — DEUX HISTOIRES PARALLÈLES (constat 2026-07-16) : les commits quotidiens "chore: maj agenda" sont faits par
+  GitHub ACTIONS sur origin/main (bot agenda-bot). Le repo LOCAL ne pull JAMAIS (refresh-all.sh ne fait aucun git) →
+  il dérive et ses fichiers générés restent non commités. Penser à `git fetch` avant de conclure que "les commits se
+  sont arrêtés", et à pull/rebase régulièrement. ⚠️ Sur conflit des fichiers GÉNÉRÉS (data.js, events-*.json,
+  events-firstseen.json) : préférer la version LOCALE (le Mac lance les 16 sources ; Actions n'en relançait que 7
+  tant que refresh.yml n'était pas poussé). firstseen local = celui de la PROD (déployée du Mac), à préserver.
 - L'API renvoie 397 events bruts; `dateList` contient parfois une date ERRONÉE (ex: Gala startDate 2026-06-13
   mais dateList 2026-03-13). → On trie sur startDate/endDate, pas sur dateList. dateList ne sert qu'à l'horaire.
 - Tous les events ont une image mais seulement ~147/397 ont `mediaUrl.crop` → fallback sur `mediaUrl.originale`.

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Grand Nancy — Affiche Riso</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ===========================================================
+   C · AFFICHE RISO — culture de l'affiche sérigraphiée. Papier,
+   surimpression (multiply), trame de points, typo Syne énorme.
+   Pop, jeune, « qu'est-ce qu'on fait ce soir ».
+   =========================================================== */
+:root{
+  --paper:#F2ECDD;          /* papier sérigraphie */
+  --paper-2:#EBE3D0;
+  --ink:#171410;            /* encre noire */
+  --cobalt:#2A3CC4;         /* bleu riso */
+  --coral:#FF5A3C;          /* corail fluo */
+  --jade:#0E9C6E;           /* vert riso */
+  --line:rgba(23,20,16,.16);
+  --display:"Syne",system-ui,sans-serif;
+  --body:"Space Grotesk",system-ui,sans-serif;
+  --maxw:1280px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);
+  line-height:1.5;-webkit-font-smoothing:antialiased;
+  /* trame de points façon impression */
+  background-image:radial-gradient(rgba(23,20,16,.05) 1px,transparent 1px);
+  background-size:5px 5px}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--coral);color:var(--paper)}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1rem,4vw,2.5rem)}
+
+/* topbar — bandeau encré */
+.topbar{position:sticky;top:0;z-index:30;background:var(--ink);color:var(--paper);
+  border-bottom:3px solid var(--coral)}
+.topbar__in{display:flex;justify-content:space-between;align-items:center;
+  max-width:var(--maxw);margin:0 auto;padding:.7rem clamp(1rem,4vw,2.5rem)}
+.wordmark{font-family:var(--display);font-weight:800;font-size:1.15rem;letter-spacing:-.01em;
+  text-transform:uppercase}
+.wordmark span{color:var(--coral)}
+.topnav{display:flex;gap:1.3rem}
+.topnav a{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.04em;opacity:.85}
+.topnav a:hover{color:var(--coral);opacity:1}
+@media(max-width:640px){.topnav{display:none}}
+
+/* bandeau d'accroche — typo monumentale, puis events directement */
+.lead{padding:clamp(1.6rem,4vw,2.8rem) 0 .6rem}
+.lead h1{font-family:var(--display);font-weight:800;
+  font-size:clamp(2.4rem,8.5vw,5.8rem);line-height:.84;letter-spacing:-.03em;
+  text-transform:uppercase;margin:0 0 1rem}
+.lead .o{color:var(--coral);-webkit-text-stroke:0}
+.lead .k{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.lead__sub{font-size:1.05rem;max-width:48ch}
+.lead__sub b{background:var(--coral);color:var(--paper);padding:0 .25rem}
+
+/* hero — typo monumentale + bloc affiche en surimpression */
+.hero{padding:clamp(2rem,5vw,4rem) 0 clamp(1.5rem,3vw,2.5rem)}
+.hero__top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem;flex-wrap:wrap}
+.tag{font-family:var(--display);font-weight:700;font-size:.8rem;text-transform:uppercase;
+  letter-spacing:.06em;background:var(--cobalt);color:var(--paper);padding:.35rem .8rem;
+  display:inline-block;transform:rotate(-2deg)}
+.hero h1{font-family:var(--display);font-weight:800;
+  font-size:clamp(3.2rem,13vw,9rem);line-height:.82;letter-spacing:-.03em;
+  text-transform:uppercase;margin:1.2rem 0 .2rem}
+.hero h1 .o{color:var(--coral);-webkit-text-stroke:0}
+.hero h1 .k{color:transparent;-webkit-text-stroke:2px var(--ink)}
+.hero__row{display:grid;grid-template-columns:1.4fr .9fr;gap:clamp(1.5rem,4vw,3rem);
+  align-items:end;margin-top:1.5rem}
+@media(max-width:820px){.hero__row{grid-template-columns:1fr}}
+.hero__lede{font-size:1.05rem;max-width:42ch}
+.hero__lede b{background:var(--coral);color:var(--paper);padding:0 .25rem}
+
+/* affiche en duo-ton surimpression */
+.poster{position:relative;border:3px solid var(--ink)}
+.poster img{aspect-ratio:4/5;width:100%;object-fit:cover;
+  mix-blend-mode:multiply;filter:grayscale(.2) contrast(1.08)}
+.poster::after{content:"";position:absolute;inset:0;
+  background:var(--cobalt);mix-blend-mode:screen;opacity:.16;pointer-events:none}
+.poster__cap{position:absolute;left:-3px;bottom:-3px;right:30%;
+  background:var(--ink);color:var(--paper);padding:.7rem .9rem}
+.poster__cap .t{font-family:var(--display);font-weight:700;font-size:1.05rem;line-height:1.05}
+.poster__cap .m{font-size:.74rem;opacity:.85;margin-top:.25rem}
+
+.btn{display:inline-block;font-family:var(--display);font-weight:700;font-size:.9rem;
+  text-transform:uppercase;letter-spacing:.03em;background:var(--ink);color:var(--paper);
+  padding:.9rem 1.5rem;border:3px solid var(--ink);transition:.2s}
+.btn:hover{background:var(--coral);border-color:var(--coral)}
+
+.flag{display:inline-block;font-size:.72rem;font-weight:600;text-transform:uppercase;
+  letter-spacing:.05em;padding:.3rem .6rem;border:2px solid var(--ink)}
+.flag--free{background:var(--jade);color:var(--paper);border-color:var(--jade)}
+.flag--paid{background:var(--paper);color:var(--ink)}
+
+/* agenda */
+.bar{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;
+  border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);
+  padding:.8rem 0;margin:1.5rem 0 1.4rem}
+.bar h2{font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(1.3rem,3vw,2rem);margin:0;letter-spacing:-.01em}
+.count{font-size:.82rem;font-weight:600}
+.cats{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.8rem}
+.cat{font-family:var(--body);font-weight:600;font-size:.8rem;cursor:pointer;
+  background:none;border:2px solid var(--ink);padding:.4rem .85rem;transition:.15s;color:var(--ink)}
+.cat:hover{background:var(--ink);color:var(--paper)}
+.cat[aria-pressed="true"]{background:var(--coral);border-color:var(--coral);color:var(--paper)}
+.cat .n{opacity:.7;margin-left:.3rem;font-size:.7rem}
+
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));
+  gap:clamp(.8rem,1.8vw,1.4rem);padding-bottom:5rem}
+.card{position:relative;border:3px solid var(--ink);background:var(--paper);cursor:pointer;
+  transition:transform .12s}
+.card:hover{transform:translate(-3px,-3px);box-shadow:7px 7px 0 var(--ink)}
+.card:nth-child(3n):hover{box-shadow:7px 7px 0 var(--coral)}
+.card:nth-child(3n+1):hover{box-shadow:7px 7px 0 var(--cobalt)}
+.card__poster{aspect-ratio:3/4;overflow:hidden;border-bottom:3px solid var(--ink);background:var(--paper-2)}
+.card__poster img{width:100%;height:100%;object-fit:cover;mix-blend-mode:multiply;filter:contrast(1.05)}
+.card__noimg{display:grid;place-items:center;height:100%;padding:1rem;text-align:center;
+  font-family:var(--display);font-weight:700;text-transform:uppercase;font-size:1.1rem}
+.card__body{padding:.7rem .8rem .9rem}
+.card__cat{font-family:var(--display);font-weight:700;font-size:.6rem;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--cobalt)}
+.card__title{font-family:var(--display);font-weight:700;font-size:1.02rem;line-height:1.08;
+  text-transform:uppercase;margin:.3rem 0 .5rem;
+  display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card__meta{font-size:.74rem;display:flex;justify-content:space-between;align-items:center;gap:.5rem}
+.card__meta .w{font-weight:600}
+.card__price{position:absolute;top:.6rem;right:.6rem}
+
+.foot{border-top:3px solid var(--ink);padding:2.5rem 0;text-align:center}
+.foot .mk{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.6rem}
+.foot p{font-size:.8rem}
+
+.reveal{opacity:0;transform:translateY(14px);transition:.55s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+:focus-visible{outline:3px solid var(--cobalt);outline-offset:2px}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="topbar__in">
+  <div class="wordmark">Agenda <span>/</span> Grand Nancy</div>
+  <nav class="topnav"><a href="#agenda">Ce soir</a><a href="#agenda">Week-end</a><a href="#agenda">Expos</a><a href="#agenda">Tout</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="lead">
+    <h1>À L'AF<span class="o">FICHE</span><br><span class="k">GRAND NANCY</span></h1>
+    <p class="lead__sub"><b>1 400 sorties</b> dans la métropole, mises à jour chaque jour. Concerts, expos, théâtre, festivals.</p>
+  </section>
+
+  <section id="agenda">
+    <div class="bar"><h2>À l'affiche</h2><span class="count" id="count"></span></div>
+    <div class="cats" id="cats"></div>
+    <div class="wall" id="wall"></div>
+  </section>
+</main>
+
+<footer class="foot"><div class="mk">Agenda · Grand Nancy</div><p>Prototype « Affiche Riso » — données réelles, non publié.</p></footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const EV=(window.EVENTS||[]).slice(),CATS=window.CATEGORIES||{};
+  const TODAY=new Date().toISOString().slice(0,10);
+  const up=EV.filter(e=>(e.endDate||e.date||"")>=TODAY).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  const mois=["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+  const fmt=e=>{if(e.dateText)return e.dateText;const d=(e.date||"").slice(0,10);if(!d)return"";const[Y,M,D]=d.split("-");return `${+D} ${mois[+M-1]||""}${e.schedule&&/^\d/.test(e.schedule)?" · "+e.schedule:""}`};
+  const short=e=>{const d=(e.date||"").slice(0,10);if(!d)return"";const[Y,M,D]=d.split("-");return `${+D} ${mois[+M-1]||""}`};
+
+  const counts={};up.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+  const order=Object.keys(CATS).filter(k=>counts[k]).sort((a,b)=>counts[b]-counts[a]);
+  let active=null;const cats_el=document.getElementById('cats');
+  function cats(){cats_el.innerHTML=`<button class="cat" data-k="" aria-pressed="${!active}">Tout<span class="n">${up.length}</span></button>`+
+    order.map(k=>`<button class="cat" data-k="${k}" aria-pressed="${active===k}">${(CATS[k]||{}).label||k}<span class="n">${counts[k]}</span></button>`).join("");
+    cats_el.querySelectorAll('.cat').forEach(b=>b.onclick=()=>{active=b.dataset.k||null;cats();wall();});}
+
+  const wall_el=document.getElementById('wall');
+  function wall(){const list=(active?up.filter(e=>e.category===active):up).slice(0,60);
+    count.textContent=`${active?counts[active]:up.length} ÉVÉNEMENTS`;
+    wall_el.innerHTML=list.map(e=>{
+      const poster=e.image?`<div class="card__poster"><img src="${e.image}" alt="" loading="lazy" referrerpolicy="no-referrer"></div>`
+        :`<div class="card__poster"><div class="card__noimg">${(e.title||"").slice(0,40)}</div></div>`;
+      return `<a class="card" href="${e.url||'#'}" target="_blank" rel="noopener">
+        ${poster}<div class="card__price">${e.free?'<span class="flag flag--free">Gratuit</span>':'<span class="flag flag--paid">Payant</span>'}</div>
+        <div class="card__body"><span class="card__cat">${(CATS[e.category]||{}).label||""}</span>
+        <h3 class="card__title">${e.title||""}</h3>
+        <div class="card__meta"><span class="w">${short(e)}</span><span>${e.city||""}</span></div></div></a>`;}).join("");}
+
+  cats();wall();
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.1});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,6)*60)+'ms';io.observe(el);});
+})();
+</script>
+</body>
+</html>

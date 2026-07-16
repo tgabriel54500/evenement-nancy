@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Grand Nancy — Verre Daum</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ===========================================================
+   B · VERRE DAUM — pâte-de-verre luminescente, ambre/rose/jade,
+   verre dépoli, formes organiques. Clair, soyeux.
+   =========================================================== */
+:root{
+  --bg:#ECEFEC;            /* blanc verre froid */
+  --bg-2:#F4F6F3;
+  --ink:#24282B;
+  --ink-dim:#5E6A66;
+  --amber:#E0A055;
+  --rose:#DD9A95;
+  --jade:#7FB199;
+  --smoke:#7E84A0;
+  --glass:rgba(255,255,255,.55);
+  --line:rgba(36,40,43,.10);
+  --display:"Instrument Serif",Georgia,serif;
+  --body:"Hanken Grotesk",system-ui,sans-serif;
+  --maxw:1200px;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);
+  line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--amber);color:#fff}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,2.5rem)}
+.eyebrow{font-weight:700;text-transform:uppercase;letter-spacing:.2em;
+  font-size:.7rem;color:var(--ink-dim)}
+
+/* blobs de verre flous en fond */
+.blobs{position:fixed;inset:0;z-index:-1;filter:blur(70px);opacity:.85}
+.blobs span{position:absolute;border-radius:50%;mix-blend-mode:multiply}
+.b1{width:46vw;height:46vw;left:-8vw;top:-12vw;background:var(--amber)}
+.b2{width:40vw;height:40vw;right:-6vw;top:6vw;background:var(--rose)}
+.b3{width:42vw;height:42vw;left:18vw;bottom:-18vw;background:var(--jade)}
+.b4{width:26vw;height:26vw;right:14vw;bottom:4vw;background:var(--smoke);opacity:.7}
+
+/* topbar verre */
+.topbar{position:sticky;top:0;z-index:30;
+  background:rgba(236,239,236,.6);backdrop-filter:blur(16px) saturate(1.3);
+  border-bottom:1px solid var(--line)}
+.topbar__in{display:flex;justify-content:space-between;align-items:center;
+  padding:.85rem clamp(1.1rem,4vw,2.5rem);max-width:var(--maxw);margin:0 auto}
+.wordmark b{font-family:var(--display);font-size:1.5rem;font-weight:400;letter-spacing:.01em}
+.wordmark span{font-size:.6rem;letter-spacing:.26em;text-transform:uppercase;
+  color:var(--ink-dim);margin-left:.5rem}
+.topnav{display:flex;gap:1.5rem}
+.topnav a{font-size:.82rem;color:var(--ink-dim);transition:color .2s}
+.topnav a:hover{color:var(--ink)}
+@media(max-width:640px){.topnav{display:none}}
+
+/* hero */
+.hero{padding:clamp(3rem,8vw,6rem) 0 clamp(2rem,4vw,3rem)}
+.hero__grid{display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+@media(max-width:860px){.hero__grid{grid-template-columns:1fr}}
+.hero h1{font-family:var(--display);font-weight:400;
+  font-size:clamp(3rem,9vw,6.5rem);line-height:.92;letter-spacing:-.01em;margin:1.2rem 0}
+.hero h1 i{font-style:italic;
+  background:linear-gradient(100deg,var(--amber),var(--rose) 50%,var(--smoke));
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+.hero__lede{font-size:1.1rem;color:var(--ink-dim);max-width:44ch;margin:0 0 1.8rem}
+.hero__meta{display:flex;flex-wrap:wrap;gap:.5rem}
+
+/* carte de verre à l'affiche */
+.glasscard{position:relative;border-radius:26px;overflow:hidden;
+  background:var(--glass);backdrop-filter:blur(8px);
+  border:1px solid rgba(255,255,255,.7);
+  box-shadow:0 30px 60px -30px rgba(36,40,43,.4),inset 0 1px 0 rgba(255,255,255,.8)}
+.glasscard img{aspect-ratio:4/5;width:100%;object-fit:cover}
+.glasscard__cap{position:absolute;left:0;right:0;bottom:0;
+  padding:1.4rem 1.3rem 1.2rem;color:#fff;
+  background:linear-gradient(0deg,rgba(20,18,16,.78),transparent)}
+.glasscard__cap .t{font-family:var(--display);font-size:1.5rem;line-height:1.05;margin:.2rem 0 .4rem}
+.glasscard__cap .m{font-size:.82rem;opacity:.9}
+
+.pill{font-size:.74rem;font-weight:600;padding:.45rem .9rem;border-radius:999px;
+  background:var(--glass);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.7);
+  color:var(--ink);box-shadow:0 4px 14px -8px rgba(36,40,43,.4)}
+.pill--amber{color:#9a5c1a;background:rgba(224,160,85,.18);border-color:rgba(224,160,85,.4)}
+.pill--jade{color:#2f6a4e;background:rgba(127,177,153,.2);border-color:rgba(127,177,153,.45)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;font-weight:700;font-size:.85rem;
+  padding:.9rem 1.6rem;border-radius:999px;color:#fff;
+  background:linear-gradient(110deg,var(--amber),var(--rose));
+  box-shadow:0 14px 30px -12px rgba(221,154,149,.7);transition:transform .25s}
+.btn:hover{transform:translateY(-2px)}
+
+/* agenda */
+.head{display:flex;justify-content:space-between;align-items:flex-end;
+  flex-wrap:wrap;gap:1rem;margin:1rem 0 1.4rem}
+.head h2{font-family:var(--display);font-weight:400;font-size:clamp(2rem,4vw,2.8rem);margin:.3rem 0 0}
+.count{font-size:.82rem;color:var(--ink-dim)}
+.cats{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}
+.cat{border:1px solid var(--line);background:var(--bg-2);cursor:pointer;
+  font-family:var(--body);font-size:.82rem;color:var(--ink-dim);
+  padding:.5rem 1rem;border-radius:999px;transition:.2s}
+.cat:hover{color:var(--ink);border-color:rgba(36,40,43,.25)}
+.cat[aria-pressed="true"]{color:#fff;border-color:transparent;
+  background:linear-gradient(110deg,var(--smoke),var(--jade))}
+.cat .n{opacity:.6;margin-left:.3rem;font-size:.7rem}
+
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:clamp(1rem,2.2vw,1.6rem);padding-bottom:5rem}
+.card{position:relative;border-radius:20px;overflow:hidden;cursor:pointer;
+  background:var(--bg-2);border:1px solid rgba(255,255,255,.6);
+  box-shadow:0 14px 30px -22px rgba(36,40,43,.5);
+  transition:transform .4s cubic-bezier(.2,.7,.2,1),box-shadow .4s}
+.card:hover{transform:translateY(-6px) scale(1.012);
+  box-shadow:0 26px 50px -26px rgba(36,40,43,.6)}
+.card__poster{aspect-ratio:3/4;overflow:hidden;background:#dfe3df}
+.card__poster img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.card:hover .card__poster img{transform:scale(1.05)}
+.card__noimg{display:grid;place-items:center;height:100%;padding:1rem;text-align:center;
+  font-family:var(--display);font-size:1.4rem;color:var(--ink-dim)}
+.card__edge{height:4px;background:var(--smoke)}
+.card__body{padding:.85rem .95rem 1.1rem}
+.card__cat{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-dim)}
+.card__title{font-family:var(--display);font-size:1.18rem;line-height:1.1;margin:.3rem 0 .5rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card__meta{font-size:.76rem;color:var(--ink-dim)}
+.card__meta b{color:var(--ink);font-weight:600}
+.card__price{position:absolute;top:.7rem;right:.7rem}
+
+.foot{text-align:center;padding:3rem 0;border-top:1px solid var(--line)}
+.foot .mk{font-family:var(--display);font-size:1.5rem}
+.foot p{color:var(--ink-dim);font-size:.8rem}
+
+.reveal{opacity:0;transform:translateY(16px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}}
+:focus-visible{outline:2px solid var(--amber);outline-offset:3px;border-radius:6px}
+</style>
+</head>
+<body>
+<div class="blobs" aria-hidden="true"><span class="b1"></span><span class="b2"></span><span class="b3"></span><span class="b4"></span></div>
+
+<header class="topbar"><div class="topbar__in">
+  <div class="wordmark"><b>Agenda</b><span>Grand Nancy</span></div>
+  <nav class="topnav"><a href="#agenda">À l'affiche</a><a href="#agenda">Ce week-end</a><a href="#agenda">Expositions</a><a href="#agenda">Tout voir</a></nav>
+</div></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="hero__grid">
+      <div>
+        <span class="eyebrow reveal" id="kicker">À l'affiche</span>
+        <h1 class="reveal" id="h1">Nancy, <i>au présent</i>.</h1>
+        <p class="hero__lede reveal" id="lede">Concerts, expositions, spectacles : tout ce qui anime la métropole, réuni en un seul agenda lumineux.</p>
+        <div class="hero__meta reveal" id="meta"></div>
+        <p style="margin-top:1.8rem" class="reveal"><a class="btn" href="#agenda">Parcourir l'agenda →</a></p>
+      </div>
+      <figure class="glasscard reveal" style="margin:0">
+        <img id="heroImg" alt="" referrerpolicy="no-referrer">
+        <figcaption class="glasscard__cap"><div class="t" id="heroT"></div><div class="m" id="heroM"></div></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="agenda">
+    <div class="head">
+      <div><span class="eyebrow">L'agenda</span><h2>À l'affiche dans la métropole</h2></div>
+      <span class="count" id="count"></span>
+    </div>
+    <div class="cats" id="cats"></div>
+    <div class="wall" id="wall"></div>
+  </section>
+</main>
+
+<footer class="foot"><div class="mk">Agenda · Grand Nancy</div><p>Prototype « Verre Daum » — données réelles, non publié.</p></footer>
+
+<script src="data.js"></script>
+<script>
+(function(){
+  const EV=(window.EVENTS||[]).slice(),CATS=window.CATEGORIES||{};
+  const TODAY=new Date().toISOString().slice(0,10);
+  const TINT={festival:"#E0A055","musiques-actuelles":"#DD9A95",spectacle:"#7E84A0",exposition:"#7FB199","jeune-public":"#E0A055","musique-classique":"#7E84A0",activite:"#7FB199",conference:"#7E84A0",citoyennete:"#DD9A95",autre:"#9aa0a0"};
+  const up=EV.filter(e=>(e.endDate||e.date||"")>=TODAY).sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+  const mois=["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+  const fmt=e=>{if(e.dateText)return e.dateText;const d=(e.date||"").slice(0,10);if(!d)return"";const[Y,M,D]=d.split("-");return `${+D} ${mois[+M-1]||""}${e.schedule&&/^\d/.test(e.schedule)?" · "+e.schedule:""}`};
+
+  const hero=up.find(e=>e.image&&/festival|spectacle|musiques/.test(e.category))||up.find(e=>e.image)||up[0];
+  if(hero){heroImg.src=hero.image||"";heroT.textContent=hero.title;heroM.textContent=`${hero.place||hero.city||""} · ${fmt(hero)}`;
+    h1.innerHTML=hero.title.replace(/\s+(\S+)$/,' <i>$1</i>');
+    lede.textContent=`${hero.place||hero.city||"Grand Nancy"}. ${fmt(hero)}.`;
+    kicker.textContent=hero.date===TODAY?"À l'affiche aujourd'hui":"Prochainement";
+    meta.innerHTML=[`<span class="pill pill--amber">${fmt(hero)}</span>`,
+      hero.free?`<span class="pill pill--jade">Accès libre</span>`:`<span class="pill">Payant</span>`,
+      hero.reservation?`<span class="pill">Sur réservation</span>`:""].join("");}
+
+  const counts={};up.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+  const order=Object.keys(CATS).filter(k=>counts[k]).sort((a,b)=>counts[b]-counts[a]);
+  let active=null;
+  function cats(){cats_el.innerHTML=`<button class="cat" data-k="" aria-pressed="${!active}">Tout<span class="n">${up.length}</span></button>`+
+    order.map(k=>`<button class="cat" data-k="${k}" aria-pressed="${active===k}">${(CATS[k]||{}).label||k}<span class="n">${counts[k]}</span></button>`).join("");
+    cats_el.querySelectorAll('.cat').forEach(b=>b.onclick=()=>{active=b.dataset.k||null;cats();wall();});}
+  const cats_el=document.getElementById('cats');
+
+  function wall(){const list=(active?up.filter(e=>e.category===active):up).slice(0,60);
+    count.textContent=`${active?counts[active]:up.length} à venir`;
+    wall_el.innerHTML=list.map(e=>{const t=TINT[e.category]||"#9aa0a0";
+      const poster=e.image?`<div class="card__poster"><img src="${e.image}" alt="" loading="lazy" referrerpolicy="no-referrer"></div>`
+        :`<div class="card__poster"><div class="card__noimg">${(e.title||"").slice(0,42)}</div></div>`;
+      return `<a class="card" href="${e.url||'#'}" target="_blank" rel="noopener">
+        ${poster}<div class="card__price">${e.free?'<span class="pill pill--jade">Libre</span>':'<span class="pill pill--amber">Payant</span>'}</div>
+        <div class="card__edge" style="background:${t}"></div>
+        <div class="card__body"><span class="card__cat" style="color:${t}">${(CATS[e.category]||{}).label||""}</span>
+        <h3 class="card__title">${e.title||""}</h3>
+        <div class="card__meta"><b>${fmt(e)}</b><br>${e.place||e.city||""}</div></div></a>`;}).join("");}
+  const wall_el=document.getElementById('wall');
+
+  cats();wall();
+  const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}}),{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.style.transitionDelay=(Math.min(i,6)*70)+'ms';io.observe(el);});
+})();
+</script>
+</body>
+</html>
