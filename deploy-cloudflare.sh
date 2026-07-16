@@ -42,7 +42,7 @@ mkdir -p "$DIST"
 # ne vit que sur STAGING (deploy-staging.sh). On NE l'inclut PAS dans le build
 # prod : ni sport.html/sport.js/config-supabase.js, ni les liens de nav (strippés
 # plus bas). Le working tree garde la feature — seul le build prod la masque.
-FILES="index.html nouveautes.html galerie.js events-core.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
+FILES="index.html nouveautes.html galerie.js events-core.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
