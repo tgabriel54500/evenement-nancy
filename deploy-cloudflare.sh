@@ -215,6 +215,39 @@ if [ -f "$DIST/sitemap.xml" ]; then
   echo "  sitemap.xml régénéré (lastmod $TODAY, sport.html retiré)"
 fi
 
+# 4) PRÉRENDU SEO : le contenu étant 100% rendu en JS (data.js), le HTML initial ne
+#    contient aucun événement → indexation lente/partielle (et nulle pour les moteurs
+#    sans JS). On injecte donc dans #gallery une liste statique des 60 prochains
+#    événements (titre, date, lieu). galerie.js fait `gallery.innerHTML = …` au
+#    chargement → la liste est remplacée par la vraie galerie, zéro doublon visuel.
+if [ -f "$DIST/index.html" ] && [ -f "$DIST/data.js" ]; then
+  node -e '
+    const fs = require("fs");
+    const [pHtml, pData, today] = process.argv.slice(1);
+    const code = fs.readFileSync(pData, "utf8");
+    const { EVENTS } = new Function(code + "; return { EVENTS };")();
+    const esc = s => String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    const frDate = d => new Date(d + "T00:00:00")
+      .toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
+    const items = EVENTS
+      .filter(e => e && e.date && e.date >= today && e.title && e.place)
+      .sort((a, b) => a.date < b.date ? -1 : a.date > b.date ? 1 : 0)
+      .slice(0, 60)
+      .map(e => {
+        const lieu = esc(e.place) + (e.city && e.city !== e.place ? " à " + esc(e.city) : "");
+        return "      <li><strong>" + esc(e.title) + "</strong>, <time datetime=\"" +
+          esc(e.date) + "\">" + frDate(e.date) + "</time>, " + lieu + "</li>";
+      });
+    const list = "\n    <ul class=\"prerender\">\n" + items.join("\n") + "\n    </ul>\n  ";
+    let h = fs.readFileSync(pHtml, "utf8");
+    h = h.replace(/(<section class="gallery" id="gallery"[^>]*>)(\s*<\/section>)/,
+      (m, open, close) => open + list + close);
+    fs.writeFileSync(pHtml, h);
+    console.log("  prérendu SEO injecté : " + items.length + " événements dans #gallery");
+  ' "$DIST/index.html" "$DIST/data.js" "$TODAY"
+fi
+
 # DURCISSEMENT data.js : on retire les métadonnées internes qui révèlent la MÉTHODE
 # d'agrégation (champ `source` qui nomme chaque site, `uuid` préfixé par source) et
 # on minifie (JSON compact). app.js/galerie.js n'utilisent ni source ni uuid → 0
