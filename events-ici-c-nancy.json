@@ -19,6 +19,25 @@
     "source": "ici-c-nancy"
   },
   {
+    "uuid": "icn-1148",
+    "title": "SOIRÉE DES ÉTOILES À HOUDEMONT",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
+    "dateText": "",
+    "schedule": "21:00",
+    "place": "Houdemont, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_soiree-etoiles.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1148-soiree-des-etoiles-a-houdemont/2026-07-18-21-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1116",
     "title": "LANEUVEVILLE-DEVANT-NANCY : UNE FAN-ZONE POUR LES DEMI-FINALES ET LA FINALE DE LA COUPE DU MONDE DIFFUSÉES SUR ÉCRAN GÉANT",
     "category": "autre",

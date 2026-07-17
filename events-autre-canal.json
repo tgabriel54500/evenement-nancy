@@ -2873,6 +2873,29 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-vieux-farka-toure",
+    "title": "Vieux Farka Touré",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Blues",
+      "Rock"
+    ],
+    "date": "2027-04-01",
+    "endDate": "2027-04-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/770-field_illustration_id-1783949245.jpg%3Fitok%3DsCArOF1a?itok=2zdrtiA1",
+    "url": "https://lautrecanalnancy.fr/agenda/vieux-farka-toure",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-winter-story-oco",
     "title": "Winter Story - OCO",
     "category": "activite",

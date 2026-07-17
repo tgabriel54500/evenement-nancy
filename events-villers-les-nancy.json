@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-16",
+    "date": "2026-07-17",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-16",
+    "date": "2026-07-17",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-07-16",
+    "date": "2026-07-17",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -67,26 +67,24 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-582",
-    "title": "UDPS - Réunion d'information ",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
+    "uuid": "vln-583",
+    "title": "Ciné concert : un voyage musical dans l'univers de Georges Méliès",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
     "subcats": [
-      "Associations",
-      "Citoyenneté",
-      "Solidarité"
+      "Culture"
     ],
-    "date": "2026-07-16",
-    "endDate": "2026-07-16",
+    "date": "2026-07-18",
+    "endDate": "2026-07-18",
     "dateText": "",
     "schedule": "18h",
-    "place": "",
+    "place": "MJC Jean Savine",
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-13132892-original.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/udps-reunion-dinformation",
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/melies.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-concert-un-voyage-musical-dans-lunivers-de-georges-melies",
     "source": "villers-les-nancy"
   },
   {
