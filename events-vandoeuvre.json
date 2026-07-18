@@ -1059,25 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28892",
-    "title": "Déambulation de marionnettes géantes",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [],
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "dateText": "",
-    "schedule": "14h30",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/concert-40-ans-accc.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/deambulation-de-marionnettes-geantes/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-23211",
     "title": "Concert Nancyphonies",
     "category": "culture",

@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-concert-looping",
-    "title": "Concert Looping",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parking de l’Hôtel de Ville",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/38/1200_630_7_concert-looping.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/concert-looping_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-jardin-des-1000-fleurs-flore-54-2",
     "title": "Jardin des 1000 fleurs - FLORE 54",
     "category": "activite",

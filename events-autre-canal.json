@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-concert-mensuel-peignoir-tapis",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte",
-      "Rendez-vous"
-    ],
-    "date": "2026-07-17",
-    "endDate": "2026-07-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web6.jpg?itok=5ldoYiVj",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-peignoir-tapis",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-nuit-chaude-aux-accents-mediterraneens-exotica-lunatica-zouzou-airlines-blindtest",
     "title": "Nuit chaude aux accents méditerranéens",
     "category": "musiques-actuelles",
