@@ -323,3 +323,25 @@
 
 ## In-progress decisions
 <!-- recent architecture choices so other sessions don't undo them -->
+- NAV (branche test, 2026-07-18) : lien 🏅 Sport RETIRÉ de la nav (sport.html reste accessible par URL).
+  Icône COMPTE en haut à droite du hero (.nav-account, script inline dans chaque page) : ordi = icône 👤, mobile
+  (≤640px) = burger ☰ ; sous-menu = S'inscrire / Se connecter + Publier UNIQUEMENT (les onglets Galerie/Nouveautés
+  restent une rangée .hero__views visible partout, choix utilisateur). CSS versionné style.css?v=navN sur les 3
+  pages (cache). ⚠️ Gate prod deploy-cloudflare.sh matche class="(?:view-switch|nav-menu__link)[^"]*" pour les
+  liens sport/compte ; menu vidé par le gate → le JS pose .nav-account--navonly (icône masquée).
+- FILTRE 30 KM (2026-07-18) : update-events.js écarte tout événement dont la ville est à plus de 30 km de Nancy
+  (haversine). Géocodage des villes via BAN api-adresse.data.gouv.fr type=municipality avec biais lat/lon Nancy
+  (homonymes → commune proche), 1 requête par ville INCONNUE seulement, cache commité `commune-coords.json`
+  (null = introuvable, mémorisé; ville vide/inconnue/API KO → événement GARDÉ). Même contrôle à la soumission
+  dans compte.js (cityWithin30km, bloquant si false). refresh.yml commite aussi commune-coords.json.
+- COMPTE.HTML (2026-07-18) : design aligné sur le site (hero--compact, fonts, favicon; CSS compte.css?v=N).
+  AUTOCOMPLÉTION du champ Lieu via BAN api-adresse.data.gouv.fr (gratuite, sans clé, CORS ok, biais lat/lon Nancy);
+  sélection → remplit lieu (name) + ville (city). Catégorie 'sport' EXCLUE du sélecteur (feature en pause).
+  Déconnexion déplacée dans le menu icône 👤 en haut à droite (visible connecté seulement; #logout conservé).
+  GitHub Actions refresh.yml pingue user_events 1x/jour (anti-pause Supabase free); actif une fois sur main.
+- COMPTES ORGANISATEURS (branche test, 2026-07-18) : nav des 3 pages = « 👤 S'inscrire / Publier » → compte.html.
+  Feature SPORT EN PAUSE : option kind=sport masquée (hidden + commentée) dans compte.html, code compte.js intact.
+  ANTI-DOUBLON BLOQUANT à la publication : compte.js (normTitle sans accents/ponctuation + chevauchement de dates,
+  testé contre EVENTS de data.js ET user_events non-rejetés) + trigger SQL reject_duplicate_user_event_trg
+  (schema.sql §6, avec norm_title() SQL miroir + contrainte end_date >= date). Si la base Supabase existait déjà,
+  RE-EXÉCUTER schema.sql (idempotent) pour poser §6. Dates passées interdites (min sur ev-date + check JS).
