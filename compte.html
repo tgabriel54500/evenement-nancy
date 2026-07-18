@@ -5,13 +5,37 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon espace — Agenda du Grand-Nancy</title>
   <meta name="robots" content="index, follow">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="compte.css">
+  <link rel="icon" type="image/svg+xml" href="logo.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#c4452f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=nav3">
+  <link rel="stylesheet" href="compte.css?v=4">
 </head>
 <body data-view="compte">
-  <header class="site-header">
-    <h1><a href="index.html" class="home-link">Agenda du Grand-Nancy</a></h1>
-    <p class="tagline">Espace organisateur — publiez vos événements</p>
+  <header class="hero hero--compact">
+    <!-- Menu compte (visible uniquement connecté) : email, retour, déconnexion. -->
+    <div class="nav-account" id="navAccount" hidden>
+      <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menu du compte">
+        <svg class="ico ico--user" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg>
+        <svg class="ico ico--burger" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="nav-menu" id="navMenu" hidden>
+        <span class="nav-menu__who" id="menu-who"></span>
+        <a class="nav-menu__link" href="index.html">🖼️ Retour à l'agenda</a>
+        <button type="button" class="nav-menu__link nav-menu__btn" id="logout">🚪 Se déconnecter</button>
+      </div>
+    </div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow"><a class="home-link" href="index.html">← Agenda du Grand-Nancy</a></p>
+      <h1 class="hero__title hero__title--compact">Espace <span>organisateur</span></h1>
+      <p class="hero__subtitle">Créez votre compte et publiez vos événements gratuitement.
+        Ils apparaissent dans l'agenda après une courte vérification.</p>
+    </div>
   </header>
 
   <main class="compte-main">
@@ -32,7 +56,6 @@
     <section id="app" class="card-pane" hidden>
       <div class="app-head">
         <span id="who"></span>
-        <button id="logout" class="btn-ghost">Se déconnecter</button>
       </div>
 
       <nav class="tabs">
@@ -45,12 +68,9 @@
         <form id="event-form">
           <input type="hidden" id="ev-id">
 
-          <label>Type *
-            <select id="ev-kind">
-              <option value="event">Culturel / Événement</option>
-              <option value="sport">Sportif (club amateur)</option>
-            </select>
-          </label>
+          <!-- Type supprimé : tout est 'event' (culturel). La feature sport
+               (kind='sport', sélecteur + champs dédiés) est en pause ; pour la
+               réactiver, voir l'historique git de ce fichier et de compte.js. -->
 
           <label>Titre *
             <input type="text" id="ev-title" required maxlength="140">
@@ -58,10 +78,6 @@
 
           <label id="row-category">Catégorie *
             <select id="ev-category" required></select>
-          </label>
-
-          <label id="row-sport" hidden>Sport *
-            <select id="ev-sport"></select>
           </label>
 
           <div class="row">
@@ -73,30 +89,23 @@
             </label>
           </div>
 
-          <label>Horaire <small>(ex : 20h30, 14h–18h)</small>
-            <input type="text" id="ev-schedule" maxlength="60">
-          </label>
-
           <div class="row">
-            <label>Lieu *
-              <input type="text" id="ev-place" required maxlength="120">
+            <label>Heure de début <small>(optionnel)</small>
+              <input type="time" id="ev-time-start">
             </label>
-            <label>Ville *
-              <input type="text" id="ev-city" required maxlength="80">
+            <label>Heure de fin <small>(optionnel)</small>
+              <input type="time" id="ev-time-end">
             </label>
           </div>
 
-          <div id="row-sportextra" hidden>
-            <div class="row">
-              <label>Division <small>(optionnel)</small>
-                <input type="text" id="ev-division" maxlength="80">
-              </label>
-              <label>Catégorie d'âge <small>(optionnel)</small>
-                <input type="text" id="ev-age" maxlength="60" placeholder="U15, Séniors…">
-              </label>
-            </div>
-            <label>Adversaire <small>(optionnel)</small>
-              <input type="text" id="ev-opponent" maxlength="120">
+          <div class="row">
+            <label class="ac-wrap">Lieu / adresse * <small>(choisissez une proposition)</small>
+              <input type="text" id="ev-place" required maxlength="120" autocomplete="off"
+                     placeholder="ex : 1 place Stanislas">
+              <div class="ac-list" id="ac-place" hidden></div>
+            </label>
+            <label>Ville *
+              <input type="text" id="ev-city" required maxlength="80">
             </label>
           </div>
 
@@ -104,8 +113,8 @@
             <textarea id="ev-desc" required rows="5" maxlength="2000"></textarea>
           </label>
 
-          <label>Lien « Plus d'infos » <small>(optionnel)</small>
-            <input type="url" id="ev-url" placeholder="https://…">
+          <label>Lien « Plus d'infos » <small>(optionnel, ex : votre-site.fr)</small>
+            <input type="text" id="ev-url" inputmode="url" placeholder="votre-site.fr" maxlength="300">
           </label>
 
           <div class="checks">
@@ -113,8 +122,8 @@
             <label class="inline"><input type="checkbox" id="ev-resa"> Réservation requise</label>
           </div>
 
-          <label id="row-image">Affiche / image * <small>(JPG ou PNG, 5 Mo max)</small>
-            <input type="file" id="ev-image" accept="image/png,image/jpeg">
+          <label id="row-image">Affiche / image * <small>(JPG, PNG, WebP ou GIF, 5 Mo max)</small>
+            <input type="file" id="ev-image" accept="image/png,image/jpeg,image/webp,image/gif">
           </label>
           <img id="ev-preview" class="preview" hidden alt="">
 
@@ -138,6 +147,16 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config-supabase.js"></script>
   <script src="data.js"></script>
-  <script src="compte.js"></script>
+  <script src="compte.js?v=6"></script>
+
+  <!-- Bouton contact WhatsApp -->
+  <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="wa-fab__label">Contact</span>
+  </a>
+
+  <footer class="footer">
+    <p><a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
 </body>
 </html>
