@@ -851,3 +851,112 @@ body {
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; transition: none !important; }
 }
+
+/* Bouton contact WhatsApp flottant */
+.wa-fab {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  right: calc(20px + env(safe-area-inset-right));
+  bottom: calc(20px + env(safe-area-inset-bottom));
+  z-index: 900;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px 12px 14px;
+  background: #25d366;
+  color: #fff;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 999px;
+  box-shadow: 0 6px 20px -6px rgba(37,211,102,.7), 0 2px 6px rgba(0,0,0,.15);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.wa-fab:hover {
+  background: #1ebe5a;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 26px -8px rgba(37,211,102,.8), 0 2px 8px rgba(0,0,0,.2);
+}
+.wa-fab:focus-visible {
+  outline: 3px solid rgba(37,211,102,.5);
+  outline-offset: 2px;
+}
+.wa-fab svg { width: 26px; height: 26px; flex: none; fill: #fff; }
+@media (max-width: 560px) {
+  .wa-fab { padding: 12px; }
+  .wa-fab .wa-fab__label { display: none; }
+}
+
+/* ---------- Menu compte : icône en haut à droite + burger mobile ---------- */
+/* Le hero sert d'ancre à l'icône et à son sous-menu. */
+.hero { position: relative; }
+
+.nav-account { position: absolute; top: 1rem; right: 1.1rem; z-index: 61; }
+.nav-account__btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  transition: border-color .18s, color .18s;
+}
+.nav-account__btn:hover { border-color: var(--accent); color: var(--accent); }
+.nav-account__btn .ico { width: 22px; height: 22px; fill: currentColor; }
+.nav-account__btn .ico--burger { display: none; fill: none; stroke: currentColor; }
+
+/* Sous-menu déroulant sous l'icône. */
+.nav-menu {
+  position: absolute;
+  top: calc(100% + .5rem);
+  right: 0;
+  min-width: 235px;
+  display: flex;
+  flex-direction: column;
+  gap: .15rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: .45rem;
+  box-shadow: var(--shadow);
+}
+.nav-menu[hidden] { display: none; }
+.nav-menu__link {
+  display: block;
+  padding: .6rem .8rem;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--ink);
+  font-size: .92rem;
+  font-weight: 600;
+}
+.nav-menu__link:hover { background: rgba(196,69,47,.08); color: var(--accent); }
+.nav-menu__link[hidden] { display: none; }  /* display:block ci-dessus écraserait hidden */
+.nav-menu__btn {
+  width: 100%;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+  font: inherit;
+  font-size: .92rem;
+  font-weight: 600;
+}
+
+/* Prod : le gate a retiré les liens compte → menu vide, icône masquée (JS). */
+.nav-account--navonly { display: none; }
+
+/* Mobile : l'icône devient un burger ☰ ; les onglets Galerie/Nouveautés
+   restent affichés comme avant, seul le menu compte passe par le burger. */
+@media (max-width: 640px) {
+  .nav-account { top: .8rem; right: .8rem; }
+  .nav-account__btn .ico--user { display: none; }
+  .nav-account__btn .ico--burger { display: block; }
+}

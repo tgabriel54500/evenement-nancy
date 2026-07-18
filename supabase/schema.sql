@@ -134,3 +134,51 @@ create policy "images delete own" on storage.objects
     bucket_id = 'event-images'
     and (storage.foldername(name))[1] = auth.uid()::text
   );
+
+-- 6) VALIDATION + ANTI-DOUBLON ----------------------------------------------
+-- (Section ajoutée après coup : ré-exécutable telle quelle sur une base déjà
+-- créée, tout est idempotent.)
+
+-- Cohérence des dates : fin >= début.
+alter table public.user_events drop constraint if exists user_events_dates_chk;
+alter table public.user_events add constraint user_events_dates_chk
+  check (end_date is null or end_date >= date);
+
+-- Titre normalisé côté SQL : minuscules, accents usuels retirés, ponctuation
+-- remplacée par des espaces réduits. Miroir de normTitle() dans compte.js.
+create or replace function public.norm_title(t text)
+returns text language sql immutable as $$
+  select btrim(regexp_replace(
+    translate(lower(coalesce(t, '')),
+      'àâäáãéèêëíìîïóòôöõúùûüçñÿœæ',
+      'aaaaaeeeeiiiiooooouuuucnyoa'),
+    '[^a-z0-9]+', ' ', 'g'));
+$$;
+
+-- Garde-fou serveur : refuse un event du même kind dont le titre normalisé est
+-- identique et dont la période chevauche celle d'un event non rejeté existant.
+-- (Le front fait le même test pour un message précoce; ici c'est incontournable.)
+create or replace function public.reject_duplicate_user_event()
+returns trigger language plpgsql security definer set search_path = public as $$
+begin
+  if auth.role() = 'service_role' then
+    return new;                              -- modération / admin : libre
+  end if;
+  if exists (
+    select 1 from public.user_events e
+     where e.id <> new.id
+       and e.kind = new.kind
+       and e.status <> 'rejected'
+       and norm_title(e.title) = norm_title(new.title)
+       and daterange(e.date, coalesce(e.end_date, e.date), '[]')
+           && daterange(new.date, coalesce(new.end_date, new.date), '[]')
+  ) then
+    raise exception 'Doublon : un événement au même titre existe déjà sur ces dates.';
+  end if;
+  return new;
+end; $$;
+
+drop trigger if exists reject_duplicate_user_event_trg on public.user_events;
+create trigger reject_duplicate_user_event_trg
+  before insert or update on public.user_events
+  for each row execute function public.reject_duplicate_user_event();

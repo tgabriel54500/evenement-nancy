@@ -15,7 +15,9 @@ Tout est testé sur le **bac à sable** d'abord (`deploy-staging.sh`).
 ## 2. Base de données + storage
 - SQL Editor → colle tout `supabase/schema.sql` → **Run**.
 - Crée : table `user_events`, RLS, trigger garde-fou, RPC compteur de clics,
-  bucket `event-images` (public).
+  bucket `event-images` (public), contrainte de dates et trigger anti-doublon.
+- ⚠️ Si la base a été créée AVANT l'ajout de la section 6 (anti-doublon) :
+  re-exécuter le fichier entier (tout est idempotent) ou juste la section 6.
 
 ## 3. Auth (lien magique)
 - Authentication → Providers → **Email** activé, "Confirm email" ON suffit.

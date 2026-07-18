@@ -38,11 +38,11 @@ mkdir -p "$DIST"
 #   toutes → data.js + events-core.js (cœur commun) + style.css. On NE publie PAS
 #   la vue Cartes (cartes.html/app.js, retirée de la nav, réservée au local), ni
 #   base.html/base.js/base.css ni details.js ni server.js (réservés au local).
-# NOTE : la feature "Sport / Publier" (clubs amateurs, Supabase) est EN COURS et
-# ne vit que sur STAGING (deploy-staging.sh). On NE l'inclut PAS dans le build
-# prod : ni sport.html/sport.js/config-supabase.js, ni les liens de nav (strippés
-# plus bas). Le working tree garde la feature — seul le build prod la masque.
-FILES="index.html nouveautes.html galerie.js events-core.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
+# NOTE : l'ESPACE ORGANISATEUR (compte.html, publication d'événements via
+# Supabase) est ACTIVÉ en prod depuis 2026-07-19 (l'ancien gate qui strippait les
+# liens de nav a été retiré). La feature SPORT reste EN PAUSE : sport.html /
+# sport.js ne sont PAS publiés (aucun lien de nav n'y mène).
+FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css compte.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
@@ -62,24 +62,12 @@ if [ -d "$PROJ/images/fb" ]; then
   echo "  affiches FB copiées : $(ls -1 "$DIST/images/fb" 2>/dev/null | wc -l | tr -d ' ')"
 fi
 
-# GATE PROD : retire les liens de nav de la feature en cours (Sport / Publier) du
-# build prod uniquement. agenda-grandnancy.fr ne doit PAS exposer ces onglets tant
-# que la feature clubs/Supabase n'est pas validée (elle est testable sur staging).
-for page in index.html nouveautes.html; do
-  [ -f "$DIST/$page" ] || continue
-  node -e '
-    const fs = require("fs");
-    const p = process.argv[1];
-    let h = fs.readFileSync(p, "utf8");
-    h = h.replace(/^[ \t]*<a class="view-switch" href="(?:sport|compte)\.html">.*<\/a>[ \t]*\r?\n/gm, "");
-    fs.writeFileSync(p, h);
-  ' "$DIST/$page"
-done
+# (Ancien GATE PROD retiré 2026-07-19 : l'espace organisateur est publié.)
 
 # Sur chaque page publiée on injecte le compteur de visites GoatCounter (privé, sans
 # cookie). Ces ajouts ne concernent QUE le build public dist/ : la version locale
 # reste propre. GoatCounter ignore localhost/file:// → seules les vraies visites comptent.
-for page in index.html nouveautes.html; do
+for page in index.html nouveautes.html compte.html mentions-legales.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
@@ -97,13 +85,14 @@ done
 # publié → les visiteurs (mobiles surtout, cache agressif) reçoivent chaque mise à
 # jour sans vider leur cache.
 VER="$(date +%Y%m%d%H%M)"
-for page in index.html nouveautes.html; do
+for page in index.html nouveautes.html compte.html mentions-legales.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
     const [p, v] = process.argv.slice(1);
     let h = fs.readFileSync(p, "utf8");
-    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js)"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
+    // (\?[^"]*)? : remplace aussi un éventuel ?v=… déjà présent dans les sources.
+    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js|compte\.js|compte\.css|user-events\.js|config-supabase\.js)(\?[^"]*)?"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
     fs.writeFileSync(p, h);
   ' "$DIST/$page" "$VER"
 done
@@ -209,6 +198,8 @@ if [ -f "$DIST/sitemap.xml" ]; then
       "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n" +
       "  <url>\n    <loc>" + site + "/nouveautes.html</loc>\n    <lastmod>" + today +
       "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n" +
+      "  <url>\n    <loc>" + site + "/compte.html</loc>\n    <lastmod>" + today +
+      "</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n" +
       "</urlset>\n";
     fs.writeFileSync(p, xml);
   ' "$DIST/sitemap.xml" "$TODAY" "$SITE"
