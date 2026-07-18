@@ -77,6 +77,64 @@ function cleanSchedule(s) {
   return String(s || "").replace(/;+\s*$/, "").trim();
 }
 
+// ── Filtre géographique : on écarte tout événement à plus de 30 km de Nancy ──
+// Les villes sont géocodées via la Base Adresse Nationale (gratuite, sans clé),
+// UNE seule requête par ville inconnue : le résultat est mis en cache dans
+// commune-coords.json (commité). Ville vide, introuvable ou API injoignable →
+// on GARDE l'événement (bénéfice du doute, jamais de casse si le réseau tombe).
+const NANCY_COORDS = { lat: 48.6921, lon: 6.1844 };
+const MAX_KM = 30;
+const COORDS_PATH = path.join(__dirname, "commune-coords.json");
+
+function haversineKm(a, b) {
+  const R = 6371, rad = (x) => x * Math.PI / 180;
+  const s = Math.sin(rad(b.lat - a.lat) / 2) ** 2 +
+    Math.cos(rad(a.lat)) * Math.cos(rad(b.lat)) * Math.sin(rad(b.lon - a.lon) / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(s));
+}
+
+const normCityKey = (s) => String(s || "").trim().toLowerCase()
+  .normalize("NFD").replace(/[̀-ͯ]/g, "")
+  .replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+
+async function geocodeCity(name) {
+  // Biais lat/lon : en cas d'homonymie (Essey, Champigneulles…), la BAN
+  // privilégie la commune proche de Nancy → filtre conservateur.
+  const url = "https://api-adresse.data.gouv.fr/search/?type=municipality&limit=1" +
+    `&lat=${NANCY_COORDS.lat}&lon=${NANCY_COORDS.lon}&q=` + encodeURIComponent(name);
+  const r = await fetch(url);
+  if (!r.ok) return null;
+  const f = ((await r.json()).features || [])[0];
+  if (!f || !f.geometry) return null;
+  const [lon, lat] = f.geometry.coordinates;
+  return { lat, lon, city: (f.properties && f.properties.city) || name };
+}
+
+async function filterByDistance(events) {
+  let cache = {};
+  if (fs.existsSync(COORDS_PATH)) {
+    try { cache = JSON.parse(fs.readFileSync(COORDS_PATH, "utf8")) || {}; } catch (_) { cache = {}; }
+  }
+  const unknown = [...new Set(events.map(e => normCityKey(e.city)).filter(k => k && !(k in cache)))];
+  for (const key of unknown) {
+    try {
+      cache[key] = await geocodeCity(key.replace(/-/g, " "));   // null (mémorisé) si introuvable
+      await new Promise(res => setTimeout(res, 80));            // politesse API
+    } catch (_) { /* réseau KO : clé non cachée → événement gardé */ }
+  }
+  try { fs.writeFileSync(COORDS_PATH, JSON.stringify(cache, null, 1), "utf8"); } catch (_) {}
+  const kept = [], byCity = {};
+  for (const e of events) {
+    const c = cache[normCityKey(e.city)];
+    if (c && haversineKm(NANCY_COORDS, c) > MAX_KM) byCity[e.city] = (byCity[e.city] || 0) + 1;
+    else kept.push(e);
+  }
+  const nDropped = events.length - kept.length;
+  if (nDropped) console.log(`  📍 ${nDropped} événement(s) à plus de ${MAX_KM} km de Nancy écartés : ` +
+    Object.entries(byCity).map(([c, n]) => `${c} (${n})`).join(", "));
+  return kept;
+}
+
 async function main() {
   console.log("→ Récupération de l'agenda officiel de Nancy…");
   const res = await fetch(API, { headers: { Accept: "application/json" } });
@@ -336,9 +394,12 @@ async function main() {
   // Nettoyage commun (cf. normalize.js) : normalisation des communes, remappage
   // des catégories parasites, et dédoublonnage du MÊME événement listé par
   // plusieurs sources (titre + chevauchement de dates + lieu compatible).
-  const merged = cleanupMerged(rawMerged);
-  const removed = rawMerged.length - merged.length;
-  if (removed > 0) console.log(`  ⤷ ${removed} doublons inter-sources fusionnés (${merged.length} événements uniques).`);
+  const deduped = cleanupMerged(rawMerged);
+  const removed = rawMerged.length - deduped.length;
+  if (removed > 0) console.log(`  ⤷ ${removed} doublons inter-sources fusionnés (${deduped.length} événements uniques).`);
+
+  // Filtre géographique : rien au-delà de 30 km de Nancy (cf. filterByDistance).
+  const merged = await filterByDistance(deduped);
 
   // ── Suivi des NOUVEAUTÉS : date de première apparition de chaque événement ──
   // On mémorise dans events-firstseen.json { uuid -> date ISO } la première fois

@@ -63,10 +63,20 @@ jobs:
         run: |
           git config user.name "agenda-bot"
           git config user.email "actions@users.noreply.github.com"
-          git add data.js events-*.json
+          git add data.js events-*.json commune-coords.json
           if git diff --cached --quiet; then
             echo "Rien de neuf — pas de commit."
           else
             git commit -m "chore: maj agenda $(date -u +%F)"
             git push
           fi
+
+      # Supabase gratuit se met en PAUSE après ~7 jours sans activité BASE DE
+      # DONNÉES. Cette requête quotidienne (vraie requête SQL via l'API REST,
+      # clé anon publique, lecture RLS "approved" uniquement) le garde éveillé.
+      - name: Garder Supabase éveillé (anti-pause)
+        run: |
+          KEY="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imx2cGN1eXR2bXN2dW1nd2ZtYmRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE4MTA2NzMsImV4cCI6MjA5NzM4NjY3M30.oYPpqzgsEdvYGcVV65NHEYEEP5gNDuMHdWp9SjmeQmk"
+          curl -sf "https://lvpcuytvmsvumgwfmbdg.supabase.co/rest/v1/user_events?select=id&limit=1" \
+            -H "apikey: $KEY" -H "Authorization: Bearer $KEY" \
+            && echo "Supabase pingué." || echo "⚠ ping Supabase en échec (projet en pause ?)"

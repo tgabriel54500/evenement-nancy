@@ -1,0 +1,472 @@
+{
+ "essey-les-nancy": {
+  "lat": 48.707292,
+  "lon": 6.232347,
+  "city": "Essey-lès-Nancy"
+ },
+ "nancy": {
+  "lat": 48.688135,
+  "lon": 6.171263,
+  "city": "Nancy"
+ },
+ "jarville-la-malgrange": {
+  "lat": 48.667194,
+  "lon": 6.203971,
+  "city": "Jarville-la-Malgrange"
+ },
+ "villers-les-nancy": {
+  "lat": 48.665254,
+  "lon": 6.134211,
+  "city": "Villers-lès-Nancy"
+ },
+ "laxou": {
+  "lat": 48.688106,
+  "lon": 6.141298,
+  "city": "Laxou"
+ },
+ "malzeville": {
+  "lat": 48.718616,
+  "lon": 6.190008,
+  "city": "Malzéville"
+ },
+ "fleville-devant-nancy": {
+  "lat": 48.627353,
+  "lon": 6.204029,
+  "city": "Fléville-devant-Nancy"
+ },
+ "ludres": {
+  "lat": 48.618012,
+  "lon": 6.177712,
+  "city": "Ludres"
+ },
+ "tomblaine": {
+  "lat": 48.684819,
+  "lon": 6.21855,
+  "city": "Tomblaine"
+ },
+ "liverdun": {
+  "lat": 48.757942,
+  "lon": 6.083109,
+  "city": "Liverdun"
+ },
+ "pont-saint-vincent": {
+  "lat": 48.606575,
+  "lon": 6.096068,
+  "city": "Pont-Saint-Vincent"
+ },
+ "vand-uvre-les-nancy": {
+  "lat": 48.661576,
+  "lon": 6.162638,
+  "city": "Vandœuvre-lès-Nancy"
+ },
+ "toul": {
+  "lat": 48.678031,
+  "lon": 5.900596,
+  "city": "Toul"
+ },
+ "villey-saint-etienne": {
+  "lat": 48.731892,
+  "lon": 5.978121,
+  "city": "Villey-Saint-Étienne"
+ },
+ "champigneulles": {
+  "lat": 48.732584,
+  "lon": 6.157389,
+  "city": "Champigneulles"
+ },
+ "pont-a-mousson": {
+  "lat": 48.912759,
+  "lon": 6.045297,
+  "city": "Pont-à-Mousson"
+ },
+ "blenod-les-pont-a-mousson": {
+  "lat": 48.874841,
+  "lon": 6.060522,
+  "city": "Blénod-lès-Pont-à-Mousson"
+ },
+ "martincourt": {
+  "lat": 48.848004,
+  "lon": 5.94402,
+  "city": "Martincourt"
+ },
+ "tremblecourt": {
+  "lat": 48.805526,
+  "lon": 5.940627,
+  "city": "Tremblecourt"
+ },
+ "aboncourt-sur-seille": {
+  "lat": 48.816131,
+  "lon": 6.339607,
+  "city": "Aboncourt-sur-Seille"
+ },
+ "delme": {
+  "lat": 48.887765,
+  "lon": 6.390983,
+  "city": "Delme"
+ },
+ "hoeville": {
+  "lat": 48.707365,
+  "lon": 6.435827,
+  "city": "Hoéville"
+ },
+ "einville-au-jard": {
+  "lat": 48.655171,
+  "lon": 6.480195,
+  "city": "Einville-au-Jard"
+ },
+ "luneville": {
+  "lat": 48.593492,
+  "lon": 6.497808,
+  "city": "Lunéville"
+ },
+ "moncel-les-luneville": {
+  "lat": 48.575425,
+  "lon": 6.526584,
+  "city": "Moncel-lès-Lunéville"
+ },
+ "blainville-sur-l-eau": {
+  "lat": 48.557103,
+  "lon": 6.407418,
+  "city": "Blainville-sur-l'Eau"
+ },
+ "vic-sur-seille": {
+  "lat": 48.781404,
+  "lon": 6.531073,
+  "city": "Vic-sur-Seille"
+ },
+ "houdemont": {
+  "lat": 48.644569,
+  "lon": 6.18064,
+  "city": "Houdemont"
+ },
+ "mangonville": {
+  "lat": 48.455982,
+  "lon": 6.288518,
+  "city": "Mangonville"
+ },
+ "haroue": {
+  "lat": 48.469514,
+  "lon": 6.178232,
+  "city": "Haroué"
+ },
+ "gerbecourt-et-haplemont": {
+  "lat": 48.485335,
+  "lon": 6.158126,
+  "city": "Gerbécourt-et-Haplemont"
+ },
+ "charmes": {
+  "lat": 48.367974,
+  "lon": 6.286458,
+  "city": "Charmes"
+ },
+ "vezelise": {
+  "lat": 48.48776,
+  "lon": 6.089156,
+  "city": "Vézelise"
+ },
+ "goviller": {
+  "lat": 48.497586,
+  "lon": 6.009767,
+  "city": "Goviller"
+ },
+ "voinemont": {
+  "lat": 48.519575,
+  "lon": 6.162912,
+  "city": "Voinémont"
+ },
+ "saxon-sion": {
+  "lat": 48.427092,
+  "lon": 6.079481,
+  "city": "Saxon-Sion"
+ },
+ "courcelles": {
+  "lat": 48.3735,
+  "lon": 6.037555,
+  "city": "Courcelles"
+ },
+ "vomecourt-sur-madon": {
+  "lat": 48.360351,
+  "lon": 6.166525,
+  "city": "Vomécourt-sur-Madon"
+ },
+ "punerot": {
+  "lat": 48.481576,
+  "lon": 5.808779,
+  "city": "Punerot"
+ },
+ "pierre-la-treiche": {
+  "lat": 48.642812,
+  "lon": 5.934983,
+  "city": "Pierre-la-Treiche"
+ },
+ "villey-le-sec": {
+  "lat": 48.65669,
+  "lon": 5.980861,
+  "city": "Villey-le-Sec"
+ },
+ "jolivet": {
+  "lat": 48.605682,
+  "lon": 6.50512,
+  "city": "Jolivet"
+ },
+ "parroy": {
+  "lat": 48.680822,
+  "lon": 6.595748,
+  "city": "Parroy"
+ },
+ "xaronval": {
+  "lat": 48.37522,
+  "lon": 6.18865,
+  "city": "Xaronval"
+ },
+ "mont-l-etroit": {
+  "lat": 48.498085,
+  "lon": 5.785263,
+  "city": "Mont-l'Étroit"
+ },
+ "xonrupt-longemer": {
+  "lat": 48.069437,
+  "lon": 6.946674,
+  "city": "Xonrupt-Longemer"
+ },
+ "maxeville": {
+  "lat": 48.707941,
+  "lon": 6.147492,
+  "city": "Maxéville"
+ },
+ "territoire-du-grand-nancy": {
+  "lat": 48.661576,
+  "lon": 6.162638,
+  "city": "Vandœuvre-lès-Nancy"
+ },
+ "pompey": {
+  "lat": 48.771023,
+  "lon": 6.124946,
+  "city": "Pompey"
+ },
+ "pettoncourt": {
+  "lat": 48.782438,
+  "lon": 6.405915,
+  "city": "Pettoncourt"
+ },
+ "domgermain": {
+  "lat": 48.646626,
+  "lon": 5.835352,
+  "city": "Domgermain"
+ },
+ "chaudeney-sur-moselle": {
+  "lat": 48.659699,
+  "lon": 5.902848,
+  "city": "Chaudeney-sur-Moselle"
+ },
+ "ville-au-val": {
+  "lat": 48.847846,
+  "lon": 6.121753,
+  "city": "Ville-au-Val"
+ },
+ "craincourt": {
+  "lat": 48.874837,
+  "lon": 6.320329,
+  "city": "Craincourt"
+ },
+ "aroffe": {
+  "lat": 48.400936,
+  "lon": 5.90071,
+  "city": "Aroffe"
+ },
+ "morville-sur-seille": {
+  "lat": 48.91507,
+  "lon": 6.156309,
+  "city": "Morville-sur-Seille"
+ },
+ "laneuveville-aux-bois": {
+  "lat": 48.61173,
+  "lon": 6.650752,
+  "city": "Laneuveville-aux-Bois"
+ },
+ "dieulouard": {
+  "lat": 48.841321,
+  "lon": 6.065457,
+  "city": "Dieulouard"
+ },
+ "jezainville": {
+  "lat": 48.87159,
+  "lon": 6.041152,
+  "city": "Jezainville"
+ },
+ "verny": {
+  "lat": 49.007508,
+  "lon": 6.203941,
+  "city": "Verny"
+ },
+ "boulaincourt": {
+  "lat": 48.372601,
+  "lon": 6.083214,
+  "city": "Boulaincourt"
+ },
+ "pagny-la-blanche-cote": {
+  "lat": 48.53907,
+  "lon": 5.721973,
+  "city": "Pagny-la-Blanche-Côte"
+ },
+ "houdelmont": {
+  "lat": 48.53443,
+  "lon": 6.090044,
+  "city": "Houdelmont"
+ },
+ "montauville": {
+  "lat": 48.901354,
+  "lon": 6.026222,
+  "city": "Montauville"
+ },
+ "sillegny": {
+  "lat": 48.992479,
+  "lon": 6.161017,
+  "city": "Sillegny"
+ },
+ "marainviller": {
+  "lat": 48.587065,
+  "lon": 6.598393,
+  "city": "Marainviller"
+ },
+ "maxey-sur-meuse": {
+  "lat": 48.449846,
+  "lon": 5.697401,
+  "city": "Maxey-sur-Meuse"
+ },
+ "seichamps": {
+  "lat": 48.71559,
+  "lon": 6.26396,
+  "city": "Seichamps"
+ },
+ "bouxieres-aux-dames": {
+  "lat": 48.75611,
+  "lon": 6.163363,
+  "city": "Bouxières-aux-Dames"
+ },
+ "saint-max": {
+  "lat": 48.705083,
+  "lon": 6.203966,
+  "city": "Saint-Max"
+ },
+ "bayon": {
+  "lat": 48.475155,
+  "lon": 6.317411,
+  "city": "Bayon"
+ },
+ "pulnoy": {
+  "lat": 48.703353,
+  "lon": 6.257946,
+  "city": "Pulnoy"
+ },
+ "bouxieres-aux-chenes": {
+  "lat": 48.77057,
+  "lon": 6.260496,
+  "city": "Bouxières-aux-Chênes"
+ },
+ "gripport": {
+  "lat": 48.412671,
+  "lon": 6.253403,
+  "city": "Gripport"
+ },
+ "heillecourt": {
+  "lat": 48.650256,
+  "lon": 6.197154,
+  "city": "Heillecourt"
+ },
+ "socourt": {
+  "lat": 48.395462,
+  "lon": 6.252642,
+  "city": "Socourt"
+ },
+ "jaillon": {
+  "lat": 48.75679,
+  "lon": 5.969168,
+  "city": "Jaillon"
+ },
+ "belleau": {
+  "lat": 48.844791,
+  "lon": 6.18621,
+  "city": "Belleau"
+ },
+ "hudiviller": {
+  "lat": 48.602321,
+  "lon": 6.393532,
+  "city": "Hudiviller"
+ },
+ "rosieres-aux-salines": {
+  "lat": 48.591517,
+  "lon": 6.33797,
+  "city": "Rosières-aux-Salines"
+ },
+ "velle-sur-moselle": {
+  "lat": 48.530106,
+  "lon": 6.276563,
+  "city": "Velle-sur-Moselle"
+ },
+ "clayeures": {
+  "lat": 48.47162,
+  "lon": 6.405134,
+  "city": "Clayeures"
+ },
+ "beuvezin": {
+  "lat": 48.379257,
+  "lon": 5.958717,
+  "city": "Beuvezin"
+ },
+ "benney": {
+  "lat": 48.513966,
+  "lon": 6.22393,
+  "city": "Benney"
+ },
+ "attigneville": {
+  "lat": 48.386545,
+  "lon": 5.808481,
+  "city": "Attignéville"
+ },
+ "villacourt": {
+  "lat": 48.456121,
+  "lon": 6.347592,
+  "city": "Villacourt"
+ },
+ "bainville-aux-miroirs": {
+  "lat": 48.439043,
+  "lon": 6.281501,
+  "city": "Bainville-aux-Miroirs"
+ },
+ "mamey": {
+  "lat": 48.877126,
+  "lon": 5.959003,
+  "city": "Mamey"
+ },
+ "colombey-les-belles": {
+  "lat": 48.528692,
+  "lon": 5.893402,
+  "city": "Colombey-les-Belles"
+ },
+ "pagney-derriere-barine": {
+  "lat": 48.695491,
+  "lon": 5.846673,
+  "city": "Pagney-derrière-Barine"
+ },
+ "neuves-maisons": {
+  "lat": 48.619336,
+  "lon": 6.106616,
+  "city": "Neuves-Maisons"
+ },
+ "varangeville": {
+  "lat": 48.635738,
+  "lon": 6.31484,
+  "city": "Varangéville"
+ },
+ "allain": {
+  "lat": 48.544696,
+  "lon": 5.909318,
+  "city": "Allain"
+ },
+ "laneuveville-devant-nancy": {
+  "lat": 48.648269,
+  "lon": 6.241429,
+  "city": "Laneuveville-devant-Nancy"
+ }
+}
