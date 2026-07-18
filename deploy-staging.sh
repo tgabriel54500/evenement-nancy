@@ -17,7 +17,7 @@ export PATH="/Users/tristan/.nvm/versions/node/v24.14.0/bin:$PATH"
 cd "$PROJ" || exit 1
 
 DIST="$PROJ/dist-staging"
-FILES="index.html cartes.html nouveautes.html compte.html sport.html galerie.js app.js events-core.js compte.js sport.js compte.css user-events.js config-supabase.js style.css data.js _headers sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
+FILES="index.html cartes.html nouveautes.html compte.html sport.html mentions-legales.html galerie.js app.js events-core.js compte.js sport.js compte.css user-events.js config-supabase.js style.css data.js _headers sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 
 rm -rf "$DIST"
 mkdir -p "$DIST"
