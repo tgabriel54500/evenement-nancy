@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-18",
+    "date": "2026-07-19",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-18",
+    "date": "2026-07-19",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-07-18",
+    "date": "2026-07-19",
     "endDate": "2026-07-30",
     "dateText": "",
     "schedule": "15h30 > 18h",
@@ -64,27 +64,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-583",
-    "title": "Ciné concert : un voyage musical dans l'univers de Georges Méliès",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-07-18",
-    "endDate": "2026-07-18",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/melies.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-concert-un-voyage-musical-dans-lunivers-de-georges-melies",
     "source": "villers-les-nancy"
   },
   {

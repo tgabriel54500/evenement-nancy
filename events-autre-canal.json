@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-nuit-chaude-aux-accents-mediterraneens-exotica-lunatica-zouzou-airlines-blindtest",
-    "title": "Nuit chaude aux accents méditerranéens",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "World"
-    ],
-    "date": "2026-07-18",
-    "endDate": "2026-07-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/7_rouge_exotica_copie.jpg?itok=8q9PRMKt",
-    "url": "https://lautrecanalnancy.fr/agenda/nuit-chaude-aux-accents-mediterraneens-exotica-lunatica-zouzou-airlines-blindtest",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-voix-envoutantes-rythmes-lumineux-ladies-tears-ladislava",
     "title": "Voix envoûtantes & rythmes lumineux",
     "category": "musiques-actuelles",

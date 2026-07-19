@@ -468,5 +468,10 @@
   "lat": 48.648269,
   "lon": 6.241429,
   "city": "Laneuveville-devant-Nancy"
+ },
+ "vaudemont": {
+  "lat": 48.416617,
+  "lon": 6.05624,
+  "city": "Vaudémont"
  }
 }
