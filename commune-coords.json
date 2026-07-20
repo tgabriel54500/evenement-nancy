@@ -473,5 +473,20 @@
   "lat": 48.416617,
   "lon": 6.05624,
   "city": "Vaudémont"
+ },
+ "avrainville": {
+  "lat": 48.77216,
+  "lon": 5.938742,
+  "city": "Avrainville"
+ },
+ "rozelieures": {
+  "lat": 48.450589,
+  "lon": 6.433729,
+  "city": "Rozelieures"
+ },
+ "luppy": {
+  "lat": 48.981087,
+  "lon": 6.343735,
+  "city": "Luppy"
  }
 }

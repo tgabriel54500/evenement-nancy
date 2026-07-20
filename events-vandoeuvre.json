@@ -996,6 +996,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-22151",
+    "title": "Conférence UP²V : Comment regarder l’autre dans sa complexité ?",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2025-11-19",
+    "endDate": "2025-11-19",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-progres/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-12623",
     "title": "Défilé de la Saint Nicolas et feu d’artifice",
     "category": "famille",
@@ -1151,7 +1170,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1170,7 +1189,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1210,7 +1229,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1269,7 +1288,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1307,7 +1326,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }

@@ -1,51 +1,5 @@
 [
   {
-    "uuid": "lcn-voix-envoutantes-rythmes-lumineux-ladies-tears-ladislava",
-    "title": "Voix envoûtantes & rythmes lumineux",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Electro",
-      "Pop",
-      "World"
-    ],
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/8_jaune_ladislava_copie.jpg?itok=BcK8AOYL",
-    "url": "https://lautrecanalnancy.fr/agenda/voix-envoutantes-rythmes-lumineux-ladies-tears-ladislava",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-energie-solaire-rythmes-du-monde-daka-sound",
-    "title": "Énergie solaire & rythmes du monde",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Afro"
-    ],
-    "date": "2026-07-19",
-    "endDate": "2026-07-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/9_rouge_daka_copie.jpg?itok=kSFnmUcf",
-    "url": "https://lautrecanalnancy.fr/agenda/energie-solaire-rythmes-du-monde-daka-sound",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-14",
     "title": "Marché bio et local",
     "category": "activite",
