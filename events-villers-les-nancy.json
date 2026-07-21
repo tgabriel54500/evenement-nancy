@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-20",
+    "date": "2026-07-21",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-07-20",
+    "date": "2026-07-21",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -39,54 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0610_EXPO_LAQUES__c__Oeuvre_de_Nathalie_Rolland-Huckel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-laques-contemporaines-4-regards",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-569",
-    "title": "Permanences - Avec vous pour vos droits",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Citoyenneté",
-      "Solidarité",
-      "Sénior",
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-07-20",
-    "endDate": "2026-07-30",
-    "dateText": "",
-    "schedule": "15h30 > 18h",
-    "place": "Clairlieu",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-577",
-    "title": "Balade contée dans le parc de Brabois",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Education",
-      "Environnement",
-      "Culture"
-    ],
-    "date": "2026-07-20",
-    "endDate": "2026-07-20",
-    "dateText": "",
-    "schedule": "18h à 20h30",
-    "place": "Parc de Brabois",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/baladecontee.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/balade-contee-dans-le-parc-de-brabois",
     "source": "villers-les-nancy"
   },
   {
@@ -108,6 +60,31 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2026/image-from-rawpixel-id-431179-original.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/initiation-a-la-peche-bassin-de-la-sance",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-569",
+    "title": "Permanences - Avec vous pour vos droits",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-07-23",
+    "endDate": "2026-07-30",
+    "dateText": "",
+    "schedule": "15h30 > 18h",
+    "place": "Clairlieu",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
     "source": "villers-les-nancy"
   },
   {
@@ -215,6 +192,28 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/eau_parc.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/balade-nature-au-fil-de-leau",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-277",
+    "title": "69e Fête des vendanges",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-09-02",
+    "endDate": "2026-09-06",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
     "source": "villers-les-nancy"
   },
   {

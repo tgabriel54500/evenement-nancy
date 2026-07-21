@@ -247,6 +247,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-defis-des-champions",
+    "title": "Défis des Champions",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-07-29",
+    "endDate": "2026-07-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "Derrière le bâtiment Picardie, Laxou",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/265/1200_630_7_defis-des-champions.png",
+    "url": "https://www.laxou.fr/fr/agenda/defis-des-champions_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-concert-no-quarter",
     "title": "Concert No Quarter",
     "category": "musiques-actuelles",
