@@ -488,5 +488,10 @@
   "lat": 48.981087,
   "lon": 6.343735,
   "city": "Luppy"
+ },
+ "landremont": {
+  "lat": 48.850285,
+  "lon": 6.141184,
+  "city": "Landremont"
  }
 }

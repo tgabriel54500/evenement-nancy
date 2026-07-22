@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-07-21",
+    "date": "2026-07-22",
     "endDate": "2026-07-25",
     "dateText": "Du 10 juin au 25 juillet 2026",
     "schedule": "de 14h à 18h",
@@ -199,11 +199,12 @@
   {
     "uuid": "po-9f5d920a-5ffa-11f1-b84a-a309bf180951",
     "title": "NJP 2026 : Médine - Enfants du Destin, Dori",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
     "subcats": [
-      "Festival"
+      "Théâtre",
+      "Concert"
     ],
     "date": "2026-10-09",
     "endDate": "2026-10-09",
