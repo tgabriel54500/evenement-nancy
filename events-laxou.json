@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-jardin-des-1000-fleurs-flore-54-2",
-    "title": "Jardin des 1000 fleurs - FLORE 54",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2026-07-22",
-    "endDate": "2026-07-22",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/230/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
-    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-flore-54-2_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-concert-slag-dogs",
     "title": "Concert Slag Dogs",
     "category": "musiques-actuelles",
@@ -415,6 +396,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_vide-greniers-braderie.jpg",
     "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-journee-du-patrimoine-economique",
+    "title": "JOURNÉE DU PATRIMOINE ÉCONOMIQUE",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-02",
+    "endDate": "2026-10-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/266/1200_630_7_a4-visites-page-0001.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/journee-du-patrimoine-economique_-d.html",
     "source": "laxou"
   },
   {

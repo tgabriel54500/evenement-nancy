@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-07-22",
+    "date": "2026-07-23",
     "endDate": "2026-07-25",
     "dateText": "Du 10 juin au 25 juillet 2026",
     "schedule": "de 14h à 18h",
@@ -33,7 +33,7 @@
     "date": "2026-07-24",
     "endDate": "2026-07-24",
     "dateText": "Le 24 juillet à 16h30 et à 17h30",
-    "schedule": "à 16h30 et à 17h30",
+    "schedule": "à 16h30 et 17h30",
     "place": "Galerie Poirel",
     "city": "Nancy",
     "free": true,
@@ -73,8 +73,8 @@
       "Exposition"
     ],
     "date": "2026-09-05",
-    "endDate": "2026-11-22",
-    "dateText": "Du 5 septembre au 22 novembre 2026",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
     "place": "Galerie Poirel",
     "city": "Nancy",
@@ -287,27 +287,6 @@
     "source": "poirel"
   },
   {
-    "uuid": "po-4f8a4492-804a-11f1-993c-2928787e3f13",
-    "title": "CHEVREUIL - Association Monolithe",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "Le 24 octobre 2026",
-    "schedule": "",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4f8a4492-804a-11f1-993c-2928787e3f13/0/1-1_M_6a57809328a72.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4f8a4492-804a-11f1-993c-2928787e3f13",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb",
     "title": "David Sun - Titi",
     "category": "spectacle",
@@ -395,7 +374,7 @@
   },
   {
     "uuid": "po-7eed200e-13f5-11f1-9962-8ddab606659f",
-    "title": "Philippe Lelouche - Humour",
+    "title": "Philippe Lelouche",
     "category": "spectacle",
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
@@ -609,6 +588,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7dc32316-4ddb-11f1-b7fb-236d105bfd70/0/ORIGINE_M_6a02e2e4df76a.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=7dc32316-4ddb-11f1-b7fb-236d105bfd70",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-8cf0cf14-85c1-11f1-9efa-6dc95265f5ca",
+    "title": "Nos déferlantes - Cie Logos",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "dateText": "Le 18 décembre 2026 et le 08 janvier 2027",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8cf0cf14-85c1-11f1-9efa-6dc95265f5ca/0/1-1_M_6a60ac5105692.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8cf0cf14-85c1-11f1-9efa-6dc95265f5ca",
     "source": "poirel"
   },
   {

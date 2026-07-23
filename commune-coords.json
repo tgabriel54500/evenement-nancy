@@ -493,5 +493,10 @@
   "lat": 48.850285,
   "lon": 6.141184,
   "city": "Landremont"
+ },
+ "saizerais": {
+  "lat": 48.788855,
+  "lon": 6.048083,
+  "city": "Saizerais"
  }
 }

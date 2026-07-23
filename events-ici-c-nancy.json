@@ -1,1 +1,21 @@
-[]
+[
+  {
+    "uuid": "icn-1102",
+    "title": "MATCH NANCY - REIMS (LIGUE 2 - 6ÈME JOURNÉE)",
+    "category": "sport",
+    "catLabel": "Sport",
+    "catEmoji": "⚽",
+    "subcats": [],
+    "date": "2026-09-11",
+    "endDate": "2026-09-11",
+    "dateText": "",
+    "schedule": "20:00",
+    "place": "Tomblaine, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1102-match-nancy-reims-ligue-2-6eme-journee/2026-09-11-20-00.html",
+    "source": "ici-c-nancy"
+  }
+]

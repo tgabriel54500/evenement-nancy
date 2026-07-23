@@ -1234,6 +1234,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29041",
+    "title": "Septembre rouge – Village prévention",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "dateText": "",
+    "schedule": "De 13h à 16h",
+    "place": "Hôpitaux de Brabois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-27808",
     "title": "Loto",
     "category": "seniors",
