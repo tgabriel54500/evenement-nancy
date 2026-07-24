@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "title": "Cercles",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-07-23",
-    "endDate": "2026-07-25",
-    "dateText": "Du 10 juin au 25 juillet 2026",
-    "schedule": "de 14h à 18h",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-2f7f1174-6fa5-11f1-bc55-f32d94276250",
     "title": "Cercles : Visite guidée - Les Impromptus du Tapir",
     "category": "exposition",
@@ -32,7 +11,7 @@
     ],
     "date": "2026-07-24",
     "endDate": "2026-07-24",
-    "dateText": "Le 24 juillet à 16h30 et à 17h30",
+    "dateText": "Vendredi 24 juillet à 16h30 et 17h30",
     "schedule": "à 16h30 et 17h30",
     "place": "Galerie Poirel",
     "city": "Nancy",
@@ -40,6 +19,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2f7f1174-6fa5-11f1-bc55-f32d94276250/0/1-1_M_6a3b92feb1fcd.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2f7f1174-6fa5-11f1-bc55-f32d94276250",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
+    "title": "Cercles",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-07-24",
+    "endDate": "2026-07-25",
+    "dateText": "Du 10 juin au 25 juillet 2026",
+    "schedule": "de 14h à 18h",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
     "source": "poirel"
   },
   {
