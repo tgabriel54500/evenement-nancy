@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-concert-slag-dogs",
-    "title": "Concert Slag Dogs",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-07-24",
-    "endDate": "2026-07-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "Terrain de foot Sadoul",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/260/1200_630_7_3-concert-slag-dogs.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/concert-slag-dogs_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-defis-des-champions",
     "title": "Défis des Champions",
     "category": "autre",
