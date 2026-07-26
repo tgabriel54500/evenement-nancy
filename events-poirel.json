@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "title": "Cercles",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-07-25",
-    "endDate": "2026-07-25",
-    "dateText": "Du 10 juin au 25 juillet 2026",
-    "schedule": "de 14h à 18h",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-6106660c-8049-11f1-949c-95d6e1361653",
     "title": "EPO - \"KIRLÉ\"",
     "category": "spectacle",

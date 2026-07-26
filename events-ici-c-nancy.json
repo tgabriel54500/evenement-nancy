@@ -17,5 +17,24 @@
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1102-match-nancy-reims-ligue-2-6eme-journee/2026-09-11-20-00.html",
     "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1120",
+    "title": "MATCH NANCY - GUINGAMP (LIGUE 2 - 8ÈME JOURNÉE)",
+    "category": "sport",
+    "catLabel": "Sport",
+    "catEmoji": "⚽",
+    "subcats": [],
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "dateText": "",
+    "schedule": "20:00",
+    "place": "Tomblaine, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1120-match-nancy-guingamp-ligue-2-8eme-journee/2026-10-09-20-00.html",
+    "source": "ici-c-nancy"
   }
 ]

@@ -503,5 +503,10 @@
   "lat": 48.758748,
   "lon": 6.125786,
   "city": "Frouard"
+ },
+ "puzieux": {
+  "lat": 48.892681,
+  "lon": 6.368873,
+  "city": "Puzieux"
  }
 }
