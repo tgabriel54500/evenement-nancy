@@ -1,28 +1,5 @@
 [
   {
-    "uuid": "lcn-derives-electriques-energie-indocile-prairie-mairie-devore",
-    "title": "Dérives électriques & énergie indocile",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Pop",
-      "Rock"
-    ],
-    "date": "2026-07-26",
-    "endDate": "2026-07-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/10_jaune_prairie_copie.jpg?itok=p4-gQvMw",
-    "url": "https://lautrecanalnancy.fr/agenda/derives-electriques-energie-indocile-prairie-mairie-devore",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-clairs-obscurs-vibrations-sensibles-abyssan-rosaly",
     "title": "Clairs-obscurs & vibrations sensibles",
     "category": "musiques-actuelles",
