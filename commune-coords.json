@@ -513,5 +513,15 @@
   "lat": 48.492161,
   "lon": 6.39416,
   "city": "Einvaux"
+ },
+ "richardmenil": {
+  "lat": 48.593343,
+  "lon": 6.170077,
+  "city": "Richardménil"
+ },
+ "bicqueley": {
+  "lat": 48.631879,
+  "lon": 5.904041,
+  "city": "Bicqueley"
  }
 }
