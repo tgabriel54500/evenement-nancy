@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-concert-no-quarter",
-    "title": "Concert No Quarter",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-07-31",
-    "endDate": "2026-07-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc d’agrément du Champ-le-Bœuf",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/261/1200_630_7_affiche-concert-no-quarter-entree-libre-1.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/concert-no-quarter_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-concert-macondo",
     "title": "Concert Macondo",
     "category": "musiques-actuelles",
