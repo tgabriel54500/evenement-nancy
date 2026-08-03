@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-clairs-obscurs-vibrations-sensibles-abyssan-rosaly",
-    "title": "Clairs-obscurs & vibrations sensibles",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Rock"
-    ],
-    "date": "2026-08-02",
-    "endDate": "2026-08-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/11_rouge_abyss_copie.jpg?itok=J_fLWQzO",
-    "url": "https://lautrecanalnancy.fr/agenda/clairs-obscurs-vibrations-sensibles-abyssan-rosaly",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-15",
     "title": "Marché bio et local",
     "category": "activite",
