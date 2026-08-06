@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
-    "title": "Exposition Permanent Laurence Jenkell à Nancy",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [],
-    "date": "2026-08-05",
-    "endDate": "2026-11-30",
-    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
-    "schedule": "",
-    "place": "L'autre Galerie",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
-    "source": "curieux-net"
-  },
-  {
     "uuid": "cx-au-jardin-des-contes-2",
     "title": "Au jardin des contes",
     "category": "spectacle",
@@ -35,6 +16,25 @@
     "reservation": false,
     "image": "https://www.curieux.net/img/e/2026/07/6a5749c383e52-au-jardin-des-contes.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/au-jardin-des-contes-2",
+    "source": "curieux-net"
+  },
+  {
+    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
+    "title": "Exposition Permanent Laurence Jenkell à Nancy",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-08-06",
+    "endDate": "2026-11-30",
+    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
+    "schedule": "",
+    "place": "L'autre Galerie",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
     "source": "curieux-net"
   },
   {

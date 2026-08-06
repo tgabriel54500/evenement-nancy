@@ -1059,44 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-9675",
-    "title": "Exposition “Goûte l’Afrique”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-08-05",
-    "endDate": "2026-08-05",
-    "dateText": "",
-    "schedule": "de 16h à 20h",
-    "place": "Ferme du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/goute-afrique-2.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/exposition-goute-lafrique/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-26341",
-    "title": "Visite libre – Guadeloupe-Martinique-Guyane",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-08-05",
-    "endDate": "2026-08-05",
-    "dateText": "",
-    "schedule": "De 14h30 à 17h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/visite-libre-guadeloupe-martinique-guyane/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-14945",
     "title": "Discovery Tour – Égypte ancienne",
     "category": "culture",
@@ -1151,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1191,7 +1153,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1210,7 +1172,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1229,7 +1191,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
@@ -1307,7 +1269,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1345,7 +1307,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/Frida-con-la-luce-Ol-auf-Leinwand.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
