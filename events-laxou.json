@@ -304,6 +304,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-le-livre-sur-la-place",
+    "title": "Le Livre sur la Place",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [],
+    "date": "2026-09-11",
+    "endDate": "2026-09-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/91/1200_630_7_le-livre-sur-la-place-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/le-livre-sur-la-place_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-jardin-des-1000-fleurs-1",
     "title": "Jardin des 1000 fleurs",
     "category": "activite",
@@ -320,6 +339,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/232/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-1_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-journees-europeennes-du-patrimoine",
+    "title": "Journées européennes du patrimoine",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel de Ville",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/268/1200_630_7_jep-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/journees-europeennes-du-patrimoine_-d.html",
     "source": "laxou"
   },
   {
@@ -358,6 +396,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/266/1200_630_7_a4-visites-page-0001.jpg",
     "url": "https://www.laxou.fr/fr/agenda/journee-du-patrimoine-economique_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-fete-de-la-science",
+    "title": "Fête de la science",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/269/1200_630_7_fete-de-la-science-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/fete-de-la-science_-d.html",
     "source": "laxou"
   },
   {
