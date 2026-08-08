@@ -523,5 +523,10 @@
   "lat": 48.631879,
   "lon": 5.904041,
   "city": "Bicqueley"
+ },
+ "saint-nicolas-de-port": {
+  "lat": 48.627249,
+  "lon": 6.299884,
+  "city": "Saint-Nicolas-de-Port"
  }
 }
