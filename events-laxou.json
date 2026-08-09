@@ -285,6 +285,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-le-village-du-livre",
+    "title": "Le village du Livre",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-09-09",
+    "endDate": "2026-09-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espace Claudie Haigneré",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/1200_630_7_village-du-livre-1.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/le-village-du-livre_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-le-livre-sur-la-place",
     "title": "Le Livre sur la Place",
     "category": "conference",
