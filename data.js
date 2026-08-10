@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-08-09 — 816 événements à venir.
+// Généré le : 2026-08-10 — 823 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -47,7 +47,7 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-08-09";
+const GENERATED_AT = "2026-08-10";
 
 const EVENTS = [
   {
@@ -71,56 +71,13 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "861b867c-9168-11f1-ba41-d37c6660b3d3",
-    "title": "Territoire 7.5",
-    "category": "festival",
-    "subcats": [
-      "Performance",
-      "Culture",
-      "Débat d'idées"
-    ],
-    "date": "2026-08-09",
-    "endDate": "2026-08-09",
-    "dateText": "Les 7, 8 et 9 août 2026",
-    "schedule": "à 10h marché du plateau de Haye à Nancy",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/861b867c-9168-11f1-ba41-d37c6660b3d3/0/ORIGINE_M_6a7437c9d510b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=861b867c-9168-11f1-ba41-d37c6660b3d3",
-    "addedAt": "2026-08-07"
-  },
-  {
-    "uuid": "c1fe2552-447c-11f1-9a36-05d99ba9c316",
-    "title": "Amours d'été • Élégance rock & énergie débridée",
-    "category": "musiques-actuelles",
-    "subcats": [
-      "Concert",
-      "Culture",
-      "Musiques actuelles",
-      "Rock"
-    ],
-    "date": "2026-08-09",
-    "endDate": "2026-08-09",
-    "dateText": "Dimanche 9 août 2026",
-    "schedule": "de 16h30 à 19h",
-    "place": "Parc Sainte-Marie",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c1fe2552-447c-11f1-9a36-05d99ba9c316/0/ORIGINE_M_69f32a7cbb231.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c1fe2552-447c-11f1-9a36-05d99ba9c316",
-    "addedAt": "2026-05-24"
-  },
-  {
     "uuid": "66dd3df0-fd94-11ef-b83e-5365853cbbcb",
     "title": "Eux, moches mais touchants",
     "category": "jeune-public",
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-27",
     "dateText": "Les dimanches 9, 16, 23 et 30 août & 27 septembre 2026",
     "schedule": "à 10h30",
@@ -133,6 +90,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "b9d5ca10-80f9-11f1-9750-156d29f77033",
+    "title": "Boucles d'oreilles",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-08-10",
+    "endDate": "2026-08-10",
+    "dateText": "Lundi 10 août",
+    "schedule": "de 14h00 à 16h15",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b9d5ca10-80f9-11f1-9750-156d29f77033/0/1-1_M_6a58a63ebe6bb.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b9d5ca10-80f9-11f1-9750-156d29f77033",
+    "addedAt": "2026-07-17"
+  },
+  {
     "uuid": "62dd46dc-3cbd-11f1-a3e5-2b686ed7c987",
     "title": "Atelier des vacances \"Au fil des lignes\"",
     "category": "jeune-public",
@@ -140,7 +116,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-13",
     "dateText": "Jeudis 30 juillet et 13 août, à 10h",
     "schedule": "10h - 12h",
@@ -160,7 +136,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-13",
     "dateText": "Jeudis 30 juillet et 13 août à 14h30",
     "schedule": "14h30 - 16h30",
@@ -179,7 +155,7 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-13",
     "dateText": "Jeudi 16, jeudi 23, samedi 25, mercredi 29 juillet, mardi 11, jeudi 13 août 2026",
     "schedule": "de 15h à 17h",
@@ -199,7 +175,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-14",
     "dateText": "Vendredis 24 et 31 juillet, 7 et 14 août, de 10h à 11h30",
     "schedule": "10h - 11h30",
@@ -218,7 +194,7 @@ const EVENTS = [
     "subcats": [
       "Evénement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-18",
     "dateText": "Du 1er juin au 18 août",
     "schedule": "à 15h00",
@@ -238,7 +214,7 @@ const EVENTS = [
       "Visite",
       "Activité - Animation"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "Jeudis 09 et 23 juillet et jeudi 20 août 2026",
     "schedule": "à 16h30",
@@ -257,7 +233,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-21",
     "dateText": "Vendredi 10 et 24 juillet, 7 et 21 août, à 14h30",
     "schedule": "14h30 - 15h30",
@@ -276,7 +252,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-22",
     "dateText": "à partir du 13 juin",
     "schedule": "de 11h00 à 12h00",
@@ -295,7 +271,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-23",
     "dateText": "Du 10 avril au 23 août 2026",
     "schedule": "10h - 18h",
@@ -314,7 +290,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-24",
     "dateText": "Lundi 13 et 27 juillet et 10 et 24 août",
     "schedule": "14h30 - 15h30",
@@ -333,7 +309,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-26",
     "dateText": "Du 15 juillet au 26 août 2026",
     "schedule": "14h15",
@@ -352,7 +328,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-26",
     "dateText": "Les 5, 12, 19 et 26 août 2026",
     "schedule": "10h, 14h30 et 16h",
@@ -371,7 +347,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-26",
     "dateText": "Vacances estivales 3-6 ans",
     "schedule": "9h30 et 10h45",
@@ -390,7 +366,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-26",
     "dateText": "Mercredis d'été",
     "schedule": "de 10h00 à 11h00",
@@ -409,7 +385,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-27",
     "dateText": "Les 9 juillet et  27 août",
     "schedule": "de 9h30 à 10h00 pour les moins de 3 ans",
@@ -428,7 +404,7 @@ const EVENTS = [
     "subcats": [
       "Evénement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-28",
     "dateText": "Du 16 juillet au 28 août 2026",
     "schedule": "9h30/10h45/11h15",
@@ -447,7 +423,7 @@ const EVENTS = [
     "subcats": [
       "La nature dans la ville"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-28",
     "dateText": "Du 7 Juillet au 28 Août 2026",
     "schedule": "",
@@ -466,7 +442,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-28",
     "dateText": "Du 6 juillet au 28 août 2026",
     "schedule": "de 9h à 17h",
@@ -485,7 +461,7 @@ const EVENTS = [
     "subcats": [
       "Danse"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "Du 3 juillet au 29 août 2026",
     "schedule": "de 19h à 22h",
@@ -504,7 +480,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "à partir du 20 juin",
     "schedule": "de 10h00 à 12h00",
@@ -523,7 +499,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "Du 11 juin au 29 août 2026",
     "schedule": "10h à 12h et 14h à 17h",
@@ -542,7 +518,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "Du 29 novembre 2025 au 30 août 2026",
     "schedule": "",
@@ -562,7 +538,7 @@ const EVENTS = [
       "Atelier",
       "Evénement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-31",
     "dateText": "Du 4 juillet au 30 août",
     "schedule": "de 9h00 à 18h00",
@@ -581,7 +557,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-31",
     "dateText": "Du 5 juin au 31 août",
     "schedule": "de 9h00 à 18h00",
@@ -600,7 +576,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-02",
     "dateText": "Du 04 août au 02 septembre",
     "schedule": "14h>18h",
@@ -620,7 +596,7 @@ const EVENTS = [
       "Brocante / marché",
       "Artisanat"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-05",
     "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
     "schedule": "de 9h à 19h",
@@ -639,7 +615,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-06",
     "dateText": "Du 3 mai au 6 septembre 2026",
     "schedule": "11h - 12h",
@@ -658,7 +634,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-12",
     "dateText": "Du mardi au vendredi 13h>19h juin et septembre / 13h>18h juillet-août / Samedi 9h>18h",
     "schedule": "13h>19h juin et septembre / 13h>18h juillet-août",
@@ -680,7 +656,7 @@ const EVENTS = [
       "Numérique",
       "Evénement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-13",
     "dateText": "À 22h, du 1er août au 13 septembre 2026",
     "schedule": "22h",
@@ -699,7 +675,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-13",
     "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
     "schedule": "14h30 - 15h30",
@@ -719,7 +695,7 @@ const EVENTS = [
       "Visite guidée",
       "Evénement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-26",
     "dateText": "Les samedis du 30 mai au 26 septembre 2026",
     "schedule": "à 14h15, 15h15 et 16h15",
@@ -738,7 +714,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-27",
     "dateText": "Du 26 juin au 27 septembre 2026",
     "schedule": "10h - 18h",
@@ -757,7 +733,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-27",
     "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
     "schedule": "14h30 - 15h30",
@@ -776,7 +752,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 11h à 12h",
     "schedule": "11h - 12h",
@@ -795,7 +771,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 15h à 16h",
     "schedule": "15h - 16h",
@@ -815,7 +791,7 @@ const EVENTS = [
       "La nature dans la ville",
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-30",
     "dateText": "Du 25 juin au  30 septembre 2026",
     "schedule": "de 06h30 à 22h",
@@ -834,7 +810,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-30",
     "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
     "schedule": "14h30 - 15h",
@@ -853,7 +829,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-30",
     "dateText": "Tous les samedis",
     "schedule": "14h30 - 15h",
@@ -872,7 +848,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-03",
     "dateText": "à partir du 26 avril",
     "schedule": "de 10h00 à 11h30",
@@ -891,7 +867,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-07",
     "dateText": "Du 7 mai au 7 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -910,7 +886,7 @@ const EVENTS = [
     "subcats": [
       "Brocante / marché"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-09",
     "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
     "schedule": "de 07h30 à 18h",
@@ -930,7 +906,7 @@ const EVENTS = [
       "Citoyenneté",
       "Santé"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-10",
     "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
     "schedule": "de 9h30 à 11h30",
@@ -952,7 +928,7 @@ const EVENTS = [
       "Environnement",
       "Culture"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-11",
     "dateText": "Vendredi 24 avril",
     "schedule": "de 14h00 à 16h00",
@@ -971,7 +947,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-11",
     "dateText": "Jeudi 23 avril",
     "schedule": "de 10h00 à 12h00",
@@ -990,7 +966,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-11",
     "dateText": "Les 22, 23 avril et 11 octobre",
     "schedule": "de 10h00 à 12h00",
@@ -1009,7 +985,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -1029,7 +1005,7 @@ const EVENTS = [
       "Exposition",
       "Conférence - Rencontre"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -1051,7 +1027,7 @@ const EVENTS = [
       "Festival",
       "Activité - Animation"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-25",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "",
@@ -1070,7 +1046,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-30",
     "dateText": "Du 3 avril au 30 octobre 2026",
     "schedule": "à 20h30",
@@ -1089,7 +1065,7 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-31",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "à l'Office de tourisme",
@@ -1108,7 +1084,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-11-06",
     "dateText": "à partir du 20 février",
     "schedule": "à 14h30",
@@ -1127,7 +1103,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-01-03",
     "dateText": "Du 6 juin 2026 au 3 janvier 2027",
     "schedule": "",
@@ -1146,7 +1122,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-01-03",
     "dateText": "30 mai 2026 > 03 janvier 2027",
     "schedule": "",
@@ -1165,7 +1141,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-01-03",
     "dateText": "Du 22 mai 2026 au 3 janvier 2027",
     "schedule": "de 13h30 à 16h45",
@@ -1185,7 +1161,7 @@ const EVENTS = [
       "Exposition",
       "Visite guidée"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-05-31",
     "dateText": "Jusqu'au 31 mai 2027",
     "schedule": "10h - 18h",
@@ -1204,7 +1180,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-06-30",
     "dateText": "À partir du 5 juin",
     "schedule": "sur les horaires d'ouverture du parc",
@@ -1223,7 +1199,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2027-06-30",
     "dateText": "Du 5 juin 2026 au 30 juin 2027",
     "schedule": "sur les horaires d'ouverture des serres",
@@ -1246,7 +1222,7 @@ const EVENTS = [
       "Culture",
       "Jeune public"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-20",
     "dateText": "Samedi 19 et dimanche 20 septembre de 10h à 18h",
     "schedule": "de 10h à 18h",
@@ -1263,7 +1239,7 @@ const EVENTS = [
     "title": "La Bergamote - 30 ans IGP",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1281,7 +1257,7 @@ const EVENTS = [
     "title": "En Attendant Pichon - Lancement - Programmation Artistique - Collectif Décembre",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-12-31",
     "dateText": "",
     "schedule": "",
@@ -1299,7 +1275,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Le Cookoon",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-31",
     "dateText": "",
     "schedule": "",
@@ -1317,7 +1293,7 @@ const EVENTS = [
     "title": "Spectacle, représentation - Théâtre de Verdure - Saison 2026",
     "category": "spectacle",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-18",
     "dateText": "",
     "schedule": "",
@@ -1337,7 +1313,7 @@ const EVENTS = [
     "subcats": [
       "Culture"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1355,7 +1331,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Laxou",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1375,7 +1351,7 @@ const EVENTS = [
     "subcats": [
       "Culture"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1393,7 +1369,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Carnot",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1411,7 +1387,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Parc Blondlot",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1429,7 +1405,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Les Folies de la Cure d'Air",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1447,7 +1423,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - La Cageot'Folle",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1465,7 +1441,7 @@ const EVENTS = [
     "title": "Estival - Édition 2026",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-13",
     "dateText": "",
     "schedule": "",
@@ -1483,7 +1459,7 @@ const EVENTS = [
     "title": "Exposition - Nancy, Art nouveau par nature",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-11-15",
     "dateText": "",
     "schedule": "",
@@ -1501,7 +1477,7 @@ const EVENTS = [
     "title": "Exposition - Ludres d'Hier à Aujourd'hui",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-31",
     "dateText": "",
     "schedule": "",
@@ -1519,7 +1495,7 @@ const EVENTS = [
     "title": "Exposition - Agapè, ou l'Amour Inconditionnel de la Matière",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1537,7 +1513,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Le Peuple en Fête",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1555,7 +1531,7 @@ const EVENTS = [
     "title": "Exposition - Bac à sable - CERFAV",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-25",
     "dateText": "",
     "schedule": "",
@@ -1573,7 +1549,7 @@ const EVENTS = [
     "title": "L'Été des Créateurs",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1591,7 +1567,7 @@ const EVENTS = [
     "title": "Estival 2026 - Danse d'Été à la Pépinière",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1609,7 +1585,7 @@ const EVENTS = [
     "title": "Festival - Nuits d'été - Nos quartiers en fête",
     "category": "festival",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1627,7 +1603,7 @@ const EVENTS = [
     "title": "Visite Théâtralisée - Autour de l'Art nouveau - Parc Sainte-Marie",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-03",
     "dateText": "",
     "schedule": "",
@@ -1645,7 +1621,7 @@ const EVENTS = [
     "title": "Visite Théâtralisée - Place Stanislas",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-05",
     "dateText": "",
     "schedule": "",
@@ -1663,7 +1639,7 @@ const EVENTS = [
     "title": "Visite théâtralisée - Les Amoureux le long du Canal",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-09-05",
     "dateText": "",
     "schedule": "",
@@ -1681,7 +1657,7 @@ const EVENTS = [
     "title": "Exposition - Charles Cartier-Bresson et les Arts - Du collectionneur au dessinateur",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1699,7 +1675,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - L'Oasis",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-13",
     "dateText": "",
     "schedule": "",
@@ -1717,7 +1693,7 @@ const EVENTS = [
     "title": "Visite Guidée - Centre historique - PMR",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-18",
     "dateText": "",
     "schedule": "",
@@ -1735,7 +1711,7 @@ const EVENTS = [
     "title": "Au jardin des contes",
     "category": "spectacle",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-27",
     "dateText": "Du jeudi 6 août 2026 au jeudi 27 août 2026",
     "schedule": "",
@@ -1753,7 +1729,7 @@ const EVENTS = [
     "title": "Exposition Permanent Laurence Jenkell à Nancy",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-11-30",
     "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
     "schedule": "",
@@ -1773,7 +1749,7 @@ const EVENTS = [
     "subcats": [
       "Environnement"
     ],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-11-08",
     "dateText": "",
     "schedule": "10h",
@@ -1791,7 +1767,7 @@ const EVENTS = [
     "title": "Les Estivales de PAM à Pont-à-Mousson",
     "category": "festival",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-29",
     "dateText": "Du 3 juillet au 29 août 2026",
     "schedule": "",
@@ -1809,7 +1785,7 @@ const EVENTS = [
     "title": "\"Rayonances\" Parcours Lumineux à Toul",
     "category": "musiques-actuelles",
     "subcats": [],
-    "date": "2026-08-09",
+    "date": "2026-08-10",
     "endDate": "2026-08-30",
     "dateText": "Du 3 juin au 30 août 2026",
     "schedule": "",
@@ -1821,63 +1797,6 @@ const EVENTS = [
     "url": "https://www.lorraineaucoeur.com/evt-41809/rayonances-parcours-lumineux-a-toul/meurthe-et-moselle-toul/concerts-spectacles-gratuits-ete",
     "source": "lorraineaucoeur",
     "addedAt": "2026-07-16"
-  },
-  {
-    "uuid": "lac-41801",
-    "title": "Atelier découverte méthode Wim Hof à Maxéville",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-08-09",
-    "endDate": "2026-08-09",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41801_min.png",
-    "url": "https://www.lorraineaucoeur.com/evt-41801/atelier-decouverte-methode-wim-hof-a-maxeville/meurthe-et-moselle-maxeville/stage-atelier-cours-cuisine",
-    "source": "lorraineaucoeur",
-    "addedAt": "2026-07-24"
-  },
-  {
-    "uuid": "fb-1745555886638602",
-    "title": "Amours d'été – Derwich + The Nucleons Project",
-    "category": "musiques-actuelles",
-    "subcats": [],
-    "date": "2026-08-09",
-    "endDate": "2026-08-09",
-    "dateText": "9 août à 16:30",
-    "schedule": "16h30",
-    "place": "Parc Sainte- ie",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/1745555886638602.jpg",
-    "url": "https://www.facebook.com/events/1745555886638602/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "b9d5ca10-80f9-11f1-9750-156d29f77033",
-    "title": "Boucles d'oreilles",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-08-10",
-    "endDate": "2026-08-10",
-    "dateText": "Lundi 10 août",
-    "schedule": "de 14h00 à 16h15",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b9d5ca10-80f9-11f1-9750-156d29f77033/0/1-1_M_6a58a63ebe6bb.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b9d5ca10-80f9-11f1-9750-156d29f77033",
-    "addedAt": "2026-07-17"
   },
   {
     "uuid": "dn-24425",
@@ -3191,6 +3110,24 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/estival-2026-cinema-plein-air-little-miss-sunshine/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
+  },
+  {
+    "uuid": "dn-24440",
+    "title": "Ateliers, stages de loisirs - Danse latine - Initiation Kizomba - par Kiznyou",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-08-23",
+    "endDate": "2026-08-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019446/25e7242581e9b7cc-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/ateliers-stages-de-loisirs-danse-latine-initiation-kizomba-par-kiznyou/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-11"
   },
   {
     "uuid": "lcn-douceur-pop-recits-sensibles-lust-valentine-laurent",
@@ -5646,24 +5583,22 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "zen-la-dame-de-pierre",
+    "uuid": "cx-la-dame-de-pierre-1",
     "title": "LA DAME DE PIERRE",
     "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "subcats": [],
     "date": "2026-09-17",
     "endDate": "2026-09-17",
-    "dateText": "Jeudi 17 septembre 2026",
+    "dateText": "Le jeudi 17 septembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/LaDamedePierre-350x524.jpeg",
-    "url": "https://www.zenith-de-nancy.com/evenement/la-dame-de-pierre/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c1032168c4-la-dame-de-pierre.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/la-dame-de-pierre-1",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "vdv-29035",
@@ -6076,8 +6011,8 @@ const EVENTS = [
     "endDate": "2026-09-19",
     "dateText": "Samedi 19 septembre 2026",
     "schedule": "de 10h à 16h",
-    "place": "",
-    "city": "",
+    "place": "11",
+    "city": "Nancy",
     "free": true,
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/22d8c5f0-8044-11f1-aa95-9537423c7d8d/0/ORIGINE_M_6a57754baa3cc.jpeg",
@@ -6665,7 +6600,7 @@ const EVENTS = [
   },
   {
     "uuid": "dn-24661",
-    "title": "JEP 2026 - Visite de la station d'épuration de Maxéville",
+    "title": "JEP 2026 - Visite commentée - Station d'épuration de Maxéville",
     "category": "autre",
     "subcats": [],
     "date": "2026-09-19",
@@ -6677,13 +6612,13 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019340/bfa73f9defe92983-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-de-la-station-depuration-de-maxeville/",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-station-depuration-de-maxeville/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
   },
   {
     "uuid": "dn-24711",
-    "title": "JEP 2026 - Visite Guidée de Nancy Thermal",
+    "title": "JEP 2026 - Visite Guidée - Nancy Thermal",
     "category": "autre",
     "subcats": [],
     "date": "2026-09-19",
@@ -6695,7 +6630,7 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019527/ebdac01f7a62cefa-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-de-nancy-thermal/",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-nancy-thermal/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
   },
@@ -6842,6 +6777,294 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-libre-temple-protestant-ancienne-eglise-des-premontres/",
     "source": "destination-nancy",
     "addedAt": "2026-08-09"
+  },
+  {
+    "uuid": "dn-25369",
+    "title": "JEP 2026 - Visite commentée - Chapelle Notre Dame de Montaigu",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "167",
+    "city": "Laneuveville Devant Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019886/752f2c7da2747e6a-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-chapelle-notre-dame-de-montaigu/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25370",
+    "title": "JEP 2026 - Visite commentée - Académie de Stanislas",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "43",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019867/a869e269cc7de42b-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-academie-de-stanislas/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25371",
+    "title": "JEP 2026 - Visite libre - Bibliothèque Stanislas",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "43",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019868/a50fdc3e04eae902-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-libre-bibliotheque-stanislas/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25372",
+    "title": "JEP 2026 - Balade commentée - Connaissez-vous véritablement le plateau de Brabois ?",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019875/1430c567dfe21434-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-balade-commentee-connaissez-vous-veritablement-le-plateau-de-brabois/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25373",
+    "title": "JEP 2026 - Visite libre - Cathédrale Notre-Dame de l'Annonciation",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019883/982fe010364d0b6a-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-libre-cathedrale-notre-dame-de-lannonciation/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25374",
+    "title": "JEP 2026 - Visite commentée - Le château Anthoine",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019887/5ec6cbd7857b33f6-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-le-chateau-anthoine/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25375",
+    "title": "JEP 2026 - Visite commentée - A la découverte d'un vitrail de saint Nicolas",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "47",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019876/230f87029a45409e-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-a-la-decouverte-dun-vitrail-de-saint-nicolas/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25376",
+    "title": "JEP 2026 - Visite commentée - Cour d'appel",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "3",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019872/4c6f5adee64aae2d-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-cour-dappel/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25377",
+    "title": "JEP 2026 - Conférence - L'Histoire du Prieuré de clunisien",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019878/f011fd65c26cad8c-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-conference-lhistoire-du-prieure-de-clunisien/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25378",
+    "title": "JEP 2026 - Visite libre - Les salles patrimoniales du siège historique de la CCI",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "53",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019885/3d59f0e5fa0f3644-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-libre-les-salles-patrimoniales-du-siege-historique-de-la-cci/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25380",
+    "title": "JEP 2026 - Visite commentée - Maison Schott et sa véranda \"École de Nancy\"",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "6",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019874/1d3c390ab8533fb5-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-maison-schott-et-sa-veranda-ecole-de-nancy/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25381",
+    "title": "JEP 2026 - Visite commentée - Découvrez une confiserie protégée au titre de monument historique",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Du 19 au 20 septembre 2026",
+    "schedule": "",
+    "place": "47",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019873/170979203d79891e-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-decouvrez-une-confiserie-protegee-au-titre-de-monument-historique/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25382",
+    "title": "JEP 2026 - Visite guidée - Le Domaine du Charmois, une histoire vieille de 300 ans",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019881/38766b00e2d8a92e-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-le-domaine-du-charmois-une-histoire-vieille-de-300-ans/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25383",
+    "title": "JEP 2026 - Conférence musicale - Patrimoine et chanson",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019882/e2779565c0ad6f9b-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-conference-musicale-patrimoine-et-chanson/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25385",
+    "title": "JEP 2026 - Visite guidée - Hôpital Saint-Julien",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019877/db56bfd7094283b5-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-hopital-saint-julien/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25386",
+    "title": "JEP 2026 - Visite commentée - Plongez dans l'histoire médicale de la Lorraine",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "8",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019879/da6205ef8a3d0e7d-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-plongez-dans-lhistoire-medicale-de-la-lorraine/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "fb-1537121464493570",
@@ -7059,6 +7282,42 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-libre-opera-national-de-nancy-lorraine/",
     "source": "destination-nancy",
     "addedAt": "2026-08-09"
+  },
+  {
+    "uuid": "dn-25387",
+    "title": "JEP 2026 - Visite commentée - Laboratoire d'Archéologie des Métaux",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Jarville-la-Malgrange",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019880/85bbac05efa27c3c-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-commentee-laboratoire-darcheologie-des-metaux/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
+  },
+  {
+    "uuid": "dn-25388",
+    "title": "JEP 2026 - Visite guidée - Ancien siège social des Hauts fourneaux et fonderies de Pont-à-Mousson",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019884/b72410328ba308d7-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/jep-2026-visite-guidee-ancien-siege-social-des-hauts-fourneaux-et-fonderies-de-pont-a-mousson/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "fb-1319472546912597",
@@ -7302,7 +7561,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c7e45f40-4216-11f0-8aab-47aa94639ed4/0/ORIGINE_M_6841a53df0994.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c7e45f40-4216-11f0-8aab-47aa94639ed4",
     "addedAt": "2026-05-24"
@@ -10070,24 +10329,22 @@ const EVENTS = [
     "addedAt": "2026-07-23"
   },
   {
-    "uuid": "zen-patrick-bruel",
-    "title": "Patrick Bruel",
+    "uuid": "cx-patrick-bruel-2",
+    "title": "PATRICK BRUEL",
     "category": "musiques-actuelles",
-    "subcats": [
-      "Concert"
-    ],
+    "subcats": [],
     "date": "2026-10-24",
     "endDate": "2026-10-24",
-    "dateText": "Samedi 24 octobre 2026",
+    "dateText": "Le samedi 24 octobre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c103454605-patrick-bruel.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/patrick-bruel-2",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "cx-elles-pardonnent-mais-n-oublient-jamais-1",
@@ -10869,24 +11126,22 @@ const EVENTS = [
     "addedAt": "2026-07-13"
   },
   {
-    "uuid": "zen-legendary-rock-voices",
-    "title": "Legendary Rock Voices",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "uuid": "cx-legendary-rock-voices",
+    "title": "LEGENDARY ROCK VOICES",
+    "category": "musiques-actuelles",
+    "subcats": [],
     "date": "2026-11-06",
     "endDate": "2026-11-06",
-    "dateText": "Vendredi 6 novembre 2026",
+    "dateText": "Le vendredi 6 novembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/LRV_nancy_artwork3_1080x1920-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/legendary-rock-voices/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c10354193d-legendary-rock-voices.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/legendary-rock-voices",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "cx-elmer-food-beat-2",
@@ -11276,7 +11531,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa2ee02c-21cf-11f0-b087-374be7f1dc75/0/ORIGINE_M_680b7e8ed6838.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa2ee02c-21cf-11f0-b087-374be7f1dc75",
     "addedAt": "2026-05-24"
@@ -11354,26 +11609,6 @@ const EVENTS = [
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a85fd04-6340-11f1-b729-73f13d2386e2/0/ORIGINE_M_6a26c7052a80e.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a85fd04-6340-11f1-b729-73f13d2386e2",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "zen-balavoine-ma-bataille",
-    "title": "BALAVOINE MA BATAILLE",
-    "category": "musiques-actuelles",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-11-17",
-    "endDate": "2026-11-17",
-    "dateText": "Mardi 17 novembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Balavoine_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/balavoine-ma-bataille/",
-    "source": "zenith-nancy",
     "addedAt": "2026-05-24"
   },
   {
@@ -11493,24 +11728,22 @@ const EVENTS = [
     "addedAt": "2026-08-05"
   },
   {
-    "uuid": "zen-casse-noisette",
-    "title": "Casse-Noisette",
+    "uuid": "cx-casse-noisette-ballet-et-orchestre-casse-noisette-1",
+    "title": "CASSE-NOISETTE - BALLET ET ORCHESTRE - CASSE-NOISETTE",
     "category": "spectacle",
-    "subcats": [
-      "Ballet"
-    ],
+    "subcats": [],
     "date": "2026-11-19",
     "endDate": "2026-11-19",
-    "dateText": "Jeudi 19 novembre 2026",
+    "dateText": "Le jeudi 19 novembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-07-16"
+    "image": "https://www.curieux.net/img/e/2026/02/699c1036d1cec-casse-noisette-ballet-et-orchestre-casse-noisette.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/casse-noisette-ballet-et-orchestre-casse-noisette-1",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "lcn-wallace-cleaver-0",
@@ -11653,24 +11886,22 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "zen-pietragalla-barbara",
-    "title": "Pietragalla Barbara",
+    "uuid": "cx-barbara-par-pietragalla-1",
+    "title": "Barbara par Pietragalla",
     "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "subcats": [],
     "date": "2026-11-21",
     "endDate": "2026-11-21",
-    "dateText": "Samedi 21 novembre 2026",
+    "dateText": "Le samedi 21 novembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Pietragalla-Barbara-affiche-WEB-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/pietragalla-barbara/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c10376c112-barbara-par-pietragalla.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/barbara-par-pietragalla-1",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "cx-moguiz-1",
@@ -11688,26 +11919,6 @@ const EVENTS = [
     "image": "https://www.curieux.net/img/e/2026/02/699c0d5c3dcf1-moguiz.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/moguiz-1",
     "source": "curieux-net",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "zen-les-musiques-de-hans-zimmer-alan-silvestri",
-    "title": "LES MUSIQUES DE HANS ZIMMER &#038; ALAN SILVESTRI",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-11-22",
-    "endDate": "2026-11-22",
-    "dateText": "Dimanche 22 novembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/2026-04_zimmer_williams_WEB_Zenith-Nancy-1191x1684-1-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alan-silvestri/",
-    "source": "zenith-nancy",
     "addedAt": "2026-05-24"
   },
   {
@@ -12072,24 +12283,22 @@ const EVENTS = [
     "addedAt": "2026-07-13"
   },
   {
-    "uuid": "zen-plk",
+    "uuid": "cx-plk-2",
     "title": "PLK",
     "category": "musiques-actuelles",
-    "subcats": [
-      "Concert - Rap / Urbain"
-    ],
+    "subcats": [],
     "date": "2026-11-27",
     "endDate": "2026-11-27",
-    "dateText": "Vendredi 27 novembre 2026",
+    "dateText": "Le vendredi 27 novembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/PLK_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/plk/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c10385d7e7-plk.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/plk-2",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "lcn-marche-bio-et-local-27",
@@ -12154,24 +12363,22 @@ const EVENTS = [
     "addedAt": "2026-07-10"
   },
   {
-    "uuid": "zen-the-music-of-queen",
-    "title": "The Music of Queen",
+    "uuid": "cx-the-music-of-queen",
+    "title": "THE MUSIC OF QUEEN",
     "category": "musiques-actuelles",
-    "subcats": [
-      "Concert"
-    ],
+    "subcats": [],
     "date": "2026-11-28",
     "endDate": "2026-11-28",
-    "dateText": "Samedi 28 novembre 2026",
+    "dateText": "Le samedi 28 novembre 2026",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/affiche-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/the-music-of-queen/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c1038c4f91-the-music-of-queen.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/the-music-of-queen",
+    "source": "curieux-net",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "2ed177e4-896e-11f0-ad6e-e31d65cdff98",
@@ -12188,7 +12395,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2ed177e4-896e-11f0-ad6e-e31d65cdff98/0/ORIGINE_M_68b9562569541.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2ed177e4-896e-11f0-ad6e-e31d65cdff98",
     "addedAt": "2026-05-24"
@@ -12935,26 +13142,6 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "zen-les-quatre-saisons",
-    "title": "Les Quatre Saisons",
-    "category": "spectacle",
-    "subcats": [
-      "Ballet"
-    ],
-    "date": "2026-12-20",
-    "endDate": "2026-12-20",
-    "dateText": "Dimanche 20 décembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
-  },
-  {
     "uuid": "5f02ea46-8446-11f1-a8eb-e138daa1c38a",
     "title": "Nuit d'ivresse",
     "category": "spectacle",
@@ -13030,7 +13217,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2b863c26-4212-11f0-a885-5b7411380fb9/0/ORIGINE_M_68419d819cf17.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2b863c26-4212-11f0-a885-5b7411380fb9",
     "addedAt": "2026-05-24"
@@ -13326,44 +13513,40 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "zen-festival-mondial-de-la-magie",
-    "title": "Festival Mondial de la Magie",
+    "uuid": "cx-festival-mondial-de-la-magie-1",
+    "title": "FESTIVAL MONDIAL DE LA MAGIE",
     "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "subcats": [],
     "date": "2027-01-22",
     "endDate": "2027-01-22",
-    "dateText": "Vendredi 22 janvier 2027",
+    "dateText": "Le vendredi 22 janvier 2027",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/festival-mondial-magie-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/festival-mondial-de-la-magie/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c103ca1381-festival-mondial-de-la-magie.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/festival-mondial-de-la-magie-1",
+    "source": "curieux-net",
+    "addedAt": "2026-07-19"
   },
   {
-    "uuid": "zen-bernard-lavilliers",
-    "title": "Bernard Lavilliers",
+    "uuid": "cx-bernard-lavilliers-3",
+    "title": "BERNARD LAVILLIERS",
     "category": "musiques-actuelles",
-    "subcats": [
-      "Concert"
-    ],
+    "subcats": [],
     "date": "2027-01-23",
     "endDate": "2027-01-23",
-    "dateText": "Samedi 23 janvier 2027",
+    "dateText": "Le samedi 23 janvier 2027",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "Le Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/02/BERNARD-LAVILLIERS_2026_affiche_40x60_HD-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/bernard-lavilliers/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/02/699c103d97946-bernard-lavilliers.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/bernard-lavilliers-3",
+    "source": "curieux-net",
+    "addedAt": "2026-07-19"
   },
   {
     "uuid": "cfb19798-4ddb-11f1-b478-9d28cea11105",
@@ -13404,24 +13587,22 @@ const EVENTS = [
     "addedAt": "2026-07-10"
   },
   {
-    "uuid": "zen-clement-viktorovitch",
-    "title": "CLÉMENT VIKTOROVITCH",
+    "uuid": "dn-25150",
+    "title": "Spectacle - Clement Viktorovitch",
     "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "subcats": [],
     "date": "2027-01-29",
     "endDate": "2027-01-29",
-    "dateText": "Vendredi 29 janvier 2027",
+    "dateText": "",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Clement-Viktorovitch_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/clement-viktorovitch/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019753/07f48d1ecdd812b8-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-clement-viktorovitch/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "lcn-marguerite",
@@ -13552,8 +13733,7 @@ const EVENTS = [
     "subcats": [
       "Humour",
       "Concert",
-      "Musiques actuelles",
-      "Spectacle"
+      "Musiques actuelles"
     ],
     "date": "2027-02-03",
     "endDate": "2027-02-03",
@@ -13562,7 +13742,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d6838784-f511-11f0-8410-39fa44be7276/0/ORIGINE_M_696decdd27ea4.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d6838784-f511-11f0-8410-39fa44be7276",
     "addedAt": "2026-05-24"
@@ -13646,7 +13826,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/48b444a0-6340-11f1-a5e2-fb334d604793/0/ORIGINE_M_6a26c76d7f10c.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=48b444a0-6340-11f1-a5e2-fb334d604793",
     "addedAt": "2026-05-24"
@@ -13733,24 +13913,22 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "zen-500-voix-pour-johnny",
-    "title": "500 VOIX POUR JOHNNY",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
+    "uuid": "dn-25152",
+    "title": "Concert - 500 Voix pour Johnny",
+    "category": "musique-classique",
+    "subcats": [],
     "date": "2027-02-06",
     "endDate": "2027-02-06",
-    "dateText": "Samedi 6 février 2027",
+    "dateText": "",
     "schedule": "",
-    "place": "Zénith de Nancy",
+    "place": "",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Affiche-Johnny-Officielle-2-350x524.jpeg",
-    "url": "https://www.zenith-de-nancy.com/evenement/500-voix-pour-johnny/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-07-09"
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019792/c5794a1040bbba73-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/concert-500-voix-pour-johnny/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "cx-ante-mortem-neva-bitch-une-vraie-gothique-dj-set",
@@ -13803,7 +13981,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1de03e3e-8810-11f0-bfcc-abbc252f2115/0/ORIGINE_M_68b70ad524ea6.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1de03e3e-8810-11f0-bfcc-abbc252f2115",
     "addedAt": "2026-05-24"
@@ -13944,7 +14122,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/13d9d68c-f513-11f0-bf2f-71f3ee1d58fb/0/ORIGINE_M_696deef18af87.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
     "addedAt": "2026-05-24"
@@ -14286,7 +14464,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/01bad2f8-4217-11f0-8d71-bdccb3db1929/0/ORIGINE_M_6841a59f034cd.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01bad2f8-4217-11f0-8d71-bdccb3db1929",
     "addedAt": "2026-05-24"
@@ -14527,7 +14705,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f3dbccd2-f512-11f0-84e3-5fa7c19294ee/0/ORIGINE_M_696deebbd91f7.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3dbccd2-f512-11f0-84e3-5fa7c19294ee",
     "addedAt": "2026-05-24"
@@ -14587,7 +14765,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d88af90c-6340-11f1-98b4-77db7156b741/0/ORIGINE_M_6a26c85ec6dd0.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d88af90c-6340-11f1-98b4-77db7156b741",
     "addedAt": "2026-05-24"
@@ -14840,7 +15018,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c404412-f512-11f0-9e33-7909dc546817/0/ORIGINE_M_696dee28de3cc.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c404412-f512-11f0-9e33-7909dc546817",
     "addedAt": "2026-05-24"
@@ -15027,7 +15205,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f39a36c0-7ada-11f1-afac-f9d8fa1e2668/0/ORIGINE_M_6a4e61576e687.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f39a36c0-7ada-11f1-afac-f9d8fa1e2668",
     "addedAt": "2026-05-24"
@@ -15070,26 +15248,6 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6c7ebedc-c0a8-11f0-a520-459192b1d604/0/ORIGINE_M_6915fe2da4021.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c7ebedc-c0a8-11f0-a520-459192b1d604",
     "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "zen-covertramp",
-    "title": "COVERTRAMP",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2027-04-04",
-    "endDate": "2027-04-04",
-    "dateText": "Dimanche 4 avril 2027",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/05/covertramp-v2-350x524.jpeg",
-    "url": "https://www.zenith-de-nancy.com/evenement/covertramp/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-08-06"
   },
   {
     "uuid": "lcn-winter-story-oco",
@@ -15345,26 +15503,6 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/opera-pour-enfants-brundibar/",
     "source": "destination-nancy",
     "addedAt": "2026-07-24"
-  },
-  {
-    "uuid": "zen-keenv",
-    "title": "Keen’V",
-    "category": "musiques-actuelles",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2027-04-16",
-    "endDate": "2027-04-16",
-    "dateText": "Vendredi 16 avril 2027",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/KeenV-A-nos-20-ans-Visuel-de-MEV-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/keenv/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-08-06"
   },
   {
     "uuid": "f834dc0a-843d-11f1-9774-a9593b13a4ff",
@@ -15806,46 +15944,6 @@ const EVENTS = [
     "addedAt": "2026-07-21"
   },
   {
-    "uuid": "zen-nino-arial",
-    "title": "Nino Arial",
-    "category": "spectacle",
-    "subcats": [
-      "Humour"
-    ],
-    "date": "2027-11-19",
-    "endDate": "2027-11-19",
-    "dateText": "Vendredi 19 novembre 2027",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/03/NINO-ARIAL-1080x1920-1-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/nino-arial/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-08-06"
-  },
-  {
-    "uuid": "zen-philippe-caveriviere",
-    "title": "Philippe Caverivière",
-    "category": "spectacle",
-    "subcats": [
-      "Humour"
-    ],
-    "date": "2027-11-20",
-    "endDate": "2027-11-20",
-    "dateText": "Samedi 20 novembre 2027",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Philippe-Caveriviere_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/philippe-caveriviere/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-08-06"
-  },
-  {
     "uuid": "d26feb66-7ada-11f1-9c64-45ec3db71fdf",
     "title": "Gaël Faye",
     "category": "musiques-actuelles",
@@ -15860,7 +15958,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d26feb66-7ada-11f1-9c64-45ec3db71fdf/0/ORIGINE_M_6a4e611fc7737.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d26feb66-7ada-11f1-9c64-45ec3db71fdf",
     "addedAt": "2026-05-24"
@@ -15880,7 +15978,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a889812-f512-11f0-96d6-05d356c42e9d/0/ORIGINE_M_696dedba9eb2b.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a889812-f512-11f0-96d6-05d356c42e9d",
     "addedAt": "2026-05-24"
@@ -15900,30 +15998,10 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/11001ae8-eae6-11f0-b2c4-b55d4eac594c/0/ORIGINE_M_695cdc75c5487.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=11001ae8-eae6-11f0-b2c4-b55d4eac594c",
     "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "zen-mousquetaire",
-    "title": "MOUSQUETAIRE",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2028-01-29",
-    "endDate": "2028-01-30",
-    "dateText": "29 & 30 janv. 2028",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Mousquetaire_40x60_originale-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/mousquetaire/",
-    "source": "zenith-nancy",
-    "addedAt": "2026-08-06"
   },
   {
     "uuid": "ba268df0-6340-11f1-b100-633f006ec353",
