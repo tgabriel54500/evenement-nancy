@@ -42,6 +42,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
+    "title": "Prix Ginkgo - Louis Pasteur",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Remise de prix"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 août 2026",
+    "schedule": "16h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f0573e54-94bb-11f1-8688-474740466974/0/1-1_M_6a79cc879cf4c.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f0573e54-94bb-11f1-8688-474740466974",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05",
     "title": "JEP 2026 : Ensemble Poirel - portes ouvertes et lancement de saison 2026-2027",
     "category": "activite",
