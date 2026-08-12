@@ -380,6 +380,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-animalaxou-2026-5eme-edition",
+    "title": "AnimaLaxou 2026 5ème édition",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-09-27",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parc d’agrément du Champ-le-Bœuf",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/270/1200_630_7_animalaxou.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/animalaxou-2026-5eme-edition_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-journee-du-patrimoine-economique",
     "title": "JOURNÉE DU PATRIMOINE ÉCONOMIQUE",
     "category": "autre",
