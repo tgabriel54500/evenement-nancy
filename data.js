@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-08-12 — 836 événements à venir.
+// Généré le : 2026-08-13 — 843 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -47,7 +47,7 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-08-12";
+const GENERATED_AT = "2026-08-13";
 
 const EVENTS = [
   {
@@ -71,6 +71,26 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
+    "title": "Blind Test avec Woodsdad et Bogdan",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation",
+      "Musiques actuelles"
+    ],
+    "date": "2026-08-13",
+    "endDate": "2026-08-13",
+    "dateText": "Jeudi 13 août 2026",
+    "schedule": "de 17h à 22h",
+    "place": "Guinguette La Cageot'Folles - Parc Charles III",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5c0eb80a-6566-11f1-abb4-51cbbe4b0b91/0/ORIGINE_M_6a2a624d2a785.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
+    "addedAt": "2026-05-24"
+  },
+  {
     "uuid": "62dd46dc-3cbd-11f1-a3e5-2b686ed7c987",
     "title": "Atelier des vacances \"Au fil des lignes\"",
     "category": "jeune-public",
@@ -78,7 +98,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-13",
     "dateText": "Jeudis 30 juillet et 13 août, à 10h",
     "schedule": "10h - 12h",
@@ -98,7 +118,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-13",
     "dateText": "Jeudis 30 juillet et 13 août à 14h30",
     "schedule": "14h30 - 16h30",
@@ -117,12 +137,12 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-13",
     "dateText": "Jeudi 16, jeudi 23, samedi 25, mercredi 29 juillet, mardi 11, jeudi 13 août 2026",
     "schedule": "de 14h30 à 16h30",
-    "place": "325",
-    "city": "Nancy",
+    "place": "",
+    "city": "",
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/726bbde8-448f-11f1-b153-edd069ce49bc/0/1-1_M_69f34a7063dd2.jpeg",
@@ -137,7 +157,7 @@ const EVENTS = [
       "Visite guidée",
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-14",
     "dateText": "Vendredis 24 et 31 juillet, 7 et 14 août, de 10h à 11h30",
     "schedule": "10h - 11h30",
@@ -156,7 +176,7 @@ const EVENTS = [
     "subcats": [
       "Evénement"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-18",
     "dateText": "Du 1er juin au 18 août",
     "schedule": "à 15h00",
@@ -176,7 +196,7 @@ const EVENTS = [
       "Visite",
       "Activité - Animation"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "Jeudis 09 et 23 juillet et jeudi 20 août 2026",
     "schedule": "à 16h30",
@@ -195,7 +215,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-21",
     "dateText": "Vendredi 10 et 24 juillet, 7 et 21 août, à 14h30",
     "schedule": "14h30 - 15h30",
@@ -214,7 +234,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-22",
     "dateText": "à partir du 13 juin",
     "schedule": "de 11h00 à 12h00",
@@ -233,7 +253,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-23",
     "dateText": "Du 10 avril au 23 août 2026",
     "schedule": "10h - 18h",
@@ -252,7 +272,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-24",
     "dateText": "Lundi 13 et 27 juillet et 10 et 24 août",
     "schedule": "14h30 - 15h30",
@@ -271,7 +291,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-26",
     "dateText": "Du 15 juillet au 26 août 2026",
     "schedule": "14h15",
@@ -290,7 +310,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-26",
     "dateText": "Les 12, 19 et 26 août 2026",
     "schedule": "10h, 14h30 et 16h",
@@ -309,7 +329,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-26",
     "dateText": "Vacances estivales 3-6 ans",
     "schedule": "9h30 et 10h45",
@@ -328,7 +348,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-26",
     "dateText": "Mercredis d'été",
     "schedule": "de 10h00 à 11h00",
@@ -347,7 +367,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-27",
     "dateText": "Les 9 juillet et  27 août",
     "schedule": "de 9h30 à 10h00 pour les moins de 3 ans",
@@ -366,7 +386,7 @@ const EVENTS = [
     "subcats": [
       "Evénement"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-28",
     "dateText": "Du 16 juillet au 28 août 2026",
     "schedule": "9h30/10h45/11h15",
@@ -385,7 +405,7 @@ const EVENTS = [
     "subcats": [
       "La nature dans la ville"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-28",
     "dateText": "Du 7 Juillet au 28 Août 2026",
     "schedule": "",
@@ -404,7 +424,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-28",
     "dateText": "Du 6 juillet au 28 août 2026",
     "schedule": "de 9h à 17h",
@@ -423,10 +443,10 @@ const EVENTS = [
     "subcats": [
       "Danse"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "Du 3 juillet au 29 août 2026",
-    "schedule": "de 14h30 à 18h30 et de 19h à 22h",
+    "schedule": "de 19h à 22h",
     "place": "",
     "city": "Nancy",
     "free": true,
@@ -442,7 +462,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "à partir du 20 juin",
     "schedule": "de 10h00 à 12h00",
@@ -461,7 +481,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "Du 11 juin au 29 août 2026",
     "schedule": "10h à 12h et 14h à 17h",
@@ -480,7 +500,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "Du 29 novembre 2025 au 30 août 2026",
     "schedule": "",
@@ -500,7 +520,7 @@ const EVENTS = [
       "Atelier",
       "Evénement"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-31",
     "dateText": "Du 4 juillet au 30 août",
     "schedule": "de 9h00 à 18h00",
@@ -519,7 +539,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-31",
     "dateText": "Du 5 juin au 31 août",
     "schedule": "de 9h00 à 18h00",
@@ -538,7 +558,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-02",
     "dateText": "Du 04 août au 02 septembre",
     "schedule": "14h>18h",
@@ -558,7 +578,7 @@ const EVENTS = [
       "Brocante / marché",
       "Artisanat"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-05",
     "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
     "schedule": "de 9h à 19h",
@@ -577,7 +597,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-06",
     "dateText": "Du 3 mai au 6 septembre 2026",
     "schedule": "11h - 12h",
@@ -596,7 +616,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-12",
     "dateText": "Du mardi au vendredi 13h>19h juin et septembre / 13h>18h juillet-août / Samedi 9h>18h",
     "schedule": "13h>19h juin et septembre / 13h>18h juillet-août",
@@ -618,7 +638,7 @@ const EVENTS = [
       "Numérique",
       "Evénement"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-13",
     "dateText": "À 22h, du 1er août au 13 septembre 2026",
     "schedule": "22h",
@@ -637,7 +657,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-13",
     "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
     "schedule": "14h30 - 15h30",
@@ -657,7 +677,7 @@ const EVENTS = [
       "Visite guidée",
       "Evénement"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-26",
     "dateText": "Les samedis du 30 mai au 26 septembre 2026",
     "schedule": "à 14h15, 15h15 et 16h15",
@@ -676,7 +696,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-27",
     "dateText": "Du 26 juin au 27 septembre 2026",
     "schedule": "10h - 18h",
@@ -695,7 +715,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-27",
     "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
     "schedule": "14h30 - 15h30",
@@ -714,7 +734,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 11h à 12h",
     "schedule": "11h - 12h",
@@ -733,7 +753,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 15h à 16h",
     "schedule": "15h - 16h",
@@ -753,7 +773,7 @@ const EVENTS = [
       "La nature dans la ville",
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-30",
     "dateText": "Du 25 juin au  30 septembre 2026",
     "schedule": "de 06h30 à 22h",
@@ -772,7 +792,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-30",
     "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
     "schedule": "14h30 - 15h",
@@ -791,7 +811,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-30",
     "dateText": "Tous les samedis",
     "schedule": "14h30 - 15h",
@@ -810,7 +830,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-03",
     "dateText": "à partir du 26 avril",
     "schedule": "de 10h00 à 11h30",
@@ -829,7 +849,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-07",
     "dateText": "Du 7 mai au 7 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -848,7 +868,7 @@ const EVENTS = [
     "subcats": [
       "Brocante / marché"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-09",
     "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
     "schedule": "de 07h30 à 18h",
@@ -868,7 +888,7 @@ const EVENTS = [
       "Citoyenneté",
       "Santé"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-10",
     "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
     "schedule": "de 9h30 à 11h30",
@@ -890,7 +910,7 @@ const EVENTS = [
       "Environnement",
       "Culture"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-11",
     "dateText": "Vendredi 24 avril",
     "schedule": "de 14h00 à 16h00",
@@ -909,7 +929,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-11",
     "dateText": "Jeudi 23 avril",
     "schedule": "de 10h00 à 12h00",
@@ -928,7 +948,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-11",
     "dateText": "Les 22, 23 avril et 11 octobre",
     "schedule": "de 10h00 à 12h00",
@@ -947,7 +967,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -967,7 +987,7 @@ const EVENTS = [
       "Exposition",
       "Conférence - Rencontre"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -989,7 +1009,7 @@ const EVENTS = [
       "Festival",
       "Activité - Animation"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-25",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "",
@@ -1008,7 +1028,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-30",
     "dateText": "Du 3 avril au 30 octobre 2026",
     "schedule": "à 20h30",
@@ -1027,7 +1047,7 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-31",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "à l'Office de tourisme",
@@ -1046,7 +1066,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-11-06",
     "dateText": "à partir du 20 février",
     "schedule": "à 14h30",
@@ -1065,7 +1085,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-01-03",
     "dateText": "Du 6 juin 2026 au 3 janvier 2027",
     "schedule": "",
@@ -1084,7 +1104,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-01-03",
     "dateText": "30 mai 2026 > 03 janvier 2027",
     "schedule": "",
@@ -1103,7 +1123,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-01-03",
     "dateText": "Du 22 mai 2026 au 3 janvier 2027",
     "schedule": "de 13h30 à 16h45",
@@ -1123,7 +1143,7 @@ const EVENTS = [
       "Exposition",
       "Visite guidée"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-05-31",
     "dateText": "Jusqu'au 31 mai 2027",
     "schedule": "10h - 18h",
@@ -1142,7 +1162,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-06-30",
     "dateText": "À partir du 5 juin",
     "schedule": "sur les horaires d'ouverture du parc",
@@ -1161,7 +1181,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2027-06-30",
     "dateText": "Du 5 juin 2026 au 30 juin 2027",
     "schedule": "sur les horaires d'ouverture des serres",
@@ -1184,7 +1204,7 @@ const EVENTS = [
       "Culture",
       "Jeune public"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-20",
     "dateText": "Samedi 19 et dimanche 20 septembre de 10h à 18h",
     "schedule": "de 10h à 18h",
@@ -1201,7 +1221,7 @@ const EVENTS = [
     "title": "La Bergamote - 30 ans IGP",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1219,7 +1239,7 @@ const EVENTS = [
     "title": "En Attendant Pichon - Lancement - Programmation Artistique - Collectif Décembre",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-12-31",
     "dateText": "",
     "schedule": "",
@@ -1237,7 +1257,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Le Cookoon",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-31",
     "dateText": "",
     "schedule": "",
@@ -1255,7 +1275,7 @@ const EVENTS = [
     "title": "Spectacle, représentation - Théâtre de Verdure - Saison 2026",
     "category": "spectacle",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-18",
     "dateText": "",
     "schedule": "",
@@ -1273,7 +1293,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Laxou",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1293,7 +1313,7 @@ const EVENTS = [
     "subcats": [
       "Culture"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1311,7 +1331,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Carnot",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1329,7 +1349,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Parc Blondlot",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1347,7 +1367,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Les Folies de la Cure d'Air",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1365,7 +1385,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - La Cageot'Folle",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "",
     "schedule": "",
@@ -1383,7 +1403,7 @@ const EVENTS = [
     "title": "Estival - Édition 2026",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-13",
     "dateText": "",
     "schedule": "",
@@ -1401,7 +1421,7 @@ const EVENTS = [
     "title": "Exposition - Nancy, Art nouveau par nature",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-11-15",
     "dateText": "",
     "schedule": "",
@@ -1419,7 +1439,7 @@ const EVENTS = [
     "title": "Exposition - Ludres d'Hier à Aujourd'hui",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-31",
     "dateText": "",
     "schedule": "",
@@ -1437,7 +1457,7 @@ const EVENTS = [
     "title": "Exposition - Agapè, ou l'Amour Inconditionnel de la Matière",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1455,7 +1475,7 @@ const EVENTS = [
     "title": "Guinguette Estivale - Le Peuple en Fête",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1473,7 +1493,7 @@ const EVENTS = [
     "title": "Exposition - Bac à sable - CERFAV",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-25",
     "dateText": "",
     "schedule": "",
@@ -1491,7 +1511,7 @@ const EVENTS = [
     "title": "L'Été des Créateurs",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1509,7 +1529,7 @@ const EVENTS = [
     "title": "Estival 2026 - Danse d'Été à la Pépinière",
     "category": "autre",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1527,7 +1547,7 @@ const EVENTS = [
     "title": "Festival - Nuits d'été - Nos quartiers en fête",
     "category": "festival",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "",
     "schedule": "",
@@ -1545,7 +1565,7 @@ const EVENTS = [
     "title": "Visite Théâtralisée - Autour de l'Art nouveau - Parc Sainte-Marie",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-03",
     "dateText": "",
     "schedule": "",
@@ -1563,7 +1583,7 @@ const EVENTS = [
     "title": "Visite Théâtralisée - Place Stanislas",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-05",
     "dateText": "",
     "schedule": "",
@@ -1581,7 +1601,7 @@ const EVENTS = [
     "title": "Visite théâtralisée - Les Amoureux le long du Canal",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-09-05",
     "dateText": "",
     "schedule": "",
@@ -1599,7 +1619,7 @@ const EVENTS = [
     "title": "Exposition - Charles Cartier-Bresson et les Arts - Du collectionneur au dessinateur",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1613,29 +1633,11 @@ const EVENTS = [
     "addedAt": "2026-08-06"
   },
   {
-    "uuid": "dn-23485",
-    "title": "Guinguette Estivale - L'Oasis",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-08-12",
-    "endDate": "2026-08-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "83",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019264/7786ac7644657618-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/guinguette-estivale-loasis/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-27"
-  },
-  {
     "uuid": "dn-22277",
     "title": "Visite Guidée - Centre historique - PMR",
     "category": "activite",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-15",
     "dateText": "",
     "schedule": "",
@@ -1655,7 +1657,7 @@ const EVENTS = [
     "subcats": [
       "Culture"
     ],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-23",
     "dateText": "",
     "schedule": "",
@@ -1673,7 +1675,7 @@ const EVENTS = [
     "title": "Au jardin des contes",
     "category": "spectacle",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-27",
     "dateText": "Du jeudi 6 août 2026 au jeudi 27 août 2026",
     "schedule": "",
@@ -1691,7 +1693,7 @@ const EVENTS = [
     "title": "Exposition Permanent Laurence Jenkell à Nancy",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-11-30",
     "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
     "schedule": "",
@@ -1705,31 +1707,11 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "vdv-14945",
-    "title": "Discovery Tour – Égypte ancienne",
-    "category": "autre",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-08-12",
-    "endDate": "2026-08-12",
-    "dateText": "",
-    "schedule": "De 13h30 à 17h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/03/discovery-tour-ancienne-egypte.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/discovery-tour-egypte-ancienne/",
-    "source": "vandoeuvre",
-    "addedAt": "2026-05-24"
-  },
-  {
     "uuid": "lac-41819",
     "title": "Les Estivales de PAM à Pont-à-Mousson",
     "category": "festival",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-29",
     "dateText": "Du 3 juillet au 29 août 2026",
     "schedule": "",
@@ -1747,7 +1729,7 @@ const EVENTS = [
     "title": "\"Rayonances\" Parcours Lumineux à Toul",
     "category": "musiques-actuelles",
     "subcats": [],
-    "date": "2026-08-12",
+    "date": "2026-08-13",
     "endDate": "2026-08-30",
     "dateText": "Du 3 juin au 30 août 2026",
     "schedule": "",
@@ -1759,80 +1741,6 @@ const EVENTS = [
     "url": "https://www.lorraineaucoeur.com/evt-41809/rayonances-parcours-lumineux-a-toul/meurthe-et-moselle-toul/concerts-spectacles-gratuits-ete",
     "source": "lorraineaucoeur",
     "addedAt": "2026-07-16"
-  },
-  {
-    "uuid": "lx-jardin-des-1000-fleurs-lecturique",
-    "title": "Jardin des 1000 fleurs - LECTURIQUE",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-08-12",
-    "endDate": "2026-08-12",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/231/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
-    "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-lecturique_-d.html",
-    "source": "laxou",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
-    "title": "Blind Test avec Woodsdad et Bogdan",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation",
-      "Musiques actuelles"
-    ],
-    "date": "2026-08-13",
-    "endDate": "2026-08-13",
-    "dateText": "Jeudi 13 août 2026",
-    "schedule": "de 17h à 22h",
-    "place": "Guinguette La Cageot'Folles - Parc Charles III",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5c0eb80a-6566-11f1-abb4-51cbbe4b0b91/0/ORIGINE_M_6a2a624d2a785.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5c0eb80a-6566-11f1-abb4-51cbbe4b0b91",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "dn-22279",
-    "title": "Visite Guidée - Art Nouveau en Centre Ville - PMR",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-08-13",
-    "endDate": "2026-08-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018617/aea6996db842777a-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-en-centre-ville-pmr/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-24469",
-    "title": "Moment Festif - Bière truck et Food truck",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-08-13",
-    "endDate": "2026-08-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Houdemont",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019374/6ade64db185f8285-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/moment-festif-biere-truck-et-food-truck/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-11"
   },
   {
     "uuid": "fb-1009122542084694",
@@ -3331,6 +3239,24 @@ const EVENTS = [
     "addedAt": "2026-07-11"
   },
   {
+    "uuid": "dn-24418",
+    "title": "Ateliers, stages de loisirs - Soirée danses latines - SBK",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-08-26",
+    "endDate": "2026-08-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Tomblaine",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019512/25e7242581e9b7cc-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/ateliers-stages-de-loisirs-soiree-danses-latines-sbk/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-10"
+  },
+  {
     "uuid": "dn-24522",
     "title": "Spectacle de cirque - Clan Cabane",
     "category": "spectacle",
@@ -3466,25 +3392,6 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "2d426d9e-b05c-11ee-9a01-db475e605a50",
-    "title": "Repair Café Nancy Les Abeilles",
-    "category": "activite",
-    "subcats": [
-      "Atelier de réparation"
-    ],
-    "date": "2026-08-27",
-    "endDate": "2026-08-27",
-    "dateText": "Jeudi 27 août 2026",
-    "schedule": "18h à 20h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2d426d9e-b05c-11ee-9a01-db475e605a50/0/1-1_M_65a7cf35a3f5e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d426d9e-b05c-11ee-9a01-db475e605a50",
-    "addedAt": "2026-05-24"
-  },
-  {
     "uuid": "f8fabada-5a8d-11f1-89b2-b38054c840da",
     "title": "Camp Climat Nancy 2026",
     "category": "festival",
@@ -3505,6 +3412,25 @@ const EVENTS = [
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f8fabada-5a8d-11f1-89b2-b38054c840da/0/ORIGINE_M_6a18304c08e1e.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f8fabada-5a8d-11f1-89b2-b38054c840da",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "2d426d9e-b05c-11ee-9a01-db475e605a50",
+    "title": "Repair Café Nancy Les Abeilles",
+    "category": "activite",
+    "subcats": [
+      "Atelier de réparation"
+    ],
+    "date": "2026-08-27",
+    "endDate": "2027-06-24",
+    "dateText": "Jeudis 27 août 2026, 24 septembre, 22 octobre",
+    "schedule": "18h à 20h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2d426d9e-b05c-11ee-9a01-db475e605a50/0/1-1_M_65a7cf35a3f5e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2d426d9e-b05c-11ee-9a01-db475e605a50",
     "addedAt": "2026-05-24"
   },
   {
@@ -3587,6 +3513,27 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "6fd4161c-9641-11f1-8bc6-f14708f79ae2",
+    "title": "Les Ballerines de la nuit",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-08-28",
+    "endDate": "2026-08-28",
+    "dateText": "Vendredi 28 Août 2026",
+    "schedule": "de 20h à 22h30",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6fd4161c-9641-11f1-8bc6-f14708f79ae2/0/1-1_M_6a7c5a8d419fe.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6fd4161c-9641-11f1-8bc6-f14708f79ae2",
+    "addedAt": "2026-08-13"
+  },
+  {
     "uuid": "83eedeaa-6565-11f1-afab-b11410a29d50",
     "title": "Trio Linda : Ambiance Cabaret & Variétés",
     "category": "musiques-actuelles",
@@ -3604,6 +3551,27 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83eedeaa-6565-11f1-afab-b11410a29d50/0/ORIGINE_M_6a2a60e28acca.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83eedeaa-6565-11f1-afab-b11410a29d50",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "83c5f9bc-9644-11f1-914f-e926e551ee1a",
+    "title": "Les rendez-vous de l’automne au Plateau de Malzéville",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-08-28",
+    "endDate": "2026-10-11",
+    "dateText": "Du 28 Août au 11 Octobre 2026",
+    "schedule": "de 20h à 22h30",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83c5f9bc-9644-11f1-914f-e926e551ee1a/0/16-9_M_6a7c5f18d88b1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83c5f9bc-9644-11f1-914f-e926e551ee1a",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "dn-24625",
@@ -4487,6 +4455,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "fbe1521c-9648-11f1-b658-65a4821ad998",
+    "title": "Il était une forêt, hommage à Francis Hallé",
+    "category": "activite",
+    "subcats": [
+      "Projection"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "Samedi 05 septembre 2026",
+    "schedule": "à 14h",
+    "place": "Médiathèque Manufacture",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fbe1521c-9648-11f1-b658-65a4821ad998/0/1-1_M_6a7c66a649e63.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fbe1521c-9648-11f1-b658-65a4821ad998",
+    "addedAt": "2026-08-13"
+  },
+  {
     "uuid": "10651740-13bf-11f0-ac68-0db5bc79ebb1",
     "title": "Visite mixologie \"La larme de la nature\"",
     "category": "activite",
@@ -4504,6 +4491,25 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/10651740-13bf-11f0-ac68-0db5bc79ebb1/0/1-1_M_67f3e5efb5d8b.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=10651740-13bf-11f0-ac68-0db5bc79ebb1",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "9293dcca-9649-11f1-811b-5fc801cc152f",
+    "title": "Ça joue à Stan",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "Samedi 04 septembre 2026",
+    "schedule": "à 14h30",
+    "place": "Bibliothèque Stanislas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9293dcca-9649-11f1-811b-5fc801cc152f/0/1-1_M_6a7c6777e1caa.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9293dcca-9649-11f1-811b-5fc801cc152f",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "1ffb5856-9251-11f1-87fa-91e34433167f",
@@ -4904,6 +4910,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "ee19287a-9649-11f1-bf09-c71d04f63977",
+    "title": "Sirop Philo",
+    "category": "jeune-public",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-09-09",
+    "endDate": "2026-09-09",
+    "dateText": "Mercredi 09 septembre 2026",
+    "schedule": "à 16h",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee19287a-9649-11f1-bf09-c71d04f63977/0/1-1_M_6a7c685db449f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ee19287a-9649-11f1-bf09-c71d04f63977",
+    "addedAt": "2026-08-13"
+  },
+  {
     "uuid": "e4d1db92-3fad-11f1-9a48-5923602d47cf",
     "title": "On vous dit tout sur ... la formation des artistes",
     "category": "activite",
@@ -4921,6 +4946,26 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e4d1db92-3fad-11f1-9a48-5923602d47cf/0/1-1_M_69eb199416b69.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e4d1db92-3fad-11f1-9a48-5923602d47cf",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "92c05d76-9654-11f1-8641-e7e7bbd4acc0",
+    "title": "Contes",
+    "category": "jeune-public",
+    "subcats": [
+      "Spectacle",
+      "Activité - Animation"
+    ],
+    "date": "2026-09-09",
+    "endDate": "2026-11-25",
+    "dateText": "Mercredis 09, 16 et 30 septembre, 07, 14, 21 et 28 octobre, 04, 18 et 25 novembre 2026",
+    "schedule": "",
+    "place": "Médiathèque Saint-Pierre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/92c05d76-9654-11f1-8641-e7e7bbd4acc0/0/1-1_M_6a7c79e39cf10.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=92c05d76-9654-11f1-8641-e7e7bbd4acc0",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "dn-24601",
@@ -4975,6 +5020,25 @@ const EVENTS = [
     "url": "https://www.laxou.fr/fr/agenda/le-village-du-livre_-d.html",
     "source": "laxou",
     "addedAt": "2026-08-09"
+  },
+  {
+    "uuid": "19da3fbe-9657-11f1-9151-03301ef68099",
+    "title": "Paul-Émile Colin et l'art du livre au XXe siècle",
+    "category": "conference",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-09-10",
+    "endDate": "2026-09-10",
+    "dateText": "Jeudi 10 septembre à 19h",
+    "schedule": "à 19h",
+    "place": "Bibliothèque Stanislas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/19da3fbe-9657-11f1-9151-03301ef68099/0/1-1_M_6a7c7e719a619.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=19da3fbe-9657-11f1-9151-03301ef68099",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "dn-20537",
@@ -5351,7 +5415,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-16"
@@ -5524,7 +5588,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-21"
@@ -5647,6 +5711,24 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2e2db7ae-949d-11f1-b634-d5d61e6d3c02/0/1-1_M_6a7998c7a66dd.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2e2db7ae-949d-11f1-b634-d5d61e6d3c02",
     "addedAt": "2026-08-11"
+  },
+  {
+    "uuid": "dn-25544",
+    "title": "Concert - Two Faced tribute to Linkin Park",
+    "category": "musique-classique",
+    "subcats": [],
+    "date": "2026-09-18",
+    "endDate": "2026-09-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "14",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019899/d244e0b53875c7de-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/concert-two-faced-tribute-to-linkin-park/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "lcn-ncy-design-week",
@@ -7350,6 +7432,27 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "8e633792-9642-11f1-ab50-bb2c6522e5a6",
+    "title": "Ça pue, ça pique, ça gratte, ça étouffe ! Les mal-aimés du plateau",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-09-23",
+    "endDate": "2026-09-23",
+    "dateText": "Mercredi 23 septembre 2026",
+    "schedule": "de 14h30 à 16h30",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8e633792-9642-11f1-ab50-bb2c6522e5a6/0/1-1_M_6a7c5baaafd09.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8e633792-9642-11f1-ab50-bb2c6522e5a6",
+    "addedAt": "2026-08-13"
+  },
+  {
     "uuid": "dn-24662",
     "title": "Théâtre La Voyageuse - Atelier Théâtre - Ados",
     "category": "spectacle",
@@ -7454,7 +7557,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-23"
@@ -7619,6 +7722,27 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/07427044-6a2c-11f1-9cb4-413432c7d1ec/0/ORIGINE_M_6a3263ebe09bf.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=07427044-6a2c-11f1-9cb4-413432c7d1ec",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "06ffedca-9644-11f1-b84e-a50e60b5a81a",
+    "title": "Étape migratoire à Malzéville",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "Samedi 26 Septembre 2026",
+    "schedule": "de 9h à 12h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/06ffedca-9644-11f1-b84e-a50e60b5a81a/0/1-1_M_6a7c5e44d68de.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=06ffedca-9644-11f1-b84e-a50e60b5a81a",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "3885bed0-6b51-11ef-ae02-fb37bec8faa8",
@@ -8703,25 +8827,6 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "d6d42d80-e2d2-11ef-9731-f7162dafc506",
-    "title": "Les oiseaux en ville : prise de becs",
-    "category": "conference",
-    "subcats": [
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-10-08",
-    "endDate": "2026-10-08",
-    "dateText": "Jeudi 08 octobre 2026",
-    "schedule": "18h30",
-    "place": "Amphithéâtre Cuénot (Muséum-Aquarium de Nancy)",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d6d42d80-e2d2-11ef-9731-f7162dafc506/0/1-1_M_6a708e80b0d8c.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d6d42d80-e2d2-11ef-9731-f7162dafc506",
-    "addedAt": "2026-08-04"
-  },
-  {
     "uuid": "a76a6f78-5fef-11f1-84f2-e36a1ea2236d",
     "title": "NJP 2026 : Bertrand Belin, Charlie Winston et Alain Chamfort",
     "category": "musiques-actuelles",
@@ -8801,6 +8906,24 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c/0/ORIGINE_M_6a2139e6462a9.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fcb943cc-5ff0-11f1-b11d-e1ed581a5b2c",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "dn-25346",
+    "title": "Conférence - Les Oiseaux en Ville - Prise de becs",
+    "category": "conference",
+    "subcats": [],
+    "date": "2026-10-08",
+    "endDate": "2026-10-08",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019847/4bcd199c284c876f-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/conference-les-oiseaux-en-ville-prise-de-becs/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "lcn-emile-londonien-kissa",
@@ -9309,6 +9432,27 @@ const EVENTS = [
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "fda67fb0-9642-11f1-b106-6f55516aef28",
+    "title": "La forêt m'a dit",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "Dimanche 11 Octobre 2026",
+    "schedule": "de 9h à 12h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fda67fb0-9642-11f1-b106-6f55516aef28/0/1-1_M_6a7c5d57ec7a4.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fda67fb0-9642-11f1-b106-6f55516aef28",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "dn-24746",
@@ -10087,7 +10231,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"
@@ -12999,7 +13143,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"

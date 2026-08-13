@@ -1059,27 +1059,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-14945",
-    "title": "Discovery Tour – Égypte ancienne",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-08-12",
-    "endDate": "2026-08-12",
-    "dateText": "",
-    "schedule": "De 13h30 à 17h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/03/discovery-tour-ancienne-egypte.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/discovery-tour-egypte-ancienne/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-28825",
     "title": "Conférence Hudson River School",
     "category": "culture",
@@ -1153,7 +1132,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1172,7 +1151,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1191,7 +1170,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
@@ -1269,7 +1248,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1307,7 +1286,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
