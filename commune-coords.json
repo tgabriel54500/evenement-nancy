@@ -528,5 +528,10 @@
   "lat": 48.627249,
   "lon": 6.299884,
   "city": "Saint-Nicolas-de-Port"
+ },
+ "dommartemont": {
+  "lat": 48.715388,
+  "lon": 6.214202,
+  "city": "Dommartemont"
  }
 }
