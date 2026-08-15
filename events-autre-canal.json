@@ -1,48 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-16",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte",
-      "Rendez-vous"
-    ],
-    "date": "2026-08-14",
-    "endDate": "2026-08-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web8.jpg?itok=ipKsVB-E",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-16",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-sonic-curves-2026",
-    "title": "Sonic Curves 2026",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-08-14",
-    "endDate": "2026-08-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/13_rouge_sonic_copie.jpg?itok=5yg1DXry",
-    "url": "https://lautrecanalnancy.fr/agenda/sonic-curves-2026",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-ome-festival",
     "title": "OME Festival",
     "category": "activite",
