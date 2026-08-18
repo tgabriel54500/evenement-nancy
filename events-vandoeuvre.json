@@ -954,27 +954,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-5364",
-    "title": "Inscriptions « Vand’sport et Eveil sportif »",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2025-09-03",
-    "endDate": "2026-06-24",
-    "dateText": "Du 3 septembre 2025 au 24 juin 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-26370",
     "title": "Mouv’Santé",
     "category": "sante",
@@ -1012,25 +991,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/11/defile-saint-nicolas.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/defile-de-la-saint-nicolas/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-27677",
-    "title": "Rendez-vous aux jardins",
-    "category": "nature",
-    "catLabel": "Nature",
-    "catEmoji": "🌳",
-    "subcats": [],
-    "date": "2026-06-06",
-    "endDate": "2026-06-06",
-    "dateText": "",
-    "schedule": "Dés 15h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/rendez-vous-aux-jardins/",
     "source": "vandoeuvre"
   },
   {
@@ -1075,6 +1035,48 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-20155",
+    "title": "Pause sportive",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-09-02",
+    "endDate": "2026-09-02",
+    "dateText": "",
+    "schedule": "De 12h à 13h30",
+    "place": "Gymnase",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/pause-sportive/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-5364",
+    "title": "Inscriptions « Vand’sport et Eveil sportif »",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-09-03",
+    "endDate": "2027-06-23",
+    "dateText": "Du 3 septembre 2026 au 23 juin 2027",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
     "source": "vandoeuvre"
   },
   {
@@ -1132,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1151,8 +1153,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-26345",
+    "title": "Balade nature",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "Départ 14h30",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/balade-nature/",
     "source": "vandoeuvre"
   },
   {
@@ -1170,8 +1191,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29113",
+    "title": "Conférence sur l’HiLo",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
   {
@@ -1248,7 +1288,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/tour-nations.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1272,6 +1312,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-11099",
+    "title": "Grande Braderie et vide-grenier",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [],
+    "date": "2026-11-11",
+    "endDate": "2026-11-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/08/braderie-mediatheque.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-vide-grenier/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-28969",
     "title": "Conférence sur les chevaliers",
     "category": "culture",
@@ -1286,7 +1345,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
