@@ -949,7 +949,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/petits-dejeuners-de-coppens/",
     "source": "vandoeuvre"
   },
@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1033,8 +1033,29 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29134",
+    "title": "51ème anniversaire du marché",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Economie"
+    ],
+    "date": "2026-08-30",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "De 9h à 13h",
+    "place": "Place du marché",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/51eme-anniversaire-du-marche/",
     "source": "vandoeuvre"
   },
   {
@@ -1054,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/pause-sportive/",
     "source": "vandoeuvre"
   },
@@ -1094,7 +1115,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1134,7 +1155,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1153,7 +1174,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1172,8 +1193,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/balade-nature/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-26408",
+    "title": "Rencontres autour des poumons",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "De 9h à 13h",
+    "place": "Hôpitaux de Brabois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/rencontres-autour-des-poumons/",
     "source": "vandoeuvre"
   },
   {
@@ -1191,8 +1231,29 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-19932",
+    "title": "Ateliers philo",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "10h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo/",
     "source": "vandoeuvre"
   },
   {
@@ -1210,7 +1271,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
@@ -1229,7 +1290,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1269,8 +1330,46 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/pause-sportive.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29166",
+    "title": "Fête de la paix",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-10-14",
+    "endDate": "2026-10-14",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "Espace Yves Coppens",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-23484",
+    "title": "Sensibilisation aux Gestes Qui Sauvent",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "De 10h à 12h30",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/sensibilisation-aux-gestes-qui-sauvent/",
     "source": "vandoeuvre"
   },
   {
@@ -1288,7 +1387,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1345,7 +1444,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
