@@ -975,6 +975,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-26426",
+    "title": "Fête du sport",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2025-09-07",
+    "endDate": "2025-09-07",
+    "dateText": "",
+    "schedule": "De 9h à 13h",
+    "place": "Parc des Sports",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/fete-du-sport-orientasport/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-12623",
     "title": "Défilé de la Saint Nicolas et feu d’artifice",
     "category": "famille",
@@ -1033,7 +1054,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1054,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/51eme-anniversaire-du-marche/",
     "source": "vandoeuvre"
   },
@@ -1101,6 +1122,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-24747",
+    "title": "Junior Book Club",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "",
+    "schedule": "15h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/junior-book-club/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-28960",
     "title": "Grande braderie sportive",
     "category": "famille",
@@ -1115,7 +1157,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1155,7 +1197,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1174,7 +1216,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1217,6 +1259,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-26485",
+    "title": "Prévention des cancers ORL",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-09-22",
+    "endDate": "2026-09-22",
+    "dateText": "",
+    "schedule": "De 10h à 12h",
+    "place": "Centre Commercial les Nations",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/prevention-des-cancers-orl/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29041",
     "title": "Septembre rouge – Village prévention",
     "category": "sante",
@@ -1231,7 +1292,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
@@ -1257,6 +1318,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-27452",
+    "title": "Atelier numérique : initiation à Canva",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "De 10h30 à 12h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/ateliers-numeriques-initiation-a-canva/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29113",
     "title": "Conférence sur l’HiLo",
     "category": "culture",
@@ -1271,7 +1351,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
@@ -1290,7 +1370,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1330,7 +1410,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1349,7 +1429,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre"
   },
@@ -1387,7 +1467,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1408,6 +1488,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/09/trail-bois-le-duc.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/trail-de-bois-le-duc/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-20510",
+    "title": "Journée de dépistage du diabète",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-11-05",
+    "endDate": "2026-11-05",
+    "dateText": "",
+    "schedule": "De 9h à 16h",
+    "place": "Maison des Jeunes et de la Culture",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/journee-de-depistage-du-diabete/",
     "source": "vandoeuvre"
   },
   {
@@ -1444,7 +1543,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/06/Hudson-River-School.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }
