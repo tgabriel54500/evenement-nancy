@@ -209,8 +209,8 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-cinema-plein-air-2",
-    "title": "Cinéma plein air",
+    "uuid": "lx-cinema-espace-europe",
+    "title": "Cinéma Espace Europe",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
@@ -219,12 +219,12 @@
     "endDate": "2026-08-21",
     "dateText": "",
     "schedule": "",
-    "place": "Espace Claudie Haigneré",
+    "place": "Espace europe",
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/262/1200_630_7_5-dragons.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/cinema-plein-air-2_-d.html",
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/262/1200_630_7_vsle-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/cinema-espace-europe_-d.html",
     "source": "laxou"
   },
   {

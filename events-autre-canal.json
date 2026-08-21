@@ -1,29 +1,5 @@
 [
   {
-    "uuid": "lcn-ome-festival",
-    "title": "OME Festival",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Concert",
-      "Evénement",
-      "Halle ouverte",
-      "Petite Halle"
-    ],
-    "date": "2026-08-20",
-    "endDate": "2026-08-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ome_site.png?itok=strXTTJP",
-    "url": "https://lautrecanalnancy.fr/agenda/ome-festival",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-dj-set-mensuel-duel",
     "title": "Marché bio et local",
     "category": "activite",
@@ -266,6 +242,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-18",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-fair-priced-vintage",
+    "title": "Fair Priced Vintage",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Grande Halle"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fairpricedvintage-zwolle-visual_storiess-163-2048x1638.jpg?itok=LMEx7dzb",
+    "url": "https://lautrecanalnancy.fr/agenda/fair-priced-vintage",
     "source": "autre-canal"
   },
   {
@@ -2801,6 +2799,30 @@
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/avatar_ade.png?itok=WBzN_c6g",
     "url": "https://lautrecanalnancy.fr/agenda/amours-d-ete-2026",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-ome-festival",
+    "title": "OME Festival",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Concert",
+      "Evénement",
+      "Halle ouverte",
+      "Petite Halle"
+    ],
+    "date": "2027-08-20",
+    "endDate": "2027-08-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ome_site.png?itok=strXTTJP",
+    "url": "https://lautrecanalnancy.fr/agenda/ome-festival",
     "source": "autre-canal"
   }
 ]
