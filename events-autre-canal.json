@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-dj-set-mensuel-duel",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Halle ouverte",
-      "Rendez-vous"
-    ],
-    "date": "2026-08-21",
-    "endDate": "2026-08-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-dj-set-mensuel-duel",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-fete-celtique-ciel-ouvert-celtic-tramps-dj-et-danse-folk",
     "title": "Fête celtique à ciel ouvert",
     "category": "musiques-actuelles",
@@ -178,7 +156,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-fusion-en-mouvement-shehili-lisko-djibril-cisse",
+    "uuid": "lcn-fusion-en-mouvement-shehili-lisko-lord-kossity",
     "title": "Fusion en mouvement",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -197,7 +175,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20_jaune_shehili_copie.jpg?itok=1bVnt_3t",
-    "url": "https://lautrecanalnancy.fr/agenda/fusion-en-mouvement-shehili-lisko-djibril-cisse",
+    "url": "https://lautrecanalnancy.fr/agenda/fusion-en-mouvement-shehili-lisko-lord-kossity",
     "source": "autre-canal"
   },
   {
@@ -2799,30 +2777,6 @@
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/avatar_ade.png?itok=WBzN_c6g",
     "url": "https://lautrecanalnancy.fr/agenda/amours-d-ete-2026",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ome-festival",
-    "title": "OME Festival",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Concert",
-      "Evénement",
-      "Halle ouverte",
-      "Petite Halle"
-    ],
-    "date": "2027-08-20",
-    "endDate": "2027-08-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ome_site.png?itok=strXTTJP",
-    "url": "https://lautrecanalnancy.fr/agenda/ome-festival",
     "source": "autre-canal"
   }
 ]

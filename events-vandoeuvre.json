@@ -1054,7 +1054,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
     "source": "vandoeuvre"
   },
@@ -1075,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/skate-contest/",
     "source": "vandoeuvre"
   },
@@ -1096,7 +1096,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/51eme-anniversaire-du-marche/",
     "source": "vandoeuvre"
   },
@@ -1178,7 +1178,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
@@ -1218,7 +1218,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
@@ -1237,7 +1237,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1313,7 +1313,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
@@ -1353,7 +1353,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-numeriques-initiation-a-canva/",
     "source": "vandoeuvre"
   },
@@ -1372,8 +1372,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-11051",
+    "title": "Brocante Notre Dame des Nations",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "de 9h à 17h",
+    "place": "Eglise Sainte Bernadette",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/06/vide-grenier.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/brocante-notre-dame-des-nations/",
     "source": "vandoeuvre"
   },
   {
@@ -1391,7 +1410,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1431,7 +1450,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1450,7 +1469,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre"
   },
@@ -1488,7 +1507,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1564,7 +1583,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/10/loto.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   }

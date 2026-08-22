@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-cinema-espace-europe",
-    "title": "Cinéma Espace Europe",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [],
-    "date": "2026-08-21",
-    "endDate": "2026-08-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "Espace europe",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/262/1200_630_7_vsle-2026.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/cinema-espace-europe_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-cinema-plein-air-3",
     "title": "Cinéma plein air",
     "category": "conference",

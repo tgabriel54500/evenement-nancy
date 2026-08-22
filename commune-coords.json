@@ -533,5 +533,10 @@
   "lat": 48.715388,
   "lon": 6.214202,
   "city": "Dommartemont"
+ },
+ "chenicourt": {
+  "lat": 48.855827,
+  "lon": 6.291043,
+  "city": "Chenicourt"
  }
 }
