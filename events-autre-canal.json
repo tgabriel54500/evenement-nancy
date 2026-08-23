@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-fete-celtique-ciel-ouvert-celtic-tramps-dj-et-danse-folk",
-    "title": "Fête celtique à ciel ouvert",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Celtique"
-    ],
-    "date": "2026-08-22",
-    "endDate": "2026-08-22",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/14_jaune_celtiq_copie.jpg?itok=romPr0H4",
-    "url": "https://lautrecanalnancy.fr/agenda/fete-celtique-ciel-ouvert-celtic-tramps-dj-et-danse-folk",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-energie-indie-frissons-d-ete-ellie-s-comics",
     "title": "Énergie indie & frissons d’été",
     "category": "musiques-actuelles",
