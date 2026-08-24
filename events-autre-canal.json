@@ -1,50 +1,5 @@
 [
   {
-    "uuid": "lcn-energie-indie-frissons-d-ete-ellie-s-comics",
-    "title": "Énergie indie & frissons d’été",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Indie rock"
-    ],
-    "date": "2026-08-23",
-    "endDate": "2026-08-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ellie_rouge.jpg?itok=lLpfRAJ7",
-    "url": "https://lautrecanalnancy.fr/agenda/energie-indie-frissons-d-ete-ellie-s-comics",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-douceur-pop-recits-sensibles-lust-valentine-laurent",
-    "title": "Douceur pop & récits sensibles",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Chanson",
-      "Pop"
-    ],
-    "date": "2026-08-23",
-    "endDate": "2026-08-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/val_jaune.jpg?itok=_uSE1u4C",
-    "url": "https://lautrecanalnancy.fr/agenda/douceur-pop-recits-sensibles-lust-valentine-laurent",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-afrobeat-en-mouvement-et-rythmes-d-ete-lisko-romain-danses-africaines",
     "title": "Afrobeat en mouvement et rythmes d’été",
     "category": "musiques-actuelles",
