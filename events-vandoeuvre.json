@@ -1280,6 +1280,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29209",
+    "title": "Concert – Gospel Mississipi",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Eglise Sainte Bernadette",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/01/ateliers-numeriques.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/concert-gospel-mississipi/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-26485",
     "title": "Prévention des cancers ORL",
     "category": "sante",

@@ -42,6 +42,91 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
+    "title": "Catherine Meurisse et son invité",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "16h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c/0/1-1_M_6a75e440814a8.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-8066ef62-9246-11f1-801f-dfb349204fad",
+    "title": "Guillaume de Tonquédec / Rencontre - lecture",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "14h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8066ef62-9246-11f1-801f-dfb349204fad/0/1-1_M_6a75ac4f7e1a8.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8066ef62-9246-11f1-801f-dfb349204fad",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-6d28b368-949e-11f1-9523-7d8be740198c",
+    "title": "L'école au cœur",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre",
+      "Débat d'idées"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 août 2026",
+    "schedule": "11h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6d28b368-949e-11f1-9523-7d8be740198c/0/1-1_M_6a799ae3100cf.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6d28b368-949e-11f1-9523-7d8be740198c",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-f435e6c6-94b4-11f1-a960-0f34bd05aeee",
+    "title": "La parole des enfants",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 août 2026",
+    "schedule": "14h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f435e6c6-94b4-11f1-a960-0f34bd05aeee/0/1-1_M_6a79c0a6b0513.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f435e6c6-94b4-11f1-a960-0f34bd05aeee",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
     "title": "Prix Ginkgo - Louis Pasteur",
     "category": "conference",
