@@ -1,28 +1,5 @@
 [
   {
-    "uuid": "vln-578",
-    "title": "Balade nature au fil de l'eau",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Education",
-      "Environnement",
-      "Culture"
-    ],
-    "date": "2026-08-25",
-    "endDate": "2026-08-25",
-    "dateText": "",
-    "schedule": "16h à 18h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/eau_parc.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/balade-nature-au-fil-de-leau",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-277",
     "title": "69e Fête des vendanges",
     "category": "festival",
