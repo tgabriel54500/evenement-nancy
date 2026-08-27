@@ -22,6 +22,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-589",
+    "title": "Exposition ▪ Hommage à Philippe Mitre",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-09-07",
+    "endDate": "2026-09-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260907_Expo___Philippe_Mitre_Credit_photo__c__LCM.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-philippe-mitre",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-301",
     "title": "Groupes de parole pour les proches aidants Orchidée",
     "category": "citoyennete",
@@ -40,6 +61,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-590",
+    "title": "Rencontres littéraires de Villers ▪ Table ronde sur Émile Coué",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260912_RLV_SUR_LES_PAS_DE_COUE__c__Credits_sur_chaque_photo.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/rencontres-litteraires-de-villers-table-ronde-sur-emile-coue",
     "source": "villers-les-nancy"
   },
   {
@@ -65,6 +107,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-591",
+    "title": "Exposition de JYM FACTORY",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-09-18",
+    "endDate": "2026-11-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "Galerie Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-307",
     "title": "Journées européennes du patrimoine 2026",
     "category": "activite",
@@ -83,6 +146,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2025/ee6569e34bb0-Image-illustration-960x1080-5.png",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/journees-europeennes-du-patrimoine-2026",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-538",
+    "title": "Ardèle et la marguerite",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-02",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0508_ARDELE_MARGUERITE_ROELE.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/ardele-et-la-marguerite",
     "source": "villers-les-nancy"
   },
   {
@@ -125,6 +209,134 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/compost.webp",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/restitution-de-compost",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-592",
+    "title": "Les Rencontres littéraires de Villers reçoivent Catherine Kazan",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "dateText": "",
+    "schedule": "18h45",
+    "place": "Château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261015_RLV_CATHERINE_KAZAN.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rencontres-litteraires-de-villers-recoivent-catherine-kazan",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-528",
+    "title": "Signé Dumas",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-16",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0320_THEATRE_DUMAS.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/signe-dumas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-593",
+    "title": "Ciné jeunes apéro-philo",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Education",
+      "Culture",
+      "Petite enfance"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2027-06-12",
+    "dateText": "",
+    "schedule": "10h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/1017_CINE_JEUNE_WONDER__c__Studiocanal_GmbH_-_Dale_Robinette.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-jeunes-apero-philo",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-285",
+    "title": "Les visites chocottes",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-23",
+    "dateText": "",
+    "schedule": "17h30",
+    "place": "Le château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/chocottes.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-visites-chocottes",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-594",
+    "title": "Concert de Nicolas Jules",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261023_CONCERT_NICOLAS_JULES__c__Thibaut_Derien.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-nicolas-jules",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-595",
+    "title": "Visite Histoire commune - Le domaine de l’Asnée, les sources racontent le paysage ",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-28",
+    "endDate": "2026-10-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "Château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261028_VISITE_DOMAINE_DE_LASNEE.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/visite-histoire-commune-le-domaine-de-lasnee-les-sources-racontent-le-paysage",
     "source": "villers-les-nancy"
   }
 ]

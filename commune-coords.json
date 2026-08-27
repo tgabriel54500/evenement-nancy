@@ -538,5 +538,10 @@
   "lat": 48.855827,
   "lon": 6.291043,
   "city": "Chenicourt"
+ },
+ "saulxures-les-nancy": {
+  "lat": 48.688088,
+  "lon": 6.241448,
+  "city": "Saulxures-lès-Nancy"
  }
 }

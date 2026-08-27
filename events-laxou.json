@@ -209,8 +209,8 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-cinema-plein-air-3",
-    "title": "Cinéma plein air",
+    "uuid": "lx-cinema-2",
+    "title": "Cinéma",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
@@ -219,12 +219,12 @@
     "endDate": "2026-08-28",
     "dateText": "",
     "schedule": "",
-    "place": "City Stade Schweitzer",
+    "place": "Centre Intercommunal de Laxou-Maxéville",
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/263/1200_630_7_6-le-robot-sauvage.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/cinema-plein-air-3_-d.html",
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/263/1200_630_7_le-robot-sauvage-b.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/cinema-2_-d.html",
     "source": "laxou"
   },
   {

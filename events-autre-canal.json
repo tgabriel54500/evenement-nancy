@@ -178,6 +178,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-burning-void-iii-friperie-designers-dj-sets",
+    "title": "Burning the Void III",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Petite Halle"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/btv_iii_lac.jpg.jpeg?itok=6ox7K7XG",
+    "url": "https://lautrecanalnancy.fr/agenda/burning-void-iii-friperie-designers-dj-sets",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-marche-bio-et-local-19",
     "title": "Marché bio et local",
     "category": "activite",
