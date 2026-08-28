@@ -1,49 +1,5 @@
 [
   {
-    "uuid": "lcn-afrobeat-en-mouvement-et-rythmes-d-ete-lisko-romain-danses-africaines",
-    "title": "Afrobeat en mouvement et rythmes d’été",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Afrobeat"
-    ],
-    "date": "2026-08-27",
-    "endDate": "2026-08-27",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/17_rouge_lisko_copie.jpg?itok=wpZ8IOWc",
-    "url": "https://lautrecanalnancy.fr/agenda/afrobeat-en-mouvement-et-rythmes-d-ete-lisko-romain-danses-africaines",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-marche-bio-et-local-17",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-08-28",
-    "endDate": "2026-08-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-17",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-groove-brut-energie-live-johnny-jangle",
     "title": "Groove brut & énergie live",
     "category": "musiques-actuelles",
@@ -413,6 +369,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-20",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-megafoire-aux-disques",
+    "title": "Mégafoire aux disques",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Grande Halle"
+    ],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ecolecondenancy-dsc_8396.jpg?itok=WfaDEDXE",
+    "url": "https://lautrecanalnancy.fr/agenda/megafoire-aux-disques",
     "source": "autre-canal"
   },
   {

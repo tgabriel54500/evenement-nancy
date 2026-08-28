@@ -261,7 +261,7 @@
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/272/1200_630_7_forum-des-associations-2026.png",
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/272/1200_630_7_forum-des-associations-page-1.png",
     "url": "https://www.laxou.fr/fr/agenda/forum-des-associations-1_-d.html",
     "source": "laxou"
   },
@@ -377,6 +377,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_vide-greniers-braderie.jpg",
     "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-temps-nature-sur-les-traces-du-castor",
+    "title": "Temps Nature sur les traces du castor",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/273/1200_630_7_design-sans-titre-37.png",
+    "url": "https://www.laxou.fr/fr/agenda/temps-nature-sur-les-traces-du-castor_-d.html",
     "source": "laxou"
   },
   {
