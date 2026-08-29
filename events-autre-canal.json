@@ -1,28 +1,5 @@
 [
   {
-    "uuid": "lcn-groove-brut-energie-live-johnny-jangle",
-    "title": "Groove brut & énergie live",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Funk",
-      "Rock"
-    ],
-    "date": "2026-08-28",
-    "endDate": "2026-08-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/18_jaune_johnny_copie.jpg?itok=g2U8Hq7_",
-    "url": "https://lautrecanalnancy.fr/agenda/groove-brut-energie-live-johnny-jangle",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-chansons-solaires-karaoke-collectif-louise-xiv-leopard-da-vinci-karaoke",
     "title": "Chansons solaires & karaoké collectif",
     "category": "musiques-actuelles",
