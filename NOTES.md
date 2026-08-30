@@ -319,6 +319,8 @@
   worker réseau-d'abord, cache = filet hors ligne, exigé par Chrome pour proposer l'installation) + bloc CSS
   `.a2hs*` en fin de style.css. Chargés par index.html et nouveautes.html, publiés via FILES des deploy-*.sh,
   `/sw.js` en Cache-Control: no-cache dans _headers. Ne rien mettre en cache-first : data.js doit rester frais.
+  ⚠️ Bandeau et entrée de menu réservés aux MOBILES/TABLETTES (isMobile() dans pwa.js) : sur ordinateur on ne
+  veut rien afficher (demande explicite). Le service worker, lui, est enregistré partout.
 
 ## Pitfalls / gotchas (Destination Nancy)
 - L'agenda DN liste une CARTE PAR OCCURRENCE: un récurrent apparaît avec suffixe `/occ/N/` sur des dizaines de pages

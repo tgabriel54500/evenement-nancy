@@ -20,6 +20,16 @@
            window.navigator.standalone === true;
   }
   var ua = navigator.userAgent || '';
+  // Uniquement telephones et tablettes : sur ordinateur, un raccourci sur le
+  // bureau n'interesse personne, on n'affiche donc ni bandeau ni entree de menu.
+  function isMobile() {
+    if (navigator.userAgentData && typeof navigator.userAgentData.mobile === 'boolean') {
+      return navigator.userAgentData.mobile || /ipad|tablet/i.test(ua);
+    }
+    if (/android|iphone|ipod|ipad|iemobile|opera mini|mobile/i.test(ua)) return true;
+    if (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1) return true; // iPad iPadOS
+    return false;
+  }
   var isIOS = /iphone|ipad|ipod/i.test(ua) ||
               (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   // Sur iOS, seul Safari sait installer (Chrome/Firefox iOS ne proposent rien).
@@ -136,7 +146,7 @@
 
   /* ---------- 6. orchestration ---------- */
   function start() {
-    if (installed()) return;
+    if (installed() || !isMobile()) return;
     if (deferred || isIOS) {
       addMenuEntry();
       setTimeout(showBanner, 4000);
@@ -146,7 +156,7 @@
   window.addEventListener('beforeinstallprompt', function (e) {
     e.preventDefault();
     deferred = e;
-    if (!installed()) { addMenuEntry(); setTimeout(showBanner, 4000); }
+    if (!installed() && isMobile()) { addMenuEntry(); setTimeout(showBanner, 4000); }
   });
 
   window.addEventListener('appinstalled', function () {
