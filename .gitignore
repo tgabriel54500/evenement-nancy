@@ -27,3 +27,7 @@ dist-staging/
 
 # Token API Cloudflare (deploy non-interactif du cron) — SECRET, jamais commité
 .cloudflare-token
+
+# Bilan GoatCounter : script (contient le token API — SECRET) et données produites
+bilan-goatcounter.sh
+bilan-goatcounter/
