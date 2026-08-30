@@ -1015,46 +1015,6 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-28825",
-    "title": "Conférence Hudson River School",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-08-29",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conference-hudson-river-school/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29195",
-    "title": "Skate Contest",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-08-29",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "De 10h à 19h",
-    "place": "Parc Richard Pouille",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/skate-contest/",
-    "source": "vandoeuvre"
-  },
-  {
     "uuid": "vdv-29134",
     "title": "51ème anniversaire du marché",
     "category": "culture",

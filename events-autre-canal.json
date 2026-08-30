@@ -1,50 +1,5 @@
 [
   {
-    "uuid": "lcn-chansons-solaires-karaoke-collectif-louise-xiv-leopard-da-vinci-karaoke",
-    "title": "Chansons solaires & karaoké collectif",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Pop"
-    ],
-    "date": "2026-08-29",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/19_rouge_louise_copie2.jpg?itok=MAlrtwUG",
-    "url": "https://lautrecanalnancy.fr/agenda/chansons-solaires-karaoke-collectif-louise-xiv-leopard-da-vinci-karaoke",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-fusion-en-mouvement-shehili-lisko-lord-kossity",
-    "title": "Fusion en mouvement",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Fusion",
-      "Rock"
-    ],
-    "date": "2026-08-29",
-    "endDate": "2026-08-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20_jaune_shehili_copie.jpg?itok=1bVnt_3t",
-    "url": "https://lautrecanalnancy.fr/agenda/fusion-en-mouvement-shehili-lisko-lord-kossity",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-rap-en-liberte-energie-freestyle-tema-initiation-hip-hop",
     "title": "Rap en liberté & énergie freestyle",
     "category": "musiques-actuelles",
@@ -2666,27 +2621,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-amours-d-ete-2026",
-    "title": "Amours d'été 2026",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement"
-    ],
-    "date": "2027-07-01",
-    "endDate": "2027-07-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/avatar_ade.png?itok=WBzN_c6g",
-    "url": "https://lautrecanalnancy.fr/agenda/amours-d-ete-2026",
     "source": "autre-canal"
   }
 ]

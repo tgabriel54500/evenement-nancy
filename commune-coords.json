@@ -543,5 +543,10 @@
   "lat": 48.688088,
   "lon": 6.241448,
   "city": "Saulxures-lès-Nancy"
+ },
+ "rosieres-en-haye": {
+  "lat": 48.79268,
+  "lon": 6.001167,
+  "city": "Rosières-en-Haye"
  }
 }
