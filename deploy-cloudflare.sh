@@ -42,7 +42,7 @@ mkdir -p "$DIST"
 # Supabase) est ACTIVÉ en prod depuis 2026-07-19 (l'ancien gate qui strippait les
 # liens de nav a été retiré). La feature SPORT reste EN PAUSE : sport.html /
 # sport.js ne sont PAS publiés (aucun lien de nav n'y mène).
-FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css compte.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
+FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"

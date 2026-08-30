@@ -314,6 +314,12 @@
   no-referrer vide document.referrer → le rapport « provenance » de GoatCounter sera limité (le comptage de visiteurs
   uniques, lui, marche). Domaine public passé à agenda-grandnancy.fr (domaine perso branché sur Netlify).
 
+- PWA « Ajouter à l'écran d'accueil » (session distante 2026-08-30) : `pwa.js` (bandeau bas refermable,
+  entrée injectée dans #navMenu, feuille d'instructions iOS car Safari n'a aucune API) + `sw.js` (service
+  worker réseau-d'abord, cache = filet hors ligne, exigé par Chrome pour proposer l'installation) + bloc CSS
+  `.a2hs*` en fin de style.css. Chargés par index.html et nouveautes.html, publiés via FILES des deploy-*.sh,
+  `/sw.js` en Cache-Control: no-cache dans _headers. Ne rien mettre en cache-first : data.js doit rester frais.
+
 ## Pitfalls / gotchas (Destination Nancy)
 - L'agenda DN liste une CARTE PAR OCCURRENCE: un récurrent apparaît avec suffixe `/occ/N/` sur des dizaines de pages
   (267 pages = ~3194 cartes pour ~173 events uniques). Seule la fiche canonique (sans /occ/) porte le JSON-LD Event.

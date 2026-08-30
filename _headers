@@ -13,3 +13,8 @@
 /data.js
   X-Robots-Tag: noindex, nofollow
   Cache-Control: no-store
+
+# Service worker : doit etre revalide a chaque fois, sinon une vieille
+# version reste active des semaines sur les telephones.
+/sw.js
+  Cache-Control: no-cache

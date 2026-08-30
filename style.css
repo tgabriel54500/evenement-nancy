@@ -960,3 +960,126 @@ body {
   .nav-account__btn .ico--user { display: none; }
   .nav-account__btn .ico--burger { display: block; }
 }
+
+/* ---------- Ajouter à l'écran d'accueil (bandeau + feuille iOS) ---------- */
+.a2hs {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(12px + env(safe-area-inset-bottom));
+  z-index: 150;
+  display: flex;
+  align-items: center;
+  gap: .7rem;
+  flex-wrap: wrap;
+  padding: .7rem .8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 34px -12px rgba(28,26,23,.35);
+  transform: translateY(140%);
+  transition: transform .28s ease;
+}
+.a2hs.is-in { transform: translateY(0); }
+.a2hs__icon { width: 40px; height: 40px; border-radius: 10px; flex: none; }
+.a2hs__txt { display: flex; flex-direction: column; line-height: 1.25; min-width: 0; }
+.a2hs__txt strong { font-size: .93rem; font-weight: 600; }
+.a2hs__txt span { font-size: .8rem; color: var(--ink-soft); }
+.a2hs__cta {
+  margin-left: auto;
+  flex: none;
+  border: 0;
+  cursor: pointer;
+  background: var(--accent);
+  color: #fff;
+  font: inherit;
+  font-weight: 600;
+  font-size: .9rem;
+  padding: .55rem 1rem;
+  border-radius: 999px;
+}
+.a2hs__cta:hover { background: var(--accent-deep); }
+.a2hs__x {
+  flex: none;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  color: var(--ink-soft);
+  font-size: 1.5rem;
+  line-height: 1;
+  padding: 0 .2rem;
+}
+/* Le bouton WhatsApp flottant remonte tant que le bandeau est affiché. */
+/* Le bouton WhatsApp flottant remonte au-dessus du bandeau (hauteur mesuree en JS). */
+body.has-a2hs .wa-fab { bottom: calc(var(--a2hs-h, 76px) + 26px + env(safe-area-inset-bottom)); }
+
+/* Petits ecrans : le bouton Ajouter passe sur une 2e ligne, pleine largeur. */
+@media (max-width: 520px) {
+  .a2hs__txt { flex: 1 1 0; }
+  .a2hs__x { order: 2; align-self: flex-start; }
+  .a2hs__cta { order: 3; flex: 1 0 100%; margin-left: 0; text-align: center; }
+}
+
+@media (min-width: 720px) {
+  .a2hs { right: auto; max-width: 430px; left: 20px; bottom: calc(20px + env(safe-area-inset-bottom)); }
+  body.has-a2hs .wa-fab { bottom: calc(20px + env(safe-area-inset-bottom)); }
+}
+@media (max-width: 380px) {
+  .a2hs__txt span { display: none; }
+}
+
+.a2hs-sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 950;
+  background: rgba(20,16,12,.55);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 1rem;
+}
+.a2hs-sheet__box {
+  position: relative;
+  background: var(--card);
+  border-radius: 18px;
+  padding: 1.25rem 1.25rem 1.1rem;
+  width: min(440px, 100%);
+  box-shadow: var(--shadow);
+}
+.a2hs-sheet__x {
+  position: absolute;
+  top: .5rem;
+  right: .7rem;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  font-size: 1.7rem;
+  line-height: 1;
+  color: var(--ink-soft);
+}
+.a2hs-sheet__title {
+  font-family: "Fraunces", Georgia, serif;
+  font-weight: 600;
+  font-size: 1.12rem;
+  margin-bottom: .7rem;
+  padding-right: 1.5rem;
+}
+.a2hs-sheet__steps { margin: 0 0 0 1.1rem; padding: 0; font-size: .93rem; }
+.a2hs-sheet__steps li { margin-bottom: .45rem; }
+.a2hs-sheet__ico {
+  display: inline-flex;
+  vertical-align: -5px;
+  color: var(--accent);
+}
+.a2hs-sheet__ico svg { width: 19px; height: 19px; }
+.a2hs-sheet__note {
+  margin-top: .8rem;
+  font-size: .82rem;
+  color: var(--ink-soft);
+  background: rgba(196,69,47,.07);
+  border-radius: 10px;
+  padding: .55rem .7rem;
+}
+@media (min-width: 720px) {
+  .a2hs-sheet { align-items: center; }
+}

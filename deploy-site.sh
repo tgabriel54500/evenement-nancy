@@ -26,7 +26,7 @@ mkdir -p "$DIST"
 # On publie les fichiers chargés par index.html (galerie) ET cartes.html :
 #   index.html → galerie.js ; cartes.html → app.js ; les deux → data.js + style.css.
 # On NE publie PAS base.html/base.js/base.css ni details.js (réservés au local).
-FILES="index.html cartes.html nouveautes.html galerie.js app.js style.css data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
+FILES="index.html cartes.html nouveautes.html galerie.js app.js style.css pwa.js sw.js data.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png"
 # On repart d'un dist/ propre pour ne pas laisser traîner d'anciens fichiers Base.
 rm -f "$DIST"/*.html "$DIST"/*.js "$DIST"/*.css 2>/dev/null
 for f in $FILES; do
