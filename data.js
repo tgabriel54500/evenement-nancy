@@ -69,9 +69,9 @@ const EVENTS = [
     "city": "Nancy",
     "free": true,
     "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f8fabada-5a8d-11f1-89b2-b38054c840da/0/ORIGINE_M_6a18304c08e1e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f8fabada-5a8d-11f1-89b2-b38054c840da",
-    "addedAt": "2026-05-24"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83c5f9bc-9644-11f1-914f-e926e551ee1a/0/16-9_M_6a7c5f18d88b1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83c5f9bc-9644-11f1-914f-e926e551ee1a",
+    "addedAt": "2026-08-13"
   },
   {
     "uuid": "2d426d9e-b05c-11ee-9a01-db475e605a50",
@@ -1346,6 +1346,24 @@ const EVENTS = [
     "title": "Ateliers, stages de loisirs - CCAM / Rattrapages de saison",
     "category": "activite",
     "subcats": [],
+    "date": "2026-08-30",
+    "endDate": "2026-08-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Stade Sadoul",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/271/1200_630_7_v2-affiche-parc-gonflable.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/parc-gonflable-3-jours-d-animation_-d.html",
+    "source": "laxou",
+    "addedAt": "2026-08-25"
+  },
+  {
+    "uuid": "dn-24697",
+    "title": "Ateliers, stages de loisirs - CCAM / Rattrapages de saison",
+    "category": "activite",
+    "subcats": [],
     "date": "2026-09-01",
     "endDate": "2026-09-01",
     "dateText": "",
@@ -1629,6 +1647,62 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-autour-de-nancy-thermal/",
     "source": "destination-nancy",
     "addedAt": "2026-08-08"
+  },
+  {
+    "uuid": "03c6c6fe-9a2e-11f1-b6d7-439534d17a41",
+    "title": "Le Grand Déballage des commerçants",
+    "category": "activite",
+    "subcats": [
+      "Brocante / marché"
+    ],
+    "date": "2026-09-04",
+    "endDate": "2026-09-05",
+    "dateText": "Les 4 et 5 Septembre 2026",
+    "schedule": "de 10h à 19h",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/03c6c6fe-9a2e-11f1-b6d7-439534d17a41/0/1-1_M_6a82ef4a09bbb.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=03c6c6fe-9a2e-11f1-b6d7-439534d17a41",
+    "addedAt": "2026-08-18"
+  },
+  {
+    "uuid": "a1571aac-873e-11f1-8333-abf90f8b9c57",
+    "title": "SOUFFLES",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-04",
+    "endDate": "2026-10-16",
+    "dateText": "Du 4 septembre au 16 octobre 2026",
+    "schedule": "de 08h à 19h",
+    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a1571aac-873e-11f1-8333-abf90f8b9c57/0/ORIGINE_M_6a632a8912881.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a1571aac-873e-11f1-8333-abf90f8b9c57",
+    "addedAt": "2026-07-25"
+  },
+  {
+    "uuid": "dn-20531",
+    "title": "Visite Guidée - Art Nouveau autour de Nancy Thermal",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-09-04",
+    "endDate": "2026-09-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "38",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737013846/531a8f8f6d7a35ea-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-autour-de-nancy-thermal/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-01"
   },
   {
     "uuid": "dn-24698",
@@ -3926,7 +4000,25 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/LaDamedePierre-350x524.jpeg",
     "url": "https://www.zenith-de-nancy.com/evenement/la-dame-de-pierre/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
+  },
+  {
+    "uuid": "vdv-29035",
+    "title": "Activité Brain Ball ®",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-17",
+    "endDate": "2026-09-17",
+    "dateText": "",
+    "schedule": "De 9h à 10h15",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-07-21"
   },
   {
     "uuid": "vdv-29035",
@@ -7549,7 +7641,13 @@ const EVENTS = [
     "uuid": "fb-1617705292549740",
     "title": "Mirabelle Cyclo 2026",
     "category": "autre",
-    "subcats": [],
+    "subcats": [
+      "Famille",
+      "Jeunes",
+      "Seniors",
+      "Sport",
+      "Ville"
+    ],
     "date": "2026-09-27",
     "endDate": "2026-09-27",
     "dateText": "27 sept. à 08:30",
@@ -8107,6 +8205,24 @@ const EVENTS = [
     "url": "https://www.laxou.fr/fr/agenda/journee-du-patrimoine-economique_-d.html",
     "source": "laxou",
     "addedAt": "2026-07-27"
+  },
+  {
+    "uuid": "lx-journee-du-patrimoine-economique",
+    "title": "JOURNÉE DU PATRIMOINE ÉCONOMIQUE",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-10-02",
+    "endDate": "2026-10-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/266/1200_630_7_a4-visites-page-0001.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/journee-du-patrimoine-economique_-d.html",
+    "source": "laxou",
+    "addedAt": "2026-07-23"
   },
   {
     "uuid": "6259f984-9ab6-11f0-897d-73d8e70d7931",
@@ -11211,7 +11327,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "cx-elles-pardonnent-mais-n-oublient-jamais-1",
@@ -12214,7 +12330,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/LRV_nancy_artwork3_1080x1920-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/legendary-rock-voices/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "cx-elmer-food-beat-2",
@@ -12845,7 +12961,9 @@ const EVENTS = [
     "uuid": "fb-4151580331723409",
     "title": "Poetic Lover • Chaudeau, Ludres • 14/11/2026",
     "category": "autre",
-    "subcats": [],
+    "subcats": [
+      "Jeunes"
+    ],
     "date": "2026-11-14",
     "endDate": "2026-11-14",
     "dateText": "14 nov. à 20:00",
@@ -12997,7 +13115,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Balavoine_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/balavoine-ma-bataille/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "lcn-creation-de-son-identite-narrative-atelier-avec-valerie-bisson",
@@ -13293,7 +13411,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Pietragalla-Barbara-affiche-WEB-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/pietragalla-barbara/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "cx-moguiz-1",
@@ -13331,7 +13449,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/2026-04_zimmer_williams_WEB_Zenith-Nancy-1191x1684-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alan-silvestri/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "lcn-rock-you-snap-orchestra-concert-participatif-des-7-ans",
@@ -13812,7 +13930,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/affiche-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/the-music-of-queen/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "essey-broc-aux-jouets",
@@ -14632,7 +14750,47 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
+  },
+  {
+    "uuid": "5f02ea46-8446-11f1-a8eb-e138daa1c38a",
+    "title": "Nuit d'ivresse",
+    "category": "spectacle",
+    "subcats": [
+      "Spectacle",
+      "Humour"
+    ],
+    "date": "2026-12-31",
+    "endDate": "2026-12-31",
+    "dateText": "Jeudi 31 décembre 2026",
+    "schedule": "de 18h30 à 19h45",
+    "place": "13bis",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5f02ea46-8446-11f1-a8eb-e138daa1c38a/0/ORIGINE_M_6a5e2f083efff.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5f02ea46-8446-11f1-a8eb-e138daa1c38a",
+    "addedAt": "2026-07-21"
+  },
+  {
+    "uuid": "2e15787c-8441-11f1-a7e5-e76661d05612",
+    "title": "Tout le ciel est nécessaire",
+    "category": "musique-classique",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2027-01-07",
+    "endDate": "2027-01-08",
+    "dateText": "Les 7 et 8 janvier 2027",
+    "schedule": "19h",
+    "place": "Opéra national de Nancy-Lorraine",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2e15787c-8441-11f1-a7e5-e76661d05612/0/ORIGINE_M_6a5e2652aa943.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2e15787c-8441-11f1-a7e5-e76661d05612",
+    "addedAt": "2026-07-21"
   },
   {
     "uuid": "5f02ea46-8446-11f1-a8eb-e138daa1c38a",
@@ -15043,7 +15201,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/02/BERNARD-LAVILLIERS_2026_affiche_40x60_HD-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/bernard-lavilliers/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "cfb19798-4ddb-11f1-b478-9d28cea11105",
@@ -15101,7 +15259,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Clement-Viktorovitch_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/clement-viktorovitch/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-11"
   },
   {
     "uuid": "lcn-marguerite",
@@ -16769,7 +16927,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/05/covertramp-v2-350x524.jpeg",
     "url": "https://www.zenith-de-nancy.com/evenement/covertramp/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-06"
   },
   {
     "uuid": "lcn-winter-story-oco",
@@ -17044,7 +17202,28 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/KeenV-A-nos-20-ans-Visuel-de-MEV-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/keenv/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-06"
+  },
+  {
+    "uuid": "f834dc0a-843d-11f1-9774-a9593b13a4ff",
+    "title": "La Petite Foire",
+    "category": "jeune-public",
+    "subcats": [
+      "Spectacle",
+      "Concert",
+      "Activité - Animation"
+    ],
+    "date": "2027-04-20",
+    "endDate": "2027-04-24",
+    "dateText": "Du 20 au 24 avril 2027",
+    "schedule": "de 10h à 17h45",
+    "place": "Opéra national de Nancy-Lorraine",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f834dc0a-843d-11f1-9774-a9593b13a4ff/0/ORIGINE_M_6a5e20efc7c42.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f834dc0a-843d-11f1-9774-a9593b13a4ff",
+    "addedAt": "2026-07-21"
   },
   {
     "uuid": "f834dc0a-843d-11f1-9774-a9593b13a4ff",
@@ -17483,7 +17662,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/03/NINO-ARIAL-1080x1920-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/nino-arial/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-06"
   },
   {
     "uuid": "zen-philippe-caveriviere",
@@ -17503,7 +17682,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Philippe-Caveriviere_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/philippe-caveriviere/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-06"
   },
   {
     "uuid": "d26feb66-7ada-11f1-9c64-45ec3db71fdf",
@@ -17583,7 +17762,7 @@ const EVENTS = [
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Mousquetaire_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/mousquetaire/",
     "source": "zenith-nancy",
-    "addedAt": "2026-05-24"
+    "addedAt": "2026-08-06"
   },
   {
     "uuid": "ba268df0-6340-11f1-b100-633f006ec353",
