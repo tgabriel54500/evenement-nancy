@@ -267,6 +267,10 @@
   `.assetsignore` (allowlist racine) n'est PLUS utilisé (dist/ ne contient que le public). ⚠️ Tout nouveau fichier PUBLIC doit
   être ajouté à la liste `FILES` de `deploy-cloudflare.sh` (et au `<script>/<link>` de la page), sinon absent en prod. ICÔNES
   écran d'accueil (apple-touch 180, icon-192/512 + maskable, favicon-16/32) + `site.webmanifest` dans la liste FILES.
+  REPRISE SUR ÉCHEC (2026-08-20) : `wrangler deploy` échoue par intermittence sur un « fetch failed / connectivity
+  issue » passager (12, 13 et 18/08 : le site restait alors sur les données de la veille, le build dist/ étant pourtant
+  bon). Le script retente donc 3 fois à 60 s d'intervalle (`DEPLOY_TRIES` / `DEPLOY_WAIT` pour ajuster). Un échec d'AUTH
+  se reproduit aux 3 essais et sort en code 1 comme avant, donc refresh-all.sh loggue toujours FAIL dans ce cas.
 - ✅ AUTOMATISATION CORRIGÉE (2026-06-17) : `refresh-all.sh` appelle désormais **`deploy-cloudflare.sh`** (build durci →
   wrangler deploy sur Cloudflare), PLUS `deploy-site.sh` (Netlify mort). Le data.js régénéré chaque nuit arrive donc
   directement en prod sur le domaine. ⚠️ Le cron local (launchd) déploie car `wrangler login` est fait sur le Mac ; GitHub

@@ -273,10 +273,25 @@ fi
 echo "→ wrangler deploy…"
 # --env="" cible l'environnement top-level (wrangler.jsonc définit plusieurs envs →
 # sinon avertissement « no target environment specified »).
-if npx --yes wrangler deploy --env=""; then
-  echo "✓ déployé sur Cloudflare (agenda-grandnancy.fr)."
-  exit 0
-else
-  echo "✗ échec wrangler deploy (auth ? réseau ?). data.js a tout de même été régénéré."
-  exit 1
-fi
+#
+# REPRISE SUR ÉCHEC (2026-08-20) : wrangler tombe régulièrement sur un
+# « fetch failed / connectivity issue » passager (3 fois entre le 12 et le 18/08),
+# et le cron laissait alors le site sur les données de la veille. On retente donc
+# 3 fois à 60 s d'intervalle : une coupure réseau courte ne coûte plus une journée
+# de retard. Un échec d'AUTH, lui, se reproduira aux 3 essais et sortira en 1.
+DEPLOY_TRIES="${DEPLOY_TRIES:-3}"
+DEPLOY_WAIT="${DEPLOY_WAIT:-60}"
+attempt=1
+while :; do
+  if npx --yes wrangler deploy --env=""; then
+    echo "✓ déployé sur Cloudflare (agenda-grandnancy.fr)$([ "$attempt" -gt 1 ] && echo " à la tentative $attempt")."
+    exit 0
+  fi
+  if [ "$attempt" -ge "$DEPLOY_TRIES" ]; then
+    echo "✗ échec wrangler deploy après $attempt tentative(s) (auth ? réseau ?). data.js a tout de même été régénéré."
+    exit 1
+  fi
+  echo "  ⚠ tentative $attempt/$DEPLOY_TRIES échouée, nouvel essai dans ${DEPLOY_WAIT}s…"
+  sleep "$DEPLOY_WAIT"
+  attempt=$((attempt + 1))
+done
