@@ -1,48 +1,5 @@
 [
   {
-    "uuid": "po-f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "title": "Cercles",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-07-18",
-    "endDate": "2026-07-25",
-    "dateText": "Du 10 juin au 25 juillet 2026",
-    "schedule": "de 14h à 18h",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f139ab1c-528b-11f1-ac6a-b3ae43f42f6b/0/ORIGINE_M_6a0ac0eaafec1.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f139ab1c-528b-11f1-ac6a-b3ae43f42f6b",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-2f7f1174-6fa5-11f1-bc55-f32d94276250",
-    "title": "Cercles : Visite guidée - Les Impromptus du Tapir",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Visite",
-      "Exposition"
-    ],
-    "date": "2026-07-24",
-    "endDate": "2026-07-24",
-    "dateText": "Le 24 juillet à 16h30 et à 17h30",
-    "schedule": "à 16h30 et à 17h30",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2f7f1174-6fa5-11f1-bc55-f32d94276250/0/1-1_M_6a3b92feb1fcd.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2f7f1174-6fa5-11f1-bc55-f32d94276250",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-6106660c-8049-11f1-949c-95d6e1361653",
     "title": "EPO - \"KIRLÉ\"",
     "category": "spectacle",
@@ -73,8 +30,8 @@
       "Exposition"
     ],
     "date": "2026-09-05",
-    "endDate": "2026-11-22",
-    "dateText": "Du 5 septembre au 22 novembre 2026",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
     "place": "Galerie Poirel",
     "city": "Nancy",
@@ -82,6 +39,112 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
+    "title": "Catherine Meurisse et son invité",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "16h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c/0/1-1_M_6a75e440814a8.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-8066ef62-9246-11f1-801f-dfb349204fad",
+    "title": "Guillaume de Tonquédec / Rencontre - lecture",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "14h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8066ef62-9246-11f1-801f-dfb349204fad/0/1-1_M_6a75ac4f7e1a8.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8066ef62-9246-11f1-801f-dfb349204fad",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-6d28b368-949e-11f1-9523-7d8be740198c",
+    "title": "L'école au cœur",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre",
+      "Débat d'idées"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 septembre 2026",
+    "schedule": "11h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6d28b368-949e-11f1-9523-7d8be740198c/0/1-1_M_6a799ae3100cf.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6d28b368-949e-11f1-9523-7d8be740198c",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-f435e6c6-94b4-11f1-a960-0f34bd05aeee",
+    "title": "La parole des enfants",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 septembre 2026",
+    "schedule": "14h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f435e6c6-94b4-11f1-a960-0f34bd05aeee/0/1-1_M_6a79c0a6b0513.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f435e6c6-94b4-11f1-a960-0f34bd05aeee",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
+    "title": "Prix Ginkgo - Louis Pasteur",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Remise de prix"
+    ],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 13 septembre 2026",
+    "schedule": "16h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f0573e54-94bb-11f1-8688-474740466974/0/1-1_M_6a79cc879cf4c.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f0573e54-94bb-11f1-8688-474740466974",
     "source": "poirel"
   },
   {
@@ -94,7 +157,7 @@
       "Danse",
       "Patrimoine",
       "Concert",
-      "Culture",
+      "Evénement",
       "Exposition"
     ],
     "date": "2026-09-19",
@@ -199,11 +262,12 @@
   {
     "uuid": "po-9f5d920a-5ffa-11f1-b84a-a309bf180951",
     "title": "NJP 2026 : Médine - Enfants du Destin, Dori",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
     "subcats": [
-      "Festival"
+      "Théâtre",
+      "Concert"
     ],
     "date": "2026-10-09",
     "endDate": "2026-10-09",
@@ -240,6 +304,30 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-a936525e-8443-11f1-8277-c597bc448103",
+    "title": "Ces Mondes en nous",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Spectacle",
+      "Concert",
+      "Opéra / lyrique",
+      "Musique de chambre / chorale"
+    ],
+    "date": "2026-10-15",
+    "endDate": "2026-10-16",
+    "dateText": "Les 15 et 16 octobre 2026",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a936525e-8443-11f1-8277-c597bc448103/0/ORIGINE_M_6a5e2a7c43867.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=a936525e-8443-11f1-8277-c597bc448103",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-864ab928-eade-11f0-bdc5-a765d39e7aeb",
     "title": "Akim Omiri - Spectacle",
     "category": "spectacle",
@@ -259,27 +347,6 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/864ab928-eade-11f0-bdc5-a765d39e7aeb/0/ORIGINE_M_695ccfce94a82.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=864ab928-eade-11f0-bdc5-a765d39e7aeb",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-4f8a4492-804a-11f1-993c-2928787e3f13",
-    "title": "CHEVREUIL - Association Monolithe",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "Le 24 octobre 2026",
-    "schedule": "",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4f8a4492-804a-11f1-993c-2928787e3f13/0/1-1_M_6a57809328a72.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4f8a4492-804a-11f1-993c-2928787e3f13",
     "source": "poirel"
   },
   {
@@ -326,6 +393,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-1572aeee-8418-11f1-9b22-17a8e2bc0998",
+    "title": "Charlelie Couture",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "dateText": "Mardi 3 novembre 2026",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1572aeee-8418-11f1-9b22-17a8e2bc0998/0/ORIGINE_M_6a5de16001613.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=1572aeee-8418-11f1-9b22-17a8e2bc0998",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-481741b8-13f5-11f1-a372-9bbc33408a3b",
     "title": "Mesdames en vraies",
     "category": "spectacle",
@@ -349,7 +437,7 @@
   },
   {
     "uuid": "po-7eed200e-13f5-11f1-9962-8ddab606659f",
-    "title": "Philippe Lelouche - Humour",
+    "title": "Philippe Lelouche",
     "category": "spectacle",
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
@@ -456,6 +544,28 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-2745d086-8442-11f1-a003-633f0f1d26ad",
+    "title": "Le Voyage de Candide",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-27",
+    "dateText": "Les 26 et 27 novembre 2026",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2745d086-8442-11f1-a003-633f0f1d26ad/0/ORIGINE_M_6a5e27f4bbc3f.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2745d086-8442-11f1-a003-633f0f1d26ad",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-2d21caea-804c-11f1-91d6-a578b2e78f66",
     "title": "GRÈVE DE FIN - Les 2 de la Spontanée",
     "category": "spectacle",
@@ -544,6 +654,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-8cf0cf14-85c1-11f1-9efa-6dc95265f5ca",
+    "title": "Nos déferlantes - Cie Logos",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "dateText": "Le 18 décembre 2026 et le 08 janvier 2027",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8cf0cf14-85c1-11f1-9efa-6dc95265f5ca/0/1-1_M_6a60ac5105692.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8cf0cf14-85c1-11f1-9efa-6dc95265f5ca",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-ce682570-7ad9-11f1-8ce7-23ffcf1867db",
     "title": "Léon Satache",
     "category": "jeune-public",
@@ -606,6 +737,28 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d4f51eb8-05ca-11f1-9592-83ea71871cea/0/ORIGINE_M_6989fb2e0d784.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=d4f51eb8-05ca-11f1-9592-83ea71871cea",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-08b84dd4-8441-11f1-b2e6-d74ea7d49166",
+    "title": "Le Deux centième",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2027-01-14",
+    "endDate": "2027-01-15",
+    "dateText": "Les 14 et 15 janvier 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/08b84dd4-8441-11f1-b2e6-d74ea7d49166/0/ORIGINE_M_6a5e261404222.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=08b84dd4-8441-11f1-b2e6-d74ea7d49166",
     "source": "poirel"
   },
   {
@@ -711,7 +864,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b4e0c020-eade-11f0-8e7b-378ba6bae0ca/0/ORIGINE_M_695cd01cc1800.jpeg",
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b4e0c020-eade-11f0-8e7b-378ba6bae0ca/0/ORIGINE_M_6a5dd168cbf99.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=b4e0c020-eade-11f0-8e7b-378ba6bae0ca",
     "source": "poirel"
   },
@@ -735,6 +888,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/69d29114-43d8-11f1-8fd6-374aad76cf31/0/ORIGINE_M_69f216c356bbe.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=69d29114-43d8-11f1-8fd6-374aad76cf31",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-d0694e24-841d-11f1-867a-975cfdaed090",
+    "title": "Laurent Baffie - spectacle",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2027-02-09",
+    "endDate": "2027-02-09",
+    "dateText": "Mardi 9 février 2027",
+    "schedule": "de 20h à 21h40",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d0694e24-841d-11f1-867a-975cfdaed090/0/ORIGINE_M_6a5deafd287df.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=d0694e24-841d-11f1-867a-975cfdaed090",
     "source": "poirel"
   },
   {
@@ -781,6 +955,28 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-3992a932-8440-11f1-aa7a-9d91bc444512",
+    "title": "The Kid",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Cinéma / projection",
+      "Concert"
+    ],
+    "date": "2027-02-19",
+    "endDate": "2027-02-20",
+    "dateText": "Les 19 et 20 février 2027",
+    "schedule": "19h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3992a932-8440-11f1-aa7a-9d91bc444512/0/ORIGINE_M_6a5e24b873e44.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=3992a932-8440-11f1-aa7a-9d91bc444512",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-572b37f6-ca15-11f0-9bf7-1b4eef81f9d5",
     "title": "Liliane Blanco-Binette",
     "category": "spectacle",
@@ -820,6 +1016,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/43d3cbaa-4ddc-11f1-a258-a5bba5061957/0/ORIGINE_M_6a02e43136459.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=43d3cbaa-4ddc-11f1-a258-a5bba5061957",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-bece75fc-841a-11f1-84c3-07a917a43e22",
+    "title": "Manon Bril",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Humour"
+    ],
+    "date": "2027-03-17",
+    "endDate": "2027-03-17",
+    "dateText": "Mercredi 17 mars 2027",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/bece75fc-841a-11f1-84c3-07a917a43e22/0/ORIGINE_M_6a5de5d72237c.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=bece75fc-841a-11f1-84c3-07a917a43e22",
     "source": "poirel"
   },
   {
@@ -863,6 +1080,28 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/77bb7e2c-7b9a-11f1-b54b-09c2344a1dce/0/ORIGINE_M_6a4fa2a702939.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=77bb7e2c-7b9a-11f1-b54b-09c2344a1dce",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-34da8e56-843f-11f1-a2f4-91b239180977",
+    "title": "Le Son du destin - Gellis, Beethoven, Tchaïkovski",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2027-03-25",
+    "endDate": "2027-03-26",
+    "dateText": "Les 25 et 26 mars 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/34da8e56-843f-11f1-a2f4-91b239180977/0/ORIGINE_M_6a5e23030f4bb.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=34da8e56-843f-11f1-a2f4-91b239180977",
     "source": "poirel"
   },
   {
@@ -910,6 +1149,49 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-0f734a04-843f-11f1-85bb-61990aa9c189",
+    "title": "Éclats de cuivre #2 - Carte blanche aux cuivres et aux percussions de l'Orchestre",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2027-04-07",
+    "endDate": "2027-04-08",
+    "dateText": "Les 7 et 8 avril 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0f734a04-843f-11f1-85bb-61990aa9c189/0/ORIGINE_M_6a5e22c44d5cb.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=0f734a04-843f-11f1-85bb-61990aa9c189",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-b49fa5b4-843e-11f1-b6f1-7dc484307d33",
+    "title": "Bazarc Circus - L'Orchestre fait son cirque !",
+    "category": "jeune-public",
+    "catLabel": "Jeune public",
+    "catEmoji": "🧸",
+    "subcats": [
+      "Concert",
+      "Musique classique"
+    ],
+    "date": "2027-04-16",
+    "endDate": "2027-04-17",
+    "dateText": "Les 16 et 17 avril 2027",
+    "schedule": "19h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b49fa5b4-843e-11f1-b6f1-7dc484307d33/0/ORIGINE_M_6a5e222be3014.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=b49fa5b4-843e-11f1-b6f1-7dc484307d33",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-54014f18-7ada-11f1-9292-91169a690f08",
     "title": "Adel Fugazi",
     "category": "spectacle",
@@ -953,6 +1235,71 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-cabce768-843d-11f1-a373-43ec2da69bca",
+    "title": "Portrait d'orchestre - Beethoven",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2027-05-13",
+    "endDate": "2027-05-14",
+    "dateText": "Les 13 et 14 mai 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cabce768-843d-11f1-a373-43ec2da69bca/0/ORIGINE_M_6a5e20a3831cd.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=cabce768-843d-11f1-a373-43ec2da69bca",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-6b0abe58-843d-11f1-a76f-ab750e839187",
+    "title": "Place aux solistes - Le Chant des vents",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2027-05-27",
+    "endDate": "2027-05-28",
+    "dateText": "Les 27 et 28 mai 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6b0abe58-843d-11f1-a76f-ab750e839187/0/ORIGINE_M_6a5e200300ace.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6b0abe58-843d-11f1-a76f-ab750e839187",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-2f0c4fca-843d-11f1-80b4-8f03b45eae4f",
+    "title": "Voyage en Italie - Berlioz, Rossini, Respighi",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique"
+    ],
+    "date": "2027-06-03",
+    "endDate": "2027-06-04",
+    "dateText": "Les 3 et 4 juin 2027",
+    "schedule": "20h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2f0c4fca-843d-11f1-80b4-8f03b45eae4f/0/ORIGINE_M_6a5e1f9e51f98.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2f0c4fca-843d-11f1-80b4-8f03b45eae4f",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-c4d4bc00-7b9a-11f1-a292-b3e066824d50",
     "title": "L'Angleterre romantique - The Music Makers Sir Edward Elgar Op. 69",
     "category": "musique-classique",
@@ -992,6 +1339,29 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b1e4d756-4ddc-11f1-974e-490e05872269/0/ORIGINE_M_6a02e4e9d656a.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=b1e4d756-4ddc-11f1-974e-490e05872269",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-9e1eaf80-843c-11f1-af34-615c5d1ac5b4",
+    "title": "Hymnes 2 : à vous de jouer !",
+    "category": "jeune-public",
+    "catLabel": "Jeune public",
+    "catEmoji": "🧸",
+    "subcats": [
+      "Concert",
+      "Opéra / lyrique",
+      "Jeune public"
+    ],
+    "date": "2027-07-02",
+    "endDate": "2027-07-03",
+    "dateText": "Les 2 et 3 juillet 2027",
+    "schedule": "19h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9e1eaf80-843c-11f1-af34-615c5d1ac5b4/0/ORIGINE_M_6a5e1eab2dc77.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=9e1eaf80-843c-11f1-af34-615c5d1ac5b4",
     "source": "poirel"
   }
 ]
