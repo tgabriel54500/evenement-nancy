@@ -468,5 +468,1345 @@
   "lat": 48.648269,
   "lon": 6.241429,
   "city": "Laneuveville-devant-Nancy"
+ },
+ "vaudemont": {
+  "lat": 48.416617,
+  "lon": 6.05624,
+  "city": "Vaudémont"
+ },
+ "avrainville": {
+  "lat": 48.77216,
+  "lon": 5.938742,
+  "city": "Avrainville"
+ },
+ "rozelieures": {
+  "lat": 48.450589,
+  "lon": 6.433729,
+  "city": "Rozelieures"
+ },
+ "luppy": {
+  "lat": 48.981087,
+  "lon": 6.343735,
+  "city": "Luppy"
+ },
+ "landremont": {
+  "lat": 48.850285,
+  "lon": 6.141184,
+  "city": "Landremont"
+ },
+ "saizerais": {
+  "lat": 48.788855,
+  "lon": 6.048083,
+  "city": "Saizerais"
+ },
+ "einvaux": {
+  "lat": 48.492161,
+  "lon": 6.39416,
+  "city": "Einvaux"
+ },
+ "puzieux": {
+  "lat": 48.892681,
+  "lon": 6.368873,
+  "city": "Puzieux"
+ },
+ "richardmenil": {
+  "lat": 48.593343,
+  "lon": 6.170077,
+  "city": "Richardménil"
+ },
+ "bicqueley": {
+  "lat": 48.631879,
+  "lon": 5.904041,
+  "city": "Bicqueley"
+ },
+ "autreville-sur-moselle": {
+  "lat": 48.823355,
+  "lon": 6.117248,
+  "city": "Autreville-sur-Moselle"
+ },
+ "tantonville": {
+  "lat": 48.473082,
+  "lon": 6.137731,
+  "city": "Tantonville"
+ },
+ "vicherey": {
+  "lat": 48.382992,
+  "lon": 5.934072,
+  "city": "Vicherey"
+ },
+ "chambrey": {
+  "lat": 48.785765,
+  "lon": 6.458637,
+  "city": "Chambrey"
+ },
+ "thorey-lyautey": {
+  "lat": 48.442191,
+  "lon": 6.029657,
+  "city": "Thorey-Lyautey"
+ },
+ "mehoncourt": {
+  "lat": 48.509544,
+  "lon": 6.375285,
+  "city": "Méhoncourt"
+ },
+ "maxey-sur-vaise": {
+  "lat": 48.537177,
+  "lon": 5.668575,
+  "city": "Maxey-sur-Vaise"
+ },
+ "haussonville": {
+  "lat": 48.528907,
+  "lon": 6.322384,
+  "city": "Haussonville"
+ },
+ "selaincourt": {
+  "lat": 48.500478,
+  "lon": 5.966454,
+  "city": "Selaincourt"
+ },
+ "saint-nicolas-de-port": {
+  "lat": 48.627249,
+  "lon": 6.299884,
+  "city": "Saint-Nicolas-de-Port"
+ },
+ "choloy-menillot": {
+  "lat": 48.658244,
+  "lon": 5.812088,
+  "city": "Choloy-Ménillot"
+ },
+ "dommartemont": {
+  "lat": 48.715388,
+  "lon": 6.214202,
+  "city": "Dommartemont"
+ },
+ "abaucourt": {
+  "lat": 48.89237,
+  "lon": 6.2654,
+  "city": "Abaucourt"
+ },
+ "affracourt": {
+  "lat": 48.45897,
+  "lon": 6.16408,
+  "city": "Affracourt"
+ },
+ "agincourt": {
+  "lat": 48.72947,
+  "lon": 6.23711,
+  "city": "Agincourt"
+ },
+ "aingeray": {
+  "lat": 48.73683,
+  "lon": 6.02211,
+  "city": "Aingeray"
+ },
+ "amance": {
+  "lat": 48.7561,
+  "lon": 6.30118,
+  "city": "Amance"
+ },
+ "andilly": {
+  "lat": 48.76744,
+  "lon": 5.8893,
+  "city": "Andilly"
+ },
+ "ansauville": {
+  "lat": 48.81256,
+  "lon": 5.82487,
+  "city": "Ansauville"
+ },
+ "anthelupt": {
+  "lat": 48.60334,
+  "lon": 6.4156,
+  "city": "Anthelupt"
+ },
+ "armaucourt": {
+  "lat": 48.81226,
+  "lon": 6.29637,
+  "city": "Armaucourt"
+ },
+ "arracourt": {
+  "lat": 48.72574,
+  "lon": 6.53285,
+  "city": "Arracourt"
+ },
+ "arraye-et-han": {
+  "lat": 48.83529,
+  "lon": 6.29553,
+  "city": "Arraye-et-Han"
+ },
+ "art-sur-meurthe": {
+  "lat": 48.66247,
+  "lon": 6.26053,
+  "city": "Art-sur-Meurthe"
+ },
+ "athienville": {
+  "lat": 48.71486,
+  "lon": 6.48734,
+  "city": "Athienville"
+ },
+ "atton": {
+  "lat": 48.89149,
+  "lon": 6.10821,
+  "city": "Atton"
+ },
+ "autrey": {
+  "lat": 48.53059,
+  "lon": 6.1263,
+  "city": "Autrey"
+ },
+ "azelot": {
+  "lat": 48.58344,
+  "lon": 6.2294,
+  "city": "Azelot"
+ },
+ "bagneux": {
+  "lat": 48.55777,
+  "lon": 5.87389,
+  "city": "Bagneux"
+ },
+ "bainville-sur-madon": {
+  "lat": 48.59035,
+  "lon": 6.08405,
+  "city": "Bainville-sur-Madon"
+ },
+ "barbonville": {
+  "lat": 48.54931,
+  "lon": 6.35832,
+  "city": "Barbonville"
+ },
+ "barisey-la-cote": {
+  "lat": 48.54507,
+  "lon": 5.843,
+  "city": "Barisey-la-Côte"
+ },
+ "bathelemont": {
+  "lat": 48.69313,
+  "lon": 6.52529,
+  "city": "Bathelémont"
+ },
+ "bauzemont": {
+  "lat": 48.67215,
+  "lon": 6.53258,
+  "city": "Bauzemont"
+ },
+ "belleville": {
+  "lat": 48.81375,
+  "lon": 6.08853,
+  "city": "Belleville"
+ },
+ "bey-sur-seille": {
+  "lat": 48.79832,
+  "lon": 6.33781,
+  "city": "Bey-sur-Seille"
+ },
+ "bezange-la-grande": {
+  "lat": 48.74869,
+  "lon": 6.47601,
+  "city": "Bezange-la-Grande"
+ },
+ "bezaumont": {
+  "lat": 48.84886,
+  "lon": 6.10322,
+  "city": "Bezaumont"
+ },
+ "bienville-la-petite": {
+  "lat": 48.63175,
+  "lon": 6.51466,
+  "city": "Bienville-la-Petite"
+ },
+ "blenod-les-toul": {
+  "lat": 48.59789,
+  "lon": 5.82881,
+  "city": "Blénod-lès-Toul"
+ },
+ "bonviller": {
+  "lat": 48.62846,
+  "lon": 6.49502,
+  "city": "Bonviller"
+ },
+ "bouvron": {
+  "lat": 48.73877,
+  "lon": 5.88481,
+  "city": "Bouvron"
+ },
+ "bouxieres-sous-froidmont": {
+  "lat": 48.95549,
+  "lon": 6.09948,
+  "city": "Bouxières-sous-Froidmont"
+ },
+ "bratte": {
+  "lat": 48.81664,
+  "lon": 6.21885,
+  "city": "Bratte"
+ },
+ "bremoncourt": {
+  "lat": 48.49156,
+  "lon": 6.35971,
+  "city": "Brémoncourt"
+ },
+ "brin-sur-seille": {
+  "lat": 48.77669,
+  "lon": 6.3635,
+  "city": "Brin-sur-Seille"
+ },
+ "bruley": {
+  "lat": 48.71252,
+  "lon": 5.85335,
+  "city": "Bruley"
+ },
+ "buissoncourt": {
+  "lat": 48.67902,
+  "lon": 6.33749,
+  "city": "Buissoncourt"
+ },
+ "bulligny": {
+  "lat": 48.57073,
+  "lon": 5.84514,
+  "city": "Bulligny"
+ },
+ "bures": {
+  "lat": 48.69731,
+  "lon": 6.56889,
+  "city": "Bures"
+ },
+ "burthecourt-aux-chenes": {
+  "lat": 48.57792,
+  "lon": 6.24748,
+  "city": "Burthecourt-aux-Chênes"
+ },
+ "ceintrey": {
+  "lat": 48.52892,
+  "lon": 6.17231,
+  "city": "Ceintrey"
+ },
+ "cerville": {
+  "lat": 48.6955,
+  "lon": 6.30985,
+  "city": "Cerville"
+ },
+ "chaligny": {
+  "lat": 48.63454,
+  "lon": 6.09064,
+  "city": "Chaligny"
+ },
+ "champenoux": {
+  "lat": 48.73251,
+  "lon": 6.35129,
+  "city": "Champenoux"
+ },
+ "chanteheux": {
+  "lat": 48.59329,
+  "lon": 6.53765,
+  "city": "Chanteheux"
+ },
+ "chaouilley": {
+  "lat": 48.44371,
+  "lon": 6.06401,
+  "city": "Chaouilley"
+ },
+ "charmes-la-cote": {
+  "lat": 48.62549,
+  "lon": 5.8272,
+  "city": "Charmes-la-Côte"
+ },
+ "charmois": {
+  "lat": 48.53487,
+  "lon": 6.38838,
+  "city": "Charmois"
+ },
+ "chavigny": {
+  "lat": 48.6317,
+  "lon": 6.13217,
+  "city": "Chavigny"
+ },
+ "chenicourt": {
+  "lat": 48.85816,
+  "lon": 6.28465,
+  "city": "Chenicourt"
+ },
+ "clemery": {
+  "lat": 48.88097,
+  "lon": 6.17872,
+  "city": "Clémery"
+ },
+ "clerey-sur-brenon": {
+  "lat": 48.50615,
+  "lon": 6.13784,
+  "city": "Clérey-sur-Brenon"
+ },
+ "courbesseaux": {
+  "lat": 48.69143,
+  "lon": 6.39862,
+  "city": "Courbesseaux"
+ },
+ "coyviller": {
+  "lat": 48.58486,
+  "lon": 6.28467,
+  "city": "Coyviller"
+ },
+ "crantenoy": {
+  "lat": 48.46809,
+  "lon": 6.23364,
+  "city": "Crantenoy"
+ },
+ "crepey": {
+  "lat": 48.52586,
+  "lon": 5.96344,
+  "city": "Crépey"
+ },
+ "crevechamps": {
+  "lat": 48.51774,
+  "lon": 6.26312,
+  "city": "Crévéchamps"
+ },
+ "crevic": {
+  "lat": 48.63793,
+  "lon": 6.40497,
+  "city": "Crévic"
+ },
+ "crezilles": {
+  "lat": 48.58341,
+  "lon": 5.88954,
+  "city": "Crézilles"
+ },
+ "crion": {
+  "lat": 48.6433,
+  "lon": 6.55175,
+  "city": "Crion"
+ },
+ "custines": {
+  "lat": 48.78982,
+  "lon": 6.14826,
+  "city": "Custines"
+ },
+ "damelevieres": {
+  "lat": 48.56487,
+  "lon": 6.39036,
+  "city": "Damelevières"
+ },
+ "deuxville": {
+  "lat": 48.61873,
+  "lon": 6.45822,
+  "city": "Deuxville"
+ },
+ "dolcourt": {
+  "lat": 48.48974,
+  "lon": 5.97149,
+  "city": "Dolcourt"
+ },
+ "dombasle-sur-meurthe": {
+  "lat": 48.62111,
+  "lon": 6.35955,
+  "city": "Dombasle-sur-Meurthe"
+ },
+ "domevre-en-haye": {
+  "lat": 48.81395,
+  "lon": 5.9361,
+  "city": "Domèvre-en-Haye"
+ },
+ "dommartin-les-toul": {
+  "lat": 48.67069,
+  "lon": 5.92388,
+  "city": "Dommartin-lès-Toul"
+ },
+ "dommartin-sous-amance": {
+  "lat": 48.7352,
+  "lon": 6.24902,
+  "city": "Dommartin-sous-Amance"
+ },
+ "domptail-en-l-air": {
+  "lat": 48.51003,
+  "lon": 6.33239,
+  "city": "Domptail-en-l'Air"
+ },
+ "drouville": {
+  "lat": 48.67006,
+  "lon": 6.40981,
+  "city": "Drouville"
+ },
+ "ecrouves": {
+  "lat": 48.67988,
+  "lon": 5.84072,
+  "city": "Écrouves"
+ },
+ "eply": {
+  "lat": 48.92611,
+  "lon": 6.17753,
+  "city": "Éply"
+ },
+ "erbeviller-sur-amezule": {
+  "lat": 48.72844,
+  "lon": 6.38702,
+  "city": "Erbéviller-sur-Amezule"
+ },
+ "etreval": {
+  "lat": 48.45598,
+  "lon": 6.05431,
+  "city": "Étreval"
+ },
+ "eulmont": {
+  "lat": 48.75013,
+  "lon": 6.22159,
+  "city": "Eulmont"
+ },
+ "faulx": {
+  "lat": 48.79255,
+  "lon": 6.19524,
+  "city": "Faulx"
+ },
+ "ferrieres": {
+  "lat": 48.55433,
+  "lon": 6.29238,
+  "city": "Ferrières"
+ },
+ "fey-en-haye": {
+  "lat": 48.90467,
+  "lon": 5.96394,
+  "city": "Fey-en-Haye"
+ },
+ "flainval": {
+  "lat": 48.61753,
+  "lon": 6.39651,
+  "city": "Flainval"
+ },
+ "flavigny-sur-moselle": {
+  "lat": 48.57265,
+  "lon": 6.19324,
+  "city": "Flavigny-sur-Moselle"
+ },
+ "fontenoy-sur-moselle": {
+  "lat": 48.70625,
+  "lon": 5.98963,
+  "city": "Fontenoy-sur-Moselle"
+ },
+ "forcelles-saint-gorgon": {
+  "lat": 48.45478,
+  "lon": 6.10161,
+  "city": "Forcelles-Saint-Gorgon"
+ },
+ "foug": {
+  "lat": 48.67549,
+  "lon": 5.78032,
+  "city": "Foug"
+ },
+ "francheville": {
+  "lat": 48.74162,
+  "lon": 5.92833,
+  "city": "Francheville"
+ },
+ "franconville": {
+  "lat": 48.49952,
+  "lon": 6.45088,
+  "city": "Franconville"
+ },
+ "frolois": {
+  "lat": 48.57077,
+  "lon": 6.12414,
+  "city": "Frolois"
+ },
+ "frouard": {
+  "lat": 48.75221,
+  "lon": 6.12738,
+  "city": "Frouard"
+ },
+ "froville": {
+  "lat": 48.46719,
+  "lon": 6.36379,
+  "city": "Froville"
+ },
+ "gelaucourt": {
+  "lat": 48.45841,
+  "lon": 5.98831,
+  "city": "Gélaucourt"
+ },
+ "gellenoncourt": {
+  "lat": 48.67597,
+  "lon": 6.38403,
+  "city": "Gellenoncourt"
+ },
+ "germiny": {
+  "lat": 48.54316,
+  "lon": 6.00208,
+  "city": "Germiny"
+ },
+ "gezoncourt": {
+  "lat": 48.84207,
+  "lon": 5.98463,
+  "city": "Gézoncourt"
+ },
+ "gondreville": {
+  "lat": 48.6849,
+  "lon": 5.97619,
+  "city": "Gondreville"
+ },
+ "griscourt": {
+  "lat": 48.84167,
+  "lon": 6.01708,
+  "city": "Griscourt"
+ },
+ "grosrouvres": {
+  "lat": 48.82925,
+  "lon": 5.8451,
+  "city": "Grosrouvres"
+ },
+ "gye": {
+  "lat": 48.62777,
+  "lon": 5.87585,
+  "city": "Gye"
+ },
+ "haigneville": {
+  "lat": 48.48562,
+  "lon": 6.34,
+  "city": "Haigneville"
+ },
+ "hammeville": {
+  "lat": 48.50025,
+  "lon": 6.07148,
+  "city": "Hammeville"
+ },
+ "haraucourt": {
+  "lat": 48.66475,
+  "lon": 6.35569,
+  "city": "Haraucourt"
+ },
+ "henamenil": {
+  "lat": 48.666,
+  "lon": 6.56478,
+  "city": "Hénaménil"
+ },
+ "herimenil": {
+  "lat": 48.55104,
+  "lon": 6.50818,
+  "city": "Hériménil"
+ },
+ "houdreville": {
+  "lat": 48.51662,
+  "lon": 6.09696,
+  "city": "Houdreville"
+ },
+ "jeandelaincourt": {
+  "lat": 48.84853,
+  "lon": 6.24298,
+  "city": "Jeandelaincourt"
+ },
+ "juvrecourt": {
+  "lat": 48.74063,
+  "lon": 6.56083,
+  "city": "Juvrecourt"
+ },
+ "lagney": {
+  "lat": 48.74467,
+  "lon": 5.83307,
+  "city": "Lagney"
+ },
+ "laitre-sous-amance": {
+  "lat": 48.73964,
+  "lon": 6.27413,
+  "city": "Laître-sous-Amance"
+ },
+ "lal-uf": {
+  "lat": 48.46687,
+  "lon": 6.00926,
+  "city": "Lalœuf"
+ },
+ "lamath": {
+  "lat": 48.52149,
+  "lon": 6.44723,
+  "city": "Lamath"
+ },
+ "landecourt": {
+  "lat": 48.50094,
+  "lon": 6.42061,
+  "city": "Landécourt"
+ },
+ "laneuvelotte": {
+  "lat": 48.72211,
+  "lon": 6.29946,
+  "city": "Laneuvelotte"
+ },
+ "laneuveville-derriere-foug": {
+  "lat": 48.70847,
+  "lon": 5.80407,
+  "city": "Laneuveville-derrière-Foug"
+ },
+ "laneuveville-devant-bayon": {
+  "lat": 48.47102,
+  "lon": 6.26248,
+  "city": "Laneuveville-devant-Bayon"
+ },
+ "lanfroicourt": {
+  "lat": 48.80584,
+  "lon": 6.31814,
+  "city": "Lanfroicourt"
+ },
+ "lay-saint-christophe": {
+  "lat": 48.75391,
+  "lon": 6.19408,
+  "city": "Lay-Saint-Christophe"
+ },
+ "lebeuville": {
+  "lat": 48.43325,
+  "lon": 6.24229,
+  "city": "Lebeuville"
+ },
+ "lemainville": {
+  "lat": 48.50541,
+  "lon": 6.18779,
+  "city": "Lemainville"
+ },
+ "lemenil-mitry": {
+  "lat": 48.4522,
+  "lon": 6.25662,
+  "city": "Leménil-Mitry"
+ },
+ "lenoncourt": {
+  "lat": 48.6712,
+  "lon": 6.29892,
+  "city": "Lenoncourt"
+ },
+ "lesmenils": {
+  "lat": 48.9318,
+  "lon": 6.10932,
+  "city": "Lesménils"
+ },
+ "letricourt": {
+  "lat": 48.87542,
+  "lon": 6.28637,
+  "city": "Létricourt"
+ },
+ "leyr": {
+  "lat": 48.80707,
+  "lon": 6.27132,
+  "city": "Leyr"
+ },
+ "lironville": {
+  "lat": 48.86578,
+  "lon": 5.91568,
+  "city": "Lironville"
+ },
+ "loisy": {
+  "lat": 48.87037,
+  "lon": 6.09912,
+  "city": "Loisy"
+ },
+ "lorey": {
+  "lat": 48.49639,
+  "lon": 6.31664,
+  "city": "Lorey"
+ },
+ "lucey": {
+  "lat": 48.72427,
+  "lon": 5.82989,
+  "city": "Lucey"
+ },
+ "lupcourt": {
+  "lat": 48.60182,
+  "lon": 6.21958,
+  "city": "Lupcourt"
+ },
+ "maidieres": {
+  "lat": 48.89501,
+  "lon": 6.03249,
+  "city": "Maidières"
+ },
+ "mailly-sur-seille": {
+  "lat": 48.91703,
+  "lon": 6.25103,
+  "city": "Mailly-sur-Seille"
+ },
+ "maixe": {
+  "lat": 48.64688,
+  "lon": 6.4373,
+  "city": "Maixe"
+ },
+ "maizieres": {
+  "lat": 48.59114,
+  "lon": 6.04865,
+  "city": "Maizières"
+ },
+ "malleloy": {
+  "lat": 48.79201,
+  "lon": 6.16875,
+  "city": "Malleloy"
+ },
+ "manoncourt-en-vermois": {
+  "lat": 48.60005,
+  "lon": 6.27076,
+  "city": "Manoncourt-en-Vermois"
+ },
+ "manoncourt-en-woevre": {
+  "lat": 48.78126,
+  "lon": 5.92242,
+  "city": "Manoncourt-en-Woëvre"
+ },
+ "manonville": {
+  "lat": 48.83066,
+  "lon": 5.91197,
+  "city": "Manonville"
+ },
+ "marbache": {
+  "lat": 48.79487,
+  "lon": 6.0942,
+  "city": "Marbache"
+ },
+ "maron": {
+  "lat": 48.64891,
+  "lon": 6.05267,
+  "city": "Maron"
+ },
+ "marthemont": {
+  "lat": 48.55825,
+  "lon": 6.03894,
+  "city": "Marthemont"
+ },
+ "mazerulles": {
+  "lat": 48.7531,
+  "lon": 6.37862,
+  "city": "Mazerulles"
+ },
+ "menil-la-tour": {
+  "lat": 48.7739,
+  "lon": 5.84763,
+  "city": "Ménil-la-Tour"
+ },
+ "mereville": {
+  "lat": 48.59138,
+  "lon": 6.13634,
+  "city": "Méréville"
+ },
+ "messein": {
+  "lat": 48.60982,
+  "lon": 6.14404,
+  "city": "Messein"
+ },
+ "millery": {
+  "lat": 48.81613,
+  "lon": 6.13947,
+  "city": "Millery"
+ },
+ "minorville": {
+  "lat": 48.81228,
+  "lon": 5.87944,
+  "city": "Minorville"
+ },
+ "moivrons": {
+  "lat": 48.8283,
+  "lon": 6.24628,
+  "city": "Moivrons"
+ },
+ "moncel-sur-seille": {
+  "lat": 48.77037,
+  "lon": 6.4257,
+  "city": "Moncel-sur-Seille"
+ },
+ "montenoy": {
+  "lat": 48.79765,
+  "lon": 6.23547,
+  "city": "Montenoy"
+ },
+ "mont-le-vignoble": {
+  "lat": 48.61918,
+  "lon": 5.85071,
+  "city": "Mont-le-Vignoble"
+ },
+ "mont-sur-meurthe": {
+  "lat": 48.55031,
+  "lon": 6.44313,
+  "city": "Mont-sur-Meurthe"
+ },
+ "moriviller": {
+  "lat": 48.48198,
+  "lon": 6.43975,
+  "city": "Moriviller"
+ },
+ "mousson": {
+  "lat": 48.90913,
+  "lon": 6.09086,
+  "city": "Mousson"
+ },
+ "moutrot": {
+  "lat": 48.60101,
+  "lon": 5.89557,
+  "city": "Moutrot"
+ },
+ "neuviller-sur-moselle": {
+  "lat": 48.48926,
+  "lon": 6.27928,
+  "city": "Neuviller-sur-Moselle"
+ },
+ "nomeny": {
+  "lat": 48.8787,
+  "lon": 6.2304,
+  "city": "Nomeny"
+ },
+ "norroy-les-pont-a-mousson": {
+  "lat": 48.93089,
+  "lon": 6.00679,
+  "city": "Norroy-lès-Pont-à-Mousson"
+ },
+ "noviant-aux-pres": {
+  "lat": 48.84664,
+  "lon": 5.88573,
+  "city": "Noviant-aux-Prés"
+ },
+ "ochey": {
+  "lat": 48.59608,
+  "lon": 5.95054,
+  "city": "Ochey"
+ },
+ "ogneville": {
+  "lat": 48.47094,
+  "lon": 6.05694,
+  "city": "Ognéville"
+ },
+ "omelmont": {
+  "lat": 48.49373,
+  "lon": 6.12175,
+  "city": "Omelmont"
+ },
+ "ormes-et-ville": {
+  "lat": 48.4886,
+  "lon": 6.19846,
+  "city": "Ormes-et-Ville"
+ },
+ "parey-saint-cesaire": {
+  "lat": 48.52519,
+  "lon": 6.06335,
+  "city": "Parey-Saint-Césaire"
+ },
+ "phlin": {
+  "lat": 48.91555,
+  "lon": 6.27463,
+  "city": "Phlin"
+ },
+ "pierreville": {
+  "lat": 48.54881,
+  "lon": 6.11239,
+  "city": "Pierreville"
+ },
+ "port-sur-seille": {
+  "lat": 48.9016,
+  "lon": 6.16033,
+  "city": "Port-sur-Seille"
+ },
+ "praye": {
+  "lat": 48.43787,
+  "lon": 6.11252,
+  "city": "Praye"
+ },
+ "pulligny": {
+  "lat": 48.54954,
+  "lon": 6.15099,
+  "city": "Pulligny"
+ },
+ "quevilloncourt": {
+  "lat": 48.47201,
+  "lon": 6.10455,
+  "city": "Quevilloncourt"
+ },
+ "raucourt": {
+  "lat": 48.92414,
+  "lon": 6.21858,
+  "city": "Raucourt"
+ },
+ "raville-sur-sanon": {
+  "lat": 48.65111,
+  "lon": 6.50955,
+  "city": "Raville-sur-Sânon"
+ },
+ "rechicourt-la-petite": {
+  "lat": 48.7164,
+  "lon": 6.5783,
+  "city": "Réchicourt-la-Petite"
+ },
+ "rehainviller": {
+  "lat": 48.56677,
+  "lon": 6.47081,
+  "city": "Rehainviller"
+ },
+ "remereville": {
+  "lat": 48.70895,
+  "lon": 6.37927,
+  "city": "Réméréville"
+ },
+ "rogeville": {
+  "lat": 48.81427,
+  "lon": 5.97556,
+  "city": "Rogéville"
+ },
+ "romain": {
+  "lat": 48.52056,
+  "lon": 6.35584,
+  "city": "Romain"
+ },
+ "rosieres-en-haye": {
+  "lat": 48.78844,
+  "lon": 5.99569,
+  "city": "Rosières-en-Haye"
+ },
+ "rouves": {
+  "lat": 48.90238,
+  "lon": 6.20427,
+  "city": "Rouves"
+ },
+ "roville-devant-bayon": {
+  "lat": 48.46523,
+  "lon": 6.29408,
+  "city": "Roville-devant-Bayon"
+ },
+ "royaumeix": {
+  "lat": 48.78392,
+  "lon": 5.82351,
+  "city": "Royaumeix"
+ },
+ "saffais": {
+  "lat": 48.55999,
+  "lon": 6.31578,
+  "city": "Saffais"
+ },
+ "sainte-genevieve": {
+  "lat": 48.87109,
+  "lon": 6.13849,
+  "city": "Sainte-Geneviève"
+ },
+ "saint-mard": {
+  "lat": 48.50978,
+  "lon": 6.29977,
+  "city": "Saint-Mard"
+ },
+ "saint-remimont": {
+  "lat": 48.49894,
+  "lon": 6.25603,
+  "city": "Saint-Remimont"
+ },
+ "sanzey": {
+  "lat": 48.7633,
+  "lon": 5.82621,
+  "city": "Sanzey"
+ },
+ "saulxures-les-nancy": {
+  "lat": 48.68529,
+  "lon": 6.25233,
+  "city": "Saulxures-lès-Nancy"
+ },
+ "serres": {
+  "lat": 48.69342,
+  "lon": 6.45744,
+  "city": "Serres"
+ },
+ "sexey-aux-forges": {
+  "lat": 48.6303,
+  "lon": 6.02588,
+  "city": "Sexey-aux-Forges"
+ },
+ "sexey-les-bois": {
+  "lat": 48.71918,
+  "lon": 6.02925,
+  "city": "Sexey-les-Bois"
+ },
+ "sionviller": {
+  "lat": 48.63258,
+  "lon": 6.5473,
+  "city": "Sionviller"
+ },
+ "sivry": {
+  "lat": 48.83014,
+  "lon": 6.2051,
+  "city": "Sivry"
+ },
+ "sommerviller": {
+  "lat": 48.63602,
+  "lon": 6.37559,
+  "city": "Sommerviller"
+ },
+ "sorneville": {
+  "lat": 48.73933,
+  "lon": 6.41967,
+  "city": "Sornéville"
+ },
+ "thelod": {
+  "lat": 48.54409,
+  "lon": 6.05205,
+  "city": "Thélod"
+ },
+ "thezey-saint-martin": {
+  "lat": 48.90056,
+  "lon": 6.30362,
+  "city": "Thézey-Saint-Martin"
+ },
+ "thuilley-aux-groseilles": {
+  "lat": 48.57946,
+  "lon": 5.97239,
+  "city": "Thuilley-aux-Groseilles"
+ },
+ "tonnoy": {
+  "lat": 48.5552,
+  "lon": 6.26291,
+  "city": "Tonnoy"
+ },
+ "valhey": {
+  "lat": 48.68321,
+  "lon": 6.49514,
+  "city": "Valhey"
+ },
+ "vaudeville": {
+  "lat": 48.45479,
+  "lon": 6.20704,
+  "city": "Vaudeville"
+ },
+ "vaudigny": {
+  "lat": 48.4368,
+  "lon": 6.20701,
+  "city": "Vaudigny"
+ },
+ "velaine-en-haye": {
+  "lat": 48.70512,
+  "lon": 6.03794,
+  "city": "Velaine-en-Haye"
+ },
+ "velaine-sous-amance": {
+  "lat": 48.71557,
+  "lon": 6.32522,
+  "city": "Velaine-sous-Amance"
+ },
+ "vigneulles": {
+  "lat": 48.56965,
+  "lon": 6.3469,
+  "city": "Vigneulles"
+ },
+ "ville-en-vermois": {
+  "lat": 48.61868,
+  "lon": 6.23739,
+  "city": "Ville-en-Vermois"
+ },
+ "villers-en-haye": {
+  "lat": 48.82147,
+  "lon": 6.00593,
+  "city": "Villers-en-Haye"
+ },
+ "villers-les-moivrons": {
+  "lat": 48.81381,
+  "lon": 6.25019,
+  "city": "Villers-lès-Moivrons"
+ },
+ "virecourt": {
+  "lat": 48.45476,
+  "lon": 6.31713,
+  "city": "Virecourt"
+ },
+ "viterne": {
+  "lat": 48.58736,
+  "lon": 6.00964,
+  "city": "Viterne"
+ },
+ "vitrey": {
+  "lat": 48.49536,
+  "lon": 6.03987,
+  "city": "Vitrey"
+ },
+ "vitrimont": {
+  "lat": 48.5897,
+  "lon": 6.4418,
+  "city": "Vitrimont"
+ },
+ "vroncourt": {
+  "lat": 48.45687,
+  "lon": 6.07516,
+  "city": "Vroncourt"
+ },
+ "xermamenil": {
+  "lat": 48.53903,
+  "lon": 6.47603,
+  "city": "Xermaménil"
+ },
+ "xeuilley": {
+  "lat": 48.55947,
+  "lon": 6.08796,
+  "city": "Xeuilley"
+ },
+ "xirocourt": {
+  "lat": 48.43286,
+  "lon": 6.17792,
+  "city": "Xirocourt"
+ },
+ "ajoncourt": {
+  "lat": 48.84443,
+  "lon": 6.30145,
+  "city": "Ajoncourt"
+ },
+ "alaincourt-la-cote": {
+  "lat": 48.89818,
+  "lon": 6.34037,
+  "city": "Alaincourt-la-Côte"
+ },
+ "amelecourt": {
+  "lat": 48.83924,
+  "lon": 6.49363,
+  "city": "Amelécourt"
+ },
+ "attilloncourt": {
+  "lat": 48.79941,
+  "lon": 6.38629,
+  "city": "Attilloncourt"
+ },
+ "aulnois-sur-seille": {
+  "lat": 48.86123,
+  "lon": 6.33053,
+  "city": "Aulnois-sur-Seille"
+ },
+ "bioncourt": {
+  "lat": 48.79963,
+  "lon": 6.36846,
+  "city": "Bioncourt"
+ },
+ "chateau-salins": {
+  "lat": 48.81984,
+  "lon": 6.49717,
+  "city": "Château-Salins"
+ },
+ "cheminot": {
+  "lat": 48.95941,
+  "lon": 6.13418,
+  "city": "Cheminot"
+ },
+ "donjeux": {
+  "lat": 48.87823,
+  "lon": 6.41319,
+  "city": "Donjeux"
+ },
+ "fonteny": {
+  "lat": 48.87844,
+  "lon": 6.47492,
+  "city": "Fonteny"
+ },
+ "fossieux": {
+  "lat": 48.85084,
+  "lon": 6.3296,
+  "city": "Fossieux"
+ },
+ "foville": {
+  "lat": 48.91718,
+  "lon": 6.32561,
+  "city": "Foville"
+ },
+ "fresnes-en-saulnois": {
+  "lat": 48.83439,
+  "lon": 6.43962,
+  "city": "Fresnes-en-Saulnois"
+ },
+ "gremecey": {
+  "lat": 48.8108,
+  "lon": 6.41765,
+  "city": "Grémecey"
+ },
+ "jallaucourt": {
+  "lat": 48.83642,
+  "lon": 6.39329,
+  "city": "Jallaucourt"
+ },
+ "juville": {
+  "lat": 48.92851,
+  "lon": 6.35769,
+  "city": "Juville"
+ },
+ "laneuveville-en-saulnois": {
+  "lat": 48.86645,
+  "lon": 6.44307,
+  "city": "Laneuveville-en-Saulnois"
+ },
+ "lemoncourt": {
+  "lat": 48.8629,
+  "lon": 6.38672,
+  "city": "Lemoncourt"
+ },
+ "liocourt": {
+  "lat": 48.91197,
+  "lon": 6.34201,
+  "city": "Liocourt"
+ },
+ "louvigny": {
+  "lat": 48.96175,
+  "lon": 6.17718,
+  "city": "Louvigny"
+ },
+ "lubecourt": {
+  "lat": 48.84372,
+  "lon": 6.50879,
+  "city": "Lubécourt"
+ },
+ "malaucourt-sur-seille": {
+  "lat": 48.84368,
+  "lon": 6.35581,
+  "city": "Malaucourt-sur-Seille"
+ },
+ "manhoue": {
+  "lat": 48.82647,
+  "lon": 6.3381,
+  "city": "Manhoué"
+ },
+ "morville-les-vic": {
+  "lat": 48.81546,
+  "lon": 6.54813,
+  "city": "Morville-lès-Vic"
+ },
+ "moyenvic": {
+  "lat": 48.78686,
+  "lon": 6.56703,
+  "city": "Moyenvic"
+ },
+ "oriocourt": {
+  "lat": 48.85868,
+  "lon": 6.41121,
+  "city": "Oriocourt"
+ },
+ "sailly-achatel": {
+  "lat": 48.93994,
+  "lon": 6.30129,
+  "city": "Sailly-Achâtel"
+ },
+ "saint-jure": {
+  "lat": 48.94261,
+  "lon": 6.23095,
+  "city": "Saint-Jure"
+ },
+ "salonnes": {
+  "lat": 48.78796,
+  "lon": 6.49114,
+  "city": "Salonnes"
+ },
+ "secourt": {
+  "lat": 48.95088,
+  "lon": 6.27232,
+  "city": "Secourt"
+ },
+ "tincry": {
+  "lat": 48.90822,
+  "lon": 6.40367,
+  "city": "Tincry"
+ },
+ "viviers": {
+  "lat": 48.89442,
+  "lon": 6.44012,
+  "city": "Viviers"
+ },
+ "vulmont": {
+  "lat": 48.92649,
+  "lon": 6.30563,
+  "city": "Vulmont"
+ },
+ "xocourt": {
+  "lat": 48.91002,
+  "lon": 6.37791,
+  "city": "Xocourt"
+ },
+ "embermenil": {
+  "lat": 48.625093,
+  "lon": 6.697517,
+  "city": "Emberménil"
+ },
+ "lezey": {
+  "lat": 48.75201,
+  "lon": 6.629353,
+  "city": "Lezey"
  }
 }

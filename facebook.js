@@ -19,11 +19,18 @@
  *   3. node facebook.js            → écrit events-facebook.json (schéma EVENTS).
  *   4. node update-events.js       → fusionne dans data.js avec les autres sources.
  *
+ * Périmètre :
+ *   La page Facebook mélange l'onglet Découvrir (Metz, Luxembourg, Vosges...).
+ *   On ne garde QUE les événements dont la commune est identifiée à 30 km max
+ *   de Nancy (référentiel hors ligne communes-30km.json, 367 communes).
+ *   Tout le reste, y compris les lieux non identifiables, est écarté.
+ *
  * Usage :
  *   node facebook.js
  *   node facebook.js --dir=ics-facebook --out=events-facebook.json
  *   node facebook.js page1.html page2.html
  *   node facebook.js --uid=61590574870570        (filtre : exclut les events tiers)
+ *   node facebook.js --nofilter                  (désactive le périmètre 30 km)
  */
 
 const fs = require("fs");
@@ -46,6 +53,123 @@ function findCity(text) {
     if (t.includes(" " + norm(c) + " ")) return c;
   }
   return "";
+}
+
+// ── Filtre géographique : 30 km autour de Nancy ─────────────────────────────
+// Pourquoi ici et pas seulement dans update-events.js : la page « Événements »
+// de Facebook mélange l'onglet Découvrir (Metz, Luxembourg, Vosges, Bretagne).
+// update-events.js filtre bien à 30 km (BAN + haversine) mais GARDE les villes
+// vides au bénéfice du doute : or une carte FB n'a pas d'adresse structurée,
+// donc la ville ressort vide 8 fois sur 10 et le Grand Est entier passait.
+// On tranche donc à la source : commune non identifiée dans les 30 km =>
+// événement écarté (`--nofilter` pour tout garder).
+// Référentiel HORS LIGNE : communes-30km.json (367 communes, nom officiel +
+// coords + codes postaux). Aucun appel réseau. Régénérer : node gen-communes.js.
+let COMMUNES30 = {};
+try { COMMUNES30 = require("./communes-30km.json"); } catch {}
+// Clés normalisées triées par longueur DESC (même raison que CITY_NAMES).
+const NEAR_KEYS = Object.values(COMMUNES30)
+  .map((c) => [normKey(c.nom), c.nom])
+  .filter(([k]) => k.length >= 4)
+  .sort((a, b) => b[0].length - a[0].length);
+// Alias « nom court » : sur les affiches et les noms de salles, on écrit
+// "Vandoeuvre" ou "Jarville", pas "Vandœuvre-lès-Nancy". On indexe donc le
+// préfixe avant lès/devant/sur/sous/en/de… quand il est UNIQUE dans les 30 km
+// (sinon "Villers" désignerait 3 communes différentes : on l'ignore).
+// Seuil à 7 caractères + liste noire : un alias trop court ou trop courant
+// ferait des faux positifs ("Centre Pierre Janet" -> Pierre-la-Treiche).
+const SEP = /\s(?:les|le|la|devant|sous|sur|en|aux|derriere|et|de|du|des|d)\s/;
+const ALIAS_STOP = new Set(["charmes", "fresnes", "serres", "maisons", "moulins"]);
+const aliasOf = (k) => {
+  const m = k.split(SEP)[0];
+  return m !== k && m.length >= 7 && !ALIAS_STOP.has(m) ? m : "";
+};
+const aliasCount = new Map();
+for (const [k] of NEAR_KEYS) {
+  const m = aliasOf(k);
+  if (m) aliasCount.set(m, (aliasCount.get(m) || 0) + 1);
+}
+for (const [k, nom] of [...NEAR_KEYS]) {
+  const m = aliasOf(k);
+  if (m && aliasCount.get(m) === 1 && !NEAR_KEYS.some(([kk]) => kk === m)) NEAR_KEYS.push([m, nom]);
+}
+NEAR_KEYS.sort((a, b) => b[0].length - a[0].length);
+
+const NEAR_CP = new Map();
+for (const c of Object.values(COMMUNES30)) for (const cp of c.cp || []) if (!NEAR_CP.has(cp)) NEAR_CP.set(cp, c.nom);
+// Clé normalisée -> nom officiel (accents, casse), pour uniformiser la ville
+// écrite dans events-facebook.json ("PAGNEY DERRIERE BARINE" -> "Pagney-derrière-Barine").
+const NEAR_BY_KEY = new Map(Object.values(COMMUNES30).map((c) => [normKey(c.nom), c.nom]));
+
+// "ST MAX", "Saint-Max", "SAINT MAX" doivent tomber sur la même clé.
+function normKey(s) {
+  return String(s || "").toLowerCase().normalize("NFD").replace(/\p{Mn}/gu, "")
+    .replace(/œ/g, "oe").replace(/[^a-z0-9]+/g, " ")
+    .replace(/\bst\b/g, "saint").replace(/\bste\b/g, "sainte").trim();
+}
+
+// Noms de communes qui sont aussi des mots courants ou des prénoms : on les
+// accepte dans une ADRESSE mais pas dans un titre ou un texte d'affiche
+// ("Fête paysanne dans les serres" n'est pas la commune de Serres).
+const TEXT_STOP = new Set(["serres", "romain", "viviers", "lucy", "oron", "praye", "bures", "maron", "crion"]);
+function findNearCity(text, strict) {
+  const t = " " + normKey(text) + " ";
+  for (const [k, nom] of NEAR_KEYS) {
+    if (strict && (k.length < 5 || TEXT_STOP.has(k))) continue;
+    if (t.includes(" " + k + " ")) return nom;
+  }
+  return "";
+}
+
+function findNearCp(text) {
+  const re = /\b(\d{5})\b/g;
+  let m;
+  while ((m = re.exec(String(text || "")))) if (NEAR_CP.has(m[1])) return NEAR_CP.get(m[1]);
+  return "";
+}
+
+// Salles connues : data.js (généré par update-events.js, déjà filtré à 30 km)
+// donne ~870 couples lieu -> ville des 15 autres sources. Ça rattrape les
+// cartes FB qui n'affichent QUE le nom de la salle ("Poirel", "L'Autre Canal").
+// Prudence : on ignore les libellés génériques et les lieux ambigus (même nom
+// dans deux villes), et on n'utilise PAS la source facebook (circulaire).
+const GENERIC_PLACE = /^(salle|salle des fetes|salle polyvalente|mairie|eglise|gymnase|stade|stade municipal|centre culturel|maison des associations|place|parc|chapiteau|complexe sportif|espace|foyer|salle communale|salle des sports|hotel de ville|mediatheque|bibliotheque|cinema|theatre|centre ville|halle|jardin|lac|plage|ferme|chateau|abbaye|musee|centre social|dojo|piscine|camping)$/;
+function loadVenues() {
+  const map = new Map();
+  const p = path.join(__dirname, "data.js");
+  if (!fs.existsSync(p)) return map;
+  let events = [];
+  try {
+    const src = fs.readFileSync(p, "utf8");
+    events = new Function(`${src}; return typeof EVENTS !== "undefined" ? EVENTS : [];`)();
+  } catch { return map; }
+  const tmp = new Map();
+  for (const e of events) {
+    if (!e || e.source === "facebook") continue;
+    const key = normKey(e.place);
+    const city = String(e.city || "").trim();
+    if (key.length < 6 || GENERIC_PLACE.test(key) || !city) continue;
+    if (!NEAR_BY_KEY.has(normKey(city))) continue;
+    if (!tmp.has(key)) tmp.set(key, new Set());
+    tmp.get(key).add(city);
+  }
+  for (const [k, set] of tmp) if (set.size === 1) map.set(k, [...set][0]);
+  return map;
+}
+const VENUES = loadVenues();
+
+function findVenueCity(place) {
+  const k = normKey(place);
+  if (k.length < 6) return "";
+  if (VENUES.has(k)) return VENUES.get(k);
+  for (const [vk, city] of VENUES) if (vk.length >= 8 && (k.includes(vk) || vk.includes(k))) return city;
+  return "";
+}
+
+// Ordre : adresse (le plus fiable) -> code postal -> affiche/titre -> salle connue.
+function resolveNearCity(place0, title, caption) {
+  return findNearCity(place0) || findNearCp(place0) || findNearCity(caption, true)
+    || findNearCity(title, true) || findVenueCity(place0);
 }
 
 // ── Extraction des événements depuis le HTML ────────────────────────────────
@@ -240,6 +364,14 @@ function toEvent(node, todayISO) {
   // le lieu + le titre + le texte de l'affiche.
   if (node._card) city = findCity(`${place0} ${title} ${caption}`); // sinon vide (pas de bruit)
 
+  // Périmètre 30 km : on rejoue la détection sur le référentiel complet des
+  // communes proches (367, pas seulement le Grand Nancy de CITY_CANON), ce qui
+  // sert À LA FOIS à remplir la ville et à décider si l'événement est gardé.
+  const nearCity = NEAR_KEYS.length
+    ? (NEAR_BY_KEY.get(normKey(city)) || resolveNearCity(place0, title, caption))
+    : city;
+  if (nearCity) city = NEAR_BY_KEY.get(normKey(nearCity)) || nearCity;
+
   const cat = resolveCategoryFrom({ title, description: caption, location: place0 });
   const rawId = String(node.id || title).replace(/[^A-Za-z0-9]+/g, "").slice(0, 40);
   const sortDate = startDate < todayISO ? todayISO : startDate;
@@ -265,6 +397,7 @@ function toEvent(node, todayISO) {
     rsvp: node._card ? "" : rsvpOf(node),       // info Facebook : INTERESTED/GOING
     online: !!node.is_online,
     _fromCard: !!node._card,                     // interne (retiré à l'écriture)
+    _near: !!nearCity,                           // interne : commune <= 30 km identifiée
   };
 }
 
@@ -321,11 +454,19 @@ function main() {
     if (!prev) byId.set(e.uuid, e);
     else if (prev._fromCard && !e._fromCard) byId.set(e.uuid, e);
   }
-  const list = [...byId.values()].sort((x, y) => (x.date || "").localeCompare(y.date || ""));
+  const merged = [...byId.values()].sort((x, y) => (x.date || "").localeCompare(y.date || ""));
 
-  const clean = list.map(({ _fromCard, ...e }) => e);
+  // Périmètre : on ne traite QUE les événements à 30 km max de Nancy.
+  const list = a.nofilter ? merged : merged.filter((e) => e._near);
+  const dropped = merged.length - list.length;
+
+  const clean = list.map(({ _fromCard, _near, ...e }) => e);
   fs.writeFileSync(out, JSON.stringify(clean, null, 2), "utf8");
   console.log(`✓ ${files.length} fichier(s) → ${list.length} événement(s) Facebook (JSON:${nJson} cartes:${nCard}) → ${path.relative(__dirname, out) || out}`);
+  if (!a.nofilter) {
+    console.log(`  Périmètre 30 km : ${dropped} événement(s) écarté(s) sur ${merged.length} (commune hors zone ou non identifiée).`);
+    if (!NEAR_KEYS.length) console.warn("  ⚠ communes-30km.json introuvable : AUCUN filtre appliqué.");
+  }
   const byCat = {};
   for (const e of list) byCat[e.catLabel] = (byCat[e.catLabel] || 0) + 1;
   console.log("  Catégories :", Object.entries(byCat).map(([k, v]) => `${k}=${v}`).join(", ") || "—");

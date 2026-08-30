@@ -132,6 +132,22 @@
   `image:"images/fb/<id>.jpg"` dans events-facebook.json, puis `node update-events.js` propage dans data.js. Resize
   `sips -Z 900 -s formatOptions 68` (~118 Ko/img). `images/fb/**` ré-autorisé dans `.assetsignore`. ~319/342 ont une
   affiche (23 events sans cover). Re-télécharge: `node fb-posters.js [--force]`.
+  PÉRIMÈTRE 30 KM CÔTÉ FACEBOOK (2026-08-17): la page FB mélange l'onglet Découvrir (Metz, Luxembourg, Vosges,
+  Bretagne). Le filtre 30 km de update-events.js ne suffisait PAS: il garde les villes vides au bénéfice du doute, or
+  une carte FB n'a pas d'adresse structurée (ville vide 8 fois sur 10) donc tout le Grand Est passait. `facebook.js`
+  filtre donc À LA SOURCE avec `communes-30km.json` (331 communes, nom officiel + coords + CP, HORS LIGNE, régénéré
+  par `node gen-communes.js`): commune non identifiée dans les 30 km = événement écarté (`--nofilter` pour désactiver).
+  ⚠️ PIÈGE COORDONNÉES: gen-communes.js calcule le centre sur les CONTOURS IGN (gregoiredavid/france-geojson, 4 dép.
+  54/55/57/88, seuls 54 et 57 ont des communes dans le rayon). Le dataset La Poste high54/Communes-France-JSON a des
+  `coordonnees_gps` FAUSSES de 5 à 10 km sur beaucoup de communes (Seichamps donné à 14 km au lieu de 7): ne pas
+  l'utiliser. Les centres IGN collent à la BAN à moins d'1 km (vérifié sur les 116 entrées déjà en cache).
+  commune-coords.json a été pré-alimenté avec ces 331 communes (360 entrées): update-events.js ne fait donc PLUS
+  aucun appel BAN pour la zone, et son filtre 30 km est exact au lieu de garder les inconnues par défaut.
+  Détection en cascade: adresse, puis CP, puis texte de l'affiche (OCR alt), puis titre, puis SALLES CONNUES lues dans
+  `data.js` (couples lieu→ville des 14 autres sources, source facebook exclue car circulaire, libellés génériques et
+  lieux ambigus ignorés). Alias de nom court ("Vandoeuvre"→Vandœuvre-lès-Nancy) uniquement si ≥7 car. et unique dans
+  la zone; TEXT_STOP écarte les noms de communes qui sont des mots courants (serres, romain, viviers…) sur les
+  titres/affiches mais pas sur les adresses. Page du 2026-08-17: 742 events bruts → 195 gardés (547 écartés).
 - import-ics.js expose désormais `resolveCategoryFrom({categories,title,description,location})`: essaie CATEGORIES puis
   titre, sinon titre+description+lieu réunis (rattrape les titres vagues). Réutilisé par facebook.js.
 - 14e SOURCE — L'Autre Canal (SMAC, musiques actuelles, lautrecanalnancy.fr): `autre-canal.js` → `events-autre-canal.json`
