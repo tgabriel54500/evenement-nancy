@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-rap-en-liberte-energie-freestyle-tema-initiation-hip-hop",
-    "title": "Rap en liberté & énergie freestyle",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Rap"
-    ],
-    "date": "2026-08-30",
-    "endDate": "2026-08-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/21_rouge_tema_copie.jpg?itok=TU1u7Mep",
-    "url": "https://lautrecanalnancy.fr/agenda/rap-en-liberte-energie-freestyle-tema-initiation-hip-hop",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-18",
     "title": "Marché bio et local",
     "category": "activite",
