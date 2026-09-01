@@ -247,6 +247,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-marche-solidaire-et-familiale-septembre-en-or",
+    "title": "Marche solidaire et familiale – Septembre en Or",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parcours de santé 54520 LAXOU",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/274/1200_630_7_septembre-en-or-54-5-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/marche-solidaire-et-familiale-septembre-en-or_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-ceremonie-d-accueil-des-nouveaux-laxoviens",
     "title": "Cérémonie d'accueil des nouveaux laxoviens",
     "category": "autre",
@@ -356,7 +375,7 @@
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_vide-greniers-braderie.jpg",
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_affiche-vide-grenier-2026-1.png",
     "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
     "source": "laxou"
   },

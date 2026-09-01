@@ -348,6 +348,27 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
+    "title": "On écoute : Diamond Life, Sade",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Enfance"
+    ],
+    "date": "2026-09-30",
+    "endDate": "2026-09-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/img-defaut.png?itok=TZuM_OZG",
+    "url": "https://lautrecanalnancy.fr/agenda/ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-mentissa",
     "title": "Mentissa",
     "category": "musiques-actuelles",
@@ -583,6 +604,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/702-illustration_id-1775744652.jpg%3Fitok%3DQ0NQOuXI?itok=3aa2xj0q",
     "url": "https://lautrecanalnancy.fr/agenda/temples",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-ecoute-bodies-crowd-en-live-sieste-musicale-des-6-mois",
+    "title": "On écoute : Bodies In The Crowd, en live",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Enfance"
+    ],
+    "date": "2026-10-14",
+    "endDate": "2026-10-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/img-defaut.png?itok=TZuM_OZG",
+    "url": "https://lautrecanalnancy.fr/agenda/ecoute-bodies-crowd-en-live-sieste-musicale-des-6-mois",
     "source": "autre-canal"
   },
   {
@@ -1042,6 +1084,27 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-ecoute-what-s-going-david-bowie-sieste-musicale-des-6-mois",
+    "title": "On écoute : What's Going On, David Bowie",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Enfance"
+    ],
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/img-defaut.png?itok=TZuM_OZG",
+    "url": "https://lautrecanalnancy.fr/agenda/ecoute-what-s-going-david-bowie-sieste-musicale-des-6-mois",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-lisa-pariente-arthur-ely",
     "title": "Lisa Pariente + Arthur Ely",
     "category": "musiques-actuelles",
@@ -1160,8 +1223,8 @@
     "subcats": [
       "Musicien•nes"
     ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
     "dateText": "",
     "schedule": "",
     "place": "L'Autre Canal",
