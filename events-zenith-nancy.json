@@ -57,7 +57,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
     "source": "zenith-nancy"
@@ -793,7 +793,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/Patrick-Fiori_40x60_originale-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/PATRICK-FIORI-271204-NANCY-STORY-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-fiori/",
     "source": "zenith-nancy"
   },

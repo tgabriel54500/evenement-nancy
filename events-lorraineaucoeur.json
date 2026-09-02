@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-41711",
-    "title": "Exposition Bac à Sable Nancy",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [],
-    "date": "2026-09-01",
-    "endDate": "2026-09-25",
-    "dateText": "Du 26 juin au 25 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41711_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41711/exposition-bac-a-sable-nancy/meurthe-et-moselle-nancy/exposition",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-41858",
     "title": "Fête des Vendanges à Villers-lès-Nancy",
     "category": "festival",
@@ -35,6 +16,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41858_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41858/fete-des-vendanges-a-villers-les-nancy/meurthe-et-moselle-villers-les-nancy/fete-animation",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-41711",
+    "title": "Exposition Bac à Sable Nancy",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-09-02",
+    "endDate": "2026-09-25",
+    "dateText": "Du 26 juin au 25 septembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41711_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-41711/exposition-bac-a-sable-nancy/meurthe-et-moselle-nancy/exposition",
     "source": "lorraineaucoeur"
   },
   {
