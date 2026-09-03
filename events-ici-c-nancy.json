@@ -1,5 +1,24 @@
 [
   {
+    "uuid": "icn-1150",
+    "title": "JOURNÉE DE QUARTIER EST : LE MAIRE DE NANCY ET SON ÉQUIPE À LA RENCONTRE DES NANCÉIENNES ET NANCÉIENS",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-09-08",
+    "endDate": "2026-09-08",
+    "dateText": "",
+    "schedule": "18:30",
+    "place": "L' Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_matieuklein26.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1150-journee-de-quartier-est-le-maire-de-nancy-et-son-equipe-a-la-rencontre-des-nanceiennes-et-nanceiens/2026-09-08-18-30.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1102",
     "title": "MATCH NANCY - REIMS (LIGUE 2 - 6ÈME JOURNÉE)",
     "category": "sport",
@@ -16,6 +35,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1102-match-nancy-reims-ligue-2-6eme-journee/2026-09-11-20-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1149",
+    "title": "NANCY : ÉTAPE DU BIOTOUR 2026",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-09-18",
+    "endDate": "2026-09-19",
+    "dateText": "Du 18 au 19 septembre 2026",
+    "schedule": "08:30",
+    "place": "Parc de laPépinière",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_biotour-nancy.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1149-nancy-etape-du-biotour-2026/2026-09-18-08-30.html",
     "source": "ici-c-nancy"
   },
   {

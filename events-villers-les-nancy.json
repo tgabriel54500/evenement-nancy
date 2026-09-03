@@ -9,7 +9,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-09-02",
+    "date": "2026-09-03",
     "endDate": "2026-09-06",
     "dateText": "",
     "schedule": "",
@@ -146,6 +146,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2025/ee6569e34bb0-Image-illustration-960x1080-5.png",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/journees-europeennes-du-patrimoine-2026",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-597",
+    "title": "Conférence-débat : Le réel, arme secrète de la démocratie",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/9782364052550_1024x1024.webp",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-debat-le-reel-arme-secrete-de-la-democratie",
     "source": "villers-les-nancy"
   },
   {

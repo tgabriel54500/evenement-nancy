@@ -1610,6 +1610,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29286",
+    "title": "Conférence sur les champignons",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "Château du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-24136",
     "title": "Sensibilisation aux Gestes Qui Sauvent",
     "category": "sante",
@@ -1650,6 +1669,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29288",
+    "title": "Conférence “Lire l’environnement grâce aux plantes”",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2026-12-11",
+    "endDate": "2026-12-11",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "Château du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-28969",
     "title": "Conférence sur les chevaliers",
     "category": "culture",
@@ -1666,6 +1704,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29290",
+    "title": "Conférence “La gestion des prairies urbaine pour favoriser la biodiversité”",
+    "category": "nature",
+    "catLabel": "Nature",
+    "catEmoji": "🌳",
+    "subcats": [],
+    "date": "2027-01-22",
+    "endDate": "2027-01-22",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "Château du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   }
 ]
