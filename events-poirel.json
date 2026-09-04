@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-6106660c-8049-11f1-949c-95d6e1361653",
-    "title": "EPO - \"KIRLÉ\"",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-03",
-    "endDate": "2026-09-03",
-    "dateText": "Le 03 Septembre 2026",
-    "schedule": "18h",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6106660c-8049-11f1-949c-95d6e1361653/0/1-1_M_6a577f2843120.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6106660c-8049-11f1-949c-95d6e1361653",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
