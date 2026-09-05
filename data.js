@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-09-04 — 939 événements à venir.
+// Généré le : 2026-09-05 — 956 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -47,28 +47,9 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-09-04";
+const GENERATED_AT = "2026-09-05";
 
 const EVENTS = [
-  {
-    "uuid": "b412dc62-a5d4-11f1-84bf-77742aff8359",
-    "title": "Atelier éphémère #1 : Elise Franck",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-05",
-    "dateText": "Du 2 au 5 septembre 2026",
-    "schedule": "de 14h à 19h",
-    "place": "openspace",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b412dc62-a5d4-11f1-84bf-77742aff8359/0/ORIGINE_M_6a967b37da537.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b412dc62-a5d4-11f1-84bf-77742aff8359",
-    "addedAt": "2026-09-01"
-  },
   {
     "uuid": "a111ed22-5031-11f1-b810-55e7c04e6f97",
     "title": "Foire à l'équipement",
@@ -77,7 +58,7 @@ const EVENTS = [
       "Brocante / marché",
       "Manifestation"
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "endDate": "2026-09-05",
     "dateText": "Les 4 et 5 Septembre 2026",
     "schedule": "de 9h à 13h",
@@ -97,7 +78,7 @@ const EVENTS = [
       "Brocante / marché",
       "Manifestation - Festival"
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "endDate": "2026-09-05",
     "dateText": "Les 4 et 5 Septembre 2026",
     "schedule": "de 10h à 19h",
@@ -116,7 +97,7 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "endDate": "2026-09-25",
     "dateText": "Septembre 2026",
     "schedule": "9h-13h - \"Foire à l'équipement\" à Nancy",
@@ -135,7 +116,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "endDate": "2026-10-16",
     "dateText": "Du 4 septembre au 16 octobre 2026",
     "schedule": "de 08h à 19h",
@@ -146,1027 +127,6 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a1571aac-873e-11f1-8333-abf90f8b9c57/0/ORIGINE_M_6a632a8912881.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a1571aac-873e-11f1-8333-abf90f8b9c57",
     "addedAt": "2026-07-27"
-  },
-  {
-    "uuid": "af386e82-2ce4-11f1-b49a-9f5442e79d78",
-    "title": "Le marché de l'artisanat",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché",
-      "Artisanat"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-05",
-    "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
-    "schedule": "de 9h à 19h",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/af386e82-2ce4-11f1-b49a-9f5442e79d78/0/ORIGINE_M_69cb94ecf3744.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af386e82-2ce4-11f1-b49a-9f5442e79d78",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
-    "title": "Les Essentiels",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-06",
-    "dateText": "Du 3 mai au 6 septembre 2026",
-    "schedule": "11h - 12h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a0bbdf14-21dc-11f1-9d24-c9865b070fb2/0/1-1_M_69b9131d03253.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "008c9a94-4494-11f1-9457-4f2974f96cd8",
-    "title": "Paul Emile Colin et la bibliophilie",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-12",
-    "dateText": "Du mardi au vendredi 13h>19h juin et septembre / 13h>18h juillet-août / Samedi 9h>18h",
-    "schedule": "13h>19h juin et septembre / 13h>18h juillet-août",
-    "place": "Bibliothèque Stanislas",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/008c9a94-4494-11f1-9457-4f2974f96cd8/0/1-1_M_69f35fcbb65fa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=008c9a94-4494-11f1-9457-4f2974f96cd8",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "4c485c84-8f35-11f1-be01-03a0d7495d5c",
-    "title": "Vidéo-mapping monumental La Belle Saison",
-    "category": "spectacle",
-    "subcats": [
-      "Projection",
-      "Architecture",
-      "Numérique",
-      "Evénement"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-13",
-    "dateText": "À 22h, du 1er août au 13 septembre 2026",
-    "schedule": "22h",
-    "place": "Place Stanislas",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4c485c84-8f35-11f1-be01-03a0d7495d5c/0/ORIGINE_M_6a7087506eacb.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4c485c84-8f35-11f1-be01-03a0d7495d5c",
-    "addedAt": "2026-08-06"
-  },
-  {
-    "uuid": "9dc69216-1bc1-11f1-80ee-79539a25a29c",
-    "title": "Musée en famille \"L'aventure de Mousse\"",
-    "category": "jeune-public",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-13",
-    "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
-    "schedule": "10h30 - 11h30",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9dc69216-1bc1-11f1-80ee-79539a25a29c/0/1-1_M_69aed4fe7154f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dc69216-1bc1-11f1-80ee-79539a25a29c",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "159d293c-8a83-11f1-8953-3d70d9f8388a",
-    "title": "Aquarelle",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-16",
-    "dateText": "Les 29 août, 12 & 16 septembre",
-    "schedule": "à 14h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/159d293c-8a83-11f1-8953-3d70d9f8388a/0/1-1_M_6a68a603a314e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=159d293c-8a83-11f1-8953-3d70d9f8388a",
-    "addedAt": "2026-07-29"
-  },
-  {
-    "uuid": "fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
-    "title": "Visite commentée de la maison Prouvé",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée",
-      "Evénement"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-26",
-    "dateText": "Les samedis du 30 mai au 26 septembre 2026",
-    "schedule": "à 14h15, 15h15 et 16h15",
-    "place": "4 rue Augustin Hacquard",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fc936b6e-f9d7-11ef-b246-0f0fb51191cb/0/1-1_M_67c871e913a50.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "66dd3df0-fd94-11ef-b83e-5365853cbbcb",
-    "title": "Eux, moches mais touchants",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-27",
-    "dateText": "Le dimanche 27 septembre 2026",
-    "schedule": "à 10h30",
-    "place": "Muséum-Aquarium de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/66dd3df0-fd94-11ef-b83e-5365853cbbcb/0/1-1_M_6a156ad1ddd30.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=66dd3df0-fd94-11ef-b83e-5365853cbbcb",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "189700de-187f-11f1-a28e-a1b57673fc46",
-    "title": "Musée en famille \"Histoire(s) de s'amuser...avec l'art\"",
-    "category": "jeune-public",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-27",
-    "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
-    "schedule": "14h30 - 15h30",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/189700de-187f-11f1-a28e-a1b57673fc46/0/1-1_M_69a95cab1caf8.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=189700de-187f-11f1-a28e-a1b57673fc46",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
-    "title": "Villa d'exception",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-27",
-    "dateText": "Chaque samedi et dimanche de 11h à 12h",
-    "schedule": "11h - 12h",
-    "place": "Villa Majorelle",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/775633ee-49a3-11ef-88ed-2f0fa8a1a7a6/0/1-1_M_66a0d0ce7ebb9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "4236f124-49a5-11ef-b4fb-2d7719a34d34",
-    "title": "Chefs-d'œuvre de l'École de Nancy",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-27",
-    "dateText": "Chaque samedi et dimanche de 15h à 16h",
-    "schedule": "15h - 16h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4236f124-49a5-11ef-b4fb-2d7719a34d34/0/1-1_M_66a0d3c01738b.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4236f124-49a5-11ef-b4fb-2d7719a34d34",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "ffb4460c-6988-11f1-96a6-8965daab24e1",
-    "title": "La Saison des Jardiniers",
-    "category": "exposition",
-    "subcats": [
-      "La nature dans la ville",
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-30",
-    "dateText": "Du 25 juin au  30 septembre 2026",
-    "schedule": "de 06h30 à 22h",
-    "place": "Parc de la pépinière",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ffb4460c-6988-11f1-96a6-8965daab24e1/0/ORIGINE_M_6a3152673db4d.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ffb4460c-6988-11f1-96a6-8965daab24e1",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
-    "title": "Visite flash \"le musée de l'Ecole de Nancy en un clin d'oeil\"",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-30",
-    "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
-    "schedule": "14h30 - 15h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a07a11a-1bbe-11f1-97a4-5b40f9b19584/0/1-1_M_69aecfa82fece.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "7a527efe-84e9-11f0-a72a-4d30edf7f41e",
-    "title": "Visite flash",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-30",
-    "dateText": "Tous les samedis",
-    "schedule": "14h30 - 15h",
-    "place": "Musée de l'École de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7a527efe-84e9-11f0-a72a-4d30edf7f41e/0/1-1_M_68b1c1d3ba94a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a527efe-84e9-11f0-a72a-4d30edf7f41e",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "83cc27f4-1d1f-11f1-a4ae-831444a75800",
-    "title": "Yoga au jardin",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-03",
-    "dateText": "à partir du 26 avril",
-    "schedule": "de 10h00 à 11h30",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83cc27f4-1d1f-11f1-a4ae-831444a75800/0/1-1_M_69b1200ad9729.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83cc27f4-1d1f-11f1-a4ae-831444a75800",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "335b74a8-3cac-11f1-8634-1f0e75f21a65",
-    "title": "Banquet d’images",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-07",
-    "dateText": "Du 7 mai au 7 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/335b74a8-3cac-11f1-8634-1f0e75f21a65/0/1-1_M_69e60f88ed280.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=335b74a8-3cac-11f1-8634-1f0e75f21a65",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "176d7f20-38a6-11f1-af3b-579a15d24778",
-    "title": "Brocante Solidaire",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-09",
-    "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
-    "schedule": "de 07h30 à 18h",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/176d7f20-38a6-11f1-af3b-579a15d24778/0/ORIGINE_M_69df4ddf78daa.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=176d7f20-38a6-11f1-af3b-579a15d24778",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
-    "title": "Initiez-vous aux gestes qui sauvent",
-    "category": "citoyennete",
-    "subcats": [
-      "Citoyenneté",
-      "Santé"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-10",
-    "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
-    "schedule": "de 9h30 à 11h30",
-    "place": "Hôtel de Ville - mairie de Nancy",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/62cd9904-9d5f-11ed-981d-012a3d3c5c5b/0/ORIGINE_M_65e6efcdb6345.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "83c5f9bc-9644-11f1-914f-e926e551ee1a",
-    "title": "Les rendez-vous de l’automne au Plateau de Malzéville",
-    "category": "activite",
-    "subcats": [
-      "Atelier / jeux",
-      "Activité - Animation",
-      "La nature dans la ville"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Du 28 Août au 11 Octobre 2026",
-    "schedule": "de 14h30 à 16h30",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83c5f9bc-9644-11f1-914f-e926e551ee1a/0/16-9_M_6a7c5f18d88b1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83c5f9bc-9644-11f1-914f-e926e551ee1a",
-    "addedAt": "2026-08-13"
-  },
-  {
-    "uuid": "8291494e-1c63-11f1-8396-878ef3dd6ee6",
-    "title": "Balade nature",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Vendredi 24 avril",
-    "schedule": "de 14h00 à 16h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8291494e-1c63-11f1-8396-878ef3dd6ee6/0/1-1_M_69afe4c699b31.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8291494e-1c63-11f1-8396-878ef3dd6ee6",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
-    "title": "Atelier photo",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Jeudi 23 avril",
-    "schedule": "de 10h00 à 12h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8/0/1-1_M_69afe869c2d15.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "4d23db94-1d4b-11f1-9aa6-65d57d322806",
-    "title": "Sur le vif !",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Les 22, 23 avril et 11 octobre",
-    "schedule": "de 10h00 à 12h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4d23db94-1d4b-11f1-9aa6-65d57d322806/0/1-1_M_69bbfb3165da1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d23db94-1d4b-11f1-9aa6-65d57d322806",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
-    "title": "Sentiers botaniques de Lorraine",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Du 10 avril au 11 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5581cc5c-1d2c-11f1-a36e-1b1f40dbef70/0/1-1_M_69b1357407d3f.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "02061cf0-1c5e-11f1-92e4-47181f49b69f",
-    "title": "À pas feutrés",
-    "category": "exposition",
-    "subcats": [
-      "Exposition",
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-11",
-    "dateText": "Du 10 avril au 11 octobre",
-    "schedule": "de 9h00 à 18h00",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/02061cf0-1c5e-11f1-92e4-47181f49b69f/0/1-1_M_69afdb41ce725.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=02061cf0-1c5e-11f1-92e4-47181f49b69f",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "ea3b6552-6f15-11f1-a567-e129653d08c6",
-    "title": "Le renouveau de la gravure sur bois à la fin du 19e et au début du 20e siècle",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-18",
-    "dateText": "Du 26 juin au 18 octobre 2026",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ea3b6552-6f15-11f1-a567-e129653d08c6/0/1-1_M_6a3aa2b0f17b2.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ea3b6552-6f15-11f1-a567-e129653d08c6",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "5f84e2b2-873e-11f1-958e-5f56e445e5ba",
-    "title": "EssentiELLES",
-    "category": "exposition",
-    "subcats": [
-      "Exposition",
-      "Musiques actuelles"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-21",
-    "dateText": "Du 18 août au 21 octobre 2026",
-    "schedule": "de 08h à 19h",
-    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5f84e2b2-873e-11f1-958e-5f56e445e5ba/0/ORIGINE_M_6a632a1a9da80.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5f84e2b2-873e-11f1-958e-5f56e445e5ba",
-    "addedAt": "2026-07-27"
-  },
-  {
-    "uuid": "241ca2dc-001b-11f1-a595-d142e589f5c5",
-    "title": "La Bergamote de Nancy - 2026, une année de célébration",
-    "category": "festival",
-    "subcats": [
-      "Gastronomie",
-      "Artisanat",
-      "Festival",
-      "Activité - Animation"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-25",
-    "dateText": "Du 4 février au 31 octobre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/241ca2dc-001b-11f1-a595-d142e589f5c5/0/ORIGINE_M_698071a480d66.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=241ca2dc-001b-11f1-a595-d142e589f5c5",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "0a90745c-3710-11f1-8e35-c550c58884ef",
-    "title": "Randonnées à Rollers",
-    "category": "activite",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-30",
-    "dateText": "Du 3 avril au 30 octobre 2026",
-    "schedule": "à 20h30",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a90745c-3710-11f1-8e35-c550c58884ef/0/ORIGINE_M_69dca4a23e793.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a90745c-3710-11f1-8e35-c550c58884ef",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
-    "title": "Coulées de bergamote",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-10-31",
-    "dateText": "Du 4 février au 31 octobre 2026",
-    "schedule": "à l'Office de tourisme",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c1bc6a0-eadb-11f0-956c-8d11b4d490df/0/1-1_M_695ccb1c10f3e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "0cfe0034-caa9-11f0-91ae-5379b006b74f",
-    "title": "Cours de jardinage 2026",
-    "category": "activite",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-11-06",
-    "dateText": "à partir du 20 février",
-    "schedule": "à 14h30",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0cfe0034-caa9-11f0-91ae-5379b006b74f/0/16-9_M_6926d35e959ed.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0cfe0034-caa9-11f0-91ae-5379b006b74f",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "80e532b2-64da-11f1-a7de-033bec731cb0",
-    "title": "Répétitions ouvertes",
-    "category": "activite",
-    "subcats": [
-      "Théâtre"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-12-04",
-    "dateText": "Du 1er septembre au 4 décembre 2026",
-    "schedule": "de 09h30 à 12h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/80e532b2-64da-11f1-a7de-033bec731cb0/0/ORIGINE_M_6a2977a9685ad.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=80e532b2-64da-11f1-a7de-033bec731cb0",
-    "addedAt": "2026-09-02"
-  },
-  {
-    "uuid": "cd165d82-220e-11f1-8007-79f1c5828d09",
-    "title": "Hugo Drubay. Là où les arbres prennent forme",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-01-03",
-    "dateText": "Du 6 juin 2026 au 3 janvier 2027",
-    "schedule": "",
-    "place": "Villa Majorelle",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd165d82-220e-11f1-8007-79f1c5828d09/0/1-1_M_69e613070fbe9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd165d82-220e-11f1-8007-79f1c5828d09",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
-    "title": "Moches! 2",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-01-03",
-    "dateText": "30 mai 2026 > 03 janvier 2027",
-    "schedule": "",
-    "place": "Muséum-Aquarium de Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa3c2c70-f9d2-11ef-a672-57c2cdff87fb/0/1-1_M_69cb6a4dad6ca.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
-    "title": "Cochon d'Inde, mon ami",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-01-03",
-    "dateText": "Du 22 mai 2026 au 3 janvier 2027",
-    "schedule": "de 13h30 à 16h45",
-    "place": "Parc de la pépinière",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/20cb3198-4a26-11f1-ad5d-2de7a4b036b8/0/ORIGINE_M_69fcaa2089427.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "35d1f88c-0159-11ef-bc5c-27495689ee18",
-    "title": "Récits décoloniaux. Faut-il brûler les musées ?",
-    "category": "exposition",
-    "subcats": [
-      "Exposition",
-      "Visite guidée"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-05-31",
-    "dateText": "Jusqu'au 31 mai 2027",
-    "schedule": "10h - 18h",
-    "place": "Musée des Beaux-Arts",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/35d1f88c-0159-11ef-bc5c-27495689ee18/0/1-1_M_666c3f8bd93f9.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d1f88c-0159-11ef-bc5c-27495689ee18",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "1fab231a-43c1-11f1-bde1-db822db513d6",
-    "title": "Merveilleuses molécules végétales",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-06-30",
-    "dateText": "À partir du 5 juin",
-    "schedule": "sur les horaires d'ouverture du parc",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1fab231a-43c1-11f1-bde1-db822db513d6/0/1-1_M_69f1efe0c1f7e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1fab231a-43c1-11f1-bde1-db822db513d6",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "4bddf292-43ac-11f1-8986-5d2c90db8092",
-    "title": "Mystérieuse bergamote",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-06-30",
-    "dateText": "Du 5 juin 2026 au 30 juin 2027",
-    "schedule": "sur les horaires d'ouverture des serres",
-    "place": "Jardin botanique Jean-Marie Pelt",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4bddf292-43ac-11f1-8986-5d2c90db8092/0/1-1_M_69f1cd2035cee.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bddf292-43ac-11f1-8986-5d2c90db8092",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "2666ddd4-8cf5-11f1-9ff9-4b494894327e",
-    "title": "JEP 2026 : la Villa Majorelle",
-    "category": "activite",
-    "subcats": [
-      "Patrimoine",
-      "Evénement",
-      "La nature dans la ville",
-      "Culture",
-      "Jeune public"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-20",
-    "dateText": "Samedi 19 et dimanche 20 septembre de 10h à 18h",
-    "schedule": "de 10h à 18h",
-    "place": "Villa Majorelle",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2666ddd4-8cf5-11f1-9ff9-4b494894327e/0/1-1_M_6a6cc1f9b263e.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2666ddd4-8cf5-11f1-9ff9-4b494894327e",
-    "addedAt": "2026-08-01"
-  },
-  {
-    "uuid": "dn-24470",
-    "title": "La Bergamote - 30 ans IGP",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018689/6412ef91680d6cad-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/la-bergamote-30-ans-igp/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-11"
-  },
-  {
-    "uuid": "dn-25024",
-    "title": "En Attendant Pichon - Lancement - Programmation Artistique - Collectif Décembre",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-12-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "7",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019154/ac10590a3b4e9cce-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/en-attendant-pichon-lancement-programmation-artistique-collectif-decembre/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-19"
-  },
-  {
-    "uuid": "dn-23608",
-    "title": "Estival - Édition 2026",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019270/cb5694827e5d4701-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/estival-edition-2026/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-23384",
-    "title": "Exposition - Nancy, Art nouveau par nature",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-11-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019222/6edfaf4a335f2480-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-nancy-art-nouveau-par-nature/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-23926",
-    "title": "Exposition - Bac à sable - CERFAV",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "2",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019357/5560882d62d31942-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-bac-a-sable-cerfav/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-20588",
-    "title": "Visite Théâtralisée - Place Stanislas",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737016917/bdec836d931b1b24-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-theatralisee-place-stanislas/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-21684",
-    "title": "Visite théâtralisée - Les Amoureux le long du Canal",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737017156/43c25e59d875dde4-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-theatralisee-les-amoureux-le-long-du-canal/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "dn-24471",
-    "title": "Exposition - Charles Cartier-Bresson et les Arts - Du collectionneur au dessinateur",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "3",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018655/687ab65c090dee14-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-charles-cartier-bresson-et-les-arts-du-collectionneur-au-dessinateur/",
-    "source": "destination-nancy",
-    "addedAt": "2026-08-08"
-  },
-  {
-    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
-    "title": "Exposition Permanent Laurence Jenkell à Nancy",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-11-30",
-    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
-    "schedule": "",
-    "place": "L'autre Galerie",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
-    "source": "curieux-net",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "cx-votre-attention-s-il-vous-plait",
-    "title": "Votre Attention S'il Vous Plaît",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-27",
-    "dateText": "Du samedi 25 juillet 2026 au dimanche 27 septembre 2026",
-    "schedule": "",
-    "place": "galerie les Volets Bleus",
-    "city": "Liverdun",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/07/6a5fd4ac0b41f-votre-attention-s-il-vous-plait.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/votre-attention-s-il-vous-plait",
-    "source": "curieux-net",
-    "addedAt": "2026-08-22"
-  },
-  {
-    "uuid": "vdv-5364",
-    "title": "Inscriptions « Vand’sport et Eveil sportif »",
-    "category": "jeune-public",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2027-06-23",
-    "dateText": "Du 3 septembre 2026 au 23 juin 2027",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre",
-    "addedAt": "2026-08-18"
-  },
-  {
-    "uuid": "vln-277",
-    "title": "69e Fête des vendanges",
-    "category": "festival",
-    "subcats": [
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
-    "source": "villers-les-nancy",
-    "addedAt": "2026-07-21"
-  },
-  {
-    "uuid": "lac-41858",
-    "title": "Fête des Vendanges à Villers-lès-Nancy",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-06",
-    "dateText": "Du 2 au 6 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41858_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41858/fete-des-vendanges-a-villers-les-nancy/meurthe-et-moselle-villers-les-nancy/fete-animation",
-    "source": "lorraineaucoeur",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "lcn-marche-bio-et-local-18",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-09-04",
-    "endDate": "2026-09-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-18",
-    "source": "autre-canal",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "fb-1705585090423129",
-    "title": "P'tit marché des côtes",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-09-04",
-    "endDate": "2026-09-04",
-    "dateText": "4 sept. à 16:30",
-    "schedule": "16h30",
-    "place": "Place de l'Église",
-    "city": "Cheminot",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/1705585090423129.jpg",
-    "url": "https://www.facebook.com/events/1705585090423129/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
   },
   {
     "uuid": "9e3fc016-a5d5-11f1-9f18-f38043e641b3",
@@ -1288,6 +248,25 @@ const EVENTS = [
     "addedAt": "2026-08-07"
   },
   {
+    "uuid": "b412dc62-a5d4-11f1-84bf-77742aff8359",
+    "title": "Atelier éphémère #1 : Elise Franck",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "Du 2 au 5 septembre 2026",
+    "schedule": "de 14h à 19h",
+    "place": "openspace",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b412dc62-a5d4-11f1-84bf-77742aff8359/0/ORIGINE_M_6a967b37da537.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=b412dc62-a5d4-11f1-84bf-77742aff8359",
+    "addedAt": "2026-09-01"
+  },
+  {
     "uuid": "7e66e8dc-3258-11f1-a4db-ff95faab30af",
     "title": "Découvrir l'escalade en salle",
     "category": "activite",
@@ -1318,7 +297,7 @@ const EVENTS = [
     "dateText": "Septembre-Novembre 2026",
     "schedule": "10h-19h - Stand d'information à \"Pépinière en Vert\" au Parc de la Pépinière à Nancy",
     "place": "",
-    "city": "Territoire du Grand Nancy",
+    "city": "",
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5f8d3324-2c5e-11ee-a170-c3a633e88f40/0/16-9_M_64e36d8b912bf.jpeg",
@@ -1345,13 +324,843 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "af386e82-2ce4-11f1-b49a-9f5442e79d78",
+    "title": "Le marché de l'artisanat",
+    "category": "activite",
+    "subcats": [
+      "Brocante / marché",
+      "Artisanat"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "Un samedi par mois en avril, mai, juin, juillet et septembre 2026",
+    "schedule": "de 9h à 19h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/af386e82-2ce4-11f1-b49a-9f5442e79d78/0/ORIGINE_M_69cb94ecf3744.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=af386e82-2ce4-11f1-b49a-9f5442e79d78",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "008c9a94-4494-11f1-9457-4f2974f96cd8",
+    "title": "Paul Emile Colin et la bibliophilie",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-12",
+    "dateText": "Du mardi au vendredi 13h>19h juin et septembre / 13h>18h juillet-août / Samedi 9h>18h",
+    "schedule": "9h>18h",
+    "place": "Bibliothèque Stanislas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/008c9a94-4494-11f1-9457-4f2974f96cd8/0/1-1_M_69f35fcbb65fa.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=008c9a94-4494-11f1-9457-4f2974f96cd8",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "4c485c84-8f35-11f1-be01-03a0d7495d5c",
+    "title": "Vidéo-mapping monumental La Belle Saison",
+    "category": "spectacle",
+    "subcats": [
+      "Projection",
+      "Architecture",
+      "Numérique",
+      "Evénement"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-13",
+    "dateText": "À 22h, du 1er août au 13 septembre 2026",
+    "schedule": "22h",
+    "place": "Place Stanislas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4c485c84-8f35-11f1-be01-03a0d7495d5c/0/ORIGINE_M_6a7087506eacb.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4c485c84-8f35-11f1-be01-03a0d7495d5c",
+    "addedAt": "2026-08-06"
+  },
+  {
+    "uuid": "9dc69216-1bc1-11f1-80ee-79539a25a29c",
+    "title": "Musée en famille \"L'aventure de Mousse\"",
+    "category": "jeune-public",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-13",
+    "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
+    "schedule": "10h30 - 11h30",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9dc69216-1bc1-11f1-80ee-79539a25a29c/0/1-1_M_69aed4fe7154f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9dc69216-1bc1-11f1-80ee-79539a25a29c",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "159d293c-8a83-11f1-8953-3d70d9f8388a",
+    "title": "Aquarelle",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-16",
+    "dateText": "Les 29 août, 12 & 16 septembre",
+    "schedule": "à 14h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/159d293c-8a83-11f1-8953-3d70d9f8388a/0/1-1_M_6a68a603a314e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=159d293c-8a83-11f1-8953-3d70d9f8388a",
+    "addedAt": "2026-07-29"
+  },
+  {
+    "uuid": "fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
+    "title": "Visite commentée de la maison Prouvé",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée",
+      "Evénement"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-26",
+    "dateText": "Les samedis du 30 mai au 26 septembre 2026",
+    "schedule": "à 14h15, 15h15 et 16h15",
+    "place": "4 rue Augustin Hacquard",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fc936b6e-f9d7-11ef-b246-0f0fb51191cb/0/1-1_M_67c871e913a50.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "66dd3df0-fd94-11ef-b83e-5365853cbbcb",
+    "title": "Eux, moches mais touchants",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-27",
+    "dateText": "Le dimanche 27 septembre 2026",
+    "schedule": "à 10h30",
+    "place": "Muséum-Aquarium de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/66dd3df0-fd94-11ef-b83e-5365853cbbcb/0/1-1_M_6a156ad1ddd30.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=66dd3df0-fd94-11ef-b83e-5365853cbbcb",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "189700de-187f-11f1-a28e-a1b57673fc46",
+    "title": "Musée en famille \"Histoire(s) de s'amuser...avec l'art\"",
+    "category": "jeune-public",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-27",
+    "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
+    "schedule": "14h30 - 15h30",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/189700de-187f-11f1-a28e-a1b57673fc46/0/1-1_M_69a95cab1caf8.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=189700de-187f-11f1-a28e-a1b57673fc46",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
+    "title": "Villa d'exception",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-27",
+    "dateText": "Chaque samedi et dimanche de 11h à 12h",
+    "schedule": "11h - 12h",
+    "place": "Villa Majorelle",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/775633ee-49a3-11ef-88ed-2f0fa8a1a7a6/0/1-1_M_66a0d0ce7ebb9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=775633ee-49a3-11ef-88ed-2f0fa8a1a7a6",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "4236f124-49a5-11ef-b4fb-2d7719a34d34",
+    "title": "Chefs-d'œuvre de l'École de Nancy",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-27",
+    "dateText": "Chaque samedi et dimanche de 15h à 16h",
+    "schedule": "15h - 16h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4236f124-49a5-11ef-b4fb-2d7719a34d34/0/1-1_M_66a0d3c01738b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4236f124-49a5-11ef-b4fb-2d7719a34d34",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "ffb4460c-6988-11f1-96a6-8965daab24e1",
+    "title": "La Saison des Jardiniers",
+    "category": "exposition",
+    "subcats": [
+      "La nature dans la ville",
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-30",
+    "dateText": "Du 25 juin au  30 septembre 2026",
+    "schedule": "de 06h30 à 22h",
+    "place": "Parc de la pépinière",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ffb4460c-6988-11f1-96a6-8965daab24e1/0/ORIGINE_M_6a3152673db4d.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ffb4460c-6988-11f1-96a6-8965daab24e1",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
+    "title": "Visite flash \"le musée de l'Ecole de Nancy en un clin d'oeil\"",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-30",
+    "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
+    "schedule": "14h30 - 15h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a07a11a-1bbe-11f1-97a4-5b40f9b19584/0/1-1_M_69aecfa82fece.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2a07a11a-1bbe-11f1-97a4-5b40f9b19584",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "7a527efe-84e9-11f0-a72a-4d30edf7f41e",
+    "title": "Visite flash",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-30",
+    "dateText": "Tous les samedis",
+    "schedule": "14h30 - 15h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7a527efe-84e9-11f0-a72a-4d30edf7f41e/0/1-1_M_68b1c1d3ba94a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7a527efe-84e9-11f0-a72a-4d30edf7f41e",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "83cc27f4-1d1f-11f1-a4ae-831444a75800",
+    "title": "Yoga au jardin",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-03",
+    "dateText": "à partir du 26 avril",
+    "schedule": "de 10h00 à 11h30",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83cc27f4-1d1f-11f1-a4ae-831444a75800/0/1-1_M_69b1200ad9729.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83cc27f4-1d1f-11f1-a4ae-831444a75800",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "335b74a8-3cac-11f1-8634-1f0e75f21a65",
+    "title": "Banquet d’images",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-07",
+    "dateText": "Du 7 mai au 7 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/335b74a8-3cac-11f1-8634-1f0e75f21a65/0/1-1_M_69e60f88ed280.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=335b74a8-3cac-11f1-8634-1f0e75f21a65",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "176d7f20-38a6-11f1-af3b-579a15d24778",
+    "title": "Brocante Solidaire",
+    "category": "activite",
+    "subcats": [
+      "Brocante / marché"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-09",
+    "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
+    "schedule": "de 07h30 à 18h",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/176d7f20-38a6-11f1-af3b-579a15d24778/0/ORIGINE_M_69df4ddf78daa.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=176d7f20-38a6-11f1-af3b-579a15d24778",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
+    "title": "Initiez-vous aux gestes qui sauvent",
+    "category": "citoyennete",
+    "subcats": [
+      "Citoyenneté",
+      "Santé"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-10",
+    "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
+    "schedule": "de 9h30 à 11h30",
+    "place": "Hôtel de Ville - mairie de Nancy",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/62cd9904-9d5f-11ed-981d-012a3d3c5c5b/0/ORIGINE_M_65e6efcdb6345.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=62cd9904-9d5f-11ed-981d-012a3d3c5c5b",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "83c5f9bc-9644-11f1-914f-e926e551ee1a",
+    "title": "Les rendez-vous de l’automne au Plateau de Malzéville",
+    "category": "activite",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "La nature dans la ville"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Du 28 Août au 11 Octobre 2026",
+    "schedule": "de 14h30 à 16h30",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/83c5f9bc-9644-11f1-914f-e926e551ee1a/0/16-9_M_6a7c5f18d88b1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=83c5f9bc-9644-11f1-914f-e926e551ee1a",
+    "addedAt": "2026-08-13"
+  },
+  {
+    "uuid": "8291494e-1c63-11f1-8396-878ef3dd6ee6",
+    "title": "Balade nature",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Vendredi 24 avril",
+    "schedule": "de 14h00 à 16h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8291494e-1c63-11f1-8396-878ef3dd6ee6/0/1-1_M_69afe4c699b31.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8291494e-1c63-11f1-8396-878ef3dd6ee6",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
+    "title": "Atelier photo",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Jeudi 23 avril",
+    "schedule": "de 10h00 à 12h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8/0/1-1_M_69afe869c2d15.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=90d6d97c-1c65-11f1-b5ad-67d0ffafbfa8",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "4d23db94-1d4b-11f1-9aa6-65d57d322806",
+    "title": "Sur le vif !",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Les 22, 23 avril et 11 octobre",
+    "schedule": "de 10h00 à 12h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4d23db94-1d4b-11f1-9aa6-65d57d322806/0/1-1_M_69bbfb3165da1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4d23db94-1d4b-11f1-9aa6-65d57d322806",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
+    "title": "Sentiers botaniques de Lorraine",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Du 10 avril au 11 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5581cc5c-1d2c-11f1-a36e-1b1f40dbef70/0/1-1_M_69b1357407d3f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5581cc5c-1d2c-11f1-a36e-1b1f40dbef70",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "02061cf0-1c5e-11f1-92e4-47181f49b69f",
+    "title": "À pas feutrés",
+    "category": "exposition",
+    "subcats": [
+      "Exposition",
+      "Conférence - Rencontre"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-11",
+    "dateText": "Du 10 avril au 11 octobre",
+    "schedule": "de 9h00 à 18h00",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/02061cf0-1c5e-11f1-92e4-47181f49b69f/0/1-1_M_69afdb41ce725.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=02061cf0-1c5e-11f1-92e4-47181f49b69f",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "ea3b6552-6f15-11f1-a567-e129653d08c6",
+    "title": "Le renouveau de la gravure sur bois à la fin du 19e et au début du 20e siècle",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-18",
+    "dateText": "Du 26 juin au 18 octobre 2026",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ea3b6552-6f15-11f1-a567-e129653d08c6/0/1-1_M_6a3aa2b0f17b2.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ea3b6552-6f15-11f1-a567-e129653d08c6",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "5f84e2b2-873e-11f1-958e-5f56e445e5ba",
+    "title": "EssentiELLES",
+    "category": "exposition",
+    "subcats": [
+      "Exposition",
+      "Musiques actuelles"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-21",
+    "dateText": "Du 18 août au 21 octobre 2026",
+    "schedule": "de 08h à 19h",
+    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5f84e2b2-873e-11f1-958e-5f56e445e5ba/0/ORIGINE_M_6a632a1a9da80.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5f84e2b2-873e-11f1-958e-5f56e445e5ba",
+    "addedAt": "2026-07-27"
+  },
+  {
+    "uuid": "241ca2dc-001b-11f1-a595-d142e589f5c5",
+    "title": "La Bergamote de Nancy - 2026, une année de célébration",
+    "category": "festival",
+    "subcats": [
+      "Gastronomie",
+      "Artisanat",
+      "Festival",
+      "Activité - Animation"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-25",
+    "dateText": "Du 4 février au 31 octobre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/241ca2dc-001b-11f1-a595-d142e589f5c5/0/ORIGINE_M_698071a480d66.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=241ca2dc-001b-11f1-a595-d142e589f5c5",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "0a90745c-3710-11f1-8e35-c550c58884ef",
+    "title": "Randonnées à Rollers",
+    "category": "activite",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-30",
+    "dateText": "Du 3 avril au 30 octobre 2026",
+    "schedule": "à 20h30",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0a90745c-3710-11f1-8e35-c550c58884ef/0/ORIGINE_M_69dca4a23e793.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0a90745c-3710-11f1-8e35-c550c58884ef",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
+    "title": "Coulées de bergamote",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-10-31",
+    "dateText": "Du 4 février au 31 octobre 2026",
+    "schedule": "à l'Office de tourisme",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c1bc6a0-eadb-11f0-956c-8d11b4d490df/0/1-1_M_695ccb1c10f3e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c1bc6a0-eadb-11f0-956c-8d11b4d490df",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "0cfe0034-caa9-11f0-91ae-5379b006b74f",
+    "title": "Cours de jardinage 2026",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-11-06",
+    "dateText": "à partir du 20 février",
+    "schedule": "à 14h30",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0cfe0034-caa9-11f0-91ae-5379b006b74f/0/16-9_M_6926d35e959ed.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0cfe0034-caa9-11f0-91ae-5379b006b74f",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "80e532b2-64da-11f1-a7de-033bec731cb0",
+    "title": "Répétitions ouvertes",
+    "category": "activite",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-12-04",
+    "dateText": "Du 1er septembre au 4 décembre 2026",
+    "schedule": "de 09h30 à 12h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/80e532b2-64da-11f1-a7de-033bec731cb0/0/ORIGINE_M_6a2977a9685ad.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=80e532b2-64da-11f1-a7de-033bec731cb0",
+    "addedAt": "2026-09-02"
+  },
+  {
+    "uuid": "cd165d82-220e-11f1-8007-79f1c5828d09",
+    "title": "Hugo Drubay. Là où les arbres prennent forme",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-01-03",
+    "dateText": "Du 6 juin 2026 au 3 janvier 2027",
+    "schedule": "",
+    "place": "Villa Majorelle",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cd165d82-220e-11f1-8007-79f1c5828d09/0/1-1_M_69e613070fbe9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=cd165d82-220e-11f1-8007-79f1c5828d09",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
+    "title": "Moches! 2",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-01-03",
+    "dateText": "30 mai 2026 > 03 janvier 2027",
+    "schedule": "",
+    "place": "Muséum-Aquarium de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa3c2c70-f9d2-11ef-a672-57c2cdff87fb/0/1-1_M_69cb6a4dad6ca.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa3c2c70-f9d2-11ef-a672-57c2cdff87fb",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
+    "title": "Cochon d'Inde, mon ami",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-01-03",
+    "dateText": "Du 22 mai 2026 au 3 janvier 2027",
+    "schedule": "de 13h30 à 16h45",
+    "place": "Parc de la pépinière",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/20cb3198-4a26-11f1-ad5d-2de7a4b036b8/0/ORIGINE_M_69fcaa2089427.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=20cb3198-4a26-11f1-ad5d-2de7a4b036b8",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "35d1f88c-0159-11ef-bc5c-27495689ee18",
+    "title": "Récits décoloniaux. Faut-il brûler les musées ?",
+    "category": "exposition",
+    "subcats": [
+      "Exposition",
+      "Visite guidée"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-05-31",
+    "dateText": "Jusqu'au 31 mai 2027",
+    "schedule": "10h - 18h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/35d1f88c-0159-11ef-bc5c-27495689ee18/0/1-1_M_666c3f8bd93f9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=35d1f88c-0159-11ef-bc5c-27495689ee18",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "1fab231a-43c1-11f1-bde1-db822db513d6",
+    "title": "Merveilleuses molécules végétales",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-06-30",
+    "dateText": "À partir du 5 juin",
+    "schedule": "sur les horaires d'ouverture du parc",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1fab231a-43c1-11f1-bde1-db822db513d6/0/1-1_M_69f1efe0c1f7e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1fab231a-43c1-11f1-bde1-db822db513d6",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "4bddf292-43ac-11f1-8986-5d2c90db8092",
+    "title": "Mystérieuse bergamote",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2027-06-30",
+    "dateText": "Du 5 juin 2026 au 30 juin 2027",
+    "schedule": "sur les horaires d'ouverture des serres",
+    "place": "Jardin botanique Jean-Marie Pelt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4bddf292-43ac-11f1-8986-5d2c90db8092/0/1-1_M_69f1cd2035cee.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4bddf292-43ac-11f1-8986-5d2c90db8092",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "2666ddd4-8cf5-11f1-9ff9-4b494894327e",
+    "title": "JEP 2026 : la Villa Majorelle",
+    "category": "activite",
+    "subcats": [
+      "Patrimoine",
+      "Evénement",
+      "La nature dans la ville",
+      "Culture",
+      "Jeune public"
+    ],
+    "date": "2026-09-05",
+    "endDate": "2026-09-20",
+    "dateText": "Samedi 19 et dimanche 20 septembre de 10h à 18h",
+    "schedule": "de 10h à 18h",
+    "place": "Villa Majorelle",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2666ddd4-8cf5-11f1-9ff9-4b494894327e/0/1-1_M_6a6cc1f9b263e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2666ddd4-8cf5-11f1-9ff9-4b494894327e",
+    "addedAt": "2026-08-01"
+  },
+  {
+    "uuid": "dn-24470",
+    "title": "La Bergamote - 30 ans IGP",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018689/6412ef91680d6cad-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/la-bergamote-30-ans-igp/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-11"
+  },
+  {
+    "uuid": "dn-25024",
+    "title": "En Attendant Pichon - Lancement - Programmation Artistique - Collectif Décembre",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-12-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "7",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019154/ac10590a3b4e9cce-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/en-attendant-pichon-lancement-programmation-artistique-collectif-decembre/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "uuid": "dn-23608",
+    "title": "Estival - Édition 2026",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019270/cb5694827e5d4701-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/estival-edition-2026/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-31"
+  },
+  {
+    "uuid": "dn-23384",
+    "title": "Exposition - Nancy, Art nouveau par nature",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-11-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019222/6edfaf4a335f2480-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-nancy-art-nouveau-par-nature/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-31"
+  },
+  {
+    "uuid": "dn-23926",
+    "title": "Exposition - Bac à sable - CERFAV",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "2",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019357/5560882d62d31942-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-bac-a-sable-cerfav/",
+    "source": "destination-nancy",
+    "addedAt": "2026-07-31"
+  },
+  {
+    "uuid": "dn-24471",
+    "title": "Exposition - Charles Cartier-Bresson et les Arts - Du collectionneur au dessinateur",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "3",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018655/687ab65c090dee14-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-charles-cartier-bresson-et-les-arts-du-collectionneur-au-dessinateur/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-08"
+  },
+  {
     "uuid": "dn-22277",
     "title": "Visite Guidée - Centre historique - PMR",
     "category": "activite",
     "subcats": [],
     "date": "2026-09-05",
     "endDate": "2026-09-12",
-    "dateText": "Du 5 au 12 septembre 2026",
+    "dateText": "",
     "schedule": "",
     "place": "",
     "city": "Nancy",
@@ -1363,31 +1172,13 @@ const EVENTS = [
     "addedAt": "2026-08-08"
   },
   {
-    "uuid": "dn-22279",
-    "title": "Visite Guidée - Art Nouveau en Centre Ville - PMR",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018617/aea6996db842777a-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-en-centre-ville-pmr/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-31"
-  },
-  {
     "uuid": "dn-24642",
     "title": "Estival 2026 - Festival - Embranchement",
     "category": "autre",
     "subcats": [],
     "date": "2026-09-05",
     "endDate": "2026-09-09",
-    "dateText": "Du 5 au 9 septembre 2026",
+    "dateText": "",
     "schedule": "",
     "place": "",
     "city": "Nancy",
@@ -1395,24 +1186,6 @@ const EVENTS = [
     "reservation": false,
     "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019301/cb5694827e5d4701-800x520.webp",
     "url": "https://www.destination-nancy.com/fete-manifestation/estival-2026-festival-embranchement/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-13"
-  },
-  {
-    "uuid": "dn-24651",
-    "title": "Estival 2026 - Escalade en Salle",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "69",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019331/b910d53b858d39d1-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/estival-2026-escalade-en-salle/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
   },
@@ -1443,7 +1216,7 @@ const EVENTS = [
     "subcats": [],
     "date": "2026-09-05",
     "endDate": "2026-09-06",
-    "dateText": "Du 5 au 6 septembre 2026",
+    "dateText": "",
     "schedule": "",
     "place": "",
     "city": "Vandœuvre-lès-Nancy",
@@ -1455,94 +1228,81 @@ const EVENTS = [
     "addedAt": "2026-07-13"
   },
   {
-    "uuid": "dn-24702",
-    "title": "Conférence - Forum des Associations",
-    "category": "conference",
+    "uuid": "cx-exposition-permanent-laurence-jenkell-a-nancy",
+    "title": "Exposition Permanent Laurence Jenkell à Nancy",
+    "category": "exposition",
     "subcats": [],
     "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
+    "endDate": "2026-11-30",
+    "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
     "schedule": "",
-    "place": "",
-    "city": "Ludres",
-    "free": false,
+    "place": "L'autre Galerie",
+    "city": "Nancy",
+    "free": true,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019590/5d1295d9dc3cf8e8-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/conference-forum-des-associations/",
-    "source": "destination-nancy",
-    "addedAt": "2026-07-17"
+    "image": "https://www.curieux.net/img/e/2025/11/69205c0ab7b2d-exposition-permanent-laurence-jenkell-a-nancy.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/exposition-permanent-laurence-jenkell-a-nancy",
+    "source": "curieux-net",
+    "addedAt": "2026-07-31"
   },
   {
-    "uuid": "dn-25645",
-    "title": "Ensemble à Heillecourt - Journée des associations et Bienvenue au nouveaux habitants",
-    "category": "autre",
+    "uuid": "cx-votre-attention-s-il-vous-plait",
+    "title": "Votre Attention S'il Vous Plaît",
+    "category": "exposition",
     "subcats": [],
     "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
+    "endDate": "2026-09-27",
+    "dateText": "Du samedi 25 juillet 2026 au dimanche 27 septembre 2026",
     "schedule": "",
-    "place": "",
-    "city": "Heillecourt",
-    "free": false,
+    "place": "galerie les Volets Bleus",
+    "city": "Liverdun",
+    "free": true,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019919/aeee0eabdac1140e-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/ensemble-a-heillecourt-journee-des-associations-et-bienvenue-au-nouveaux-habitants/",
-    "source": "destination-nancy",
-    "addedAt": "2026-08-20"
-  },
-  {
-    "uuid": "dn-25681",
-    "title": "Marché des producteurs locaux - Houdemont",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Houdemont",
-    "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019948/07c8d986d907199b-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/marche-des-producteurs-locaux-houdemont/",
-    "source": "destination-nancy",
+    "image": "https://www.curieux.net/img/e/2026/07/6a5fd4ac0b41f-votre-attention-s-il-vous-plait.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/votre-attention-s-il-vous-plait",
+    "source": "curieux-net",
     "addedAt": "2026-08-22"
   },
   {
-    "uuid": "dn-25740",
-    "title": "Visite guidée - Bienvenue chez Edouard Salin - Château de Montaigu",
-    "category": "activite",
-    "subcats": [],
+    "uuid": "vdv-5364",
+    "title": "Inscriptions « Vand’sport et Eveil sportif »",
+    "category": "jeune-public",
+    "subcats": [
+      "Sport"
+    ],
     "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
+    "endDate": "2027-06-23",
+    "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
     "place": "",
-    "city": "Laneuveville Devant Nancy",
+    "city": "Vandœuvre-lès-Nancy",
     "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018928/e348d3f5d5be7f0e-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-bienvenue-chez-edouard-salin-chateau-de-montaigu/",
-    "source": "destination-nancy",
-    "addedAt": "2026-08-25"
+    "reservation": true,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-08-18"
   },
   {
-    "uuid": "dn-25992",
-    "title": "Ateliers, stages de loisirs - Rencontrez les conseillers de la MHDD",
-    "category": "activite",
-    "subcats": [],
+    "uuid": "vln-277",
+    "title": "69e Fête des vendanges",
+    "category": "festival",
+    "subcats": [
+      "Culture",
+      "Sport"
+    ],
     "date": "2026-09-05",
-    "endDate": "2026-09-05",
+    "endDate": "2026-09-06",
     "dateText": "",
     "schedule": "",
-    "place": "",
-    "city": "Territoire du Grand Nancy",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020193/a62847a33fc5b510-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/ateliers-stages-de-loisirs-rencontrez-les-conseillers-de-la-mhdd/",
-    "source": "destination-nancy",
-    "addedAt": "2026-09-02"
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
+    "source": "villers-les-nancy",
+    "addedAt": "2026-07-21"
   },
   {
     "uuid": "lx-marche-solidaire-et-familiale-septembre-en-or",
@@ -1561,6 +1321,24 @@ const EVENTS = [
     "url": "https://www.laxou.fr/fr/agenda/marche-solidaire-et-familiale-septembre-en-or_-d.html",
     "source": "laxou",
     "addedAt": "2026-09-01"
+  },
+  {
+    "uuid": "lac-41858",
+    "title": "Fête des Vendanges à Villers-lès-Nancy",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-06",
+    "dateText": "Du 2 au 6 septembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41858_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-41858/fete-des-vendanges-a-villers-les-nancy/meurthe-et-moselle-villers-les-nancy/fete-animation",
+    "source": "lorraineaucoeur",
+    "addedAt": "2026-07-31"
   },
   {
     "uuid": "lcn-burning-void-iii-friperie-designers-dj-sets",
@@ -1684,6 +1462,24 @@ const EVENTS = [
     "addedAt": "2026-08-17"
   },
   {
+    "uuid": "lx-forum-des-associations-1",
+    "title": "Forum des Associations",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-05",
+    "endDate": "2026-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/272/1200_630_7_forum-des-associations-page-1.png",
+    "url": "https://www.laxou.fr/fr/agenda/forum-des-associations-1_-d.html",
+    "source": "laxou",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "lx-ceremonie-d-accueil-des-nouveaux-laxoviens",
     "title": "Cérémonie d'accueil des nouveaux laxoviens",
     "category": "autre",
@@ -1775,6 +1571,25 @@ const EVENTS = [
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/54532f96-58e2-11f1-a49a-65a254c53742/0/ORIGINE_M_6a1562d4a5ccc.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=54532f96-58e2-11f1-a49a-65a254c53742",
+    "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
+    "title": "Les Essentiels",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-09-06",
+    "endDate": "2027-03-07",
+    "dateText": "Chaque premier dimanche du mois (sauf novembre)",
+    "schedule": "de 11h à 12h",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a0bbdf14-21dc-11f1-9d24-c9865b070fb2/0/1-1_M_69b9131d03253.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
     "addedAt": "2026-05-24"
   },
   {
@@ -2369,8 +2184,8 @@ const EVENTS = [
     "endDate": "2026-09-10",
     "dateText": "Jeudi 10 septembre 2026",
     "schedule": "de 18h30 à 20h",
-    "place": "",
-    "city": "",
+    "place": "13",
+    "city": "Nancy",
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a8809288-a7a8-11f1-a0a1-b10c238cf9ec/0/ORIGINE_M_6a998c50e8f60.jpeg",
@@ -2486,8 +2301,8 @@ const EVENTS = [
     "endDate": "2026-09-11",
     "dateText": "Vendredi 11 septembre 2026",
     "schedule": "de 19h à 20h",
-    "place": "",
-    "city": "",
+    "place": "13,",
+    "city": "Nancy",
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e8a2d34e-a7a8-11f1-a983-390636459d1c/0/ORIGINE_M_6a998cbc85f25.jpeg",
@@ -2495,9 +2310,9 @@ const EVENTS = [
     "addedAt": "2026-09-04"
   },
   {
-    "uuid": "po-c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
-    "title": "Catherine Meurisse et son invité",
-    "category": "conference",
+    "uuid": "icn-1156",
+    "title": "LIVRE SUR LA PLACE : NANCY AU CŒUR DE LA RENTRÉE LITTÉRAIRE",
+    "category": "festival",
     "subcats": [
       "Conférence - Rencontre",
       "Livre / lecture",
@@ -2509,16 +2324,16 @@ const EVENTS = [
     ],
     "date": "2026-09-11",
     "endDate": "2026-09-13",
-    "dateText": "Samedi 12 septembre 2026",
-    "schedule": "16h",
-    "place": "Salle Poirel",
+    "dateText": "Du 11 au 12 septembre 2026",
+    "schedule": "09:00",
+    "place": "Nancy, France",
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c/0/1-1_M_6a75e440814a8.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
-    "source": "poirel",
-    "addedAt": "2026-08-24"
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_lsp.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1156-livre-sur-la-place-nancy-au-coeur-de-la-rentree-litteraire/2026-09-11-09-00.html",
+    "source": "ici-c-nancy",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "fef3edc6-5589-11f0-868e-412b9673e11c",
@@ -2867,6 +2682,27 @@ const EVENTS = [
     "addedAt": "2026-08-13"
   },
   {
+    "uuid": "748428c8-a86b-11f1-b61a-e9713a52a002",
+    "title": "« Je Sais » ... qu'on va danser ! avec Ben Unzip et Corrine",
+    "category": "musiques-actuelles",
+    "subcats": [
+      "Danse",
+      "Spectacle",
+      "Concert"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "de 21h à 00h",
+    "place": "Goethe-Institut",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/748428c8-a86b-11f1-b61a-e9713a52a002/0/ORIGINE_M_6a9ad321935c6.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=748428c8-a86b-11f1-b61a-e9713a52a002",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "5a2d205c-32d9-11ee-b26b-07c04d2871b3",
     "title": "Repair Café du quartier 3B à Nancy",
     "category": "activite",
@@ -3012,24 +2848,6 @@ const EVENTS = [
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-20"
-  },
-  {
-    "uuid": "vdv-28960",
-    "title": "Grande braderie sportive",
-    "category": "jeune-public",
-    "subcats": [],
-    "date": "2026-09-12",
-    "endDate": "2026-09-12",
-    "dateText": "",
-    "schedule": "De 10h à 16h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
-    "source": "vandoeuvre",
-    "addedAt": "2026-07-11"
   },
   {
     "uuid": "vln-590",
@@ -3265,6 +3083,24 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/course-la-bonnet-dale/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
+  },
+  {
+    "uuid": "dn-26108",
+    "title": "Spectacle - Concert pour le Liban",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-09-13",
+    "endDate": "2026-09-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "37 BIS",
+    "city": "Saint-Max",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020214/28aa05d31c0f90df-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-concert-pour-le-liban/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "vln-299",
@@ -3832,8 +3668,8 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "icn-1149",
-    "title": "NANCY : ÉTAPE DU BIOTOUR 2026",
+    "uuid": "2e2db7ae-949d-11f1-b634-d5d61e6d3c02",
+    "title": "Le BioTour fait étape à Nancy",
     "category": "activite",
     "subcats": [
       "Atelier / jeux",
@@ -3842,16 +3678,15 @@ const EVENTS = [
     ],
     "date": "2026-09-18",
     "endDate": "2026-09-19",
-    "dateText": "Du 18 au 19 septembre 2026",
-    "schedule": "08:30",
-    "place": "Parc de laPépinière",
+    "dateText": "Les 18 et 19 Septembre 2026",
+    "schedule": "de 16h30 à 18h30",
+    "place": "",
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_biotour-nancy.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1149-nancy-etape-du-biotour-2026/2026-09-18-08-30.html",
-    "source": "ici-c-nancy",
-    "addedAt": "2026-09-03"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2e2db7ae-949d-11f1-b634-d5d61e6d3c02/0/1-1_M_6a7998c7a66dd.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2e2db7ae-949d-11f1-b634-d5d61e6d3c02",
+    "addedAt": "2026-08-10"
   },
   {
     "uuid": "f45bc636-a05b-11f1-aa1c-df934a30d642",
@@ -6415,6 +6250,27 @@ const EVENTS = [
     "addedAt": "2026-09-01"
   },
   {
+    "uuid": "65adf77e-a86c-11f1-b3d9-3da9b144a2f8",
+    "title": "Élections régionales en Allemagne : simple scrutin ou tournant politique ?",
+    "category": "citoyennete",
+    "subcats": [
+      "Conférence - Rencontre",
+      "Citoyenneté",
+      "Débat"
+    ],
+    "date": "2026-09-21",
+    "endDate": "2026-09-21",
+    "dateText": "Lundi 21 septembre 2026",
+    "schedule": "de 20h15 à 22h",
+    "place": "Goethe-Institut",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/65adf77e-a86c-11f1-b3d9-3da9b144a2f8/0/ORIGINE_M_6a9ad4b6323f3.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=65adf77e-a86c-11f1-b3d9-3da9b144a2f8",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "fb-1307986614483334",
     "title": "Formation à la Conduite des Poids Lourds",
     "category": "autre",
@@ -6722,6 +6578,27 @@ const EVENTS = [
     "addedAt": "2026-07-21"
   },
   {
+    "uuid": "2bfcce9c-a86c-11f1-958e-7d7f83495115",
+    "title": "Écoutez ! On a toutes et tous des accents",
+    "category": "conference",
+    "subcats": [
+      "Citoyenneté",
+      "Cinéma / projection",
+      "Débat"
+    ],
+    "date": "2026-09-24",
+    "endDate": "2026-09-24",
+    "dateText": "Jeudi 24 septembre 2026",
+    "schedule": "de 18h à 20h",
+    "place": "Goethe-Institut",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2bfcce9c-a86c-11f1-958e-7d7f83495115/0/ORIGINE_M_6a9ad455663bf.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2bfcce9c-a86c-11f1-958e-7d7f83495115",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "2d426d9e-b05c-11ee-9a01-db475e605a50",
     "title": "Repair Café Nancy Les Abeilles",
     "category": "activite",
@@ -6896,6 +6773,24 @@ const EVENTS = [
     "addedAt": "2026-09-02"
   },
   {
+    "uuid": "dn-20531",
+    "title": "Visite Guidée - Art Nouveau autour de Nancy Thermal",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-09-25",
+    "endDate": "2026-09-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "38",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737013846/531a8f8f6d7a35ea-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-art-nouveau-autour-de-nancy-thermal/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-08"
+  },
+  {
     "uuid": "dn-24627",
     "title": "Théâtre - Eclats de verres",
     "category": "spectacle",
@@ -6973,6 +6868,28 @@ const EVENTS = [
     "rsvp": "",
     "online": false,
     "addedAt": "2026-08-17"
+  },
+  {
+    "uuid": "c6d91432-a864-11f1-85b1-eb2a007de3a2",
+    "title": "Blühen",
+    "category": "activite",
+    "subcats": [
+      "Conférence - Rencontre",
+      "Cinéma / projection",
+      "La nature dans la ville",
+      "Débat"
+    ],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "Samedi 26 septembre 2026",
+    "schedule": "de 15h à 22h",
+    "place": "Goethe-Institut",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c6d91432-a864-11f1-85b1-eb2a007de3a2/0/ORIGINE_M_6a9ac7ed3df50.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c6d91432-a864-11f1-85b1-eb2a007de3a2",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "cx-celibataire-mais-je-me-soigne",
@@ -7487,6 +7404,28 @@ const EVENTS = [
     "addedAt": "2026-08-29"
   },
   {
+    "uuid": "face5bb2-a85a-11f1-9ad0-5382d7652368",
+    "title": "Le rendez-vous de la mode écoresponsable",
+    "category": "activite",
+    "subcats": [
+      "Conférence - Rencontre",
+      "Artisanat",
+      "Activité - Animation",
+      "Exposition"
+    ],
+    "date": "2026-09-27",
+    "endDate": "2026-09-27",
+    "dateText": "Dimanche 27 septembre 2026",
+    "schedule": "de 14h à 17h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/face5bb2-a85a-11f1-9ad0-5382d7652368/0/ORIGINE_M_6a9ab77d6e15b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=face5bb2-a85a-11f1-9ad0-5382d7652368",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "1cb10b1e-97ba-11f1-9255-75bb91b9049a",
     "title": "Plantes en scène",
     "category": "conference",
@@ -7604,6 +7543,24 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/brocante-vide-greniers-dautomne/",
     "source": "destination-nancy",
     "addedAt": "2026-09-02"
+  },
+  {
+    "uuid": "dn-26109",
+    "title": "Exposition -Défilé - Rendez-vous de la mode éco-résponsable",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-09-27",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "64",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020216/661c86b94594337f-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-defile-rendez-vous-de-la-mode-eco-responsable/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "fb-1194836715855064",
@@ -8311,6 +8268,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "81064b58-a87a-11f1-91d6-f9311f512849",
+    "title": "Chefs-d'œuvre de l'École de Nancy",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2027-03-28",
+    "dateText": "Tous les samedis et dimanches de 11h à 12h",
+    "schedule": "de 11h à 12h",
+    "place": "Musée de l'École de Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/81064b58-a87a-11f1-91d6-f9311f512849/0/1-1_M_6a9aece280370.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=81064b58-a87a-11f1-91d6-f9311f512849",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "dn-24596",
     "title": "Visite Guidée - Centre Historique - Stadtführung auf Deutsch vom historischen Zentrum",
     "category": "activite",
@@ -9012,6 +8988,27 @@ const EVENTS = [
     "addedAt": "2026-09-04"
   },
   {
+    "uuid": "df0a075c-a83f-11f1-987e-0ff991e62873",
+    "title": "Bastelstunde",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier / jeux",
+      "Activité - Animation",
+      "Jeune public"
+    ],
+    "date": "2026-10-07",
+    "endDate": "2026-10-07",
+    "dateText": "Mercredi 7 octobre 2026",
+    "schedule": "de 16h à 17h",
+    "place": "Goethe-Institut",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/df0a075c-a83f-11f1-987e-0ff991e62873/0/ORIGINE_M_6a9a8a0273618.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=df0a075c-a83f-11f1-987e-0ff991e62873",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "d8765a42-a76f-11f1-b6fe-51b99e278cf7",
     "title": "Ciné-contes : Princes et princesses",
     "category": "activite",
@@ -9480,24 +9477,6 @@ const EVENTS = [
     "addedAt": "2026-07-31"
   },
   {
-    "uuid": "icn-1120",
-    "title": "MATCH NANCY - GUINGAMP (LIGUE 2 - 8ÈME JOURNÉE)",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "20:00",
-    "place": "Tomblaine, France",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1120-match-nancy-guingamp-ligue-2-8eme-journee/2026-10-09-20-00.html",
-    "source": "ici-c-nancy",
-    "addedAt": "2026-07-27"
-  },
-  {
     "uuid": "lcn-moulage-de-protecteurs-auditifs",
     "title": "Moulage de protecteurs auditifs",
     "category": "activite",
@@ -9902,6 +9881,24 @@ const EVENTS = [
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "vdv-29297",
+    "title": "Journée d’accueil des nouveaux Vandopériens",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "9h",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "fb-2210662176416470",
@@ -10479,6 +10476,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "9094818c-a863-11f1-a5a3-5f7d00fdf06c",
+    "title": "Table mash up",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-14",
+    "endDate": "2026-10-14",
+    "dateText": "Mercredi 14 octobre 2026",
+    "schedule": "à 15h, 15h30, 16h et 16h30",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9094818c-a863-11f1-a5a3-5f7d00fdf06c/0/1-1_M_6a9ac5fd34694.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9094818c-a863-11f1-a5a3-5f7d00fdf06c",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "d5a4b8e8-a79e-11f1-b14e-59a5125fb1ca",
     "title": "Tous différents, tous joueurs",
     "category": "jeune-public",
@@ -10575,6 +10591,26 @@ const EVENTS = [
     "rsvp": "",
     "online": false,
     "addedAt": "2026-07-18"
+  },
+  {
+    "uuid": "0cd75798-a840-11f1-91d1-05340a097952",
+    "title": "Apéro Contes – Atelier Contes en chantier",
+    "category": "spectacle",
+    "subcats": [
+      "Spectacle",
+      "Culture"
+    ],
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "dateText": "Jeudi 15 octobre 2026",
+    "schedule": "de 19h à 21h",
+    "place": "Le Lem",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0cd75798-a840-11f1-91d1-05340a097952/0/ORIGINE_M_6a9a8a4f4ceb1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0cd75798-a840-11f1-91d1-05340a097952",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "b09cab38-5ff4-11f1-9de1-b147d577542e",
@@ -10836,6 +10872,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "549c0dda-a840-11f1-8c41-374614606782",
+    "title": "Cirque Arlette Gruss - Essentiel",
+    "category": "spectacle",
+    "subcats": [
+      "Cirque"
+    ],
+    "date": "2026-10-16",
+    "endDate": "2026-11-01",
+    "dateText": "Du 16 octobre au 1er novembre 2026",
+    "schedule": "19h30",
+    "place": "",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/549c0dda-a840-11f1-8c41-374614606782/0/ORIGINE_M_6a9a8ac7ad131.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=549c0dda-a840-11f1-8c41-374614606782",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "dn-25224",
     "title": "Festival - Michtô XX",
     "category": "festival",
@@ -10973,6 +11028,25 @@ const EVENTS = [
     "addedAt": "2026-08-17"
   },
   {
+    "uuid": "dd8a723a-a863-11f1-8bc7-6d7ed348c005",
+    "title": "La rivière du doute",
+    "category": "conference",
+    "subcats": [
+      "Conférence"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "Samedi 17 octobre 2026",
+    "schedule": "à 15h",
+    "place": "Médiathèque Manufacture",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dd8a723a-a863-11f1-8bc7-6d7ed348c005/0/1-1_M_6a9ac6d740a0f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dd8a723a-a863-11f1-8bc7-6d7ed348c005",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "4c1bb636-5fef-11f1-8a97-1775f6a02b92",
     "title": "NJP 2026 : Caravan Palace, Youngblood Brass Band, Daoud",
     "category": "musiques-actuelles",
@@ -11031,6 +11105,63 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e0965ac6-5ff6-11f1-ac71-bbfa2eec290f/0/ORIGINE_M_6a2143c8122a3.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e0965ac6-5ff6-11f1-ac71-bbfa2eec290f",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "008f1d50-a867-11f1-a97c-9f2199e16e8d",
+    "title": "Tournoi des clics et des pions",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "Samedi 17 octobre 2026",
+    "schedule": "à 14h",
+    "place": "Ludothèque Saint-Nicolas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/008f1d50-a867-11f1-a97c-9f2199e16e8d/0/1-1_M_6a9acbc66610e.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=008f1d50-a867-11f1-a97c-9f2199e16e8d",
+    "addedAt": "2026-09-05"
+  },
+  {
+    "uuid": "8891ed52-a864-11f1-9462-bdb7e0ca3e7a",
+    "title": "Michel Ocelot à l'honneur",
+    "category": "festival",
+    "subcats": [
+      "Projection"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-27",
+    "dateText": "Samedi 17 et mardi 27 octobre 2026",
+    "schedule": "à 15h",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8891ed52-a864-11f1-9462-bdb7e0ca3e7a/0/1-1_M_6a9ac91aee85d.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=8891ed52-a864-11f1-9462-bdb7e0ca3e7a",
+    "addedAt": "2026-09-05"
+  },
+  {
+    "uuid": "7633e1c2-a866-11f1-a1f9-8bfbb7bc208f",
+    "title": "Atelier du patrimoine",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-28",
+    "dateText": "Samedi 17, mercredi 21 et mercredi 28 octobre 2026 à 10h",
+    "schedule": "à 10h",
+    "place": "Bibliothèque Stanislas",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7633e1c2-a866-11f1-a1f9-8bfbb7bc208f/0/1-1_M_6a9acae7ba18f.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7633e1c2-a866-11f1-a1f9-8bfbb7bc208f",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "dn-20536",
@@ -11298,6 +11429,24 @@ const EVENTS = [
     "addedAt": "2026-08-17"
   },
   {
+    "uuid": "dn-26110",
+    "title": "Atelier d’arts plastiques - Sorcière - Nancy",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-10-19",
+    "endDate": "2026-10-23",
+    "dateText": "Du 19 au 23 octobre 2026",
+    "schedule": "",
+    "place": "13,",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020209/00b251cb8d2d3aa9-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/atelier-darts-plastiques-sorciere-nancy/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "essey-bourse-aux-vetements-automnehiver",
     "title": "Bourse aux vêtements automne/hiver",
     "category": "activite",
@@ -11316,6 +11465,44 @@ const EVENTS = [
     "url": "https://www.esseylesnancy.fr/agenda/bourse-aux-vetements-automnehiver",
     "source": "essey",
     "addedAt": "2026-08-22"
+  },
+  {
+    "uuid": "3f57402a-a868-11f1-9639-6bbbd8dd1ceb",
+    "title": "L'univers de Batobus",
+    "category": "jeune-public",
+    "subcats": [
+      "Conférence"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "dateText": "Mardi 20 octobre 2026",
+    "schedule": "à 14h30",
+    "place": "Médiathèque Saint-Pierre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3f57402a-a868-11f1-9639-6bbbd8dd1ceb/0/1-1_M_6a9ace6a33c4a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3f57402a-a868-11f1-9639-6bbbd8dd1ceb",
+    "addedAt": "2026-09-05"
+  },
+  {
+    "uuid": "e8b7b884-a868-11f1-a6b8-158759df604c",
+    "title": "À toi Fatwa",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-23",
+    "dateText": "Mardi 20, mercredi 21, jeudi 22 et vendredi 23 à 15h",
+    "schedule": "à 15h",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e8b7b884-a868-11f1-a6b8-158759df604c/0/1-1_M_6a9acf623ed1a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=e8b7b884-a868-11f1-a6b8-158759df604c",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "74ee2d00-fd8f-11ef-9ef2-415a12b34506",
@@ -11533,6 +11720,25 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "0f4f4434-a86a-11f1-b2f2-afae68300d05",
+    "title": "Escape the Dark Castle",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "dateText": "Jeudi 22 octobre 2026",
+    "schedule": "à 14h",
+    "place": "Médiathèque Manufacture",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/0f4f4434-a86a-11f1-b2f2-afae68300d05/0/1-1_M_6a9ad0e0ed862.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=0f4f4434-a86a-11f1-b2f2-afae68300d05",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "lcn-guy2bezbar",
     "title": "Guy2Bezbar",
     "category": "musiques-actuelles",
@@ -11695,6 +11901,25 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3bfe0456-ae61-11f0-a5d9-6768d717aefd/0/ORIGINE_M_68f753cd42c57.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3bfe0456-ae61-11f0-a5d9-6768d717aefd",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "7e6f36b2-a86a-11f1-bf85-e17a33fd6f9c",
+    "title": "P'tites z'histoires de peurs",
+    "category": "jeune-public",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "dateText": "Samedi 24 octobre 2026",
+    "schedule": "à 16h30",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7e6f36b2-a86a-11f1-bf85-e17a33fd6f9c/0/1-1_M_6a9ad1b2720a0.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7e6f36b2-a86a-11f1-bf85-e17a33fd6f9c",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "d41d0a1a-a777-11f1-888b-d7eefb9ce315",
@@ -11949,6 +12174,25 @@ const EVENTS = [
     "addedAt": "2026-07-21"
   },
   {
+    "uuid": "c23127c4-a86b-11f1-a367-e1183b2e7d30",
+    "title": "Sirop Philo",
+    "category": "jeune-public",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-28",
+    "endDate": "2026-10-28",
+    "dateText": "Mercredi 28 octobre 2026",
+    "schedule": "à 16h",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c23127c4-a86b-11f1-a367-e1183b2e7d30/0/1-1_M_6a9ad42078802.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c23127c4-a86b-11f1-a367-e1183b2e7d30",
+    "addedAt": "2026-09-05"
+  },
+  {
     "uuid": "dn-25082",
     "title": "Visite en famille - Partez à la découverte du théâtre!",
     "category": "activite",
@@ -12044,6 +12288,25 @@ const EVENTS = [
     "rsvp": "",
     "online": false,
     "addedAt": "2026-08-17"
+  },
+  {
+    "uuid": "4af4479e-a86c-11f1-a0b0-f988fe0beacb",
+    "title": "Atelier du patrimoine",
+    "category": "jeune-public",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "dateText": "Jeudi 29 octobre 2026",
+    "schedule": "à 15h",
+    "place": "Médiathèque Haut-du-Lièvre",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4af4479e-a86c-11f1-a0b0-f988fe0beacb/0/1-1_M_6a9ad4ad334b1.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=4af4479e-a86c-11f1-a0b0-f988fe0beacb",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "fb-1212683817530249",
@@ -12267,6 +12530,44 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/56a70f60-da8e-11f0-af97-71111171b359/0/ORIGINE_M_6960da36839fc.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=56a70f60-da8e-11f0-af97-71111171b359",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "de0ee646-a86d-11f1-9585-4be116643ba3",
+    "title": "Même pas peur !",
+    "category": "jeune-public",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "dateText": "Samedi 31 octobre 2026",
+    "schedule": "de 15h à 17h30",
+    "place": "Médiathèque Manufacture",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/de0ee646-a86d-11f1-9585-4be116643ba3/0/1-1_M_6a9ad98e14d4a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=de0ee646-a86d-11f1-9585-4be116643ba3",
+    "addedAt": "2026-09-05"
+  },
+  {
+    "uuid": "9ea03092-a86c-11f1-9ba1-9750c662502c",
+    "title": "Promenade littéraire",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "dateText": "Samedi 31 octobre 2026",
+    "schedule": "à 10h30",
+    "place": "Musée des Beaux-Arts",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9ea03092-a86c-11f1-9ba1-9750c662502c/0/1-1_M_6a9ad6b3d8579.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9ea03092-a86c-11f1-9ba1-9750c662502c",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "dn-25028",
@@ -13770,6 +14071,28 @@ const EVENTS = [
     "url": "https://lautrecanalnancy.fr/agenda/wallace-cleaver-0",
     "source": "autre-canal",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "7f4da29e-a85b-11f1-832b-8579ae11eefc",
+    "title": "Sortie de résidence : Le voyage d'Alphonse - Cie En Verre et contre Tout",
+    "category": "jeune-public",
+    "subcats": [
+      "Spectacle",
+      "Théâtre",
+      "Culture",
+      "Jeune public"
+    ],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "Vendredi 20 novembre 2026",
+    "schedule": "de 18h30 à 20h30",
+    "place": "Le Lem",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7f4da29e-a85b-11f1-832b-8579ae11eefc/0/ORIGINE_M_6a9ab85bbb51c.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=7f4da29e-a85b-11f1-832b-8579ae11eefc",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "dn-24648",
@@ -17352,6 +17675,27 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/aacdeffe-7ba2-11f1-80bd-8326ecb9d3f8/0/ORIGINE_M_6a4fb068a9c14.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=aacdeffe-7ba2-11f1-80bd-8326ecb9d3f8",
     "addedAt": "2026-07-10"
+  },
+  {
+    "uuid": "lcn-jeanne",
+    "title": "Jeanne",
+    "category": "musiques-actuelles",
+    "subcats": [
+      "Concert",
+      "Chanson"
+    ],
+    "date": "2027-03-24",
+    "endDate": "2027-03-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jeanne_1080x1350.png?itok=Lf5Tf2IX",
+    "url": "https://lautrecanalnancy.fr/agenda/jeanne",
+    "source": "autre-canal",
+    "addedAt": "2026-09-05"
   },
   {
     "uuid": "34da8e56-843f-11f1-a2f4-91b239180977",

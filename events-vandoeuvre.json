@@ -1044,7 +1044,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-04",
+    "date": "2026-09-05",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1135,25 +1135,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-28960",
-    "title": "Grande braderie sportive",
-    "category": "famille",
-    "catLabel": "Famille",
-    "catEmoji": "👨‍👩‍👧",
-    "subcats": [],
-    "date": "2026-09-12",
-    "endDate": "2026-09-12",
-    "dateText": "",
-    "schedule": "De 10h à 16h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/grande-braderie-sportive/",
     "source": "vandoeuvre"
   },
   {
@@ -1470,6 +1451,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29297",
+    "title": "Journée d’accueil des nouveaux Vandopériens",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "9h",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre"
   },
   {
