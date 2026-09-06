@@ -247,25 +247,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-ceremonie-d-accueil-des-nouveaux-laxoviens",
-    "title": "Cérémonie d'accueil des nouveaux laxoviens",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/216/1200_630_7_accueil-des-nouveaux.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/ceremonie-d-accueil-des-nouveaux-laxoviens_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-le-village-du-livre",
     "title": "Le village du Livre",
     "category": "autre",

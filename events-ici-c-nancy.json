@@ -1,5 +1,24 @@
 [
   {
+    "uuid": "icn-1157",
+    "title": "MARCHE JAUNE À NANCY",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-09-06",
+    "endDate": "2026-09-06",
+    "dateText": "",
+    "schedule": "10:00",
+    "place": "Nancy, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_marche-jaune.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1157-marche-jaune-a-nancy/2026-09-06-10-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1150",
     "title": "JOURNÉE DE QUARTIER EST : LE MAIRE DE NANCY ET SON ÉQUIPE À LA RENCONTRE DES NANCÉIENNES ET NANCÉIENS",
     "category": "autre",

@@ -1,49 +1,5 @@
 [
   {
-    "uuid": "lcn-fair-priced-vintage",
-    "title": "Fair Priced Vintage",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Grande Halle"
-    ],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fairpricedvintage-zwolle-visual_storiess-163-2048x1638.jpg?itok=LMEx7dzb",
-    "url": "https://lautrecanalnancy.fr/agenda/fair-priced-vintage",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-burning-void-iii-friperie-designers-dj-sets",
-    "title": "Burning the Void III",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Petite Halle"
-    ],
-    "date": "2026-09-05",
-    "endDate": "2026-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/btv_iii_lac.jpg.jpeg?itok=6ox7K7XG",
-    "url": "https://lautrecanalnancy.fr/agenda/burning-void-iii-friperie-designers-dj-sets",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-19",
     "title": "Marché bio et local",
     "category": "activite",
@@ -2664,6 +2620,50 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-fair-priced-vintage",
+    "title": "Fair Priced Vintage",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Grande Halle"
+    ],
+    "date": "2027-09-05",
+    "endDate": "2027-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fairpricedvintage-zwolle-visual_storiess-163-2048x1638.jpg?itok=LMEx7dzb",
+    "url": "https://lautrecanalnancy.fr/agenda/fair-priced-vintage",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-burning-void-iii-friperie-designers-dj-sets",
+    "title": "Burning the Void III",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Petite Halle"
+    ],
+    "date": "2027-09-05",
+    "endDate": "2027-09-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/btv_iii_lac.jpg.jpeg?itok=6ox7K7XG",
+    "url": "https://lautrecanalnancy.fr/agenda/burning-void-iii-friperie-designers-dj-sets",
     "source": "autre-canal"
   }
 ]
