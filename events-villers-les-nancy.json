@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "vln-277",
-    "title": "69e Fête des vendanges",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-589",
     "title": "Exposition ▪ Hommage à Philippe Mitre",
     "category": "exposition",

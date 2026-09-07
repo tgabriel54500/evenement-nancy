@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-09-06 — 944 événements à venir.
+// Généré le : 2026-09-07 — 938 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -47,85 +47,9 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-09-06";
+const GENERATED_AT = "2026-09-07";
 
 const EVENTS = [
-  {
-    "uuid": "dab67e24-35c9-11ee-a790-db67e4a732b1",
-    "title": "Rencontrez les ambassadeurs de la prévention et du tri",
-    "category": "activite",
-    "subcats": [
-      "Activité - Animation"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-25",
-    "dateText": "Septembre 2026",
-    "schedule": "9h-17h - Jeux (escape game \"Mission SR-OD\" et tri en réalité augmentée) à l'unité de valorisation énergétique Val'ERgie à Ludres, dans le cadre des Journées Européennes du Patrimoine",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dab67e24-35c9-11ee-a790-db67e4a732b1/0/16-9_M_64e36f05ef16a.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dab67e24-35c9-11ee-a790-db67e4a732b1",
-    "addedAt": "2026-09-03"
-  },
-  {
-    "uuid": "a1571aac-873e-11f1-8333-abf90f8b9c57",
-    "title": "SOUFFLES",
-    "category": "exposition",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-10-16",
-    "dateText": "Du 4 septembre au 16 octobre 2026",
-    "schedule": "de 08h à 19h",
-    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a1571aac-873e-11f1-8333-abf90f8b9c57/0/ORIGINE_M_6a632a8912881.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a1571aac-873e-11f1-8333-abf90f8b9c57",
-    "addedAt": "2026-07-27"
-  },
-  {
-    "uuid": "73412658-a05c-11f1-9777-cf9ba6d1ff3e",
-    "title": "Fair Priced Vintage NANCY",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Samedi 5 septembre 2026",
-    "schedule": "de 11h à 18h",
-    "place": "L'Octroi - Nancy",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/73412658-a05c-11f1-9777-cf9ba6d1ff3e/0/ORIGINE_M_6a8d4dfbb45f1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=73412658-a05c-11f1-9777-cf9ba6d1ff3e",
-    "addedAt": "2026-08-26"
-  },
-  {
-    "uuid": "1ffb5856-9251-11f1-87fa-91e34433167f",
-    "title": "Pépinière en vert",
-    "category": "festival",
-    "subcats": [
-      "Evénement"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Les 5 & 6 septembre",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1ffb5856-9251-11f1-87fa-91e34433167f/0/1-1_M_6a75be3f58570.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1ffb5856-9251-11f1-87fa-91e34433167f",
-    "addedAt": "2026-08-07"
-  },
   {
     "uuid": "7e66e8dc-3258-11f1-a4db-ff95faab30af",
     "title": "Découvrir l'escalade en salle",
@@ -133,7 +57,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-12",
     "dateText": "Les samedis 5 et 12 septembre 2026",
     "schedule": "de 9h à 13h",
@@ -152,12 +76,12 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-11-04",
     "dateText": "Septembre-Novembre 2026",
-    "schedule": "10h-19h - Stand d'information à \"Pépinière en Vert\" au Parc de la Pépinière à Nancy",
+    "schedule": "18h00 - Formation au lombricompostage (sur inscription) à la MHDD",
     "place": "",
-    "city": "",
+    "city": "Territoire du Grand Nancy",
     "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5f8d3324-2c5e-11ee-a170-c3a633e88f40/0/16-9_M_64e36d8b912bf.jpeg",
@@ -171,7 +95,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -184,89 +108,13 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "6c2b7732-4234-11f1-ae4d-29d3dcc1907e",
-    "title": "Brocante et Fête de Quartier",
-    "category": "activite",
-    "subcats": [
-      "Brocante / marché"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Dimanche 6 septembre 2026",
-    "schedule": "de 08h à 18h",
-    "place": "",
-    "city": "",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6c2b7732-4234-11f1-ae4d-29d3dcc1907e/0/ORIGINE_M_69ef5622a6423.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=6c2b7732-4234-11f1-ae4d-29d3dcc1907e",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "fa6496d6-c530-11f0-94d0-2b2524f80895",
-    "title": "Les petites histoires de science",
-    "category": "activite",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Dimanche 06 septembre 2026 - 15h",
-    "schedule": "15h",
-    "place": "Le Féru des sciences",
-    "city": "Jarville-la-Malgrange",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa6496d6-c530-11f0-94d0-2b2524f80895/0/1-1_M_691d9beaa1ba0.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa6496d6-c530-11f0-94d0-2b2524f80895",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "d222a074-2496-11ee-8a55-6f97829f9b89",
-    "title": "Les rendez-vous sciences",
-    "category": "jeune-public",
-    "subcats": [
-      "Atelier"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Dimanche 06 septembre 2026 - 14h15",
-    "schedule": "14h15",
-    "place": "Le Féru des sciences",
-    "city": "Jarville-la-Malgrange",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d222a074-2496-11ee-8a55-6f97829f9b89/0/1-1_M_64b5290953329.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d222a074-2496-11ee-8a55-6f97829f9b89",
-    "addedAt": "2026-05-24"
-  },
-  {
-    "uuid": "54532f96-58e2-11f1-a49a-65a254c53742",
-    "title": "Max Kohn présente son livre \"Le yiddish, l'inconscient, les langues\"",
-    "category": "conference",
-    "subcats": [
-      "Conférence - Rencontre"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Dimanche 6 septembre 2026",
-    "schedule": "de 15h à 17h",
-    "place": "Association culturelle juive",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/54532f96-58e2-11f1-a49a-65a254c53742/0/ORIGINE_M_6a1562d4a5ccc.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=54532f96-58e2-11f1-a49a-65a254c53742",
-    "addedAt": "2026-05-24"
-  },
-  {
     "uuid": "a0bbdf14-21dc-11f1-9d24-c9865b070fb2",
     "title": "Les Essentiels",
     "category": "activite",
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-03-07",
     "dateText": "Chaque premier dimanche du mois (sauf novembre)",
     "schedule": "de 11h à 12h",
@@ -285,7 +133,7 @@ const EVENTS = [
     "subcats": [
       "Evénement"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-08-01",
     "dateText": "Tous les premiers dimanches du mois",
     "schedule": "",
@@ -304,7 +152,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-12",
     "dateText": "Du mardi au vendredi 13h>19h juin et septembre / 13h>18h juillet-août / Samedi 9h>18h",
     "schedule": "13h>19h juin et septembre / 13h>18h juillet-août",
@@ -326,7 +174,7 @@ const EVENTS = [
       "Numérique",
       "Evénement"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-13",
     "dateText": "À 22h, du 1er août au 13 septembre 2026",
     "schedule": "22h",
@@ -345,7 +193,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-13",
     "dateText": "Dimanche 26 avril, 31 mai, 28 juin et 13 septembre, et vendredi 17 et 31 juillet et 14 et 28 août",
     "schedule": "10h30 - 11h30",
@@ -364,7 +212,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-16",
     "dateText": "Les 29 août, 12 & 16 septembre",
     "schedule": "à 14h00",
@@ -377,6 +225,25 @@ const EVENTS = [
     "addedAt": "2026-07-29"
   },
   {
+    "uuid": "dab67e24-35c9-11ee-a790-db67e4a732b1",
+    "title": "Rencontrez les ambassadeurs de la prévention et du tri",
+    "category": "activite",
+    "subcats": [
+      "Activité - Animation"
+    ],
+    "date": "2026-09-07",
+    "endDate": "2026-09-25",
+    "dateText": "Septembre 2026",
+    "schedule": "9h-17h - Jeux (escape game \"Mission SR-OD\" et tri en réalité augmentée) à l'unité de valorisation énergétique Val'ERgie à Ludres, dans le cadre des Journées Européennes du Patrimoine",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/dab67e24-35c9-11ee-a790-db67e4a732b1/0/16-9_M_64e36f05ef16a.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=dab67e24-35c9-11ee-a790-db67e4a732b1",
+    "addedAt": "2026-09-03"
+  },
+  {
     "uuid": "fc936b6e-f9d7-11ef-b246-0f0fb51191cb",
     "title": "Visite commentée de la maison Prouvé",
     "category": "activite",
@@ -384,7 +251,7 @@ const EVENTS = [
       "Visite guidée",
       "Evénement"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-26",
     "dateText": "Les samedis du 30 mai au 26 septembre 2026",
     "schedule": "à 14h15, 15h15 et 16h15",
@@ -403,7 +270,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-27",
     "dateText": "Le dimanche 27 septembre 2026",
     "schedule": "à 10h30",
@@ -422,7 +289,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-27",
     "dateText": "Dimanches 19 avril, 21 juin et 27 septembre, lundi 6, 20 juillet, 3 et 17 août",
     "schedule": "14h30 - 15h30",
@@ -441,7 +308,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 11h à 12h",
     "schedule": "11h - 12h",
@@ -460,7 +327,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-27",
     "dateText": "Chaque samedi et dimanche de 15h à 16h",
     "schedule": "15h - 16h",
@@ -480,7 +347,7 @@ const EVENTS = [
       "La nature dans la ville",
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-30",
     "dateText": "Du 25 juin au  30 septembre 2026",
     "schedule": "de 06h30 à 22h",
@@ -499,7 +366,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-30",
     "dateText": "Tous les mercredis, sauf pendant les vacances scolaires",
     "schedule": "14h30 - 15h",
@@ -518,7 +385,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-30",
     "dateText": "Tous les samedis",
     "schedule": "14h30 - 15h",
@@ -537,7 +404,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-03",
     "dateText": "à partir du 26 avril",
     "schedule": "de 10h00 à 11h30",
@@ -556,7 +423,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-07",
     "dateText": "Du 7 mai au 7 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -575,7 +442,7 @@ const EVENTS = [
     "subcats": [
       "Brocante / marché"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-09",
     "dateText": "Les deuxièmes vendredis du mois du 8 mai au 9 octobre 2026",
     "schedule": "de 07h30 à 18h",
@@ -595,7 +462,7 @@ const EVENTS = [
       "Citoyenneté",
       "Santé"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-10",
     "dateText": "Les samedis 7 mars, 13 juin et 10 octobre 2026",
     "schedule": "de 9h30 à 11h30",
@@ -616,7 +483,7 @@ const EVENTS = [
       "Activité - Animation",
       "La nature dans la ville"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Du 28 Août au 11 Octobre 2026",
     "schedule": "de 14h30 à 16h30",
@@ -635,7 +502,7 @@ const EVENTS = [
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Vendredi 24 avril",
     "schedule": "de 14h00 à 16h00",
@@ -654,7 +521,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Jeudi 23 avril",
     "schedule": "de 10h00 à 12h00",
@@ -673,7 +540,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Les 22, 23 avril et 11 octobre",
     "schedule": "de 10h00 à 12h00",
@@ -692,7 +559,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -712,7 +579,7 @@ const EVENTS = [
       "Exposition",
       "Conférence - Rencontre"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-11",
     "dateText": "Du 10 avril au 11 octobre",
     "schedule": "de 9h00 à 18h00",
@@ -725,13 +592,32 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "a1571aac-873e-11f1-8333-abf90f8b9c57",
+    "title": "SOUFFLES",
+    "category": "exposition",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-07",
+    "endDate": "2026-10-16",
+    "dateText": "Du 4 septembre au 16 octobre 2026",
+    "schedule": "de 08h à 19h",
+    "place": "Bibliothèque universitaire Lettres, Sciences humaines et sociales",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a1571aac-873e-11f1-8333-abf90f8b9c57/0/ORIGINE_M_6a632a8912881.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a1571aac-873e-11f1-8333-abf90f8b9c57",
+    "addedAt": "2026-07-27"
+  },
+  {
     "uuid": "ea3b6552-6f15-11f1-a567-e129653d08c6",
     "title": "Le renouveau de la gravure sur bois à la fin du 19e et au début du 20e siècle",
     "category": "exposition",
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-18",
     "dateText": "Du 26 juin au 18 octobre 2026",
     "schedule": "10h - 18h",
@@ -751,7 +637,7 @@ const EVENTS = [
       "Exposition",
       "Musiques actuelles"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-21",
     "dateText": "Du 18 août au 21 octobre 2026",
     "schedule": "de 08h à 19h",
@@ -773,7 +659,7 @@ const EVENTS = [
       "Festival",
       "Activité - Animation"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-25",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "",
@@ -792,7 +678,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-30",
     "dateText": "Du 3 avril au 30 octobre 2026",
     "schedule": "à 20h30",
@@ -811,7 +697,7 @@ const EVENTS = [
     "subcats": [
       "Activité - Animation"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-31",
     "dateText": "Du 4 février au 31 octobre 2026",
     "schedule": "à l'Office de tourisme",
@@ -830,7 +716,7 @@ const EVENTS = [
     "subcats": [
       "Atelier"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-11-06",
     "dateText": "à partir du 20 février",
     "schedule": "à 14h30",
@@ -849,7 +735,7 @@ const EVENTS = [
     "subcats": [
       "Théâtre"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-12-04",
     "dateText": "Du 1er septembre au 4 décembre 2026",
     "schedule": "de 09h30 à 12h",
@@ -868,7 +754,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-01-03",
     "dateText": "Du 6 juin 2026 au 3 janvier 2027",
     "schedule": "",
@@ -887,7 +773,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-01-03",
     "dateText": "30 mai 2026 > 03 janvier 2027",
     "schedule": "",
@@ -906,7 +792,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-01-03",
     "dateText": "Du 22 mai 2026 au 3 janvier 2027",
     "schedule": "de 13h30 à 16h45",
@@ -926,7 +812,7 @@ const EVENTS = [
       "Exposition",
       "Visite guidée"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-05-31",
     "dateText": "Jusqu'au 31 mai 2027",
     "schedule": "10h - 18h",
@@ -945,7 +831,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-06-30",
     "dateText": "À partir du 5 juin",
     "schedule": "sur les horaires d'ouverture du parc",
@@ -964,7 +850,7 @@ const EVENTS = [
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-06-30",
     "dateText": "Du 5 juin 2026 au 30 juin 2027",
     "schedule": "sur les horaires d'ouverture des serres",
@@ -987,7 +873,7 @@ const EVENTS = [
       "Culture",
       "Jeune public"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-20",
     "dateText": "Samedi 19 et dimanche 20 septembre de 10h à 18h",
     "schedule": "de 10h à 18h",
@@ -1004,7 +890,7 @@ const EVENTS = [
     "title": "La Bergamote - 30 ans IGP",
     "category": "autre",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1022,7 +908,7 @@ const EVENTS = [
     "title": "En Attendant Pichon - Lancement - Programmation Artistique - Collectif Décembre",
     "category": "autre",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-12-31",
     "dateText": "",
     "schedule": "",
@@ -1040,7 +926,7 @@ const EVENTS = [
     "title": "Estival - Édition 2026",
     "category": "autre",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-13",
     "dateText": "",
     "schedule": "",
@@ -1058,7 +944,7 @@ const EVENTS = [
     "title": "Exposition - Nancy, Art nouveau par nature",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-11-15",
     "dateText": "",
     "schedule": "",
@@ -1076,7 +962,7 @@ const EVENTS = [
     "title": "Exposition - Bac à sable - CERFAV",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-25",
     "dateText": "",
     "schedule": "",
@@ -1094,7 +980,7 @@ const EVENTS = [
     "title": "Exposition - Charles Cartier-Bresson et les Arts - Du collectionneur au dessinateur",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-10-31",
     "dateText": "",
     "schedule": "",
@@ -1112,7 +998,7 @@ const EVENTS = [
     "title": "Visite Guidée - Centre historique - PMR",
     "category": "activite",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-12",
     "dateText": "",
     "schedule": "",
@@ -1130,7 +1016,7 @@ const EVENTS = [
     "title": "Estival 2026 - Festival - Embranchement",
     "category": "autre",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-09",
     "dateText": "",
     "schedule": "",
@@ -1148,7 +1034,7 @@ const EVENTS = [
     "title": "Exposition Permanent Laurence Jenkell à Nancy",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-11-30",
     "dateText": "Du samedi 1 novembre 2025 au lundi 30 novembre 2026",
     "schedule": "",
@@ -1166,7 +1052,7 @@ const EVENTS = [
     "title": "Votre Attention S'il Vous Plaît",
     "category": "exposition",
     "subcats": [],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2026-09-27",
     "dateText": "Du samedi 25 juillet 2026 au dimanche 27 septembre 2026",
     "schedule": "",
@@ -1180,25 +1066,22 @@ const EVENTS = [
     "addedAt": "2026-08-22"
   },
   {
-    "uuid": "cx-portes-ouvertes-mjc-lorraine-1",
-    "title": "PORTES OUVERTES MJC LORRAINE",
+    "uuid": "cx-atelier-d-ecriture-39",
+    "title": "atelier d'ecriture",
     "category": "autre",
-    "subcats": [
-      "Famille",
-      "Jeunes"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Le dimanche 6 septembre 2026",
+    "subcats": [],
+    "date": "2026-09-07",
+    "endDate": "2027-06-21",
+    "dateText": "Du lundi 7 septembre 2026 au lundi 21 juin 2027",
     "schedule": "",
-    "place": "La MJC Lorraine",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": true,
+    "place": "La MJC Desforges",
+    "city": "Nancy",
+    "free": false,
     "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/08/6a9173e46af6a-portes-ouvertes-mjc-lorraine.png",
-    "url": "https://nancy.curieux.net/agenda/evenement/portes-ouvertes-mjc-lorraine-1",
+    "image": "https://www.curieux.net/img/e/2026/09/6a9b0af7b0fe2-atelier-d-ecriture.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/atelier-d-ecriture-39",
     "source": "curieux-net",
-    "addedAt": "2026-08-30"
+    "addedAt": "2026-09-07"
   },
   {
     "uuid": "vdv-5364",
@@ -1207,7 +1090,7 @@ const EVENTS = [
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-06",
+    "date": "2026-09-07",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1221,181 +1104,6 @@ const EVENTS = [
     "addedAt": "2026-08-18"
   },
   {
-    "uuid": "vln-277",
-    "title": "69e Fête des vendanges",
-    "category": "festival",
-    "subcats": [
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
-    "source": "villers-les-nancy",
-    "addedAt": "2026-07-21"
-  },
-  {
-    "uuid": "icn-1157",
-    "title": "MARCHE JAUNE À NANCY",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "10:00",
-    "place": "Nancy, France",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_marche-jaune.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1157-marche-jaune-a-nancy/2026-09-06-10-00.html",
-    "source": "ici-c-nancy",
-    "addedAt": "2026-09-06"
-  },
-  {
-    "uuid": "lac-41912",
-    "title": "Vandoeuvre in Game",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Du 5 au 6 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41912_min.png",
-    "url": "https://www.lorraineaucoeur.com/evt-41912/vandoeuvre-in-game/meurthe-et-moselle-vandoeuvre-les-nancy/foire-salon",
-    "source": "lorraineaucoeur",
-    "addedAt": "2026-09-06"
-  },
-  {
-    "uuid": "lac-41858",
-    "title": "Fête des Vendanges à Villers-lès-Nancy",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "Du 2 au 6 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41858_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41858/fete-des-vendanges-a-villers-les-nancy/meurthe-et-moselle-villers-les-nancy/fete-animation",
-    "source": "lorraineaucoeur",
-    "addedAt": "2026-07-31"
-  },
-  {
-    "uuid": "fb-886487997676228",
-    "title": "Sunday Addicts à PSV - 2026",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "6 sept. à 08:30",
-    "schedule": "8h30",
-    "place": "Village de combat",
-    "city": "Bainville-sur-Madon",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/886487997676228.jpg",
-    "url": "https://www.facebook.com/events/886487997676228/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
-  },
-  {
-    "uuid": "fb-27807068028894748",
-    "title": "Color Nina Run ☀️",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "6 sept. à 09:45",
-    "schedule": "9h45",
-    "place": "Dombasle-Sur-Meurthe",
-    "city": "Dombasle-sur-Meurthe",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/27807068028894748.jpg",
-    "url": "https://www.facebook.com/events/27807068028894748/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
-  },
-  {
-    "uuid": "fb-1407616674511827",
-    "title": "Guingette dans les vignes",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "6 sept. à 12:00",
-    "schedule": "12h",
-    "place": "1 RUE DE LA GARE",
-    "city": "Lucey",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/1407616674511827.jpg",
-    "url": "https://www.facebook.com/events/1407616674511827/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
-  },
-  {
-    "uuid": "fb-2497440697439919",
-    "title": "Stage de danse exceptionnel avec Jonathan JENVRIN et Indira MEHEDI",
-    "category": "spectacle",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "6 sept. à 13:30",
-    "schedule": "13h30",
-    "place": "Blainville-Sur-L'Eau",
-    "city": "Blainville-sur-l'Eau",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/2497440697439919.jpg",
-    "url": "https://www.facebook.com/events/2497440697439919/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
-  },
-  {
-    "uuid": "fb-966863266330697",
-    "title": "VISITE \"REGARD DE COMMISSAIRE\"",
-    "category": "activite",
-    "subcats": [],
-    "date": "2026-09-06",
-    "endDate": "2026-09-06",
-    "dateText": "6 sept. à 16:00",
-    "schedule": "16h",
-    "place": "33 rue Poincaré",
-    "city": "Delme",
-    "free": false,
-    "reservation": false,
-    "image": "images/fb/966863266330697.jpg",
-    "url": "https://www.facebook.com/events/966863266330697/",
-    "source": "facebook",
-    "rsvp": "",
-    "online": false,
-    "addedAt": "2026-08-17"
-  },
-  {
     "uuid": "vln-589",
     "title": "Exposition ▪ Hommage à Philippe Mitre",
     "category": "exposition",
@@ -1404,7 +1112,7 @@ const EVENTS = [
     ],
     "date": "2026-09-07",
     "endDate": "2026-09-18",
-    "dateText": "Du 7 au 18 septembre 2026",
+    "dateText": "",
     "schedule": "",
     "place": "Centre culturel Les Ecraignes",
     "city": "Villers-lès-Nancy",
@@ -1933,7 +1641,7 @@ const EVENTS = [
     ],
     "date": "2026-09-11",
     "endDate": "2026-09-13",
-    "dateText": "Du 11 au 12 septembre 2026",
+    "dateText": "Du 11 au 13 septembre 2026",
     "schedule": "09:00",
     "place": "Nancy, France",
     "city": "Nancy",
@@ -2421,6 +2129,24 @@ const EVENTS = [
     "addedAt": "2026-08-08"
   },
   {
+    "uuid": "dn-25740",
+    "title": "Visite guidée - Bienvenue chez Edouard Salin - Château de Montaigu",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laneuveville Devant Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737018928/e348d3f5d5be7f0e-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-bienvenue-chez-edouard-salin-chateau-de-montaigu/",
+    "source": "destination-nancy",
+    "addedAt": "2026-08-25"
+  },
+  {
     "uuid": "dn-25989",
     "title": "Les Rencontres Littéraires de Villers et Sur les Pas de Coué",
     "category": "autre",
@@ -2821,7 +2547,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-16"
@@ -3209,7 +2935,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-21"
@@ -3313,8 +3039,8 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "2e2db7ae-949d-11f1-b634-d5d61e6d3c02",
-    "title": "Le BioTour fait étape à Nancy",
+    "uuid": "icn-1149",
+    "title": "NANCY : ÉTAPE DU BIOTOUR 2026",
     "category": "activite",
     "subcats": [
       "Atelier / jeux",
@@ -3323,15 +3049,16 @@ const EVENTS = [
     ],
     "date": "2026-09-18",
     "endDate": "2026-09-19",
-    "dateText": "Les 18 et 19 Septembre 2026",
-    "schedule": "de 16h30 à 18h30",
-    "place": "",
+    "dateText": "Du 18 au 19 septembre 2026",
+    "schedule": "08:30",
+    "place": "Parc de laPépinière",
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2e2db7ae-949d-11f1-b634-d5d61e6d3c02/0/1-1_M_6a7998c7a66dd.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2e2db7ae-949d-11f1-b634-d5d61e6d3c02",
-    "addedAt": "2026-08-10"
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_biotour-nancy.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1149-nancy-etape-du-biotour-2026/2026-09-18-08-30.html",
+    "source": "ici-c-nancy",
+    "addedAt": "2026-09-03"
   },
   {
     "uuid": "f45bc636-a05b-11f1-aa1c-df934a30d642",
@@ -4236,6 +3963,26 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2de0ab4c-6317-11f1-8ba7-a1dab1524dcd/0/ORIGINE_M_6a26827722b97.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=2de0ab4c-6317-11f1-8ba7-a1dab1524dcd",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "18f7b1f8-aa98-11f1-9128-0126b6e02342",
+    "title": "JEP 2026 : Visite du palais des Sports Jean-Weille",
+    "category": "activite",
+    "subcats": [
+      "Patrimoine",
+      "Sport"
+    ],
+    "date": "2026-09-19",
+    "endDate": "2026-09-20",
+    "dateText": "Les 19 et 20 septembre 2026",
+    "schedule": "de 14h à 16h",
+    "place": "",
+    "city": "",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/18f7b1f8-aa98-11f1-9128-0126b6e02342/0/ORIGINE_M_6a9e7905ac87b.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=18f7b1f8-aa98-11f1-9128-0126b6e02342",
+    "addedAt": "2026-09-07"
   },
   {
     "uuid": "fea00764-6989-11f1-86e5-29688f533964",
@@ -5311,7 +5058,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-gospel-mississipi/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-25"
@@ -5974,6 +5721,24 @@ const EVENTS = [
     "addedAt": "2026-09-01"
   },
   {
+    "uuid": "cx-bbc-comedy-club-soiree-stand-up-138",
+    "title": "🎙️ BBC COMEDY CLUB 😂 Soirée stand-up 🎙️#138",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-09-22",
+    "endDate": "2026-09-22",
+    "dateText": "Le mardi 22 septembre 2026",
+    "schedule": "",
+    "place": "BBC, Bière, Bordel & Copains",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6a969c92098d3-bbc-comedy-club-soiree-stand-up-138.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/bbc-comedy-club-soiree-stand-up-138",
+    "source": "curieux-net",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "3fdfaeea-9721-11f1-b3ae-3dc4c5e1c72d",
     "title": "Initiation à la MAO",
     "category": "activite",
@@ -6311,7 +6076,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-27"
@@ -6848,6 +6613,24 @@ const EVENTS = [
     "addedAt": "2026-08-24"
   },
   {
+    "uuid": "cx-sereni-teen-salon-bien-etre-dedie-aux-ados",
+    "title": "Séréni'Teen - Salon bien-être dédié aux ados",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "Le samedi 26 septembre 2026",
+    "schedule": "",
+    "place": "Salle Schweitzer - Espace Marie Marvingt",
+    "city": "Ludres",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6a997b108d4bc-sereni-teen-salon-bien-etre-dedie-aux-ados.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/sereni-teen-salon-bien-etre-dedie-aux-ados",
+    "source": "curieux-net",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "vdv-19932",
     "title": "Ateliers philo",
     "category": "autre",
@@ -6880,7 +6663,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-numeriques-initiation-a-canva/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-20"
@@ -7565,7 +7348,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-18"
@@ -8058,6 +7841,24 @@ const EVENTS = [
     "addedAt": "2026-08-12"
   },
   {
+    "uuid": "dn-26115",
+    "title": "Exposition de Bonsaï",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020223/7d7a962af7321b7a-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/exposition-de-bonsai/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "cx-concert-de-boneym",
     "title": "Concert de BoneyM",
     "category": "musiques-actuelles",
@@ -8128,6 +7929,24 @@ const EVENTS = [
     "url": "https://www.vandoeuvre.fr/evenement/brocante-notre-dame-des-nations/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-22"
+  },
+  {
+    "uuid": "vdv-29311",
+    "title": "Focus jeux vidéo",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "De 14h à 17h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-09-07"
   },
   {
     "uuid": "lcn-njp-2026",
@@ -8365,6 +8184,24 @@ const EVENTS = [
     "addedAt": "2026-09-04"
   },
   {
+    "uuid": "dn-26116",
+    "title": "Visite guidée - Les petites histoires de science - Météorite ou le fer extra-terrestre",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Jarville-la-Malgrange",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020220/9f72c7c7f4defde3-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-les-petites-histoires-de-science-meteorite-ou-le-fer-extra-terrestre/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "cx-big-big-train",
     "title": "Big Big Train",
     "category": "musiques-actuelles",
@@ -8586,7 +8423,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-21"
@@ -9576,7 +9413,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre",
     "addedAt": "2026-05-24"
@@ -9594,7 +9431,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-05"
@@ -9815,6 +9652,24 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/ateliers-stages-de-loisirs-atelier-photo/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
+  },
+  {
+    "uuid": "cx-fete-des-vergers-et-des-jardins",
+    "title": "Fete des vergers et des jardins",
+    "category": "citoyennete",
+    "subcats": [],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "Le dimanche 11 octobre 2026",
+    "schedule": "",
+    "place": "espace chardin à Chavigny",
+    "city": "Chavigny",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6a9c04ac6290d-fete-des-vergers-et-des-jardins.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/fete-des-vergers-et-des-jardins",
+    "source": "curieux-net",
+    "addedAt": "2026-09-07"
   },
   {
     "uuid": "essey-yza-chante-piaf-pour-eler",
@@ -10225,7 +10080,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-20"
@@ -11001,7 +10856,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"
@@ -11021,7 +10876,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-28"
@@ -12368,6 +12223,24 @@ const EVENTS = [
     "addedAt": "2026-08-17"
   },
   {
+    "uuid": "dn-26117",
+    "title": "Visite guidée - Les petites histoires de science - Casque, parure ou protection?",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-11-01",
+    "endDate": "2026-11-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Jarville-la-Malgrange",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020221/9f72c7c7f4defde3-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-les-petites-histoires-de-science-casque-parure-ou-protection/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "dn-24647",
     "title": "Spectacle poétique - Tout est bien dans le monde",
     "category": "spectacle",
@@ -12946,7 +12819,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-28"
@@ -13255,7 +13128,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-03"
@@ -13469,7 +13342,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-28"
@@ -13647,7 +13520,7 @@ const EVENTS = [
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/krsh8913___by___blackrish_1.jpg?itok=TZXVTtyM",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/036a6363.jpg?itok=pJVHPoeU",
     "url": "https://lautrecanalnancy.fr/agenda/creation-de-son-identite-narrative-atelier-avec-valerie-bisson",
     "source": "autre-canal",
     "addedAt": "2026-05-24"
@@ -14764,6 +14637,24 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "dn-26118",
+    "title": "Visite guidée - Les petites histoires de science - Forgeron, maréchal-ferrant ou ferronnier d'art?",
+    "category": "activite",
+    "subcats": [],
+    "date": "2026-12-06",
+    "endDate": "2026-12-06",
+    "dateText": "",
+    "schedule": "",
+    "place": "1",
+    "city": "Jarville-la-Malgrange",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020222/9f72c7c7f4defde3-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-les-petites-histoires-de-science-forgeron-marechal-ferrant-ou-ferronnier-dart/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-07"
+  },
+  {
     "uuid": "lcn-transformer-le-negatif-en-positif-cycle-4-de-la-5e-la-terminale",
     "title": "Transformer le Négatif en Positif",
     "category": "jeune-public",
@@ -14934,7 +14825,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-03"
@@ -15031,7 +14922,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"
@@ -15267,6 +15158,24 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-de-contes-animo-zamis/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
+  },
+  {
+    "uuid": "vdv-29313",
+    "title": "Focus jeux vidéo",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-12-19",
+    "endDate": "2026-12-19",
+    "dateText": "",
+    "schedule": "De 14h à 17h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-09-07"
   },
   {
     "uuid": "ce682570-7ad9-11f1-8ce7-23ffcf1867db",
@@ -15806,7 +15715,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/septembre-turquoise.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/psychologie-positive.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-03"
@@ -18270,48 +18179,6 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9e1eaf80-843c-11f1-af34-615c5d1ac5b4/0/ORIGINE_M_6a5e1eab2dc77.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9e1eaf80-843c-11f1-af34-615c5d1ac5b4",
     "addedAt": "2026-07-21"
-  },
-  {
-    "uuid": "lcn-fair-priced-vintage",
-    "title": "Fair Priced Vintage",
-    "category": "activite",
-    "subcats": [
-      "Evénement",
-      "Grande Halle"
-    ],
-    "date": "2027-09-05",
-    "endDate": "2027-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fairpricedvintage-zwolle-visual_storiess-163-2048x1638.jpg?itok=LMEx7dzb",
-    "url": "https://lautrecanalnancy.fr/agenda/fair-priced-vintage",
-    "source": "autre-canal",
-    "addedAt": "2026-08-22"
-  },
-  {
-    "uuid": "lcn-burning-void-iii-friperie-designers-dj-sets",
-    "title": "Burning the Void III",
-    "category": "activite",
-    "subcats": [
-      "Evénement",
-      "Petite Halle"
-    ],
-    "date": "2027-09-05",
-    "endDate": "2027-09-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/btv_iii_lac.jpg.jpeg?itok=6ox7K7XG",
-    "url": "https://lautrecanalnancy.fr/agenda/burning-void-iii-friperie-designers-dj-sets",
-    "source": "autre-canal",
-    "addedAt": "2026-08-28"
   },
   {
     "uuid": "zen-nino-arial",
