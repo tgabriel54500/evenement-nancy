@@ -169,5 +169,24 @@
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41869_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41869/recital-boris-vian-a-pont-a-mousson/meurthe-et-moselle-pont-a-mousson/concert",
     "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42010",
+    "title": "Super Loto à Nancy",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42010_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42010/super-loto-a-nancy/meurthe-et-moselle-nancy/jeu-concours",
+    "source": "lorraineaucoeur"
   }
 ]

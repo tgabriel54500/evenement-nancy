@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-07",
+    "date": "2026-09-08",
     "endDate": "2026-09-18",
     "dateText": "",
     "schedule": "",
@@ -124,6 +124,31 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2025/ee6569e34bb0-Image-illustration-960x1080-5.png",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/journees-europeennes-du-patrimoine-2026",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-569",
+    "title": "Permanences - Avec vous pour vos droits",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Sport"
+    ],
+    "date": "2026-09-21",
+    "endDate": "2026-10-01",
+    "dateText": "",
+    "schedule": "9h à 11h30",
+    "place": "Clairlieu",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
     "source": "villers-les-nancy"
   },
   {
