@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1150",
-    "title": "JOURNÉE DE QUARTIER EST : LE MAIRE DE NANCY ET SON ÉQUIPE À LA RENCONTRE DES NANCÉIENNES ET NANCÉIENS",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-09-08",
-    "endDate": "2026-09-08",
-    "dateText": "",
-    "schedule": "18:30",
-    "place": "L' Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_matieuklein26.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1150-journee-de-quartier-est-le-maire-de-nancy-et-son-equipe-a-la-rencontre-des-nanceiennes-et-nanceiens/2026-09-08-18-30.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1156",
     "title": "LIVRE SUR LA PLACE : NANCY AU CŒUR DE LA RENTRÉE LITTÉRAIRE",
     "category": "festival",
@@ -54,6 +35,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1102-match-nancy-reims-ligue-2-6eme-journee/2026-09-11-20-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1158",
+    "title": "MARBACHE : 2E ÉDITION DU MARBI'MARCHÉ",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "",
+    "schedule": "15:00",
+    "place": "Parc du Château",
+    "city": "Marbache",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_marbache.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1158-marbache-2e-edition-du-marbimarche/2026-09-12-15-00.html",
     "source": "ici-c-nancy"
   },
   {

@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-08",
+    "date": "2026-09-09",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -1190,6 +1190,28 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/54014f18-7ada-11f1-9292-91169a690f08/0/ORIGINE_M_6a4e604baeba8.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=54014f18-7ada-11f1-9292-91169a690f08",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-1b8b3346-ab7d-11f1-8761-75b0bd954a34",
+    "title": "Tom Baldetti",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle",
+      "Humour"
+    ],
+    "date": "2027-04-23",
+    "endDate": "2027-04-23",
+    "dateText": "Vendredi 23 avril 2027",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1b8b3346-ab7d-11f1-8761-75b0bd954a34/0/ORIGINE_M_6a9ff93cb6982.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=1b8b3346-ab7d-11f1-8761-75b0bd954a34",
     "source": "poirel"
   },
   {

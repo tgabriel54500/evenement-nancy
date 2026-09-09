@@ -63,7 +63,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-la-rentree-grand-large-presentation-des-nouveaux-artistes-accompagnes",
+    "uuid": "lcn-la-rentree-grand-large-open-platines-et-presentation-des-artistes-accompagnes",
     "title": "La rentrée Grand Large",
     "category": "activite",
     "catLabel": "Activités & ateliers",
@@ -80,7 +80,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250623_fete_de_la_musique_lautre_canal16.jpg?itok=ZM6fu1z_",
-    "url": "https://lautrecanalnancy.fr/agenda/la-rentree-grand-large-presentation-des-nouveaux-artistes-accompagnes",
+    "url": "https://lautrecanalnancy.fr/agenda/la-rentree-grand-large-open-platines-et-presentation-des-artistes-accompagnes",
     "source": "autre-canal"
   },
   {
@@ -283,6 +283,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-video-games-music-making-d-une-exposition-sur-la-musique-de-jeu",
+    "title": "Video Games & Music",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Conférence"
+    ],
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/img_9685.jpeg?itok=3qBWM7IL",
+    "url": "https://lautrecanalnancy.fr/agenda/video-games-music-making-d-une-exposition-sur-la-musique-de-jeu",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
     "title": "On écoute : Diamond Life, Sade",
     "category": "activite",
@@ -405,7 +427,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_site_25_26-metiers_culture.jpg?itok=uZyV2zZc",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_mirabelle.png?itok=1hj3NoO0",
     "url": "https://lautrecanalnancy.fr/agenda/metier-action-culturelle",
     "source": "autre-canal"
   },
@@ -646,8 +668,31 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_site_25_26-metiers_culture2.jpg?itok=YHnr6M95",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/couv_lac_octroi2.png?itok=wCb8uc3m",
     "url": "https://lautrecanalnancy.fr/agenda/metier-communication",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-gouter-sonore-avec-cosmic-keys-des-6-ans",
+    "title": "Goûter sonore avec Cosmic Keys",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Enfance",
+      "Electro",
+      "Jazz"
+    ],
+    "date": "2026-10-21",
+    "endDate": "2026-10-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-08_a_14.48.06.png?itok=fCwmFxsF",
+    "url": "https://lautrecanalnancy.fr/agenda/gouter-sonore-avec-cosmic-keys-des-6-ans",
     "source": "autre-canal"
   },
   {
@@ -757,6 +802,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web6.jpg?itok=5ldoYiVj",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-orwell",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-sortie-de-residence-de-cosmic-keys",
+    "title": "Sortie de résidence de Cosmic Keys",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Electro",
+      "Jazz"
+    ],
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-08_a_15.02.06.png?itok=cRPuLlsW",
+    "url": "https://lautrecanalnancy.fr/agenda/sortie-de-residence-de-cosmic-keys",
     "source": "autre-canal"
   },
   {
@@ -890,6 +958,29 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-sortie-de-residence-de-la-science-du-rififi",
+    "title": "Sortie de résidence de La Science du Rififi",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Expérimental",
+      "Rock"
+    ],
+    "date": "2026-10-29",
+    "endDate": "2026-10-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-08_a_15.33.57.png?itok=ZEp3BQa0",
+    "url": "https://lautrecanalnancy.fr/agenda/sortie-de-residence-de-la-science-du-rififi",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-my-sleeping-karma-obsessed",
     "title": "My Sleeping Karma + The Obsessed",
     "category": "musiques-actuelles",
@@ -994,7 +1085,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bleu_conflu_site.jpg?itok=OzcrZRKg",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_site_vrt_jaune.png?itok=lwSmIiup",
     "url": "https://lautrecanalnancy.fr/agenda/rencontre-avec-la-sacem-1",
     "source": "autre-canal"
   },
@@ -1216,6 +1307,25 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-soiree-lac-x-ici-d-ailleurs",
+    "title": "Soirée LAC x Ici d'Ailleurs",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/782-field_illustration_id-1788183948.jpg%3Fitok%3DGSrTyg3V?itok=eBho1JNi",
+    "url": "https://lautrecanalnancy.fr/agenda/soiree-lac-x-ici-d-ailleurs",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-creation-de-son-identite-narrative-atelier-avec-valerie-bisson",
     "title": "Création de son identité narrative",
     "category": "activite",
@@ -1362,7 +1472,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_color3.jpg?itok=0kuG0S8Q",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jv.png?itok=EpjOwPJY",
     "url": "https://lautrecanalnancy.fr/agenda/sono-mondiale-4-jours-pour-explorer-des-cultures-musicales",
     "source": "autre-canal"
   },
@@ -1449,7 +1559,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/lac_2425_rvb_fond_site_3.jpg?itok=DRQYjr5n",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_site_rose.png?itok=YSml0EnU",
     "url": "https://lautrecanalnancy.fr/agenda/soiree-around-world-mde-campus-lsh",
     "source": "autre-canal"
   },
@@ -1670,6 +1780,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_lindaflorin_2025-2_copie.jpg?itok=GX3B4CvU",
     "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-ladies-first-une-anthologie-du-rap-au-feminin-par-sylvain-bertot",
+    "title": "Ladies First : une anthologie du rap au féminin",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Conférence"
+    ],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_site_vrt_jaune.png?itok=lwSmIiup",
+    "url": "https://lautrecanalnancy.fr/agenda/ladies-first-une-anthologie-du-rap-au-feminin-par-sylvain-bertot",
     "source": "autre-canal"
   },
   {
@@ -2492,8 +2624,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-winter-story-oco",
-    "title": "Winter Story - OCO",
+    "uuid": "lcn-winter-story-cince-concert-des-3-ans",
+    "title": "Winter Story",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -2509,7 +2641,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/704-field_illustration_id-1779287203.png?itok=e06T0rkq",
-    "url": "https://lautrecanalnancy.fr/agenda/winter-story-oco",
+    "url": "https://lautrecanalnancy.fr/agenda/winter-story-cince-concert-des-3-ans",
     "source": "autre-canal"
   },
   {

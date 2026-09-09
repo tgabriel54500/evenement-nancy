@@ -133,6 +133,25 @@
     "source": "lorraineaucoeur"
   },
   {
+    "uuid": "lac-41914",
+    "title": "Rendez-vous dansant à Dombasle",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Dombasle-sur-Meurthe",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41914_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-41914/rendez-vous-dansant-a-dombasle/meurthe-et-moselle-dombasle-sur-meurthe/fete-animation",
+    "source": "lorraineaucoeur"
+  },
+  {
     "uuid": "lac-41921",
     "title": "Rencontres de la Chanson à Vandoeuvre-lès-Nancy",
     "category": "festival",
