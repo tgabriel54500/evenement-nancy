@@ -1044,7 +1044,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1213,6 +1213,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-28657",
+    "title": "Fête d’Alyatim solidaire",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "De 11h à 19h",
+    "place": "Parc Richard Pouille",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29209",
     "title": "Concert – Gospel Mississipi",
     "category": "culture",
@@ -1248,6 +1267,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-pour-les-associations/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29323",
+    "title": "Parents d’ado numérique – Temps d’échange",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [],
+    "date": "2026-09-22",
+    "endDate": "2026-09-22",
+    "dateText": "",
+    "schedule": "17h15 (accueil dés 16h45)",
+    "place": "Fabrique des Possibles",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/parents-dado-numerique-temps-dechange/",
     "source": "vandoeuvre"
   },
   {

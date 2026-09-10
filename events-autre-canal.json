@@ -1307,12 +1307,15 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-soiree-lac-x-ici-d-ailleurs",
-    "title": "Soirée LAC x Ici d'Ailleurs",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
+    "uuid": "lcn-michel-cloup-trio-arnaud-fournier-deefait",
+    "title": "Michel Cloup Trio + Arnaud Fournier + Dééfait",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Rock"
+    ],
     "date": "2026-11-13",
     "endDate": "2026-11-13",
     "dateText": "",
@@ -1322,7 +1325,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/782-field_illustration_id-1788183948.jpg%3Fitok%3DGSrTyg3V?itok=eBho1JNi",
-    "url": "https://lautrecanalnancy.fr/agenda/soiree-lac-x-ici-d-ailleurs",
+    "url": "https://lautrecanalnancy.fr/agenda/michel-cloup-trio-arnaud-fournier-deefait",
     "source": "autre-canal"
   },
   {
@@ -2313,6 +2316,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-laibach",
+    "title": "Laibach",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Indus"
+    ],
+    "date": "2027-02-16",
+    "endDate": "2027-02-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/772-field_illustration_id-1788527267.jpg%3Fitok%3DCUUUlVZF?itok=2sbgqyZ7",
+    "url": "https://lautrecanalnancy.fr/agenda/laibach",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-encore-plus-de-basse-atelier-avec-juliette-barrier",
     "title": "Encore plus de Basse !",
     "category": "activite",
@@ -2464,6 +2489,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09076.jpg?itok=r59MeBpX",
     "url": "https://lautrecanalnancy.fr/agenda/decouverte-du-synthetiseur-atelier-avec-marin-hery",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-noe-preszow",
+    "title": "Noé Preszow",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Chanson"
+    ],
+    "date": "2027-03-11",
+    "endDate": "2027-03-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/762-field_illustration_id-1788358535.jpg%3Fitok%3DVZqneINR?itok=PwawwU-b",
+    "url": "https://lautrecanalnancy.fr/agenda/noe-preszow",
     "source": "autre-canal"
   },
   {
@@ -2730,6 +2777,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dlx-25-v2_cpilou_1080x1350.jpg?itok=GaqeDMqJ",
     "url": "https://lautrecanalnancy.fr/agenda/deluxe",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-howlin-jaws-komodor",
+    "title": "Howlin' Jaws + Komodor",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Psyché",
+      "Rock"
+    ],
+    "date": "2027-04-29",
+    "endDate": "2027-04-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/765-field_illustration_id-1788886514.jpg%3Fitok%3D-6kA-71R?itok=P1MgqoML",
+    "url": "https://lautrecanalnancy.fr/agenda/howlin-jaws-komodor",
     "source": "autre-canal"
   },
   {

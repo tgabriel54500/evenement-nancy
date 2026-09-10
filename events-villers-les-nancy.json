@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "endDate": "2026-09-18",
     "dateText": "",
     "schedule": "",
@@ -18,27 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260907_Expo___Philippe_Mitre_Credit_photo__c__LCM.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-philippe-mitre",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-301",
-    "title": "Groupes de parole pour les proches aidants Orchidée",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité"
-    ],
-    "date": "2026-09-09",
-    "endDate": "2027-06-29",
-    "dateText": "",
-    "schedule": "14 à 16h",
-    "place": "Résidence autonomie Paul Adam",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
     "source": "villers-les-nancy"
   },
   {
@@ -233,6 +212,48 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/compost.webp",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/restitution-de-compost",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-490",
+    "title": "Villers en marche en faveur d'octobre rose",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "À partir de 8h",
+    "place": "Stade Roger Bambuck",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marche.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-marche-en-faveur-doctobre-rose",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-301",
+    "title": "Groupes de parole pour les proches aidants Orchidée",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2027-06-29",
+    "dateText": "",
+    "schedule": "14 à 16h",
+    "place": "Résidence autonomie Paul Adam",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
     "source": "villers-les-nancy"
   },
   {

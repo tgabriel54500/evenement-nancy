@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-09",
+    "date": "2026-09-10",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -27,7 +27,8 @@
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
-      "Rencontre"
+      "Rencontre",
+      "Evénement"
     ],
     "date": "2026-09-12",
     "endDate": "2026-09-12",
@@ -48,7 +49,8 @@
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
-      "Rencontre"
+      "Rencontre",
+      "Evénement"
     ],
     "date": "2026-09-12",
     "endDate": "2026-09-12",
@@ -70,6 +72,7 @@
     "catEmoji": "🎓",
     "subcats": [
       "Rencontre",
+      "Evénement",
       "Débat d'idées"
     ],
     "date": "2026-09-13",
@@ -91,7 +94,8 @@
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
-      "Rencontre"
+      "Rencontre",
+      "Evénement"
     ],
     "date": "2026-09-13",
     "endDate": "2026-09-13",
@@ -107,11 +111,12 @@
   },
   {
     "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
-    "title": "Prix Ginkgo - Louis Pasteur",
+    "title": "Remise du prix Ginkgo - Louis Pasteur",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
+      "Evénement",
       "Remise de prix"
     ],
     "date": "2026-09-13",
@@ -630,6 +635,28 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/7dc32316-4ddb-11f1-b7fb-236d105bfd70/0/ORIGINE_M_6a02e2e4df76a.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=7dc32316-4ddb-11f1-b7fb-236d105bfd70",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-8dfbf00e-ac5a-11f1-a69c-b58ae7c788fd",
+    "title": "Marc Levy",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre",
+      "Evénement"
+    ],
+    "date": "2026-12-17",
+    "endDate": "2026-12-17",
+    "dateText": "Jeudi 17 décembre 2026",
+    "schedule": "18h30",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8dfbf00e-ac5a-11f1-a69c-b58ae7c788fd/0/ORIGINE_M_6aa16d22dfff9.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8dfbf00e-ac5a-11f1-a69c-b58ae7c788fd",
     "source": "poirel"
   },
   {
