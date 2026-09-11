@@ -1044,7 +1044,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-10",
+    "date": "2026-09-11",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1054,25 +1054,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-26481",
-    "title": "Conférence-débat sur les cancers gynécologiques",
-    "category": "sante",
-    "catLabel": "Santé",
-    "catEmoji": "🩺",
-    "subcats": [],
-    "date": "2026-09-10",
-    "endDate": "2026-09-10",
-    "dateText": "",
-    "schedule": "De 18h à 20h30",
-    "place": "Ferme du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conference-debat-cancers-gynecologiques/",
     "source": "vandoeuvre"
   },
   {
@@ -1392,6 +1373,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29347",
+    "title": "Tiny Glade Challenge : à vous de construire !",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Jeunes"
+    ],
+    "date": "2026-10-02",
+    "endDate": "2026-10-02",
+    "dateText": "",
+    "schedule": "De 16h à 19h",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-11051",
     "title": "Brocante Notre Dame des Nations",
     "category": "famille",
@@ -1543,6 +1545,27 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-16996",
+    "title": "Fête de l’allaitement maternel",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [
+      "Santé"
+    ],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "De 10h à 17h",
+    "place": "Parc du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/10/fete-allaitement-maternel.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/fete-de-lallaitement-maternel/",
     "source": "vandoeuvre"
   },
   {

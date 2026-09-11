@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-10",
+    "date": "2026-09-11",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -43,6 +43,29 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-a113144a-917c-11f1-a1b3-9534ff6ac2ef",
+    "title": "Fortissimo • Rencontre avec Sonia Devillers - lecture musicale",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre",
+      "Evénement",
+      "Animation"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-09-12",
+    "dateText": "Samedi 12 septembre 2026",
+    "schedule": "11h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a113144a-917c-11f1-a1b3-9534ff6ac2ef/0/1-1_M_6a7459b32ecdc.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=a113144a-917c-11f1-a1b3-9534ff6ac2ef",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-8066ef62-9246-11f1-801f-dfb349204fad",
     "title": "Guillaume de Tonquédec / Rencontre - lecture",
     "category": "conference",
@@ -66,7 +89,7 @@
   },
   {
     "uuid": "po-6d28b368-949e-11f1-9523-7d8be740198c",
-    "title": "L'école au cœur",
+    "title": "L'école au cœur - Isabelle Carré, Yannick Haenel, Caroline Hinault",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
@@ -89,13 +112,12 @@
   },
   {
     "uuid": "po-f435e6c6-94b4-11f1-a960-0f34bd05aeee",
-    "title": "La parole des enfants",
+    "title": "La parole des enfants -  Judith Godrèche, Laurence Joseph, Romain Lemire",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
-      "Rencontre",
-      "Evénement"
+      "Rencontre"
     ],
     "date": "2026-09-13",
     "endDate": "2026-09-13",

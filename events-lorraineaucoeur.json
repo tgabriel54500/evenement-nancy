@@ -1,5 +1,24 @@
 [
   {
+    "uuid": "lac-42012",
+    "title": "Le Livre sous la Porte Salon Bouquiniste à Nancy",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-09-11",
+    "endDate": "2026-09-13",
+    "dateText": "Du 11 au 13 septembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42012_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42012/le-livre-sous-la-porte-salon-bouquiniste-a-nancy/meurthe-et-moselle-nancy/foire-salon",
+    "source": "lorraineaucoeur"
+  },
+  {
     "uuid": "lac-41929",
     "title": "Le Livre sur la Place à Nancy",
     "category": "festival",
@@ -16,25 +35,6 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41929_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41929/le-livre-sur-la-place-a-nancy/meurthe-et-moselle-nancy/foire-salon",
-    "source": "lorraineaucoeur"
-  },
-  {
-    "uuid": "lac-41862",
-    "title": "Ouverture Saison PAM + Spectacle Pierre Feuille Loup",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-09-11",
-    "endDate": "2026-09-11",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41862_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41862/ouverture-saison-pam-spectacle-pierre-feuille-loup/meurthe-et-moselle-pont-a-mousson/spectacle",
     "source": "lorraineaucoeur"
   },
   {
@@ -114,25 +114,6 @@
     "source": "lorraineaucoeur"
   },
   {
-    "uuid": "lac-41868",
-    "title": "Foire aux Fromages et Gastronomie de Seichamps",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-09-19",
-    "endDate": "2026-09-20",
-    "dateText": "Du 19 au 20 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Seichamps",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41868_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41868/foire-aux-fromages-et-gastronomie-de-seichamps/meurthe-et-moselle-seichamps/foire-salon",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-41914",
     "title": "Rendez-vous dansant à Dombasle",
     "category": "festival",
@@ -168,25 +149,6 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41921_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41921/rencontres-de-la-chanson-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/festival",
-    "source": "lorraineaucoeur"
-  },
-  {
-    "uuid": "lac-41869",
-    "title": "Récital Boris Vian à Pont-à-Mousson",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-09-23",
-    "endDate": "2026-09-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41869_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41869/recital-boris-vian-a-pont-a-mousson/meurthe-et-moselle-pont-a-mousson/concert",
     "source": "lorraineaucoeur"
   },
   {

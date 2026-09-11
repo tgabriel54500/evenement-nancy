@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-travaux-av-paul-deroulede",
-    "title": "Travaux av. Paul Déroulède",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [],
-    "date": "2026-09-10",
-    "endDate": "2026-09-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "Mairie",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/275/1200_630_7_flyer-reunion-info-10-sept2026-avpaul-deroulede-3.png",
-    "url": "https://www.laxou.fr/fr/agenda/travaux-av-paul-deroulede_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-le-livre-sur-la-place",
     "title": "Le Livre sur la Place",
     "category": "conference",

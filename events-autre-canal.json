@@ -44,8 +44,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-petit-moment-septembre",
-    "title": "Petit Moment – Septembre",
+    "uuid": "lcn-les-4-jours-de-rentree-petit-moment",
+    "title": "Les 4 jours de rentrée",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -59,7 +59,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-044_copie.jpg?itok=k4TMYLL4",
-    "url": "https://lautrecanalnancy.fr/agenda/petit-moment-septembre",
+    "url": "https://lautrecanalnancy.fr/agenda/les-4-jours-de-rentree-petit-moment",
     "source": "autre-canal"
   },
   {
@@ -408,6 +408,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-26_a_15.40.33.png?itok=uE0mx8Ed",
     "url": "https://lautrecanalnancy.fr/agenda/njp-2026",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-nancy-ink-tatoo",
+    "title": "Nancy Ink Tatoo",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ink_tatoo_copie.jpeg?itok=Z8lpIsY3",
+    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tatoo",
     "source": "autre-canal"
   },
   {
@@ -936,6 +957,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-etape-de-residence-de-la-fanfare-des-enfants-du-boucher",
+    "title": "Étape de résidence de La fanfare des enfants du boucher",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Fanfare"
+    ],
+    "date": "2026-10-25",
+    "endDate": "2026-10-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250704_ade_en_fanfare_lautre_canal18.jpg?itok=qTA2_5JW",
+    "url": "https://lautrecanalnancy.fr/agenda/etape-de-residence-de-la-fanfare-des-enfants-du-boucher",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-yvnnis",
     "title": "Yvnnis",
     "category": "musiques-actuelles",
@@ -1329,6 +1372,29 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-release-party-d-allivm-orilia",
+    "title": "Release Party d'Allivm",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Chanson",
+      "Pop"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/682-field_illustration_id-1788528224.jpg%3Fitok%3DmvdwvYLp?itok=0c0bQIWx",
+    "url": "https://lautrecanalnancy.fr/agenda/release-party-d-allivm-orilia",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-creation-de-son-identite-narrative-atelier-avec-valerie-bisson",
     "title": "Création de son identité narrative",
     "category": "activite",
@@ -1672,7 +1738,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_color8.jpg?itok=N-k7foYf",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_mirabelle.png?itok=1hj3NoO0",
     "url": "https://lautrecanalnancy.fr/agenda/un-vrai-prog-rock-francais-est-il-possible-par-philippe-gonin",
     "source": "autre-canal"
   },
