@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-19",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-09-11",
-    "endDate": "2026-09-11",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-19",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-congres-2026-du-sma",
     "title": "Congrès 2026 du SMA",
     "category": "activite",
@@ -1306,6 +1284,49 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-blindtest-party",
+    "title": "Blindtest Party",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jkf05650-2.jpg?itok=nNa4DNHL",
+    "url": "https://lautrecanalnancy.fr/agenda/blindtest-party",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-scene-ouverte-des-studios-de-repetitions",
+    "title": "Scène Ouverte des studios de répétitions",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Divers"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/coeur_bavard-4l.jpg?itok=rvZI6Bwo",
+    "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-des-studios-de-repetitions",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-jazzy-bazz",
     "title": "Jazzy Bazz",
     "category": "musiques-actuelles",
@@ -1786,6 +1807,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-comment-mieux-faire-societe-3-le-genre-table-ronde",
+    "title": "Comment mieux faire société #3 : Le Genre",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Table ronde"
+    ],
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/copyright_nantene_traore_copie.jpg?itok=taXktDCj",
+    "url": "https://lautrecanalnancy.fr/agenda/comment-mieux-faire-societe-3-le-genre-table-ronde",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-bilal-hassani",
     "title": "Bilal Hassani",
     "category": "musiques-actuelles",
@@ -1915,6 +1958,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/tlnep_photo_c_maxime_delporte16.png?itok=ThynMJsa",
     "url": "https://lautrecanalnancy.fr/agenda/transformer-le-negatif-en-positif-cycle-4-de-la-5e-la-terminale",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-j-irai-diner-sur-scene-une-experience-gastronomique-et-sonore-d-exception",
+    "title": "J’irai dîner sur scène",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Entreprises"
+    ],
+    "date": "2026-12-08",
+    "endDate": "2026-12-08",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20260408_diner_sur_scene_clautre_canal21_copie.jpg?itok=yHrA-ru0",
+    "url": "https://lautrecanalnancy.fr/agenda/j-irai-diner-sur-scene-une-experience-gastronomique-et-sonore-d-exception",
     "source": "autre-canal"
   },
   {

@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-11",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-c2dc6c16-9267-11f1-9fe1-1f4bb55dfb6c",
     "title": "Catherine Meurisse et son invité",
     "category": "conference",
@@ -44,14 +23,13 @@
   },
   {
     "uuid": "po-a113144a-917c-11f1-a1b3-9534ff6ac2ef",
-    "title": "Fortissimo • Rencontre avec Sonia Devillers - lecture musicale",
+    "title": "Fortissimo • Rencontre avec Sonia Devillers - lecture musicale avec Cascadeur",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
     "subcats": [
       "Rencontre",
-      "Evénement",
-      "Animation"
+      "Evénement"
     ],
     "date": "2026-09-12",
     "endDate": "2026-09-12",
@@ -85,6 +63,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8066ef62-9246-11f1-801f-dfb349204fad/0/1-1_M_6a75ac4f7e1a8.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8066ef62-9246-11f1-801f-dfb349204fad",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-12",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {
@@ -133,7 +132,7 @@
   },
   {
     "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
-    "title": "Remise du prix Ginkgo - Louis Pasteur",
+    "title": "Remise du prix Ginkgo - Louis Pasteur : Paul Gasnier, Pierre Rochefort",
     "category": "conference",
     "catLabel": "Conférences & rencontres",
     "catEmoji": "🎓",
