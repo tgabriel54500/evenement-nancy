@@ -285,6 +285,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-atelier-phi-la",
+    "title": "Atelier Phi-La",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/119/1200_630_7_phi-la-sept-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/atelier-phi-la_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-animalaxou-2026-5eme-edition",
     "title": "AnimaLaxou 2026 5ème édition",
     "category": "exposition",
@@ -339,6 +358,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/269/1200_630_7_fete-de-la-science-2026.jpg",
     "url": "https://www.laxou.fr/fr/agenda/fete-de-la-science_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-heure-du-conte",
+    "title": "Heure du conte",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-07",
+    "endDate": "2026-10-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/64/1200_630_7_mercredi-7-janvier-a-10h.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/heure-du-conte_-d.html",
     "source": "laxou"
   },
   {

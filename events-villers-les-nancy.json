@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-12",
+    "date": "2026-09-13",
     "endDate": "2026-09-18",
     "dateText": "",
     "schedule": "",
@@ -18,27 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260907_Expo___Philippe_Mitre_Credit_photo__c__LCM.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-philippe-mitre",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-590",
-    "title": "Rencontres littéraires de Villers ▪ Table ronde sur Émile Coué",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-09-12",
-    "endDate": "2026-09-12",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Le château Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260912_RLV_SUR_LES_PAS_DE_COUE__c__Credits_sur_chaque_photo.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/rencontres-litteraires-de-villers-table-ronde-sur-emile-coue",
     "source": "villers-les-nancy"
   },
   {
