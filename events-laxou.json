@@ -247,6 +247,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-concert-chapelle-st-roch",
+    "title": "CONCERT Chapelle St-Roch",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2026-09-19",
+    "endDate": "2026-09-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "CPN - CHapelle Saint-Roch",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/276/1200_630_7_cpnsept2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/concert-chapelle-st-roch_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-bulletins-d-inscription-du-vide-greniers-et-de-la-braderie",
     "title": "Bulletins d'inscription du vide-greniers et de la braderie",
     "category": "festival",

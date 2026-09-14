@@ -1,71 +1,5 @@
 [
   {
-    "uuid": "po-6d28b368-949e-11f1-9523-7d8be740198c",
-    "title": "L'école au cœur - Isabelle Carré, Yannick Haenel, Caroline Hinault",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre",
-      "Evénement",
-      "Débat d'idées"
-    ],
-    "date": "2026-09-13",
-    "endDate": "2026-09-13",
-    "dateText": "Dimanche 13 septembre 2026",
-    "schedule": "11h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6d28b368-949e-11f1-9523-7d8be740198c/0/1-1_M_6a799ae3100cf.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6d28b368-949e-11f1-9523-7d8be740198c",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-f435e6c6-94b4-11f1-a960-0f34bd05aeee",
-    "title": "La parole des enfants -  Judith Godrèche, Laurence Joseph, Romain Lemire",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre"
-    ],
-    "date": "2026-09-13",
-    "endDate": "2026-09-13",
-    "dateText": "Dimanche 13 septembre 2026",
-    "schedule": "14h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f435e6c6-94b4-11f1-a960-0f34bd05aeee/0/1-1_M_6a79c0a6b0513.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f435e6c6-94b4-11f1-a960-0f34bd05aeee",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-f0573e54-94bb-11f1-8688-474740466974",
-    "title": "Remise du prix Ginkgo - Louis Pasteur : Paul Gasnier, Pierre Rochefort",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Evénement",
-      "Remise de prix"
-    ],
-    "date": "2026-09-13",
-    "endDate": "2026-09-13",
-    "dateText": "Dimanche 13 septembre 2026",
-    "schedule": "16h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f0573e54-94bb-11f1-8688-474740466974/0/1-1_M_6a79cc879cf4c.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f0573e54-94bb-11f1-8688-474740466974",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -74,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-13",
+    "date": "2026-09-14",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
