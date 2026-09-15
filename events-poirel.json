@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-14",
+    "date": "2026-09-15",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -207,8 +207,7 @@
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
     "subcats": [
-      "Spectacle",
-      "Concert"
+      "Humour"
     ],
     "date": "2026-10-22",
     "endDate": "2026-10-22",
@@ -720,6 +719,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-ee63cf2e-b03e-11f1-abed-3b1ad858af25",
+    "title": "Tristan Lopin - Partez sans moi je vous rejoins",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Humour"
+    ],
+    "date": "2027-01-30",
+    "endDate": "2027-01-30",
+    "dateText": "Samedi 30 janvier 2027",
+    "schedule": "de 20h à 21h30",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee63cf2e-b03e-11f1-abed-3b1ad858af25/0/ORIGINE_M_6aa7f46825469.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=ee63cf2e-b03e-11f1-abed-3b1ad858af25",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-4bb3f678-43d8-11f1-ad09-57f47d5e5def",
     "title": "Élie Semoun",
     "category": "spectacle",
@@ -807,6 +827,28 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-2469a8fa-b03f-11f1-9cfb-5591397026be",
+    "title": "Alexis Le Rossignol : Chamboulé",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle",
+      "Humour"
+    ],
+    "date": "2027-02-10",
+    "endDate": "2027-02-10",
+    "dateText": "Mercredi 10 février 2027",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2469a8fa-b03f-11f1-9cfb-5591397026be/0/ORIGINE_M_6aa7f4c2b2758.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2469a8fa-b03f-11f1-9cfb-5591397026be",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-2a1ab8fe-3c93-11f1-956f-cdf33b40c453",
     "title": "Guillaume Meurice",
     "category": "spectacle",
@@ -826,6 +868,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/2a1ab8fe-3c93-11f1-956f-cdf33b40c453/0/ORIGINE_M_69e5e41b0b4b9.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=2a1ab8fe-3c93-11f1-956f-cdf33b40c453",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-775d05de-b03f-11f1-ad11-c70bd431b99f",
+    "title": "Les Grands Enfants",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2027-02-13",
+    "endDate": "2027-02-13",
+    "dateText": "Samedi 13 février 2027",
+    "schedule": "de 20h à 21h30",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/775d05de-b03f-11f1-ad11-c70bd431b99f/0/ORIGINE_M_6aa7f54dc7e89.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=775d05de-b03f-11f1-ad11-c70bd431b99f",
     "source": "poirel"
   },
   {
@@ -1131,6 +1194,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-df47475e-b03f-11f1-9ae9-5b28b0f88dd7",
+    "title": "La Bajon - Humour",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Humour"
+    ],
+    "date": "2027-04-24",
+    "endDate": "2027-04-24",
+    "dateText": "Samedi 24 avril 2027",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/df47475e-b03f-11f1-9ae9-5b28b0f88dd7/0/ORIGINE_M_6aa7f5fc25d1f.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=df47475e-b03f-11f1-9ae9-5b28b0f88dd7",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-6ef6032a-4ddc-11f1-a84a-29adf486a615",
     "title": "Requiem de Fauré & La Cathédrale Incendiée",
     "category": "musique-classique",
@@ -1171,6 +1255,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cabce768-843d-11f1-a373-43ec2da69bca/0/ORIGINE_M_6a5e20a3831cd.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=cabce768-843d-11f1-a373-43ec2da69bca",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-053f9c04-b040-11f1-8c5e-9fd59b63b988",
+    "title": "Un soir avec Francis Huster",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2027-05-19",
+    "endDate": "2027-05-19",
+    "dateText": "Mercredi 19 mai 2027",
+    "schedule": "de 20h à 21h30",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/053f9c04-b040-11f1-8c5e-9fd59b63b988/0/ORIGINE_M_6aa7f63bd1580.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=053f9c04-b040-11f1-8c5e-9fd59b63b988",
     "source": "poirel"
   },
   {

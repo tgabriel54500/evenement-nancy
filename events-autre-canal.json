@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-congres-2026-du-sma",
-    "title": "Congrès 2026 du SMA",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Pro"
-    ],
-    "date": "2026-09-14",
-    "endDate": "2026-09-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/3-scaled_copie_2.jpg?itok=MGsznri0",
-    "url": "https://lautrecanalnancy.fr/agenda/congres-2026-du-sma",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-les-4-jours-de-rentree-petit-moment",
     "title": "Les 4 jours de rentrée",
     "category": "activite",
@@ -2952,6 +2930,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-congres-2026-du-sma",
+    "title": "Congrès 2026 du SMA",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Pro"
+    ],
+    "date": "2027-09-14",
+    "endDate": "2027-09-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/3-scaled_copie_2.jpg?itok=MGsznri0",
+    "url": "https://lautrecanalnancy.fr/agenda/congres-2026-du-sma",
     "source": "autre-canal"
   }
 ]

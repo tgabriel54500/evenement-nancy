@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-14",
+    "date": "2026-09-15",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1033,25 +1033,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29001",
-    "title": "Réunion publique “Séjour seniors à Mittelwihr”",
-    "category": "seniors",
-    "catLabel": "Seniors",
-    "catEmoji": "👵",
-    "subcats": [],
-    "date": "2026-09-14",
-    "endDate": "2026-09-14",
-    "dateText": "",
-    "schedule": "14h",
-    "place": "Ferme du Charmois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/reunion-publique-sejour-seniors-a-mittelwihr/",
     "source": "vandoeuvre"
   },
   {
@@ -1069,7 +1050,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/activite-brain-ball/",
     "source": "vandoeuvre"
   },
@@ -1088,7 +1069,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/balade-nature/",
     "source": "vandoeuvre"
   },
@@ -1107,7 +1088,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/rencontres-autour-des-poumons/",
     "source": "vandoeuvre"
   },
@@ -1126,7 +1107,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/kermesse-alyatim-solidaire/",
     "source": "vandoeuvre"
   },
@@ -1145,7 +1126,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-gospel-mississipi/",
     "source": "vandoeuvre"
   },
@@ -1164,7 +1145,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-pour-les-associations/",
     "source": "vandoeuvre"
   },
@@ -1183,7 +1164,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/parents-dado-numerique-temps-dechange/",
     "source": "vandoeuvre"
   },
@@ -1202,7 +1183,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
@@ -1242,7 +1223,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-numeriques-initiation-a-canva/",
     "source": "vandoeuvre"
   },
@@ -1286,7 +1267,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-sport-inclusif/",
     "source": "vandoeuvre"
   },
@@ -1305,7 +1286,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
@@ -1326,7 +1307,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
     "source": "vandoeuvre"
   },
@@ -1372,6 +1353,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-26532",
+    "title": "Portes ouvertes à la cuisine centrale",
+    "category": "famille",
+    "catLabel": "Famille",
+    "catEmoji": "👨‍👩‍👧",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "De 8h30 à 11h30",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/portes-ouvertes-sodexo/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29311",
     "title": "Focus jeux vidéo",
     "category": "culture",
@@ -1386,8 +1386,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-25011",
+    "title": "Concert “Voix et orgue”",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "16h",
+    "place": "Eglise Sainte Bernadette",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/concert-voix-et-orgue/",
     "source": "vandoeuvre"
   },
   {
@@ -1405,7 +1424,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1471,6 +1490,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-19936",
+    "title": "Ateliers philo",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "De 10h30 à 11h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-2/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-23486",
     "title": "Sensibilisation aux Gestes Qui Sauvent",
     "category": "sante",
@@ -1504,7 +1544,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1523,7 +1563,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre"
   },
@@ -1563,7 +1603,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre"
   },
@@ -1582,7 +1622,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
     "source": "vandoeuvre"
   },
@@ -1601,7 +1641,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1622,7 +1662,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
     "source": "vandoeuvre"
   },
@@ -1660,7 +1700,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre"
   },
@@ -1684,6 +1724,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-19942",
+    "title": "Ateliers philo",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "",
+    "schedule": "De 10h30 à 11h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-4/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29221",
     "title": "Installons Linux",
     "category": "culture",
@@ -1700,7 +1761,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
     "source": "vandoeuvre"
   },
@@ -1738,7 +1799,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
@@ -1778,7 +1839,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre"
   },
@@ -1797,7 +1858,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
@@ -1816,8 +1877,29 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29371",
+    "title": "Ateliers philo",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Famille"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "De 10h30 à 11h30",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre"
   },
   {
@@ -1835,7 +1917,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre"
   },
@@ -1854,7 +1936,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/prevention-cancers-orl.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/balade-nature-1024x358.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   }
