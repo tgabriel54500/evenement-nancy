@@ -279,7 +279,7 @@
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
     "subcats": [
-      "Ballet"
+      "Danse"
     ],
     "date": "2026-12-20",
     "endDate": "2026-12-20",
@@ -289,7 +289,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/AFFICHE-4-SAISONS-FR-002-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
     "source": "zenith-nancy"
   },

@@ -282,7 +282,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-mentissa",
+    "uuid": "lcn-mentissa-amelyne",
     "title": "Mentissa",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -300,7 +300,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/642-illustration_id-1764597696.jpg?itok=drV4RusV",
-    "url": "https://lautrecanalnancy.fr/agenda/mentissa",
+    "url": "https://lautrecanalnancy.fr/agenda/mentissa-amelyne",
     "source": "autre-canal"
   },
   {
@@ -2779,6 +2779,29 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-jain-0",
+    "title": "Jain",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Electro",
+      "Pop"
+    ],
+    "date": "2027-04-02",
+    "endDate": "2027-04-02",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/784-field_illustration_id-1789047660.jpg%3Fitok%3Dg0AfCdCV?itok=ylzPGkoV",
+    "url": "https://lautrecanalnancy.fr/agenda/jain-0",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-winter-story-cince-concert-des-3-ans",
     "title": "Winter Story",
     "category": "activite",
@@ -2930,28 +2953,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-congres-2026-du-sma",
-    "title": "Congrès 2026 du SMA",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Pro"
-    ],
-    "date": "2027-09-14",
-    "endDate": "2027-09-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/3-scaled_copie_2.jpg?itok=MGsznri0",
-    "url": "https://lautrecanalnancy.fr/agenda/congres-2026-du-sma",
     "source": "autre-canal"
   }
 ]
