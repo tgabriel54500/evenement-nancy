@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-16",
+    "date": "2026-09-17",
     "endDate": "2026-09-18",
     "dateText": "",
     "schedule": "",
@@ -85,6 +85,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-598",
+    "title": "Virades de l'espoir",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-09-27",
+    "endDate": "2026-09-27",
+    "dateText": "",
+    "schedule": "9h30 > 17h",
+    "place": "Parc Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/755808219_1410088234306954_8875675114809684808_n.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/virades-de-lespoir-a-villers-les-nancy",
     "source": "villers-les-nancy"
   },
   {
@@ -172,8 +193,29 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-599",
+    "title": "Villers en rose",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "9h30 > 13h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/image-from-rawpixel-id-235138-original.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-rose",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-490",
-    "title": "Villers en marche en faveur d'octobre rose",
+    "title": "Villers en marche - Octobre rose",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -188,7 +230,7 @@
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marche.jpg",
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Format_169.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-marche-en-faveur-doctobre-rose",
     "source": "villers-les-nancy"
   },
