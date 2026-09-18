@@ -1,45 +1,5 @@
 [
   {
-    "uuid": "lcn-les-4-jours-de-rentree-petit-moment",
-    "title": "Les 4 jours de rentrée",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2026-09-17",
-    "endDate": "2026-09-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-044_copie.jpg?itok=k4TMYLL4",
-    "url": "https://lautrecanalnancy.fr/agenda/les-4-jours-de-rentree-petit-moment",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-la-rentree-grand-large-open-platines-et-presentation-des-artistes-accompagnes",
-    "title": "La rentrée Grand Large",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous"
-    ],
-    "date": "2026-09-17",
-    "endDate": "2026-09-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250623_fete_de_la_musique_lautre_canal16.jpg?itok=ZM6fu1z_",
-    "url": "https://lautrecanalnancy.fr/agenda/la-rentree-grand-large-open-platines-et-presentation-des-artistes-accompagnes",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-ncy-design-week",
     "title": "NCY Design Week",
     "category": "activite",
@@ -212,7 +172,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_3_-_dominique_brion.jpeg?itok=rgeC9G67",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/681-field_illustration_id-1779367345.jpg?itok=HLFuZ2RN",
     "url": "https://lautrecanalnancy.fr/agenda/rencontre-avec-peet",
     "source": "autre-canal"
   },
@@ -805,7 +765,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-carpenter-brut",
+    "uuid": "lcn-carpenter-brut-ghost-dance",
     "title": "Carpenter Brut",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -823,7 +783,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/663-illustration_id-1769442104.png?itok=rDUDr9Y_",
-    "url": "https://lautrecanalnancy.fr/agenda/carpenter-brut",
+    "url": "https://lautrecanalnancy.fr/agenda/carpenter-brut-ghost-dance",
     "source": "autre-canal"
   },
   {
@@ -2953,6 +2913,25 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-les-4-jours-de-rentree-petit-moment",
+    "title": "Les 4 jours de rentrée",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2027-09-17",
+    "endDate": "2027-09-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-044_copie.jpg?itok=k4TMYLL4",
+    "url": "https://lautrecanalnancy.fr/agenda/les-4-jours-de-rentree-petit-moment",
     "source": "autre-canal"
   }
 ]

@@ -38,25 +38,6 @@
     "source": "lorraineaucoeur"
   },
   {
-    "uuid": "lac-41921",
-    "title": "Rencontres de la Chanson à Vandoeuvre-lès-Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-09-23",
-    "endDate": "2026-09-27",
-    "dateText": "Du 23 au 27 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandoeuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41921_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41921/rencontres-de-la-chanson-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/festival",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42057",
     "title": "Jardins de Ville, Jardins de Vie Grand Nancy",
     "category": "festival",
@@ -73,6 +54,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42057_min.png",
     "url": "https://www.lorraineaucoeur.com/evt-42057/jardins-de-ville-jardins-de-vie-grand-nancy/meurthe-et-moselle-jarville-la-malgrange/fete-animation",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42025",
+    "title": "Spectacles Théâtre d'improvisation MJC Bazin Nancy",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42025_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42025/spectacles-theatre-d-improvisation-mjc-bazin-nancy/meurthe-et-moselle-nancy/spectacle",
     "source": "lorraineaucoeur"
   },
   {
