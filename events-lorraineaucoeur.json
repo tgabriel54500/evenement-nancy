@@ -19,25 +19,6 @@
     "source": "lorraineaucoeur"
   },
   {
-    "uuid": "lac-41945",
-    "title": "Concert 30 ans Gospel Mississippi à Vanduvre",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
-    "date": "2026-09-19",
-    "endDate": "2026-09-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandoeuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41945_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41945/concert-30-ans-gospel-mississippi-a-vandoeuvre/meurthe-et-moselle-vandoeuvre-les-nancy/concert",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42057",
     "title": "Jardins de Ville, Jardins de Vie Grand Nancy",
     "category": "festival",
@@ -111,6 +92,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41976_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-41976/festival-film-montagne-exploration-a-saulxures-les-nancy/meurthe-et-moselle-saulxures-les-nancy/festival",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42027",
+    "title": "Atelier Bien-Etre Nancy",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42027_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42027/atelier-bien-etre-nancy/meurthe-et-moselle-nancy/stage-atelier-cours-cuisine",
     "source": "lorraineaucoeur"
   },
   {

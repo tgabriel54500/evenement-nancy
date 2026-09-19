@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-18",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05",
     "title": "JEP 2026 : Ensemble Poirel - portes ouvertes et lancement de saison 2026-2027",
     "category": "activite",
@@ -43,6 +22,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05/0/ORIGINE_M_6a4236d2cdad5.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-09-19",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {

@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "vln-589",
-    "title": "Exposition ▪ Hommage à Philippe Mitre",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260907_Expo___Philippe_Mitre_Credit_photo__c__LCM.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-philippe-mitre",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-591",
     "title": "Exposition de JYM FACTORY",
     "category": "exposition",
@@ -29,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-18",
+    "date": "2026-09-19",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -63,6 +42,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-138",
+    "title": "Fun Rando VTT & Fun Gravel",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-09-20",
+    "endDate": "2026-09-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "Stade Roger Bambuck",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/vtt.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/fun-rando-vtt-fun-gravel",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-569",
     "title": "Permanences - Avec vous pour vos droits",
     "category": "citoyennete",
@@ -85,6 +85,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-600",
+    "title": "Braderie solidaire du Secours populaire",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "De 9h à 12h et de 14h à 16h",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/braderie.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/braderie-solidaire-du-secours-populaire",
     "source": "villers-les-nancy"
   },
   {

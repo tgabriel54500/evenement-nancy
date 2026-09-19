@@ -1,70 +1,5 @@
 [
   {
-    "uuid": "lcn-ncy-design-week",
-    "title": "NCY Design Week",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Petite Halle"
-    ],
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-02_a_09.43.57.png?itok=MUHjSgXo",
-    "url": "https://lautrecanalnancy.fr/agenda/ncy-design-week",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-marche-bio-inauguration-exposition-design-et-musique-ouverture-de-saison",
-    "title": "Marché bio, inauguration, exposition, design et musique",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/_emma_rochefeuille53.jpg?itok=EjvHQC5M",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-inauguration-exposition-design-et-musique-ouverture-de-saison",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-dinguerie-sept-2026",
-    "title": "Dinguerie !",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Etudiant·es"
-    ],
-    "date": "2026-09-18",
-    "endDate": "2026-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/photo_fond_cvalentin_frenot.jpg?itok=0VbAnmXn",
-    "url": "https://lautrecanalnancy.fr/agenda/dinguerie-sept-2026",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-fete-de-la-soupe-journees-du-matrimoine",
     "title": "Fête de la Soupe, journées du matrimoine, 5 ans de Tim & Bastien",
     "category": "activite",
@@ -2932,6 +2867,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-044_copie.jpg?itok=k4TMYLL4",
     "url": "https://lautrecanalnancy.fr/agenda/les-4-jours-de-rentree-petit-moment",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-ncy-design-week",
+    "title": "NCY Design Week",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Petite Halle"
+    ],
+    "date": "2027-09-18",
+    "endDate": "2027-09-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-02_a_09.43.57.png?itok=MUHjSgXo",
+    "url": "https://lautrecanalnancy.fr/agenda/ncy-design-week",
     "source": "autre-canal"
   }
 ]
