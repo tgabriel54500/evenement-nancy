@@ -1,51 +1,5 @@
 [
   {
-    "uuid": "lcn-fete-de-la-soupe-journees-du-matrimoine",
-    "title": "Fête de la Soupe, journées du matrimoine, 5 ans de Tim & Bastien",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Grande Halle",
-      "Petite Halle",
-      "Halle ouverte"
-    ],
-    "date": "2026-09-19",
-    "endDate": "2026-09-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jkf05445.jpg?itok=tPs7Htnx",
-    "url": "https://lautrecanalnancy.fr/agenda/fete-de-la-soupe-journees-du-matrimoine",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-versus-3-last-round-pawlowski-jouissance-dory-katsy-ti",
-    "title": "Versus 3 – The Last Round",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Techno"
-    ],
-    "date": "2026-09-19",
-    "endDate": "2026-09-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/680-field_illustration_id-1783343227.png?itok=Nk348NSY",
-    "url": "https://lautrecanalnancy.fr/agenda/versus-3-last-round-pawlowski-jouissance-dory-katsy-ti",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-20",
     "title": "Marché bio et local",
     "category": "activite",
@@ -2848,25 +2802,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-les-4-jours-de-rentree-petit-moment",
-    "title": "Les 4 jours de rentrée",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2027-09-17",
-    "endDate": "2027-09-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-044_copie.jpg?itok=k4TMYLL4",
-    "url": "https://lautrecanalnancy.fr/agenda/les-4-jours-de-rentree-petit-moment",
     "source": "autre-canal"
   },
   {
