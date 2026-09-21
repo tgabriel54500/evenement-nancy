@@ -2362,6 +2362,30 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-maquina",
+    "title": "MAQUINA.",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Electro",
+      "Indus",
+      "Krautrock"
+    ],
+    "date": "2027-02-24",
+    "endDate": "2027-02-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/779-field_illustration_id-1789578243.jpeg%3Fitok%3Dhx_HfDOt?itok=Zlj0PVyU",
+    "url": "https://lautrecanalnancy.fr/agenda/maquina",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-busta-flex-scred-connexion",
     "title": "Busta Flex + Scred Connexion",
     "category": "musiques-actuelles",

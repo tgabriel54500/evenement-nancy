@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-20",
+    "date": "2026-09-21",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -18,48 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-307",
-    "title": "Journées européennes du patrimoine 2026",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/image_processing20260604-11542-1nf6xua.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/journees-europeennes-du-patrimoine-2026",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-138",
-    "title": "Fun Rando VTT & Fun Gravel",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "Stade Roger Bambuck",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/vtt.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/fun-rando-vtt-fun-gravel",
     "source": "villers-les-nancy"
   },
   {

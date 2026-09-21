@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-20",
+    "date": "2026-09-21",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1388,7 +1388,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch/",
     "source": "vandoeuvre"
   },

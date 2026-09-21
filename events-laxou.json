@@ -247,6 +247,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-semaine-nationale-du-chien",
+    "title": "Semaine nationale du chien",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-09-26",
+    "endDate": "2026-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/277/1200_630_7_nancy-chien-2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/semaine-nationale-du-chien_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-atelier-phi-la",
     "title": "Atelier Phi-La",
     "category": "activite",

@@ -1,93 +1,5 @@
 [
   {
-    "uuid": "po-f189d03c-b407-11f1-97c6-6574c32a4032",
-    "title": "Helena (3+1)",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "Le 19 septembre 2026 à 17h30 et le 20 septembre 2026 à 14h15",
-    "schedule": "14h15",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f189d03c-b407-11f1-97c6-6574c32a4032/0/1-1_M_6aae4e77836dd.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=f189d03c-b407-11f1-97c6-6574c32a4032",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05",
-    "title": "JEP 2026 : Ensemble Poirel - portes ouvertes et lancement de saison 2026-2027",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Danse",
-      "Patrimoine",
-      "Concert",
-      "Evénement",
-      "Exposition"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "Les 19 et 20 septembre 2026",
-    "schedule": "de 14h à 19h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05/0/ORIGINE_M_6a4236d2cdad5.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c8ddb5e4-7399-11f1-b9c7-d57c8c3f7e05",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-3141532c-b407-11f1-bb92-4705797588b8",
-    "title": "Chantez avec le grand choeur du Gradus Ad Musicam",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "Le 20 septembre 2026",
-    "schedule": "",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3141532c-b407-11f1-bb92-4705797588b8/0/1-1_M_6aae4d0882260.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=3141532c-b407-11f1-bb92-4705797588b8",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-b9d8bafa-b406-11f1-ba11-2560054fcff0",
-    "title": "La fanfare des enfants du boucher",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "Le 20 septembre 2026",
-    "schedule": "",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/b9d8bafa-b406-11f1-ba11-2560054fcff0/0/1-1_M_6aae4c65f2fa6.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=b9d8bafa-b406-11f1-ba11-2560054fcff0",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -96,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-20",
+    "date": "2026-09-21",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
