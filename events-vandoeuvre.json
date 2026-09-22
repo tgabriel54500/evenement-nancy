@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-21",
+    "date": "2026-09-22",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1033,25 +1033,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-5365",
-    "title": "Conseil Municipal en direct",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [],
-    "date": "2026-09-21",
-    "endDate": "2026-09-21",
-    "dateText": "",
-    "schedule": "19h",
-    "place": "Mairie",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
     "source": "vandoeuvre"
   },
   {

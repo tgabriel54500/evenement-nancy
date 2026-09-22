@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-21",
+    "date": "2026-09-22",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-09-21",
+    "date": "2026-09-22",
     "endDate": "2026-10-01",
     "dateText": "",
     "schedule": "9h à 11h30",
@@ -130,6 +130,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-319",
+    "title": "Loto lorrain",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/lotoBNV.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/loto",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-134",
     "title": "Marches de nettoyage",
     "category": "activite",
@@ -183,7 +204,7 @@
     "date": "2026-10-10",
     "endDate": "2026-10-10",
     "dateText": "",
-    "schedule": "9h30 > 13h",
+    "schedule": "9h > 13h",
     "place": "MJC Jean Savine",
     "city": "Villers-lès-Nancy",
     "free": false,
@@ -214,6 +235,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-73",
+    "title": "Cercle des lecteurs",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2026-12-08",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/cercledeslecteurs.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cercle-des-lecteurs",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-301",
     "title": "Groupes de parole pour les proches aidants Orchidée",
     "category": "citoyennete",
@@ -232,6 +274,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-481",
+    "title": "Conférence : Jules CAYETTE, un artiste de transition entre Art Nouveau et Art déco",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/jules.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-jules-cayette-un-artiste-de-transition-entre-art-nouveau-et-art-deco",
     "source": "villers-les-nancy"
   },
   {
@@ -360,6 +423,69 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261028_VISITE_DOMAINE_DE_LASNEE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/visite-histoire-commune-le-domaine-de-lasnee-les-sources-racontent-le-paysage",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-526",
+    "title": "Conférence de Patrick LAGNEAU pour son nouveau roman \" Tu ne tatoueras point\"",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/patrick-lagneau3.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-de-patrick-lagneau-pour-son-nouveau-roman-tu-ne-tatoueras-point",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-603",
+    "title": "Conférence : Renard, les yeux dans les yeux",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-12-09",
+    "endDate": "2026-12-09",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/renard.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-renard-les-yeux-dans-les-yeux",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-602",
+    "title": "Conférence de Dominique BAGUET : La chanoinesse Isabelle de Ludres",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Portrait_de_Madame_Marie-Elisabeth_de_Ludres.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-de-dominique-baguet-la-chanoinesse-isabelle-de-ludres",
     "source": "villers-les-nancy"
   }
 ]

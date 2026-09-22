@@ -1808,5 +1808,55 @@
   "lat": 48.75201,
   "lon": 6.629353,
   "city": "Lezey"
+ },
+ "marsal": {
+  "lat": 48.788665,
+  "lon": 6.605916,
+  "city": "Marsal"
+ },
+ "soulosse-sous-saint-elophe": {
+  "lat": 48.403989,
+  "lon": 5.73543,
+  "city": "Soulosse-sous-Saint-Élophe"
+ },
+ "domremy-la-pucelle": {
+  "lat": 48.440261,
+  "lon": 5.673124,
+  "city": "Domrémy-la-Pucelle"
+ },
+ "portieux": {
+  "lat": 48.344422,
+  "lon": 6.350517,
+  "city": "Portieux"
+ },
+ "bezange-la-petite": {
+  "lat": 48.729537,
+  "lon": 6.612688,
+  "city": "Bezange-la-Petite"
+ },
+ "bouxurulles": {
+  "lat": 48.334958,
+  "lon": 6.231419,
+  "city": "Bouxurulles"
+ },
+ "gerbeviller": {
+  "lat": 48.495113,
+  "lon": 6.510979,
+  "city": "Gerbéviller"
+ },
+ "rugney": {
+  "lat": 48.349491,
+  "lon": 6.252546,
+  "city": "Rugney"
+ },
+ "vincey": {
+  "lat": 48.34275,
+  "lon": 6.331093,
+  "city": "Vincey"
+ },
+ "essegney": {
+  "lat": 48.372222,
+  "lon": 6.310143,
+  "city": "Essegney"
  }
 }

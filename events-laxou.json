@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-bulletins-d-inscription-du-vide-greniers-et-de-la-braderie",
-    "title": "Bulletins d'inscription du vide-greniers et de la braderie",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-09-20",
-    "endDate": "2026-09-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/241/1200_630_7_grenier.png",
-    "url": "https://www.laxou.fr/fr/agenda/bulletins-d-inscription-du-vide-greniers-et-de-la-braderie_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-temps-nature-sur-les-traces-du-castor",
     "title": "Temps Nature sur les traces du castor",
     "category": "activite",
