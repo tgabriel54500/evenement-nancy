@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-41905",
-    "title": "Salon de Peinture Hal'Art à Vézelise",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [],
-    "date": "2026-09-22",
-    "endDate": "2026-09-27",
-    "dateText": "Du 19 au 27 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vézelise",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41905_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41905/salon-de-peinture-hal-art-a-vezelise/meurthe-et-moselle-vezelise/exposition",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-41921",
     "title": "Rencontres de la Chanson à Vandoeuvre-lès-Nancy",
     "category": "festival",

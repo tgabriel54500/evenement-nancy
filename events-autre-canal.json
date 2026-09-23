@@ -175,7 +175,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-sisters-mercy",
+    "uuid": "lcn-sisters-mercy-real-farmer",
     "title": "The Sisters of Mercy",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -193,7 +193,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/tsom_40x60_originale_copie.jpg?itok=oAx-FmtG",
-    "url": "https://lautrecanalnancy.fr/agenda/sisters-mercy",
+    "url": "https://lautrecanalnancy.fr/agenda/sisters-mercy-real-farmer",
     "source": "autre-canal"
   },
   {
@@ -279,7 +279,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-emile-londonien-kissa",
+    "uuid": "lcn-emile-londonien-kissa-jean-michel-moog-son-batard",
     "title": "Emile Londonien : Kissa",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -299,7 +299,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/emile_londonien.jpg?itok=T_dLEklH",
-    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-kissa",
+    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-kissa-jean-michel-moog-son-batard",
     "source": "autre-canal"
   },
   {
@@ -368,7 +368,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-temples",
+    "uuid": "lcn-temples-metro-verlaine",
     "title": "Temples",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -386,7 +386,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/702-illustration_id-1775744652.jpg%3Fitok%3DQ0NQOuXI?itok=3aa2xj0q",
-    "url": "https://lautrecanalnancy.fr/agenda/temples",
+    "url": "https://lautrecanalnancy.fr/agenda/temples-metro-verlaine",
     "source": "autre-canal"
   },
   {
@@ -475,6 +475,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-23",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-160e-anniversaire-du-sport-nautique-de-nancy",
+    "title": "160e anniversaire du Sport Nautique de Nancy",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement",
+      "Grande Halle"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/benpi_bm2455j3_bon_moment_2024_benpi.jpg?itok=KQNTOIZu",
+    "url": "https://lautrecanalnancy.fr/agenda/160e-anniversaire-du-sport-nautique-de-nancy",
     "source": "autre-canal"
   },
   {
@@ -836,7 +858,9 @@
     "catEmoji": "🎸",
     "subcats": [
       "Concert",
-      "Rock"
+      "Psyché",
+      "Rock",
+      "Stoner"
     ],
     "date": "2026-10-29",
     "endDate": "2026-10-29",
@@ -2492,6 +2516,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/762-field_illustration_id-1788358535.jpg%3Fitok%3DVZqneINR?itok=PwawwU-b",
     "url": "https://lautrecanalnancy.fr/agenda/noe-preszow",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-pomme-2027",
+    "title": "Pomme",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Chanson"
+    ],
+    "date": "2027-03-12",
+    "endDate": "2027-03-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/pomme_1_c_nicola_delorme.jpg?itok=XswCDye9",
+    "url": "https://lautrecanalnancy.fr/agenda/pomme-2027",
     "source": "autre-canal"
   },
   {

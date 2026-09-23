@@ -304,6 +304,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-journees-nationales-des-artistes-1",
+    "title": "Journées Nationales des Artistes",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-10-02",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Atelier de Marco PERNA",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/278/1200_630_7_marco-perna-2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/journees-nationales-des-artistes-1_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-fete-de-la-science",
     "title": "Fête de la science",
     "category": "festival",
