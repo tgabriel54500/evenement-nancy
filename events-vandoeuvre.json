@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-23",
+    "date": "2026-09-24",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1052,6 +1052,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29461",
+    "title": "S’informer sur les droits : atelier cancer et travail",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-09-25",
+    "endDate": "2026-09-25",
+    "dateText": "",
+    "schedule": "De 10h à 12h",
+    "place": "Espace Yves Coppens",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/sinformer-sur-les-droits-atelier-cancer-et-travail/",
     "source": "vandoeuvre"
   },
   {

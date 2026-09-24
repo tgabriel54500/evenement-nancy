@@ -806,7 +806,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-yvnnis",
+    "uuid": "lcn-yvnnis-nevon",
     "title": "Yvnnis",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -824,7 +824,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/697-illustration_id-1775658263.jpg%3Fitok%3DfH9HfTdK?itok=llWX9wVk",
-    "url": "https://lautrecanalnancy.fr/agenda/yvnnis",
+    "url": "https://lautrecanalnancy.fr/agenda/yvnnis-nevon",
     "source": "autre-canal"
   },
   {
@@ -2764,7 +2764,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-rodrigo-y-gabriela",
+    "uuid": "lcn-rodrigo-y-gabriela-midori-jaeger",
     "title": "Rodrigo y Gabriela",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -2782,7 +2782,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/698-field_illustration_id-1780577210.jpg%3Fitok%3DiADJEt-p?itok=-aXX4x1P",
-    "url": "https://lautrecanalnancy.fr/agenda/rodrigo-y-gabriela",
+    "url": "https://lautrecanalnancy.fr/agenda/rodrigo-y-gabriela-midori-jaeger",
     "source": "autre-canal"
   },
   {
@@ -2805,6 +2805,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/700-field_illustration_id-1776865601.jpg%3Fitok%3DIgK-yjHg?itok=uXnKBVh5",
     "url": "https://lautrecanalnancy.fr/agenda/adele-castillon",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-dinguerie-blu-samu-cheri-guests",
+    "title": "Dinguerie!",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Etudiant·es",
+      "Party !"
+    ],
+    "date": "2027-04-15",
+    "endDate": "2027-04-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/786-field_illustration_id-1789578990.jpg%3Fitok%3DyiW8MEUQ?itok=LZYOlqLw",
+    "url": "https://lautrecanalnancy.fr/agenda/dinguerie-blu-samu-cheri-guests",
     "source": "autre-canal"
   },
   {
