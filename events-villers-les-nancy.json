@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -33,7 +33,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "endDate": "2026-10-01",
     "dateText": "",
     "schedule": "9h à 11h30",
@@ -211,6 +211,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/image-from-rawpixel-id-235138-original.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-rose",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-312",
+    "title": "Trail des Lumières",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/trail.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/trail-des-lumieres",
     "source": "villers-les-nancy"
   },
   {

@@ -588,7 +588,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-guy2bezbar",
+    "uuid": "lcn-guy2bezbar-amper",
     "title": "Guy2Bezbar",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -606,7 +606,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/684-illustration_id-1773928050.png?itok=ZqQI14xn",
-    "url": "https://lautrecanalnancy.fr/agenda/guy2bezbar",
+    "url": "https://lautrecanalnancy.fr/agenda/guy2bezbar-amper",
     "source": "autre-canal"
   },
   {
@@ -1132,6 +1132,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20260512_enregistrement_valentine_laurent_c_mae_sainte-croix1.jpg?itok=x2McL7zs",
     "url": "https://lautrecanalnancy.fr/agenda/les-commandes-de-la-voix-atelier-de-technique-vocale",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-fenim0re-virgae",
+    "title": "Fenim0re + Ra Ph",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Techno"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fenim0re-444_1.jpg?itok=GEprzOyF",
+    "url": "https://lautrecanalnancy.fr/agenda/fenim0re-virgae",
     "source": "autre-canal"
   },
   {
@@ -1743,28 +1765,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_lindaflorin_2025-2_copie.jpg?itok=GX3B4CvU",
     "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ladies-first-une-anthologie-du-rap-au-feminin-par-sylvain-bertot",
-    "title": "Ladies First : une anthologie du rap au féminin",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Conférence"
-    ],
-    "date": "2026-12-05",
-    "endDate": "2026-12-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_site_vrt_jaune.png?itok=lwSmIiup",
-    "url": "https://lautrecanalnancy.fr/agenda/ladies-first-une-anthologie-du-rap-au-feminin-par-sylvain-bertot",
     "source": "autre-canal"
   },
   {
@@ -2805,6 +2805,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/700-field_illustration_id-1776865601.jpg%3Fitok%3DIgK-yjHg?itok=uXnKBVh5",
     "url": "https://lautrecanalnancy.fr/agenda/adele-castillon",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-oria",
+    "title": "Oria",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop"
+    ],
+    "date": "2027-04-10",
+    "endDate": "2027-04-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/oria_hd_cadele_boterf.jpeg?itok=AiHFRCiT",
+    "url": "https://lautrecanalnancy.fr/agenda/oria",
     "source": "autre-canal"
   },
   {

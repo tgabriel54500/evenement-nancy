@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -152,6 +152,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-9ec9ec26-b8ab-11f1-b465-6b794522c650",
+    "title": "Les rendez-vous du Collectif Autrement Dit",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2026-10-17",
+    "dateText": "Du 13 au 17 octobre",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9ec9ec26-b8ab-11f1-b465-6b794522c650/0/1-1_M_6ab6172214412.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=9ec9ec26-b8ab-11f1-b465-6b794522c650",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-a936525e-8443-11f1-8277-c597bc448103",
     "title": "Ces Mondes en nous",
     "category": "musique-classique",
@@ -194,6 +215,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/864ab928-eade-11f0-bdc5-a765d39e7aeb/0/ORIGINE_M_695ccfce94a82.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=864ab928-eade-11f0-bdc5-a765d39e7aeb",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-444390d0-b8ac-11f1-86ec-35fa65e19e18",
+    "title": "CHEVREUIL - Association Monolithe",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "dateText": "Le 24 octobre 2026",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/444390d0-b8ac-11f1-86ec-35fa65e19e18/0/1-1_M_6ab61a4e3e868.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=444390d0-b8ac-11f1-86ec-35fa65e19e18",
     "source": "poirel"
   },
   {

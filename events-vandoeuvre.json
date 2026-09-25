@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-24",
+    "date": "2026-09-25",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1033,25 +1033,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29041",
-    "title": "Septembre rouge – Village prévention",
-    "category": "sante",
-    "catLabel": "Santé",
-    "catEmoji": "🩺",
-    "subcats": [],
-    "date": "2026-09-24",
-    "endDate": "2026-09-24",
-    "dateText": "",
-    "schedule": "De 13h à 16h",
-    "place": "Hôpitaux de Brabois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/septembre-rouge-village-prevention/",
     "source": "vandoeuvre"
   },
   {

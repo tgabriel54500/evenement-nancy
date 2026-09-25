@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-41921",
-    "title": "Rencontres de la Chanson à Vandoeuvre-lès-Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-09-24",
-    "endDate": "2026-09-27",
-    "dateText": "Du 23 au 27 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Vandoeuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41921_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41921/rencontres-de-la-chanson-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/festival",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42057",
     "title": "Jardins de Ville, Jardins de Vie Grand Nancy",
     "category": "festival",
@@ -187,6 +168,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42089_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42089/bourse-aux-vetements-et-puericulture-malzeville/meurthe-et-moselle-malzeville/brocante-bourse",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42100",
+    "title": "Dîner dans le noir au Château d'Art-sur-Meurthe",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Art-sur-Meurthe",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42100_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42100/diner-dans-le-noir-au-chateau-d-art-sur-meurthe/meurthe-et-moselle-art-sur-meurthe/soiree",
     "source": "lorraineaucoeur"
   },
   {
