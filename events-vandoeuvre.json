@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-25",
+    "date": "2026-09-26",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1033,25 +1033,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29461",
-    "title": "S’informer sur les droits : atelier cancer et travail",
-    "category": "sante",
-    "catLabel": "Santé",
-    "catEmoji": "🩺",
-    "subcats": [],
-    "date": "2026-09-25",
-    "endDate": "2026-09-25",
-    "dateText": "",
-    "schedule": "De 10h à 12h",
-    "place": "Espace Yves Coppens",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/sinformer-sur-les-droits-atelier-cancer-et-travail/",
     "source": "vandoeuvre"
   },
   {
@@ -1494,6 +1475,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29478",
+    "title": "Soirée 100% femmes spéciale Octobre rose",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "De 14h à 20h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/soiree-100-femmes-speciale-octobre-rose/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-14612",
     "title": "Loto solidaire",
     "category": "famille",
@@ -1569,6 +1569,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-24200",
+    "title": "Réunion d’information et de concertation sur les futurs aménagements de Vand’Est-Etoile",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [],
+    "date": "2026-10-16",
+    "endDate": "2026-10-16",
+    "dateText": "",
+    "schedule": "18h",
+    "place": "Espace Yves Coppens",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-et-de-concertation-sur-les-futurs-amenagements-de-vandest-etoile/",
     "source": "vandoeuvre"
   },
   {

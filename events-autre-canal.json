@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-20",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-09-25",
-    "endDate": "2026-09-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web9.jpg?itok=FfuhOcZ3",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-20",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-megafoire-aux-disques",
     "title": "Mégafoire aux disques",
     "category": "activite",
@@ -66,7 +44,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-sync-peet-sozzaa",
+    "uuid": "lcn-sync-peet-tema",
     "title": "SYNC",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -84,7 +62,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_3_-_dominique_brion.jpeg?itok=rgeC9G67",
-    "url": "https://lautrecanalnancy.fr/agenda/sync-peet-sozzaa",
+    "url": "https://lautrecanalnancy.fr/agenda/sync-peet-tema",
     "source": "autre-canal"
   },
   {
@@ -2432,8 +2410,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-la-p-tite-fumee",
-    "title": "La P'tite fumée",
+    "uuid": "lcn-la-p-tite-fumee-2027",
+    "title": "La P'tite fumée + DJ Lotu + Bakû + M.O.K.O",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -2449,8 +2427,8 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/694-illustration_id-1774451250.png?itok=RNDPmJDz",
-    "url": "https://lautrecanalnancy.fr/agenda/la-p-tite-fumee",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/e.g.o_ok.png?itok=rPOLTmg8",
+    "url": "https://lautrecanalnancy.fr/agenda/la-p-tite-fumee-2027",
     "source": "autre-canal"
   },
   {

@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "zen-mania-the-abba-tribute",
-    "title": "MANIA, THE ABBA TRIBUTE",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-25",
-    "endDate": "2026-09-25",
-    "dateText": "Vendredi 25 septembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/05/Mania_Originale-sans-logo-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/mania-the-abba-tribute/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-patrick-bruel",
     "title": "Patrick Bruel",
     "category": "musiques-actuelles",
@@ -226,7 +205,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/Redouane-Bougheraba_MPS_affiche_40x60_web-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/09/Redouane-Bougheraba_MPS-V2_visuelweb_digital_story_1080x1920_nancy-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/redouane-bougheraba/",
     "source": "zenith-nancy"
   },
@@ -522,6 +501,27 @@
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/04/Nawell-Madani_originale-sans-logos-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/nawell-madani/",
+    "source": "zenith-nancy"
+  },
+  {
+    "uuid": "zen-le-lac-des-cygnes-2",
+    "title": "Le Lac des Cygnes",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Ballet"
+    ],
+    "date": "2027-02-19",
+    "endDate": "2027-02-19",
+    "dateText": "Vendredi 19 février 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/09/le-lac-des-cygnes-visuel-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/le-lac-des-cygnes-2/",
     "source": "zenith-nancy"
   },
   {
