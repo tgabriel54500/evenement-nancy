@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -1023,7 +1023,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-26",
+    "date": "2026-09-27",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1033,46 +1033,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-19932",
-    "title": "Ateliers philo",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "10h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-27452",
-    "title": "Atelier numérique : initiation à Canva",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "De 10h30 à 12h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/ateliers-numeriques-initiation-a-canva/",
     "source": "vandoeuvre"
   },
   {
@@ -1115,7 +1075,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-sport-inclusif/",
     "source": "vandoeuvre"
   },
@@ -1134,7 +1094,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bus-de-lentrepreneuriat/",
     "source": "vandoeuvre"
   },
@@ -1153,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
@@ -1174,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
     "source": "vandoeuvre"
   },
@@ -1234,7 +1194,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/portes-ouvertes-sodexo/",
     "source": "vandoeuvre"
   },
@@ -1253,7 +1213,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video/",
     "source": "vandoeuvre"
   },
@@ -1272,7 +1232,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-voix-et-orgue/",
     "source": "vandoeuvre"
   },
@@ -1291,7 +1251,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1312,7 +1272,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch/",
     "source": "vandoeuvre"
   },
@@ -1432,7 +1392,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news/",
     "source": "vandoeuvre"
   },
@@ -1451,7 +1411,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1470,7 +1430,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre"
   },
@@ -1489,7 +1449,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/soiree-100-femmes-speciale-octobre-rose/",
     "source": "vandoeuvre"
   },
@@ -1548,7 +1508,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre"
   },
@@ -1567,7 +1527,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
     "source": "vandoeuvre"
   },
@@ -1586,7 +1546,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-et-de-concertation-sur-les-futurs-amenagements-de-vandest-etoile/",
     "source": "vandoeuvre"
   },
@@ -1607,7 +1567,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
     "source": "vandoeuvre"
   },
@@ -1626,7 +1586,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1647,7 +1607,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
     "source": "vandoeuvre"
   },
@@ -1685,7 +1645,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre"
   },
@@ -1706,7 +1666,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-3/",
     "source": "vandoeuvre"
   },
@@ -1767,7 +1727,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
     "source": "vandoeuvre"
   },
@@ -1786,7 +1746,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news-2/",
     "source": "vandoeuvre"
   },
@@ -1824,7 +1784,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
@@ -1843,7 +1803,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/sensibilisation-aux-gestes-qui-sauvent-2/",
     "source": "vandoeuvre"
   },
@@ -1864,7 +1824,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre"
   },
@@ -1885,7 +1845,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-2/",
     "source": "vandoeuvre"
   },
@@ -1904,7 +1864,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
@@ -1923,7 +1883,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   },
@@ -1944,7 +1904,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre"
   },
@@ -1963,7 +1923,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
     "source": "vandoeuvre"
   },
@@ -1982,7 +1942,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre"
   },
@@ -2001,7 +1961,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   },

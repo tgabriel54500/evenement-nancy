@@ -1,71 +1,5 @@
 [
   {
-    "uuid": "lcn-megafoire-aux-disques",
-    "title": "Mégafoire aux disques",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Grande Halle"
-    ],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ecolecondenancy-dsc_8396.jpg?itok=WfaDEDXE",
-    "url": "https://lautrecanalnancy.fr/agenda/megafoire-aux-disques",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-rencontre-avec-peet",
-    "title": "Rencontre avec Peet",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Rencontre"
-    ],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/681-field_illustration_id-1779367345.jpg?itok=HLFuZ2RN",
-    "url": "https://lautrecanalnancy.fr/agenda/rencontre-avec-peet",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-sync-peet-tema",
-    "title": "SYNC",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Rap"
-    ],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_3_-_dominique_brion.jpeg?itok=rgeC9G67",
-    "url": "https://lautrecanalnancy.fr/agenda/sync-peet-tema",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-video-games-music-making-d-une-exposition-sur-la-musique-de-jeu",
     "title": "Video Games & Music",
     "category": "activite",
@@ -2895,28 +2829,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ncy-design-week",
-    "title": "NCY Design Week",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Petite Halle"
-    ],
-    "date": "2027-09-18",
-    "endDate": "2027-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-02_a_09.43.57.png?itok=MUHjSgXo",
-    "url": "https://lautrecanalnancy.fr/agenda/ncy-design-week",
     "source": "autre-canal"
   }
 ]

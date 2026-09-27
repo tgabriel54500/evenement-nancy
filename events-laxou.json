@@ -209,25 +209,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-temps-nature-sur-les-traces-du-castor",
-    "title": "Temps Nature sur les traces du castor",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2026-09-26",
-    "endDate": "2026-09-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/273/1200_630_7_design-sans-titre-37.png",
-    "url": "https://www.laxou.fr/fr/agenda/temps-nature-sur-les-traces-du-castor_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-semaine-nationale-du-chien",
     "title": "Semaine nationale du chien",
     "category": "autre",
@@ -247,8 +228,8 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-atelier-phi-la",
-    "title": "Atelier Phi-La",
+    "uuid": "lx-temps-nature-sur-les-traces-du-castor",
+    "title": "Temps Nature sur les traces du castor",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -257,12 +238,12 @@
     "endDate": "2026-09-26",
     "dateText": "",
     "schedule": "",
-    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
+    "place": "",
     "city": "Laxou",
     "free": false,
     "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/119/1200_630_7_phi-la-sept-2026.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/atelier-phi-la_-d.html",
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/273/1200_630_7_design-sans-titre-37.png",
+    "url": "https://www.laxou.fr/fr/agenda/temps-nature-sur-les-traces-du-castor_-d.html",
     "source": "laxou"
   },
   {
@@ -434,6 +415,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/233/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-2_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-jeudis-de-pergaud",
+    "title": "Jeudis de Pergaud",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Louis Pergaud",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/62/1200_630_7_affiche-jeudis-de-pergaud.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/jeudis-de-pergaud_-d.html",
     "source": "laxou"
   },
   {
