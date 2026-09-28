@@ -111,7 +111,8 @@ test("Centre Prouvé / Parc Expo : congrès gardés, grand public écarté, plag
   assert.ok(titles.includes("2èmes Rencontres du Réseau vélo et marche"));
   assert.ok(titles.includes("Congrès et Salon des Epl"));
   assert.ok(titles.includes("Solutions CSE"));
-  assert.ok(!titles.some(t => /Studyrama|Bières/.test(t)), "grand public écarté : " + titles.join(", "));
+  assert.ok(!titles.some(t => /Studyrama|Fête des Bières/.test(t)), "grand public écarté : " + titles.join(", "));
+  assert.ok(titles.includes("Salon du Brasseur & de la Boisson"), "salon de filière gardé");
   const velo = evs[0];
   assert.strictEqual(velo.date, "2026-09-30");
   assert.strictEqual(velo.endDate, "2026-10-02");

@@ -431,8 +431,12 @@ async function scrapeCCI() {
 // La page mélange congrès professionnels et salons grand public sans les
 // distinguer : on garde ce qui ressemble à un rendez-vous professionnel.
 
-const PRO_RE = /congr[eè]s|journ[ée]es?\b|rencontres|forum|colloque|assises|symposium|s[ée]minaire|convention|professionnel|\bCSE\b|executive|entreprises|r[ée]seau/i;
-const PUBLIC_RE = /studyrama|foire|festival|f[êe]te|paranormal|bien-[êe]tre|divinatoire|randos|rallye|puces|brasseur|bi[èe]res?|habitat|d[îi]ners?|soir[ée]e 80|pas d.[âa]ge|d[ée]lices|remise des dipl[ôo]mes/i;
+// Vérifié sur la page réelle du 2026-09-28 (24 cartes) : 9 congrès et journées
+// pro gardés au Centre Prouvé, Solutions CSE et le Salon du Brasseur (filière)
+// gardés au Parc Expo ; Studyrama, Y'a Pas d'Âge, remise des diplômes, Dîners à
+// Prouvé, foire, fêtes et salons grand public écartés.
+const PRO_RE = /congr[eè]s|journ[ée]es?\b|rencontres|forum|colloque|assises|symposium|s[ée]minaire|convention|professionnel|\bCSE\b|executive|entreprises|r[ée]seau|fili[èe]re/i;
+const PUBLIC_RE = /studyrama|foire|festival|f[êe]te|paranormal|bien-[êe]tre|divinatoire|randos|rallye|puces|\bbi[èe]res?\b|habitat|d[îi]ners?|soir[ée]e 80|pas d.[âa]ge|d[ée]lices|remise des dipl[ôo]mes/i;
 
 function parseProuve(html, base = "https://www.destination-nancy.com") {
   const out = [];
