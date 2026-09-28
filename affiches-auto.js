@@ -93,9 +93,12 @@ function posterKey(ev) {
   return `${slug}-${h.toString(36)}`;
 }
 
-function posterSVG(ev) {
-  const [top, bottom, accent, picto] = THEMES[ev.category] || THEMES.autre;
-  const label = (CAT_LABEL[ev.category] || "Sortie").toUpperCase();
+function posterSVG(ev, opts = {}) {
+  const themes = opts.themes || THEMES, labels = opts.labels || CAT_LABEL;
+  const [top, bottom, accent, picto] = themes[ev.category] || themes.autre || THEMES.autre;
+  // Bandeau au-dessus du titre : la catégorie, ou ce que l'appelant décide
+  // (l'onglet Pro y met le nom du réseau organisateur).
+  const label = String((opts.labelOf && opts.labelOf(ev)) || labels[ev.category] || "Sortie").toUpperCase();
   const { size, lines } = layoutTitle(ev.title);
   const lineH = Math.round(size * 1.12);
   // Bloc titre centré verticalement autour de y=700 (zone sûre 220–1000 : la
@@ -137,23 +140,29 @@ function posterSVG(ev) {
 
 // Pose une affiche générée sur chaque événement sans image. Les fichiers
 // d'événements disparus sont supprimés.
-function applyAutoPosters(events) {
-  fs.mkdirSync(DIR, { recursive: true });
+//
+// `opts` permet à un autre onglet de réutiliser le moteur avec SON dossier et
+// SES couleurs (update-pro.js : { dir: "affiches-pro", themes, labels }) sans
+// toucher aux affiches de la culture : chaque dossier fait son propre ménage.
+function applyAutoPosters(events, opts = {}) {
+  const dirName = opts.dir || "affiches-auto";
+  const dir = path.join(__dirname, dirName);
+  fs.mkdirSync(dir, { recursive: true });
   const kept = new Set();
   let n = 0;
   for (const ev of events) {
     if (ev.image && !ev.autoPoster) continue;
     const file = `${posterKey(ev)}.svg`;
-    const svg = posterSVG(ev);
-    const full = path.join(DIR, file);
+    const svg = posterSVG(ev, opts);
+    const full = path.join(dir, file);
     if (!fs.existsSync(full) || fs.readFileSync(full, "utf8") !== svg) fs.writeFileSync(full, svg, "utf8");
-    ev.image = `affiches-auto/${file}`;
+    ev.image = `${dirName}/${file}`;
     ev.autoPoster = true;
     kept.add(file);
     n++;
   }
-  for (const f of fs.readdirSync(DIR)) if (f.endsWith(".svg") && !kept.has(f)) fs.unlinkSync(path.join(DIR, f));
-  console.log(`  🖼  ${n} affiche(s) générée(s) pour les événements sans image (affiches-auto/).`);
+  for (const f of fs.readdirSync(dir)) if (f.endsWith(".svg") && !kept.has(f)) fs.unlinkSync(path.join(dir, f));
+  console.log(`  🖼  ${n} affiche(s) générée(s) pour les événements sans image (${dirName}/).`);
   return n;
 }
 

@@ -38,6 +38,10 @@
       source: "user",
       addedAt: iso(r.created_at),
       _userEventId: r.id,   // sert au comptage de clics
+      // Champs de l'onglet Pro (kind 'pro') ; sans effet sur la culture.
+      organizer: r.organizer || "",
+      membersOnly: !!r.members_only,
+      description: r.description || "",
     };
   }
 

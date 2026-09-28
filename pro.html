@@ -3,20 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Sport à Nancy — Les matchs des clubs du Grand-Nancy</title>
-  <meta name="description" content="Tous les matchs à domicile des clubs du Grand Nancy : ASNL, SLUC Nancy Basket, VNVB, Grand Nancy Volley-Ball, Nancy Handball. Les affiches de la semaine, par sport et par date.">
-  <link rel="canonical" href="https://agenda-grandnancy.fr/sport.html">
+  <title>Événements pro à Nancy : afterworks, réseaux, conférences</title>
+  <meta name="description" content="Afterworks, petits-déjeuners de réseautage, conférences, salons et congrès à Nancy et dans les communes voisines : les rendez-vous des réseaux d'affaires, de la CCI, du MEDEF 54 et du Centre Prouvé, au même endroit.">
+  <link rel="canonical" href="https://agenda-grandnancy.fr/pro.html">
   <meta name="robots" content="index, follow">
   <!-- Open Graph (aperçu lors d'un partage Facebook/LinkedIn/WhatsApp) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Que faire dans le Grand-Nancy ?">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Sport à Nancy — Les matchs des clubs du Grand-Nancy">
-  <meta property="og:description" content="Les matchs à domicile de l'ASNL, du SLUC, du VNVB, du GNVB et de Nancy Handball.">
-  <meta property="og:url" content="https://agenda-grandnancy.fr/sport.html">
+  <meta property="og:title" content="Événements pro à Nancy : afterworks, réseaux, conférences">
+  <meta property="og:description" content="Les rendez-vous des réseaux d'affaires de Nancy, de la CCI, du MEDEF 54 et du Centre Prouvé.">
+  <meta property="og:url" content="https://agenda-grandnancy.fr/pro.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sport à Nancy — Les matchs des clubs du Grand-Nancy">
-  <meta name="twitter:description" content="Les matchs à domicile des clubs du Grand Nancy.">
+  <meta name="twitter:title" content="Événements pro à Nancy">
+  <meta name="twitter:description" content="Afterworks, réseaux d'affaires, conférences et congrès à Nancy.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
@@ -31,15 +31,15 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-view="sport">
+<body data-view="pro" data-kind="pro">
   <header class="hero">
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
-      <h1 class="hero__title">Le <span>sport</span> à Nancy</h1>
-      <p class="hero__tagline">Tous les matchs à domicile des clubs du Grand&nbsp;Nancy, au même endroit.</p>
+      <h1 class="hero__title">Les rendez-vous <span>pro</span> à Nancy</h1>
+      <p class="hero__tagline">Afterworks, petits-déjeuners de réseau, conférences et congrès, à Nancy et à moins de 5&nbsp;km.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="search" id="search" placeholder="Rechercher un club, un adversaire, une salle…" aria-label="Rechercher un match">
+        <input type="search" id="search" placeholder="Rechercher un réseau, un thème, un lieu…" aria-label="Rechercher un événement pro">
       </div>
       <div class="nav-account" id="navAccount">
         <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
@@ -54,30 +54,36 @@
       </div>
       <div class="hero__views" role="tablist" aria-label="Mode d'affichage">
         <a class="view-switch" href="index.html">🖼️ Galerie</a>
-        <span class="view-switch is-active" aria-current="page">🏅 Sport</span>
-        <a class="view-switch" href="pro.html">💼 Pro</a>
+        <a class="view-switch" href="sport.html">🏅 Sport</a>
+        <span class="view-switch is-active" aria-current="page">💼 Pro</span>
       </div>
     </div>
   </header>
 
   <main class="container">
     <nav class="datefilters" id="dateFilters" aria-label="Filtrer par date"></nav>
-    <nav class="filters" id="filters" aria-label="Filtrer par sport"></nav>
+    <nav class="filters" id="filters" aria-label="Filtrer par type de rendez-vous"></nav>
     <div class="toolbar" id="toolbar" aria-label="Recherche avancée et favoris"></div>
 
     <p class="results-count" id="resultsCount"></p>
 
     <section class="gallery" id="gallery" aria-live="polite"></section>
 
-    <p class="empty" id="empty" hidden>Aucun match ne correspond à votre recherche. Essayez un autre sport ou une autre période.</p>
+    <p class="empty" id="empty" hidden>Aucun rendez-vous ne correspond à votre recherche. Essayez un autre type ou une autre période.</p>
   </main>
 
+  <section class="reseaux-section container" aria-labelledby="reseaux-title">
+    <h2 id="reseaux-title" class="reseaux-section__title">Les réseaux d'affaires du Grand Nancy</h2>
+    <p class="reseaux-section__intro">Certains publient leur agenda, d'autres réservent leurs rendez-vous à leurs membres. Vous animez un réseau, un club ou un événement pro ? <a href="compte.html">Publiez vos dates ici</a>, c'est gratuit.</p>
+    <div class="reseaux" id="reseaux"></div>
+  </section>
+
   <footer class="footer">
-    <p>Matchs à domicile uniquement. Sources : sites officiels des clubs et de leurs ligues. Horaires susceptibles d'être modifiés, vérifiez auprès du club. · <a href="mentions-legales.html">Mentions légales</a></p>
+    <p>Sources : agendas publics des réseaux d'affaires, de la <a href="https://www.nancy.cci.fr/evenements" target="_blank" rel="noopener">CCI Grand Nancy</a>, du MEDEF 54 et de <a href="https://www.destination-nancy.com/organiser-un-evenement-a-nancy/agenda-et-actualites/" target="_blank" rel="noopener">Destination Nancy</a>, et événements publiés par les organisateurs. Inscription auprès de l'organisateur. · <a href="mentions-legales.html">Mentions légales</a></p>
   </footer>
 
   <!-- Lightbox : affiche en grand au clic -->
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Affiche du match">
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Fiche de l'événement">
     <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
     <div class="lightbox__inner" id="lightboxInner"></div>
   </div>
@@ -104,12 +110,36 @@
     })();
   </script>
 
-  <!-- Même moteur que la galerie culture : data-sport.js fournit CATEGORIES
-       (les sports) et EVENTS (les rencontres), au même schéma que data.js. -->
-  <script src="data-sport.js"></script>
+  <!-- Même moteur que la galerie culture : data-pro.js fournit CATEGORIES
+       (types de rendez-vous), EVENTS (les événements) et RESEAUX (annuaire),
+       au même schéma que data.js. Les événements publiés par les organisateurs
+       (compte.html, kind 'pro') sont fusionnés par user-events.js. -->
+  <script src="data-pro.js"></script>
   <script src="events-core.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config-supabase.js"></script>
+  <script src="user-events.js"></script>
   <script src="galerie.js"></script>
   <script src="pwa.js"></script>
+  <!-- Annuaire des réseaux d'affaires : ceux qui publient un agenda et ceux
+       dont les rendez-vous restent entre membres (invités à publier ici). -->
+  <script>
+    (function () {
+      var host = document.getElementById("reseaux");
+      if (!host || typeof RESEAUX === "undefined") return;
+      var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+      host.innerHTML = RESEAUX.map(function (r) {
+        var lien = r.agenda || r.site;
+        return '<article class="reseau' + (r.membersOnly ? " reseau--membres" : "") + '">' +
+          '<h3 class="reseau__name"><a href="' + esc(lien) + '" target="_blank" rel="noopener">' + esc(r.name) + '</a></h3>' +
+          '<p class="reseau__blurb">' + esc(r.blurb) + '</p>' +
+          '<p class="reseau__meta">' +
+            (r.count ? '<span class="reseau__count">' + r.count + ' rendez-vous à venir</span>' : (r.membersOnly ? '<span class="reseau__count">🔒 Agenda réservé aux membres</span>' : '<span class="reseau__count">Aucune date annoncée</span>')) +
+            (r.frequency ? ' · ' + esc(r.frequency) : "") +
+          '</p></article>';
+      }).join("");
+    })();
+  </script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">

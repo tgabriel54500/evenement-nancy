@@ -45,7 +45,7 @@ mkdir -p "$DIST"
 # figure dans la nav. À ne pas confondre avec le chantier « sport amateur »
 # (publication par les clubs via Supabase), toujours en pause : sport.js, lui,
 # n'est pas publié.
-FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
+FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js pro.html data-pro.js pro-categories.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
@@ -81,12 +81,19 @@ if [ -d "$PROJ/affiches-sport" ]; then
   echo "  affiches sport copiées : $(ls -1 "$DIST/affiches-sport" 2>/dev/null | wc -l | tr -d ' ')"
 fi
 
+# Affiches des rendez-vous pro, générées par update-pro.js (affiches-pro/<clé>.svg).
+if [ -d "$PROJ/affiches-pro" ]; then
+  mkdir -p "$DIST/affiches-pro"
+  cp "$PROJ"/affiches-pro/*.svg "$DIST/affiches-pro/" 2>/dev/null
+  echo "  affiches pro copiées : $(ls -1 "$DIST/affiches-pro" 2>/dev/null | wc -l | tr -d ' ')"
+fi
+
 # (Ancien GATE PROD retiré 2026-07-19 : l'espace organisateur est publié.)
 
 # Sur chaque page publiée on injecte le compteur de visites GoatCounter (privé, sans
 # cookie). Ces ajouts ne concernent QUE le build public dist/ : la version locale
 # reste propre. GoatCounter ignore localhost/file:// → seules les vraies visites comptent.
-for page in index.html nouveautes.html sport.html compte.html mentions-legales.html; do
+for page in index.html nouveautes.html sport.html pro.html compte.html mentions-legales.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
@@ -104,14 +111,14 @@ done
 # publié → les visiteurs (mobiles surtout, cache agressif) reçoivent chaque mise à
 # jour sans vider leur cache.
 VER="$(date +%Y%m%d%H%M)"
-for page in index.html nouveautes.html sport.html compte.html mentions-legales.html; do
+for page in index.html nouveautes.html sport.html pro.html compte.html mentions-legales.html; do
   [ -f "$DIST/$page" ] || continue
   node -e '
     const fs = require("fs");
     const [p, v] = process.argv.slice(1);
     let h = fs.readFileSync(p, "utf8");
     // (\?[^"]*)? : remplace aussi un éventuel ?v=… déjà présent dans les sources.
-    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js|data-sport\.js|compte\.js|compte\.css|user-events\.js|config-supabase\.js)(\?[^"]*)?"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
+    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js|data-sport\.js|data-pro\.js|pro-categories\.js|compte\.js|compte\.css|user-events\.js|config-supabase\.js)(\?[^"]*)?"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
     fs.writeFileSync(p, h);
   ' "$DIST/$page" "$VER"
 done
@@ -216,6 +223,8 @@ if [ -f "$DIST/sitemap.xml" ]; then
       "  <url>\n    <loc>" + site + "/</loc>\n    <lastmod>" + today +
       "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>1.0</priority>\n  </url>\n" +
       "  <url>\n    <loc>" + site + "/nouveautes.html</loc>\n    <lastmod>" + today +
+      "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n" +
+      "  <url>\n    <loc>" + site + "/pro.html</loc>\n    <lastmod>" + today +
       "</lastmod>\n    <changefreq>daily</changefreq>\n    <priority>0.8</priority>\n  </url>\n" +
       "  <url>\n    <loc>" + site + "/compte.html</loc>\n    <lastmod>" + today +
       "</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.5</priority>\n  </url>\n" +

@@ -84,6 +84,12 @@ run_step "update-events.js"
 run_step "sport-scrape.js"
 run_step "update-sport.js"
 
+# Rendez-vous professionnels (onglet Pro) : récupération des agendas des réseaux
+# d'affaires, de la CCI, du MEDEF 54 et du Centre Prouvé, puis data-pro.js et
+# affiches-pro/. Même isolement que le sport.
+run_step "pro-scrape.js"
+run_step "update-pro.js"
+
 # --- 4. Publication du site statique LIVE sur CLOUDFLARE (Workers static assets).
 # Remplace l'ancien deploy-site.sh → Netlify (abandonné : Netlify n'est plus
 # l'origine de agenda-grandnancy.fr). Sauté proprement si le script est absent. ---
