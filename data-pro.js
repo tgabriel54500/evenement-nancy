@@ -3,7 +3,7 @@
 // Sources : agendas publics des réseaux d'affaires, de la CCI, du MEDEF 54 et
 // du Centre Prouvé (voir pro-sources.js / pro-scrape.js).
 // Régénérer : node pro-scrape.js && node update-pro.js
-// Généré le : 2026-09-28 — 13 événement(s) à venir.
+// Généré le : 2026-09-28 — 12 événement(s) à venir.
 
 const CATEGORIES = {
   "formation": {
@@ -14,17 +14,9 @@ const CATEGORIES = {
     "label": "Petits-déjeuners & déjeuners",
     "emoji": "☕"
   },
-  "salon": {
-    "label": "Salons & congrès",
-    "emoji": "🏛️"
-  },
   "conference": {
     "label": "Conférences & tables rondes",
     "emoji": "🎤"
-  },
-  "afterwork": {
-    "label": "Afterworks & networking",
-    "emoji": "🥂"
   }
 };
 
@@ -40,7 +32,7 @@ const RESEAUX = [
     "frequency": "Un rendez-vous par mois environ",
     "membersOnly": false,
     "scrape": true,
-    "count": 2
+    "count": 1
   },
   {
     "key": "cafesbusiness",
@@ -51,7 +43,7 @@ const RESEAUX = [
     "frequency": "Deux mardis par mois environ, à 9h",
     "membersOnly": false,
     "scrape": true,
-    "count": 3
+    "count": 5
   },
   {
     "key": "adjan",
@@ -95,7 +87,7 @@ const RESEAUX = [
     "frequency": "Selon le calendrier des congrès",
     "membersOnly": false,
     "scrape": true,
-    "count": 2
+    "count": 0
   },
   {
     "key": "sluc-business",
@@ -200,32 +192,6 @@ const EVENTS = [
     "autoPoster": true
   },
   {
-    "uuid": "pro-prouve-2emes-rencontres-du-reseau-velo-et-marche",
-    "title": "2èmes Rencontres du Réseau vélo et marche",
-    "category": "salon",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-02",
-    "dateText": "Du 30 au 2 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25409/rencontres-velo-2026-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/2emes-rencontres-du-reseau-velo-et-marche/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Cette année, les 2èmes Rencontres du Réseau vélo et marche se tiendront du 30 septembre au 02 octobre 2026 au Centre Prouvé de Nancy. L’événement de référence qui réunit l’ensemble de l’écosystème français des mobilités actives."
-  },
-  {
     "uuid": "pro-audacieux-petit-dej-audacieux-b-coworker-nancy-2026-10-01",
     "title": "Petit déj Audacieux – B’CoWorker Nancy",
     "category": "petit-dej",
@@ -249,7 +215,7 @@ const EVENTS = [
     "organizer": "Les Audacieux Nancy",
     "membersOnly": false,
     "price": "",
-    "description": "Comme toujours, l’objectif est simple : se rencontrer, échanger et créer des opportunités business dans une ambiance détendue et bienveillante. Le déroulement du petit dej : 8h30 – Accueil des participants. 9h00 – Mot de bienvenue et présentation du B’cowoker Nancy Tour de table et networking.",
+    "description": "Comme toujours, l’objectif est simple : se rencontrer, échanger et créer des opportunités business dans une ambiance détendue et bienveillante. Le déroulement du petit dej : 8h30 – Accueil des participants. 9h00 – Mot de bienvenue et présentation du B’cowoker Nancy Tour de table et networking. Tu as envie de rencontrer des entrepreneurs et commerciaux de la métropole nancéienne ? De développer son réseau professionnel ? Partager des idées, des conseils et des opportunités ? Que tu sois déjà membre ou nouveau curieux, ce petit dej est ouvert à tous les esprits audacieux qui souhaitent élargir l",
     "autoPoster": true
   },
   {
@@ -268,7 +234,7 @@ const EVENTS = [
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/Marc-MADIOT-nancy.png",
+    "image": "https://adjan.fr/wp-content/uploads/2026/09/Marc-MADIOT-Ancien-coureur-cycliste-dirigeant-sportif-et-consultant-francais.-Double-vainqueur-de-Paris-Roubaix-1985-et-19911.png",
     "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
     "source": "adjan",
     "addedAt": "2026-09-28",
@@ -333,30 +299,30 @@ const EVENTS = [
     "autoPoster": true
   },
   {
-    "uuid": "pro-prouve-congres-et-salon-des-epl",
-    "title": "Congrès et Salon des Epl",
-    "category": "salon",
+    "uuid": "pro-cafesbusiness-3444",
+    "title": "Café Business chez DOMITYS",
+    "category": "petit-dej",
     "subcats": [
-      "Centre Prouvé & Parc Expo",
+      "Les Cafés Business",
       "ouvert à tous"
     ],
-    "date": "2026-10-14",
-    "endDate": "2026-10-16",
-    "dateText": "Du 14 au 16 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
+    "date": "2026-10-27",
+    "endDate": "2026-10-27",
+    "dateText": "Mardi 27 octobre 2026",
+    "schedule": "9h00",
+    "place": "DOMITYS",
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "affiches-pro/pro-prouve-congres-et-salon-des-epl-2026-10-14-1dyly9u.svg",
-    "url": "https://www.destination-nancy.com/temps-fort/congres-et-salon-des-epl/",
-    "source": "prouve",
+    "image": "affiches-pro/pro-cafesbusiness-3444-2026-10-27-5i6bvw.svg",
+    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3444",
+    "source": "cafesbusiness",
     "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
+    "network": "cafesbusiness",
+    "organizer": "Les Cafés Business",
     "membersOnly": false,
     "price": "",
-    "description": "Le rendez-vous annuel des entreprises publiques locales.",
+    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par DOMITYS. Inscription en ligne, places limitées.",
     "autoPoster": true
   },
   {
@@ -375,7 +341,7 @@ const EVENTS = [
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/Luc-ALPHAND.png",
+    "image": "https://adjan.fr/wp-content/uploads/2026/09/Marc-MADIOT-Ancien-coureur-cycliste-dirigeant-sportif-et-consultant-francais.-Double-vainqueur-de-Paris-Roubaix-1985-et-19918.png",
     "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
     "source": "adjan",
     "addedAt": "2026-09-28",
@@ -384,6 +350,33 @@ const EVENTS = [
     "membersOnly": false,
     "price": "",
     "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Luc ALPHAND comme intervenant."
+  },
+  {
+    "uuid": "pro-cafesbusiness-3554",
+    "title": "Café Business chez Nissan HESS Automobile",
+    "category": "petit-dej",
+    "subcats": [
+      "Les Cafés Business",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "dateText": "Mardi 10 novembre 2026",
+    "schedule": "9h00",
+    "place": "Nissan HESS Automobile",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-pro/pro-cafesbusiness-3554-2026-11-10-1rbmi2t.svg",
+    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3554",
+    "source": "cafesbusiness",
+    "addedAt": "2026-09-28",
+    "network": "cafesbusiness",
+    "organizer": "Les Cafés Business",
+    "membersOnly": false,
+    "price": "",
+    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Nissan HESS Automobile. Inscription en ligne, places limitées.",
+    "autoPoster": true
   },
   {
     "uuid": "pro-adjan-2026-11-17-equicoaching",
@@ -401,7 +394,7 @@ const EVENTS = [
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/EquiCoaching.png",
+    "image": "https://adjan.fr/wp-content/uploads/2026/09/Design-sans-titre4.png",
     "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
     "source": "adjan",
     "addedAt": "2026-09-28",
@@ -412,7 +405,7 @@ const EVENTS = [
     "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec EquiCoaching comme intervenant."
   },
   {
-    "uuid": "pro-cafesbusiness-3500",
+    "uuid": "pro-cafesbusiness-3660",
     "title": "Café Business chez Office Station",
     "category": "petit-dej",
     "subcats": [
@@ -427,8 +420,8 @@ const EVENTS = [
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3500-2026-12-08-80jjnw.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3500",
+    "image": "affiches-pro/pro-cafesbusiness-3660-2026-12-08-15kjuup.svg",
+    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3660",
     "source": "cafesbusiness",
     "addedAt": "2026-09-28",
     "network": "cafesbusiness",
@@ -463,34 +456,6 @@ const EVENTS = [
     "membersOnly": false,
     "price": "",
     "description": "Vous avez une idée de création d’entreprise mais vous ne savez pas par où commencer ?",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-audacieux-gan-patrimoine-2027-04-22",
-    "title": "Gan Patrimoine",
-    "category": "afterwork",
-    "subcats": [
-      "Les Audacieux Nancy",
-      "20€",
-      "ouvert à tous"
-    ],
-    "date": "2027-04-22",
-    "endDate": "2027-04-22",
-    "dateText": "Jeudi 22 avril 2027",
-    "schedule": "19h00",
-    "place": "7 All. de la Forêt de la Reine, 54500 Vandœuvre-lès-Nancy",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-audacieux-gan-patrimoine-2027-04-22-2027-04-22-bz6u3s.svg",
-    "url": "https://les-audacieux.fr/afterworks/",
-    "source": "audacieux",
-    "addedAt": "2026-09-28",
-    "network": "audacieux",
-    "organizer": "Les Audacieux Nancy",
-    "membersOnly": false,
-    "price": "20€",
-    "description": "Mercredi 22 avril à 19h Gan Patrimoine, Vandoeuvre-lès-Nancy Entrée + restauration : Non membre 20€/ Membre 15€ règlement sur place en CB On te donne rendez-vous pour une nouvelle soirée conviviale de networking !",
     "autoPoster": true
   }
 ];

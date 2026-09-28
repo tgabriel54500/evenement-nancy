@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Café Business chez Fenêtres Nancéiennes">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Café Business chez DOMITYS">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0" stop-color="#7c2d12"/>
@@ -16,12 +16,12 @@
         font-size="30" font-weight="700" letter-spacing="8" fill="#fed7aa">CAFÉS BUSINESS</text>
   <rect x="360" y="526" width="80" height="4" rx="2" fill="#fed7aa" opacity=".8"/>
   <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#ffffff">
-      <text x="400" y="618" font-size="88">Café Business</text>
-      <text x="400" y="717" font-size="88">chez Fenêtres</text>
-      <text x="400" y="816" font-size="88">Nancéiennes</text>
+      <text x="400" y="628" font-size="100">Café</text>
+      <text x="400" y="740" font-size="100">Business</text>
+      <text x="400" y="852" font-size="100">chez DOMITYS</text>
   </g>
   <g text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="400" y="960" font-size="50" font-weight="700" fill="#fed7aa">Mardi 13 octobre</text>
-    <text x="400" y="1022" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Nancy</text>
+    <text x="400" y="972" font-size="50" font-weight="700" fill="#fed7aa">Mardi 27 octobre</text>
+    <text x="400" y="1034" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Nancy</text>
   </g>
 </svg>

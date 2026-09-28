@@ -35,6 +35,21 @@ Réseaux sans agenda public, présents dans l'annuaire seulement : SLUC Business
 Club, VNVB Business Club, GNVB partenaires, Villers Handball Family Business.
 Ils sont invités à publier via compte.html.
 
+## Visuels
+
+- Quand la source publie une image (photo de l'intervenant ADJAN, visuel CCI,
+  couverture MEDEF, image Destination Nancy), elle est reprise telle quelle
+  (lien distant, comme la culture).
+- Sinon, affiche générée aux couleurs du réseau (moteur `affiches-auto.js`),
+  avec le logo du réseau en filigrane et, en médaillon, le logo de l'hôte
+  (Cafés Business : logo de l'entreprise qui reçoit) ou celui du réseau.
+- Les logos sont téléchargés une fois par `pro-scrape.js` dans
+  `affiches-pro/logos/` (URL dans `pro-sources.js`, champ `logo`, relevées à la
+  main le 2026-09-28 ; `--logos` pour forcer). Ils sont INCRUSTÉS en data URI
+  dans les SVG : un SVG chargé en `<img>` ne peut rien charger d'externe.
+  `logoOnDark: true` = logo blanc posé directement sur le fond, sinon plaque
+  blanche. L'annuaire de pro.html affiche aussi ces logos.
+
 ## Filtres (update-pro.js)
 
 - À venir seulement (date de fin >= aujourd'hui).

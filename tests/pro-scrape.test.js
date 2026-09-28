@@ -44,6 +44,8 @@ test("Cafés Business : hôte + date, 9h, lien businessapp", () => {
   assert.strictEqual(evs[0].time, "9h00");
   assert.strictEqual(evs[0].place, "Combi Events");
   assert.strictEqual(evs[0].url, "https://lescafesbusiness.businessapp.fr/meetings/view/3374");
+  assert.strictEqual(evs[0].logo, "https://lescafesbusiness.fr/wp-content/uploads/2026/07/Combi-events.png", "logo de l'hôte");
+  assert.strictEqual(evs[1].logo, "");
   assert.strictEqual(evs[2].date, "2026-12-08");
   assert.strictEqual(evs[0].category, "petit-dej");
 });

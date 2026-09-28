@@ -67,6 +67,49 @@ function shade(hex, pct) {
   return "#" + [(n >> 16) & 255, (n >> 8) & 255, n & 255].map(f).map(v => v.toString(16).padStart(2, "0")).join("");
 }
 
+// ── Logos incrustés ───────────────────────────────────────────────────────
+// Un SVG affiché en <img> ne peut charger aucune ressource externe : le logo
+// est incrusté en data URI. Les fichiers viennent de pro-scrape.js
+// (affiches-pro/logos/). Un logo manquant n'est jamais bloquant.
+const MIME = { png: "image/png", jpg: "image/jpeg", jpeg: "image/jpeg", webp: "image/webp", svg: "image/svg+xml", gif: "image/gif" };
+function dataURI(rel) {
+  if (!rel) return "";
+  const f = path.join(DIR, rel);
+  if (!fs.existsSync(f)) return "";
+  const ext = rel.split(".").pop().toLowerCase();
+  return `data:${MIME[ext] || "image/png"};base64,${fs.readFileSync(f).toString("base64")}`;
+}
+function logoDuReseau(key) {
+  const r = byKey(key);
+  if (!r || !r.logo) return null;
+  const dir = path.join(DIR, "affiches-pro", "logos");
+  if (!fs.existsSync(dir)) return null;
+  const file = fs.readdirSync(dir).find(n => n.replace(/\.[a-z]+$/, "") === key);
+  return file ? { uri: dataURI(path.posix.join("affiches-pro", "logos", file)), onDark: !!r.logoOnDark } : null;
+}
+function habiller(svg, ev, raw) {
+  const reseau = logoDuReseau(ev.network);
+  const hote = raw && raw.logoFile ? { uri: dataURI(raw.logoFile), onDark: false } : null;
+  const medaillon = (hote && hote.uri) ? hote : reseau;
+  let out = svg;
+  // Filigrane : grand logo du réseau, très discret, derrière le titre.
+  if (reseau && reseau.uri) {
+    out = out.replace(/(<rect width="800" height="1200" fill="url\(#g\)"\/>)/,
+      `$1\n  <image href="${reseau.uri}" x="60" y="300" width="680" height="680" preserveAspectRatio="xMidYMid meet" opacity="${reseau.onDark ? ".07" : ".10"}"/>`);
+  }
+  // Médaillon à la place du pictogramme (zone sûre : y 270 à 470).
+  const picto = /<text x="400" y="420" text-anchor="middle" font-size="110">[^<]*<\/text>/;
+  if (medaillon && medaillon.uri) {
+    const plaque = medaillon.onDark ? "" : `<rect x="230" y="272" width="340" height="180" rx="26" fill="#ffffff" opacity=".96"/>`;
+    const pad = medaillon.onDark ? 0 : 18;
+    out = out.replace(picto,
+      `${plaque}<image href="${medaillon.uri}" x="${230 + pad}" y="${272 + pad}" width="${340 - 2 * pad}" height="${180 - 2 * pad}" preserveAspectRatio="xMidYMid meet"/>`);
+  } else {
+    out = out.replace(picto, `<text x="400" y="420" text-anchor="middle" font-size="110">${PICTO[ev.category] || "📌"}</text>`);
+  }
+  return { out, logo: !!(medaillon && medaillon.uri) };
+}
+
 function toEvent(e, firstseen) {
   const r = byKey(e.network) || { name: e.source || "Réseau", short: e.source || "" };
   const uuid = `pro-${e.id}`;
@@ -143,14 +186,19 @@ function main() {
   });
   // Le moteur a posé image/autoPoster sur les copies : on les reporte.
   proxy.forEach((p, i) => { events[i].image = p.image; if (p.autoPoster) events[i].autoPoster = true; });
-  // Le pictogramme du moteur est vide (thème par réseau) : on le remplace par
-  // celui de la catégorie dans le SVG produit.
-  for (const ev of events) {
+  // Habillage : logo du réseau en filigrane derrière le titre et, en médaillon
+  // à la place du pictogramme, le logo de l'hôte (Cafés Business) ou celui du
+  // réseau. Sans logo disponible, le pictogramme de la catégorie.
+  let avecLogo = 0;
+  for (let i = 0; i < events.length; i++) {
+    const ev = events[i];
     if (!ev.autoPoster) continue;
     const f = path.join(DIR, ev.image);
-    const svg = fs.readFileSync(f, "utf8").replace(/font-size="110"><\/text>/, `font-size="110">${PICTO[ev.category] || "📌"}</text>`);
-    fs.writeFileSync(f, svg);
+    const svg = habiller(fs.readFileSync(f, "utf8"), ev, kept[i]);
+    if (svg.logo) avecLogo++;
+    fs.writeFileSync(f, svg.out);
   }
+  if (avecLogo) console.log(`  🏷  ${avecLogo} affiche(s) avec logo incrusté (affiches-pro/logos/).`);
 
   // firstseen : seulement ce qui est encore à l'affiche.
   const fsClean = {};
@@ -162,8 +210,15 @@ function main() {
   for (const ev of events) used[ev.category] = PRO_CATEGORIES[ev.category];
 
   // Annuaire des réseaux (section « Réseaux d'affaires » de pro.html).
+  const logosDir = path.join(DIR, "affiches-pro", "logos");
+  const logoFileOf = (key) => {
+    if (!fs.existsSync(logosDir)) return "";
+    const f = fs.readdirSync(logosDir).find(n => n.replace(/\.[a-z]+$/, "") === key);
+    return f ? `affiches-pro/logos/${f}` : "";
+  };
   const reseaux = RESEAUX.map(r => ({
     key: r.key, name: r.name, site: r.site, agenda: r.agenda || "", blurb: r.blurb,
+    logo: logoFileOf(r.key), logoOnDark: !!r.logoOnDark,
     frequency: r.frequency || "", membersOnly: !!r.membersOnly, scrape: !!r.scrape,
     count: events.filter(ev => ev.network === r.key).length,
   }));

@@ -85,6 +85,11 @@ fi
 if [ -d "$PROJ/affiches-pro" ]; then
   mkdir -p "$DIST/affiches-pro"
   cp "$PROJ"/affiches-pro/*.svg "$DIST/affiches-pro/" 2>/dev/null
+  # Logos des réseaux (annuaire de pro.html) : téléchargés par pro-scrape.js.
+  if [ -d "$PROJ/affiches-pro/logos" ]; then
+    mkdir -p "$DIST/affiches-pro/logos"
+    cp "$PROJ"/affiches-pro/logos/* "$DIST/affiches-pro/logos/" 2>/dev/null
+  fi
   echo "  affiches pro copiées : $(ls -1 "$DIST/affiches-pro" 2>/dev/null | wc -l | tr -d ' ')"
 fi
 

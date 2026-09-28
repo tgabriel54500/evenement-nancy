@@ -131,6 +131,7 @@
       host.innerHTML = RESEAUX.map(function (r) {
         var lien = r.agenda || r.site;
         return '<article class="reseau' + (r.membersOnly ? " reseau--membres" : "") + '">' +
+          (r.logo ? '<a class="reseau__logo' + (r.logoOnDark ? " reseau__logo--dark" : "") + '" href="' + esc(lien) + '" target="_blank" rel="noopener"><img src="' + esc(r.logo) + '" alt="" loading="lazy"></a>' : "") +
           '<h3 class="reseau__name"><a href="' + esc(lien) + '" target="_blank" rel="noopener">' + esc(r.name) + '</a></h3>' +
           '<p class="reseau__blurb">' + esc(r.blurb) + '</p>' +
           '<p class="reseau__meta">' +

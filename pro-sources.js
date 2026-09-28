@@ -26,11 +26,20 @@
  *                fournit pas d'image
  *   blurb        une phrase pour l'annuaire
  *   frequency    rythme annoncé par le réseau (texte libre, annuaire)
+ *   logo         URL du logo officiel, téléchargé une fois par pro-scrape.js
+ *                dans affiches-pro/logos/<key>.<ext> et incrusté dans les
+ *                affiches générées (en fond + en médaillon). Relevé à la main
+ *                sur le site du réseau le 2026-09-28 : à corriger s'il change.
+ *   logoOnDark   true si le logo est blanc/clair (il se pose directement sur
+ *                le fond sombre), false s'il est sombre (posé sur une plaque
+ *                blanche)
  */
 
 const RESEAUX = [
   {
     key: "audacieux",
+    logo: "https://les-audacieux.fr/wp-content/uploads/2026/09/01_Les-Audacieux-Logo-Icone-Blanc0-Copie.png",
+    logoOnDark: true,
     name: "Les Audacieux Nancy",
     short: "Les Audacieux",
     site: "https://les-audacieux.fr/",
@@ -43,6 +52,8 @@ const RESEAUX = [
   },
   {
     key: "cafesbusiness",
+    logo: "https://lescafesbusiness.fr/wp-content/uploads/2025/04/Logo_LCB_Noir-Cafe.png",
+    logoOnDark: false,
     name: "Les Cafés Business",
     short: "Cafés Business",
     site: "https://lescafesbusiness.fr/",
@@ -55,6 +66,8 @@ const RESEAUX = [
   },
   {
     key: "adjan",
+    logo: "https://adjan.fr/wp-content/uploads/2025/11/ADJAN-BLANC-1.png",
+    logoOnDark: true,
     name: "Le 8/9 d'ADJAN",
     short: "8/9 ADJAN",
     site: "https://adjan.fr/le-8-9-adjan/",
@@ -67,6 +80,8 @@ const RESEAUX = [
   },
   {
     key: "medef54",
+    logo: "https://www.medef-meurthe-moselle.fr/bundles/medeffront/img/logo-medef.svg",
+    logoOnDark: false,
     name: "MEDEF Meurthe-et-Moselle",
     short: "MEDEF 54",
     site: "https://www.medef-meurthe-moselle.fr/",
@@ -79,6 +94,8 @@ const RESEAUX = [
   },
   {
     key: "cci",
+    logo: "https://www.nancy.cci.fr/sites/g/files/mwbcuj1011/files/logo-ccit54-2021-2_0.png",
+    logoOnDark: false,
     name: "CCI Grand Nancy Métropole",
     short: "CCI Nancy",
     site: "https://www.nancy.cci.fr/",
@@ -91,6 +108,8 @@ const RESEAUX = [
   },
   {
     key: "prouve",
+    logo: "https://www.destination-nancy.com/app/themes/theme_customer/public/images/logo-principal.9d46c7004d44d198.svg",
+    logoOnDark: false,
     name: "Centre Prouvé & Parc Expo",
     short: "Centre Prouvé",
     site: "https://www.destination-nancy.com/organiser-un-evenement-a-nancy/",
@@ -104,6 +123,8 @@ const RESEAUX = [
   // ── Réseaux sans agenda public : annuaire seulement ─────────────────────
   {
     key: "sluc-business",
+    logo: "https://sluc-basket.fr/app-icons/icon-512x512.png",
+    logoOnDark: false,
     name: "SLUC Business Club",
     short: "SLUC Business",
     site: "https://sluc-basket.fr/sluc-family/qui-sommes-nous-business-club",
@@ -116,6 +137,8 @@ const RESEAUX = [
   },
   {
     key: "vnvb-business",
+    logo: "https://www.vnvb.fr/wp-content/uploads/2025/09/logo-vnvb-1.png",
+    logoOnDark: false,
     name: "VNVB Business Club",
     short: "VNVB Business",
     site: "https://www.vnvb.fr/partenaires/",
@@ -128,6 +151,8 @@ const RESEAUX = [
   },
   {
     key: "gnvb-business",
+    logo: "https://www.nancy-volley.fr/wp-content/uploads/2026/04/cropped-logo_GNVB_rond-1-180x180.png",
+    logoOnDark: false,
     name: "GNVB, partenaires",
     short: "GNVB",
     site: "https://www.nancy-volley.fr/nos-partenaires/",
@@ -140,6 +165,8 @@ const RESEAUX = [
   },
   {
     key: "vhb-family-business",
+    logo: "https://villers-handball.com/wp-content/uploads/2024/05/Logo-family-buisness.png",
+    logoOnDark: false,
     name: "Villers Handball, Family Business",
     short: "VHB Family Business",
     site: "https://villers-handball.com/accueil/family-business/les-evenements/",

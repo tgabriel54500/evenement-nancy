@@ -7,6 +7,7 @@
  *   node pro-scrape.js                 # toutes les sources
  *   node pro-scrape.js --only=cci,adjan
  *   node pro-scrape.js --debug         # + dump des pages brutes dans .debug-pro/
+ *   node pro-scrape.js --logos         # re-télécharge les logos (affiches-pro/logos/)
  *
  * Chaque réseau publie sur son propre site, sans flux ni API : un adaptateur
  * par source (voir pro-sources.js pour le registre). Les adaptateurs sont
@@ -198,6 +199,8 @@ function makeEvent(network, e) {
     price: e.price || "",
     membersOnly: e.membersOnly != null ? !!e.membersOnly : !!(r && r.membersOnly),
     online: !!e.online,          // webinaire / visio : écarté par update-pro.js
+    logo: e.logo || "",          // logo propre à l'événement (hôte), URL distante
+    logoFile: e.logoFile || "",  // rempli par downloadLogos() : chemin local
   };
 }
 
@@ -247,6 +250,9 @@ function parseCafesBusiness(html) {
   const seen = new Set();
   while ((m = re.exec(html))) {
     const label = text(m[3]);
+    // Logo de l'entreprise hôte (posé en médaillon sur l'affiche générée).
+    const imgTag = (m[3].match(/<img[^>]*class="[^"]*eae-body-image[^"]*"[^>]*>/) || [])[0] || "";
+    const logo = attr(imgTag, "data-src") || attr(imgTag, "src");
     const d = label.match(/^(.*?)\s*[-–]\s*(\d{2})\/(\d{2})\/(\d{4})\s*$/);
     if (!d || seen.has(m[2])) continue;
     seen.add(m[2]);
@@ -256,6 +262,7 @@ function parseCafesBusiness(html) {
       id: m[2], title: `Café Business chez ${host}`, date, time: "9h00",
       place: host, city: guessCity(host) || "Nancy",
       url: m[1], category: "petit-dej",
+      logo: /^https?:\/\//.test(logo) && !/^data:/.test(logo) ? logo : "",
       description: `Petit-déjeuner de réseautage des Cafés Business, accueilli par ${host}. Inscription en ligne, places limitées.`,
     }));
   }
@@ -468,6 +475,47 @@ async function scrapeProuve() {
   return parseProuve(await get(r.agenda, { name: "prouve.html" }));
 }
 
+// ── Logos ──────────────────────────────────────────────────────────────────
+// Les affiches générées sont des SVG chargés en <img> : le navigateur leur
+// interdit toute ressource externe, un logo doit donc être INCRUSTÉ (data URI)
+// par update-pro.js. On télécharge ici, une fois, dans affiches-pro/logos/ :
+// le logo de chaque réseau (pro-sources.js) et, s'il existe, celui propre à
+// l'événement (entreprise hôte des Cafés Business). `--logos` force le
+// re-téléchargement. Un logo qui échoue n'est pas bloquant.
+
+const LOGOS_DIR = path.join(__dirname, "affiches-pro", "logos");
+const EXT_BY_TYPE = { "image/png": "png", "image/jpeg": "jpg", "image/webp": "webp", "image/svg+xml": "svg", "image/gif": "gif" };
+
+async function downloadLogo(url, base) {
+  const existing = fs.existsSync(LOGOS_DIR) ? fs.readdirSync(LOGOS_DIR).find(f => f.replace(/\.[a-z]+$/, "") === base) : null;
+  if (existing && !args.includes("--logos")) return path.posix.join("affiches-pro", "logos", existing);
+  const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "image/*,*/*;q=0.8" }, redirect: "follow" });
+  if (!r.ok) throw new Error(`HTTP ${r.status}`);
+  const type = (r.headers.get("content-type") || "").split(";")[0].trim();
+  const ext = EXT_BY_TYPE[type] || (url.match(/\.(png|jpe?g|webp|svg|gif)(\?|$)/i) || [, "png"])[1].toLowerCase().replace("jpeg", "jpg");
+  const buf = Buffer.from(await r.arrayBuffer());
+  if (buf.length < 200 || buf.length > 2 * 1024 * 1024) throw new Error(`taille suspecte (${buf.length} o)`);
+  fs.mkdirSync(LOGOS_DIR, { recursive: true });
+  const file = `${base}.${ext}`;
+  fs.writeFileSync(path.join(LOGOS_DIR, file), buf);
+  return path.posix.join("affiches-pro", "logos", file);
+}
+
+async function downloadLogos(events) {
+  let ok = 0, ko = 0;
+  for (const r of RESEAUX) {
+    if (!r.logo) continue;
+    try { await downloadLogo(r.logo, r.key); ok++; }
+    catch (e) { ko++; log(`logo ${r.key} : ${e.message}`); }
+  }
+  for (const ev of events) {
+    if (!ev.logo) continue;
+    try { ev.logoFile = await downloadLogo(ev.logo, `ev-${ev.id}`); ok++; }
+    catch (e) { ko++; ev.logoFile = ""; log(`logo ${ev.id} : ${e.message}`); }
+  }
+  log(`logos : ${ok} ok, ${ko} en échec (affiches-pro/logos/)`);
+}
+
 // ── Orchestration ──────────────────────────────────────────────────────────
 
 const SCRAPERS = {
@@ -505,6 +553,7 @@ async function main() {
     if (r.scrape && !keys.includes(r.key)) all.push(...previous.filter(ev => ev.network === r.key));
   }
   all.sort((a, b) => (a.date + a.title).localeCompare(b.date + b.title));
+  await downloadLogos(all);
   fs.writeFileSync(OUT, JSON.stringify(all, null, 2) + "\n");
   fs.writeFileSync(path.join(__dirname, "events-pro-report.json"), JSON.stringify({ date: todayISO, report }, null, 2) + "\n");
   log(`events-pro.json écrit : ${all.length} événement(s)`);
