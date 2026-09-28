@@ -61,7 +61,41 @@ function curlGet(url) {
     "-H", "Accept: text/html,application/xhtml+xml,*/*;q=0.8",
     "-H", "Accept-Language: fr-FR,fr;q=0.9",
     "--fail", url,
-  ], { encoding: "utf8", maxBuffer: 20 * 1024 * 1024 });
+  ], { encoding: "utf8", maxBuffer: 20 * 1024 * 1024, stdio: ["ignore", "pipe", "ignore"] });
+}
+
+// Dernier repli : un vrai navigateur. Chrome (ou Chromium, Brave, Edge) en mode
+// headless rend la page et en imprime le DOM. C'est ce qui passe quand le
+// pare-feu exige un navigateur complet (CCI). Cherché aux emplacements macOS
+// habituels ; CHROME_BIN permet d'en imposer un autre.
+const CHROME_CANDIDATES = [
+  process.env.CHROME_BIN,
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+  "/Applications/Chromium.app/Contents/MacOS/Chromium",
+  "/Applications/Brave Browser.app/Contents/MacOS/Brave Browser",
+  "/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge",
+  "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser",
+].filter(Boolean);
+function chromeBin() {
+  return CHROME_CANDIDATES.find(p => { try { return fs.statSync(p).isFile(); } catch (_) { return false; } }) || null;
+}
+function chromeGet(url) {
+  const bin = chromeBin();
+  if (!bin) throw new Error("aucun navigateur headless trouvé (Chrome, Chromium, Brave, Edge)");
+  const { execFileSync } = require("child_process");
+  const html = execFileSync(bin, [
+    "--headless=new", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
+    "--user-data-dir=" + path.join(require("os").tmpdir(), "pro-scrape-chrome"),
+    "--virtual-time-budget=8000", "--dump-dom", url,
+  ], { encoding: "utf8", maxBuffer: 30 * 1024 * 1024, timeout: 60000, stdio: ["ignore", "pipe", "ignore"] });
+  if (!html || html.length < 500 || /Access Denied|403 Forbidden/i.test(html.slice(0, 2000))) throw new Error("page refusée même en navigateur headless");
+  return html;
+}
+
+// Après un 403 : curl, puis navigateur headless. Lève si tout échoue.
+function getViaFallbacks(url) {
+  try { return curlGet(url); } catch (_) { /* on passe au navigateur */ }
+  return chromeGet(url);
 }
 
 async function get(url, { name = "", tries = 3 } = {}) {
@@ -78,7 +112,7 @@ async function get(url, { name = "", tries = 3 } = {}) {
       });
       if (r.status === 429 || r.status === 503) throw new Error(`HTTP ${r.status}`);
       if (r.status === 403) {
-        const body = curlGet(url);            // repli : lève si curl échoue aussi
+        const body = getViaFallbacks(url);
         if (name) dump(name, body);
         return body;
       }
@@ -518,7 +552,7 @@ async function downloadLogo(url, base) {
   let buf, type;
   if (r.status === 403) {
     const { execFileSync } = require("child_process");
-    buf = execFileSync("curl", ["-sSL", "--max-time", "40", "-A", UA, "--fail", url], { maxBuffer: 20 * 1024 * 1024 });
+    buf = execFileSync("curl", ["-sSL", "--max-time", "40", "-A", UA, "--fail", url], { maxBuffer: 20 * 1024 * 1024, stdio: ["ignore", "pipe", "ignore"] });
     type = "";
   } else {
     if (!r.ok) throw new Error(`HTTP ${r.status}`);

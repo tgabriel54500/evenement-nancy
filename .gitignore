@@ -1,4 +1,43 @@
+# Outils / IDE
+.capybavibe/
+.claude/
+.DS_Store
 
-# Onglet Pro : dumps bruts de pro-scrape.js --debug et rapport de passage
+# Journaux d'exécution locaux
+refresh.log
+*.log
+
+# Dépendances éventuelles
+node_modules/
+
+# Exports iCal manuels (perso, non publiés) — on garde juste le mode d'emploi
+ics-est-republicain/*.ics
+
+# Import manuel Facebook : page sauvegardée (~60 Mo) — artefact local, non versionné
+ics-facebook/
+
+# Build du site statique publié sur Netlify (régénéré par deploy-site.sh)
+dist/
+
+# Build du site de staging (régénéré par deploy-staging.sh)
+dist-staging/
+
+# Local Netlify folder
+.netlify
+
+# Token API Cloudflare (deploy non-interactif du cron) — SECRET, jamais commité
+.cloudflare-token
+
+# Bilan GoatCounter : script (contient le token API — SECRET) et données produites
+bilan-goatcounter.sh
+bilan-goatcounter/
+
+# Clé API Anthropic (classement automatique des événements)
+.anthropic-key
+
+# Onglet Pro : dumps bruts de pro-scrape.js --debug, rapport de passage, logos
+# téléchargés (sauf cci.svg, fourni à la main : le site refuse les robots)
 .debug-pro/
 events-pro-report.json
+affiches-pro/logos/*
+!affiches-pro/logos/cci.svg

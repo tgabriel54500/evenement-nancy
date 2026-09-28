@@ -94,8 +94,11 @@ const RESEAUX = [
   },
   {
     key: "cci",
-    logo: "https://www.nancy.cci.fr/sites/g/files/mwbcuj1011/files/logo-ccit54-2021-2_0.png",
-    logoOnDark: false,
+    // Le site refuse tout téléchargement hors navigateur (403) : le logo (SVG
+    // blanc de l'en-tête du site) est fourni dans le dépôt, affiches-pro/logos/cci.svg,
+    // et pro-scrape.js ne le re-télécharge pas tant que le fichier existe.
+    logo: "https://www.nancy.cci.fr/themes/custom/cci_basic_edito/assets/img/logo.svg",
+    logoOnDark: true,
     name: "CCI Grand Nancy Métropole",
     short: "CCI Nancy",
     site: "https://www.nancy.cci.fr/",

@@ -3,7 +3,7 @@
 // Sources : agendas publics des réseaux d'affaires, de la CCI, du MEDEF 54 et
 // du Centre Prouvé (voir pro-sources.js / pro-scrape.js).
 // Régénérer : node pro-scrape.js && node update-pro.js
-// Généré le : 2026-09-28 — 12 événement(s) à venir.
+// Généré le : 2026-09-28 — 22 événement(s) à venir.
 
 const CATEGORIES = {
   "formation": {
@@ -14,9 +14,17 @@ const CATEGORIES = {
     "label": "Petits-déjeuners & déjeuners",
     "emoji": "☕"
   },
+  "salon": {
+    "label": "Salons & congrès",
+    "emoji": "🏛️"
+  },
   "conference": {
     "label": "Conférences & tables rondes",
     "emoji": "🎤"
+  },
+  "emploi": {
+    "label": "Emploi & recrutement",
+    "emoji": "💼"
   }
 };
 
@@ -99,7 +107,7 @@ const RESEAUX = [
     "frequency": "Selon le calendrier des congrès",
     "membersOnly": false,
     "scrape": true,
-    "count": 0
+    "count": 10
   },
   {
     "key": "sluc-business",
@@ -212,6 +220,32 @@ const EVENTS = [
     "autoPoster": true
   },
   {
+    "uuid": "pro-prouve-2emes-rencontres-du-reseau-velo-et-marche",
+    "title": "2èmes Rencontres du Réseau vélo et marche",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-09-30",
+    "endDate": "2026-10-02",
+    "dateText": "Du 30 au 2 octobre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25409/rencontres-velo-2026-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/2emes-rencontres-du-reseau-velo-et-marche/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Cette année, les 2èmes Rencontres du Réseau vélo et marche se tiendront du 30 septembre au 02 octobre 2026 au Centre Prouvé de Nancy. L’événement de référence qui réunit l’ensemble de l’écosystème français des mobilités actives. Il permet aux élus, techniciens, aménageurs, usagers et acteurs du tourisme à vélo de se rencontrer, d’échanger leurs expériences…"
+  },
+  {
     "uuid": "pro-audacieux-petit-dej-audacieux-b-coworker-nancy-2026-10-01",
     "title": "Petit déj Audacieux – B’CoWorker Nancy",
     "category": "petit-dej",
@@ -237,6 +271,32 @@ const EVENTS = [
     "price": "",
     "description": "Comme toujours, l’objectif est simple : se rencontrer, échanger et créer des opportunités business dans une ambiance détendue et bienveillante. Le déroulement du petit dej : 8h30 – Accueil des participants. 9h00 – Mot de bienvenue et présentation du B’cowoker Nancy Tour de table et networking. Tu as envie de rencontrer des entrepreneurs et commerciaux de la métropole nancéienne ? De développer son réseau professionnel ? Partager des idées, des conseils et des opportunités ? Que tu sois déjà membre ou nouveau curieux, ce petit dej est ouvert à tous les esprits audacieux qui souhaitent élargir l",
     "autoPoster": true
+  },
+  {
+    "uuid": "pro-prouve-journees-des-donnees-de-sante-et-finances-hospitalieres",
+    "title": "Journées des données de santé et finances hospitalières",
+    "category": "formation",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-10-05",
+    "endDate": "2026-10-06",
+    "dateText": "Du 5 au 6 octobre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25410/fhf2026-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/journees-des-donnees-de-sante-et-finances-hospitalieres/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Cette année, les Journées des données de santé et finances hospitalières se tiendront du 05 au 06 octobre 2026 au Centre Prouvé de Nancy. Dans un contexte marqué par de fortes contraintes budgétaires, des besoins de santé en constante évolution et la poursuite des transformations territoriales de l’offre de soins, les données de santé et…"
   },
   {
     "uuid": "pro-adjan-2026-10-06-marc-madiot",
@@ -292,6 +352,32 @@ const EVENTS = [
     "autoPoster": true
   },
   {
+    "uuid": "pro-prouve-journee-serafin-ph-et-transformation-offre-handicap",
+    "title": "Journée Sérafin PH et transformation offre Handicap",
+    "category": "formation",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-10-12",
+    "endDate": "2026-10-12",
+    "dateText": "Lundi 12 octobre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25731/ars-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/journee-serafin-ph-et-transformation-offre-handicap/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Partage de pratiques, orientations pour faire évoluer l’offre dédiée aux personnes en situation de handicap en Grand Est. Localisation"
+  },
+  {
     "uuid": "pro-cafesbusiness-3431",
     "title": "Café Business chez Fenêtres Nancéiennes",
     "category": "petit-dej",
@@ -317,6 +403,59 @@ const EVENTS = [
     "price": "",
     "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Fenêtres Nancéiennes. Inscription en ligne, places limitées.",
     "autoPoster": true
+  },
+  {
+    "uuid": "pro-prouve-congres-et-salon-des-epl",
+    "title": "Congrès et Salon des Epl",
+    "category": "conference",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-10-14",
+    "endDate": "2026-10-16",
+    "dateText": "Du 14 au 16 octobre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/22521/epl-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/congres-et-salon-des-epl/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Lieu de débat, de mise en réseau et de benchmark, le Congrès permet aux Entreprises publiques locales et à leurs parties prenantes de cerner les enjeux actuels et futurs du développement local, d’interroger leurs pratiques et de réfléchir à leur positionnement. Localisation"
+  },
+  {
+    "uuid": "pro-prouve-forum-est-horizon",
+    "title": "Forum Est-Horizon",
+    "category": "formation",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "Gratuit",
+      "ouvert à tous"
+    ],
+    "date": "2026-10-22",
+    "endDate": "2026-10-22",
+    "dateText": "Jeudi 22 octobre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/26678/forum-est-horizon-1-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/forum-est-horizon/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "Gratuit",
+    "description": "L’un des plus grands forums de rencontres étudiants – professionnels du Grand Est. Il regroupe environ 40 entreprises pour 1000 visiteurs et le Forum propose également des ateliers professionnalisants (corrections de CV, simulations d’entretien, photos) ainsi qu’un concours de projets entrepreneurial. Localisation"
   },
   {
     "uuid": "pro-cafesbusiness-3444",
@@ -372,6 +511,32 @@ const EVENTS = [
     "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Luc ALPHAND comme intervenant."
   },
   {
+    "uuid": "pro-prouve-journees-scientifiques-dimagerie-interventionnelle-afppe",
+    "title": "Journées Scientifiques d’Imagerie Interventionnelle AFPPE",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-06",
+    "endDate": "2026-11-07",
+    "dateText": "Du 6 au 7 novembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25873/afppe-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/journees-scientifiques-dimagerie-interventionnelle-afppe/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Promouvoir l’imagerie interventionnelle et partager les expertises. Le futur manipulateur : un MAORI MAORI : Manipulateur Aide Opératoire en Radiologie Interventionnelle. Cette dénomination affirme une identité professionnelle spécifique et accompagne la spécialisation progressive des équipes en radiologie interventionnelle. Elle répond au développement de la discipline et à la structuration nécessaire de ses activités. Le MAORI…"
+  },
+  {
     "uuid": "pro-cafesbusiness-3554",
     "title": "Café Business chez Nissan HESS Automobile",
     "category": "petit-dej",
@@ -399,6 +564,59 @@ const EVENTS = [
     "autoPoster": true
   },
   {
+    "uuid": "pro-prouve-geologia",
+    "title": "Géologia",
+    "category": "emploi",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "Gratuit",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "dateText": "Jeudi 12 novembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25973/geologia-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/geologia/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "Gratuit",
+    "description": "1er forum national de rencontres entre étudiants et entreprises des géosciences, le salon Géologia est un lieu d’information, de discussions et de recrutement. Localisation"
+  },
+  {
+    "uuid": "pro-prouve-20e-cnaag",
+    "title": "20e CNAAG",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-17",
+    "endDate": "2026-11-18",
+    "dateText": "Du 17 au 18 novembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25718/cnaag-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/20e-cnaag/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Le Congrès National de l’Animation et de l’Accompagnement en Gérontologie fête ses 20 ans. Localisation"
+  },
+  {
     "uuid": "pro-adjan-2026-11-17-equicoaching",
     "title": "8/9 ADJAN avec EquiCoaching",
     "category": "petit-dej",
@@ -423,6 +641,32 @@ const EVENTS = [
     "membersOnly": false,
     "price": "",
     "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec EquiCoaching comme intervenant."
+  },
+  {
+    "uuid": "pro-prouve-congres-preuves-pratiques",
+    "title": "Congrès Preuves & Pratiques",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "Samedi 5 décembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/26177/preuves-pratiques-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/congres-preuves-pratiques/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Un congrès réunissant des professionnels de santé autour de différentes thématiques de médecine générale. Localisation"
   },
   {
     "uuid": "pro-cafesbusiness-3660",
@@ -477,5 +721,31 @@ const EVENTS = [
     "price": "",
     "description": "Vous avez une idée de création d’entreprise mais vous ne savez pas par où commencer ?",
     "autoPoster": true
+  },
+  {
+    "uuid": "pro-prouve-le-salon-du-brasseur",
+    "title": "Salon du Brasseur & de la Boisson",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "ouvert à tous"
+    ],
+    "date": "2027-04-01",
+    "endDate": "2027-04-02",
+    "dateText": "Du 1 au 2 avril 2027",
+    "schedule": "",
+    "place": "Parc des Expositions",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/14345/credit-vincent-damarin-8-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/le-salon-du-brasseur/",
+    "source": "prouve",
+    "addedAt": "2026-09-28",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "",
+    "description": "Chaque automne, Nancy devient le point de rencontre incontournable de toute la filière brassicole.Organisé au Parc Expo de Nancy, le Salon du Brasseur & de la Boisson s’impose comme le salon technique leader en France et l’un des rendez-vous de référence en Europe pour les brasseurs professionnels et amateurs, ainsi que pour l’ensemble des acteurs…"
   }
 ];
