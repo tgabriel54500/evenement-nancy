@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-42057",
-    "title": "Jardins de Ville, Jardins de Vie Grand Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-09-27",
-    "endDate": "2026-09-27",
-    "dateText": "Du 26 au 27 septembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42057_min.png",
-    "url": "https://www.lorraineaucoeur.com/evt-42057/jardins-de-ville-jardins-de-vie-grand-nancy/meurthe-et-moselle-jarville-la-malgrange/fete-animation",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-41976",
     "title": "Festival Film Montagne Exploration à Saulxures-lès-Nancy",
     "category": "festival",

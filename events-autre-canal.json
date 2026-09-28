@@ -128,8 +128,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-nancy-ink-tatoo",
-    "title": "Nancy Ink Tatoo",
+    "uuid": "lcn-nancy-ink-tattoo",
+    "title": "Nancy Ink Tattoo",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -145,7 +145,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ink_tatoo_copie.jpeg?itok=Z8lpIsY3",
-    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tatoo",
+    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tattoo",
     "source": "autre-canal"
   },
   {
@@ -191,8 +191,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-emile-londonien-kissa-jean-michel-moog-son-batard",
-    "title": "Emile Londonien : Kissa",
+    "uuid": "lcn-emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
+    "title": "Emile Londonien × Pierre Henry Gomont",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -211,7 +211,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/emile_londonien.jpg?itok=T_dLEklH",
-    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-kissa-jean-michel-moog-son-batard",
+    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
     "source": "autre-canal"
   },
   {
