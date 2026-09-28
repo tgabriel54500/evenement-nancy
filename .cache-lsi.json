@@ -1,0 +1,3074 @@
+{
+ "633118": {
+  "matchs": [
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "USL Dunkerque",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "Rodez Aveyron Football",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "FC Metz",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "Montpellier Hérault SC",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "Clermont Foot 63",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "FC Nantes",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "Pau FC",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-08-08",
+    "time": "20h45",
+    "home": "FC Sochaux Montbéliard",
+    "away": "AS Saint-Etienne"
+   }
+  ],
+  "vuLe": "2026-09-05"
+ },
+ "633119": {
+  "matchs": [
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "Stade de Reims",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "AS Saint-Etienne",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "FC Annecy",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "En Avant Guingamp",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "Dijon FCO",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "Grenoble Foot 38",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "AS Nancy Lorraine",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-08-14",
+    "time": "20h45",
+    "home": "Red Star FC",
+    "away": "FC Sochaux Montbéliard"
+   }
+  ],
+  "vuLe": "2026-09-05"
+ },
+ "633120": {
+  "matchs": [
+   {
+    "date": "2026-08-21",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-08-21",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-08-21",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-08-21",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-08-21",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2026-08-22",
+    "time": "14h00",
+    "home": "FC Nantes",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-08-22",
+    "time": "14h00",
+    "home": "FC Metz",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-08-22",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-08-24",
+    "time": "20h45",
+    "home": "Stade de Reims",
+    "away": "FC Annecy"
+   }
+  ],
+  "vuLe": "2026-09-05"
+ },
+ "633121": {
+  "matchs": [
+   {
+    "date": "2026-08-28",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2026-08-28",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-08-28",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-08-28",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-08-28",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-08-29",
+    "time": "14h00",
+    "home": "FC Annecy",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-08-29",
+    "time": "14h00",
+    "home": "Red Star FC",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-08-29",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-08-31",
+    "time": "20h45",
+    "home": "Dijon FCO",
+    "away": "AS Saint-Etienne"
+   }
+  ],
+  "vuLe": "2026-09-05"
+ },
+ "633122": {
+  "matchs": [
+   {
+    "date": "2026-09-04",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-09-04",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-09-04",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-09-04",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-09-04",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-09-05",
+    "time": "14h00",
+    "home": "FC Metz",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-09-05",
+    "time": "14h00",
+    "home": "Stade de Reims",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-09-05",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-09-07",
+    "time": "20h45",
+    "home": "FC Nantes",
+    "away": "AS Nancy Lorraine"
+   }
+  ],
+  "vuLe": "2026-09-07"
+ },
+ "633123": {
+  "matchs": [
+   {
+    "date": "2026-09-11",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-09-11",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-09-11",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-09-11",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-09-11",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-09-12",
+    "time": "14h00",
+    "home": "En Avant Guingamp",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-09-12",
+    "time": "14h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-09-12",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2026-09-14",
+    "time": "20h45",
+    "home": "Red Star FC",
+    "away": "FC Metz"
+   }
+  ],
+  "vuLe": "2026-09-14"
+ },
+ "633124": {
+  "matchs": [
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-09-18",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2026-09-19",
+    "time": "14h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-09-19",
+    "time": "14h00",
+    "home": "En Avant Guingamp",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-09-19",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "AS Saint-Etienne"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633125": {
+  "matchs": [
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-10-09",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "US Boulogne Côte d'Opale"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633126": {
+  "matchs": [
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-10-16",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Montpellier Hérault SC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633127": {
+  "matchs": [
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-10-23",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "FC Annecy"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633128": {
+  "matchs": [
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-10-30",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "USL Dunkerque"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633129": {
+  "matchs": [
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-11-06",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Stade Lavallois Mayenne FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633130": {
+  "matchs": [
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2026-11-20",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "USL Dunkerque"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633131": {
+  "matchs": [
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-12-04",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "AS Nancy Lorraine"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633132": {
+  "matchs": [
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2026-12-11",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Montpellier Hérault SC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633133": {
+  "matchs": [
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-01-02",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Red Star FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633134": {
+  "matchs": [
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-01-15",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Rodez Aveyron Football"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633135": {
+  "matchs": [
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-01-22",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "FC Annecy"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633136": {
+  "matchs": [
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-01-29",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Stade de Reims"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633137": {
+  "matchs": [
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-02-05",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Pau FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633138": {
+  "matchs": [
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-02-12",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "FC Metz"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633139": {
+  "matchs": [
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-02-19",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Dijon FCO"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633140": {
+  "matchs": [
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-02-26",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "FC Sochaux Montbéliard"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633141": {
+  "matchs": [
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-03-05",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "FC Metz"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633142": {
+  "matchs": [
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-03-12",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "FC Sochaux Montbéliard"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633143": {
+  "matchs": [
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-03-19",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "AS Nancy Lorraine"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633144": {
+  "matchs": [
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-04-02",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Dijon FCO"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633145": {
+  "matchs": [
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-04-09",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Red Star FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633146": {
+  "matchs": [
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-04-16",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "Clermont Foot 63"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633147": {
+  "matchs": [
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-04-23",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Stade Lavallois Mayenne FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633148": {
+  "matchs": [
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "Grenoble Foot 38"
+   },
+   {
+    "date": "2027-04-30",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "FC Metz"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633149": {
+  "matchs": [
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "Pau FC"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-05-07",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Clermont Foot 63"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633150": {
+  "matchs": [
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "US Boulogne Côte d'Opale",
+    "away": "En Avant Guingamp"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "Clermont Foot 63",
+    "away": "FC Annecy"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "USL Dunkerque",
+    "away": "Stade de Reims"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "FC Metz",
+    "away": "Red Star FC"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "Montpellier Hérault SC",
+    "away": "AS Nancy Lorraine"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "FC Nantes",
+    "away": "Stade Lavallois Mayenne FC"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "Pau FC",
+    "away": "Dijon FCO"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "Rodez Aveyron Football",
+    "away": "AS Saint-Etienne"
+   },
+   {
+    "date": "2027-05-14",
+    "time": "20h00",
+    "home": "FC Sochaux Montbéliard",
+    "away": "Grenoble Foot 38"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "633151": {
+  "matchs": [
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "FC Annecy",
+    "away": "FC Nantes"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "Dijon FCO",
+    "away": "Montpellier Hérault SC"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "Grenoble Foot 38",
+    "away": "USL Dunkerque"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "En Avant Guingamp",
+    "away": "FC Sochaux Montbéliard"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "Stade Lavallois Mayenne FC",
+    "away": "Rodez Aveyron Football"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "AS Nancy Lorraine",
+    "away": "FC Metz"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "Red Star FC",
+    "away": "Clermont Foot 63"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "Stade de Reims",
+    "away": "US Boulogne Côte d'Opale"
+   },
+   {
+    "date": "2027-05-22",
+    "time": "20h00",
+    "home": "AS Saint-Etienne",
+    "away": "Pau FC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636443": {
+  "matchs": [
+   {
+    "date": "2026-10-03",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-10-03",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-10-03",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-10-03",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-10-03",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-10-03",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Volley Mulhouse Alsace"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636444": {
+  "matchs": [
+   {
+    "date": "2026-10-10",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-10-10",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-10-10",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2026-10-10",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2026-10-10",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-10-28",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "VBC Chamalières"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636445": {
+  "matchs": [
+   {
+    "date": "2026-10-13",
+    "time": "18h00",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-10-13",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2026-10-13",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2026-10-13",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2026-10-13",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-10-13",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Béziers VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636446": {
+  "matchs": [
+   {
+    "date": "2026-10-17",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-10-17",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-10-17",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-10-17",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2026-10-17",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-10-18",
+    "time": "14h30",
+    "home": "Levallois Paris SC F",
+    "away": "France Avenir 2024"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636447": {
+  "matchs": [
+   {
+    "date": "2026-10-24",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-10-24",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2026-10-24",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2026-10-24",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2026-10-24",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-10-24",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Terville Florange Olympique"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636448": {
+  "matchs": [
+   {
+    "date": "2026-10-31",
+    "time": "17h00",
+    "home": "Volero Le Cannet",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2026-10-31",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-10-31",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-10-31",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2026-10-31",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-10-31",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Levallois Paris SC F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636449": {
+  "matchs": [
+   {
+    "date": "2026-11-07",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2026-11-07",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2026-11-07",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2026-11-07",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-11-07",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-11-08",
+    "time": "17h00",
+    "home": "Levallois Paris SC F",
+    "away": "Neptunes de Nantes VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636450": {
+  "matchs": [
+   {
+    "date": "2026-11-13",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2026-11-14",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-11-14",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2026-11-14",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-11-14",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-11-14",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Vandoeuvre-Nancy VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636451": {
+  "matchs": [
+   {
+    "date": "2026-11-21",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-11-21",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2026-11-21",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-11-21",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-11-21",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-11-21",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Béziers VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636452": {
+  "matchs": [
+   {
+    "date": "2026-11-27",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-11-28",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-11-28",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-11-28",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2026-11-28",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2026-11-28",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Levallois Paris SC F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636453": {
+  "matchs": [
+   {
+    "date": "2026-12-05",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-12-05",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-12-05",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2026-12-05",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-12-05",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-12-05",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Vandoeuvre-Nancy VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636454": {
+  "matchs": [
+   {
+    "date": "2026-12-12",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2026-12-12",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2026-12-12",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2026-12-12",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-12-13",
+    "time": "15h00",
+    "home": "Évreux VB",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-12-13",
+    "time": "16h00",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Levallois Paris SC F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636455": {
+  "matchs": [
+   {
+    "date": "2026-12-19",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2026-12-19",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-12-19",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-12-19",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2026-12-19",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-12-19",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Bordeaux F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636456": {
+  "matchs": [
+   {
+    "date": "2026-12-22",
+    "time": "19h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2026-12-22",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-12-22",
+    "time": "20h00",
+    "home": "Bordeaux F",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2026-12-22",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2026-12-22",
+    "time": "20h00",
+    "home": "Évreux VB",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2026-12-22",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Volero Le Cannet"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636457": {
+  "matchs": [
+   {
+    "date": "2026-12-29",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2026-12-29",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2026-12-29",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2026-12-29",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2026-12-29",
+    "time": "20h00",
+    "home": "Levallois Paris SC F",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2026-12-30",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Volley Mulhouse Alsace"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636458": {
+  "matchs": [
+   {
+    "date": "2027-01-09",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2027-01-09",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-01-09",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2027-01-09",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-01-09",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2027-01-09",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Saint-Die F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636459": {
+  "matchs": [
+   {
+    "date": "2027-01-16",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2027-01-16",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2027-01-16",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2027-01-16",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2027-01-16",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2027-01-16",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Neptunes de Nantes VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636460": {
+  "matchs": [
+   {
+    "date": "2027-01-22",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2027-01-23",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2027-01-23",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2027-01-23",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-01-24",
+    "time": "15h00",
+    "home": "Évreux VB",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2027-01-24",
+    "time": "17h00",
+    "home": "Levallois Paris SC F",
+    "away": "Volley Mulhouse Alsace"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636461": {
+  "matchs": [
+   {
+    "date": "2027-01-30",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2027-01-30",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2027-01-30",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-01-30",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2027-01-30",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2027-01-30",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Levallois Paris SC F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636462": {
+  "matchs": [
+   {
+    "date": "2027-02-06",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2027-02-06",
+    "time": "19h00",
+    "home": "Volero Le Cannet",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2027-02-06",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-02-06",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-02-06",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2027-02-06",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Volley Mulhouse Alsace"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636463": {
+  "matchs": [
+   {
+    "date": "2027-02-13",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2027-02-13",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2027-02-13",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2027-02-13",
+    "time": "19h30",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2027-02-13",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2027-02-13",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Bordeaux F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636464": {
+  "matchs": [
+   {
+    "date": "2027-02-20",
+    "time": "19h00",
+    "home": "Bordeaux F",
+    "away": "Cannes RC"
+   },
+   {
+    "date": "2027-02-20",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2027-02-20",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2027-02-20",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2027-02-20",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-02-20",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "France Avenir 2024"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636465": {
+  "matchs": [
+   {
+    "date": "2027-02-27",
+    "time": "14h00",
+    "home": "France Avenir 2024",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2027-02-27",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2027-02-27",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2027-02-27",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-02-27",
+    "time": "20h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Volero Le Cannet"
+   },
+   {
+    "date": "2027-02-28",
+    "time": "16h00",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "Neptunes de Nantes VB"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636466": {
+  "matchs": [
+   {
+    "date": "2027-03-02",
+    "time": "19h00",
+    "home": "Volley Mulhouse Alsace",
+    "away": "Saint-Die F"
+   },
+   {
+    "date": "2027-03-02",
+    "time": "19h00",
+    "home": "Vandoeuvre-Nancy VB",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2027-03-02",
+    "time": "19h30",
+    "home": "Volero Le Cannet",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-03-02",
+    "time": "19h30",
+    "home": "Terville Florange Olympique",
+    "away": "Évreux VB"
+   },
+   {
+    "date": "2027-03-02",
+    "time": "20h00",
+    "home": "Bordeaux F",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2027-03-02",
+    "time": "20h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "Cannes RC"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636467": {
+  "matchs": [
+   {
+    "date": "2027-03-06",
+    "time": "19h00",
+    "home": "Évreux VB",
+    "away": "Neptunes de Nantes VB"
+   },
+   {
+    "date": "2027-03-06",
+    "time": "19h00",
+    "home": "Levallois Paris SC F",
+    "away": "Terville Florange Olympique"
+   },
+   {
+    "date": "2027-03-06",
+    "time": "19h00",
+    "home": "Cannes RC",
+    "away": "France Avenir 2024"
+   },
+   {
+    "date": "2027-03-06",
+    "time": "19h30",
+    "home": "Béziers VB",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-03-06",
+    "time": "19h30",
+    "home": "Saint-Die F",
+    "away": "Bordeaux F"
+   },
+   {
+    "date": "2027-03-06",
+    "time": "20h00",
+    "home": "VBC Chamalières",
+    "away": "Volero Le Cannet"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ },
+ "636468": {
+  "matchs": [
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "Bordeaux F",
+    "away": "Vandoeuvre-Nancy VB"
+   },
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "France Avenir 2024",
+    "away": "Béziers VB"
+   },
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "Volero Le Cannet",
+    "away": "Levallois Paris SC F"
+   },
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "Neptunes de Nantes VB",
+    "away": "VBC Chamalières"
+   },
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "Cannes RC",
+    "away": "Volley Mulhouse Alsace"
+   },
+   {
+    "date": "2027-03-13",
+    "time": "16h00",
+    "home": "Terville Florange Olympique",
+    "away": "Saint-Die F"
+   }
+  ],
+  "vuLe": "2026-09-16"
+ }
+}

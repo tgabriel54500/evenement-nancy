@@ -3,26 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Sport amateur — Que faire dans le Grand-Nancy ?</title>
-  <meta name="description" content="L'agenda du sport amateur dans le Grand Nancy : matchs et événements des clubs locaux. Filtrez par sport, lieu, division et date.">
+  <title>Sport à Nancy — Les matchs des clubs du Grand-Nancy</title>
+  <meta name="description" content="Tous les matchs à domicile des clubs du Grand Nancy : ASNL, SLUC Nancy Basket, VNVB, Grand Nancy Volley-Ball, Nancy Handball. Les affiches de la semaine, par sport et par date.">
   <link rel="canonical" href="https://agenda-grandnancy.fr/sport.html">
   <meta name="robots" content="index, follow">
   <!-- Open Graph (aperçu lors d'un partage Facebook/LinkedIn/WhatsApp) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Que faire dans le Grand-Nancy ?">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Sport amateur — Que faire dans le Grand-Nancy ?">
-  <meta property="og:description" content="L'agenda du sport amateur dans le Grand Nancy : matchs et événements des clubs locaux.">
+  <meta property="og:title" content="Sport à Nancy — Les matchs des clubs du Grand-Nancy">
+  <meta property="og:description" content="Les matchs à domicile de l'ASNL, du SLUC, du VNVB, du GNVB et de Nancy Handball.">
   <meta property="og:url" content="https://agenda-grandnancy.fr/sport.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Sport amateur — Que faire dans le Grand-Nancy ?">
-  <meta name="twitter:description" content="L'agenda du sport amateur dans le Grand Nancy.">
+  <meta name="twitter:title" content="Sport à Nancy — Les matchs des clubs du Grand-Nancy">
+  <meta name="twitter:description" content="Les matchs à domicile des clubs du Grand Nancy.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#c4452f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Agenda Nancy">
   <link rel="stylesheet" href="style.css?v=nav3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,12 +35,11 @@
   <header class="hero">
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
-      <h1 class="hero__title">🏅 Le <span>sport amateur</span></h1>
-      <p class="hero__tagline">Les matchs et événements des clubs sportifs amateurs du Grand Nancy.</p>
-      <p class="hero__subtitle">Publiés par les clubs eux-mêmes. Filtrez par sport, lieu, division ou date. Cliquez sur une carte pour les détails.</p>
+      <h1 class="hero__title">Le <span>sport</span> à Nancy</h1>
+      <p class="hero__tagline">Tous les matchs à domicile des clubs du Grand&nbsp;Nancy, au même endroit.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="search" id="search" placeholder="Rechercher un club, un sport, un lieu…" aria-label="Rechercher un événement sportif">
+        <input type="search" id="search" placeholder="Rechercher un club, un adversaire, une salle…" aria-label="Rechercher un match">
       </div>
       <div class="nav-account" id="navAccount">
         <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
@@ -52,7 +54,6 @@
       </div>
       <div class="hero__views" role="tablist" aria-label="Mode d'affichage">
         <a class="view-switch" href="index.html">🖼️ Galerie</a>
-        <a class="view-switch" href="nouveautes.html">🆕 Nouveautés</a>
         <span class="view-switch is-active" aria-current="page">🏅 Sport</span>
       </div>
     </div>
@@ -61,21 +62,21 @@
   <main class="container">
     <nav class="datefilters" id="dateFilters" aria-label="Filtrer par date"></nav>
     <nav class="filters" id="filters" aria-label="Filtrer par sport"></nav>
-    <div class="toolbar" id="toolbar"></div>
+    <div class="toolbar" id="toolbar" aria-label="Recherche avancée et favoris"></div>
 
     <p class="results-count" id="resultsCount"></p>
 
     <section class="gallery" id="gallery" aria-live="polite"></section>
 
-    <p class="empty" id="empty" hidden>Aucun événement sportif pour le moment. Les clubs peuvent publier le leur via « ➕ Publier ».</p>
+    <p class="empty" id="empty" hidden>Aucun match ne correspond à votre recherche. Essayez un autre sport ou une autre période.</p>
   </main>
 
   <footer class="footer">
-    <p>Vous êtes un club sportif amateur du Grand Nancy ? <a href="compte.html">Publiez vos matchs et événements gratuitement.</a> · <a href="mentions-legales.html">Mentions légales</a></p>
+    <p>Matchs à domicile uniquement. Sources : sites officiels des clubs et de leurs ligues. Horaires susceptibles d'être modifiés, vérifiez auprès du club. · <a href="mentions-legales.html">Mentions légales</a></p>
   </footer>
 
-  <!-- Lightbox : détails de l'événement au clic -->
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Détails de l'événement sportif">
+  <!-- Lightbox : affiche en grand au clic -->
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Affiche du match">
     <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
     <div class="lightbox__inner" id="lightboxInner"></div>
   </div>
@@ -87,7 +88,6 @@
           b = document.getElementById("navMenuBtn"),
           m = document.getElementById("navMenu");
       if (!w || !b || !m) return;
-      // Prod : si le gate a retiré les liens compte, le menu est vide → icône masquée.
       if (!m.querySelector("a")) w.classList.add("nav-account--navonly");
       b.addEventListener("click", function (e) {
         e.stopPropagation();
@@ -100,30 +100,15 @@
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") { m.hidden = true; b.setAttribute("aria-expanded", "false"); }
       });
-      // Connecté → « Se déconnecter » remplace « S'inscrire / Se connecter ».
-      // (Client Supabase chargé plus bas → on attend le chargement complet.)
-      window.addEventListener("load", async function () {
-        try {
-          if (!window.supabase || !window.SUPABASE_URL || /TON-PROJET/.test(window.SUPABASE_URL)) return;
-          var c = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
-          var s = (await c.auth.getSession()).data.session;
-          var si = document.getElementById("menu-signin"), lo = document.getElementById("menu-logout");
-          if (s && si && lo) {
-            si.hidden = true;
-            lo.hidden = false;
-            lo.addEventListener("click", async function () {
-              await c.auth.signOut();
-              location.reload();
-            });
-          }
-        } catch (_) { /* hors-ligne / non configuré : menu par défaut */ }
-      });
     })();
   </script>
 
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="config-supabase.js"></script>
-  <script src="sport.js"></script>
+  <!-- Même moteur que la galerie culture : data-sport.js fournit CATEGORIES
+       (les sports) et EVENTS (les rencontres), au même schéma que data.js. -->
+  <script src="data-sport.js"></script>
+  <script src="events-core.js"></script>
+  <script src="galerie.js"></script>
+  <script src="pwa.js"></script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">

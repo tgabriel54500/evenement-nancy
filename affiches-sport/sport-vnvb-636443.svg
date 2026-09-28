@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="VNVB reçoit Bordeaux F">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#d6417f"/>
+      <stop offset="1" stop-color="#962e59"/>
+    </linearGradient>
+    <!-- Voile sombre au centre : le motif de fond reste visible sur les bords,
+         le nom des équipes garde son contraste. -->
+    <radialGradient id="v" cx="50%" cy="52%" r="62%">
+      <stop offset="0" stop-color="#962e59" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#962e59" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <path d="M60 520 V760 M116 520 V760 M172 520 V760 M228 520 V760 M284 520 V760 M340 520 V760 M396 520 V760 M452 520 V760 M508 520 V760 M564 520 V760 M620 520 V760 M676 520 V760 M732 520 V760 M60 520 H740 M60 568 H740 M60 616 H740 M60 664 H740 M60 712 H740 M60 760 H740" fill="none" stroke="#ffe3f0" stroke-width="3" opacity=".13"/>
+  <path d="M60 500 V780 M740 500 V780" fill="none" stroke="#ffe3f0" stroke-width="10" opacity=".13"/>
+  <path d="M0 1010 L800 890 L800 1200 L0 1200 Z" fill="#ffe3f0" opacity=".14"/>
+  <rect width="800" height="1200" fill="url(#v)"/>
+  <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="256" font-size="30" font-weight="700" fill="#ffffff" opacity=".55" letter-spacing="9">VOLLEY</text>
+    <text x="400" y="330" font-size="34" font-weight="600" fill="#ffe3f0" letter-spacing="3">SAFORELLE POWER 6</text>
+    <text x="400" y="378" font-size="27" font-weight="500" fill="#ffffff" opacity=".65">1re journée</text>
+
+    <text x="400" y="530" font-size="132" font-weight="800" fill="#ffffff">VNVB</text>
+    <text x="400" y="612" font-size="36" font-weight="600" fill="#ffe3f0" letter-spacing="8">REÇOIT</text>
+    <text x="400" y="726" text-anchor="middle" font-size="104" font-weight="800" fill="#ffffff">BORDEAUX F</text>
+
+    <rect x="160" y="866" width="480" height="2" fill="#ffffff" opacity=".22"/>
+    <text x="400" y="932" font-size="40" font-weight="700" fill="#ffffff">samedi 3 octobre · 19h30</text>
+    
+    <text x="400" y="978" font-size="22" font-weight="500" fill="#ffffff" opacity=".7">Parc des Sports des Nations, Vandœuvre-lès-Nancy</text>
+  </g>
+</svg>

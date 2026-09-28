@@ -68,9 +68,22 @@ function parseListing(html) {
   return out;
 }
 
+// Mois en toutes lettres OU abrégé (le site affiche « Sep » depuis 2026-09 au
+// lieu de « septembre », ce qui donnait 0 événement). Accepte fr et en.
+const MONTH_PREFIX = [["janv", 1], ["jan", 1], ["fev", 2], ["feb", 2], ["mars", 3], ["mar", 3],
+  ["avr", 4], ["apr", 4], ["mai", 5], ["may", 5], ["juin", 6], ["jun", 6], ["juil", 7], ["jul", 7],
+  ["aou", 8], ["aug", 8], ["sep", 9], ["oct", 10], ["nov", 11], ["dec", 12]];
+function monthNum(raw) {
+  const k = String(raw || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^a-z]/g, "");
+  if (!k) return 0;
+  if (MONTHS[k]) return MONTHS[k];
+  const hit = MONTH_PREFIX.find(([p]) => k.startsWith(p));
+  return hit ? hit[1] : 0;
+}
+
 function toISO(day, monthName, todayISO) {
   const d = parseInt(day, 10);
-  const mon = MONTHS[String(monthName || "").toLowerCase().trim()];
+  const mon = monthNum(monthName);
   if (!d || !mon) return "";
   const [ty, tm, td] = todayISO.split("-").map(Number);
   let year = ty;

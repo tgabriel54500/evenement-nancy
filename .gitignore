@@ -31,3 +31,6 @@ dist-staging/
 # Bilan GoatCounter : script (contient le token API — SECRET) et données produites
 bilan-goatcounter.sh
 bilan-goatcounter/
+
+# Clé API Anthropic (classement automatique des événements)
+.anthropic-key

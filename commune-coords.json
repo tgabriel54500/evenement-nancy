@@ -1808,5 +1808,90 @@
   "lat": 48.75201,
   "lon": 6.629353,
   "city": "Lezey"
+ },
+ "marsal": {
+  "lat": 48.788665,
+  "lon": 6.605916,
+  "city": "Marsal"
+ },
+ "bettoncourt": {
+  "lat": 48.348676,
+  "lon": 6.161156,
+  "city": "Bettoncourt"
+ },
+ "ley": {
+  "lat": 48.736313,
+  "lon": 6.658124,
+  "city": "Ley"
+ },
+ "saint-clement": {
+  "lat": 48.533181,
+  "lon": 6.604651,
+  "city": "Saint-Clément"
+ },
+ "bezange-la-petite": {
+  "lat": 48.729537,
+  "lon": 6.612688,
+  "city": "Bezange-la-Petite"
+ },
+ "essegney": {
+  "lat": 48.372222,
+  "lon": 6.310143,
+  "city": "Essegney"
+ },
+ "gerbeviller": {
+  "lat": 48.495113,
+  "lon": 6.510979,
+  "city": "Gerbéviller"
+ },
+ "soulosse-sous-saint-elophe": {
+  "lat": 48.403989,
+  "lon": 5.73543,
+  "city": "Soulosse-sous-Saint-Élophe"
+ },
+ "domremy-la-pucelle": {
+  "lat": 48.440261,
+  "lon": 5.673124,
+  "city": "Domrémy-la-Pucelle"
+ },
+ "portieux": {
+  "lat": 48.344422,
+  "lon": 6.350517,
+  "city": "Portieux"
+ },
+ "bouxurulles": {
+  "lat": 48.334958,
+  "lon": 6.231419,
+  "city": "Bouxurulles"
+ },
+ "rugney": {
+  "lat": 48.349491,
+  "lon": 6.252546,
+  "city": "Rugney"
+ },
+ "vincey": {
+  "lat": 48.34275,
+  "lon": 6.331093,
+  "city": "Vincey"
+ },
+ "rigny-la-salle": {
+  "lat": 48.620074,
+  "lon": 5.703168,
+  "city": "Rigny-la-Salle"
+ },
+ "sauvigny": {
+  "lat": 48.507865,
+  "lon": 5.719538,
+  "city": "Sauvigny"
+ },
+ "haraucourt-sur-seille": {
+  "lat": 48.799064,
+  "lon": 6.605103,
+  "city": "Haraucourt-sur-Seille"
+ },
+ "poussay": {
+  "lat": 48.313197,
+  "lon": 6.122828,
+  "city": "Poussay"
  }
 }

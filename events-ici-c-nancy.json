@@ -1,21 +1,21 @@
 [
   {
-    "uuid": "icn-1102",
-    "title": "MATCH NANCY - REIMS (LIGUE 2 - 6ÈME JOURNÉE)",
+    "uuid": "icn-1153",
+    "title": "VOLLEY - SAFORELLE POWER 6: LE VANDŒUVRE NANCY VOLLEY-BALL (VNVB) AFFRONTE BORDEAUX",
     "category": "sport",
     "catLabel": "Sport",
     "catEmoji": "⚽",
     "subcats": [],
-    "date": "2026-09-11",
-    "endDate": "2026-09-11",
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
     "dateText": "",
-    "schedule": "20:00",
-    "place": "Tomblaine, France",
+    "schedule": "19:30",
+    "place": "Vandœuvre-lès-Nancy, France",
     "city": "",
     "free": false,
     "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1102-match-nancy-reims-ligue-2-6eme-journee/2026-09-11-20-00.html",
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_agenda1-vnvb.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1153-volley-saforelle-power-6-vandoeuvre-nancy-volley-ball-vnvb-affronte-bordeaux/2026-10-03-19-30.html",
     "source": "ici-c-nancy"
   },
   {
@@ -35,6 +35,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot4avril.jpg",
     "url": "https://www.ici-c-nancy.fr/agenda/1120-match-nancy-guingamp-ligue-2-8eme-journee/2026-10-09-20-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1154",
+    "title": "MATCH NANCY - LAVAL (LIGUE 2 - 10ÈME JOURNÉE)",
+    "category": "sport",
+    "catLabel": "Sport",
+    "catEmoji": "⚽",
+    "subcats": [],
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "dateText": "",
+    "schedule": "20:00",
+    "place": "",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot9mai.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1154-match-nancy-laval-ligue-2-10eme-journee/2026-10-23-20-00.html",
     "source": "ici-c-nancy"
   }
 ]

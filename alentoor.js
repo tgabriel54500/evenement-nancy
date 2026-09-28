@@ -147,7 +147,8 @@ async function getText(url, tries = 3) {
       return await res.text();
     } catch (err) {
       if (attempt >= tries) throw err;
-      await sleep(400 * attempt);
+      // 429/403 = limitation anti-robot : on patiente nettement plus longtemps.
+      await sleep(/HTTP (429|403)/.test(err.message) ? 5000 * attempt : 400 * attempt);
     }
   }
 }
@@ -252,7 +253,12 @@ async function fetchDetail(stub) {
   const html = await getText(stub.url);
   if (!html) return null;
   const ev = extractEvent(html);
-  if (!ev || !ev.startDate) return null;
+  if (!ev) {
+    DIAG.noLd++;
+    if (!DIAG.sample) DIAG.sample = ((html.match(/<title[^>]*>([^<]{0,80})/i) || [])[1] || html.slice(0, 80)).replace(/\s+/g, " ");
+    return null;
+  }
+  if (!ev.startDate) { DIAG.noDate++; return null; }
   const loc = ev.location || {};
   const addr = loc.address || {};
   const cat = resolveCategory(breadcrumbCategory(html), ev.name);
@@ -289,6 +295,10 @@ async function fetchDetail(stub) {
 }
 
 // ── Pool de concurrence simple ─────────────────────────────────────────────
+// Diagnostic des fiches écartées : avant, tout échec était avalé en silence et le
+// log affichait « 0 événements » sans raison (panne constatée en 2026-09).
+const DIAG = { noLd: 0, noDate: 0, errors: {}, sample: "" };
+
 async function mapPool(items, worker, concurrency) {
   const out = new Array(items.length);
   let i = 0, done = 0;
@@ -296,7 +306,7 @@ async function mapPool(items, worker, concurrency) {
     while (i < items.length) {
       const idx = i++;
       try { out[idx] = await worker(items[idx], idx); }
-      catch { out[idx] = null; }
+      catch (err) { out[idx] = null; const k = String(err && err.message || err).slice(0, 60); DIAG.errors[k] = (DIAG.errors[k] || 0) + 1; }
       done++;
       if (done % 25 === 0) process.stderr.write(`  fiches : ${done}/${items.length}\n`);
     }
@@ -317,6 +327,9 @@ async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max
   for (const e of events) if (!byId.has(e.uuid)) byId.set(e.uuid, e);
   const list = [...byId.values()].sort((a, b) => a.date.localeCompare(b.date));
   process.stderr.write(`✓ ${list.length} événements Alentoor avec date.\n`);
+  if (list.length < stubs.length) {
+    process.stderr.write(`  écartées : ${DIAG.noLd} sans JSON-LD Event, ${DIAG.noDate} sans date, erreurs ${JSON.stringify(DIAG.errors)}${DIAG.sample ? `, exemple de page reçue : « ${DIAG.sample} »` : ""}\n`);
+  }
   return list;
 }
 

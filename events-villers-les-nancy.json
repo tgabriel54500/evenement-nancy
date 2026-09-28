@@ -1,112 +1,5 @@
 [
   {
-    "uuid": "vln-277",
-    "title": "69e Fête des vendanges",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-09-02",
-    "endDate": "2026-09-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Parc Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/imgfdv2024.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/69e-fete-des-vendanges",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-589",
-    "title": "Exposition ▪ Hommage à Philippe Mitre",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-09-07",
-    "endDate": "2026-09-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260907_Expo___Philippe_Mitre_Credit_photo__c__LCM.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-hommage-a-philippe-mitre",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-301",
-    "title": "Groupes de parole pour les proches aidants Orchidée",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité"
-    ],
-    "date": "2026-09-08",
-    "endDate": "2027-06-29",
-    "dateText": "",
-    "schedule": "14 à 16h",
-    "place": "Résidence autonomie Paul Adam",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-590",
-    "title": "Rencontres littéraires de Villers ▪ Table ronde sur Émile Coué",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-09-12",
-    "endDate": "2026-09-12",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260912_RLV_SUR_LES_PAS_DE_COUE__c__Credits_sur_chaque_photo.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/rencontres-litteraires-de-villers-table-ronde-sur-emile-coue",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-299",
-    "title": "Les greniers de Clairlieu",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-09-13",
-    "endDate": "2026-09-13",
-    "dateText": "",
-    "schedule": "7h à 18h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/grenier.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-greniers-de-clairlieu",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-591",
     "title": "Exposition de JYM FACTORY",
     "category": "exposition",
@@ -115,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-18",
+    "date": "2026-09-28",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -128,24 +21,49 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-307",
-    "title": "Journées européennes du patrimoine 2026",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
+    "uuid": "vln-569",
+    "title": "Permanences - Avec vous pour vos droits",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
     "subcats": [
-      "Culture"
+      "Citoyenneté",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Sport"
     ],
-    "date": "2026-09-19",
-    "endDate": "2026-09-20",
+    "date": "2026-09-28",
+    "endDate": "2026-10-01",
     "dateText": "",
-    "schedule": "",
+    "schedule": "9h à 11h30",
+    "place": "Clairlieu",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-597",
+    "title": "Conférence-débat : Le réel, arme secrète de la démocratie",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "dateText": "",
+    "schedule": "20h30",
     "place": "",
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/actualites/2025/ee6569e34bb0-Image-illustration-960x1080-5.png",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/journees-europeennes-du-patrimoine-2026",
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/9782364052550_1024x1024.webp",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-debat-le-reel-arme-secrete-de-la-democratie",
     "source": "villers-les-nancy"
   },
   {
@@ -167,6 +85,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0508_ARDELE_MARGUERITE_ROELE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/ardele-et-la-marguerite",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-319",
+    "title": "Loto lorrain",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/lotoBNV.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/loto",
     "source": "villers-les-nancy"
   },
   {
@@ -209,6 +148,132 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/compost.webp",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/restitution-de-compost",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-599",
+    "title": "Villers en rose",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "9h > 13h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/image-from-rawpixel-id-235138-original.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-rose",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-312",
+    "title": "Trail des Lumières",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/trail.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/trail-des-lumieres",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-490",
+    "title": "Villers en marche - Octobre rose",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Sport"
+    ],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "À partir de 8h",
+    "place": "Stade Roger Bambuck",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Format_169.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-marche-en-faveur-doctobre-rose",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-73",
+    "title": "Cercle des lecteurs",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2026-12-08",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/cercledeslecteurs.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cercle-des-lecteurs",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-301",
+    "title": "Groupes de parole pour les proches aidants Orchidée",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2027-06-29",
+    "dateText": "",
+    "schedule": "14 à 16h",
+    "place": "Résidence autonomie Paul Adam",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-481",
+    "title": "Conférence : Jules CAYETTE, un artiste de transition entre Art Nouveau et Art déco",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-10-15",
+    "endDate": "2026-10-15",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/jules.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-jules-cayette-un-artiste-de-transition-entre-art-nouveau-et-art-deco",
     "source": "villers-les-nancy"
   },
   {
@@ -337,6 +402,69 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261028_VISITE_DOMAINE_DE_LASNEE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/visite-histoire-commune-le-domaine-de-lasnee-les-sources-racontent-le-paysage",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-526",
+    "title": "Conférence de Patrick LAGNEAU pour son nouveau roman \" Tu ne tatoueras point\"",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/patrick-lagneau3.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-de-patrick-lagneau-pour-son-nouveau-roman-tu-ne-tatoueras-point",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-603",
+    "title": "Conférence : Renard, les yeux dans les yeux",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-12-09",
+    "endDate": "2026-12-09",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/renard.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-renard-les-yeux-dans-les-yeux",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-602",
+    "title": "Conférence de Dominique BAGUET : La chanoinesse Isabelle de Ludres",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Portrait_de_Madame_Marie-Elisabeth_de_Ludres.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-de-dominique-baguet-la-chanoinesse-isabelle-de-ludres",
     "source": "villers-les-nancy"
   }
 ]

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="⚽ Le 26 juin, vivez les Bleus en XXL !">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#57534e"/>
+      <stop offset="1" stop-color="#1c1917"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <g fill="none" stroke="#fdba74" opacity=".13">
+    <circle cx="690" cy="170" r="230" stroke-width="3"/>
+    <circle cx="690" cy="170" r="330" stroke-width="2"/>
+    <circle cx="90" cy="1120" r="260" stroke-width="3"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-size="110">📌</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="700" letter-spacing="8" fill="#fdba74">SORTIE</text>
+  <rect x="360" y="526" width="80" height="4" rx="2" fill="#fdba74" opacity=".8"/>
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#ffffff">
+      <text x="400" y="628" font-size="100">⚽ Le 26</text>
+      <text x="400" y="740" font-size="100">juin, vivez</text>
+      <text x="400" y="852" font-size="100">les Bleus en</text>
+      <text x="400" y="964" font-size="100">XXL !</text>
+  </g>
+  <g text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="400" y="1084" font-size="50" font-weight="700" fill="#fdba74">Samedi 26 juin</text>
+    <text x="400" y="1146" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Vandœuvre-lès-Nancy</text>
+  </g>
+</svg>

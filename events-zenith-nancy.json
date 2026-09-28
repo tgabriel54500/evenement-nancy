@@ -1,47 +1,5 @@
 [
   {
-    "uuid": "zen-la-dame-de-pierre",
-    "title": "LA DAME DE PIERRE",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-09-17",
-    "endDate": "2026-09-17",
-    "dateText": "Jeudi 17 septembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/10/LaDamedePierre-350x524.jpeg",
-    "url": "https://www.zenith-de-nancy.com/evenement/la-dame-de-pierre/",
-    "source": "zenith-nancy"
-  },
-  {
-    "uuid": "zen-mania-the-abba-tribute",
-    "title": "MANIA, THE ABBA TRIBUTE",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-25",
-    "endDate": "2026-09-25",
-    "dateText": "Vendredi 25 septembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/05/Mania_Originale-sans-logo-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/mania-the-abba-tribute/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-patrick-bruel",
     "title": "Patrick Bruel",
     "category": "musiques-actuelles",
@@ -57,7 +15,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
     "source": "zenith-nancy"
@@ -247,7 +205,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/Redouane-Bougheraba_MPS_affiche_40x60_web-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/09/Redouane-Bougheraba_MPS-V2_visuelweb_digital_story_1080x1920_nancy-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/redouane-bougheraba/",
     "source": "zenith-nancy"
   },
@@ -279,7 +237,7 @@
     "catLabel": "Spectacles",
     "catEmoji": "🎭",
     "subcats": [
-      "Ballet"
+      "Danse"
     ],
     "date": "2026-12-20",
     "endDate": "2026-12-20",
@@ -289,7 +247,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/4-SAISONS-Vertical-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/AFFICHE-4-SAISONS-FR-002-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
     "source": "zenith-nancy"
   },
@@ -546,6 +504,27 @@
     "source": "zenith-nancy"
   },
   {
+    "uuid": "zen-le-lac-des-cygnes-2",
+    "title": "Le Lac des Cygnes",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Ballet"
+    ],
+    "date": "2027-02-19",
+    "endDate": "2027-02-19",
+    "dateText": "Vendredi 19 février 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/09/le-lac-des-cygnes-visuel-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/le-lac-des-cygnes-2/",
+    "source": "zenith-nancy"
+  },
+  {
     "uuid": "zen-fabrice-eboue",
     "title": "Fabrice Eboué",
     "category": "spectacle",
@@ -772,7 +751,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/Story_1080x1920-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Hoshi_40x60_260902_vide_BD-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/hoshi/",
     "source": "zenith-nancy"
   },
@@ -793,7 +772,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/Patrick-Fiori_40x60_originale-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/PATRICK-FIORI-271204-NANCY-STORY-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/patrick-fiori/",
     "source": "zenith-nancy"
   },

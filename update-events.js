@@ -289,6 +289,19 @@ async function main() {
       console.warn("  ⚠ events-est-republicain.json illisible, ignoré :", e.message);
     }
   }
+  // 9e source bis : pages « Pour sortir » ENREGISTRÉES À LA MAIN (est-republicain-pages.js).
+  // Même source que l'import iCal : on concatène, le dédoublonnage fait le reste.
+  const erpPath = path.join(__dirname, "events-est-republicain-pages.json");
+  if (fs.existsSync(erpPath)) {
+    try {
+      const erp = JSON.parse(fs.readFileSync(erpPath, "utf8"))
+        .filter(e => e && (e.endDate >= todayISO || e.date >= todayISO));
+      erEvents = erEvents.concat(erp);
+      console.log(`  + ${erp.length} événements Est Républicain (pages enregistrées) fusionnés.`);
+    } catch (e) {
+      console.warn("  ⚠ events-est-republicain-pages.json illisible, ignoré :", e.message);
+    }
+  }
   // 10e source : LorraineAUcoeur (portail régional, FILTRÉ zone Nancy), collectée
   // à part dans events-lorraineaucoeur.json (même schéma + champ source).
   // Optionnelle. Régénérer : node lorraineaucoeur.js
@@ -413,7 +426,10 @@ async function main() {
   // pour ne pas afficher les ~1300 événements comme « nouveaux » le jour 1 : la
   // page Nouveautés démarre vide et se remplit avec les vrais ajouts dès demain.
   const fsPath = path.join(__dirname, "events-firstseen.json");
-  const fsKey = (e) => e.uuid || (String(e.title || "").trim().toLowerCase().replace(/\s+/g, " ") + "|" + (e.date || ""));
+  // serieUuid d'abord : les journées issues d'une série étalée (cf. normalize.js)
+  // partagent une seule date de première apparition, sinon un festival de trois
+  // jours apparaîtrait comme trois nouveautés.
+  const fsKey = (e) => e.serieUuid || e.uuid || (String(e.title || "").trim().toLowerCase().replace(/\s+/g, " ") + "|" + (e.date || ""));
   const daysAgoISO = (n) => { const d = new Date(today); d.setDate(d.getDate() - n); return d.toISOString().slice(0, 10); };
   let firstSeen = {};
   let fsExisting = false;
@@ -479,6 +495,15 @@ async function main() {
   const orderedCats = {};
   for (const k of order) if (cats[k]) orderedCats[k] = cats[k];
   for (const k of Object.keys(cats)) if (!orderedCats[k]) orderedCats[k] = cats[k];
+
+  // Affiche générée pour chaque événement sans image (cf. affiches-auto.js).
+  try { require("./affiches-auto").applyAutoPosters(merged); }
+  catch (e) { console.warn("  ⚠ affiches-auto.js en échec, événements laissés sans affiche :", e.message); }
+
+  // Étiquettes « magiques » par IA (cf. classer-evenements.js). Sans clé ou en cas
+  // d'échec, data.js est écrit normalement, simplement sans étiquettes nouvelles.
+  try { await require("./classer-evenements").applyTags(merged); }
+  catch (e) { console.warn("  ⚠ classement IA en échec, ignoré :", e.message); }
 
   // Allège : on retire les champs de service redondants des cartes.
   const slim = merged.map(({ catLabel, catEmoji, ...rest }) => rest);

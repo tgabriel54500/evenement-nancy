@@ -1,4 +1,4 @@
-# Shared notes — Événement Nancy
+# Shared notes — Événement Nancy
 
 > Common memory for all capybavibe sessions of this repo.
 > Auto-seeded once, **never regenerated**: whatever you write stays.
@@ -6,370 +6,126 @@
 
 ## Structure & conventions
 <!-- how things are arranged, naming, patterns to follow -->
-- Site statique pur (HTML/CSS/JS, aucun build). S'ouvre par double-clic sur index.html.
-- Vues: GALERIE (défaut)=index.html+galerie.js ; CARTES=cartes.html+app.js (MASQUÉE: retirée de la nav + NON déployée
-  en prod, gardée en local seulement) ; (style.css partagé). BASE DE DONNÉES=base.html/base.js/base.css = hors nav prod.
-- data.js est GÉNÉRÉ (ne pas éditer à la main) — il définit CATEGORIES, GENERATED_AT, EVENTS.
-- CŒUR COMMUN = `events-core.js` (chargé <script> APRÈS data.js, AVANT galerie.js/app.js) : normKey, mergeOcc,
-  dedupEvents, TODAY_ISO, notPast, isNew, isMulti, sortEvents, buildSorted, `let sortedEvents`, `let favs`, FAV_KEY,
-  HEART, favLoad/Save, favKey, isFav, toggleFav. UNE seule source de vérité (avant: dupliqué dans galerie.js ET app.js).
-  ⚠️ galerie.js/app.js ne doivent PAS redéclarer ces symboles (scope lexical global partagé → SyntaxError sinon).
-  favKey = titre|date|lieu|ville (le lieu/ville distingue les fiches homonymes du même jour dans 2 communes).
+- Site statique pur (HTML/CSS/JS, aucun build), s'ouvre par double-clic sur index.html ; style.css partagé.
+- VUES : GALERIE (défaut) = `index.html` + `galerie.js` (mur de posters, clic → lightbox) ; NOUVEAUTÉS = `nouveautes.html` (réutilise galerie.js) ; CARTES = `cartes.html` + `app.js`, MASQUÉE (hors nav, NON déployée, locale seulement) ; BASE DE DONNÉES = `base.html`/`base.js`/`base.css`, hors nav prod (URL directe, outil de dev). galerie.html SUPPRIMÉ.
+- data.js est GÉNÉRÉ (ne pas l'éditer à la main) : il définit CATEGORIES, GENERATED_AT, EVENTS.
+- CŒUR COMMUN `events-core.js` (chargé APRÈS data.js, AVANT galerie.js/app.js), source de vérité unique : normKey, mergeOcc, dedupEvents, TODAY_ISO, notPast, isNew, isMulti, sortEvents, buildSorted, `let sortedEvents`, `let favs`, FAV_KEY, HEART, favLoad/Save, favKey, isFav, toggleFav, termineCeSoir. ⚠️ galerie.js/app.js ne doivent PAS redéclarer ces symboles (scope global partagé → SyntaxError).
 
 ## DRY — where things live
 <!-- components, pages, utils, hooks: paths + what they do -->
-- Données réelles: API publique agenda Grand Nancy `https://agenda-integration.grandnancy.eu/api/vdn/events`
-  (entité "vdn" = Ville de Nancy). ⚠️ PAS de CORS → injoignable depuis le navigateur, snapshot only.
-- Régénérer les données: `node update-events.js` (récupère l'API, mappe, écrit data.js).
-- Détail d'un event: `https://www.nancy.fr/agenda/details-agenda?uuid=<uuid>`.
-- Schéma EVENTS (par carte): {uuid,title,category,subcats[],date(ISO),endDate,dateText,schedule,place,city,free,reservation,image,url}.
-  CATEGORIES = {key:{label,emoji}}. 9 catégories réelles (activite, musiques-actuelles, jeune-public, spectacle,
-  exposition, musique-classique, festival, conference, citoyennete).
-- ENRICHISSEMENT (session 854c84c8): `enrich-details.js` scrape les fiches détail + extras API et écrit
-  `details.js` → global `EVENT_DETAILS = {uuid:{description, image(HD), ticketUrl, venue, address, placeUrl,
-  audiences[], placeKeywords, entity, credits, duringDateText, updatedAt}}`. 397 descriptions, 137 billetteries,
-  340 adresses. À fusionner par uuid en LECTURE SEULE (ne modifie pas data.js). Régénérer: `node enrich-details.js`.
-  → Dispo aussi pour la vue Cartes si besoin de description/billetterie/adresse (inclure <script src="details.js">).
-- 2e SOURCE — Destination Nancy / office de tourisme (session 7895fa7d): `destination-nancy.js` crawle l'agenda
-  touristique du SIT (https://www.destination-nancy.com/.../agenda-et-grands-evenements/) → `events-destination-nancy.json`
-  (173 événements uniques métropole, schéma identique + champ `source:"destination-nancy"`, uuid préfixés `dn-`).
-  Régénérer: `node destination-nancy.js` (options --pages=N --max=N --concurrency=N). update-events.js fusionne
-  ce JSON s'il est présent (patch session 95838c9a). Catégorie devinée au préfixe du titre ("Exposition –"…).
-- 3e SOURCE — Nancy Curieux (agenda culturel/associatif): `curieux-net.js` → `events-curieux-net.json`
-  (93 events, schéma identique + `source:"curieux-net"`, uuid préfixés `cx-`). La home n'expose que ~21 events et
-  /agenda/N est un bloc figé (PAS de pagination) → on crawle les 7 RUBRIQUES (concert, spectacle, exposition, cinema,
-  stage, action-citoyenne, autre) qui partitionnent le catalogue sans recouvrement; chaque fiche /agenda/evenement/<slug>
-  porte un JSON-LD Event (dates fiables par slug). ⚠️ Pages déclarent ISO-8859-1 mais octets = UTF-8 → décoder en utf8.
-  ⚠️ NE PAS lire le .block-date des fiches (pollué par les events liés) → dateText reconstruit depuis les dates ISO.
-  ⚠️ image JSON-LD = host nu `curieux.net` MORT → préférer og:image (www.curieux.net, 200). Régénérer: `node curieux-net.js`.
-  update-events.js et server.js fusionnent ce JSON s'il est présent (3 sources → 663 events au total).
-- 4e SOURCE — Ville de Vandœuvre-lès-Nancy (session c15b829b): `vandoeuvre.js` lit l'API REST WordPress
-  (`/wp-json/wp/v2/evenement`, 131 events) → `events-vandoeuvre.json` (schéma identique + `source:"vandoeuvre"`,
-  uuid préfixés `vdv-`, 39 à venir). ⚠️ L'API ne donne PAS les dates: lues dans le HTML de chaque fiche
-  (bloc `.article-date`, .date-from/.date-to/.date-year ; année de fin inférée si absente). Catégorie = thème WP
-  (`event_theme`, 1er = catégorie, reste en subcats) → NOUVELLES clés culture/famille/jeunesse/sport/nature/sante/
-  seniors/social/mobilite/economie (Ville→citoyennete). Lieu via taxonomie `place`, image via yoast og_image.
-  Régénérer: `node vandoeuvre.js` (--max=N --concurrency=N). update-events.js fusionne ce JSON s'il existe.
-- 5e SOURCE — Ville de Villers-lès-Nancy (agenda municipal TYPO3): `villers-les-nancy.js` → `events-villers-les-nancy.json`
-  (27 events, schéma identique + `source:"villers-les-nancy"`, uuid préfixés `vln-`). Site TYPO3+cim_search_elastic:
-  /agenda paginé en infinite-scroll. On lit l'attribut `data-url-scroll` (endpoint JSON Elasticsearch), on RETIRE le
-  `&cHash=…` (sinon ajouter `tx_cimsearchelastic_displaysearch[page]=N` → 404, le cHash ne couvre pas ce param) puis on
-  pagine page=0,1,2… (12/page, `nb_results` donne le total). Champs: cimNewsStartDate/EndDate (ISO), `schedule` ou
-  cimNewsScheduleDates[].schedule (horaire), categories[].title = THÈMES éditoriaux (Culture/Sport/Solidarité…) → mis
-  en subcats; catégorie devinée au titre puis repli sur le thème. Image = ORIGIN+`/fileadmin`+identifier FAL; url =
-  ORIGIN+`/agenda/evenement`+pathSegment. Régénérer: `node villers-les-nancy.js`. update-events.js fusionne ce JSON s'il existe.
-- 6e SOURCE — Alentoor (alentoor.fr): `alentoor.js` → `events-alentoor.json` (~350 events sur ~100 communes, schéma
-  identique + `source:"alentoor"`, uuid préfixés `al-`). Couvre Nancy + métropole + ANNEAU 20–30 km : on crawle 18
-  COMMUNES-ANCRES réparties dans toutes les directions (nancy, toul, liverdun, pompey, pont-a-mousson, dieulouard,
-  nomeny, champenoux, einville-au-jard, luneville, saint-nicolas-de-port, dombasle-sur-meurthe, bayon, neuves-maisons,
-  vezelise, haroue, pont-saint-vincent, colombey-les-belles) car chaque page-commune liste son RAYON (dédup par id).
-  update-events.js le fusionne s'il est présent. Régénérer: `node alentoor.js` (--horizon=60 --cities=… --concurrency=12).
-  ⚠️ Pitfalls:
-  (1) le JSON-LD du <head> est un set "à la une" FIXE (~33, identique quelle que soit page/date) → NE PAS l'utiliser
-  pour lister; la vraie liste = liens de cartes /{ville}/agenda/<id>-slug dans le corps. (2) ?page=N ne pagine pas
-  (rendu JS); seul le chemin /{ville}/agenda/AAAA-MM-JJ filtre côté serveur → on itère sur les DATES. (3) L'API
-  /api/agenda (AJAX/recherche) donnerait plus MAIS robots.txt INTERDIT */ajax/ et *location=/*date[start]=/*q= →
-  on s'en tient aux pages publiques (conforme). Détail event = JSON-LD Event (date+horaire, adresse, offers/gratuité).
-- 7e SOURCE — ICI-C-NANCY.FR (média local, Joomla + iCagenda): `ici-c-nancy.js` → `events-ici-c-nancy.json`
-  (~7 events « à venir », schéma identique + `source:"ici-c-nancy"`, uuid préfixés `icn-`). ⚠️ CHALLENGE anti-bot
-  nginx: 1 GET sur `/challenge` pose un cookie (nom aléatoire) SANS lequel tout boucle en 302 → on le récupère
-  (redirect:'manual', getSetCookie) et on le renvoie sur /agenda.html. TOUT est server-side dans la liste (aucune
-  fiche détail à lire): cartes `.ic-list-event`, et l'URL `/agenda/<id>-<ville>-<slug>/AAAA-MM-JJ-HH-MM.html` porte
-  la DATE+HEURE de l'occurrence. Catégorie iCagenda (Humour/Salon/Musique…) mappée vers les clés existantes. Plusieurs
-  occurrences d'un même id regroupées (date=prochaine, endDate=dernière). Régénérer: `node ici-c-nancy.js`.
-- 8e SOURCE — Zénith de Nancy (grande salle, concerts/spectacles): `zenith-nancy.js` → `events-zenith-nancy.json`
-  (~46 events, schéma identique + `source:"zenith-nancy"`, uuid préfixés `zen-<slug>`). WordPress mais le CPT
-  « evenement » n'est PAS exposé en REST (/wp-json/wp/v2/evenement → 404) → on parse le listing server-side
-  (/evenements/ puis /evenements/page/N/, 11 cartes/page, jusqu'au 404). Tout est dans la carte `.card-event`
-  (overlay-link=url, `.card-event__type`=catégorie, `__title`, `__date`, `__img`) → AUCUNE fiche détail à lire.
-  ⚠️ Date en français long, parfois multi-jours ("19 & 20 juin 2026", "12, 13 & 14 février 2027", mois abrégé "avr.")
-  → parseFrenchDate prend 1er jour=start, dernier=end. Type→clé: Concert/rap/ciné→musiques-actuelles, humour/one-(wo)man/
-  comédie/ballet/danse/spectacle→spectacle, sport/mma→sport, festival→festival. place="Zénith de Nancy", city="Maxéville",
-  free=false, reservation si CTA "Réserver". Régénérer: `node zenith-nancy.js`. update-events.js fusionne ce JSON s'il existe.
-- 9e SOURCE — Est Républicain "Pour sortir" via IMPORT MANUEL iCal: `import-ics.js` → `events-est-republicain.json`
-  (schéma identique + `source:"est-republicain"`, uuid `er-<UID>`). ⚠️ Le portail déclare tdm-reservation:1 (opposition
-  formelle à la fouille de données, dir. UE 2019/790 art.4) → on NE le SCRAPE PAS. L'utilisateur exporte les fiches à la
-  main (bouton iCal sur chaque event) et dépose les .ics dans `ics-est-republicain/`; import-ics.js les convertit (parse
-  RFC5545: VEVENT, DTSTART/DTEND, SUMMARY, LOCATION, URL, CATEGORIES; catégorie devinée au titre). update-events.js
-  fusionne ce JSON s'il existe. import-ics.js est générique (--dir/--source/--prefix, ou fichiers en args).
-  ⚠️ NB sur le portail: l'ANCIENNE URL géo /pour-sortir/Loisir/Lorraine/.../Nancy est MORTE (404); le portail vit
-  désormais à /pour-sortir/ (slash final) organisé par CATÉGORIE; fiches = /pour-sortir/loisirs/<Cat>/<SousCat>/<Région>/
-  <Dept>/<Ville>/AAAA/MM/JJ/<slug>. Pas de JSON-LD. Mêmes events publics (non exclusifs) que Alentoor/Destination Nancy.
-- 10e SOURCE — LorraineAUcoeur (lorraineaucoeur.com, portail régional loisirs): `lorraineaucoeur.js` →
-  `events-lorraineaucoeur.json` (~10 events, schéma identique + `source:"lorraineaucoeur"`, uuid `lac-<id>`).
-  Vieux CMS XOOPS, charset ISO-8859-1 (décoder en latin1). ⚠️ Home + fiches ont leurs liens injectés en JS (grep -a
-  obligatoire), MAIS le listing server-side `/modules/compte/evenements.php` est un TABLEAU complet (~50 events, PAS de
-  pagination, set figé) où TOUT est présent → AUCUNE fiche détail à lire: URL canonique /evt-<id>/<slug>/<dept-ville>/
-  <cat>, colonne « Genre », titre, CP + commune (item.php), période « du JJ-MM-AAAA au JJ-MM-AAAA », vignette
-  event<id>_min.jpg. ⚠️ Site TOUTE LA LORRAINE → FILTRÉ sur la zone de Nancy (set NANCY_AREA = Grand Nancy + anneau
-  ~30 km, par slug de commune). Catégorie = mapping du Genre→clés canoniques. robots.txt OK (Crawl-delay 1s, 1 requête).
-  Aussi un flux RSS /rssevent.php mais 7 events seulement (non paramétrable) → on utilise evenements.php. Régénérer:
-  `node lorraineaucoeur.js`. update-events.js fusionne ce JSON s'il existe.
-- 11e SOURCE — Salle / Galerie Poirel (équipement culturel municipal Nancy): `poirel.js` → `events-poirel.json`
-  (39 events, `source:"poirel"`, uuid `po-<uuid>`). 🎁 MÊME socle que la Ville de Nancy: agenda-integration.grandnancy.eu
-  avec ENTITÉ `sgp` (vu dans la page: `entity='sgp'`) → endpoint `/api/sgp/events`, schéma IDENTIQUE à `/api/vdn/events`
-  → mapping copié de la source Ville (resolveCategory/pickWhen/pickImage). 1 appel JSON, pas de scraping HTML.
-  ⚠️ REDONDANT: les 39 events Poirel sont DÉJÀ tous dans le flux Ville de Nancy (vdn) → cleanupMerged les absorbe (0
-  carte unique ajoutée; la fiche conservée garde source=ville-de-nancy, plus prioritaire). Gardé quand même: coût nul,
-  future-proof si Poirel publie un jour hors-vdn. Régénérer: `node poirel.js`. Branché dans update-events.js, server.js
-  (SNAPSHOTS) et refresh-all.sh. NB: server.js live couvre DN/CX/VDV/VLN/AL/ICN/ZEN/Poirel mais PAS encore lorraineaucoeur.
-- 13e SOURCE — Événements Facebook « Intéressé·e/Je participe » via IMPORT MANUEL: `facebook.js` → `events-facebook.json`
-  (`source:"facebook"`, uuid `fb-<id>`). ⚠️ L'export iCal Facebook (webcal upcoming/birthdays) est SUPPRIMÉ sur les
-  comptes récents (vérifié, aucun lien `ical/...`). ⚠️ « Enregistrer la page » ne capture QUE le squelette (events chargés
-  en JS après). MÉTHODE FIABLE: scroller `facebook.com/events/` jusqu'en bas, puis « Enregistrer sous → Page web COMPLÈTE »
-  (le DOM rendu, ~9 Mo) dans `ics-facebook/`, puis `node facebook.js`. Le parseur a 2 voies: (1) `extractEventNodes` lit le
-  JSON `<script data-sjs>` (≈1ère fournée, dates exactes via start_timestamp); (2) `extractEventCards` lit les CARTES HTML
-  rendues `<a href="/events/ID/">` (TOUTE la liste défilée) — c'est la voie principale en pratique. Mappe via
-  `resolveCategoryFrom` (import-ics.js) + détection de commune `findCity` (table CITY_CANON, triée par longueur DESC sinon
-  "Vandœuvre-lès-Nancy"→"Nancy"). Dates: `parseFrenchDate` (⚠️ "juin"/"juil" se distinguent sur 4 lettres). Titres en
-  fausses polices (𝐒𝐚𝐥𝐬𝐚) normalisés par NFKC. Sur 1 vraie page: 274 events, 204 villes, 274 adresses. BRANCHÉ dans
-  update-events.js (13e source, filtre date>=today, dédup inter-sources). Les fichiers view-source/.mhtml du dossier sont
-  ignorés sans dommage (0 event). Pas dans refresh-all.sh (source perso, manuelle).
-  AFFICHES FB: la voie carte ne donne PAS d'image (`image:null`). `fb-posters.js` la récupère APRÈS facebook.js:
-  pour chaque uuid `fb-<id>`, l'URL stable `https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=<id>`
-  sert l'affiche en image/jpeg UNIQUEMENT à un UA crawler (`facebookexternalhit/1.1`) — un navigateur reçoit du HTML de
-  redirection, donc on DOIT télécharger côté serveur + réhéberger en local. Stocke `images/fb/<id>.jpg`, écrit
-  `image:"images/fb/<id>.jpg"` dans events-facebook.json, puis `node update-events.js` propage dans data.js. Resize
-  `sips -Z 900 -s formatOptions 68` (~118 Ko/img). `images/fb/**` ré-autorisé dans `.assetsignore`. ~319/342 ont une
-  affiche (23 events sans cover). Re-télécharge: `node fb-posters.js [--force]`.
-  PÉRIMÈTRE 30 KM CÔTÉ FACEBOOK (2026-08-17): la page FB mélange l'onglet Découvrir (Metz, Luxembourg, Vosges,
-  Bretagne). Le filtre 30 km de update-events.js ne suffisait PAS: il garde les villes vides au bénéfice du doute, or
-  une carte FB n'a pas d'adresse structurée (ville vide 8 fois sur 10) donc tout le Grand Est passait. `facebook.js`
-  filtre donc À LA SOURCE avec `communes-30km.json` (331 communes, nom officiel + coords + CP, HORS LIGNE, régénéré
-  par `node gen-communes.js`): commune non identifiée dans les 30 km = événement écarté (`--nofilter` pour désactiver).
-  ⚠️ PIÈGE COORDONNÉES: gen-communes.js calcule le centre sur les CONTOURS IGN (gregoiredavid/france-geojson, 4 dép.
-  54/55/57/88, seuls 54 et 57 ont des communes dans le rayon). Le dataset La Poste high54/Communes-France-JSON a des
-  `coordonnees_gps` FAUSSES de 5 à 10 km sur beaucoup de communes (Seichamps donné à 14 km au lieu de 7): ne pas
-  l'utiliser. Les centres IGN collent à la BAN à moins d'1 km (vérifié sur les 116 entrées déjà en cache).
-  commune-coords.json a été pré-alimenté avec ces 331 communes (360 entrées): update-events.js ne fait donc PLUS
-  aucun appel BAN pour la zone, et son filtre 30 km est exact au lieu de garder les inconnues par défaut.
-  Détection en cascade: adresse, puis CP, puis texte de l'affiche (OCR alt), puis titre, puis SALLES CONNUES lues dans
-  `data.js` (couples lieu→ville des 14 autres sources, source facebook exclue car circulaire, libellés génériques et
-  lieux ambigus ignorés). Alias de nom court ("Vandoeuvre"→Vandœuvre-lès-Nancy) uniquement si ≥7 car. et unique dans
-  la zone; TEXT_STOP écarte les noms de communes qui sont des mots courants (serres, romain, viviers…) sur les
-  titres/affiches mais pas sur les adresses. Page du 2026-08-17: 742 events bruts → 195 gardés (547 écartés).
-- import-ics.js expose désormais `resolveCategoryFrom({categories,title,description,location})`: essaie CATEGORIES puis
-  titre, sinon titre+description+lieu réunis (rattrape les titres vagues). Réutilisé par facebook.js.
-- 14e SOURCE — L'Autre Canal (SMAC, musiques actuelles, lautrecanalnancy.fr): `autre-canal.js` → `events-autre-canal.json`
-  (~95 events, `source:"autre-canal"`, uuid `lcn-<slug>`). Drupal: /agenda rend TOUTE la liste server-side (mosaïque
-  `lac_liste_evenements`, ~6 mois) → 1 requête, pas de pagination. Tout dans la carte `<article>`: lien /agenda/<slug>,
-  type via classe `term-concert|scolaires|etudiantes|…`, genres via `evt-tags-item`→subcats, GRATUITÉ via classe
-  `term-gratuit` sur l'article, statut billetterie `liste-evenement-statut>tickets`, image data-srcset (poster a4_800),
-  titre `.lien-hover`. ⚠️ La carte ne donne PAS l'année (jour + /MM) ET la liste n'est pas triée par date → année
-  déduite par « prochaine occurrence » (jour/mois ≥ aujourd'hui ⇒ année courante, sinon +1 ; vérifié vs JSON-LD).
-  free=term-gratuit, reservation=billetterie sinon → FIABLES dès la liste donc EXCLUE de enrich-pricing.js (sinon la
-  règle "indéterminé=gratuit" braderait les concerts payants). Concert→musiques-actuelles, scolaires→jeune-public.
-  Régénérer: `node autre-canal.js`. Branché dans update-events.js. ⚠️ server.js live ne la couvre PAS encore.
-- 15e SOURCE — Ville d'Essey-lès-Nancy (Drupal/Stratis, esseylesnancy.fr/agenda): `essey.js` → `events-essey.json`
-  (~34 events, `source:"essey"`, uuid `essey-<slug>`). On combine la PAGE /agenda paginée (?page=0,1,2…) — carte
-  `<article class="event-item">` : date EXACTE via `datetime="AAAA-MM-JJ"` (2 = multi-jours), `.event-item__category`
-  (thème), titre + lien /agenda/<slug>, image srcset 2x — ET le flux iCal (…stratis.pro/feed/events/list/ical.ics,
-  ~12 prochains) qui ajoute LIEU (LOCATION) + HORAIRE (DTSTART/DTEND), indexé par URL. Catégorie devinée au titre puis
-  thème (Petite enfance→jeune-public, Vie municipale/Conseil/quartier→citoyennete, Manifestation culturelle/Jeudis de la
-  culture→spectacle, Vie associative→activite). free par défaut=true (municipal), affiné par enrich-pricing.js (ajouté à
-  SOURCE_FILES). Régénérer: `node essey.js`. Branché dans update-events.js. ⚠️ server.js live ne la couvre PAS encore.
-- 16e SOURCE — Ville de Laxou (CMS Flexit, laxou.fr/fr/agenda.html): `laxou.js` → `events-laxou.json`
-  (~31 events, ~23 à venir, `source:"laxou"`, uuid `lx-<slug>`). Listing paginé `?page_actualites=N` : cartes avec
-  `data-goto-url="/fr/agenda/<slug>_-d.html"` + `data-first-day="AAAA-MM-JJ"`; chaque fiche détail porte un JSON-LD
-  Event (name souvent ABSENT, startDate au format "AAAA/MM/JJThh:mm:ss" à SLASHES, location.name, image, description).
-  ⚠️ PIÈGES: (1) les pages 2+ du listing renvoient un statut HTTP 404 TROMPEUR avec le vrai contenu → lire le corps
-  quel que soit le statut, et s'arrêter quand une page répète la précédente (la pagination reboucle). (2) titre: JSON-LD
-  name souvent vide et og:title verbeux/tronqué ("… ville de laxou") → prendre le <h1> (propre et complet). city non
-  fournie (JSON-LD sans adresse) → laissée vide, place=location.name (events parfois HORS Laxou, ex. Lunéville).
-  Régénérer: `node laxou.js`. Branché dans update-events.js, refresh-all.sh et le workflow GitHub Actions.
-- 17e SOURCE — Ville de Ludres (WordPress + JetEngine/Elementor, ludres.com/liste-evenements/): `ludres.js` →
-  `events-ludres.json` (~9 events à venir, `source:"ludres"`, uuid `lud-<slug-liste>`, city="Ludres"). ⚠️ CPT
-  `evenements` exposé en REST (`/wp-json/wp/v2/evenements?per_page=100&_embed=1`) avec titre/image(featured)/taxo
-  `categorie`/description — MAIS les dates JetEngine NE SONT PAS dans le `meta` REST. Les dates sont seulement dans la
-  PAGE LISTE: chaque carte rend 3 champs `.jet-listing-dynamic-field__content` dans l'ordre = JOUR(nombre)·MOIS·LIEU.
-  On croise: liste (slugs dans l'ordre + triplets jour/mois/lieu) ⨯ REST (par slug). ⚠️ events RÉCURRENTS: la liste a un
-  slug à suffixe n° (bebes-lecteurs-16) absent du REST (qui garde bebes-lecteurs-5) → repli par « slug de base » (sans
-  `-?\d+$`). Pas d'heure ni d'année dans la liste → schedule="", année inférée (mois passé→année+1). Catégorie: taxo
-  Ludres mappée (Sécurité→citoyennete, Culture/Loisirs→activite…), repli `resolveCategoryFrom(titre+termes)` SANS la
-  description (⚠️ "Population" contient "pop" → faux positif musiques-actuelles). Régénérer: `node ludres.js`. Branché
-  update-events.js (17e) + refresh-all.sh. (Penser à l'ajouter aussi au workflow GitHub Actions.)
-- ⚠️ VUES (réorg demande user): GALERIE = vue PAR DÉFAUT → `index.html` + `galerie.js` (mur de posters, clic → lightbox).
-  CARTES = `cartes.html` + `app.js`. BASE DE DONNÉES = `base.html`/`base.js`/`base.css` TOUJOURS PRÉSENTE mais RETIRÉE de
-  la nav PROD (plus aucun lien depuis index/cartes ; accessible par URL directe seulement, outil de dev). Sélecteur de vue
-  = 3 entrées (Galerie/Cartes/Nouveautés). galerie.html SUPPRIMÉ (contenu déplacé dans index.html). style.css partagé.
-- NOUVEAUTÉS (demande user) : `nouveautes.html` (3e vue) RÉUTILISE `galerie.js` via `body[data-view="nouveautes"]` (flag
-  `NOUVEAUTES`) — pas de JS dédié. En ce mode : pas de filtres date/catégorie/avancés ni toolbar (juste recherche + lightbox) ;
-  `renderNouveautes()` liste les events `addedAt >= J-7` (FENÊTRE 7 JOURS), triés addedAt DESC, GROUPÉS (`<h2.nouv-group>`
-  grid-column:1/-1) : aujourd'hui / ces 7 derniers jours. Ruban 🆕 `.poster__new`/`.card__new` (vert #16a34a) sur galerie
-  ET cartes pour `addedAt >= J-7` (`isNew`). DÉFINITION user = « nouvel ajout sur une source, reste 7 j ».
-  ⚠️⚠️ DONNÉE : `addedAt` posé par update-events.js depuis `events-firstseen.json` {**uuid** → dateISO 1re vue}.
-  CLÉ = `uuid` (identifiant STABLE de la source), surtout PAS `titre|date` : `date` est recalé sur aujourd'hui pour les
-  events EN COURS (expos) → keying titre|date faisait apparaître ~150 events déjà présents comme « nouveaux » chaque jour
-  (bug corrigé 2026-06-17). Nouveau = date du jour, sinon conservé. 1er remplissage = PRÉ-DATAGE de l'existant à J-45 (sinon
-  tout serait "nouveau" le jour 1) → page démarre VIDE, se remplit aux vrais ajouts. ⚠️ Si on rechange la clé, SUPPRIMER
-  events-firstseen.json avant de relancer (sinon les anciennes clés font tout passer en "nouveau"). Purge des clés absentes
-  ET vues >60j. `addedAt` survit au durcissement dist/ (seuls source+uuid retirés). firstseen committé (`git add events-*.json`).
-- FILTRES DATE (demande user): uniquement Tout · Aujourd'hui · Ce week-end · « choisir des dates ». Cartes (app.js) =
-  chips + CALENDRIER popover. Galerie (galerie.js) = chips + 2 champs date natifs (state.customFrom/customTo, when="custom").
-  ⚠️ Si tu rebranches d'autres chips (semaine/mois), garde les 2 vues alignées.
-- FAVORIS (demande user, dans app.js ET galerie.js) : persistés en localStorage clé `agenda-nancy:favoris` =
-  objet {cléÉvénement: endDate}. ⚠️ Clé = `normKey(title)+"|"+date` (PAS l'uuid : le data.js de prod est minifié sans
-  uuid/source). Au chargement, on PURGE les favoris dont endDate < aujourd'hui (auto-nettoyage du passé). UI : cœur sur
-  chaque carte/affiche (clic = toggle, `stopPropagation` pour ne pas ouvrir la lightbox), bouton dans la lightbox, et
-  barre « Mes favoris (N) » (#favbar, state.favOnly) injectée avant #resultsCount → filtre les favoris seuls (déjà triés
-  par date car sortedEvents l'est). Galerie : la tuile <button> est wrappée dans `.poster-wrap` + cœur frère `.fav-btn`
-  (pas de bouton imbriqué). Le store est PARTAGÉ entre les 2 vues (même origine/clé).
-- NETTOYAGE COMMUN — `normalize.js` (module partagé par update-events.js ET server.js, appliqué à la FUSION, jamais
-  sur les snapshots events-*.json). `cleanupMerged(events)` enchaîne 3 passes: (1) `cleanCity` normalise les communes
-  (casse/accents/tirets via table CITY_CANON Grand Nancy + anneau; ex "NANCY"→"Nancy", "VANDOEUVRE LES NANCY"→
-  "Vandœuvre-lès-Nancy") — INDISPENSABLE pour tout filtre/regroupement géo; (2) `remapCategory` replie les thèmes
-  parasites (culture/famille/sport/nature/sante/social/…→canonique) → on RESTE à 10 catégories canoniques; (3)
-  `dedupeCrossSource` fusionne le même event listé par ≥2 sources. Clustering GLOUTON gardé par 3 conditions: (a)
-  CHEVAUCHEMENT de dates `overlap`, (b) lieu compatible `placeCompat` (identique/inclus/même ville), (c) titre = même
-  event `titleSimilar`. ⚠️ On ne préfiltre PLUS par titre exact (sinon les reformulations inter-sources "X - récital de
-  piano" vs "Récital de piano - X" échappaient). `titleSimilar`: clés égales OU mots DISTINCTIFS (hors stopwords
-  TITLE_STOP = types d'event/années/"nancy") de l'un ⊆ l'autre (≥2 mots) OU Jaccard≥0.6 avec ≥2 mots communs. Double
-  garde-fou ≥2 mots = évite de fusionner "Saison 2026" vs "La Saison des Jardiniers" (1 mot commun) ou 4 "Guinguette
-  Estivale - Cookoon/Carnot/Oasis/Laxou" (lieux distincts, 0 mot distinctif commun). Effet: ~280 doublons fusionnés.
-  Garde la fiche la plus riche (priorité source SRC_RANK). ⚠️ Résidus connus rares: typo dans un nom propre
-  (Arielle "Back" vs "Beck") + titre FB très court + `city` FB vide → pas fusionné. Les occurrences récurrentes à dates
-  DISJOINTES restent séparées (ce n'est PAS un doublon). L'ordre du prédicat court-circuite le coûteux titleSimilar
-  (overlap élimine d'emblée les paires à dates différentes). (4) `fillPeriod` (session c15b829b): renseigne `dateText` des events MULTI-JOURS
-  qui en manquent → "Du J1 [mois] au J2 mois année", pour que la carte affiche la PÉRIODE et pas un jour unique
-  (dateLabel front privilégie dateText). ⚠️ GARDE: seulement si `date > aujourd'hui` (futur), car `date` est calé sur
-  aujourd'hui au tri pour les events EN COURS (vrai début perdu ici) → pour ceux-là on s'appuie sur le dateText posé
-  par le scraper à la collecte (vandoeuvre.js/ici-c-nancy.js le font avec le vrai début).
-- TARIF/RÉSERVATION FIABILISÉS — `enrich-pricing.js` revérifie CHAQUE fiche à la source et écrit l'OVERLAY
-  `events-pricing.json` = {uuid:{free?,reservation?}} ; update-events.js l'applique APRÈS fusion/dédup (n'écrase QUE
-  ce qui est déterminé ; Nancy garde ses valeurs d'API). Signaux par source : nancy=API ; zenith=payant+résa (statique) ;
-  alentoor=JSON-LD `isAccessibleForFree` ; curieux=JSON-LD `offers.price` (0=gratuit) ; DN/villers/vandoeuvre/ici-c-nancy=
-  texte SCOPÉ (on retire nav/footer/aside/form + commentaires ; ⚠️ DN met ses vraies valeurs en HTML RENDU, pas dans les
-  commentaires-gabarits wp-etourisme identiques partout). Priorité PRIX (un montant € => payant même si "gratuit -26 ans").
-  Réservation = formulations EXPLICITES seulement (haute précision ; PAS "billetterie"/"réserver" nus = menus de tous les
-  sites) + lien billetterie dans offers JSON-LD. ⚠️ RÈGLE MÉTIER (demande user): free INDÉTERMINÉ => GRATUIT (un payant
-  le précise presque toujours) ; donc `payant` = prix confirmé OU Zénith uniquement. Régénérer:
-  `node enrich-pricing.js` (--source=… --sample=N --concurrency=12) PUIS `node update-events.js`. Résultat: 515 gratuits,
-  427 payants, 261 sur réservation (sur 942). Vue Cartes: filtres Tarif (#optFilters: tous/gratuit/payant) + Réservation (toutes/accès
-  libre/sur réservation) dans app.js (state.price/state.resa). Vue Base de données les avait déjà (state.price/state.resa).
-- TEMPS RÉEL — `server.js` (zéro dépendance, `node server.js`, port 5173): proxy même-origine qui contourne le CORS.
-  `GET /data.js` régénéré LIVE → le front existant devient temps réel SANS modifier index.html/app.js (data.js disque =
-  repli hors-ligne). Architecture: tableau `SNAPSHOTS` listant les 7 sources « lourdes » (DN, Curieux, Vandœuvre,
-  Villers, Alentoor, ICI-C-Nancy, Zénith) servies depuis leur snapshot events-*.json + Ville de Nancy en direct (fetch,
-  cache 10min) par-dessus; le tout passé à `cleanupMerged` (normalize.js). `GET /api/events` = JSON+CORS (~917 events).
-  `GET /api/refresh` = recrawl des 7 sources en fond. `AUTO_REFRESH=1` (ex-`DN_AUTO_REFRESH`) = recrawl périodique
-  échelonné toutes les SNAP_TTL (6h). ⚠️ Par défaut AUTO_REFRESH OFF: c'est le cron quotidien (refresh-all.sh +
-  launchd, cf. plus bas) qui rafraîchit les snapshots sur disque — pas besoin de double-crawler dans le serveur.
-- ⚠️⚠️ PRODUCTION = **CLOUDFLARE (Workers Static Assets)**, PLUS Netlify (2026-06). Domaine public https://agenda-grandnancy.fr.
-  Déploiement = `npx wrangler deploy` (config `wrangler.jsonc`, worker `evenement-nancy`, account tgabriel, url technique
-  evenement-nancy.tgabriel.workers.dev). Auth = `npx wrangler login` (OAuth navigateur) OU **token API durable**
-  (recommandé pour le cron) : `deploy-cloudflare.sh` lit `.cloudflare-token` (gitignored, racine, 1 ligne =
-  le token, permission *Workers Scripts:Edit* + Account/Zone Read) et l'exporte en `CLOUDFLARE_API_TOKEN`.
-  ⚠️ L'OAuth `wrangler login` EXPIRE → casse le deploy cron (« auth token has expired … non-interactive ») ;
-  le token API ne dépend pas d'une session. Deploy = `wrangler deploy --env=""` (wrangler.jsonc a plusieurs envs).
-  ⚠️ MAJ 2026-06-17 : `wrangler.jsonc` pointe désormais `assets.directory` sur **`dist`** (build DURCI), PLUS sur la racine `.`.
-  → On ne déploie plus les fichiers bruts : `deploy-cloudflare.sh` assemble `dist/` (front public uniquement), MINIFIE data.js
-  en RETIRANT `source`+`uuid` (mais GARDE `addedAt`), injecte GoatCounter + `?v=` anti-cache, puis `wrangler deploy`. Du coup
-  `.assetsignore` (allowlist racine) n'est PLUS utilisé (dist/ ne contient que le public). ⚠️ Tout nouveau fichier PUBLIC doit
-  être ajouté à la liste `FILES` de `deploy-cloudflare.sh` (et au `<script>/<link>` de la page), sinon absent en prod. ICÔNES
-  écran d'accueil (apple-touch 180, icon-192/512 + maskable, favicon-16/32) + `site.webmanifest` dans la liste FILES.
-  REPRISE SUR ÉCHEC (2026-08-20) : `wrangler deploy` échoue par intermittence sur un « fetch failed / connectivity
-  issue » passager (12, 13 et 18/08 : le site restait alors sur les données de la veille, le build dist/ étant pourtant
-  bon). Le script retente donc 3 fois à 60 s d'intervalle (`DEPLOY_TRIES` / `DEPLOY_WAIT` pour ajuster). Un échec d'AUTH
-  se reproduit aux 3 essais et sort en code 1 comme avant, donc refresh-all.sh loggue toujours FAIL dans ce cas.
-- ✅ AUTOMATISATION CORRIGÉE (2026-06-17) : `refresh-all.sh` appelle désormais **`deploy-cloudflare.sh`** (build durci →
-  wrangler deploy sur Cloudflare), PLUS `deploy-site.sh` (Netlify mort). Le data.js régénéré chaque nuit arrive donc
-  directement en prod sur le domaine. ⚠️ Le cron local (launchd) déploie car `wrangler login` est fait sur le Mac ; GitHub
-  Actions ne déploie PAS (juste commit data.js) — il faudrait un CLOUDFLARE_API_TOKEN en secret pour l'y ajouter.
-  Cloudflare HÉBERGE les fichiers (site up 24/7 même Mac éteint) ; le Mac ne sert qu'à lancer le refresh+deploy quotidien.
-  `deploy-site.sh` (Netlify) n'est PLUS appelé — conservé pour mémoire mais à supprimer un jour. (ancien Netlify ci-dessous.)
-- PRODUCTION / DÉPLOIEMENT (HISTORIQUE Netlify, NE PLUS UTILISER) — site 100% statique :
-  https://agenda-nancy.netlify.app (siteId dans `.netlify/state.json`). PAS de serveur Node en prod (le mode hors-ligne
-  data.js suffit, maj 1×/jour). Chaîne: `refresh-all.sh` (launchd `com.evenement-nancy.refresh`, tous les jours 05h00)
-  lance les 7 scrapers + `update-events.js` PUIS `deploy-site.sh`. ⚠️ PUBLIC = VUE CARTES UNIQUEMENT (pas de Base de
-  données): `deploy-site.sh` assemble `dist/` avec SEULEMENT index.html, app.js, style.css, data.js (PAS base.html/
-  base.js/base.css/details.js, ni scrapers/JSON/NOTES), et strip le bloc `.hero__views` (bouton « Base ») de la copie
-  dist/index.html via node — la version LOCALE garde le bascule + la Base. Puis `netlify deploy --prod --dir=dist`.
-  CLI netlify installé global (nvm bin v24, PATH codé en dur dans les .sh car launchd n'hérite pas du PATH). Auth =
-  `netlify login` (creds dans ~/.config, lus par le cron). Déploiement sauté proprement si `.netlify/state.json` absent.
-  ⚠️ Si on ajoute un fichier chargé par index.html (vue Cartes), l'ajouter à la liste FILES de deploy-site.sh.
-  ⚠️ DEPLOY --prod RENVOIE "Forbidden" (depuis le branchement du domaine perso agenda-grandnancy.fr / publication prod
-  verrouillée côté Netlify) ALORS QUE le draft passe. deploy-site.sh tente `--prod` puis BASCULE sur `netlify deploy
-  --json` (draft) + `netlify api restoreSiteDeploy {site_id,deploy_id}` pour publier — équivalent fiable. Site: agenda-nancy
-  (id 1aa98bee-54a6-4158-b517-e29cdc271537), team GrandNancy. À régler proprement: vérifier le réglage de publication prod
-  dans l'UI Netlify (sinon le contournement suffit).
-- DURCISSEMENT du build public (deploy-site.sh, sur les copies dist/ uniquement, jamais les sources): (1) le dist/data.js
-  est RÉ-ÉMIS sans les champs `source` ni `uuid` (qui révélaient la méthode d'agrégation et les sites sources) et MINIFIÉ
-  (JSON compact 1 ligne) — app.js n'utilise ni source ni uuid donc 0 impact rendu; (2) ~~meta robots noindex~~ ⚠️ RETIRÉ
-  (demande user 2026-06-16: le site DOIT être référencé sur Google) — `index.html`/`cartes.html` portent désormais
-  `<meta name="robots" content="index,follow">` (donc l'injection conditionnelle de deploy-site.sh est sautée), et
-  l'injection noindex a été ENLEVÉE du script; (3) `robots.txt` = `Allow: /` + `Sitemap:` (PLUS de `Disallow: /`),
-  `_headers` SANS X-Robots-Tag sur `/*` (gardé sur `/data.js` seulement) mais garde X-Frame-Options DENY, CSP
-  frame-ancestors 'none', Referrer-Policy no-referrer, X-Content-Type-Options nosniff, Permissions-Policy. 🔑 NE PAS
-  réactiver noindex/Disallow: l'anti-scraping passe par CLOUDFLARE (rate-limit 50/10s + Bot Fight + blocage bots IA via
-  robots.txt managé), qui laisse passer Google. SEO ajouté: OG/Twitter/canonical (index+cartes), sitemap.xml.
-  ⚠️ Limite IRRÉDUCTIBLE: site statique = data.js reste téléchargeable et extractible par qui ouvre la page (on
-  élève la barre + on masque la méthode, on ne rend pas l'extraction impossible). Vraie protection = backend gaté
-  (Netlify Function origin/token, ou accès par mot de passe) — non mis en place. ⚠️ Le champ `url` (lien « Plus d'infos »)
-  pointe encore vers les domaines sources (fuite résiduelle assumée, car c'est la valeur d'usage du lien).
-- STATISTIQUES DE VISITE — GoatCounter (gratuit, sans cookie, RGPD-friendly → pas de bandeau). Code `gabz`, tableau de
-  bord https://gabz.goatcounter.com. Script `<script data-goatcounter="https://gabz.goatcounter.com/count" async
-  src="//gc.zgo.at/count.js">` INJECTÉ par deploy-site.sh dans dist/index.html ET dist/cartes.html (build public
-  uniquement, avant </body>) — PAS dans les sources, donc le local n'est pas compté (GoatCounter ignore de toute façon
-  localhost/file://). CSP (_headers) = seulement `frame-ancestors 'none'` → ne bloque pas le script. ⚠️ Referrer-Policy
-  no-referrer vide document.referrer → le rapport « provenance » de GoatCounter sera limité (le comptage de visiteurs
-  uniques, lui, marche). Domaine public passé à agenda-grandnancy.fr (domaine perso branché sur Netlify).
-
-- PWA « Ajouter à l'écran d'accueil » (session distante 2026-08-30) : `pwa.js` (bandeau bas refermable,
-  entrée injectée dans #navMenu, feuille d'instructions iOS car Safari n'a aucune API) + `sw.js` (service
-  worker réseau-d'abord, cache = filet hors ligne, exigé par Chrome pour proposer l'installation) + bloc CSS
-  `.a2hs*` en fin de style.css. Chargés par index.html et nouveautes.html, publiés via FILES des deploy-*.sh,
-  `/sw.js` en Cache-Control: no-cache dans _headers. Ne rien mettre en cache-first : data.js doit rester frais.
-  ⚠️ Bandeau et entrée de menu réservés aux MOBILES/TABLETTES (isMobile() dans pwa.js) : sur ordinateur on ne
-  veut rien afficher (demande explicite). Le service worker, lui, est enregistré partout.
+- SOURCE 1 Ville de Nancy : API `https://agenda-integration.grandnancy.eu/api/vdn/events` (entité vdn). ⚠️ PAS de CORS → snapshot seulement. `node update-events.js` récupère l'API, fusionne tous les `events-*.json` présents et écrit data.js. Fiche : `https://www.nancy.fr/agenda/details-agenda?uuid=<uuid>`.
+- Schéma EVENTS : {uuid,title,category,subcats[],date(ISO),endDate,dateText,schedule,place,city,free,reservation,image,url} + `source` + `addedAt`/`tags`/`autoPoster` selon le cas. CATEGORIES = {key:{label,emoji}}, 10 clés canoniques (activite, musiques-actuelles, jeune-public, spectacle, exposition, musique-classique, festival, conference, citoyennete, sport).
+- Chaque source a un script `node <script>.js` qui écrit `events-<source>.json` (schéma identique + `source`, uuid préfixé), fusionné par update-events.js s'il est présent.
+- ENRICHISSEMENT : `enrich-details.js` → `details.js` = `EVENT_DETAILS {uuid:{description, image HD, ticketUrl, venue, address, placeUrl, audiences[], placeKeywords, entity, credits, duringDateText, updatedAt}}`, à fusionner par uuid en LECTURE SEULE.
+- DESTINATION NANCY (`destination-nancy.js`, `dn-`, ~173 events) : agenda du SIT, options --pages/--max/--concurrency ; catégorie devinée au préfixe du titre (voir Pitfalls DN).
+- CURIEUX (`curieux-net.js`, `cx-`, ~93) : on crawle les 7 RUBRIQUES (concert, spectacle, exposition, cinema, stage, action-citoyenne, autre), car /agenda/N est figé et n'a pas de pagination. JSON-LD Event par fiche. ⚠️ Les pages déclarent ISO-8859-1 mais sont en UTF-8. ⚠️ Ne pas lire `.block-date` (pollué) : dateText reconstruit depuis l'ISO. ⚠️ L'image JSON-LD pointe sur le host nu `curieux.net`, MORT → prendre og:image.
+- VANDŒUVRE (`vandoeuvre.js`, `vdv-`) : REST WP `/wp-json/wp/v2/evenement`. ⚠️ Pas de dates dans l'API : lues dans le HTML `.article-date` (.date-from/.date-to/.date-year, année de fin inférée). Catégorie = `event_theme` (1er thème, le reste en subcats), lieu = taxo `place`, image = yoast og_image.
+- VILLERS (`villers-les-nancy.js`, `vln-`) : TYPO3, endpoint JSON dans `data-url-scroll`. ⚠️ RETIRER `&cHash=…` avant d'ajouter `tx_cimsearchelastic_displaysearch[page]=N` (sinon 404) ; 12 par page, `nb_results` = total. Champs cimNewsStartDate/EndDate et schedule ; categories[].title = thèmes → subcats. Image = ORIGIN+`/fileadmin`+identifier ; url = ORIGIN+`/agenda/evenement`+pathSegment.
+- ALENTOOR (`alentoor.js`, `al-`, ~350) : 18 COMMUNES-ANCRES (nancy, toul, liverdun, pompey, pont-a-mousson, dieulouard, nomeny, champenoux, einville-au-jard, luneville, saint-nicolas-de-port, dombasle-sur-meurthe, bayon, neuves-maisons, vezelise, haroue, pont-saint-vincent, colombey-les-belles), dédup par id ; options --horizon=60 --cities --concurrency=12.
+  - ⚠️ Le JSON-LD du <head> est un set « à la une » FIXE : lister via les liens /{ville}/agenda/<id>-slug.
+  - ⚠️ ?page=N ne pagine pas : itérer sur /{ville}/agenda/AAAA-MM-JJ.
+  - ⚠️ robots.txt INTERDIT */ajax/, *location=, *date[start]=, *q= → pas d'/api/agenda.
+  - Fiche = JSON-LD Event.
+- ICI-C-NANCY (`ici-c-nancy.js`, `icn-`) : ⚠️ challenge anti-bot : GET `/challenge` (redirect:'manual', getSetCookie) pose un cookie à renvoyer, sinon boucle 302. Tout est dans la liste `.ic-list-event` ; l'URL `/agenda/<id>-<ville>-<slug>/AAAA-MM-JJ-HH-MM.html` donne date+heure. Occurrences regroupées (date = prochaine, endDate = dernière).
+- ZÉNITH (`zenith-nancy.js`, `zen-<slug>`, ~46) : CPT non exposé en REST (404) → parser /evenements/page/N/ jusqu'au 404 ; tout est dans `.card-event`. ⚠️ Dates en français multi-jours (« 19 & 20 juin 2026 », « avr. ») → parseFrenchDate (1er jour = début, dernier = fin). place="Zénith de Nancy", city="Maxéville", free=false.
+- EST RÉPUBLICAIN : ⚠️ tdm-reservation:1 (opposition à la fouille, dir. UE 2019/790) → NE JAMAIS SCRAPER.
+  - Import manuel iCal : .ics dans `ics-est-republicain/` → `import-ics.js` (générique : --dir/--source/--prefix) → `events-est-republicain.json` (`er-<UID>`).
+  - Pages enregistrées à la main : `est-republicain-pages.js` lit les pages « Pour sortir » enregistrées (Page web complète, microdonnées schema.org/Event) → `events-est-republicain-pages.json` (`erp-AAAA-MM-JJ-slug`) ; titres tronqués complétés par le slug, filtre 30 km par GPS, pas d'image par défaut (`--vignettes` → images/er/, non déployé). Lancé par refresh-all.sh si des .html sont présents.
+  - Portail : `/pour-sortir/` (l'ancienne URL géo renvoie 404).
+- `import-ics.js` exporte `resolveCategoryFrom({categories,title,description,location})` : CATEGORIES, puis titre, puis titre+description+lieu.
+- LORRAINEAUCOEUR (`lorraineaucoeur.js`, `lac-<id>`) : XOOPS en latin1 ; le tableau complet `/modules/compte/evenements.php` suffit (pas de fiche à lire). ⚠️ Couvre toute la Lorraine → filtré sur le set NANCY_AREA. Crawl-delay 1 s. Le RSS ne donne que 7 events.
+- POIREL (`poirel.js`, `po-`) : même API, entité `sgp` (`/api/sgp/events`). Redondant avec vdn (absorbé par la dédup), gardé par sécurité.
+- FACEBOOK (`facebook.js`, `fb-<id>`, import manuel, pas dans refresh-all.sh).
+  - ⚠️ Plus d'export iCal FB, et « Enregistrer la page » simple ne capture rien. Méthode : scroller `facebook.com/events/` jusqu'en bas → « Page web COMPLÈTE » dans `ics-facebook/` → `node facebook.js`.
+  - Deux voies : `extractEventNodes` (JSON data-sjs) et `extractEventCards` (cartes `<a href="/events/ID/">`, voie principale).
+  - ⚠️ parseFrenchDate : juin/juil se distinguent sur 4 lettres. Titres en fausses polices normalisés par NFKC.
+  - FILTRE 30 KM À LA SOURCE via `communes-30km.json` (331 communes, généré hors ligne par `node gen-communes.js`) ; commune non identifiée = écartée (`--nofilter` pour désactiver).
+  - Détection de commune en cascade : adresse → CP → texte de l'affiche → titre → salles connues de data.js (source facebook exclue). CITY_CANON trié par longueur DESC. Alias courts seulement s'ils font ≥7 car. et sont uniques ; TEXT_STOP pour les communes-mots (serres, romain, viviers…).
+  - ⚠️ gen-communes.js prend les centres sur les contours IGN (gregoiredavid/france-geojson). Ne PAS utiliser les coordonnées La Poste high54 (fausses de 5 à 10 km).
+  - AFFICHES : `fb-posters.js` télécharge `https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=<id>` avec l'UA `facebookexternalhit/1.1` (un navigateur reçoit du HTML) → `images/fb/<id>.jpg` (`sips -Z 900 -s formatOptions 68`) ; `--force` pour tout retélécharger, puis update-events.js.
+- L'AUTRE CANAL (`autre-canal.js`, `lcn-<slug>`, ~95) : Drupal, /agenda en une requête. ⚠️ Pas d'année et liste non triée → année par « prochaine occurrence ». free (`term-gratuit`) et reservation sont fiables → source EXCLUE d'enrich-pricing.js.
+- ESSEY (`essey.js`, `essey-<slug>`) : page /agenda?page=N (`datetime=`, `.event-item__category`) + flux iCal stratis (lieu, horaire) indexé par URL. free=true par défaut, affiné par enrich-pricing.
+- LAXOU (`laxou.js`, `lx-<slug>`) : `?page_actualites=N`, `data-first-day`, JSON-LD de fiche (startDate « AAAA/MM/JJThh:mm:ss »).
+  - ⚠️ Les pages 2+ renvoient un 404 TROMPEUR avec le vrai contenu → lire le corps quel que soit le statut et s'arrêter quand une page se répète.
+  - Titre = <h1>. city laissée vide.
+- LUDRES (`ludres.js`, `lud-<slug>`, city="Ludres") : REST `/wp-json/wp/v2/evenements?per_page=100&_embed=1`, sans les dates.
+  - Dates dans la page liste (3 `.jet-listing-dynamic-field__content` = jour·mois·lieu), croisées par slug ; repli par slug de base (sans `-?\d+$`) pour les récurrents.
+  - Mois abrégés (« Sep ») → monthNum() (préfixes fr+en).
+  - ⚠️ Pas la description dans resolveCategoryFrom (« Population » ⊃ « pop »).
+  - À ajouter au workflow GitHub Actions.
+- NETTOYAGE `normalize.js` (appliqué à la FUSION par update-events.js et server.js, jamais aux snapshots). `cleanupMerged` enchaîne :
+  - (1) `cleanCity` via CITY_CANON (indispensable au géo).
+  - (1b) `cleanPlace` : vide les lieux réduits à un numéro de rue, retire « 54xxx Commune » en fin.
+  - (2) `remapCategory` → 10 clés canoniques.
+  - (3) `dedupeCrossSource`, clustering glouton : `overlap` des dates ET `placeCompat` ET (`titleSimilar` OU `sameShortEvent`). Garde la fiche la plus riche (SRC_RANK) ; mergeCluster conserve l'image de n'importe quelle fiche.
+    - Pas de préfiltre par titre exact.
+    - `titleSimilar` = clés égales, ou mots distinctifs (hors TITLE_STOP) de l'un ⊆ l'autre (≥2 mots), ou Jaccard ≥0.6 avec ≥2 mots communs.
+    - `sameShortEvent` = titre à UN mot distinctif (≥5 lettres, hors MOTS_GENERIQUES) contenu dans le titre d'une autre source, même jour, ≤4 jours, même commune si connue. sigTokens ignore les entités HTML.
+    - Les récurrences à dates disjointes restent séparées.
+  - (4) `fillPeriod` : dateText « Du … au … » pour les multi-jours, SEULEMENT si date > aujourd'hui (pour un event en cours, date est calée sur aujourd'hui → c'est le scraper qui pose le vrai dateText).
+- TARIF/RÉSERVATION : `enrich-pricing.js` (--source --sample --concurrency=12) → overlay `events-pricing.json` {uuid:{free?,reservation?}}, appliqué après la dédup (n'écrase que ce qui est déterminé), puis relancer update-events.js.
+  - Signaux par source : zenith = payant+résa ; alentoor = `isAccessibleForFree` ; curieux = `offers.price` ; autres = texte SCOPÉ (sans nav/footer/aside/form/commentaires ; DN = HTML rendu).
+  - Un prix € l'emporte sur « gratuit ». Réservation = formulations explicites seulement (pas « billetterie »/« réserver » seuls).
+  - ⚠️ RÈGLE USER : free INDÉTERMINÉ ⇒ GRATUIT.
+- FILTRE 30 KM dans update-events.js : haversine depuis Nancy, cache commité `commune-coords.json` (pré-rempli avec les 331 communes, BAN type=municipality en repli ; null = introuvable). Ville vide/inconnue → gardée. Même contrôle dans compte.js (cityWithin30km, bloquant).
+- NOUVEAUTÉS : `body[data-view="nouveautes"]` (flag NOUVEAUTES), recherche + lightbox seulement. `renderNouveautes()` affiche `addedAt >= J-7`, trié DESC, groupé aujourd'hui / 7 derniers jours. Ruban 🆕 `.poster__new`/`.card__new` (#16a34a) via isNew.
+  - ⚠️ `addedAt` vient de `events-firstseen.json` avec CLÉ = **uuid** (surtout PAS titre|date : la date des events en cours bouge chaque jour).
+  - Premier remplissage = pré-datage à J-45. Si la clé change, SUPPRIMER le fichier avant de relancer.
+  - Purge des clés absentes vues il y a plus de 60 j. Fichier commité.
+- FAVORIS : localStorage `agenda-nancy:favoris` = {favKey: endDate}, favKey = titre|date|lieu|ville (PAS l'uuid, absent du data.js de prod) ; purge des endDate passées au chargement ; store partagé entre les vues.
+  - UI : cœur `.fav-btn` frère de la tuile dans `.poster-wrap` (pas de bouton imbriqué, stopPropagation), bouton dans la lightbox, filtre state.favOnly.
+- FILTRES DATE : Tout · Aujourd'hui · Ce week-end · Cette semaine (7 j) · Ce mois (30 j) · dates personnalisées (galerie : state.customFrom/customTo, when="custom" ; cartes : calendrier popover). Garder les vues alignées.
+- BARRE DE FILTRES (galerie.js buildBar/syncBar, vaut aussi pour sport.html) : rangée sticky Quand · Sélections · Catégories · Filtres · ♥ · Effacer.
+  - #dateFilters/#selections/#filters sont déplacés dans le panneau `.fsheet` (feuille du bas ≤640px) ; tarif/résa dans #advSheet ; #toolbar retiré.
+  - Choix unique = fermeture auto. Eyebrow du hero masqué sur mobile.
+- server.js (`node server.js`, port 5173, zéro dépendance) : `GET /data.js` live (snapshots SNAPSHOTS + vdn en direct, cache 10 min, cleanupMerged), `/api/events` (JSON+CORS), `/api/refresh`. `AUTO_REFRESH=1` OFF par défaut (le cron suffit). ⚠️ Ne couvre PAS lorraineaucoeur, autre-canal, essey (ni les sources plus récentes).
+- PRODUCTION = CLOUDFLARE Workers Static Assets (Netlify est mort : ne plus utiliser deploy-site.sh, à supprimer un jour). Domaine https://agenda-grandnancy.fr, worker `evenement-nancy`, `wrangler.jsonc` avec `assets.directory` = `dist`.
+  - `deploy-cloudflare.sh` : lit `.cloudflare-token` (gitignored, exporté en CLOUDFLARE_API_TOKEN ; l'OAuth `wrangler login` EXPIRE et casse le cron) ; assemble dist/ ; minifie data.js SANS `source`/`uuid` (GARDE `addedAt`) ; injecte GoatCounter + `?v=` ; lance `wrangler deploy --env=""`.
+  - Retente 3× à 60 s (`DEPLOY_TRIES`/`DEPLOY_WAIT`) ; un échec d'auth sort en code 1.
+  - ⚠️ Tout nouveau fichier PUBLIC doit être ajouté à `FILES` dans deploy-cloudflare.sh. `.assetsignore` n'est plus utilisé.
+- AUTOMATISATION : `refresh-all.sh` (launchd `com.evenement-nancy.refresh`, 05h00, PATH codé en dur) lance les scrapers, update-events.js, puis deploy-cloudflare.sh. GitHub Actions `refresh.yml` commite data.js et commune-coords.json et pingue Supabase user_events chaque jour, mais NE déploie PAS (il faudrait le secret CLOUDFLARE_API_TOKEN).
+- SEO/DURCISSEMENT : pages en `robots index,follow`, robots.txt `Allow: /` + Sitemap, sitemap.xml, OG/Twitter/canonical.
+  - `_headers` : X-Robots-Tag sur `/data.js` seulement, X-Frame-Options DENY, CSP frame-ancestors 'none', Referrer-Policy no-referrer, nosniff, Permissions-Policy, `/sw.js` en no-cache.
+  - 🔑 NE PAS réactiver noindex/Disallow : l'anti-scraping passe par Cloudflare (rate-limit 50/10 s, Bot Fight, blocage des bots IA).
+  - Limite assumée : data.js reste extractible, et `url` pointe vers les domaines sources.
+- STATS : GoatCounter `gabz` (https://gabz.goatcounter.com), injecté seulement dans le build dist/. no-referrer limite le rapport de provenance.
+- PWA : `pwa.js` (bandeau + entrée #navMenu + feuille d'instructions iOS) et `sw.js` (réseau d'abord ; ne rien mettre en cache-first, data.js doit rester frais), CSS `.a2hs*`. ⚠️ Bandeau et menu réservés au mobile/tablette (isMobile()) : rien sur ordinateur. Le SW est enregistré partout.
+- ICÔNES : apple-touch 180, icon-192/512 + maskable, favicon-16/32, `site.webmanifest` (dans FILES).
 
 ## Pitfalls / gotchas (Destination Nancy)
-- L'agenda DN liste une CARTE PAR OCCURRENCE: un récurrent apparaît avec suffixe `/occ/N/` sur des dizaines de pages
-  (267 pages = ~3194 cartes pour ~173 events uniques). Seule la fiche canonique (sans /occ/) porte le JSON-LD Event.
-  → destination-nancy.js normalise l'URL (retire /occ/N/) et déduplique. NE PAS couper la pagination sur une page
-  "sans nouveauté": des events uniques inédits apparaissent jusqu'au bout (triés par date). On va jusqu'au 404.
-- Dates DN viennent du JSON-LD <script application/ld+json> de chaque fiche (startDate/endDate/address). Pour un event
-  DÉJÀ en cours, `date`=aujourd'hui (cale le tri). Serveur DN lent (~9s/page) → listing parallélisé par fenêtres.
+- Une carte PAR OCCURRENCE (suffixe `/occ/N/`, ~3194 cartes pour ~173 events) : retirer /occ/N/ et dédupliquer ; seule la fiche canonique porte le JSON-LD. NE PAS couper la pagination sur une page sans nouveauté : aller jusqu'au 404.
+- Dates/adresse lues dans le JSON-LD de la fiche ; event en cours → date = aujourd'hui. Serveur lent (~9 s/page) → listing parallélisé.
 
 ## Pitfalls / gotchas
 <!-- non-obvious things, debt, traps that already cost time -->
-- GIT — DEUX HISTOIRES PARALLÈLES (constat 2026-07-16) : les commits quotidiens "chore: maj agenda" sont faits par
-  GitHub ACTIONS sur origin/main (bot agenda-bot). Le repo LOCAL ne pull JAMAIS (refresh-all.sh ne fait aucun git) →
-  il dérive et ses fichiers générés restent non commités. Penser à `git fetch` avant de conclure que "les commits se
-  sont arrêtés", et à pull/rebase régulièrement. ⚠️ Sur conflit des fichiers GÉNÉRÉS (data.js, events-*.json,
-  events-firstseen.json) : préférer la version LOCALE (le Mac lance les 16 sources ; Actions n'en relançait que 7
-  tant que refresh.yml n'était pas poussé). firstseen local = celui de la PROD (déployée du Mac), à préserver.
-- L'API renvoie 397 events bruts; `dateList` contient parfois une date ERRONÉE (ex: Gala startDate 2026-06-13
-  mais dateList 2026-03-13). → On trie sur startDate/endDate, pas sur dateList. dateList ne sert qu'à l'horaire.
-- Tous les events ont une image mais seulement ~147/397 ont `mediaUrl.crop` → fallback sur `mediaUrl.originale`.
-- Images servies sans schéma ("agenda-static.grandnancy.eu/...") → préfixer "https://". referrerpolicy="no-referrer" sur <img>.
-- L'API liste chaque date d'un récurrent comme un event distinct + ~3 doublons exacts. app.js dédoublonne au RENDU
-  (groupEvents par titre): 397 → 381 fiches, récurrents = 1 carte avec champ `dates[]` + `occurrences`. Non dédupliqué à la source.
-- Vue Cartes: filtre par date (#dateFilters, state.when) = chevauchement [date,endDate] ou une des `dates[]` dans la plage.
+- GIT : les commits « chore: maj agenda » sont faits par GitHub Actions (agenda-bot) sur origin/main ; le repo local ne pull jamais et dérive. `git fetch` avant de conclure quoi que ce soit, pull/rebase régulièrement. ⚠️ Sur conflit des fichiers générés (data.js, events-*.json, events-firstseen.json), garder la version LOCALE (celle de la prod).
+- API vdn : `dateList` contient parfois une date erronée → trier sur startDate/endDate (dateList ne sert qu'à l'horaire). `mediaUrl.crop` souvent absent → repli sur `.originale`. Images sans schéma → préfixer https:// ; `referrerpolicy="no-referrer"` sur <img>.
+- API vdn : chaque date d'un récurrent est un event distinct (+ doublons) → dédup au RENDU (dates[], occurrences).
+- IMAGES EN PROD : les affiches hébergées (images/fb, affiches-auto) prennent des 429 du rate-limit Cloudflare au défilement → posterImgError() réessaie à 4 s puis 12 s. À FAIRE par l'user : exclure /images/, /affiches-auto/, /affiches-sport/ de la règle.
+- PANNES SILENCIEUSES : ALENTOOR gardait 0 fiche (blocage anti-robot probable) → alentoor.js logge les causes et patiente 5 s×n sur 429/403, à vérifier dans refresh.log. Curieux à 0 le 2026-09-16 (panne passagère probable).
+- SPORT : sport-scrape.js ne doit pas perdre un club sur une erreur de source. Une journée injoignable retombe sur `.cache-lsi.json` ; un club en échec complet reprend ses rencontres depuis events-sport.json (report.<club>.reprises). Rattrapage : `node sport-scrape.js --only=asnl,vnvb && node update-sport.js` (depuis le Mac, réseau requis).
 
 ## User preferences (do NOT do)
 <!-- X forbidden, Y to avoid, explicit constraints -->
+- Ne JAMAIS remettre noindex/Disallow : le site doit être référencé sur Google.
+- Ne jamais scraper l'Est Républicain (import manuel uniquement).
+- Aucune promo PWA sur ordinateur.
+- free indéterminé = gratuit.
+- Pas de nom de salle ni de commune sur les vignettes de sport.html.
 
 ## In-progress decisions
 <!-- recent architecture choices so other sessions don't undo them -->
-- NAV (branche test, 2026-07-18) : lien 🏅 Sport RETIRÉ de la nav (sport.html reste accessible par URL).
-  Icône COMPTE en haut à droite du hero (.nav-account, script inline dans chaque page) : ordi = icône 👤, mobile
-  (≤640px) = burger ☰ ; sous-menu = S'inscrire / Se connecter + Publier UNIQUEMENT (les onglets Galerie/Nouveautés
-  restent une rangée .hero__views visible partout, choix utilisateur). CSS versionné style.css?v=navN sur les 3
-  pages (cache). ⚠️ Gate prod deploy-cloudflare.sh matche class="(?:view-switch|nav-menu__link)[^"]*" pour les
-  liens sport/compte ; menu vidé par le gate → le JS pose .nav-account--navonly (icône masquée).
-- FILTRE 30 KM (2026-07-18) : update-events.js écarte tout événement dont la ville est à plus de 30 km de Nancy
-  (haversine). Géocodage des villes via BAN api-adresse.data.gouv.fr type=municipality avec biais lat/lon Nancy
-  (homonymes → commune proche), 1 requête par ville INCONNUE seulement, cache commité `commune-coords.json`
-  (null = introuvable, mémorisé; ville vide/inconnue/API KO → événement GARDÉ). Même contrôle à la soumission
-  dans compte.js (cityWithin30km, bloquant si false). refresh.yml commite aussi commune-coords.json.
-- COMPTE.HTML (2026-07-18) : design aligné sur le site (hero--compact, fonts, favicon; CSS compte.css?v=N).
-  AUTOCOMPLÉTION du champ Lieu via BAN api-adresse.data.gouv.fr (gratuite, sans clé, CORS ok, biais lat/lon Nancy);
-  sélection → remplit lieu (name) + ville (city). Catégorie 'sport' EXCLUE du sélecteur (feature en pause).
-  Déconnexion déplacée dans le menu icône 👤 en haut à droite (visible connecté seulement; #logout conservé).
-  GitHub Actions refresh.yml pingue user_events 1x/jour (anti-pause Supabase free); actif une fois sur main.
-- COMPTES ORGANISATEURS (branche test, 2026-07-18) : nav des 3 pages = « 👤 S'inscrire / Publier » → compte.html.
-  Feature SPORT EN PAUSE : option kind=sport masquée (hidden + commentée) dans compte.html, code compte.js intact.
-  ANTI-DOUBLON BLOQUANT à la publication : compte.js (normTitle sans accents/ponctuation + chevauchement de dates,
-  testé contre EVENTS de data.js ET user_events non-rejetés) + trigger SQL reject_duplicate_user_event_trg
-  (schema.sql §6, avec norm_title() SQL miroir + contrainte end_date >= date). Si la base Supabase existait déjà,
-  RE-EXÉCUTER schema.sql (idempotent) pour poser §6. Dates passées interdites (min sur ev-date + check JS).
+- NAV : lien 🏅 Sport retiré (sport.html accessible par URL). Icône compte `.nav-account` en haut à droite (👤 sur ordi, ☰ ≤640px) ; menu = S'inscrire / Se connecter + Publier (+ Déconnexion si connecté, #logout conservé).
+  - Onglets Galerie/Nouveautés = rangée `.hero__views` toujours visible. `style.css?v=navN` versionné.
+  - ⚠️ Le gate prod de deploy-cloudflare.sh matche `class="(?:view-switch|nav-menu__link)[^"]*"` ; menu vidé → `.nav-account--navonly`.
+- COMPTES ORGANISATEURS (compte.html/compte.js, Supabase, `compte.css?v=N`) : autocomplétion du lieu via BAN. Sport en PAUSE (option masquée, code intact).
+  - Anti-doublon bloquant : JS normTitle + chevauchement contre EVENTS et user_events, et trigger SQL `reject_duplicate_user_event_trg` (schema.sql §6, norm_title(), end_date >= date). Re-exécuter schema.sql (idempotent) sur une base existante.
+  - Dates passées interdites.
+- VIGNETTES GALERIE : pastille avec jour de semaine (`.wd`, date locale, jours simples seulement), commune seule sous le titre (`.poster__city`) ; la salle reste dans la lightbox.
+- AFFICHES GÉNÉRÉES : `affiches-auto.js` fait un SVG par event sans image → `affiches-auto/<slug>-<hash>.svg`, `autoPoster:true`, clé uuid|date. Appelé par update-events.js ; `node affiches-auto.js` patche le data.js courant. `.poster--auto` masque le bandeau titre. Choisi à la place des images de l'Est Républicain.
+- ÉTIQUETTES IA : `classer-evenements.js` (claude-haiku-4-5, clé `.anthropic-key` gitignored ; sans clé = ignoré) pose `tags` ∈ incontournable/atypique/fun/famille/etudiant.
+  - Cache `events-tags.json` clé = titre normalisé|commune ; incrémenter PROMPT_VERSION si la consigne change. NO_TAG_RE, 2 étiquettes max.
+  - « famille » = ENFANTS uniquement (garde-fou gardeFamille(), aussi à la lecture du cache).
+  - UI : `#selections` (buildSelections, state.sel) ; une sélection cliquée avec la date sur « Tout » bascule sur « Cette semaine ».
+- MASQUAGE APRÈS 20H30 (termineCeSoir) : un event d'un seul jour d'aujourd'hui est retiré si sa fin est passée, ou si seul son début est connu et < 20h, ou s'il n'a pas d'heure hors musiques/spectacle/festival. Multi-jours jamais masqués. sport.js garde son propre notPast.
+- SÉRIES : regrouperSeries() (galerie.js) regroupe les fiches de même serieUuid en une affiche « 17 → 19 SEPT », sauf sur Aujourd'hui/Ce week-end. Plage = jours qui passent les filtres ; place chronologique, pas dans « Sur plusieurs jours ».

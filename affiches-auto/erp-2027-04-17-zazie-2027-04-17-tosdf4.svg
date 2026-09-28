@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Zazie">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#3b0764"/>
+      <stop offset="1" stop-color="#0f0a1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <g fill="none" stroke="#f472b6" opacity=".13">
+    <circle cx="690" cy="170" r="230" stroke-width="3"/>
+    <circle cx="690" cy="170" r="330" stroke-width="2"/>
+    <circle cx="90" cy="1120" r="260" stroke-width="3"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-size="110">🎸</text>
+  <text x="400" y="500" text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="700" letter-spacing="8" fill="#f472b6">MUSIQUES ACTUELLES</text>
+  <rect x="360" y="526" width="80" height="4" rx="2" fill="#f472b6" opacity=".8"/>
+  <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#ffffff">
+      <text x="400" y="700" font-size="100">Zazie</text>
+  </g>
+  <g text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
+    <text x="400" y="960" font-size="50" font-weight="700" fill="#f472b6">Samedi 17 avril</text>
+    <text x="400" y="1022" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Ludres</text>
+  </g>
+</svg>

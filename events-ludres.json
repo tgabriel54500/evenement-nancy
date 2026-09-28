@@ -1,23 +1,88 @@
 [
   {
-    "uuid": "lud-exposition-dhier-a-aujourdhui-au-fil-de-notre-histoire",
-    "title": "Exposition « D’hier à aujourd’hui, au fil de notre histoire »",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
+    "uuid": "lud-don-du-sang-2",
+    "title": "Don du sang",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
     "subcats": [
-      "Culture"
+      "Santé"
     ],
-    "date": "2027-06-22",
-    "endDate": "2027-06-22",
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
     "dateText": "",
     "schedule": "",
-    "place": "31",
+    "place": "Médiathèque",
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/07/expo.jpg",
-    "url": "https://www.ludres.com/liste-evenements/exposition-dhier-a-aujourdhui-au-fil-de-notre-histoire/",
+    "image": null,
+    "url": "https://www.ludres.com/liste-evenements/don-du-sang-2/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-repair-cafe-5",
+    "title": "Repair Café",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté",
+      "Environnement"
+    ],
+    "date": "2026-10-05",
+    "endDate": "2026-10-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "Espace Séquoia",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/01/repair-cafe.jpg",
+    "url": "https://www.ludres.com/liste-evenements/repair-cafe-5/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-heure-du-conte-des-3-4-ans",
+    "title": "Heure du conte – Petits",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture",
+      "Loisirs"
+    ],
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Schweitzer",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2023/09/heure-conte-1.jpg",
+    "url": "https://www.ludres.com/liste-evenements/heure-du-conte-des-3-4-ans/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-fete-foraine-3",
+    "title": "Fête Foraine",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Loisirs"
+    ],
+    "date": "2027-09-26",
+    "endDate": "2027-09-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "30",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2025/09/ff.jpg",
+    "url": "https://www.ludres.com/liste-evenements/fete-foraine-3/",
     "source": "ludres"
   }
 ]

@@ -1,107 +1,23 @@
 [
   {
-    "uuid": "essey-amours-dete",
-    "title": "Amours d'été",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
+    "uuid": "essey-inauguration-de-lallee-victor-martin",
+    "title": "Inauguration de l'Allée Victor Martin",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
     "subcats": [
-      "Manifestation culturelle"
+      "Vie municipale"
     ],
-    "date": "2026-08-30",
-    "endDate": "2026-08-30",
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
     "dateText": "",
-    "schedule": "15h à 18h",
-    "place": "Espace Pierre de Lune",
+    "schedule": "14h à 15h30",
+    "place": "Jardin de l'an 2000",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/21_rouge_tema_copie_1.jpg?h=a9d1a69a&amp;itok=YW7wpzXC",
-    "url": "https://www.esseylesnancy.fr/agenda/amours-dete",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-reunion-publique-brocante-du-comite-des-fetes",
-    "title": "Réunion publique : Brocante du Comité des fêtes",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-09-02",
-    "endDate": "2026-09-02",
-    "dateText": "",
-    "schedule": "18h30",
-    "place": "Espace Bérin (Maison des Associations)",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/brocante_1.jpg?itok=Ua3rhwIa",
-    "url": "https://www.esseylesnancy.fr/agenda/reunion-publique-brocante-du-comite-des-fetes",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-repair-cafe-du-10-septembre",
-    "title": "Repair Café du 10 septembre",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-09-10",
-    "endDate": "2026-09-10",
-    "dateText": "",
-    "schedule": "17h à 20h",
-    "place": "Foyer Foch",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
-    "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-10-septembre",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-27e-brocante",
-    "title": "27e Brocante",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-09-13",
-    "endDate": "2026-09-13",
-    "dateText": "",
-    "schedule": "7h à 17h",
-    "place": "Centre ville",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/brocante_1.jpg?itok=Ua3rhwIa",
-    "url": "https://www.esseylesnancy.fr/agenda/27e-brocante",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-theatre-oh-arrete-de-pleurer-penelope",
-    "title": "Théâtre : Oh ! Arrête de pleurer Pénélope !",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Vie culturelle"
-    ],
-    "date": "2026-09-16",
-    "endDate": "2026-09-16",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Salle Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_64761036.jpeg?itok=uzKWFzs_",
-    "url": "https://www.esseylesnancy.fr/agenda/theatre-oh-arrete-de-pleurer-penelope",
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/jardin-an-2000_0.jpg?itok=4eh5JWaG",
+    "url": "https://www.esseylesnancy.fr/agenda/inauguration-de-lallee-victor-martin",
     "source": "essey"
   },
   {
@@ -116,13 +32,34 @@
     "date": "2026-10-03",
     "endDate": "2026-10-03",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "17h à 22h",
+    "place": "Salle Maringer",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2055406113.jpeg?itok=vj48cP9l",
     "url": "https://www.esseylesnancy.fr/agenda/nuit-des-sports",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-fete-de-lautomne-du-conseil-de-quartier-des-hauts-dessey",
+    "title": "Fête de l’automne du Conseil de quartier des Hauts d'Essey",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-10-04",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "12h à 17h30",
+    "place": "Haut-Château",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/cdqhe-affiche-fete-automne-2024-site.jpg?itok=i5vEVfOj",
+    "url": "https://www.esseylesnancy.fr/agenda/fete-de-lautomne-du-conseil-de-quartier-des-hauts-dessey",
     "source": "essey"
   },
   {
@@ -137,13 +74,34 @@
     "date": "2026-10-08",
     "endDate": "2026-10-08",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "17h à 20h",
+    "place": "Foyer Foch",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
     "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-8-octobre",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-reunion-publique-du-conseil-de-quartier-centre",
+    "title": "Réunion publique du Conseil de quartier Centre",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "dateText": "",
+    "schedule": "20h à 22h",
+    "place": "Maison des Associations",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/reunion-publique-AdobeStock_165807958.jpeg?itok=k9OvDbKv",
+    "url": "https://www.esseylesnancy.fr/agenda/reunion-publique-du-conseil-de-quartier-centre",
     "source": "essey"
   },
   {
@@ -158,13 +116,34 @@
     "date": "2026-10-09",
     "endDate": "2026-10-09",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "20h30",
+    "place": "Église Saint-Georges",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2001817892.jpeg?itok=DQR17LJg",
     "url": "https://www.esseylesnancy.fr/agenda/representation-de-lensemble-vocal-voix-plurielles",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-balade-canine-animal-dans-la-ville",
+    "title": "Balade canine – Animal dans la Ville",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Animal dans la ville"
+    ],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "9h30",
+    "place": "Place de la République",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2183368439.jpeg?itok=xVdz8pmP",
+    "url": "https://www.esseylesnancy.fr/agenda/balade-canine-animal-dans-la-ville",
     "source": "essey"
   },
   {
@@ -179,34 +158,13 @@
     "date": "2026-10-11",
     "endDate": "2026-10-11",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "15h",
+    "place": "Salle Maringer",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/yza_chante_piaf.jpg?h=3a7e59e3&amp;itok=6DU5nXYA",
     "url": "https://www.esseylesnancy.fr/agenda/yza-chante-piaf-pour-eler",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-bourse-aux-vetements-automnehiver",
-    "title": "Bourse aux vêtements automne/hiver",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-19",
-    "endDate": "2026-10-22",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_232231992.jpeg?h=a886d45a&amp;itok=rtL9qT62",
-    "url": "https://www.esseylesnancy.fr/agenda/bourse-aux-vetements-automnehiver",
     "source": "essey"
   },
   {
@@ -273,6 +231,27 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-animal-dans-la-ville-premiere-reunion-du-comite",
+    "title": "Animal dans la Ville : première réunion du comité",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Animal dans la ville"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_275121946.jpeg?itok=RN4d7xB9",
+    "url": "https://www.esseylesnancy.fr/agenda/animal-dans-la-ville-premiere-reunion-du-comite",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-repair-cafe-du-12-novembre",
     "title": "Repair Café du 12 novembre",
     "category": "conference",
@@ -312,6 +291,48 @@
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-23-novembre-2026",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-assemblee-generale-du-conseil-de-quartier-centre",
+    "title": "Assemblée générale du Conseil de quartier Centre",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Assemblée générale"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/assemblee-generale.jpg?itok=YcBwGwHR",
+    "url": "https://www.esseylesnancy.fr/agenda/assemblee-generale-du-conseil-de-quartier-centre",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-atelier-dart-floral-du-conseil-de-quartier-centre",
+    "title": "Atelier d'art floral du Conseil de quartier Centre",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/atelier-floral-visu-site.jpg?itok=-SPewAFe",
+    "url": "https://www.esseylesnancy.fr/agenda/atelier-dart-floral-du-conseil-de-quartier-centre",
     "source": "essey"
   },
   {
