@@ -34,3 +34,10 @@ bilan-goatcounter/
 
 # Clé API Anthropic (classement automatique des événements)
 .anthropic-key
+
+# Onglet Pro : dumps bruts de pro-scrape.js --debug, rapport de passage, logos
+# téléchargés (sauf cci.svg, fourni à la main : le site refuse les robots)
+.debug-pro/
+events-pro-report.json
+affiches-pro/logos/*
+!affiches-pro/logos/cci.svg

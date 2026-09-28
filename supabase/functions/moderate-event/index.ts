@@ -64,6 +64,11 @@ Deno.serve(async (req) => {
     const system =
       "Tu es modérateur d'un agenda d'événements publics de la métropole de Nancy. " +
       "On te donne un événement soumis par un organisateur (pro, association ou particulier). " +
+      "Type 'pro' = onglet des rendez-vous professionnels (afterworks, petits-déjeuners de réseau, " +
+      "conférences, salons, formations, recrutement) publiés par des réseaux d'affaires, clubs " +
+      "d'entreprises, CCI, entreprises : un rendez-vous réservé aux membres d'un réseau est " +
+      "publiable (il est signalé comme tel), une offre commerciale sans rendez-vous daté ne l'est pas. " +
+      "Pour le type 'pro', l'absence d'image est normale. " +
       "Décide s'il est PUBLIABLE. Refuse uniquement si : contenu manifestement faux/incohérent, " +
       "spam ou publicité déguisée sans événement réel, propos haineux/discriminatoires, contenu " +
       "illégal, à caractère sexuel explicite, arnaque, ou image sans rapport / choquante. " +
@@ -82,6 +87,7 @@ Deno.serve(async (req) => {
         `Date: ${ev.date}${ev.end_date ? " → " + ev.end_date : ""}\n` +
         `Horaire: ${ev.schedule || "—"}\nLieu: ${ev.place || "—"} ${ev.city || ""}\n` +
         `Gratuit: ${ev.free ? "oui" : "non"} | Réservation: ${ev.reservation ? "oui" : "non"}\n` +
+        (ev.kind === "pro" ? `Organisateur: ${ev.organizer || "—"} | Réservé aux membres: ${ev.members_only ? "oui" : "non"}\n` : "") +
         `Lien: ${ev.url || "—"}\n\nDescription:\n${ev.description}`,
     });
 

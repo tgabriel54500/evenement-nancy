@@ -113,6 +113,14 @@
 - free indéterminé = gratuit.
 - Pas de nom de salle ni de commune sur les vignettes de sport.html.
 
+## Onglet Pro (branche feature/evenements-pro, worktree dev-pro/)
+- Chaîne : pro-sources.js (registre + rayon 5 km) → pro-scrape.js → events-pro.json → update-pro.js → data-pro.js + affiches-pro/. pro.html = sport.html adapté (data-view="pro", data-kind="pro"), zéro JS spécifique hormis l'annuaire RESEAUX. Doc : README-PRO.md.
+- Les parsers sont des fonctions pures testées hors ligne : `node tests/pro-scrape.test.js` (fixtures HTML réels). Quand une source change de maquette : refaire le fixture AVANT de corriger le parser.
+- galerie.js lit des champs optionnels (membersOnly, organizer, price, description, network) et fusionne les user_events du `kind` donné par `<body data-kind>` (défaut 'event').
+- affiches-auto.js accepte `applyAutoPosters(events, { dir, themes, labels, labelOf })` : chaque dossier fait SON ménage, ne jamais appeler le moteur sur un dossier partagé.
+- compte.html : sélecteur Type de retour (event / pro), sport toujours absent. Base : schema.sql §7 à ré-exécuter, Edge Function moderate-event à redéployer.
+- Aucun réseau depuis les shells Claude (conteneur et VM du pont) : `node pro-scrape.js` ne tourne QUE depuis le Terminal du Mac.
+
 ## In-progress decisions
 <!-- recent architecture choices so other sessions don't undo them -->
 - NAV : lien 🏅 Sport retiré (sport.html accessible par URL). Icône compte `.nav-account` en haut à droite (👤 sur ordi, ☰ ≤640px) ; menu = S'inscrire / Se connecter + Publier (+ Déconnexion si connecté, #logout conservé).

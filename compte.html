@@ -68,9 +68,15 @@
         <form id="event-form">
           <input type="hidden" id="ev-id">
 
-          <!-- Type supprimé : tout est 'event' (culturel). La feature sport
-               (kind='sport', sélecteur + champs dédiés) est en pause ; pour la
-               réactiver, voir l'historique git de ce fichier et de compte.js. -->
+          <!-- Type : 'event' (agenda culturel) ou 'pro' (onglet Pro : réseaux
+               d'affaires, conférences, salons). La feature sport (kind='sport')
+               reste en pause : pas d'option ici, code intact côté base. -->
+          <label id="row-kind" class="pro-only" hidden>Type *
+            <select id="ev-kind">
+              <option value="event">🎭 Sortie, culture, loisirs (agenda principal)</option>
+              <option value="pro">💼 Rendez-vous professionnel (onglet Pro)</option>
+            </select>
+          </label>
 
           <label>Titre *
             <input type="text" id="ev-title" required maxlength="140">
@@ -79,6 +85,16 @@
           <label id="row-category">Catégorie *
             <select id="ev-category" required></select>
           </label>
+
+          <!-- Champs propres aux rendez-vous pro -->
+          <div id="row-pro" hidden>
+            <label>Organisateur / réseau <small>(affiché sur la fiche, ex : Les Audacieux Nancy)</small>
+              <input type="text" id="ev-organizer" maxlength="100" placeholder="Nom de votre réseau, club ou entreprise">
+            </label>
+            <div class="checks">
+              <label class="inline"><input type="checkbox" id="ev-members"> Réservé aux membres du réseau</label>
+            </div>
+          </div>
 
           <div class="row">
             <label>Date de début *
@@ -122,7 +138,7 @@
             <label class="inline"><input type="checkbox" id="ev-resa"> Réservation requise</label>
           </div>
 
-          <label id="row-image">Affiche / image * <small>(JPG, PNG, WebP ou GIF, 5 Mo max)</small>
+          <label id="row-image">Affiche / image <span id="image-req">*</span> <small>(JPG, PNG, WebP ou GIF, 5 Mo max<span id="image-hint"></span>)</small>
             <input type="file" id="ev-image" accept="image/png,image/jpeg,image/webp,image/gif">
           </label>
           <img id="ev-preview" class="preview" hidden alt="">
@@ -147,7 +163,9 @@
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config-supabase.js"></script>
   <script src="data.js"></script>
-  <script src="compte.js?v=6"></script>
+  <script src="pro-categories.js"></script>
+  <script src="pro-gate.js"></script>
+  <script src="compte.js?v=7"></script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">

@@ -3,41 +3,43 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>Nouveautés — Que faire dans le Grand-Nancy ?</title>
-  <meta name="description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy : ce qui est nouveau cette semaine et ce mois-ci.">
-  <link rel="canonical" href="https://agenda-grandnancy.fr/nouveautes.html">
+  <title>Événements pro à Nancy : afterworks, réseaux, conférences</title>
+  <meta name="description" content="Afterworks, petits-déjeuners de réseautage, conférences, salons et congrès à Nancy et dans les communes voisines : les rendez-vous des réseaux d'affaires, de la CCI, du MEDEF 54 et du Centre Prouvé, au même endroit.">
+  <link rel="canonical" href="https://agenda-grandnancy.fr/pro.html">
   <meta name="robots" content="index, follow">
   <!-- Open Graph (aperçu lors d'un partage Facebook/LinkedIn/WhatsApp) -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Que faire dans le Grand-Nancy ?">
   <meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Nouveautés — Que faire dans le Grand-Nancy ?">
-  <meta property="og:description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy.">
-  <meta property="og:url" content="https://agenda-grandnancy.fr/nouveautes.html">
+  <meta property="og:title" content="Événements pro à Nancy : afterworks, réseaux, conférences">
+  <meta property="og:description" content="Les rendez-vous des réseaux d'affaires de Nancy, de la CCI, du MEDEF 54 et du Centre Prouvé.">
+  <meta property="og:url" content="https://agenda-grandnancy.fr/pro.html">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Nouveautés — Que faire dans le Grand-Nancy ?">
-  <meta name="twitter:description" content="Les derniers événements ajoutés à l'agenda du Grand Nancy.">
+  <meta name="twitter:title" content="Événements pro à Nancy">
+  <meta name="twitter:description" content="Afterworks, réseaux d'affaires, conférences et congrès à Nancy.">
   <link rel="icon" type="image/svg+xml" href="logo.svg">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <meta name="theme-color" content="#c4452f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Agenda Nancy">
   <link rel="stylesheet" href="style.css?v=nav3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-view="nouveautes">
+<body data-view="pro" data-kind="pro" class="pro-locked">
   <header class="hero">
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
-      <h1 class="hero__title">🆕 Les <span>nouveautés</span></h1>
-      <p class="hero__tagline">Les derniers événements ajoutés à l'agenda, des plus récents aux plus anciens.</p>
-      <p class="hero__subtitle">Les événements tout juste ajoutés à l'agenda (3 derniers jours), regroupés par date d'ajout.</p>
+      <h1 class="hero__title">Les rendez-vous <span>pro</span> à Nancy</h1>
+      <p class="hero__tagline">Afterworks, petits-déjeuners de réseau, conférences et congrès, à Nancy et à moins de 5&nbsp;km.</p>
       <div class="hero__search">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 21l-4.3-4.3M11 18a7 7 0 100-14 7 7 0 000 14z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-        <input type="search" id="search" placeholder="Rechercher un événement, un lieu…" aria-label="Rechercher un événement">
+        <input type="search" id="search" placeholder="Rechercher un réseau, un thème, un lieu…" aria-label="Rechercher un événement pro">
       </div>
       <div class="nav-account" id="navAccount">
         <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Ouvrir le menu">
@@ -52,27 +54,43 @@
       </div>
       <div class="hero__views" role="tablist" aria-label="Mode d'affichage">
         <a class="view-switch" href="index.html">🖼️ Galerie</a>
-        <span class="view-switch is-active" aria-current="page">🆕 Nouveautés</span>
         <a class="view-switch" href="sport.html">🏅 Sport</a>
-        <a class="view-switch pro-only" href="pro.html" hidden>💼 Pro</a>
+        <span class="view-switch is-active" aria-current="page">💼 Pro</span>
       </div>
     </div>
   </header>
 
+  <!-- Aperçu privé (pro-gate.js) : affiché tant que le visiteur n'est pas autorisé. -->
+  <section class="container pro-lock" id="pro-lock">
+    <h2>Cet espace est en préparation</h2>
+    <p>Les rendez-vous professionnels du Grand Nancy arrivent bientôt. En attendant, retrouvez la <a href="index.html">galerie des sorties</a> et l'<a href="sport.html">agenda sportif</a>.</p>
+    <p class="pro-lock__hint">Vous avez un accès anticipé ? <a href="compte.html">Connectez-vous</a>, puis revenez sur cette page.</p>
+  </section>
+
   <main class="container">
+    <nav class="datefilters" id="dateFilters" aria-label="Filtrer par date"></nav>
+    <nav class="filters" id="filters" aria-label="Filtrer par type de rendez-vous"></nav>
+    <div class="toolbar" id="toolbar" aria-label="Recherche avancée et favoris"></div>
+
     <p class="results-count" id="resultsCount"></p>
 
     <section class="gallery" id="gallery" aria-live="polite"></section>
 
-    <p class="empty" id="empty" hidden>Aucune nouveauté pour le moment. Revenez bientôt&nbsp;!</p>
+    <p class="empty" id="empty" hidden>Aucun rendez-vous ne correspond à votre recherche. Essayez un autre type ou une autre période.</p>
   </main>
 
+  <section class="reseaux-section container" aria-labelledby="reseaux-title">
+    <h2 id="reseaux-title" class="reseaux-section__title">Les réseaux d'affaires du Grand Nancy</h2>
+    <p class="reseaux-section__intro">Certains publient leur agenda, d'autres réservent leurs rendez-vous à leurs membres. Vous animez un réseau, un club ou un événement pro ? <a href="compte.html">Publiez vos dates ici</a>, c'est gratuit.</p>
+    <div class="reseaux" id="reseaux"></div>
+  </section>
+
   <footer class="footer">
-    <p>Source : agendas officiels de la <a href="https://www.nancy.fr/agenda" target="_blank" rel="noopener">Ville de Nancy</a>, du Grand Nancy et de ses partenaires culturels. · <a href="mentions-legales.html">Mentions légales</a></p>
+    <p>Sources : agendas publics des réseaux d'affaires, de la <a href="https://www.nancy.cci.fr/evenements" target="_blank" rel="noopener">CCI Grand Nancy</a>, du MEDEF 54 et de <a href="https://www.destination-nancy.com/organiser-un-evenement-a-nancy/agenda-et-actualites/" target="_blank" rel="noopener">Destination Nancy</a>, et événements publiés par les organisateurs. Inscription auprès de l'organisateur. · <a href="mentions-legales.html">Mentions légales</a></p>
   </footer>
 
   <!-- Lightbox : affiche en grand au clic -->
-  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Affiche de l'événement">
+  <div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Fiche de l'événement">
     <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
     <div class="lightbox__inner" id="lightboxInner"></div>
   </div>
@@ -84,7 +102,6 @@
           b = document.getElementById("navMenuBtn"),
           m = document.getElementById("navMenu");
       if (!w || !b || !m) return;
-      // Prod : si le gate a retiré les liens compte, le menu est vide → icône masquée.
       if (!m.querySelector("a")) w.classList.add("nav-account--navonly");
       b.addEventListener("click", function (e) {
         e.stopPropagation();
@@ -97,28 +114,14 @@
       document.addEventListener("keydown", function (e) {
         if (e.key === "Escape") { m.hidden = true; b.setAttribute("aria-expanded", "false"); }
       });
-      // Connecté → « Se déconnecter » remplace « S'inscrire / Se connecter ».
-      // (Client Supabase chargé plus bas → on attend le chargement complet.)
-      window.addEventListener("load", async function () {
-        try {
-          if (!window.supabase || !window.SUPABASE_URL || /TON-PROJET/.test(window.SUPABASE_URL)) return;
-          var c = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
-          var s = (await c.auth.getSession()).data.session;
-          var si = document.getElementById("menu-signin"), lo = document.getElementById("menu-logout");
-          if (s && si && lo) {
-            si.hidden = true;
-            lo.hidden = false;
-            lo.addEventListener("click", async function () {
-              await c.auth.signOut();
-              location.reload();
-            });
-          }
-        } catch (_) { /* hors-ligne / non configuré : menu par défaut */ }
-      });
     })();
   </script>
 
-  <script src="data.js"></script>
+  <!-- Même moteur que la galerie culture : data-pro.js fournit CATEGORIES
+       (types de rendez-vous), EVENTS (les événements) et RESEAUX (annuaire),
+       au même schéma que data.js. Les événements publiés par les organisateurs
+       (compte.html, kind 'pro') sont fusionnés par user-events.js. -->
+  <script src="data-pro.js"></script>
   <script src="events-core.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="config-supabase.js"></script>
@@ -126,6 +129,26 @@
   <script src="galerie.js"></script>
   <script src="pwa.js"></script>
   <script src="pro-gate.js"></script>
+  <!-- Annuaire des réseaux d'affaires : ceux qui publient un agenda et ceux
+       dont les rendez-vous restent entre membres (invités à publier ici). -->
+  <script>
+    (function () {
+      var host = document.getElementById("reseaux");
+      if (!host || typeof RESEAUX === "undefined") return;
+      var esc = function (s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); };
+      host.innerHTML = RESEAUX.map(function (r) {
+        var lien = r.agenda || r.site;
+        return '<article class="reseau' + (r.membersOnly ? " reseau--membres" : "") + '">' +
+          (r.logo ? '<a class="reseau__logo' + (r.logoOnDark ? " reseau__logo--dark" : "") + '" href="' + esc(lien) + '" target="_blank" rel="noopener"><img src="' + esc(r.logo) + '" alt="" loading="lazy"></a>' : "") +
+          '<h3 class="reseau__name"><a href="' + esc(lien) + '" target="_blank" rel="noopener">' + esc(r.name) + '</a></h3>' +
+          '<p class="reseau__blurb">' + esc(r.blurb) + '</p>' +
+          '<p class="reseau__meta">' +
+            (r.count ? '<span class="reseau__count">' + r.count + ' rendez-vous à venir</span>' : (r.membersOnly ? '<span class="reseau__count">🔒 Agenda réservé aux membres</span>' : '<span class="reseau__count">Aucune date annoncée</span>')) +
+            (r.frequency ? ' · ' + esc(r.frequency) : "") +
+          '</p></article>';
+      }).join("");
+    })();
+  </script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">

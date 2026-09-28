@@ -18,23 +18,42 @@
     return;
   }
 
-  // ---- Catégories (depuis data.js) ----
-  // 'sport' est masquée : la feature sport est en pause (réactiver plus tard).
-  const cats = (typeof CATEGORIES !== "undefined") ? CATEGORIES : {};
+  // ---- Catégories : celles de data.js pour la culture, PRO_CATEGORIES
+  // (pro-categories.js) pour les rendez-vous pro. 'sport' reste masquée : la
+  // feature sport est en pause (réactiver plus tard).
+  const CATS = {
+    event: (typeof CATEGORIES !== "undefined") ? CATEGORIES : {},
+    pro: (typeof PRO_CATEGORIES !== "undefined") ? PRO_CATEGORIES : {},
+  };
   const sel = $("ev-category");
-  for (const [key, c] of Object.entries(cats)) {
-    if (key === "sport") continue;
-    const o = document.createElement("option");
-    o.value = key; o.textContent = `${c.emoji || ""} ${c.label || key}`.trim();
-    sel.appendChild(o);
+  function fillCategories(kind) {
+    const keep = sel.value;
+    sel.innerHTML = "";
+    for (const [key, c] of Object.entries(CATS[kind] || {})) {
+      if (key === "sport") continue;
+      const o = document.createElement("option");
+      o.value = key; o.textContent = `${c.emoji || ""} ${c.label || key}`.trim();
+      sel.appendChild(o);
+    }
+    if (keep && CATS[kind] && CATS[kind][keep]) sel.value = keep;
   }
 
-  // ---- Type d'entrée : feature sport EN PAUSE → tout est 'event' (culturel).
-  // Le sélecteur Type a été retiré du formulaire. Pour réactiver le sport,
-  // restaurer le <select id="ev-kind"> + la liste SPORTS + applyKind()
-  // (voir l'historique git de compte.html / compte.js).
+  // ---- Type d'entrée : 'event' (culture) ou 'pro' (onglet Pro). La feature
+  // sport (kind='sport') est EN PAUSE : pas d'option, isSport() reste faux.
   function isSport() { return false; }
-  function applyKind() {}
+  function kind() { return $("ev-kind").value === "pro" ? "pro" : "event"; }
+  function isPro() { return kind() === "pro"; }
+  function applyKind() {
+    const pro = isPro();
+    fillCategories(kind());
+    show($("row-pro"), pro);
+    // Image facultative pour un rendez-vous pro : sans image, la vignette
+    // affiche le titre sur un fond uni (comme sur l'onglet Pro).
+    $("image-req").hidden = pro;
+    $("image-hint").textContent = pro ? ", facultatif" : "";
+  }
+  $("ev-kind").addEventListener("change", applyKind);
+  applyKind();
 
   // ---- Menu compte (icône en haut à droite, contient la déconnexion) ----
   (function () {
@@ -162,7 +181,7 @@
   // Géocodage BAN (biais Nancy pour les homonymes). true/false, ou null si
   // ville introuvable / API injoignable → on laisse passer (bénéfice du doute,
   // le filtre géographique de update-events.js et la modération veillent).
-  async function cityWithin30km(city) {
+  async function cityWithinKm(city, km) {
     if (!city) return null;
     try {
       const r = await fetch("https://api-adresse.data.gouv.fr/search/?type=municipality&limit=1&lat=48.6921&lon=6.1844&q=" + encodeURIComponent(city));
@@ -173,7 +192,7 @@
       const rad = (x) => x * Math.PI / 180;
       const s = Math.sin(rad(lat - 48.6921) / 2) ** 2 +
         Math.cos(rad(48.6921)) * Math.cos(rad(lat)) * Math.sin(rad(lon - 6.1844) / 2) ** 2;
-      return 2 * 6371 * Math.asin(Math.sqrt(s)) <= 30;
+      return 2 * 6371 * Math.asin(Math.sqrt(s)) <= km;
     } catch (_) { return null; }
   }
 
@@ -196,11 +215,13 @@
   async function findDuplicate(title, date, endDate, excludeId) {
     const key = normTitle(title);
     if (!key || !date) return null;
-    const site = (typeof EVENTS !== "undefined" ? EVENTS : []).find((ev) =>
+    // L'agenda du site (data.js) ne concerne que la culture : un événement pro
+    // n'y est jamais comparé (les doublons pro sont cherchés dans user_events).
+    const site = isPro() ? null : (typeof EVENTS !== "undefined" ? EVENTS : []).find((ev) =>
       normTitle(ev.title) === key && overlaps(date, endDate, ev.date, ev.endDate));
     if (site) return { title: site.title, date: site.date, where: "l'agenda du site" };
     const { data, error } = await sb.from("user_events")
-      .select("id,title,date,end_date,status").eq("kind", "event").neq("status", "rejected");
+      .select("id,title,date,end_date,status").eq("kind", kind()).neq("status", "rejected");
     if (error) return null; // le garde-fou SQL prendra le relais
     const dup = (data || []).find((r) => r.id !== excludeId
       && normTitle(r.title) === key
@@ -253,8 +274,10 @@
       }
 
       // Zone couverte : agenda limité à ~30 km autour de Nancy.
-      if (await cityWithin30km($("ev-city").value.trim()) === false) {
-        throw new Error("Zone non couverte : cet agenda liste les événements à moins de 30 km de Nancy.");
+      // Rendez-vous pro : Nancy et ses communes voisines seulement (5 km).
+      const rayon = isPro() ? 5 : 30;
+      if (await cityWithinKm($("ev-city").value.trim(), rayon) === false) {
+        throw new Error(`Zone non couverte : ${isPro() ? "l'onglet Pro liste les rendez-vous à moins de 5 km de Nancy" : "cet agenda liste les événements à moins de 30 km de Nancy"}.`);
       }
 
       // Anti-doublon : bloque si un événement au même titre existe déjà sur
@@ -269,12 +292,12 @@
         const up = await sb.storage.from("event-images").upload(path, imageFile, { upsert: false });
         if (up.error) throw up.error;
         imageUrl = sb.storage.from("event-images").getPublicUrl(path).data.publicUrl;
-      } else if (!id && !sport) {
+      } else if (!id && !sport && !isPro()) {
         throw new Error("Une image est requise.");
       }
 
       const row = {
-        kind: "event",                            // feature sport en pause
+        kind: kind(),                             // 'event' ou 'pro' (sport en pause)
         title,
         category: $("ev-category").value,
         description: $("ev-desc").value.trim(),
@@ -286,6 +309,8 @@
         free: $("ev-free").checked,
         reservation: $("ev-resa").checked,
         url: url || null,
+        organizer: isPro() ? ($("ev-organizer").value.trim() || null) : null,
+        members_only: isPro() ? $("ev-members").checked : false,
       };
       if (imageUrl) row.image = imageUrl;
 
@@ -351,10 +376,10 @@
       const li = document.createElement("li");
       li.className = "mine-item";
       li.innerHTML = `
-        <img src="${r.image}" alt="" class="mine-thumb" loading="lazy">
+        ${r.image ? `<img src="${r.image}" alt="" class="mine-thumb" loading="lazy">` : `<div class="mine-thumb mine-thumb--empty" aria-hidden="true">${r.kind === "pro" ? "💼" : "🖼️"}</div>`}
         <div class="mine-body">
           <strong>${escapeHtml(r.title)}</strong>
-          <span class="badge ${st.cls}">${st.label}</span>
+          <span class="badge ${st.cls}">${st.label}</span>${r.kind === "pro" ? ' <span class="badge">💼 Pro</span>' : ""}
           <div class="mine-meta">${escapeHtml(frDate(r.date))}${r.end_date ? " → " + escapeHtml(frDate(r.end_date)) : ""} · ${escapeHtml(r.place || "")} ${escapeHtml(r.city || "")}</div>
           ${r.status === "rejected" && r.moderation_reason ? `<div class="mine-reason">Motif : ${escapeHtml(r.moderation_reason)}</div>` : ""}
           <div class="mine-stats">👁️ ${r.click_count} ouverture${r.click_count > 1 ? "s" : ""} de fiche</div>
@@ -374,7 +399,11 @@
 
   function edit(r) {
     $("ev-id").value = r.id;
+    $("ev-kind").value = r.kind === "pro" ? "pro" : "event";
+    applyKind();
     $("ev-category").value = r.category;
+    $("ev-organizer").value = r.organizer || "";
+    $("ev-members").checked = !!r.members_only;
     $("ev-title").value = r.title;
     $("ev-desc").value = r.description;
     $("ev-date").value = (r.date || "").slice(0, 10);
@@ -390,7 +419,7 @@
     $("ev-url").value = r.url || "";
     $("ev-free").checked = !!r.free;
     $("ev-resa").checked = !!r.reservation;
-    $("ev-preview").src = r.image; show($("ev-preview"), true);
+    if (r.image) { $("ev-preview").src = r.image; show($("ev-preview"), true); } else show($("ev-preview"), false);
     imageFile = null;
     $("ev-submit").textContent = "Enregistrer (re-vérification)";
     show($("ev-cancel"), true);

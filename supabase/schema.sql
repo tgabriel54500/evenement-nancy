@@ -182,3 +182,25 @@ drop trigger if exists reject_duplicate_user_event_trg on public.user_events;
 create trigger reject_duplicate_user_event_trg
   before insert or update on public.user_events
   for each row execute function public.reject_duplicate_user_event();
+
+-- 7) ONGLET PRO (kind = 'pro') -----------------------------------------------
+-- (Section ajoutée le 2026-09-28, idempotente : ré-exécuter schema.sql en
+-- entier sur la base existante.)
+-- Les rendez-vous professionnels publiés par les réseaux, clubs et entreprises
+-- partagent la table user_events avec un troisième `kind`. Deux champs en plus
+-- (organisateur affiché, réservé aux membres) et l'image devient facultative :
+-- un rendez-vous pro sans affiche s'affiche sur fond uni avec son titre.
+
+alter table public.user_events drop constraint if exists user_events_kind_check;
+alter table public.user_events add constraint user_events_kind_check
+  check (kind in ('event','sport','pro'));
+
+alter table public.user_events add column if not exists organizer    text;
+alter table public.user_events add column if not exists members_only boolean not null default false;
+alter table public.user_events alter column image drop not null;
+
+-- Hors de l'onglet Pro, l'image reste obligatoire (garde-fou serveur, le front
+-- fait déjà le test).
+alter table public.user_events drop constraint if exists user_events_image_required_chk;
+alter table public.user_events add constraint user_events_image_required_chk
+  check (kind = 'pro' or image is not null);

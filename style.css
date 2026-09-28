@@ -710,6 +710,46 @@ body {
 .poster__new { left: .5rem; top: .5rem; }
 .poster--new .poster__cat { top: 2.15rem; }   /* la catégorie descend sous le ruban */
 .card__new { left: .5rem; bottom: .5rem; }
+
+/* ---------- Onglet Pro : aperçu privé (pro-gate.js) ---------- */
+.pro-locked main, .pro-locked .reseaux-section { display: none; }
+.pro-lock { text-align: center; padding: 3rem 1rem 4rem; max-width: 60ch; }
+.pro-lock h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.6rem; margin: 0 0 .6rem; }
+.pro-lock p { color: var(--ink-soft); margin: 0 0 .6rem; }
+.pro-lock__hint { font-size: .9rem; }
+
+/* ---------- Onglet Pro : badge « membres », lightbox, annuaire des réseaux ---------- */
+.poster__members {
+  position: absolute; z-index: 3; left: .5rem; bottom: .6rem;
+  font-size: .62rem; font-weight: 700; letter-spacing: .02em; text-transform: uppercase;
+  padding: .2rem .5rem; border-radius: 999px;
+  background: rgba(28,26,23,.86); color: #fde68a;
+  box-shadow: 0 2px 8px rgba(0,0,0,.2);
+}
+.badge--members { background: #fdf3d0; color: #7a5a06; }
+.lightbox__desc { margin: .8rem 0 0; color: var(--ink-soft); font-size: .92rem; line-height: 1.5; }
+.reseaux-section { margin-top: 3rem; }
+.reseaux-section__title { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.5rem; margin: 0 0 .4rem; }
+.reseaux-section__intro { color: var(--ink-soft); margin: 0 0 1.2rem; max-width: 60ch; }
+.reseaux { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: .9rem; }
+.reseau {
+  background: #fff; border: 1px solid rgba(28,26,23,.08); border-radius: 14px;
+  padding: 1rem 1.1rem; box-shadow: var(--shadow);
+}
+.reseau--membres { background: #fffaf0; }
+.reseau__logo {
+  display: flex; align-items: center; justify-content: center;
+  height: 56px; margin: 0 0 .6rem; padding: .35rem .6rem; border-radius: 10px;
+  background: #f7f3ec;
+}
+.reseau__logo--dark { background: #2b2825; }
+.reseau__logo img { max-height: 100%; max-width: 160px; object-fit: contain; }
+.reseau__name { margin: 0 0 .35rem; font-size: 1.02rem; font-family: "Fraunces", serif; font-weight: 600; }
+.reseau__name a { color: inherit; text-decoration: none; }
+.reseau__name a:hover { color: var(--accent); }
+.reseau__blurb { margin: 0 0 .5rem; font-size: .88rem; line-height: 1.45; color: var(--ink-soft); }
+.reseau__meta { margin: 0; font-size: .78rem; color: var(--ink-soft); }
+.reseau__count { font-weight: 600; color: var(--ink); }
 /* En-tête de groupe de récence : occupe toute la largeur de la grille de la galerie. */
 .nouv-group {
   grid-column: 1 / -1;

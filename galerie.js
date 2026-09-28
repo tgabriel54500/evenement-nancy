@@ -311,6 +311,10 @@ document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dpOpen) 
 const SLIDERS_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tool-ico"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>';
 const CHEVRON_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="tool-chev"><path d="M6 9l6 6 6-6"/></svg>';
 const IS_SPORT = document.body.dataset.view === "sport";
+const IS_PRO = document.body.dataset.view === "pro";
+// Type d'événements utilisateurs (Supabase, colonne `kind`) à fusionner dans
+// cette page : 'event' (culture) par défaut, 'pro' sur pro.html.
+const USER_KIND = document.body.dataset.kind || "event";
 
 const ADV_GROUPS = [
   { key: "price", label: "Tarif", opts: [{ v: "all", t: "Tous" }, { v: "free", t: "🆓 Gratuit" }, { v: "paid", t: "💶 Payant" }] },
@@ -321,7 +325,7 @@ function advCount() { return (state.price !== "all" ? 1 : 0) + (state.resa !== "
 const SHEETS = {
   when: { title: "Quand ?" },
   sel:  { title: "Sélections" },
-  cat:  { title: IS_SPORT ? "Sports" : "Catégories" },
+  cat:  { title: IS_SPORT ? "Sports" : (IS_PRO ? "Types de rendez-vous" : "Catégories") },
   more: { title: "Filtres" },
 };
 const bar = { el: null, sheet: null, open: null };
@@ -541,6 +545,7 @@ function tileHTML(ev, i) {
         ${isNew(ev) ? '<span class="poster__new">🆕 Nouveau</span>' : ""}
         <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
         ${dateHTML}
+        ${ev.membersOnly ? '<span class="poster__members" title="Réservé aux membres du réseau">🔒 Membres</span>' : ""}
         <span class="poster__fallback">${escapeHtml(ev.title)}${cityHTML}</span>
         <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span>${cityHTML}</span>
       </button>
@@ -721,6 +726,7 @@ const lbIcon = {
   arrow: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
   pin: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>',
   clock: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>',
+  users: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>',
 };
 
 function openLightbox(ev) {
@@ -728,8 +734,12 @@ function openLightbox(ev) {
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const place = [ev.place, ev.city].filter(Boolean).join(" — ");
   const badges =
-    (ev.free ? `<span class="badge badge--free">Gratuit</span>` : "") +
-    (ev.reservation ? `<span class="badge">${lbIcon.ticket} Réservation</span>` : "");
+    (ev.free ? `<span class="badge badge--free">Gratuit</span>` : (ev.price ? `<span class="badge">${escapeHtml(ev.price)}</span>` : "")) +
+    (ev.reservation ? `<span class="badge">${lbIcon.ticket} ${ev.network || ev.source === "user" ? "Sur inscription" : "Réservation"}</span>` : "") +
+    (ev.membersOnly ? `<span class="badge badge--members">🔒 Réservé aux membres</span>` : "");
+  // Onglet Pro : l'organisateur (réseau) et un extrait de description.
+  const organizer = ev.organizer ? `<div>${lbIcon.users}<span>Organisé par ${escapeHtml(ev.organizer)}</span></div>` : "";
+  const desc = ev.description ? `<p class="lightbox__desc">${escapeHtml(ev.description)}</p>` : "";
   const media = ev.image
     ? `<div class="lightbox__media"><img src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"></div>`
     : "";
@@ -742,7 +752,9 @@ function openLightbox(ev) {
       <div class="card__meta">
         <div>${lbIcon.clock}<span>${escapeHtml(dateLabel(ev))}</span></div>
         ${place ? `<div>${lbIcon.pin}<span>${escapeHtml(place)}</span></div>` : ""}
+        ${organizer}
       </div>
+      ${desc}
       <div class="lightbox__actions">
         ${ev.url ? `<a class="lightbox__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">Plus d'infos ${lbIcon.arrow}</a>` : ""}
         <button class="lightbox__fav ${isFav(ev) ? "is-fav" : ""}" id="lbFav" aria-pressed="${isFav(ev)}">${HEART}<span>${isFav(ev) ? "Dans vos favoris" : "Ajouter aux favoris"}</span></button>
@@ -830,7 +842,7 @@ if (NOUVEAUTES) {
 // Fusion asynchrone des événements approuvés soumis par les utilisateurs
 // (Supabase). Le site statique s'affiche d'abord ; on ré-injecte ensuite.
 if (window.loadApprovedUserEvents) {
-  loadApprovedUserEvents().then((extra) => {
+  loadApprovedUserEvents(USER_KIND).then((extra) => {
     if (!extra || !extra.length) return;
     sortedEvents = buildSorted(extra);
     if (!NOUVEAUTES) { buildSelections(); buildFilters(); }   // recalcule les compteurs
