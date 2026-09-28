@@ -79,7 +79,16 @@ dans la lightbox), `price` (badge), `description` (paragraphe dans la lightbox).
 - `pro.html` charge `user-events.js` et fusionne `loadApprovedUserEvents("pro")`
   (`data-kind="pro"` sur `<body>`).
 
-## Déploiement (branche)
+## Aperçu privé (pro-gate.js)
+
+Tant que `PRO_PREVIEW.open` vaut `false` dans `pro-gate.js`, seuls les comptes de
+`PRO_PREVIEW.emails` (session Supabase via compte.html) voient l'onglet
+« 💼 Pro », la page pro.html (sinon message « en préparation ») et le sélecteur
+Type de compte.html. C'est un verrou d'affichage, pas une sécurité (data-pro.js
+reste accessible par URL). Pour ouvrir au public : `open: true`, remettre
+pro.html dans le sitemap (deploy-cloudflare.sh), déployer.
+
+## Déploiement
 
 `deploy-cloudflare.sh` : FILES += pro.html, data-pro.js, pro-categories.js ;
 copie de `affiches-pro/` ; GoatCounter et anti-cache sur pro.html ; sitemap

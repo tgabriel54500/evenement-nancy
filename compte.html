@@ -71,7 +71,7 @@
           <!-- Type : 'event' (agenda culturel) ou 'pro' (onglet Pro : réseaux
                d'affaires, conférences, salons). La feature sport (kind='sport')
                reste en pause : pas d'option ici, code intact côté base. -->
-          <label>Type *
+          <label id="row-kind" class="pro-only" hidden>Type *
             <select id="ev-kind">
               <option value="event">🎭 Sortie, culture, loisirs (agenda principal)</option>
               <option value="pro">💼 Rendez-vous professionnel (onglet Pro)</option>
@@ -164,6 +164,7 @@
   <script src="config-supabase.js"></script>
   <script src="data.js"></script>
   <script src="pro-categories.js"></script>
+  <script src="pro-gate.js"></script>
   <script src="compte.js?v=7"></script>
 
   <!-- Bouton contact WhatsApp -->

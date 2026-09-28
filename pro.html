@@ -31,7 +31,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
-<body data-view="pro" data-kind="pro">
+<body data-view="pro" data-kind="pro" class="pro-locked">
   <header class="hero">
     <div class="hero__inner">
       <p class="hero__eyebrow">Agenda du Grand-Nancy</p>
@@ -59,6 +59,13 @@
       </div>
     </div>
   </header>
+
+  <!-- Aperçu privé (pro-gate.js) : affiché tant que le visiteur n'est pas autorisé. -->
+  <section class="container pro-lock" id="pro-lock">
+    <h2>Cet espace est en préparation</h2>
+    <p>Les rendez-vous professionnels du Grand Nancy arrivent bientôt. En attendant, retrouvez la <a href="index.html">galerie des sorties</a> et l'<a href="sport.html">agenda sportif</a>.</p>
+    <p class="pro-lock__hint">Vous avez un accès anticipé ? <a href="compte.html">Connectez-vous</a>, puis revenez sur cette page.</p>
+  </section>
 
   <main class="container">
     <nav class="datefilters" id="dateFilters" aria-label="Filtrer par date"></nav>
@@ -121,6 +128,7 @@
   <script src="user-events.js"></script>
   <script src="galerie.js"></script>
   <script src="pwa.js"></script>
+  <script src="pro-gate.js"></script>
   <!-- Annuaire des réseaux d'affaires : ceux qui publient un agenda et ceux
        dont les rendez-vous restent entre membres (invités à publier ici). -->
   <script>

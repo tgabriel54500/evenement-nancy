@@ -711,6 +711,13 @@ body {
 .poster--new .poster__cat { top: 2.15rem; }   /* la catégorie descend sous le ruban */
 .card__new { left: .5rem; bottom: .5rem; }
 
+/* ---------- Onglet Pro : aperçu privé (pro-gate.js) ---------- */
+.pro-locked main, .pro-locked .reseaux-section { display: none; }
+.pro-lock { text-align: center; padding: 3rem 1rem 4rem; max-width: 60ch; }
+.pro-lock h2 { font-family: "Fraunces", serif; font-weight: 600; font-size: 1.6rem; margin: 0 0 .6rem; }
+.pro-lock p { color: var(--ink-soft); margin: 0 0 .6rem; }
+.pro-lock__hint { font-size: .9rem; }
+
 /* ---------- Onglet Pro : badge « membres », lightbox, annuaire des réseaux ---------- */
 .poster__members {
   position: absolute; z-index: 3; left: .5rem; bottom: .6rem;
