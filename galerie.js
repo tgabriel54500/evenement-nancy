@@ -3,13 +3,14 @@
 // même logique de filtres que la vue Cartes (catégorie, date, tarif, réservation).
 
 // Cœur commun (MONTHS, dédoublonnage, dates, ruban Nouveautés, favoris) : events-core.js.
-const state = { query: "", filter: "all", when: "all", customFrom: "", customTo: "", price: "all", resa: "all", favOnly: false };
+const state = { query: "", filter: "all", sel: "all", when: "all", customFrom: "", customTo: "", price: "all", resa: "all", favOnly: false };
 
 const els = {
   filters: document.getElementById("filters"),
   dateFilters: document.getElementById("dateFilters"),
   toolbar: document.getElementById("toolbar"),
   gallery: document.getElementById("gallery"),
+  selections: document.getElementById("selections"),
   empty: document.getElementById("empty"),
   count: document.getElementById("resultsCount"),
   search: document.getElementById("search"),
@@ -23,11 +24,15 @@ const els = {
 const NOUVEAUTES = document.body.dataset.view === "nouveautes";
 
 // ---------- Dates ----------
+const WEEKDAYS_SHORT = ["DIM", "LUN", "MAR", "MER", "JEU", "VEN", "SAM"];
 const isoOf = (d) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
 function dateParts(iso) {
   if (!iso) return { day: "?", month: "" };
-  const [, m, d] = iso.split("-").map(Number);
-  return { day: d, month: MONTHS_SHORT[m - 1] || "" };
+  const [y, m, d] = iso.split("-").map(Number);
+  // Jour de la semaine en date LOCALE (new Date(y, m-1, d)), pas en UTC : un
+  // new Date("2026-09-16") serait minuit UTC et pourrait basculer la veille.
+  const wd = WEEKDAYS_SHORT[new Date(y, m - 1, d).getDay()] || "";
+  return { day: d, month: MONTHS_SHORT[m - 1] || "", wd };
 }
 function fmtLong(iso) {
   if (!iso) return "";
@@ -62,6 +67,10 @@ function whenRange(when) {
     const sun = new Date(sat); sun.setDate(sat.getDate() + 1);
     return [isoOf(sat), isoOf(sun)];
   }
+  if (when === "week" || when === "month") {
+    const end = new Date(now); end.setDate(now.getDate() + (when === "week" ? 6 : 29));
+    return [today, isoOf(end)];
+  }
   if (when === "custom") return [state.customFrom || "0000-01-01", state.customTo || "9999-12-31"];
   return null;
 }
@@ -73,6 +82,7 @@ function matchesWhen(ev, range) {
 
 // ---------- Filtres ----------
 function matchesNonCategory(ev) {
+  if (state.sel !== "all" && !(ev.tags || []).includes(state.sel)) return false;
   if (state.when !== "all" && !matchesWhen(ev, whenRange(state.when))) return false;
   if (state.price === "free" && !ev.free) return false;
   if (state.price === "paid" && ev.free) return false;
@@ -255,6 +265,8 @@ function buildDateFilters() {
     { key: "all", label: "Tout" },
     { key: "today", label: "Aujourd'hui" },
     { key: "weekend", label: "Ce week-end" },
+    { key: "week", label: "Cette semaine" },
+    { key: "month", label: "Ce mois-ci" },
   ];
   const chipsHTML = chips.map(c =>
     `<button class="datefilter ${c.key === state.when ? "is-active" : ""}" data-when="${c.key}">${c.label}</button>`).join("");
@@ -290,12 +302,15 @@ function buildDateFilters() {
 document.addEventListener("click", (e) => { if (dpOpen && !e.target.closest("#dateRangeWrap")) closeDatePop(); });
 document.addEventListener("keydown", (e) => { if (e.key === "Escape" && dpOpen) closeDatePop(); });
 
-// ---------- Barre d'outils : « Recherche avancée » (tarif + réservation) + « Mes favoris » ----------
-// Le tarif et la réservation sont des filtres secondaires : on les range dans un
-// popover « Recherche avancée », à côté du bouton « Mes favoris ». Les catégories,
-// elles, restent toujours visibles (filtre principal).
+// ---------- Barre de filtres compacte + panneau (demande user 2026-09-16) ----------
+// L'accueil empilait 5 blocs (dates, sélections, catégories, recherche avancée,
+// favoris) avant la première affiche, surtout sur téléphone. On les range dans UNE
+// rangée de pastilles (Quand · Sélections · Catégories · Filtres · ♥) ; chaque
+// pastille ouvre un panneau (feuille du bas sur mobile, fenêtre centrée sur ordi)
+// qui contient les blocs d'origine, déplacés tels quels (mêmes gestionnaires).
 const SLIDERS_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="tool-ico"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>';
 const CHEVRON_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="tool-chev"><path d="M6 9l6 6 6-6"/></svg>';
+const IS_SPORT = document.body.dataset.view === "sport";
 
 const ADV_GROUPS = [
   { key: "price", label: "Tarif", opts: [{ v: "all", t: "Tous" }, { v: "free", t: "🆓 Gratuit" }, { v: "paid", t: "💶 Payant" }] },
@@ -303,30 +318,149 @@ const ADV_GROUPS = [
 ];
 function advCount() { return (state.price !== "all" ? 1 : 0) + (state.resa !== "all" ? 1 : 0); }
 
-let advOpen = false;
-function openAdvPop() {
-  const p = document.getElementById("advPop"); if (!p) return;
-  p.hidden = false; advOpen = true;
-  document.getElementById("advTrigger").setAttribute("aria-expanded", "true");
-}
-function closeAdvPop() {
-  const p = document.getElementById("advPop"); if (p) p.hidden = true;
-  advOpen = false;
-  const t = document.getElementById("advTrigger"); if (t) t.setAttribute("aria-expanded", "false");
+const SHEETS = {
+  when: { title: "Quand ?" },
+  sel:  { title: "Sélections" },
+  cat:  { title: IS_SPORT ? "Sports" : "Catégories" },
+  more: { title: "Filtres" },
+};
+const bar = { el: null, sheet: null, open: null };
+
+function buildBar() {
+  const main = els.dateFilters.parentNode;
+  bar.el = document.createElement("div");
+  bar.el.className = "fbar";
+  bar.el.innerHTML = `
+    <div class="fbar__row" role="toolbar" aria-label="Filtres">
+      <button type="button" class="fpill" data-sheet="when" aria-haspopup="dialog">${CAL_ICON}<span class="fpill__txt"></span>${CHEVRON_ICON}</button>
+      <button type="button" class="fpill" data-sheet="cat" aria-haspopup="dialog"><span class="fpill__txt"></span>${CHEVRON_ICON}</button>
+      <button type="button" class="fpill" data-sheet="sel" aria-haspopup="dialog"><span class="fpill__txt"></span>${CHEVRON_ICON}</button>
+      <button type="button" class="fpill" data-sheet="more" id="advTrigger" aria-haspopup="dialog">${SLIDERS_ICON}<span class="fpill__txt">Filtres</span><span class="tool-badge" id="advBadge" hidden>0</span></button>
+      <button type="button" class="fpill fpill--fav favtoggle" id="favToggle" aria-pressed="false" aria-label="Mes favoris">${HEART}<span class="fpill__lbl">Favoris</span><span class="count" hidden>0</span></button>
+      <button type="button" class="fpill fpill--reset" id="barReset" hidden>✕ Effacer</button>
+    </div>`;
+  main.insertBefore(bar.el, els.dateFilters);
+
+  bar.sheet = document.createElement("div");
+  bar.sheet.className = "fsheet";
+  bar.sheet.hidden = true;
+  bar.sheet.innerHTML = `
+    <div class="fsheet__backdrop" data-close></div>
+    <div class="fsheet__panel" role="dialog" aria-modal="true" aria-labelledby="fsheetTitle">
+      <div class="fsheet__head">
+        <span class="fsheet__grip" aria-hidden="true"></span>
+        <h2 class="fsheet__title" id="fsheetTitle"></h2>
+        <button type="button" class="fsheet__close" data-close aria-label="Fermer">&times;</button>
+      </div>
+      <div class="fsheet__body">
+        <section class="fsheet__sec" data-sec="when"></section>
+        <section class="fsheet__sec" data-sec="sel"></section>
+        <section class="fsheet__sec" data-sec="cat"></section>
+        <section class="fsheet__sec" data-sec="more"><div class="adv-sheet" id="advSheet"></div></section>
+      </div>
+      <div class="fsheet__foot">
+        <button type="button" class="fsheet__clear" id="sheetClear">Effacer</button>
+        <button type="button" class="fsheet__go" data-close id="sheetGo">Voir les affiches</button>
+      </div>
+    </div>`;
+  document.body.appendChild(bar.sheet);
+  const sec = (k) => bar.sheet.querySelector(`[data-sec="${k}"]`);
+  sec("when").appendChild(els.dateFilters);
+  if (els.selections) sec("sel").appendChild(els.selections);
+  sec("cat").appendChild(els.filters);
+
+  bar.el.querySelectorAll(".fpill[data-sheet]").forEach(b =>
+    b.addEventListener("click", (e) => { e.stopPropagation(); openSheet(b.dataset.sheet); }));
+  bar.sheet.querySelectorAll("[data-close]").forEach(b => b.addEventListener("click", closeSheet));
+  bar.el.querySelector("#barReset").addEventListener("click", () => resetFilters(null));
+  bar.sheet.querySelector("#sheetClear").addEventListener("click", () => resetFilters(bar.open));
+  document.addEventListener("keydown", (e) => { if (e.key === "Escape" && bar.open && !dpOpen) closeSheet(); });
+
+  // Choix unique (catégorie, sélection, raccourci de date) → on referme aussitôt :
+  // le visiteur voit directement le résultat. Le calendrier et « Filtres » restent ouverts.
+  const autoClose = (sel) => (e) => { if (e.target.closest(sel)) setTimeout(closeSheet, 160); };
+  els.filters.addEventListener("click", autoClose(".filter"));
+  els.dateFilters.addEventListener("click", autoClose(".datefilter"));
+  if (els.selections) els.selections.addEventListener("click", autoClose(".selection"));
 }
 
-// Maj de l'état visuel de la barre (badge filtres actifs, segments, favoris) sans
-// reconstruire → le popover reste ouvert pendant le réglage.
+function openSheet(key) {
+  if (!bar.sheet) return;
+  bar.open = key;
+  bar.sheet.querySelectorAll(".fsheet__sec").forEach(s => { s.hidden = s.dataset.sec !== key; });
+  bar.sheet.querySelector("#fsheetTitle").textContent = SHEETS[key].title;
+  bar.sheet.hidden = false;
+  document.body.classList.add("has-sheet");
+  bar.el.querySelectorAll(".fpill[data-sheet]").forEach(b => b.setAttribute("aria-expanded", String(b.dataset.sheet === key)));
+  syncBar();
+  const first = bar.sheet.querySelector(`[data-sec="${key}"] .is-active, [data-sec="${key}"] button`);
+  if (first) first.focus({ preventScroll: true });
+}
+function closeSheet() {
+  if (!bar.sheet || bar.sheet.hidden) return;
+  if (typeof closeDatePop === "function") closeDatePop();
+  bar.sheet.hidden = true;
+  document.body.classList.remove("has-sheet");
+  const trig = bar.el.querySelector(`.fpill[data-sheet="${bar.open}"]`);
+  bar.el.querySelectorAll(".fpill[data-sheet]").forEach(b => b.setAttribute("aria-expanded", "false"));
+  bar.open = null;
+  if (trig) trig.focus({ preventScroll: true });
+}
+
+// Remise à zéro : d'un seul panneau (bouton du bas) ou de tout (pastille « Effacer »).
+function resetFilters(only) {
+  const all = !only;
+  if (all || only === "when") { state.when = "all"; state.customFrom = ""; state.customTo = ""; if (typeof closeDatePop === "function") closeDatePop(); syncDateUI(); }
+  if (all || only === "sel") {
+    state.sel = "all";
+    if (els.selections) els.selections.querySelectorAll(".selection").forEach(b => { b.classList.remove("is-active"); b.setAttribute("aria-pressed", "false"); });
+  }
+  if (all || only === "cat") {
+    state.filter = "all";
+    els.filters.querySelectorAll(".filter").forEach(b => b.classList.toggle("is-active", b.dataset.key === "all"));
+  }
+  if (all || only === "more") { state.price = "all"; state.resa = "all"; }
+  syncToolbar();
+  render();
+}
+
+// Libellés des pastilles = valeur choisie (« Ce week-end », « 🎸 Musiques »…).
+function syncBar() {
+  if (!bar.el) return;
+  const pill = (k) => bar.el.querySelector(`.fpill[data-sheet="${k}"]`);
+  const setPill = (k, txt, on) => { const p = pill(k); p.querySelector(".fpill__txt").textContent = txt; p.classList.toggle("is-active", on); };
+
+  const WHEN = { all: "Quand ?", today: "Aujourd'hui", weekend: "Ce week-end", week: "Cette semaine", month: "Ce mois-ci" };
+  setPill("when", state.when === "custom" ? dateRangeLabel() : WHEN[state.when] || "Quand ?", state.when !== "all");
+
+  const hasSel = els.selections && !els.selections.hidden;
+  pill("sel").hidden = !hasSel;
+  const s = SELECTIONS.find(x => x.key === state.sel);
+  setPill("sel", s ? `${s.emoji} ${s.label}` : "✨ Sélections", !!s);
+
+  const c = CATEGORIES[state.filter];
+  setPill("cat", c ? `${c.emoji} ${c.label}` : (IS_SPORT ? "🏅 Sports" : "🎭 Catégories"), !!c);
+
+  const any = state.when !== "all" || state.sel !== "all" || state.filter !== "all" || advCount() > 0;
+  bar.el.querySelector("#barReset").hidden = !any;
+
+  if (bar.open) {
+    const n = visible.length;
+    bar.sheet.querySelector("#sheetGo").textContent = n ? `Voir ${n} affiche${n > 1 ? "s" : ""}` : "Aucun résultat";
+    const dirty = { when: state.when !== "all", sel: state.sel !== "all", cat: state.filter !== "all", more: advCount() > 0 }[bar.open];
+    bar.sheet.querySelector("#sheetClear").disabled = !dirty;
+  }
+}
+
+// Maj de l'état visuel (badge, segments, favoris) sans reconstruire.
 function syncToolbar() {
   const n = advCount();
   const badge = document.getElementById("advBadge");
   if (badge) { badge.textContent = n; badge.hidden = n === 0; }
   const trig = document.getElementById("advTrigger");
   if (trig) trig.classList.toggle("is-active", n > 0);
-  document.querySelectorAll("#advPop .seg__btn").forEach(b =>
+  document.querySelectorAll("#advSheet .seg__btn").forEach(b =>
     b.classList.toggle("is-active", state[b.dataset.group] === b.dataset.val));
-  const reset = document.getElementById("advReset");
-  if (reset) reset.disabled = n === 0;
   const fav = document.getElementById("favToggle");
   if (fav) {
     const c = favCount();
@@ -335,50 +469,30 @@ function syncToolbar() {
     const cnt = fav.querySelector(".count");
     if (cnt) { cnt.textContent = c; cnt.hidden = c === 0; }
   }
+  syncBar();
 }
 
 function buildToolbar() {
-  els.toolbar.innerHTML = `
-    <div class="tool-group" id="advWrap">
-      <button type="button" class="tool-btn" id="advTrigger" aria-haspopup="dialog" aria-expanded="false">
-        ${SLIDERS_ICON}<span>Recherche avancée</span><span class="tool-badge" id="advBadge" hidden>0</span>${CHEVRON_ICON}
-      </button>
-      <div class="cal adv-pop" id="advPop" role="dialog" aria-label="Recherche avancée" hidden>
-        ${ADV_GROUPS.map(g => `
-          <div class="adv-group">
-            <span class="adv-label">${g.label}</span>
-            <div class="seg" role="group" aria-label="${g.label}">
-              ${g.opts.map(o => `<button type="button" class="seg__btn ${state[g.key] === o.v ? "is-active" : ""}" data-group="${g.key}" data-val="${o.v}">${o.t}</button>`).join("")}
-            </div>
-          </div>`).join("")}
-        <button type="button" class="adv-reset" id="advReset">Réinitialiser</button>
+  if (els.toolbar) els.toolbar.remove();          // remplacé par la barre compacte
+  const adv = document.getElementById("advSheet");
+  adv.innerHTML = ADV_GROUPS.map(g => `
+    <div class="adv-group">
+      <span class="adv-label">${g.label}</span>
+      <div class="seg" role="group" aria-label="${g.label}">
+        ${g.opts.map(o => `<button type="button" class="seg__btn ${state[g.key] === o.v ? "is-active" : ""}" data-group="${g.key}" data-val="${o.v}">${o.t}</button>`).join("")}
       </div>
-    </div>
-    <button type="button" class="tool-btn favtoggle" id="favToggle" aria-pressed="false">
-      ${HEART}<span>Mes favoris</span><span class="count" hidden>0</span>
-    </button>`;
-
-  els.toolbar.querySelector("#advTrigger")
-    .addEventListener("click", (e) => { e.stopPropagation(); advOpen ? closeAdvPop() : openAdvPop(); });
-  els.toolbar.querySelectorAll("#advPop .seg__btn").forEach(btn => btn.addEventListener("click", () => {
+    </div>`).join("");
+  adv.querySelectorAll(".seg__btn").forEach(btn => btn.addEventListener("click", () => {
     state[btn.dataset.group] = btn.dataset.val;
     syncToolbar();
     render();
   }));
-  els.toolbar.querySelector("#advReset").addEventListener("click", () => {
-    state.price = "all"; state.resa = "all";
-    syncToolbar(); render();
-  });
-  els.toolbar.querySelector("#favToggle").addEventListener("click", () => {
+  document.getElementById("favToggle").addEventListener("click", () => {
     state.favOnly = !state.favOnly;
     syncToolbar(); render();
   });
   syncToolbar();
 }
-
-// Fermeture du popover « Recherche avancée » : clic extérieur ou Échap.
-document.addEventListener("click", (e) => { if (advOpen && !e.target.closest("#advWrap")) closeAdvPop(); });
-document.addEventListener("keydown", (e) => { if (e.key === "Escape" && advOpen) closeAdvPop(); });
 
 // ---------- Rendu galerie ----------
 function escapeHtml(s) {
@@ -387,28 +501,48 @@ function escapeHtml(s) {
 
 let visible = [];
 
+// Image en échec : on RÉESSAIE avant d'abandonner. Les affiches hébergées sur le
+// site (images/fb, affiches-auto) peuvent recevoir un 429 de la limitation de débit
+// Cloudflare quand on fait défiler vite ; avant, l'image était retirée pour de bon.
+function posterImgError(img) {
+  const n = Number(img.dataset.retry || 0);
+  if (n < 2) {
+    img.dataset.retry = n + 1;
+    const base = img.getAttribute("src").replace(/[?&]r=\d+$/, "");
+    setTimeout(() => { img.src = base + (base.includes("?") ? "&" : "?") + "r=" + (n + 1); }, n === 0 ? 4000 : 12000);
+    return;
+  }
+  const tile = img.closest(".poster");
+  if (tile) tile.classList.add("poster--noimg");
+  img.remove();
+}
+
 function tileHTML(ev, i) {
   const dp = dateParts(displayDate(ev));
   // Multi-jours : la pastille affiche la plage (jour de début → jour/mois de fin).
   const ep = isMulti(ev) ? dateParts((ev.endDate || "").slice(0, 10)) : null;
   const dateHTML = ep
     ? `<span class="poster__date poster__date--range"><span class="day">${dp.day}</span><span class="month">${dp.month}</span><span class="poster__dateend">→ ${ep.day} ${ep.month}</span></span>`
-    : `<span class="poster__date"><span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>`;
+    : `<span class="poster__date">${dp.wd ? `<span class="wd">${dp.wd}</span>` : ""}<span class="day">${dp.day}</span><span class="month">${dp.month}</span></span>`;
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
+  // Commune seule sur la vignette (le nom de salle, trop long ou peu fiable selon
+  // les sources, reste dans la lightbox). Rien si la commune est inconnue.
+  // Pas de commune sur l'onglet Sport (demande user) : le lieu y est implicite.
+  const cityHTML = ev.city && document.body.dataset.view !== "sport" ? `<span class="poster__city">📍 ${escapeHtml(ev.city)}</span>` : "";
   const media = ev.image
     ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
-         onerror="this.closest('.poster').classList.add('poster--noimg');this.remove();">`
+         onerror="posterImgError(this)">`
     : "";
   const fav = isFav(ev);
   return `
     <div class="poster-wrap">
-      <button class="poster ${ev.image ? "" : "poster--noimg"} ${isNew(ev) ? "poster--new" : ""}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
+      <button class="poster ${ev.image ? "" : "poster--noimg"} ${ev.autoPoster ? "poster--auto" : ""} ${isNew(ev) ? "poster--new" : ""}" data-i="${i}" style="animation-delay:${Math.min(i * 20, 300)}ms" aria-label="${escapeHtml(ev.title)}">
         ${media}
         ${isNew(ev) ? '<span class="poster__new">🆕 Nouveau</span>' : ""}
         <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
         ${dateHTML}
-        <span class="poster__fallback">${escapeHtml(ev.title)}</span>
-        <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span></span>
+        <span class="poster__fallback">${escapeHtml(ev.title)}${cityHTML}</span>
+        <span class="poster__overlay"><span class="poster__title">${escapeHtml(ev.title)}</span>${cityHTML}</span>
       </button>
       <button class="fav-btn ${fav ? "is-fav" : ""}" data-i="${i}" aria-pressed="${fav}"
         aria-label="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}" title="${fav ? "Retirer des favoris" : "Ajouter aux favoris"}">${HEART}</button>
@@ -431,7 +565,54 @@ function onToggleFav(ev, btn) {
 // Recalcule les compteurs des boutons de catégorie selon les filtres ACTIFS
 // (date, recherche, tarif, réservation, favoris) — tout sauf la catégorie
 // elle-même —, puis les réécrit sans reconstruire la barre (préserve l'état actif).
+// ---------- Sélections « magiques » (étiquettes IA, cf. classer-evenements.js) ----------
+const SELECTIONS = [
+  { key: "incontournable", label: "Incontournables", emoji: "⭐" },
+  { key: "atypique", label: "Atypiques", emoji: "🦄" },
+  { key: "fun", label: "Fun", emoji: "🎉" },
+  { key: "famille", label: "En famille", emoji: "🧸" },
+  { key: "etudiant", label: "Étudiants", emoji: "🎓" },
+];
+function buildSelections() {
+  if (!els.selections) return;
+  const has = new Set(sortedEvents.flatMap(ev => ev.tags || []));
+  const list = SELECTIONS.filter(s => has.has(s.key));
+  if (!list.length) { els.selections.hidden = true; return; }     // pas encore d'étiquettes
+  els.selections.hidden = false;
+  els.selections.innerHTML = `<span class="selections__label">✨ Sélections</span>` + list.map(s => `
+    <button class="selection ${state.sel === s.key ? "is-active" : ""}" data-sel="${s.key}" aria-pressed="${state.sel === s.key}">
+      <span>${s.emoji}</span>${escapeHtml(s.label)} <span class="count"></span>
+    </button>`).join("");
+  els.selections.querySelectorAll(".selection").forEach(btn => btn.addEventListener("click", () => {
+    const k = btn.dataset.sel;
+    state.sel = state.sel === k ? "all" : k;                        // re-clic = désactive
+    // Une sélection sur « Tout » mélangerait ce soir et l'an prochain : on cadre sur la semaine.
+    if (state.sel !== "all" && state.when === "all") { state.when = "week"; syncDateUI(); }
+    els.selections.querySelectorAll(".selection").forEach(b => {
+      const on = b.dataset.sel === state.sel;
+      b.classList.toggle("is-active", on); b.setAttribute("aria-pressed", String(on));
+    });
+    render();
+  }));
+}
+
 function updateFilterCounts() {
+  if (els.selections && !els.selections.hidden) {
+    const selCounts = {};
+    const saved = state.sel; state.sel = "all";                     // compte chaque sélection sans elle-même
+    for (const ev of sortedEvents) {
+      if (!ev.tags || (state.favOnly && !isFav(ev))) continue;
+      if (state.filter !== "all" && ev.category !== state.filter) continue;
+      if (!matchesNonCategory(ev)) continue;
+      for (const t of ev.tags) selCounts[t] = (selCounts[t] || 0) + 1;
+    }
+    state.sel = saved;
+    els.selections.querySelectorAll(".selection").forEach(b => {
+      const n = selCounts[b.dataset.sel] || 0;
+      b.querySelector(".count").textContent = n;
+      b.classList.toggle("is-empty", n === 0);
+    });
+  }
   const counts = {};
   let total = 0;
   for (const ev of sortedEvents) {
@@ -487,11 +668,32 @@ function renderNouveautes() {
     btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(visible[Number(btn.dataset.i)], btn); }));
 }
 
+// Séries étalées (normalize.js : une fiche par jour pour les événements de 2 à 4
+// jours, même serieUuid). Utile sur « Aujourd'hui » / « Ce week-end », mais sur une
+// vue plus longue ça répète la même affiche : on la regroupe en UNE affiche avec la
+// plage des jours qui passent les filtres (décision user 2026-09-16).
+function regrouperSeries(list) {
+  if (state.when === "today" || state.when === "weekend") return list;
+  const bySerie = new Map();
+  const out = [];
+  for (const ev of list) {
+    const k = ev.serieUuid;
+    if (!k || isMulti(ev)) { out.push(ev); continue; }
+    const g = bySerie.get(k);
+    if (!g) { const copy = { ...ev }; bySerie.set(k, copy); out.push(copy); continue; }
+    if ((ev.date || "") < g.date) g.date = ev.date;
+    if ((ev.date || "") > (g.endDate || g.date)) g.endDate = ev.date;
+    g._serie = true;
+  }
+  return out;
+}
+
 function render() {
   if (NOUVEAUTES) return renderNouveautes();
-  visible = sortedEvents.filter(matches);
+  visible = regrouperSeries(sortedEvents.filter(matches));
   // Titre de bascule mono-jour → multi-jours (1er multi-jours de la liste triée).
-  const firstMulti = visible.findIndex(isMulti);
+  // Une série regroupée (_serie) reste à sa place parmi les mono-jour.
+  const firstMulti = visible.findIndex(ev => isMulti(ev) && !ev._serie);
   els.gallery.innerHTML = visible.map((ev, i) =>
     (i === firstMulti ? `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${visible.length - firstMulti}</span></h2>` : "")
     + tileHTML(ev, i)).join("");
@@ -503,6 +705,7 @@ function render() {
   }
   els.count.textContent = visible.length ? `${visible.length} affiche${visible.length > 1 ? "s" : ""}` : "";
   updateFilterCounts();
+  syncBar();
   els.gallery.querySelectorAll(".poster").forEach(btn =>
     btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
   els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
@@ -617,7 +820,9 @@ if (NOUVEAUTES) {
   render();
 } else {
   buildDateFilters();
+  buildSelections();
   buildFilters();
+  buildBar();
   buildToolbar();
   render();
 }
@@ -628,7 +833,7 @@ if (window.loadApprovedUserEvents) {
   loadApprovedUserEvents().then((extra) => {
     if (!extra || !extra.length) return;
     sortedEvents = buildSorted(extra);
-    if (!NOUVEAUTES) buildFilters();   // recalcule les compteurs de catégories
+    if (!NOUVEAUTES) { buildSelections(); buildFilters(); }   // recalcule les compteurs
     render();
   });
 }

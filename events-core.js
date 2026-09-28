@@ -70,7 +70,33 @@ const TODAY_ISO = (() => { const d = new Date();
 // Un événement est PASSÉ si sa date de fin (ou sa date) est < aujourd'hui. On les
 // retire de l'affichage : le site se nettoie ainsi tout seul chaque jour, même
 // sans régénération de data.js.
-const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO);
+// Après 20h30, un événement d'UN SEUL jour déjà terminé (ou bien entamé) est masqué
+// aussi (demande user 2026-09-16). On ne masque PAS les concerts du soir : L'Autre
+// Canal et le Zénith ne donnent pas l'heure, d'où la règle par catégorie.
+const SOIREE_MIN = 20 * 60 + 30;
+const CATS_DU_SOIR = new Set(["musiques-actuelles", "musique-classique", "spectacle", "festival"]);
+function heuresDe(txt) {                       // "de 14h à 18h30" -> [840, 1110] (minutes)
+  const out = [];
+  for (const m of String(txt || "").matchAll(/(\d{1,2})\s*h\s*(\d{2})?/gi)) {
+    const h = +m[1], mn = +(m[2] || 0);
+    if (h <= 24 && mn < 60) out.push(h * 60 + mn);
+  }
+  return out;
+}
+function termineCeSoir(ev, now = new Date()) {
+  const minutes = now.getHours() * 60 + now.getMinutes();
+  if (minutes < SOIREE_MIN || ev.date !== TODAY_ISO) return false;
+  if (ev.endDate && ev.endDate > ev.date) return false;          // expo, festival sur plusieurs jours
+  const h = heuresDe(ev.schedule || ev.dateText);
+  if (h.length >= 2) {                                           // début + fin connus
+    let fin = h[h.length - 1];
+    if (fin <= h[0]) fin += 24 * 60;                             // « de 20h à 2h » : fin après minuit
+    return fin <= minutes;
+  }
+  if (h.length === 1) return h[0] < 20 * 60;                     // seule l'heure de début : avant 20h = passé
+  return !CATS_DU_SOIR.has(ev.category);                         // pas d'heure : on garde les sorties du soir
+}
+const notPast = (ev) => ((ev.endDate || ev.date || "") >= TODAY_ISO) && !termineCeSoir(ev);
 
 // ── Nouveautés ──────────────────────────────────────────────────────────────
 // Un événement est « nouveau » pendant 3 JOURS à compter de son AJOUT sur une

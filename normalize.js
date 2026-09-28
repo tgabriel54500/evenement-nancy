@@ -147,7 +147,9 @@ const TITLE_STOP = new Set(
    "nancy 2024 2025 2026 2027 2028").split(" "));
 
 function sigTokens(title) {
-  return new Set(slugKey(title).split(" ").filter((w) => w.length > 2 && !TITLE_STOP.has(w)));
+  // &#038; & co. (entités HTML laissées par certains scrapers) : sinon « 038 » compte comme un mot.
+  const clean = String(title || "").replace(/&#?[a-z0-9]+;/gi, " ");
+  return new Set(slugKey(clean).split(" ").filter((w) => w.length > 2 && !TITLE_STOP.has(w)));
 }
 function jaccard(a, b) {
   if (!a.size || !b.size) return 0;
@@ -171,6 +173,33 @@ function titleSimilar(a, b) {
   let shared = 0;
   for (const x of ta) if (tb.has(x)) shared++;
   return jaccard(ta, tb) >= 0.6 && shared >= 2;
+}
+
+// Titre court d'UN seul mot distinctif (« Temples », « Les coulisses », « Mentissa »)
+// repris dans un titre plus long par une autre source (« Temples • L'Autre Canal
+// Nancy », « Visites des coulisses - Jardin botanique »). titleSimilar exige 2 mots
+// communs, ce qui laissait passer ces doublons (constaté 2026-09-16). Garde-fous :
+// mot d'au moins 5 lettres et pas générique, MÊME jour de début, deux événements
+// courts (≤ 4 jours), même commune quand les deux la donnent, sources différentes.
+const MOTS_GENERIQUES = new Set(("contes conte loto yoga balade balades marche repair cafe rencontre " +
+  "rencontres lecture lectures projection seance jeux jeu fete brocante braderie vide grenier " +
+  "portes ouvertes ouverte journee journees conference conferences theatre danse musique " +
+  "cinema film atelier histoire histoires nature jardin jardins musee eglise chapelle " +
+  "chateau parc balade randonnee course marche concours tournoi belote salon " +
+  "patrimoine bibliotheque mediatheque visite visites exposition").split(" "));
+const DAY_MS = 86400000;
+const courte = (e) => !e.endDate || e.endDate <= e.date ||
+  (Date.parse(e.endDate) - Date.parse(e.date)) / DAY_MS < 4;
+function sameShortEvent(x, e) {
+  if ((x.source || "ville-de-nancy") === (e.source || "ville-de-nancy")) return false;   // entre sources seulement
+  if (!x.date || x.date !== e.date || !courte(x) || !courte(e)) return false;
+  const cx = slugKey(x.city), ce = slugKey(e.city);
+  if (cx && ce && cx !== ce) return false;
+  const tx = sigTokens(x.title), te = sigTokens(e.title);
+  const small = tx.size <= te.size ? tx : te, big = tx.size <= te.size ? te : tx;
+  if (small.size !== 1) return false;
+  const [w] = small;
+  return w.length >= 5 && !MOTS_GENERIQUES.has(w) && big.has(w);
 }
 
 // Deux intervalles [date, endDate] se chevauchent-ils ?
@@ -233,7 +262,7 @@ function dedupeCrossSource(events) {
   const clusters = [];
   for (const e of events) {
     const c = clusters.find((cl) =>
-      cl.some((x) => overlap(x, e) && placeCompat(x, e) && titleSimilar(x.title, e.title)));
+      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e))));
     if (c) c.push(e); else clusters.push([e]);
   }
   return clusters
@@ -271,13 +300,77 @@ function fillPeriod(ev, todayISO) {
   return { ...ev, dateText: periodText(start, end) };
 }
 
+
+// ── 5. Étalement des séries courtes ─────────────────────────────────────────
+// Un festival sur trois jours n'est pas une exposition : le visiteur veut savoir
+// ce qu'il peut faire SAMEDI, pas qu'un événement court « du 11 au 13 ». On
+// remplace donc une rencontre de 2 à 4 jours par une fiche par jour. Au-delà,
+// on garde la plage : une saison, un cycle ou une expo se lisent mieux ainsi.
+// Les expositions sont exclues quelle que soit leur durée, elles sont continues
+// par nature.
+const JOURS_ETALES_MAX = 4;
+const CATEGORIES_CONTINUES = new Set(["exposition"]);
+
+function dureeEnJours(ev) {
+  if (!ev.date || !ev.endDate || ev.endDate <= ev.date) return 1;
+  const j = Math.round((Date.parse(ev.endDate) - Date.parse(ev.date)) / 86400000) + 1;
+  return Number.isFinite(j) && j > 0 ? j : 1;
+}
+
+function jourPlusN(iso, n) {
+  const d = new Date(iso + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+function etalerSeriesCourtes(events) {
+  const out = [];
+  for (const ev of events) {
+    const n = dureeEnJours(ev);
+    if (n < 2 || n > JOURS_ETALES_MAX || CATEGORIES_CONTINUES.has(ev.category)) {
+      out.push(ev);
+      continue;
+    }
+    for (let i = 0; i < n; i++) {
+      const jour = jourPlusN(ev.date, i);
+      out.push({
+        ...ev,
+        // Le premier jour garde l'uuid d'origine (favoris et suivi des
+        // nouveautés déjà enregistrés) ; serieUuid relie tous les jours entre
+        // eux, pour qu'ils partagent une seule date de première apparition.
+        uuid: i === 0 ? ev.uuid : `${ev.uuid || ""}-j${i + 1}`,
+        serieUuid: ev.uuid || `${ev.title}|${ev.date}`,
+        date: jour,
+        endDate: jour,
+        dateText: "",          // le libellé de plage n'a plus lieu d'être
+      });
+    }
+  }
+  return out;
+}
+
+// Nettoie le libellé de lieu. Certaines sources (Destination Nancy surtout, via
+// le streetAddress du JSON-LD) ne livrent que le numéro de rue : « 10 », « 126 bis ».
+// Mieux vaut pas de lieu qu'un chiffre seul. On retire aussi un « 54500 Commune »
+// collé en fin d'adresse (la commune est déjà dans ev.city).
+function cleanPlace(raw) {
+  let s = String(raw || "").replace(/\s+/g, " ").trim();
+  if (/^\d+\s*(bis|ter|b)?$/i.test(s)) return "";
+  const sansCP = s.replace(/[\s,]*\b\d{5}\b.*$/, "").trim();
+  if (sansCP && !/^\d+\s*(bis|ter|b)?$/i.test(sansCP)) s = sansCP;
+  return s;
+}
+
 // Applique les nettoyages d'un coup sur un tableau d'événements fusionnés.
 function cleanupMerged(events) {
   const todayISO = new Date().toISOString().slice(0, 10);
-  const normalized = events.map((e) => remapCategory({ ...e, city: cleanCity(e.city) }));
+  const normalized = events.map((e) => remapCategory({ ...e, city: cleanCity(e.city), place: cleanPlace(e.place) }));
   // La période est calculée APRÈS dédoublonnage, sur les date/endDate finales
   // (mergeCluster pouvant élargir l'intervalle en fusionnant plusieurs sources).
-  return dedupeCrossSource(normalized).map((e) => fillPeriod(e, todayISO));
+  // Ordre imposé : on étale AVANT fillPeriod, sinon les fiches issues de
+  // l'étalement récupéreraient un libellé « du ... au ... » qui ne veut plus rien
+  // dire une fois la série découpée en journées.
+  return etalerSeriesCourtes(dedupeCrossSource(normalized)).map((e) => fillPeriod(e, todayISO));
 }
 
-module.exports = { cleanCity, remapCategory, dedupeCrossSource, cleanupMerged, CANON_CAT, CITY_CANON };
+module.exports = { cleanCity, cleanPlace, remapCategory, dedupeCrossSource, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };

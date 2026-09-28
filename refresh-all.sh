@@ -69,9 +69,20 @@ if [ -d "$ICS_DIR" ] && ls "$ICS_DIR"/*.ics >/dev/null 2>&1; then
 else
   log "SKIP  import-ics.js (aucun .ics dans ics-est-republicain/)"
 fi
+# Pages « Pour sortir » enregistrées à la main (Est Républicain), si présentes.
+if [ -d "$ICS_DIR" ] && ls "$ICS_DIR"/*.html >/dev/null 2>&1; then
+  run_step "est-republicain-pages.js"
+else
+  log "SKIP  est-republicain-pages.js (aucune page .html dans ics-est-republicain/)"
+fi
 
 # --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
 run_step "update-events.js"
+
+# Rencontres sportives : récupération puis fabrication de data-sport.js et des
+# affiches. Séparé de la culture, un échec ici ne compromet pas la galerie.
+run_step "sport-scrape.js"
+run_step "update-sport.js"
 
 # --- 4. Publication du site statique LIVE sur CLOUDFLARE (Workers static assets).
 # Remplace l'ancien deploy-site.sh → Netlify (abandonné : Netlify n'est plus

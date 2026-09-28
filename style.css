@@ -330,6 +330,30 @@ body {
   .cal__month { width: 248px; }
 }
 
+/* ---------- Sélections « magiques » (étiquettes IA) ---------- */
+.selections {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center;
+  gap: .5rem; margin: -.6rem auto 1.25rem;
+}
+.selections[hidden] { display: none; }
+.selections__label {
+  font-family: "Fraunces", serif; font-weight: 700; font-size: .95rem; color: var(--ink); margin-right: .2rem;
+}
+.selection {
+  font: inherit; font-weight: 600; font-size: .88rem; cursor: pointer;
+  border: 1px solid #e8d9b8; background: linear-gradient(135deg, #fff8e8, #fdf0d8);
+  color: var(--ink); padding: .45rem .9rem; border-radius: 999px;
+  display: inline-flex; align-items: center; gap: .4rem; white-space: nowrap;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.selection:hover { transform: translateY(-1px); box-shadow: 0 6px 14px -8px rgba(160,110,20,.5); }
+.selection.is-active {
+  background: linear-gradient(135deg, #f59e0b, #d97706); border-color: #d97706; color: #fff;
+  box-shadow: 0 8px 18px -8px rgba(217,119,6,.8);
+}
+.selection .count { font-size: .72rem; opacity: .7; font-variant-numeric: tabular-nums; }
+.selection.is-empty:not(.is-active) { opacity: .45; }
+
 /* ---------- Filters ---------- */
 .filters {
   display: flex;
@@ -535,8 +559,23 @@ body {
   .filters::-webkit-scrollbar { display: none; }
   .filter { flex: 0 0 auto; font-size: .85rem; padding: .45rem .8rem; }
 
+  .selections {
+    flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start;
+    margin: -.4rem -.9rem 1rem; padding: 0 .9rem .4rem; scrollbar-width: none;
+  }
+  .selections::-webkit-scrollbar { display: none; }
+  .selections__label, .selection { flex: 0 0 auto; }
+  .selection { font-size: .83rem; padding: .42rem .78rem; }
+  /* 5 raccourcis + plage : grille 3 colonnes au lieu d'une pilule sur 3 lignes bancales. */
+  #dateFilters.datefilters {
+    display: grid; grid-template-columns: repeat(3, 1fr); width: 100%;
+    gap: .15rem; padding: .28rem; border-radius: 18px;
+  }
   .datefilters { gap: .15rem .3rem; padding: .28rem; }
   .datefilter { font-size: .8rem; padding: .4rem .7rem; }
+  #dateFilters .datefilter { justify-content: center; padding: .45rem .3rem; }
+  #dateFilters .daterange { grid-column: 1 / -1; justify-self: center; }
+  #dateFilters .daterange::before { display: none; }
 
   /* Popover dates : champs confortables au doigt. */
   .dn-pop input[type="date"] { font-size: 1rem; padding: .6rem .7rem; }
@@ -624,6 +663,8 @@ body {
 }
 .poster__date .day { font-family: "Fraunces", serif; font-weight: 900; font-size: 1.2rem; display: block; }
 .poster__date .month { text-transform: uppercase; font-size: .58rem; letter-spacing: .05em; font-weight: 600; }
+/* Jour de la semaine au-dessus du numéro (dates simples uniquement, pas les plages). */
+.poster__date .wd { display: block; font-size: .56rem; letter-spacing: .06em; font-weight: 700; opacity: .92; }
 /* Multi-jours : 3e ligne « → 22 juin » sous un fin séparateur. */
 .poster__dateend {
   display: block; margin-top: .2rem; padding-top: .18rem;
@@ -639,10 +680,20 @@ body {
   color: #fff; font-family: "Fraunces", serif; font-weight: 600; font-size: .95rem; line-height: 1.2;
   display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden;
 }
+/* Commune sous le titre : une ligne, tronquée. */
+.poster__city {
+  display: block; margin-top: .25rem;
+  color: rgba(255,255,255,.88); font-family: "Inter", sans-serif; font-size: .72rem; font-weight: 500; line-height: 1.2;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.poster-wrap .poster__city { padding-right: 2.4rem; }   /* laisse la place au cœur */
+.poster--noimg .poster__fallback .poster__city { color: var(--ink-soft); padding-right: 0; max-width: 100%; }
+/* Affiche générée (affiches-auto.js) : titre et commune sont dessinés dedans. */
+.poster--auto .poster__overlay { display: none; }
 .poster__fallback { display: none; }
 .poster--noimg .poster__overlay { display: none; }
 .poster--noimg .poster__fallback {
-  display: flex; position: absolute; inset: 0;
+  display: flex; flex-direction: column; position: absolute; inset: 0;
   align-items: center; justify-content: center; text-align: center;
   padding: 2.4rem 1rem 1rem;
   color: var(--ink); font-family: "Fraunces", serif; font-weight: 600; font-size: 1.05rem; line-height: 1.25;
@@ -838,6 +889,7 @@ body {
 @media (max-width: 640px) {
   .gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: .7rem; }
   .poster__title { font-size: .85rem; }
+  .poster__city { font-size: .66rem; }
   .lightbox { padding: 0; }
   .lightbox__inner { flex-direction: column; width: 100%; height: 100dvh; max-height: 100dvh; border-radius: 0; }
   .lightbox__media { max-width: 100%; max-height: 48dvh; flex: 0 0 auto; }
@@ -1083,3 +1135,123 @@ body.has-a2hs .wa-fab { bottom: calc(var(--a2hs-h, 76px) + 26px + env(safe-area-
 @media (min-width: 720px) {
   .a2hs-sheet { align-items: center; }
 }
+
+/* ---------- Barre de filtres compacte + panneau (2026-09-16) ---------- */
+.fbar {
+  position: sticky; top: 0; z-index: 60;
+  margin: -1rem -1.25rem 1rem; padding: .6rem 1.25rem;
+  background: rgba(250,247,242,.92);
+  -webkit-backdrop-filter: saturate(1.4) blur(10px); backdrop-filter: saturate(1.4) blur(10px);
+}
+.fbar__row {
+  display: flex; gap: .45rem; justify-content: center; align-items: center;
+  overflow-x: auto; scrollbar-width: none; -webkit-overflow-scrolling: touch;
+}
+.fbar__row::-webkit-scrollbar { display: none; }
+.fpill {
+  flex: 0 0 auto;
+  font: inherit; font-weight: 600; font-size: .88rem; cursor: pointer;
+  display: inline-flex; align-items: center; gap: .4rem;
+  border: 1px solid var(--line); background: var(--card); color: var(--ink);
+  padding: .5rem .9rem; border-radius: 999px; white-space: nowrap;
+  min-height: 40px; transition: border-color .15s, background .15s, color .15s;
+}
+.fpill[hidden] { display: none; }
+.fpill:hover { border-color: var(--accent); }
+.fpill .cal-ico, .fpill .tool-ico { width: 16px; height: 16px; opacity: .85; }
+.fpill .tool-chev { width: 13px; height: 13px; opacity: .5; }
+.fpill.is-active { background: var(--ink); border-color: var(--ink); color: #fff; }
+.fpill.is-active .tool-badge { background: #fff; color: var(--ink); }
+.fpill--fav .heart { width: 17px; height: 17px; fill: var(--accent); stroke: var(--accent); stroke-width: 2; }
+.fpill--fav.is-active { background: var(--accent); border-color: var(--accent); }
+.fpill--fav.is-active .heart { fill: #fff; stroke: #fff; }
+.fpill--fav .count { font-size: .78rem; opacity: .8; font-variant-numeric: tabular-nums; }
+.fpill--reset { border-style: dashed; color: var(--accent); background: transparent; }
+
+.fsheet { position: fixed; inset: 0; z-index: 180; display: flex; align-items: center; justify-content: center; }
+.fsheet[hidden] { display: none; }
+.fsheet__backdrop { position: absolute; inset: 0; background: rgba(20,16,12,.45); animation: fade .18s ease; }
+.fsheet__panel {
+  position: relative; display: flex; flex-direction: column;
+  width: min(560px, calc(100vw - 2rem)); max-height: min(80vh, 680px);
+  background: var(--bg); border-radius: 20px; overflow: hidden;
+  box-shadow: 0 30px 70px -20px rgba(0,0,0,.45);
+  animation: rise .2s ease backwards;
+}
+.fsheet__head { display: flex; align-items: center; gap: .5rem; padding: 1rem 1.1rem .5rem; position: relative; }
+.fsheet__grip { display: none; }
+.fsheet__title { font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.25rem; flex: 1; }
+.fsheet__close {
+  width: 38px; height: 38px; border-radius: 50%; border: 0; cursor: pointer;
+  background: #efe8dd; color: var(--ink); font-size: 1.5rem; line-height: 1;
+}
+.fsheet__body { overflow-y: auto; padding: .5rem 1.1rem 1rem; overscroll-behavior: contain; }
+.fsheet__sec[hidden] { display: none; }
+.fsheet__foot {
+  display: flex; gap: .6rem; align-items: center; justify-content: space-between;
+  padding: .75rem 1.1rem max(.9rem, env(safe-area-inset-bottom));
+  border-top: 1px solid var(--line); background: var(--card);
+}
+.fsheet__clear { font: inherit; font-weight: 600; font-size: .9rem; border: 0; background: transparent; color: var(--accent); cursor: pointer; padding: .6rem .4rem; }
+.fsheet__clear:disabled { color: var(--ink-soft); opacity: .45; cursor: default; }
+.fsheet__go {
+  font: inherit; font-weight: 600; font-size: .95rem; cursor: pointer; border: 0;
+  background: var(--accent); color: #fff; border-radius: 12px; padding: .75rem 1.2rem; flex: 1; max-width: 260px;
+}
+.fsheet__go:hover { background: var(--accent-deep); }
+body.has-sheet { overflow: hidden; }
+
+/* Blocs d'origine rangés dans le panneau : grille lisible, plus de défilement horizontal. */
+.fsheet .filters, .fsheet .selections {
+  display: flex; flex-wrap: wrap; overflow: visible; justify-content: flex-start;
+  gap: .5rem; margin: 0; padding: 0;
+}
+.fsheet .selections__label { display: none; }
+.fsheet .filter, .fsheet .selection { font-size: .9rem; padding: .55rem .9rem; min-height: 42px; }
+.fsheet #dateFilters.datefilters {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: .5rem;
+  width: 100%; margin: 0; padding: 0; background: transparent; border: 0; box-shadow: none; border-radius: 0;
+}
+.fsheet #dateFilters .datefilter {
+  justify-content: center; text-align: center; font-size: .92rem; padding: .7rem .5rem; min-height: 44px;
+  border: 1px solid var(--line); background: var(--card); border-radius: 12px;
+}
+.fsheet #dateFilters .datefilter.is-active { background: var(--ink); border-color: var(--ink); color: #fff; box-shadow: none; }
+.fsheet #dateFilters .daterange { grid-column: 1 / -1; justify-self: stretch; flex-wrap: wrap; justify-content: center; }
+.fsheet #dateFilters .daterange::before { display: none; }
+.fsheet .cal { position: static; width: 100%; max-width: 100%; box-shadow: none; margin-top: .5rem; }
+.fsheet .cal::before { display: none; }
+.fsheet .cal__months { justify-content: center; }
+.adv-sheet .adv-group + .adv-group { margin-top: 1.1rem; }
+.adv-sheet .seg__btn { font-size: .9rem; padding: .55rem .9rem; min-height: 42px; }
+
+@media (max-width: 640px) {
+  /* Hero resserré : les affiches arrivent dès le premier écran. */
+  .hero { padding: 1.1rem 1rem 1rem; }
+  .hero__eyebrow { display: none; }
+  .hero__title { font-size: clamp(1.7rem, 8.4vw, 2.2rem); padding: 0 2.6rem; }
+  .hero__tagline { font-size: .92rem; margin-top: .4rem; }
+  .hero__search { margin-top: .8rem; padding: .6rem .95rem; }
+  .hero__views { flex-wrap: nowrap; margin-top: .7rem; gap: .3rem; }
+  .view-switch { font-size: .8rem; padding: .38rem .7rem; }
+  .nav-account { top: .7rem; right: .7rem; }
+
+  .container { padding-top: 1rem; }
+  .fbar { margin: -1rem -.9rem .75rem; padding: .55rem .9rem; border-bottom: 1px solid transparent; }
+  .fbar__row { justify-content: flex-start; margin: 0 -.9rem; padding: 0 .9rem; }
+  .fpill { font-size: .84rem; padding: .45rem .8rem; }
+  .fpill--fav .fpill__lbl { display: none; }
+  .results-count { margin-bottom: .8rem; font-size: .82rem; }
+
+  /* Panneau = feuille qui monte du bas, au pouce. */
+  .fsheet { align-items: flex-end; }
+  .fsheet__panel {
+    width: 100%; max-height: 86dvh; border-radius: 22px 22px 0 0;
+    animation: sheetUp .24s cubic-bezier(.2,.8,.2,1) backwards;
+  }
+  .fsheet__head { padding-top: 1.3rem; }
+  .fsheet__grip { display: block; position: absolute; top: .5rem; left: 50%; transform: translateX(-50%); width: 40px; height: 4px; border-radius: 4px; background: #d8cfc2; }
+  .fsheet .cal__month { width: 100%; }
+}
+@keyframes sheetUp { from { transform: translateY(100%); } to { transform: none; } }
+.has-sheet .wa-fab { display: none; }
