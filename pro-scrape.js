@@ -50,6 +50,20 @@ function dump(name, body) {
   } catch (_) {}
 }
 
+// Certains sites (la CCI, derrière un pare-feu applicatif) répondent 403 au
+// fetch de Node alors qu'un navigateur passe : l'empreinte TLS de Node est
+// reconnue. Dans ce cas on retente avec curl, dont l'empreinte est différente
+// et généralement acceptée. Toujours présent sur le Mac.
+function curlGet(url) {
+  const { execFileSync } = require("child_process");
+  return execFileSync("curl", [
+    "-sSL", "--compressed", "--max-time", "40", "-A", UA,
+    "-H", "Accept: text/html,application/xhtml+xml,*/*;q=0.8",
+    "-H", "Accept-Language: fr-FR,fr;q=0.9",
+    "--fail", url,
+  ], { encoding: "utf8", maxBuffer: 20 * 1024 * 1024 });
+}
+
 async function get(url, { name = "", tries = 3 } = {}) {
   let lastErr;
   for (let i = 0; i < tries; i++) {
@@ -63,6 +77,11 @@ async function get(url, { name = "", tries = 3 } = {}) {
         redirect: "follow",
       });
       if (r.status === 429 || r.status === 503) throw new Error(`HTTP ${r.status}`);
+      if (r.status === 403) {
+        const body = curlGet(url);            // repli : lève si curl échoue aussi
+        if (name) dump(name, body);
+        return body;
+      }
       if (!r.ok) throw new Error(`HTTP ${r.status} sur ${url}`);
       const body = await r.text();
       if (name) dump(name, body);
@@ -208,7 +227,7 @@ function makeEvent(network, e) {
 
 function parseAudacieux(html) {
   const out = [];
-  const re = /<article class="afterwork_card([^"]*)">([\s\S]*?)<\/article>/g;
+  const re = /<article\s+class="afterwork_card([^"]*)"\s*>([\s\S]*?)<\/article>/g;
   let m;
   while ((m = re.exec(html))) {
     if (/event_past/.test(m[1])) continue;
@@ -317,13 +336,13 @@ async function scrapeAdjan() {
 
 function parseMedefListe(html, base = "https://www.medef-meurthe-moselle.fr") {
   const out = [];
-  const re = /<div class="Grid-item">([\s\S]*?)<\/a>\s*<\/div>/g;
+  const re = /<div\s+class="Grid-item"\s*>([\s\S]*?)<\/a>\s*<\/div>/g;
   let m;
   while ((m = re.exec(html))) {
     const item = m[1];
     const href = attr(item.match(/<a[^>]*class="globalLink"[^>]*>/)?.[0] || "", "href");
     const day = text((item.match(/<time[^>]*>\s*<span>([^<]*)<\/span>/) || [])[1]);
-    const my = text((item.match(/<span class="date">([\s\S]*?)<\/span>/) || [])[1]);   // « oct. 2026 »
+    const my = text((item.match(/<span\s+class="date"\s*>([\s\S]*?)<\/span>/) || [])[1]);   // « oct. 2026 »
     const title = text((item.match(/class="Box-info-title"[^>]*>([\s\S]*?)<\/h3>/) || [])[1]);
     const cover = (item.match(/background-image:\s*url\(['"]?([^'")]+)/) || [])[1] || "";
     const date = parseDateFR(`${day} ${my}`);
@@ -379,7 +398,7 @@ async function scrapeMedef() {
 
 function parseCCI(html, base = "https://www.nancy.cci.fr") {
   const out = [];
-  const rows = html.split(/<div class="views-row">/).slice(1);
+  const rows = html.split(/<div\s+class="views-row"\s*>/).slice(1);
   for (const row of rows) {
     const g = (cls, tag = "div") => text((row.match(new RegExp(`class="${cls}[^"]*"[^>]*>([\\s\\S]*?)<\\/${tag}>`)) || [])[1]);
     const dateTxt = g("band__date");
@@ -418,7 +437,7 @@ async function scrapeCCI() {
   const r = byKey("cci");
   const out = [];
   for (let page = 0; page < 4; page++) {
-    const html = await get(`${r.agenda}?page=${page}`, { name: `cci-${page}.html` });
+    const html = await get(page ? `${r.agenda}?page=${page}` : r.agenda, { name: `cci-${page}.html` });
     const items = parseCCI(html);
     if (!items.length) break;
     out.push(...items);
@@ -441,7 +460,9 @@ const PUBLIC_RE = /studyrama|foire|festival|f[êe]te|paranormal|bien-[êe]tre|di
 function parseProuve(html, base = "https://www.destination-nancy.com") {
   const out = [];
   const seen = new Set();
-  const cards = html.split(/<div class="iris-card\b/).slice(1);
+  // Le HTML brut (celui que reçoit Node) met des retours à la ligne entre
+  // « <div » et « class= » : le DOM nettoyé du navigateur n'en garde pas.
+  const cards = html.split(/<div\s+class="iris-card\b/).slice(1);
   for (const card of cards) {
     const titleM = card.match(/class="iris-card__content__title"[^>]*>\s*<a[^>]*href="([^"]*)"[^>]*>([\s\S]*?)<\/a>/);
     if (!titleM) continue;
@@ -494,10 +515,17 @@ async function downloadLogo(url, base) {
   const existing = fs.existsSync(LOGOS_DIR) ? fs.readdirSync(LOGOS_DIR).find(f => f.replace(/\.[a-z]+$/, "") === base) : null;
   if (existing && !args.includes("--logos")) return path.posix.join("affiches-pro", "logos", existing);
   const r = await fetch(url, { headers: { "User-Agent": UA, "Accept": "image/*,*/*;q=0.8" }, redirect: "follow" });
-  if (!r.ok) throw new Error(`HTTP ${r.status}`);
-  const type = (r.headers.get("content-type") || "").split(";")[0].trim();
+  let buf, type;
+  if (r.status === 403) {
+    const { execFileSync } = require("child_process");
+    buf = execFileSync("curl", ["-sSL", "--max-time", "40", "-A", UA, "--fail", url], { maxBuffer: 20 * 1024 * 1024 });
+    type = "";
+  } else {
+    if (!r.ok) throw new Error(`HTTP ${r.status}`);
+    type = (r.headers.get("content-type") || "").split(";")[0].trim();
+    buf = Buffer.from(await r.arrayBuffer());
+  }
   const ext = EXT_BY_TYPE[type] || (url.match(/\.(png|jpe?g|webp|svg|gif)(\?|$)/i) || [, "png"])[1].toLowerCase().replace("jpeg", "jpg");
-  const buf = Buffer.from(await r.arrayBuffer());
   if (buf.length < 200 || buf.length > 2 * 1024 * 1024) throw new Error(`taille suspecte (${buf.length} o)`);
   fs.mkdirSync(LOGOS_DIR, { recursive: true });
   const file = `${base}.${ext}`;
