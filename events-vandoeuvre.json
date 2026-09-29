@@ -1048,7 +1048,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1096,6 +1096,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/bus-de-lentrepreneuriat/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29487",
+    "title": "Conférence “Pour une Russie démocratique”",
+    "category": "social",
+    "catLabel": "Social",
+    "catEmoji": "🫶",
+    "subcats": [],
+    "date": "2026-09-29",
+    "endDate": "2026-09-29",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Ferme du Charmois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-pour-une-russie-democratique/",
     "source": "vandoeuvre"
   },
   {
@@ -1491,6 +1510,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2022/10/fete-allaitement-maternel.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-lallaitement-maternel/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29492",
+    "title": "Soirée projection débat “Les Aidants”",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [],
+    "date": "2026-10-13",
+    "endDate": "2026-10-13",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "ICL",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/soiree-projection-debat-les-aidants/",
     "source": "vandoeuvre"
   },
   {
@@ -1925,6 +1963,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29497",
+    "title": "Seniors : Sortie au Marché de Noël de Trèves",
+    "category": "seniors",
+    "catLabel": "Seniors",
+    "catEmoji": "👵",
+    "subcats": [],
+    "date": "2026-12-15",
+    "endDate": "2026-12-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/seniors-sortie-au-marche-de-noel-de-treves/",
     "source": "vandoeuvre"
   },
   {

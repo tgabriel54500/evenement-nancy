@@ -1893,5 +1893,10 @@
   "lat": 48.313197,
   "lon": 6.122828,
   "city": "Poussay"
+ },
+ "diarville": {
+  "lat": 48.394724,
+  "lon": 6.132092,
+  "city": "Diarville"
  }
 }

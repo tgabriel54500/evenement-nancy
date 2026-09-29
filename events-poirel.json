@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-ee763720-4dda-11f1-9127-ef09da4c0ad2",
-    "title": "David Kadouch piano & Edgar Moreau violoncelle",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-09-28",
-    "endDate": "2026-09-28",
-    "dateText": "Lundi 28 septembre 2026",
-    "schedule": "de 20h à 22h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee763720-4dda-11f1-9127-ef09da4c0ad2/0/ORIGINE_M_6a02e1f478b71.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=ee763720-4dda-11f1-9127-ef09da4c0ad2",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -29,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-28",
+    "date": "2026-09-29",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",

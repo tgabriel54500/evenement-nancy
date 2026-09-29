@@ -65,6 +65,27 @@
     "source": "ludres"
   },
   {
+    "uuid": "lud-octobre-rose-conference-renaissance-rose",
+    "title": "Octobre Rose : Conférence rose",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Santé"
+    ],
+    "date": "2026-10-07",
+    "endDate": "2026-10-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/09/9-octobre.jpg",
+    "url": "https://www.ludres.com/liste-evenements/octobre-rose-conference-renaissance-rose/",
+    "source": "ludres"
+  },
+  {
     "uuid": "lud-fete-foraine-3",
     "title": "Fête Foraine",
     "category": "activite",
