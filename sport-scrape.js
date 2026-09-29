@@ -15,12 +15,15 @@
  *    (nancy-volley.fr/wp-json/gnvb/v1/all). Quand un club fait ce cadeau, on le
  *    prend : c'est la source la plus fiable qui soit.
  *
- * 2. Pour l'ASNL, le SLUC et le VNVB, aucune source officielle exploitable :
- *    le calendrier de l'ASNL ne liste que les matchs déjà joués, le SLUC
- *    n'expose rien, et les sites de la LNB et de la LNV chargent leurs
- *    calendriers derrière du JavaScript sans URL stable. On passe donc par
- *    les-sports.info, qui publie les calendriers des trois compétitions dans un
+ * 2. Pour l'ASNL et le VNVB, aucune source officielle exploitable :
+ *    le calendrier de l'ASNL ne liste que les matchs déjà joués et le site de
+ *    la LNV charge son calendrier derrière du JavaScript sans URL stable. On
+ *    passe donc par les-sports.info, qui publie ces compétitions dans un
  *    format régulier et lisible, journée par journée.
+ *
+ * 3. Pour le SLUC : la FFBB (calendrier complet, HTML) complétée par l'API de
+ *    la LNB (horaires et reports) ; la coupe d'Europe vient de fiba.basketball.
+ *    Les handballeurs (Nancy/Villers) viennent de ffhandball.fr.
  *
  * Seuls les matchs À DOMICILE sont conservés : l'agenda répond à « que faire
  * dans le Grand Nancy ce week-end ».
@@ -371,6 +374,137 @@ async function scrapeFFBB(club) {
   return out;
 }
 
+// ── Adaptateur LNB (horaires du championnat du SLUC) ────────────────────────
+//
+// Le site lnb.fr rend son calendrier en JavaScript, mais il lit une API
+// publique, api-prod.lnb.fr, avec un jeton anonyme fourni par lnb.fr/api/token
+// (JWT « client: website », valable 15 minutes, aucune inscription). C'est la
+// ligue elle-même : les horaires et les reports y sont à jour avant partout
+// ailleurs, alors que la page FFBB reste sans heure des semaines durant.
+//
+// Relevé le 2026-09-29 dans le code du site (chunk 1k6r_umzs4c7c.js) :
+//   POST match/v3/getCalendar
+//   { competition_abbrev, division_external_id: 0, year (année de début de
+//     saison), team_external_id, round_number: 0, phase_id: 0, limit }
+//   → data: [{ date, data: [ { match_date, match_time_utc, match_status,
+//     round_number, display_round, teams: [domicile, extérieur] } ] }]
+// Sans `limit`, l'API tronque à 22 rencontres : on demande 100.
+// L'équipe 0 est celle qui reçoit (vérifié J1 2026-27 : « Nancy - Paris »,
+// que la FFBB donne « vs Paris Basketball »).
+//
+// La FFBB reste la source de base (elle donne aussi la présaison, le nom
+// complet des adversaires) : la LNB vient COMPLÉTER date et heure, journée par
+// journée (fusionSluc). Si l'une des deux tombe, l'autre suffit.
+
+const LNB = {
+  sluc: {
+    abbrev: "PROA",             // Betclic ÉLITE
+    teamExternalId: 1868,       // « Nancy » dans competition/getCompetitionTeams
+    url: "https://lnb.fr/fr/calendar?did=1&abbrev=PROA",
+  },
+};
+const LNB_TOKEN_URL = "https://lnb.fr/api/token";
+const LNB_API = "https://api-prod.lnb.fr/";
+
+// 2026-27 se demande avec year=2026 : la saison change en juillet.
+function saisonLNB(d = new Date()) {
+  return d.getMonth() >= 6 ? d.getFullYear() : d.getFullYear() - 1;
+}
+
+// « 2026-10-03T16:00:00.000Z » → { date: "2026-10-03", time: "18h00" } (Paris).
+function heureParis(iso) {
+  const d = new Date(iso);
+  if (!iso || isNaN(d)) return { date: "", time: "" };
+  const parts = new Intl.DateTimeFormat("fr-FR", {
+    timeZone: "Europe/Paris", hourCycle: "h23",
+    year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit",
+  }).formatToParts(d);
+  const g = (t) => (parts.find(p => p.type === t) || {}).value || "";
+  return { date: `${g("year")}-${g("month")}-${g("day")}`, time: `${g("hour")}h${g("minute")}` };
+}
+
+async function lnbToken() {
+  const r = await fetch(LNB_TOKEN_URL, {
+    headers: { "User-Agent": UA, "Accept": "application/json", "Referer": "https://lnb.fr/fr/calendar" },
+  });
+  if (!r.ok) throw new Error(`HTTP ${r.status} sur ${LNB_TOKEN_URL}`);
+  const j = await r.json();
+  if (!j || !j.token) throw new Error("jeton LNB absent de la réponse");
+  return j.token;
+}
+
+async function lnbCalendar(cfg, year, token) {
+  const body = {
+    competition_abbrev: cfg.abbrev, division_external_id: 0, year,
+    team_external_id: cfg.teamExternalId, round_number: 0, phase_id: 0, limit: 100,
+  };
+  const r = await fetch(LNB_API + "match/v3/getCalendar", {
+    method: "POST",
+    headers: {
+      "User-Agent": UA, "Accept": "application/json", "Content-Type": "application/json",
+      "Authorization": "Bearer " + token, "language_code": "fr",
+      "Origin": "https://lnb.fr", "Referer": "https://lnb.fr/",
+    },
+    body: JSON.stringify(body),
+  });
+  const txt = await r.text();
+  dump(`lnb-${cfg.abbrev}-${year}.json`, txt);
+  if (!r.ok) throw new Error(`HTTP ${r.status} sur getCalendar`);
+  const j = JSON.parse(txt);
+  if (!j || j.status !== true || !Array.isArray(j.data)) throw new Error("réponse getCalendar inattendue : " + txt.slice(0, 120));
+  return j.data;
+}
+
+// Rencontres à domicile d'après la réponse getCalendar (pure, testable).
+function lnbHomeMatches(club, days, cfg) {
+  const out = [];
+  for (const day of days || []) {
+    for (const g of (day && day.data) || []) {
+      const teams = Array.isArray(g.teams) ? g.teams : [];
+      if (!teams[0] || Number(teams[0].external_id) !== Number(cfg.teamExternalId)) continue;
+      const journee = Number(g.round_number) || 0;
+      if (!journee) continue;
+      const { date, time } = heureParis(g.match_time_utc);
+      out.push(makeMatch(club, {
+        id: `j${journee}`,
+        date: date || String(g.match_date || ""),
+        time,
+        opponent: (teams[1] && teams[1].team_name) || "Adversaire à déterminer",
+        competition: club.league,
+        round: `${journee}${journee === 1 ? "re" : "e"} journée`,
+        salle: club.venue,
+        url: cfg.url || club.calendar,
+        source: "lnb.fr",
+      }));
+    }
+  }
+  return out;
+}
+
+async function scrapeLNB(club) {
+  const cfg = LNB[club.key];
+  if (!cfg) return [];
+  const token = await lnbToken();
+  const days = await lnbCalendar(cfg, saisonLNB(), token);
+  return lnbHomeMatches(club, days, cfg);
+}
+
+// Fusion FFBB + LNB par journée (même id « sluc-jN ») : la ligne FFBB sert de
+// base (nom complet de l'adversaire), la LNB impose date et heure (reports,
+// horaires). Une journée connue d'une seule source est gardée telle quelle.
+function fusionSluc(ffbb, lnb) {
+  const parId = new Map();
+  for (const m of ffbb) parId.set(m.id, Object.assign({}, m));
+  for (const l of lnb) {
+    const base = parId.get(l.id);
+    if (!base) { parId.set(l.id, l); continue; }
+    base.date = l.date || base.date;
+    base.time = l.time || base.time;
+    base.source = base.source === l.source ? base.source : `${base.source} + ${l.source}`;
+  }
+  return [...parId.values()];
+}
+
 // ── Adaptateur FIBA (coupe d'Europe du SLUC) ────────────────────────────────
 //
 // Le site officiel fiba.basketball est une application Next.js : la page
@@ -540,7 +674,10 @@ async function scrapeFFH(club, cache) {
   return out;
 }
 
-module.exports = { parseFibaGames, fibaHomeMatches, ffhComponent, ffhRencontres, ffhJournees, ffhWhen };
+module.exports = {
+  parseFibaGames, fibaHomeMatches, ffhComponent, ffhRencontres, ffhJournees, ffhWhen,
+  lnbHomeMatches, fusionSluc, heureParis, saisonLNB,
+};
 
 // ── Orchestration ───────────────────────────────────────────────────────────
 
@@ -564,17 +701,38 @@ if (require.main === module) (async () => {
 
   if (wanted("sluc")) {
     const club = byKey("sluc");
+    // Championnat : FFBB (calendrier) + LNB (horaires), fusionnés par journée.
+    // Chaque source échoue indépendamment ; si les deux tombent, les
+    // rencontres de championnat déjà connues (id « sluc-jN ») sont reprises.
+    report.sluc = { source: "ffbb.com + lnb.fr", matchs: 0 };
+    let ffbb = [], lnb = [];
     try {
-      const rows = await scrapeFFBB(club);
-      all.push(...rows);
-      report.sluc = { source: "ffbb.com", matchs: rows.length };
-      const sansHeure = rows.filter(r => !r.time).length;
-      log(`sluc : ${rows.length} match(s) à domicile` +
-          (sansHeure ? ` (dont ${sansHeure} sans horaire annoncé)` : ""));
+      ffbb = await scrapeFFBB(club);
+      log(`sluc (FFBB) : ${ffbb.length} match(s) à domicile`);
     } catch (e) {
-      report.sluc = { source: "ffbb.com", matchs: 0, erreur: e.message };
-      log(`sluc : ÉCHEC — ${e.message}`);
+      report.sluc.erreurFFBB = e.message;
+      log(`sluc (FFBB) : ÉCHEC — ${e.message}`);
     }
+    try {
+      lnb = await scrapeLNB(club);
+      log(`sluc (LNB) : ${lnb.length} match(s) à domicile, ${lnb.filter(r => r.time).length} avec horaire`);
+    } catch (e) {
+      report.sluc.erreurLNB = e.message;
+      log(`sluc (LNB) : ÉCHEC — ${e.message}`);
+    }
+    let rows = fusionSluc(ffbb, lnb);
+    if (!rows.length) {
+      try {
+        rows = JSON.parse(fs.readFileSync(OUT, "utf8")).filter(m => m.club === "sluc" && /^sluc-j\d+$/.test(m.id));
+        report.sluc.reprises = rows.length;
+        log(`sluc : ${rows.length} rencontre(s) de championnat reprise(s) de la version précédente`);
+      } catch (_) {}
+    }
+    all.push(...rows);
+    report.sluc.matchs = rows.length;
+    const sansHeure = rows.filter(r => !r.time).length;
+    log(`sluc : ${rows.length} match(s) à domicile` +
+        (sansHeure ? ` (dont ${sansHeure} sans horaire annoncé)` : ""));
     // Coupe d'Europe (FIBA Europe Cup) : source distincte, échec indépendant.
     // En cas de panne, les rencontres européennes déjà connues sont reprises
     // du fichier précédent (elles sont reconnaissables à leur id « fec- »).

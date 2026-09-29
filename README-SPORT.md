@@ -37,7 +37,7 @@ sports jouent le rôle des catégories, les affiches celui des visuels.
 | Club | Source | Pourquoi celle-là |
 |---|---|---|
 | GNVB | `nancy-volley.fr/wp-json/gnvb/v1/all` | Le club publie lui-même un JSON complet et propre. Quand un club fait ce cadeau, on le prend. |
-| SLUC | `coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy` | La fédération publie le calendrier complet du club en HTML rendu côté serveur, avec le numéro de journée et un marqueur `vs` (domicile) ou `@` (extérieur). Les horaires y sont ajoutés au fil de la saison. |
+| SLUC | `coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy` + API `api-prod.lnb.fr` | La fédération publie le calendrier complet du club en HTML rendu côté serveur, avec le numéro de journée et un marqueur `vs` (domicile) ou `@` (extérieur), mais sans horaire pendant des semaines. La ligue, elle, expose une API publique (jeton anonyme `lnb.fr/api/token`, puis `POST match/v3/getCalendar`, voir le commentaire dans sport-scrape.js) : elle complète date et heure journée par journée (`fusionSluc`). Chaque source tombe sans faire tomber l'autre. |
 | ASNL, VNVB | `les-sports.info` | Aucune source officielle exploitable (voir ci-dessous). Ce site publie ces compétitions dans un format régulier, journée par journée. |
 
 Ce qui a été essayé et écarté, pour ne pas refaire le tour deux fois :
@@ -49,7 +49,8 @@ Ce qui a été essayé et écarté, pour ne pas refaire le tour deux fois :
 - **les-sports.info pour le basket** : la page Betclic ÉLITE 2026/2027 existe mais
   ne listait aucune journée au 6 septembre. La FFBB, elle, avait déjà tout.
 - **Sofascore** : 403 sur les quatre jeux d'en-têtes et les trois domaines testés.
-- **lnb.fr**, **lnv.fr** : calendriers chargés en JavaScript, sans URL stable.
+- **lnv.fr** : calendrier chargé en JavaScript, sans URL stable. (**lnb.fr** l'est
+  aussi, mais son API est accessible : voir l'adaptateur LNB ci-dessus.)
 - **lnv.fr/xml/calendrier-vandoeuvre-nancy.xml** : 403, flux abandonné.
 
 Comment marche l'adaptateur les-sports.info : la page « résultats détaillés » de
