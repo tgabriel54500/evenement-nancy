@@ -104,7 +104,7 @@ const CLUBS = [
     league: "Nationale 2 masculine",
     venue: "Gymnase Provençal",
     city: "Nancy",
-    colors: ["#c2410c", "#fed7aa"],
+    colors: ["#141414", "#fdd835"],
     site: "https://villers-handball.com/",
     tickets: "",
     calendar: "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
