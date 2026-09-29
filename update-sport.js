@@ -102,6 +102,14 @@ function motifSport(sport, accent) {
       t("M330 1200 V1178 H470 V1200"),
     ].join("\n  ");
   }
+  if (sport === "hand") {
+    // Le but, la zone des 6 m (deux quarts de cercle) et la ligne des 9 m.
+    return [
+      t("M330 1200 V1120 H470 V1200", 8),
+      t("M180 1200 V1120 a150 150 0 0 1 150 -150 H470 a150 150 0 0 1 150 150 V1200"),
+      t("M90 1200 V1120 a240 240 0 0 1 240 -240 H470 a240 240 0 0 1 240 240 V1200", 4),
+    ].join("\n  ");
+  }
   // Volley : le filet et ses deux antennes.
   const maille = [];
   for (let x = 60; x <= 740; x += 56) maille.push(`M${x} 520 V760`);

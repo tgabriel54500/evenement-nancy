@@ -457,7 +457,90 @@ async function scrapeFIBA(club) {
   return fibaHomeMatches(club, games, cfg);
 }
 
-module.exports = { parseFibaGames, fibaHomeMatches };
+// ── Adaptateur FFHandball (Entente Nancy / Villers, Villers féminines) ──────
+//
+// Les pages de poule de ffhandball.fr sont composées de « web components »
+// <smartfire-component name='…' attributes="{json}"> dont les données sont
+// dans l'attribut (entités HTML). La page d'une journée
+// (…/poule-<id>/journee-<n>/) porte le composant competitions---rencontre-list
+// avec les rencontres de la journée : date locale avec décalage, équipes,
+// identifiant de salle. La salle elle-même (nom, commune) est sur la page de la
+// rencontre (composant competitions---rencontre-salle) : lue une fois par
+// identifiant et mise en cache (.cache-lsi.json, clé ffhSalles).
+// Le nombre de journées vient du composant journee-selector de la poule.
+
+const FFH = "https://www.ffhandball.fr/competitions/";
+
+function ffhComponent(html, name) {
+  const m = html.match(new RegExp("<smartfire-component name='" + name + "'[^>]*attributes=\"([^\"]*)\""));
+  if (!m) return null;
+  try { return JSON.parse(decodeEntities(m[1])); } catch (_) { return null; }
+}
+function ffhRencontres(html) {
+  const rl = ffhComponent(html, "competitions---rencontre-list");
+  if (!rl || !rl.rencontres) return [];
+  const rs = typeof rl.rencontres === "string" ? JSON.parse(rl.rencontres) : rl.rencontres;
+  return Array.isArray(rs) ? rs : [];
+}
+function ffhJournees(html) {
+  const js = ffhComponent(html, "competitions---journee-selector") || ffhComponent(html, "competitions---rencontre-list");
+  const p = js && js.poule;
+  if (!p || !p.journees) return [];
+  const list = typeof p.journees === "string" ? JSON.parse(p.journees) : p.journees;
+  return Array.isArray(list) ? list.map(j => Number(j.journee_numero)).filter(Boolean) : [];
+}
+// « 2026-10-03T21:00:00+02:00 » → date locale et heure locale (l'offset est
+// celui de la salle, pas besoin de convertir).
+function ffhWhen(v) {
+  const m = String(v || "").match(/^(\d{4}-\d{2}-\d{2})[T ](\d{2}):(\d{2})/);
+  if (!m) return { date: "", time: "" };
+  return { date: m[1], time: m[2] + "h" + m[3] };
+}
+
+async function scrapeFFH(club, cache) {
+  const cfg = club.ffh;
+  const base = `${FFH}saison-2026-2027-${cfg.saison}/national/${cfg.competition}/poule-${cfg.poule}/`;
+  const first = await get(base, { name: `ffh-${club.key}.html` });
+  const journees = ffhJournees(first);
+  if (!journees.length) throw new Error("aucune journée lue dans la page de poule (maquette changée ?)");
+  cache.ffhSalles = cache.ffhSalles || {};
+  const out = [];
+  for (const j of journees) {
+    let html;
+    try { html = await get(`${base}journee-${j}/`, { name: `ffh-${club.key}-j${j}.html` }); }
+    catch (e) { log(`${club.key} : journée ${j} injoignable (${e.message})`); continue; }
+    for (const r of ffhRencontres(html)) {
+      const home = decodeEntities(r.equipe1Libelle || ""), away = decodeEntities(r.equipe2Libelle || "");
+      if (!isClub(club, home)) continue;
+      const { date, time } = ffhWhen(r.date);
+      if (!date) continue;
+      // Salle : cache par identifiant, sinon page de la rencontre, sinon salle du club.
+      let salle = cache.ffhSalles[r.equipementId];
+      if (!salle && r.equipementId && r.ext_rencontreId) {
+        try {
+          const rh = await get(`${base}rencontre-${r.ext_rencontreId}/`);
+          const eq = (ffhComponent(rh, "competitions---rencontre-salle") || {}).equipement;
+          if (eq && eq.libelle) salle = cache.ffhSalles[r.equipementId] = `${eq.libelle} ${eq.ville || ""}`.trim();
+        } catch (_) {}
+        await sleep(300);
+      }
+      out.push(makeMatch(club, {
+        id: `ffh-${r.ext_rencontreId || r.id}`,
+        date, time,
+        opponent: away.replace(/\s+\(N\d\)$/i, ""),
+        competition: club.league,
+        round: `${j}${j === 1 ? "re" : "e"} journée`,
+        salle: salle || club.venue,
+        url: base,
+        source: "ffhandball.fr",
+      }));
+    }
+    await sleep(300);
+  }
+  return out;
+}
+
+module.exports = { parseFibaGames, fibaHomeMatches, ffhComponent, ffhRencontres, ffhJournees, ffhWhen };
 
 // ── Orchestration ───────────────────────────────────────────────────────────
 
@@ -512,6 +595,21 @@ if (require.main === module) (async () => {
   }
 
   const enEchec = [];
+  // Handball (FFHandball) : un club par équipe suivie (voir sport-clubs.js).
+  for (const club of CLUBS) {
+    if (!club.ffh || !wanted(club.key)) continue;
+    try {
+      const rows = await scrapeFFH(club, cache);
+      all.push(...rows);
+      report[club.key] = { source: "ffhandball.fr", matchs: rows.length };
+      log(`${club.key} : ${rows.length} match(s) à domicile`);
+    } catch (e) {
+      report[club.key] = { source: "ffhandball.fr", matchs: 0, erreur: e.message };
+      enEchec.push(club.key);
+      log(`${club.key} : ÉCHEC — ${e.message}`);
+    }
+  }
+
   for (const club of CLUBS) {
     if (!COMPETITIONS[club.key] || !wanted(club.key)) continue;
     try {

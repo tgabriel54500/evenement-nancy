@@ -30,11 +30,15 @@ const SPORTS = {
   foot:    { label: "Football",  emoji: "⚽" },
   basket:  { label: "Basket",    emoji: "🏀" },
   volley:  { label: "Volley",    emoji: "🏐" },
+  hand:    { label: "Handball",  emoji: "🤾" },
 };
 
-// Nancy Handball (ex-GNMHB) n'est PAS dans cette liste : le club a perdu son
-// statut professionnel, la LNH répond « équipe non présente en LNH cette saison ».
-// À réintégrer (avec le sport "hand") s'il remonte en ProLigue.
+// Handball : depuis 2026-27, Nancy Métropole Handball, Villers Handball et
+// Neuves-Maisons forment l'Entente Élite 54. L'équipe masculine fanion joue en
+// Nationale 2 sous le nom « ENT. NANCY / VILLERS » (Gymnase Provençal, Nancy),
+// l'équipe féminine de Villers en Nationale 2 (salle Marie Marvingt, Villers).
+// L'équipe réserve masculine (N3, même nom) n'est pas suivie. Source : site de
+// la FFHandball (champ `ffh`, lu par scrapeFFH dans sport-scrape.js).
 const CLUBS = [
   {
     key: "asnl",
@@ -92,6 +96,36 @@ const CLUBS = [
     calendar: "https://www.nancy-volley.fr/calendrier/",
     aliases: ["grand nancy", "gnvb", "grand nancy volley"],
   },
+  {
+    key: "nancy-villers",
+    name: "Entente Nancy / Villers Handball",
+    short: "NANCY / VILLERS",
+    sport: "hand",
+    league: "Nationale 2 masculine",
+    venue: "Gymnase Provençal",
+    city: "Nancy",
+    colors: ["#c2410c", "#fed7aa"],
+    site: "https://villers-handball.com/",
+    tickets: "",
+    calendar: "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    aliases: ["ent. nancy / villers", "ent nancy villers", "nancy / villers", "nancy villers"],
+    ffh: { competition: "nationale-2-masculine-2026-2027-32501", poule: "190844", saison: "22" },
+  },
+  {
+    key: "villers-f",
+    name: "Villers Handball (féminines)",
+    short: "VILLERS HB",
+    sport: "hand",
+    league: "Nationale 2 féminine",
+    venue: "Salle Marie Marvingt",
+    city: "Villers-lès-Nancy",
+    colors: ["#6d28d9", "#ddd6fe"],
+    site: "https://villers-handball.com/",
+    tickets: "",
+    calendar: "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    aliases: ["villers handball", "villers hb"],
+    ffh: { competition: "nationale-2-feminine-2026-2027-32609", poule: "191246", saison: "22" },
+  },
 ];
 
 // Salles telles qu'elles sortent des sources → lieu + commune affichés.
@@ -102,6 +136,8 @@ const VENUES = {
   "gentilly":           { place: "Palais des Sports Jean Weille", city: "Nancy" },
   "marcel picot":       { place: "Stade Marcel-Picot", city: "Tomblaine" },
   "marcel-picot":       { place: "Stade Marcel-Picot", city: "Tomblaine" },
+  "provencal":          { place: "Gymnase Provençal", city: "Nancy" },
+  "marvingt":           { place: "Salle Marie Marvingt", city: "Villers-lès-Nancy" },
 };
 
 const byKey = (k) => CLUBS.find(c => c.key === k);
