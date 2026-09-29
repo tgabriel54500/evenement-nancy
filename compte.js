@@ -51,6 +51,7 @@
     // affiche le titre sur un fond uni (comme sur l'onglet Pro).
     $("image-req").hidden = pro;
     $("image-hint").textContent = pro ? ", facultatif" : "";
+    if (typeof renderApercu === "function") renderApercu();
   }
   $("ev-kind").addEventListener("change", applyKind);
   applyKind();
@@ -129,6 +130,8 @@
     imageFile = e.target.files[0] || null;
     if (imageFile) { $("ev-preview").src = URL.createObjectURL(imageFile); show($("ev-preview"), true); }
     else show($("ev-preview"), false);
+    apercuImageURL = imageFile ? $("ev-preview").src : "";
+    renderApercu();
   });
 
   // ---- Autocomplétion d'adresse (Base Adresse Nationale, gratuite, sans clé) ----
@@ -340,6 +343,81 @@
 
   $("ev-cancel").addEventListener("click", resetForm);
 
+  // ---- Aperçu de l'annonce ----
+  // Reproduit la vignette de la galerie (mêmes classes que galerie.js, style.css)
+  // et sa fiche, à partir des champs du formulaire, à chaque saisie. L'organisateur
+  // voit ce qu'il publie avant de cliquer.
+  const APERCU_DAYS = ["dim.", "lun.", "mar.", "mer.", "jeu.", "ven.", "sam."];
+  const APERCU_MONTHS = ["janv.", "févr.", "mars", "avr.", "mai", "juin", "juil.", "août", "sept.", "oct.", "nov.", "déc."];
+  const APERCU_MONTHS_LONG = ["janvier", "février", "mars", "avril", "mai", "juin", "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+  const dParts = (iso) => { const d = new Date(iso + "T12:00:00"); return isNaN(d) ? null : { wd: APERCU_DAYS[d.getDay()], day: d.getDate(), month: APERCU_MONTHS[d.getMonth()], long: `${d.getDate()} ${APERCU_MONTHS_LONG[d.getMonth()]} ${d.getFullYear()}` }; };
+  var apercuImageURL = "";   // (var : lu par applyKind() avant cette ligne) image choisie (URL d'objet) ou image existante en édition
+
+  function renderApercu() {
+    const tile = $("apercu-tile"), fiche = $("apercu-fiche");
+    if (!tile || !fiche) return;
+    const pro = isPro();
+    const title = $("ev-title").value.trim();
+    const date = $("ev-date").value, end = $("ev-end").value;
+    const dp = date ? dParts(date) : null, ep = end && end > date ? dParts(end) : null;
+    const cat = (CATS[kind()] || {})[$("ev-category").value] || { emoji: "📌", label: "Catégorie" };
+    const city = $("ev-city").value.trim(), place = $("ev-place").value.trim();
+    const t2fr = (t) => (t ? t.replace(":", "h") : "");
+    const horaire = t2fr($("ev-time-start").value) + ($("ev-time-end").value ? "–" + t2fr($("ev-time-end").value) : "");
+    const desc = $("ev-desc").value.trim();
+    const url = $("ev-url").value.trim();
+    const organizer = pro ? $("ev-organizer").value.trim() : "";
+    const members = pro && $("ev-members").checked;
+    const img = apercuImageURL;
+
+    if (!title && !date) {
+      tile.innerHTML = "";
+      fiche.innerHTML = '<p class="apercu__empty">Remplissez le titre et la date : l\'aperçu se met à jour au fur et à mesure.</p>';
+      return;
+    }
+    const dateHTML = dp
+      ? (ep
+        ? `<span class="poster__date poster__date--range"><span class="day">${dp.day}</span><span class="month">${escapeHtml(dp.month)}</span><span class="poster__dateend">→ ${ep.day} ${escapeHtml(ep.month)}</span></span>`
+        : `<span class="poster__date"><span class="wd">${escapeHtml(dp.wd)}</span><span class="day">${dp.day}</span><span class="month">${escapeHtml(dp.month)}</span></span>`)
+      : "";
+    const cityHTML = city ? `<span class="poster__city">📍 ${escapeHtml(city)}</span>` : "";
+    tile.innerHTML = `
+      <div class="poster ${img ? "" : "poster--noimg"}" aria-hidden="true">
+        ${img ? `<img class="poster__img" src="${escapeHtml(img)}" alt="">` : ""}
+        <span class="poster__cat">${cat.emoji} ${escapeHtml(cat.label)}</span>
+        ${dateHTML}
+        ${members ? '<span class="poster__members">🔒 Membres</span>' : ""}
+        <span class="poster__fallback">${escapeHtml(title || "Titre de l'événement")}${cityHTML}</span>
+        <span class="poster__overlay"><span class="poster__title">${escapeHtml(title || "Titre de l'événement")}</span>${cityHTML}</span>
+      </div>`;
+
+    const badges =
+      ($("ev-free").checked ? '<span class="badge badge--free">Gratuit</span>' : "") +
+      ($("ev-resa").checked ? `<span class="badge">🎟️ ${pro ? "Sur inscription" : "Réservation"}</span>` : "") +
+      (members ? '<span class="badge badge--members">🔒 Réservé aux membres</span>' : "");
+    const quand = dp ? (ep ? `Du ${dp.long} au ${ep.long}` : dp.long) + (horaire ? ` · ${horaire}` : "") : "Date à renseigner";
+    const lieu = [place, city].filter(Boolean).join(" — ");
+    fiche.innerHTML = `
+      <div class="apercu__cat">${cat.emoji} ${escapeHtml(cat.label)}</div>
+      <h4>${escapeHtml(title || "Titre de l'événement")}</h4>
+      ${badges ? `<div class="apercu__badges">${badges}</div>` : ""}
+      <ul class="apercu__meta">
+        <li>🕒 ${escapeHtml(quand)}</li>
+        ${lieu ? `<li>📍 ${escapeHtml(lieu)}</li>` : ""}
+        ${organizer ? `<li>👥 Organisé par ${escapeHtml(organizer)}</li>` : ""}
+      </ul>
+      ${desc ? `<p class="apercu__desc">${escapeHtml(desc)}</p>` : ""}
+      ${url ? '<span class="apercu__cta">Plus d\'infos →</span>' : ""}`;
+  }
+  ["ev-kind", "ev-title", "ev-category", "ev-date", "ev-end", "ev-time-start", "ev-time-end", "ev-place", "ev-city",
+   "ev-desc", "ev-url", "ev-free", "ev-resa", "ev-organizer", "ev-members"].forEach((id) => {
+    const el = $(id);
+    if (!el) return;
+    el.addEventListener("input", renderApercu);
+    el.addEventListener("change", renderApercu);
+  });
+  renderApercu();
+
   function resetForm() {
     $("event-form").reset();
     $("ev-id").value = ""; imageFile = null;
@@ -347,6 +425,8 @@
     $("ev-submit").textContent = "Publier";
     show($("ev-cancel"), false);
     applyKind();
+    apercuImageURL = "";
+    renderApercu();
   }
 
   // ---- Mes événements ----
@@ -420,6 +500,8 @@
     $("ev-free").checked = !!r.free;
     $("ev-resa").checked = !!r.reservation;
     if (r.image) { $("ev-preview").src = r.image; show($("ev-preview"), true); } else show($("ev-preview"), false);
+    apercuImageURL = r.image || "";
+    renderApercu();
     imageFile = null;
     $("ev-submit").textContent = "Enregistrer (re-vérification)";
     show($("ev-cancel"), true);

@@ -145,3 +145,21 @@ label.inline input { width: auto; margin: 0; }
 }
 
 @media (max-width: 560px) { .row { grid-template-columns: 1fr; } }
+
+/* ---------- Aperçu de l'annonce (formulaire de publication) ---------- */
+.apercu { margin: 1.4rem 0 1.2rem; padding: 1rem 1.1rem 1.2rem; border-radius: 14px; background: #f7f3ec; border: 1px dashed rgba(28,26,23,.18); }
+.apercu__title { margin: 0 0 .2rem; font-family: "Fraunces", serif; font-weight: 600; font-size: 1.1rem; }
+.apercu__hint { margin: 0 0 .9rem; font-size: .85rem; color: var(--ink-soft); }
+.apercu__body { display: grid; grid-template-columns: 200px 1fr; gap: 1.1rem; align-items: start; }
+.apercu__tile .poster { width: 200px; aspect-ratio: 2 / 3; cursor: default; animation: none; }
+.apercu__tile .poster__title { font-size: .9rem; }
+.apercu__fiche { min-width: 0; }
+.apercu__cat { font-size: .78rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; }
+.apercu__fiche h4 { margin: .15rem 0 .5rem; font-family: "Fraunces", serif; font-weight: 600; font-size: 1.25rem; line-height: 1.2; }
+.apercu__badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .6rem; }
+.apercu__meta { margin: 0 0 .6rem; padding: 0; list-style: none; font-size: .9rem; color: var(--ink); }
+.apercu__meta li { margin: .15rem 0; }
+.apercu__desc { margin: 0 0 .6rem; font-size: .9rem; line-height: 1.45; color: var(--ink-soft); white-space: pre-line; }
+.apercu__cta { display: inline-block; font-size: .85rem; font-weight: 600; color: #fff; background: var(--accent); padding: .4rem .8rem; border-radius: 999px; pointer-events: none; }
+.apercu__empty { font-size: .9rem; color: var(--ink-soft); font-style: italic; }
+@media (max-width: 560px) { .apercu__body { grid-template-columns: 1fr; } .apercu__tile .poster { width: 180px; } }

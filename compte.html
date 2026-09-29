@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=nav3">
-  <link rel="stylesheet" href="compte.css?v=4">
+  <link rel="stylesheet" href="compte.css?v=5">
 </head>
 <body data-view="compte">
   <header class="hero hero--compact">
@@ -143,6 +143,17 @@
           </label>
           <img id="ev-preview" class="preview" hidden alt="">
 
+          <!-- Aperçu de l'annonce telle qu'elle apparaîtra dans la galerie
+               (vignette) et dans sa fiche. Mis à jour à chaque saisie. -->
+          <section class="apercu" id="apercu" aria-live="polite">
+            <h3 class="apercu__title">Aperçu de votre annonce</h3>
+            <p class="apercu__hint">C'est ainsi qu'elle apparaîtra sur l'agenda. Vérifiez avant de publier.</p>
+            <div class="apercu__body">
+              <div class="apercu__tile" id="apercu-tile"></div>
+              <div class="apercu__fiche" id="apercu-fiche"></div>
+            </div>
+          </section>
+
           <button type="submit" class="btn-primary" id="ev-submit">Publier</button>
           <button type="button" class="btn-ghost" id="ev-cancel" hidden>Annuler l'édition</button>
           <p id="ev-msg" class="msg" hidden></p>
@@ -165,7 +176,7 @@
   <script src="data.js"></script>
   <script src="pro-categories.js"></script>
   <script src="pro-gate.js"></script>
-  <script src="compte.js?v=7"></script>
+  <script src="compte.js?v=8"></script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
