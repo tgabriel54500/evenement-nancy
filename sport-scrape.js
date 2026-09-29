@@ -371,9 +371,97 @@ async function scrapeFFBB(club) {
   return out;
 }
 
+// ── Adaptateur FIBA (coupe d'Europe du SLUC) ────────────────────────────────
+//
+// Le site officiel fiba.basketball est une application Next.js : la page
+// « Games » de la compétition embarque TOUTES les rencontres de la saison en
+// JSON dans ses balises <script> (self.__next_f.push). On lit ce JSON, on
+// garde les matchs où le SLUC est l'équipe A (= à domicile). Les tours suivants
+// (Second Round, Play-Offs) apparaissent dans la même page quand ils sont
+// tirés : relue chaque nuit, la source suit donc l'évolution de la compétition.
+// Un adversaire encore inconnu (équipe B nulle) donne « adversaire à
+// déterminer » ; l'horaire manquant (hasTimeGameDateTime=false) reste vide.
+
+const FIBA = {
+  sluc: {
+    page: "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    competition: "FIBA Europe Cup",
+    codes: ["SLUC"],                       // teamA.code
+    url: "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+  },
+};
+
+// Extrait les objets { "gameId": … } du HTML brut (chaînes JS échappées).
+function parseFibaGames(html) {
+  const games = [];
+  const re = /self\.__next_f\.push\(\[1,"((?:[^"\\]|\\.)*)"\]\)/g;
+  let m;
+  while ((m = re.exec(html))) {
+    let s;
+    try { s = JSON.parse('"' + m[1] + '"'); } catch (_) { continue; }
+    let idx = 0;
+    while ((idx = s.indexOf('{"gameId":', idx)) >= 0) {
+      let depth = 0, j = idx, inStr = false, esc = false;
+      for (; j < s.length; j++) {
+        const c = s[j];
+        if (inStr) { if (esc) esc = false; else if (c === "\\") esc = true; else if (c === '"') inStr = false; }
+        else if (c === '"') inStr = true;
+        else if (c === "{") depth++;
+        else if (c === "}") { depth--; if (depth === 0) { j++; break; } }
+      }
+      try { games.push(JSON.parse(s.slice(idx, j))); } catch (_) {}
+      idx = j;
+    }
+  }
+  // La même rencontre peut apparaître plusieurs fois (blocs différents de la page).
+  const seen = new Set();
+  return games.filter(g => g && g.gameId && !seen.has(g.gameId) && seen.add(g.gameId));
+}
+
+const FIBA_ROUNDS = { "Regular Season": "Saison régulière", "Second Round": "2e tour", "Play-Offs": "Play-offs", "Qualifiers": "Qualifications", "Final": "Finale" };
+
+function fibaHomeMatches(club, games, cfg) {
+  const out = [];
+  for (const g of games) {
+    const a = g.teamA || {};
+    if (!cfg.codes.includes(a.code) && !isClub(club, a.shortName || a.officialName || "")) continue;
+    const dt = String(g.gameDateTime || "");
+    const date = dt.slice(0, 10);
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) continue;
+    const time = g.hasTimeGameDateTime ? dt.slice(11, 16).replace(":", "h") : "";
+    const roundName = (g.round && (g.round.roundName || g.round.name)) || "";
+    const groupCode = g.groupPairingCode || (g.gameName || "").split("-")[1] || "";
+    const round = [FIBA_ROUNDS[roundName] || roundName,
+      /regular/i.test(roundName) && groupCode ? `groupe ${groupCode}` : "",
+      g.gameNumber ? `match ${g.gameNumber}` : ""].filter(Boolean).join(" · ");
+    const b = g.teamB || {};
+    out.push(makeMatch(club, {
+      id: `fec-${g.gameId}`,
+      date, time,
+      opponent: b.shortName || b.officialName || "Adversaire à déterminer",
+      competition: cfg.competition,
+      round,
+      salle: g.venueName || club.venue,
+      url: cfg.url,
+      source: "fiba.basketball",
+    }));
+  }
+  return out;
+}
+
+async function scrapeFIBA(club) {
+  const cfg = FIBA[club.key];
+  const html = await get(cfg.page, { name: `fiba-${club.key}.html` });
+  const games = parseFibaGames(html);
+  if (!games.length) throw new Error("aucune rencontre lue dans la page FIBA (maquette changée ?)");
+  return fibaHomeMatches(club, games, cfg);
+}
+
+module.exports = { parseFibaGames, fibaHomeMatches };
+
 // ── Orchestration ───────────────────────────────────────────────────────────
 
-(async () => {
+if (require.main === module) (async () => {
   const wanted = (k) => !ONLY.length || ONLY.includes(k);
   const all = [];
   const report = {};
@@ -403,6 +491,23 @@ async function scrapeFFBB(club) {
     } catch (e) {
       report.sluc = { source: "ffbb.com", matchs: 0, erreur: e.message };
       log(`sluc : ÉCHEC — ${e.message}`);
+    }
+    // Coupe d'Europe (FIBA Europe Cup) : source distincte, échec indépendant.
+    // En cas de panne, les rencontres européennes déjà connues sont reprises
+    // du fichier précédent (elles sont reconnaissables à leur id « fec- »).
+    try {
+      const rows = await scrapeFIBA(club);
+      all.push(...rows);
+      report["sluc-europe"] = { source: "fiba.basketball", matchs: rows.length };
+      log(`sluc (coupe d'Europe) : ${rows.length} match(s) à domicile`);
+    } catch (e) {
+      report["sluc-europe"] = { source: "fiba.basketball", matchs: 0, erreur: e.message };
+      log(`sluc (coupe d'Europe) : ÉCHEC — ${e.message}`);
+      try {
+        const repris = JSON.parse(fs.readFileSync(OUT, "utf8")).filter(m => m.club === "sluc" && /^sluc-fec-/.test(m.id));
+        all.push(...repris);
+        report["sluc-europe"].reprises = repris.length;
+      } catch (_) {}
     }
   }
 

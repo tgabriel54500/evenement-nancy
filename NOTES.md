@@ -105,6 +105,8 @@
 - PANNES SILENCIEUSES : ALENTOOR gardait 0 fiche (blocage anti-robot probable) → alentoor.js logge les causes et patiente 5 s×n sur 429/403, à vérifier dans refresh.log. Curieux à 0 le 2026-09-16 (panne passagère probable).
 - SPORT : sport-scrape.js ne doit pas perdre un club sur une erreur de source. Une journée injoignable retombe sur `.cache-lsi.json` ; un club en échec complet reprend ses rencontres depuis events-sport.json (report.<club>.reprises). Rattrapage : `node sport-scrape.js --only=asnl,vnvb && node update-sport.js` (depuis le Mac, réseau requis).
 
+- SPORT / SLUC coupe d'Europe (2026-09-29) : `scrapeFIBA()` dans sport-scrape.js lit la page « Games » de fiba.basketball (Next.js : toutes les rencontres en JSON dans `self.__next_f.push`), garde teamA = SLUC (domicile), ids `sluc-fec-<gameId>`, compétition « FIBA Europe Cup », tour/groupe/match dans `round`. Les tours suivants apparaissent dans la même page quand ils sont tirés. Test : `node tests/sport-fiba.test.js`. Registre FIBA (page, codes) dans `FIBA` en tête de l'adaptateur : à changer si le SLUC change de compétition ou de saison (`fiba-europe-cup-26-27`).
+
 ## User preferences (do NOT do)
 <!-- X forbidden, Y to avoid, explicit constraints -->
 - Ne JAMAIS remettre noindex/Disallow : le site doit être référencé sur Google.
