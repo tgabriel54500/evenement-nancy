@@ -83,19 +83,28 @@ function chromeGet(url) {
   const bin = chromeBin();
   if (!bin) throw new Error("aucun navigateur headless trouvé (Chrome, Chromium, Brave, Edge)");
   const { execFileSync } = require("child_process");
+  // --timeout : Chrome imprime le DOM au bout de ce délai même si la page charge
+  // encore (analytics, polices) ; sans lui, --dump-dom peut attendre indéfiniment
+  // (ETIMEDOUT observé le 2026-09-29 sur le cron).
   const html = execFileSync(bin, [
     "--headless=new", "--disable-gpu", "--no-first-run", "--no-default-browser-check",
+    "--disable-extensions", "--disable-sync", "--mute-audio",
     "--user-data-dir=" + path.join(require("os").tmpdir(), "pro-scrape-chrome"),
-    "--virtual-time-budget=8000", "--dump-dom", url,
-  ], { encoding: "utf8", maxBuffer: 30 * 1024 * 1024, timeout: 60000, stdio: ["ignore", "pipe", "ignore"] });
+    "--timeout=20000", "--virtual-time-budget=8000", "--dump-dom", url,
+  ], { encoding: "utf8", maxBuffer: 30 * 1024 * 1024, timeout: 45000, stdio: ["ignore", "pipe", "ignore"] });
   if (!html || html.length < 500 || /Access Denied|403 Forbidden/i.test(html.slice(0, 2000))) throw new Error("page refusée même en navigateur headless");
   return html;
 }
 
-// Après un 403 : curl, puis navigateur headless. Lève si tout échoue.
+// Après un 403 : curl, puis navigateur headless. Lève si tout échoue. Un
+// navigateur qui a échoué une fois n'est plus retenté dans le même passage (les
+// 3 tentatives × 45 s de get() coûteraient sinon plusieurs minutes au cron).
+let chromeKO = false;
 function getViaFallbacks(url) {
   try { return curlGet(url); } catch (_) { /* on passe au navigateur */ }
-  return chromeGet(url);
+  if (chromeKO) throw new Error("403 (curl et navigateur headless refusés)");
+  try { return chromeGet(url); }
+  catch (e) { chromeKO = true; throw e; }
 }
 
 async function get(url, { name = "", tries = 3 } = {}) {
