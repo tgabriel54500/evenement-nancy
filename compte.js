@@ -73,10 +73,21 @@
   })();
 
   // ---- Auth ----
+  // Trois façons d'entrer : email + mot de passe (par défaut, le téléphone
+  // enregistre et pré-remplit), lien magique (ancienne méthode, conservée) et
+  // réinitialisation du mot de passe. La session est conservée sur l'appareil
+  // par supabase-js : on reste connecté d'une visite à l'autre.
+  let recovering = false;   // arrivée par un lien « mot de passe oublié »
+
   async function refresh() {
     const { data: { session } } = await sb.auth.getSession();
     show($("navAccount"), !!session);
     $("menu-who").textContent = session ? session.user.email : "";
+    if (session && recovering) {
+      show($("auth"), false); show($("app"), false); show($("reset"), true);
+      return;
+    }
+    show($("reset"), false);
     if (session) {
       $("who").textContent = session.user.email;
       show($("auth"), false); show($("app"), true);
@@ -86,32 +97,120 @@
       $("navMenu").hidden = true;
     }
   }
-  sb.auth.onAuthStateChange(() => refresh());
+  sb.auth.onAuthStateChange((event) => {
+    if (event === "PASSWORD_RECOVERY") recovering = true;
+    refresh();
+  });
 
-  // Confort : l'email de connexion est mémorisé sur l'appareil (localStorage)
-  // et pré-rempli aux visites suivantes.
+  // Confort : l'email est mémorisé sur l'appareil (localStorage) et pré-rempli
+  // dans tous les formulaires aux visites suivantes.
   const EMAIL_KEY = "en-auth-email";
+  const EMAIL_FIELDS = ["signin-email", "signup-email", "auth-email", "forgot-email"];
   try {
     const saved = localStorage.getItem(EMAIL_KEY);
-    if (saved) $("auth-email").value = saved;
+    if (saved) EMAIL_FIELDS.forEach((id) => { if (!$(id).value) $(id).value = saved; });
   } catch (_) { /* stockage indisponible (navigation privée) : tant pis */ }
+  const rememberEmail = (email) => { try { localStorage.setItem(EMAIL_KEY, email); } catch (_) {} };
+  // L'email tapé dans un formulaire suit dans les autres.
+  EMAIL_FIELDS.forEach((id) => $(id).addEventListener("input", () => {
+    EMAIL_FIELDS.forEach((o) => { if (o !== id) $(o).value = $(id).value; });
+  }));
 
+  // Message d'erreur lisible (Supabase répond en anglais).
+  function authError(error) {
+    const m = String(error && error.message || "");
+    if (/fetch/i.test(m)) return "Serveur injoignable. Le projet Supabase est probablement en pause : ouvrez supabase.com/dashboard et cliquez « Restore project », puis réessayez.";
+    if (/invalid login credentials/i.test(m)) return "Email ou mot de passe incorrect.";
+    if (/email not confirmed/i.test(m)) return "Votre email n'est pas encore confirmé : ouvrez le message reçu à l'inscription (vérifiez les spams).";
+    if (/already registered|already been registered/i.test(m)) return "Un compte existe déjà avec cet email : connectez-vous, ou utilisez « Mot de passe oublié ».";
+    if (/password should be at least|weak password|password/i.test(m)) return "Mot de passe trop faible : 8 caractères minimum.";
+    if (/rate limit|too many/i.test(m)) return "Trop de tentatives, réessayez dans quelques minutes.";
+    return "Erreur : " + m;
+  }
+
+  // Panneaux : signin / signup / magic / forgot.
+  const PANES = { signin: "signin-form", signup: "signup-form", magic: "auth-form", forgot: "forgot-form" };
+  function showPane(key) {
+    Object.entries(PANES).forEach(([k, id]) => show($(id), k === key));
+    document.querySelectorAll(".auth-tab").forEach((t) => t.classList.toggle("is-active", t.dataset.auth === key));
+    show($("auth-msg"), false);
+  }
+  document.querySelectorAll(".auth-tab").forEach((t) => t.addEventListener("click", () => showPane(t.dataset.auth)));
+  $("to-signin").addEventListener("click", (e) => { e.preventDefault(); showPane("signin"); });
+  $("to-signin-2").addEventListener("click", (e) => { e.preventDefault(); showPane("signin"); });
+  $("to-signin-3").addEventListener("click", (e) => { e.preventDefault(); showPane("signin"); });
+  $("magic-link").addEventListener("click", (e) => { e.preventDefault(); showPane("magic"); });
+  $("forgot-link").addEventListener("click", (e) => { e.preventDefault(); showPane("forgot"); });
+
+  // Connexion par mot de passe.
+  $("signin-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const btn = e.target.querySelector("button[type=submit]"); btn.disabled = true;
+    const email = $("signin-email").value.trim(), password = $("signin-password").value;
+    const { error } = await sb.auth.signInWithPassword({ email, password });
+    btn.disabled = false;
+    if (error) return msg($("auth-msg"), authError(error), "err");
+    rememberEmail(email);
+    msg($("auth-msg"), "Connecté.", "ok");
+  });
+
+  // Création de compte : mot de passe + confirmation. Selon le réglage Supabase
+  // (« Confirm email »), soit la session s'ouvre tout de suite, soit un email de
+  // confirmation part et il faut cliquer dedans avant de pouvoir se connecter.
+  $("signup-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = $("signup-email").value.trim();
+    const p1 = $("signup-password").value, p2 = $("signup-password2").value;
+    if (p1.length < 8) return msg($("auth-msg"), "Mot de passe trop court : 8 caractères minimum.", "err");
+    if (p1 !== p2) return msg($("auth-msg"), "Les deux mots de passe ne sont pas identiques.", "err");
+    const btn = e.target.querySelector("button[type=submit]"); btn.disabled = true;
+    const { data, error } = await sb.auth.signUp({ email, password: p1, options: { emailRedirectTo: location.href } });
+    btn.disabled = false;
+    if (error) return msg($("auth-msg"), authError(error), "err");
+    rememberEmail(email);
+    // Email déjà inscrit : Supabase renvoie un utilisateur « fantôme » sans identité
+    // (pour ne pas révéler qui est inscrit). On oriente vers la connexion.
+    if (data && data.user && Array.isArray(data.user.identities) && data.user.identities.length === 0) {
+      showPane("signin");
+      return msg($("auth-msg"), "Un compte existe déjà avec cet email : connectez-vous, ou utilisez « Mot de passe oublié ».", "err");
+    }
+    if (data && data.session) return msg($("auth-msg"), "Compte créé, vous êtes connecté.", "ok");
+    showPane("signin");
+    msg($("auth-msg"), "Compte créé ! Un email de confirmation vient de partir : cliquez sur le lien qu'il contient, puis connectez-vous ici avec votre mot de passe.", "ok");
+  });
+
+  // Lien magique (sans mot de passe).
   $("auth-form").addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = $("auth-email").value.trim();
     const { error } = await sb.auth.signInWithOtp({
       email, options: { emailRedirectTo: location.href },
     });
-    if (!error) { try { localStorage.setItem(EMAIL_KEY, email); } catch (_) {} }
-    let text = "Lien envoyé ! Vérifiez votre boîte mail (et les spams).";
-    if (error) {
-      // "Failed to fetch" = serveur injoignable (projet Supabase en pause,
-      // URL erronée ou pas de réseau) → message actionnable plutôt que cryptique.
-      text = /fetch/i.test(error.message || "")
-        ? "Serveur injoignable. Le projet Supabase est probablement en pause : ouvrez supabase.com/dashboard et cliquez « Restore project », puis réessayez."
-        : "Erreur : " + error.message;
-    }
-    msg($("auth-msg"), text, error ? "err" : "ok");
+    if (!error) rememberEmail(email);
+    msg($("auth-msg"), error ? authError(error) : "Lien envoyé ! Vérifiez votre boîte mail (et les spams).", error ? "err" : "ok");
+  });
+
+  // Mot de passe oublié : Supabase envoie un lien qui ramène ici avec un jeton de
+  // récupération ; onAuthStateChange reçoit PASSWORD_RECOVERY et refresh()
+  // affiche le formulaire « Nouveau mot de passe ».
+  $("forgot-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const email = $("forgot-email").value.trim();
+    const { error } = await sb.auth.resetPasswordForEmail(email, { redirectTo: location.origin + location.pathname });
+    if (!error) rememberEmail(email);
+    msg($("auth-msg"), error ? authError(error) : "Email envoyé : ouvrez le lien qu'il contient pour choisir un nouveau mot de passe.", error ? "err" : "ok");
+  });
+
+  $("reset-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const p1 = $("reset-password").value, p2 = $("reset-password2").value;
+    if (p1.length < 8) return msg($("reset-msg"), "Mot de passe trop court : 8 caractères minimum.", "err");
+    if (p1 !== p2) return msg($("reset-msg"), "Les deux mots de passe ne sont pas identiques.", "err");
+    const { error } = await sb.auth.updateUser({ password: p1 });
+    if (error) return msg($("reset-msg"), authError(error), "err");
+    recovering = false;
+    msg($("reset-msg"), "Mot de passe enregistré.", "ok");
+    setTimeout(refresh, 600);
   });
 
   $("logout").addEventListener("click", async () => { await sb.auth.signOut(); refresh(); });

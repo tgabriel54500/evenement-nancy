@@ -14,10 +14,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=nav3">
-  <link rel="stylesheet" href="compte.css?v=5">
+  <link rel="stylesheet" href="compte.css?v=6">
 </head>
 <body data-view="compte">
   <header class="hero hero--compact">
+    <a class="back-link" href="index.html" aria-label="Retour à l'agenda">← Agenda</a>
     <!-- Menu compte (visible uniquement connecté) : email, retour, déconnexion. -->
     <div class="nav-account" id="navAccount" hidden>
       <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menu du compte">
@@ -42,14 +43,79 @@
     <!-- ÉTAT NON CONNECTÉ : lien magique -->
     <section id="auth" class="card-pane" hidden>
       <h2>Connexion / Inscription</h2>
-      <p>Recevez un lien de connexion par email. Pas de mot de passe.</p>
-      <form id="auth-form">
+      <nav class="auth-tabs" role="tablist" aria-label="Connexion ou inscription">
+        <button type="button" class="auth-tab is-active" data-auth="signin">Se connecter</button>
+        <button type="button" class="auth-tab" data-auth="signup">Créer un compte</button>
+      </nav>
+
+      <!-- Connexion par mot de passe. Les attributs name/autocomplete sont ce
+           qui permet au téléphone (iOS, Android) de proposer l'enregistrement
+           du mot de passe et le pré-remplissage aux visites suivantes. -->
+      <form id="signin-form" class="auth-pane" method="post" action="#" autocomplete="on">
         <label>Email
-          <input type="email" id="auth-email" required placeholder="vous@exemple.fr" autocomplete="email">
+          <input type="email" id="signin-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <label>Mot de passe
+          <input type="password" id="signin-password" name="password" required autocomplete="current-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Se connecter</button>
+        <p class="auth-links">
+          <a href="#" id="forgot-link">Mot de passe oublié ?</a> ·
+          <a href="#" id="magic-link">Recevoir un lien de connexion par email</a>
+        </p>
+      </form>
+
+      <!-- Création de compte : email + mot de passe + confirmation. -->
+      <form id="signup-form" class="auth-pane" method="post" action="#" autocomplete="on" hidden>
+        <label>Email
+          <input type="email" id="signup-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <label>Mot de passe <small>(8 caractères minimum)</small>
+          <input type="password" id="signup-password" name="new-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <label>Confirmez le mot de passe
+          <input type="password" id="signup-password2" name="confirm-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Créer mon compte</button>
+        <p class="auth-links">Déjà un compte ? <a href="#" id="to-signin">Se connecter</a></p>
+      </form>
+
+      <!-- Lien magique (ancienne méthode, toujours disponible). -->
+      <form id="auth-form" class="auth-pane" hidden>
+        <p>Recevez un lien de connexion par email, sans mot de passe.</p>
+        <label>Email
+          <input type="email" id="auth-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
         </label>
         <button type="submit" class="btn-primary">Recevoir mon lien</button>
+        <p class="auth-links"><a href="#" id="to-signin-2">Retour à la connexion par mot de passe</a></p>
       </form>
+
+      <!-- Mot de passe oublié : envoi du lien de réinitialisation. -->
+      <form id="forgot-form" class="auth-pane" hidden>
+        <p>Indiquez votre email : vous recevrez un lien pour choisir un nouveau mot de passe.</p>
+        <label>Email
+          <input type="email" id="forgot-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <button type="submit" class="btn-primary">Envoyer le lien</button>
+        <p class="auth-links"><a href="#" id="to-signin-3">Retour à la connexion</a></p>
+      </form>
+
       <p id="auth-msg" class="msg" hidden></p>
+    </section>
+
+    <!-- NOUVEAU MOT DE PASSE : affiché quand on arrive par le lien de réinitialisation. -->
+    <section id="reset" class="card-pane" hidden>
+      <h2>Nouveau mot de passe</h2>
+      <form id="reset-form" method="post" action="#" autocomplete="on">
+        <label>Nouveau mot de passe <small>(8 caractères minimum)</small>
+          <input type="password" id="reset-password" name="new-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <label>Confirmez le mot de passe
+          <input type="password" id="reset-password2" name="confirm-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Enregistrer</button>
+        <p id="reset-msg" class="msg" hidden></p>
+      </form>
     </section>
 
     <!-- ÉTAT CONNECTÉ -->
@@ -176,7 +242,7 @@
   <script src="data.js"></script>
   <script src="pro-categories.js"></script>
   <script src="pro-gate.js"></script>
-  <script src="compte.js?v=8"></script>
+  <script src="compte.js?v=9"></script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
