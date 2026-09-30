@@ -1898,5 +1898,10 @@
   "lat": 48.394724,
   "lon": 6.132092,
   "city": "Diarville"
+ },
+ "sarrebourg": {
+  "lat": 48.736347,
+  "lon": 7.053883,
+  "city": "Sarrebourg"
  }
 }

@@ -970,8 +970,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-26875",
+    "title": "Beaujolais nouveau",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2025-11-24",
+    "endDate": "2025-11-24",
+    "dateText": "",
+    "schedule": "De 14h à 18h",
+    "place": "Salle des Fêtes",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/beaujolais-nouveau/",
     "source": "vandoeuvre"
   },
   {
@@ -1075,7 +1094,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre"
   },
@@ -1096,7 +1115,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
     "source": "vandoeuvre"
   },
@@ -1156,7 +1175,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/portes-ouvertes-sodexo/",
     "source": "vandoeuvre"
   },
@@ -1175,7 +1194,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video/",
     "source": "vandoeuvre"
   },
@@ -1194,8 +1213,27 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-voix-et-orgue/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-5365",
+    "title": "Conseil Municipal en direct",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [],
+    "date": "2026-10-05",
+    "endDate": "2026-10-05",
+    "dateText": "",
+    "schedule": "19h",
+    "place": "Mairie",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
     "source": "vandoeuvre"
   },
   {
@@ -1213,7 +1251,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre"
   },
@@ -1234,7 +1272,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch/",
     "source": "vandoeuvre"
   },
@@ -1354,7 +1392,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news/",
     "source": "vandoeuvre"
   },
@@ -1373,7 +1411,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre"
   },
@@ -1392,7 +1430,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre"
   },
@@ -1411,7 +1449,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/soiree-100-femmes-speciale-octobre-rose/",
     "source": "vandoeuvre"
   },
@@ -1470,7 +1508,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/soiree-projection-debat-les-aidants/",
     "source": "vandoeuvre"
   },
@@ -1489,7 +1527,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre"
   },
@@ -1508,7 +1546,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
     "source": "vandoeuvre"
   },
@@ -1527,7 +1565,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-et-de-concertation-sur-les-futurs-amenagements-de-vandest-etoile/",
     "source": "vandoeuvre"
   },
@@ -1548,7 +1586,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
     "source": "vandoeuvre"
   },
@@ -1567,7 +1605,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1588,7 +1626,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
     "source": "vandoeuvre"
   },
@@ -1626,7 +1664,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre"
   },
@@ -1647,7 +1685,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-3/",
     "source": "vandoeuvre"
   },
@@ -1708,7 +1746,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
     "source": "vandoeuvre"
   },
@@ -1727,7 +1765,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news-2/",
     "source": "vandoeuvre"
   },
@@ -1765,7 +1803,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
@@ -1805,7 +1843,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre"
   },
@@ -1826,7 +1864,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-2/",
     "source": "vandoeuvre"
   },
@@ -1845,7 +1883,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
@@ -1864,7 +1902,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   },
@@ -1885,7 +1923,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre"
   },
@@ -1904,7 +1942,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
     "source": "vandoeuvre"
   },
@@ -1923,7 +1961,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-sortie-au-marche-de-noel-de-treves/",
     "source": "vandoeuvre"
   },
@@ -1942,7 +1980,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre"
   },
@@ -1961,7 +1999,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   },

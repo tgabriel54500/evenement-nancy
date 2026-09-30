@@ -2,7 +2,7 @@
 // Source : agenda officiel de la Ville de Nancy (https://www.nancy.fr/agenda)
 // API    : https://agenda-integration.grandnancy.eu/api/vdn/events
 // Régénérer : node update-events.js
-// Généré le : 2026-09-30 — 1538 événements à venir.
+// Généré le : 2026-09-30 — 1573 événements à venir.
 
 const CATEGORIES = {
   "festival": {
@@ -294,7 +294,7 @@ const EVENTS = [
     "schedule": "de 14h à 18h",
     "place": "L'Octroi - Nancy",
     "city": "Nancy",
-    "free": false,
+    "free": true,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f45bc636-a05b-11f1-aa1c-df934a30d642/0/ORIGINE_M_6a8d4d26ca92e.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f45bc636-a05b-11f1-aa1c-df934a30d642",
@@ -633,7 +633,7 @@ const EVENTS = [
     "schedule": "10h - 18h",
     "place": "Musée des Beaux-Arts",
     "city": "Nancy",
-    "free": true,
+    "free": false,
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ea3b6552-6f15-11f1-a567-e129653d08c6/0/1-1_M_6a3aa2b0f17b2.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=ea3b6552-6f15-11f1-a567-e129653d08c6",
@@ -1364,7 +1364,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lhilo/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-18"
@@ -2582,7 +2582,7 @@ const EVENTS = [
     "date": "2026-10-02",
     "endDate": "2026-10-12",
     "dateText": "Du 2 au 12 octobre",
-    "schedule": "",
+    "schedule": "de 14h00 à 18h00",
     "place": "Jardin botanique Jean-Marie Pelt",
     "city": "Villers-lès-Nancy",
     "free": true,
@@ -2684,7 +2684,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-12",
@@ -3536,7 +3536,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/portes-ouvertes-sodexo/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-16",
@@ -3557,7 +3557,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-08",
@@ -4376,7 +4376,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-voix-et-orgue/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-15"
@@ -4938,6 +4938,24 @@ const EVENTS = [
     "addedAt": "2026-09-23"
   },
   {
+    "uuid": "vdv-5365",
+    "title": "Conseil Municipal en direct",
+    "category": "citoyennete",
+    "subcats": [],
+    "date": "2026-10-05",
+    "endDate": "2026-10-05",
+    "dateText": "",
+    "schedule": "19h",
+    "place": "Mairie",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-09-17"
+  },
+  {
     "uuid": "erp-2026-10-05-golf-indoor",
     "title": "Golf indoor",
     "category": "autre",
@@ -5121,6 +5139,24 @@ const EVENTS = [
     ]
   },
   {
+    "uuid": "cx-bbc-comedy-club-soiree-stand-up-140",
+    "title": "🎙️ BBC COMEDY CLUB 😂 Soirée stand-up 🎙️#140",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "dateText": "Le mardi 6 octobre 2026",
+    "schedule": "",
+    "place": "BBC, Bière, Bordel & Copains",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6abb6e3b3c0b5-bbc-comedy-club-soiree-stand-up-140.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/bbc-comedy-club-soiree-stand-up-140",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "cx-rencontre-avec-francois-galichet",
     "title": "RENCONTRE AVEC François GALICHET",
     "category": "autre",
@@ -5151,7 +5187,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-3/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-21",
@@ -5463,6 +5499,24 @@ const EVENTS = [
     ]
   },
   {
+    "uuid": "cx-impro-comedy-live-the-game-show-le-palais",
+    "title": "Impro Comedy Live - The Game Show - Le Palais",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-10-07",
+    "endDate": "2026-10-07",
+    "dateText": "Le mercredi 7 octobre 2026",
+    "schedule": "",
+    "place": "Le Palais",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6ab9242ce91f3-impro-comedy-live-the-game-show-le-palais.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/impro-comedy-live-the-game-show-le-palais",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "vdv-24342",
     "title": "Ateliers “Crée ton jeu vidéo avec Scratch”",
     "category": "autre",
@@ -5477,7 +5531,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18",
@@ -5916,6 +5970,25 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c4ae9b6c-a771-11f1-ac7e-1711f1c2c313/0/1-1_M_6a993092d9b4c.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=c4ae9b6c-a771-11f1-ac7e-1711f1c2c313",
     "addedAt": "2026-09-04"
+  },
+  {
+    "uuid": "a8d684f6-bcaa-11f1-8dc0-ad109027dfe5",
+    "title": "Télescopage, seul en scène de Jamel Khada,",
+    "category": "spectacle",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-10-08",
+    "endDate": "2026-10-08",
+    "dateText": "Jeudi 8 octobre 2026",
+    "schedule": "de 18h à 20h30",
+    "place": "Forum - IRTS de Lorraine - Nancy",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a8d684f6-bcaa-11f1-8dc0-ad109027dfe5/0/ORIGINE_M_6abccb1ae3936.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a8d684f6-bcaa-11f1-8dc0-ad109027dfe5",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "dn-25346",
@@ -7020,6 +7093,24 @@ const EVENTS = [
     ]
   },
   {
+    "uuid": "cx-the-sacred-veil-d-eric-witacre-arvo-paert",
+    "title": "The sacred veil d'Éric Witacre / Arvo Pärt",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "Le samedi 10 octobre 2026",
+    "schedule": "",
+    "place": "Temple Protestant",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6ab927b826019-the-sacred-veil-d-eric-witacre-arvo-paert.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/the-sacred-veil-d-eric-witacre-arvo-paert",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "cx-electro-discovery-night-4th-edition",
     "title": "Electro Discovery Night -  4th Edition",
     "category": "musiques-actuelles",
@@ -7096,7 +7187,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/soiree-100-femmes-speciale-octobre-rose/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-26"
@@ -7175,7 +7266,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18"
@@ -7193,7 +7284,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/grand-concert-accc/",
     "source": "vandoeuvre",
     "addedAt": "2026-05-24"
@@ -7211,7 +7302,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-daccueil-des-nouveaux-vandoperiens/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-05"
@@ -7520,6 +7611,24 @@ const EVENTS = [
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/02/6f/026f7f8977d72250afef48c3de10b4b5f6864157ca7b8c26a0c2df0b07cc8e4b-large.jpg",
     "url": "https://www.alentoor.fr/lemainville/agenda/6387700-soiree-moules-frites",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "al-6394617",
+    "title": "Et n'oubliez pas la Pièce",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/5d/bd/5dbde5f111f20d8aef0276ec111a8899fef43a11c16a65d4189495cd61816f51-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394617-et-n-oubliez-pas-la-piece",
     "source": "alentoor",
     "addedAt": "2026-09-30"
   },
@@ -8365,6 +8474,25 @@ const EVENTS = [
     "addedAt": "2026-08-17"
   },
   {
+    "uuid": "d3b7ae0c-bcaa-11f1-8cf8-ebf34b5123b7",
+    "title": "Les Rêveurs, film d'Isabelle Carré",
+    "category": "conference",
+    "subcats": [
+      "Cinéma / projection"
+    ],
+    "date": "2026-10-13",
+    "endDate": "2026-10-13",
+    "dateText": "Mardi 13 octobre 2026",
+    "schedule": "de 18h à 21h",
+    "place": "Forum - IRTS de Lorraine - Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d3b7ae0c-bcaa-11f1-8cf8-ebf34b5123b7/0/ORIGINE_M_6abccb62d21d4.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d3b7ae0c-bcaa-11f1-8cf8-ebf34b5123b7",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "b869769e-5ff3-11f1-abaa-affe143f2503",
     "title": "NJP 2026 : Alela Diane, Birds on a wire",
     "category": "musiques-actuelles",
@@ -8558,7 +8686,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/soiree-projection-debat-les-aidants/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-29"
@@ -8994,7 +9122,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-20"
@@ -9012,7 +9140,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-12"
@@ -9750,7 +9878,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-et-de-concertation-sur-les-futurs-amenagements-de-vandest-etoile/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-26"
@@ -9770,7 +9898,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18"
@@ -10228,6 +10356,86 @@ const EVENTS = [
     "addedAt": "2026-07-13"
   },
   {
+    "uuid": "vdv-29219",
+    "title": "Installons Linux",
+    "category": "autre",
+    "subcats": [
+      "Jeunes"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "De 14h à 16h",
+    "place": "Fabrique Collective de la Culture du Libre",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
+    "source": "vandoeuvre",
+    "addedAt": "2026-08-28",
+    "tags": [
+      "etudiant"
+    ]
+  },
+  {
+    "uuid": "cx-1er-salon-du-jardin-fete-des-plantes-hippodrome-nancy-brabois",
+    "title": "1er Salon du Jardin & Fête des Plantes - Hippodrome Nancy Brabois",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-18",
+    "dateText": "Du samedi 17 octobre 2026 au dimanche 18 octobre 2026",
+    "schedule": "",
+    "place": "Hippodrome Nancy Brabois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019678/7a3c931149184f34-800x520.webp",
+    "url": "https://nancy.curieux.net/agenda/evenement/1er-salon-du-jardin-fete-des-plantes-hippodrome-nancy-brabois",
+    "source": "curieux-net",
+    "addedAt": "2026-07-19"
+  },
+  {
+    "uuid": "cx-1er-salon-bio-hippodrome-de-nancy-brabois",
+    "title": "1er Salon Bio - Hippodrome de Nancy Brabois",
+    "category": "exposition",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-18",
+    "dateText": "Du samedi 17 octobre 2026 au dimanche 18 octobre 2026",
+    "schedule": "",
+    "place": "L' hippodrome de Nancy-Brabois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/07/6a675238279f2-1er-salon-bio-hippodrome-de-nancy-brabois.png",
+    "url": "https://nancy.curieux.net/agenda/evenement/1er-salon-bio-hippodrome-de-nancy-brabois",
+    "source": "curieux-net",
+    "addedAt": "2026-08-07"
+  },
+  {
+    "uuid": "al-6313027",
+    "title": "Festival - Fête de la bière",
+    "category": "festival",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "19h30",
+    "place": "Espace Séquoia",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/06/15/0615dd49f59e43a94a1ad08e57341a51c217285b6d2f5d22cc0b0006f0d5f3dc-large.jpg",
+    "url": "https://www.alentoor.fr/ludres/agenda/6313027-festival-fete-de-la-biere",
+    "source": "alentoor",
+    "addedAt": "2026-09-27",
+    "tags": [
+      "fun"
+    ]
+  },
+  {
     "uuid": "dn-26166",
     "title": "Atelier du patrimoine pour les enfants",
     "category": "activite",
@@ -10327,43 +10535,6 @@ const EVENTS = [
     "addedAt": "2026-09-24"
   },
   {
-    "uuid": "cx-1er-salon-bio-hippodrome-de-nancy-brabois",
-    "title": "1er Salon Bio - Hippodrome de Nancy Brabois",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-10-17",
-    "endDate": "2026-10-18",
-    "dateText": "Du samedi 17 octobre 2026 au dimanche 18 octobre 2026",
-    "schedule": "",
-    "place": "L' hippodrome de Nancy-Brabois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/07/6a675238279f2-1er-salon-bio-hippodrome-de-nancy-brabois.png",
-    "url": "https://nancy.curieux.net/agenda/evenement/1er-salon-bio-hippodrome-de-nancy-brabois",
-    "source": "curieux-net",
-    "addedAt": "2026-08-07"
-  },
-  {
-    "uuid": "cx-1er-salon-du-jardin-fete-des-plantes-hippodrome-nancy-brabois",
-    "title": "1er Salon du Jardin & Fête des Plantes - Hippodrome Nancy Brabois",
-    "category": "exposition",
-    "subcats": [],
-    "date": "2026-10-17",
-    "endDate": "2026-10-18",
-    "dateText": "Du samedi 17 octobre 2026 au dimanche 18 octobre 2026",
-    "schedule": "",
-    "place": "Hippodrome Nancy Brabois",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "affiches-auto/cx-1er-salon-du-jardin-fete-des-plantes-hippodrome-nancy-bra-1w678rt.svg",
-    "url": "https://nancy.curieux.net/agenda/evenement/1er-salon-du-jardin-fete-des-plantes-hippodrome-nancy-brabois",
-    "source": "curieux-net",
-    "addedAt": "2026-07-19",
-    "autoPoster": true
-  },
-  {
     "uuid": "cx-1er-salon-du-developpement-durable-hippodrome-de-nancy-brabois",
     "title": "1er Salon du Développement Durable - Hippodrome de Nancy Brabois",
     "category": "exposition",
@@ -10382,6 +10553,44 @@ const EVENTS = [
     "addedAt": "2026-08-07"
   },
   {
+    "uuid": "cx-rouages-intemporels",
+    "title": "Rouages Intemporels",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "espace Dedon",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6ab999772149a-rouages-intemporels.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/rouages-intemporels",
+    "source": "curieux-net",
+    "serieUuid": "cx-rouages-intemporels",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "cx-rouages-intemporels-j2",
+    "title": "Rouages Intemporels",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-10-18",
+    "endDate": "2026-10-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "espace Dedon",
+    "city": "Toul",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6ab999772149a-rouages-intemporels.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/rouages-intemporels",
+    "source": "curieux-net",
+    "serieUuid": "cx-rouages-intemporels",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "vdv-28972",
     "title": "Conférence sur l’héritage Prouvé",
     "category": "autre",
@@ -10394,33 +10603,10 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"
-  },
-  {
-    "uuid": "vdv-29219",
-    "title": "Installons Linux",
-    "category": "autre",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "De 14h à 16h",
-    "place": "Fabrique Collective de la Culture du Libre",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
-    "source": "vandoeuvre",
-    "addedAt": "2026-08-28",
-    "tags": [
-      "etudiant"
-    ]
   },
   {
     "uuid": "vln-593",
@@ -10461,50 +10647,6 @@ const EVENTS = [
     "url": "https://www.alentoor.fr/toul/agenda/5397796-secrets-de-batisseurs-mesures-et-geometrie",
     "source": "alentoor",
     "addedAt": "2026-08-13"
-  },
-  {
-    "uuid": "al-6356845",
-    "title": "Rouages Intemporels - Convention Steampunk - Toul",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "Espace Dedon",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/c7/fa/c7faa7d33f6b52c6357f1f7d8dee929098c6b8830c1edacf2268d7a72c389bdd-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6356845-rouages-intemporels-convention-steampunk-toul",
-    "source": "alentoor",
-    "serieUuid": "al-6356845",
-    "addedAt": "2026-09-21",
-    "tags": [
-      "atypique"
-    ]
-  },
-  {
-    "uuid": "al-6356845-j2",
-    "title": "Rouages Intemporels - Convention Steampunk - Toul",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-10-18",
-    "endDate": "2026-10-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "Espace Dedon",
-    "city": "Toul",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/c7/fa/c7faa7d33f6b52c6357f1f7d8dee929098c6b8830c1edacf2268d7a72c389bdd-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6356845-rouages-intemporels-convention-steampunk-toul",
-    "source": "alentoor",
-    "serieUuid": "al-6356845",
-    "addedAt": "2026-09-21",
-    "tags": [
-      "atypique"
-    ]
   },
   {
     "uuid": "al-6356819",
@@ -10595,27 +10737,6 @@ const EVENTS = [
     "url": "https://www.alentoor.fr/vic-sur-seille/agenda/6292520-murder-party-par-la-compagnie-les-3-chaises",
     "source": "alentoor",
     "addedAt": "2026-09-21",
-    "tags": [
-      "fun"
-    ]
-  },
-  {
-    "uuid": "al-6313027",
-    "title": "Festival - Fête de la bière",
-    "category": "festival",
-    "subcats": [],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "19h30",
-    "place": "Espace Séquoia",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/06/15/0615dd49f59e43a94a1ad08e57341a51c217285b6d2f5d22cc0b0006f0d5f3dc-large.jpg",
-    "url": "https://www.alentoor.fr/ludres/agenda/6313027-festival-fete-de-la-biere",
-    "source": "alentoor",
-    "addedAt": "2026-09-27",
     "tags": [
       "fun"
     ]
@@ -11270,6 +11391,24 @@ const EVENTS = [
     "addedAt": "2026-09-16"
   },
   {
+    "uuid": "cx-bbc-comedy-club-soiree-stand-up-142",
+    "title": "🎙️ BBC COMEDY CLUB 😂 Soirée stand-up 🎙️#142",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "dateText": "Le mardi 20 octobre 2026",
+    "schedule": "",
+    "place": "BBC, Bière, Bordel & Copains",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6abb6e9bb94d9-bbc-comedy-club-soiree-stand-up-142.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/bbc-comedy-club-soiree-stand-up-142",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "vln-285",
     "title": "Les visites chocottes",
     "category": "activite",
@@ -11585,7 +11724,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-12"
@@ -11913,7 +12052,7 @@ const EVENTS = [
     ]
   },
   {
-    "uuid": "65e16860-bb50-11f1-b774-1d1a7cc985ca",
+    "uuid": "cx-les-hommes-sont-des-femmes-comme-les-autres-1",
     "title": "Les hommes sont des femmes comme les autres",
     "category": "spectacle",
     "subcats": [
@@ -11923,15 +12062,16 @@ const EVENTS = [
     ],
     "date": "2026-10-23",
     "endDate": "2026-10-23",
-    "dateText": "Vendredi 23 octobre 2026",
-    "schedule": "de 20h30 à 22h",
-    "place": "",
-    "city": "",
+    "dateText": "Le vendredi 23 octobre 2026",
+    "schedule": "",
+    "place": "La salle Raugraff",
+    "city": "Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/65e16860-bb50-11f1-b774-1d1a7cc985ca/0/ORIGINE_M_6aba862cb38a1.jpeg",
-    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=65e16860-bb50-11f1-b774-1d1a7cc985ca",
-    "addedAt": "2026-09-29"
+    "image": "https://www.curieux.net/img/e/2026/09/6aba8e8e6821d-les-hommes-sont-des-femmes-comme-les-autres.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/les-hommes-sont-des-femmes-comme-les-autres-1",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "cx-carpenter-brut",
@@ -14007,22 +14147,68 @@ const EVENTS = [
     ]
   },
   {
-    "uuid": "dn-26117",
-    "title": "Visite guidée - Les petites histoires de science - Casque, parure ou protection?",
-    "category": "activite",
-    "subcats": [],
+    "uuid": "916be01c-bcab-11f1-a445-cf3e8477a702",
+    "title": "Fête de l'Algérie",
+    "category": "festival",
+    "subcats": [
+      "Citoyenneté",
+      "Artisanat",
+      "Activité - Animation",
+      "Culture",
+      "Exposition"
+    ],
     "date": "2026-11-01",
     "endDate": "2026-11-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
+    "dateText": "Dimanche 1er novembre 2026",
+    "schedule": "de 11h à 22h",
+    "place": "Hôtel de Ville - mairie de Nancy",
+    "city": "Nancy",
     "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/916be01c-bcab-11f1-a445-cf3e8477a702/0/ORIGINE_M_6abccca123ab9.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=916be01c-bcab-11f1-a445-cf3e8477a702",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "9490d2ac-ff1a-11ef-a62e-d1fdbe6f36a9",
+    "title": "Les petites histoires de science",
+    "category": "activite",
+    "subcats": [
+      "Visite guidée"
+    ],
+    "date": "2026-11-01",
+    "endDate": "2026-11-01",
+    "dateText": "Dimanche 01 novembre 2026 - 15h",
+    "schedule": "15h",
+    "place": "Le Féru des sciences",
+    "city": "Jarville-la-Malgrange",
+    "free": true,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020221/9f72c7c7f4defde3-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-les-petites-histoires-de-science-casque-parure-ou-protection/",
-    "source": "destination-nancy",
-    "addedAt": "2026-09-07"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9490d2ac-ff1a-11ef-a62e-d1fdbe6f36a9/0/1-1_M_67d1454e44ce2.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9490d2ac-ff1a-11ef-a62e-d1fdbe6f36a9",
+    "addedAt": "2026-09-30",
+    "tags": [
+      "famille"
+    ]
+  },
+  {
+    "uuid": "1185ec70-b795-11ef-8f09-150b9feea0ed",
+    "title": "Les rendez-vous sciences",
+    "category": "activite",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-11-01",
+    "endDate": "2026-11-01",
+    "dateText": "Dimanche 01 novembre 2026 - 14h15",
+    "schedule": "14h15",
+    "place": "Le Féru des sciences",
+    "city": "Jarville-la-Malgrange",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1185ec70-b795-11ef-8f09-150b9feea0ed/0/1-1_M_687de30a3e930.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=1185ec70-b795-11ef-8f09-150b9feea0ed",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "b47007da-ab5a-11f1-85b4-21e82a5b96d4",
@@ -14439,7 +14625,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-3/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18",
@@ -14910,7 +15096,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://nancy.curieux.net/agenda/evenement/installons-linux-6",
     "source": "curieux-net",
     "addedAt": "2026-09-27",
@@ -14989,7 +15175,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news-2/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18"
@@ -15166,27 +15352,6 @@ const EVENTS = [
     "addedAt": "2026-09-28"
   },
   {
-    "uuid": "al-6385835",
-    "title": "Soirée Moules Frites et paella",
-    "category": "autre",
-    "subcats": [],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "Salle Victorin Michel",
-    "city": "Ceintrey",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.alentoor.fr/photos/classifieds/53/65/53653f84104ac1bffc7950d425ef0130f0210912bf0eb836c8b3c92c42d928b5-large.jpg",
-    "url": "https://www.alentoor.fr/ceintrey/agenda/6385835-soiree-moules-frites-et-paella",
-    "source": "alentoor",
-    "addedAt": "2026-09-29",
-    "tags": [
-      "fun"
-    ]
-  },
-  {
     "uuid": "lcn-les-commandes-de-la-voix-atelier-de-technique-vocale",
     "title": "Les commandes de la voix",
     "category": "activite",
@@ -15308,6 +15473,24 @@ const EVENTS = [
     "addedAt": "2026-09-19"
   },
   {
+    "uuid": "cx-concert-de-l-ensemble-guitares-mandolines-de-jarville-la-malgrange",
+    "title": "Concert de l'Ensemble Guitares Mandolines de Jarville la Malgrange",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "Le dimanche 8 novembre 2026",
+    "schedule": "",
+    "place": "Kiosque",
+    "city": "Jarville-la-Malgrange",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.curieux.net/img/e/2026/09/6aba3d1f3b08b-concert-de-l-ensemble-guitares-mandolines-de-jarville-la-malgrange.jpg",
+    "url": "https://nancy.curieux.net/agenda/evenement/concert-de-l-ensemble-guitares-mandolines-de-jarville-la-malgrange",
+    "source": "curieux-net",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "cx-troc-en-musique-2",
     "title": "TROC EN MUSIQUE",
     "category": "autre",
@@ -15366,6 +15549,43 @@ const EVENTS = [
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/241ad362-ab5b-11f1-b213-3376aa338ead/0/1-1_M_6a9fc078ca2ca.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=241ad362-ab5b-11f1-b213-3376aa338ead",
     "addedAt": "2026-09-18"
+  },
+  {
+    "uuid": "f8e0f99e-bcab-11f1-9159-bb731be7716d",
+    "title": "Sur les toits, film de Nicolas Drolc",
+    "category": "conference",
+    "subcats": [
+      "Cinéma / projection"
+    ],
+    "date": "2026-11-09",
+    "endDate": "2026-11-09",
+    "dateText": "Lundi 9 novembre 2026",
+    "schedule": "de 18h à 21h",
+    "place": "Forum - IRTS de Lorraine - Nancy",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f8e0f99e-bcab-11f1-9159-bb731be7716d/0/ORIGINE_M_6abccd4ead6de.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f8e0f99e-bcab-11f1-9159-bb731be7716d",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "dn-24635",
+    "title": "Spectacle - Cabaret Voyageur - Petites scènes et grands sourires, une soirée avec Jean Tardieu",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-11-09",
+    "endDate": "2026-11-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019278/1e666cdeb8291dc3-800x520.webp",
+    "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-cabaret-voyageur-petites-scenes-et-grands-sourires-une-soiree-avec-jean-tardieu/",
+    "source": "destination-nancy",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "c20b2918-b755-11f1-b0b9-0f076f143d53",
@@ -15823,7 +16043,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-04"
@@ -16187,7 +16407,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre",
     "addedAt": "2026-08-28",
@@ -16824,6 +17044,24 @@ const EVENTS = [
     "url": "https://www.alentoor.fr/toul/agenda/6080865-cochons-d-inde-tournee",
     "source": "alentoor",
     "addedAt": "2026-08-28"
+  },
+  {
+    "uuid": "al-6394663",
+    "title": "Le Destin se Moque des Choix",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/17/0e/170e79c234f413306e77ba6f974b95b1ec53c3e2133181692456af9043dfc37a-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394663-le-destin-se-moque-des-choix",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-rila",
@@ -17723,6 +17961,24 @@ const EVENTS = [
     "addedAt": "2026-09-05"
   },
   {
+    "uuid": "al-6394658",
+    "title": "Climax - Tournée",
+    "category": "autre",
+    "subcats": [],
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/7a/8b/7a8b652a4974d9058a4f5ee45cc6473d2019f7c6e9001c96fac54d029e265491-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394658-climax-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "al-5951224",
     "title": "C'est Décidé, je Deviens une Connasse ! - Tournée",
     "category": "spectacle",
@@ -18135,7 +18391,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-2/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18",
@@ -18353,22 +18609,45 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
-    "uuid": "dn-26118",
-    "title": "Visite guidée - Les petites histoires de science - Forgeron, maréchal-ferrant ou ferronnier d'art?",
+    "uuid": "fa6496d6-c530-11f0-94d0-2b2524f80895",
+    "title": "Les petites histoires de science",
     "category": "activite",
-    "subcats": [],
+    "subcats": [
+      "Visite guidée"
+    ],
     "date": "2026-12-06",
     "endDate": "2026-12-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
+    "dateText": "Dimanche 06 décembre 2026 - 15h",
+    "schedule": "15h",
+    "place": "Le Féru des sciences",
     "city": "Jarville-la-Malgrange",
-    "free": false,
+    "free": true,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737020222/9f72c7c7f4defde3-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/visite-guidee-les-petites-histoires-de-science-forgeron-marechal-ferrant-ou-ferronnier-dart/",
-    "source": "destination-nancy",
-    "addedAt": "2026-09-07"
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/fa6496d6-c530-11f0-94d0-2b2524f80895/0/1-1_M_691d9beaa1ba0.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=fa6496d6-c530-11f0-94d0-2b2524f80895",
+    "addedAt": "2026-09-30",
+    "tags": [
+      "famille"
+    ]
+  },
+  {
+    "uuid": "d222a074-2496-11ee-8a55-6f97829f9b89",
+    "title": "Les rendez-vous sciences",
+    "category": "jeune-public",
+    "subcats": [
+      "Atelier"
+    ],
+    "date": "2026-12-06",
+    "endDate": "2026-12-06",
+    "dateText": "Dimanche 06 décembre 2026 - 14h15",
+    "schedule": "14h15",
+    "place": "Le Féru des sciences",
+    "city": "Jarville-la-Malgrange",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d222a074-2496-11ee-8a55-6f97829f9b89/0/1-1_M_64b5290953329.jpeg",
+    "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d222a074-2496-11ee-8a55-6f97829f9b89",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "cx-meditation-et-sagesse-bouddhiste-burn-out-du-coeur-comment-donner-sans-s-effondrer",
@@ -18688,7 +18967,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-04"
@@ -18831,7 +19110,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre",
     "addedAt": "2026-07-14"
@@ -18851,7 +19130,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-15"
@@ -18869,7 +19148,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-18"
@@ -19079,7 +19358,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-sortie-au-marche-de-noel-de-treves/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-29"
@@ -19221,6 +19500,24 @@ const EVENTS = [
     "tags": [
       "famille"
     ]
+  },
+  {
+    "uuid": "al-6390216",
+    "title": "Alex Vizorek - Deux 1/2 - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/82/f4/82f4c764d8459b1f6f3058dd0a3db50df1e13d91efe4095c1f1fc522b2a0e700-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6390216-alex-vizorek-deux-1-2-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-jean-michel-moog-son-batard",
@@ -19383,7 +19680,7 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-08",
@@ -19472,6 +19769,26 @@ const EVENTS = [
     "url": "https://www.alentoor.fr/pont-a-mousson/agenda/5932600-marche-de-noel-du-grinch",
     "source": "alentoor",
     "addedAt": "2026-09-24"
+  },
+  {
+    "uuid": "zen-les-quatre-saisons",
+    "title": "Les Quatre Saisons",
+    "category": "spectacle",
+    "subcats": [
+      "Danse"
+    ],
+    "date": "2026-12-20",
+    "endDate": "2026-12-20",
+    "dateText": "Dimanche 20 décembre 2026",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/AFFICHE-4-SAISONS-FR-002-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/les-quatre-saisons/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "c6700b24-a69b-11f1-a102-07033a0e0131",
@@ -20380,10 +20697,10 @@ const EVENTS = [
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/02/699c103ca1381-festival-mondial-de-la-magie.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/festival-mondial-de-la-magie-1",
-    "source": "curieux-net",
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/06/festival-mondial-magie-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/festival-mondial-de-la-magie/",
+    "source": "zenith-nancy",
     "addedAt": "2026-09-30",
     "tags": [
       "incontournable"
@@ -20402,16 +20719,35 @@ const EVENTS = [
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/11/vandest-etoile.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre",
     "addedAt": "2026-09-04"
   },
   {
-    "uuid": "cx-bernard-lavilliers-3",
-    "title": "BERNARD LAVILLIERS",
+    "uuid": "al-6394671",
+    "title": "Topick - Centre Culturel Jean l'Hôte, Neuves-Maisons",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-01-22",
+    "endDate": "2027-01-22",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/e1/76/e176d3dc4aa480e255734345a86ebcf3a42242f64df7b05590d90c4d9f1ab484-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394671-topick-centre-culturel-jean-l-hote-neuves-maisons",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "zen-bernard-lavilliers",
+    "title": "Bernard Lavilliers",
     "category": "musiques-actuelles",
     "subcats": [
+      "Concert",
       "Concert - Chanson variété"
     ],
     "date": "2027-01-23",
@@ -20421,10 +20757,10 @@ const EVENTS = [
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
-    "image": "https://www.curieux.net/img/e/2026/02/699c103d97946-bernard-lavilliers.jpg",
-    "url": "https://nancy.curieux.net/agenda/evenement/bernard-lavilliers-3",
-    "source": "curieux-net",
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/02/BERNARD-LAVILLIERS_2026_affiche_40x60_HD-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/bernard-lavilliers/",
+    "source": "zenith-nancy",
     "addedAt": "2026-09-30"
   },
   {
@@ -20561,10 +20897,28 @@ const EVENTS = [
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Clement-Viktorovitch_40x60_originale-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/clement-viktorovitch/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "al-6395310",
+    "title": "Les Coquettes - Nouveau Spectacle - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-01-29",
+    "endDate": "2027-01-29",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
     "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019753/07f48d1ecdd812b8-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-clement-viktorovitch/",
-    "source": "destination-nancy",
+    "image": "https://www.alentoor.fr/photos/classifieds/f9/8f/f98f96a37e6c60fc22f914c4393b13f0b1b49d784b95059ddb60bef8364cc44d-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6395310-les-coquettes-nouveau-spectacle-tournee",
+    "source": "alentoor",
     "addedAt": "2026-09-30"
   },
   {
@@ -20716,6 +21070,24 @@ const EVENTS = [
     "url": "https://lautrecanalnancy.fr/agenda/l-appel-du-tsar-du-cycle-2-cp-jusqu-la-5e",
     "source": "autre-canal",
     "addedAt": "2026-05-24"
+  },
+  {
+    "uuid": "al-6394682",
+    "title": "Zoom - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-02-02",
+    "endDate": "2027-02-02",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/6f/3c/6f3ce1b8fe82b17ed7d1816d491a19835f3a974fd3cf14203905dfe9d96a1fa2-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394682-zoom-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "d6838784-f511-11f0-8410-39fa44be7276",
@@ -20977,10 +21349,10 @@ const EVENTS = [
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
-    "image": "https://cdn.iris-etourism.io/media/destination_nancy/737019792/c5794a1040bbba73-800x520.webp",
-    "url": "https://www.destination-nancy.com/fete-manifestation/concert-500-voix-pour-johnny/",
-    "source": "destination-nancy",
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Affiche-Johnny-Officielle-2-350x524.jpeg",
+    "url": "https://www.zenith-de-nancy.com/evenement/500-voix-pour-johnny/",
+    "source": "zenith-nancy",
     "addedAt": "2026-09-30"
   },
   {
@@ -21191,6 +21563,24 @@ const EVENTS = [
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9f3d9da4-7b9f-11f1-9386-dbb5d45352e6",
     "serieUuid": "9f3d9da4-7b9f-11f1-9386-dbb5d45352e6",
     "addedAt": "2026-07-10"
+  },
+  {
+    "uuid": "al-6394646",
+    "title": "Sans Regrets ? - The Rat Pack Compagnie",
+    "category": "autre",
+    "subcats": [],
+    "date": "2027-02-09",
+    "endDate": "2027-02-09",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/52/20/52207d2b4afc166d479da5cd2674072f01db669888a7c292ac16f86bbffdf86c-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394646-sans-regrets-the-rat-pack-compagnie",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "erp-2027-02-09-les-hommes-viennent-de-mars-les-femmes-de-venus-mise-a-jour-2-0",
@@ -21404,7 +21794,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/13d9d68c-f513-11f0-bf2f-71f3ee1d58fb/0/ORIGINE_M_696deef18af87.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
     "serieUuid": "13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
@@ -21428,7 +21818,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/13d9d68c-f513-11f0-bf2f-71f3ee1d58fb/0/ORIGINE_M_696deef18af87.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
     "serieUuid": "13d9d68c-f513-11f0-bf2f-71f3ee1d58fb",
@@ -21621,6 +22011,24 @@ const EVENTS = [
     "tags": [
       "fun"
     ]
+  },
+  {
+    "uuid": "al-6390233",
+    "title": "Arnaud Demanche - Beaux Tout Nus - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-02-13",
+    "endDate": "2027-02-13",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/a9/84/a984850f399e21c23317cf92e3d8b7a1882bfd8f625c1c9735a51fa147f8bed6-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6390233-arnaud-demanche-beaux-tout-nus-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "lcn-somnelie-concert-de-berceuses-pop-des-3-mois",
@@ -21847,7 +22255,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/01bad2f8-4217-11f0-8d71-bdccb3db1929/0/ORIGINE_M_6841a59f034cd.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=01bad2f8-4217-11f0-8d71-bdccb3db1929",
     "addedAt": "2026-05-24",
@@ -21919,6 +22327,29 @@ const EVENTS = [
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=3992a932-8440-11f1-aa7a-9d91bc444512",
     "serieUuid": "3992a932-8440-11f1-aa7a-9d91bc444512",
     "addedAt": "2026-07-21"
+  },
+  {
+    "uuid": "zen-le-lac-des-cygnes-2",
+    "title": "Le Lac des Cygnes",
+    "category": "spectacle",
+    "subcats": [
+      "Ballet"
+    ],
+    "date": "2027-02-19",
+    "endDate": "2027-02-19",
+    "dateText": "Vendredi 19 février 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/09/le-lac-des-cygnes-visuel-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/le-lac-des-cygnes-2/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-26",
+    "tags": [
+      "incontournable"
+    ]
   },
   {
     "uuid": "2085f604-a6a7-11f1-85a1-ed6ce4596b70",
@@ -22226,7 +22657,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f3dbccd2-f512-11f0-84e3-5fa7c19294ee/0/ORIGINE_M_696deebbd91f7.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f3dbccd2-f512-11f0-84e3-5fa7c19294ee",
     "addedAt": "2026-05-24",
@@ -22362,7 +22793,8 @@ const EVENTS = [
     "category": "spectacle",
     "subcats": [
       "Spectacle",
-      "Humour"
+      "Humour",
+      "Spectacle - Humour"
     ],
     "date": "2027-03-10",
     "endDate": "2027-03-10",
@@ -22371,7 +22803,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d88af90c-6340-11f1-98b4-77db7156b741/0/ORIGINE_M_6a26c85ec6dd0.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d88af90c-6340-11f1-98b4-77db7156b741",
     "addedAt": "2026-05-24",
@@ -22427,27 +22859,6 @@ const EVENTS = [
     ]
   },
   {
-    "uuid": "erp-2027-03-10-dany-boon-clown-n-est-pas-un-metier",
-    "title": "Dany Boon, \"Clown n'est pas un métier !\"",
-    "category": "spectacle",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2027-03-10",
-    "endDate": "2027-03-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "affiches-auto/erp-2027-03-10-dany-boon-clown-n-est-pas-un-metier-2027-03-1-p52rqm.svg",
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2027/03/10/Dany-boon-clown-n-est-pas-un-metier",
-    "source": "est-republicain",
-    "addedAt": "2026-09-30",
-    "autoPoster": true
-  },
-  {
     "uuid": "lcn-decouverte-du-synthetiseur-atelier-avec-marin-hery",
     "title": "Découverte du synthétiseur",
     "category": "activite",
@@ -22466,29 +22877,6 @@ const EVENTS = [
     "url": "https://lautrecanalnancy.fr/agenda/decouverte-du-synthetiseur-atelier-avec-marin-hery",
     "source": "autre-canal",
     "addedAt": "2026-07-09"
-  },
-  {
-    "uuid": "lcn-danyl",
-    "title": "Danyl",
-    "category": "musiques-actuelles",
-    "subcats": [
-      "Concert",
-      "Pop",
-      "Rap",
-      "Raï"
-    ],
-    "date": "2027-03-10",
-    "endDate": "2027-03-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/754-field_illustration_id-1789572347.jpg%3Fitok%3D5GKgYMj2?itok=9YMpvTE7",
-    "url": "https://lautrecanalnancy.fr/agenda/danyl",
-    "source": "autre-canal",
-    "addedAt": "2026-09-29"
   },
   {
     "uuid": "572b37f6-ca15-11f0-9bf7-1b4eef81f9d5",
@@ -22569,6 +22957,24 @@ const EVENTS = [
     "url": "https://lautrecanalnancy.fr/agenda/noe-preszow",
     "source": "autre-canal",
     "addedAt": "2026-09-11"
+  },
+  {
+    "uuid": "al-6395316",
+    "title": "Nicolas Peyrac - en Toute Liberté",
+    "category": "musiques-actuelles",
+    "subcats": [],
+    "date": "2027-03-12",
+    "endDate": "2027-03-12",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/0c/8b/0c8b911f6ddccb11a0c2f4840b36e42a171ab4b9c2b095c7f07395851cf8be74-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6395316-nicolas-peyrac-en-toute-liberte",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "lcn-pomme-2027",
@@ -22856,7 +23262,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9c404412-f512-11f0-9e33-7909dc546817/0/ORIGINE_M_696dee28de3cc.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=9c404412-f512-11f0-9e33-7909dc546817",
     "addedAt": "2026-05-24",
@@ -23176,7 +23582,7 @@ const EVENTS = [
   },
   {
     "uuid": "al-6150249",
-    "title": "Le Cercle des Poètes Disparus",
+    "title": "Le Cercle des Poètes Disparus - Tournée",
     "category": "spectacle",
     "subcats": [],
     "date": "2027-03-27",
@@ -23188,7 +23594,7 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/88/7c/887c443f03e718cb90df28f3a8840676aeba41530999cc0228c8edcd9790318c-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6150249-le-cercle-des-poetes-disparus",
+    "url": "https://www.alentoor.fr/toul/agenda/6150249-le-cercle-des-poetes-disparus-tournee",
     "source": "alentoor",
     "addedAt": "2026-09-21"
   },
@@ -23335,7 +23741,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f39a36c0-7ada-11f1-afac-f9d8fa1e2668/0/ORIGINE_M_6a4e61576e687.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f39a36c0-7ada-11f1-afac-f9d8fa1e2668",
     "serieUuid": "f39a36c0-7ada-11f1-afac-f9d8fa1e2668",
@@ -23360,7 +23766,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/f39a36c0-7ada-11f1-afac-f9d8fa1e2668/0/ORIGINE_M_6a4e61576e687.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=f39a36c0-7ada-11f1-afac-f9d8fa1e2668",
     "serieUuid": "f39a36c0-7ada-11f1-afac-f9d8fa1e2668",
@@ -23454,6 +23860,26 @@ const EVENTS = [
     "tags": [
       "fun"
     ]
+  },
+  {
+    "uuid": "zen-covertramp",
+    "title": "COVERTRAMP",
+    "category": "spectacle",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2027-04-04",
+    "endDate": "2027-04-04",
+    "dateText": "Dimanche 4 avril 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/05/covertramp-v2-350x524.jpeg",
+    "url": "https://www.zenith-de-nancy.com/evenement/covertramp/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "lcn-winter-story-cince-concert-des-3-ans",
@@ -23692,6 +24118,24 @@ const EVENTS = [
     "addedAt": "2026-07-31"
   },
   {
+    "uuid": "al-6394647",
+    "title": "The Loop - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-04-10",
+    "endDate": "2027-04-10",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/b5/86/b586084cd327f0b044a53e293acbe5182460736a6db4b1349f555748de823994-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394647-the-loop-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "erp-2027-04-10-yann-guillarme-libre",
     "title": "Yann Guillarme, \"Libre !\"",
     "category": "spectacle",
@@ -23737,6 +24181,24 @@ const EVENTS = [
     "tags": [
       "incontournable"
     ]
+  },
+  {
+    "uuid": "al-6394677",
+    "title": "Dom Juan",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-04-13",
+    "endDate": "2027-04-13",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/42/c2/42c2a0ffbc1aea210a924e5d1ca9e8d0d0f70d05db81b67469731e636b1def42-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394677-dom-juan",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "7abb32bc-7adb-11f1-9c66-fbb576e24ee8",
@@ -23917,6 +24379,26 @@ const EVENTS = [
     "url": "https://www.destination-nancy.com/fete-manifestation/spectacle-bazar-circus/",
     "source": "destination-nancy",
     "addedAt": "2026-07-13"
+  },
+  {
+    "uuid": "zen-keenv",
+    "title": "Keen’V",
+    "category": "musiques-actuelles",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2027-04-16",
+    "endDate": "2027-04-16",
+    "dateText": "Vendredi 16 avril 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/KeenV-A-nos-20-ans-Visuel-de-MEV-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/keenv/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "erp-2027-04-16-edouard-deloignon-grandira-plus-tard",
@@ -24204,6 +24686,24 @@ const EVENTS = [
     "addedAt": "2026-05-24"
   },
   {
+    "uuid": "al-6394641",
+    "title": "Au Bord de l'eau - Centre Culturel Jean l'Hôte, Neuves-Maisons",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-05-04",
+    "endDate": "2027-05-04",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/bc/7d/bc7d29ba68d9bcea9bd98554c34eb01855628cf9ce5400bda3da2e453616c153-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394641-au-bord-de-l-eau-centre-culturel-jean-l-hote-neuves-maisons",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "66f79272-7b9c-11f1-8c45-31bc56daeb6a",
     "title": "BACH - Cto Brandebourgeois et Oratorio",
     "category": "musique-classique",
@@ -24354,6 +24854,24 @@ const EVENTS = [
     "addedAt": "2026-07-21"
   },
   {
+    "uuid": "al-6394631",
+    "title": "Germinal l'intemporel - Centre Culturel Jean l'Hôte, Neuves-Maisons",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-05-14",
+    "endDate": "2027-05-14",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/b6/e0/b6e01ec9e3c77e8cc1fbc2f7a1ccd580f06ea9a04ed2fd49fbb23cac72dc54d8-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394631-germinal-l-intemporel-centre-culturel-jean-l-hote-neuves-maisons",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "053f9c04-b040-11f1-8c5e-9fd59b63b988",
     "title": "Un soir avec Francis Huster",
     "category": "spectacle",
@@ -24419,6 +24937,24 @@ const EVENTS = [
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=a07c7310-843d-11f1-8ee5-8ba92083985c",
     "serieUuid": "a07c7310-843d-11f1-8ee5-8ba92083985c",
     "addedAt": "2026-07-21"
+  },
+  {
+    "uuid": "al-6394609",
+    "title": "Christelle Chollet - Culottée - Tournée",
+    "category": "spectacle",
+    "subcats": [],
+    "date": "2027-05-21",
+    "endDate": "2027-05-21",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "place Ernest Poirson",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.alentoor.fr/photos/classifieds/7a/8e/7a8eb94e79f2e6d9e7418131f1522b1773576191a26e6b863633ee47a832a84d-large.jpg",
+    "url": "https://www.alentoor.fr/neuves-maisons/agenda/6394609-christelle-chollet-culottee-tournee",
+    "source": "alentoor",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "erp-2027-05-21-sarah-schwab-elles-moi",
@@ -24564,7 +25100,7 @@ const EVENTS = [
   },
   {
     "uuid": "al-6152277",
-    "title": "Toute la Famille que j'aime",
+    "title": "Toute la Famille que j'aime - Tournée",
     "category": "spectacle",
     "subcats": [],
     "date": "2027-05-28",
@@ -24576,12 +25112,9 @@ const EVENTS = [
     "free": false,
     "reservation": false,
     "image": "https://www.alentoor.fr/photos/classifieds/9e/05/9e05bbf9e0d34947d025f4cdab7d81bfa1cbbb51c3e8e3f1f24e9d5fdb24f1a3-large.jpg",
-    "url": "https://www.alentoor.fr/toul/agenda/6152277-toute-la-famille-que-j-aime",
+    "url": "https://www.alentoor.fr/toul/agenda/6152277-toute-la-famille-que-j-aime-tournee",
     "source": "alentoor",
-    "addedAt": "2026-09-21",
-    "tags": [
-      "famille"
-    ]
+    "addedAt": "2026-09-21"
   },
   {
     "uuid": "al-6337076",
@@ -31762,6 +32295,46 @@ const EVENTS = [
     "addedAt": "2026-09-27"
   },
   {
+    "uuid": "zen-nino-arial",
+    "title": "Nino Arial",
+    "category": "spectacle",
+    "subcats": [
+      "Humour"
+    ],
+    "date": "2027-11-19",
+    "endDate": "2027-11-19",
+    "dateText": "Vendredi 19 novembre 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/03/NINO-ARIAL-1080x1920-1-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/nino-arial/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "zen-philippe-caveriviere",
+    "title": "Philippe Caverivière",
+    "category": "spectacle",
+    "subcats": [
+      "Humour"
+    ],
+    "date": "2027-11-20",
+    "endDate": "2027-11-20",
+    "dateText": "Samedi 20 novembre 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Philippe-Caveriviere_40x60_originale-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/philippe-caveriviere/",
+    "source": "zenith-nancy",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "d26feb66-7ada-11f1-9c64-45ec3db71fdf",
     "title": "Gaël Faye",
     "category": "musiques-actuelles",
@@ -31777,7 +32350,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/d26feb66-7ada-11f1-9c64-45ec3db71fdf/0/ORIGINE_M_6a4e611fc7737.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=d26feb66-7ada-11f1-9c64-45ec3db71fdf",
     "addedAt": "2026-05-24",
@@ -31800,7 +32373,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/5a889812-f512-11f0-96d6-05d356c42e9d/0/ORIGINE_M_696dedba9eb2b.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=5a889812-f512-11f0-96d6-05d356c42e9d",
     "addedAt": "2026-05-24",
@@ -31845,7 +32418,7 @@ const EVENTS = [
     "place": "Zénith du Grand Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": false,
+    "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/11001ae8-eae6-11f0-b2c4-b55d4eac594c/0/ORIGINE_M_695cdc75c5487.jpeg",
     "url": "https://www.nancy.fr/agenda/details-agenda?uuid=11001ae8-eae6-11f0-b2c4-b55d4eac594c",
     "addedAt": "2026-05-24",
@@ -31873,6 +32446,48 @@ const EVENTS = [
     "source": "est-republicain",
     "addedAt": "2026-09-16",
     "autoPoster": true
+  },
+  {
+    "uuid": "zen-mousquetaire",
+    "title": "MOUSQUETAIRE",
+    "category": "spectacle",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2028-01-29",
+    "endDate": "2028-01-29",
+    "dateText": "",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Mousquetaire_40x60_originale-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/mousquetaire/",
+    "source": "zenith-nancy",
+    "serieUuid": "zen-mousquetaire",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "zen-mousquetaire-j2",
+    "title": "MOUSQUETAIRE",
+    "category": "spectacle",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2028-01-30",
+    "endDate": "2028-01-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/Mousquetaire_40x60_originale-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/mousquetaire/",
+    "source": "zenith-nancy",
+    "serieUuid": "zen-mousquetaire",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "erp-2028-02-11-les-dix-commandements-le-concert-evenement",
