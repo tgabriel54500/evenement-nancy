@@ -164,6 +164,27 @@
     "logoFile": ""
   },
   {
+    "id": "medef54-formation-at-mp-sante-mentale-et-travail",
+    "network": "medef54",
+    "source": "MEDEF Meurthe-et-Moselle",
+    "title": "Formation AT/MP : Santé Mentale et Travail",
+    "category": "formation",
+    "date": "2026-10-08",
+    "endDate": "2026-10-08",
+    "time": "9h00–17h00",
+    "place": "Pôle Formation UIMM Lorraine",
+    "city": "Maxéville",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/129",
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/06/74ac8cb63c42f6a9a128ae7de3b75cf507bef441.png",
+    "description": "Risques psychosociaux et prévention des RPS Dans un contexte où la santé mentale est devenue un enjeu majeur de performance, d’attractivité et de responsabilité employeur, cette formation vise à outiller les dirigeants et managers pour passer de la réaction à la prévention structurelle.",
+    "free": true,
+    "price": "Gratuit",
+    "membersOnly": true,
+    "online": false,
+    "logo": "",
+    "logoFile": ""
+  },
+  {
     "id": "cci-nuit-de-la-creation-2026",
     "network": "cci",
     "source": "CCI Grand Nancy Métropole",

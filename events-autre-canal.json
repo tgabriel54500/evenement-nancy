@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-video-games-music-making-d-une-exposition-sur-la-musique-de-jeu",
-    "title": "Video Games & Music",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Conférence"
-    ],
-    "date": "2026-09-29",
-    "endDate": "2026-09-29",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/img_9685.jpeg?itok=3qBWM7IL",
-    "url": "https://lautrecanalnancy.fr/agenda/video-games-music-making-d-une-exposition-sur-la-musique-de-jeu",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
     "title": "On écoute : Diamond Life, Sade",
     "category": "activite",
@@ -128,8 +106,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-nancy-ink-tatoo",
-    "title": "Nancy Ink Tatoo",
+    "uuid": "lcn-nancy-ink-tattoo",
+    "title": "Nancy Ink Tattoo",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -145,7 +123,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ink_tatoo_copie.jpeg?itok=Z8lpIsY3",
-    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tatoo",
+    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tattoo",
     "source": "autre-canal"
   },
   {
@@ -191,8 +169,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-emile-londonien-kissa-jean-michel-moog-son-batard",
-    "title": "Emile Londonien : Kissa",
+    "uuid": "lcn-emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
+    "title": "Emile Londonien × Pierre Henry Gomont",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -211,7 +189,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/emile_londonien.jpg?itok=T_dLEklH",
-    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-kissa-jean-michel-moog-son-batard",
+    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
     "source": "autre-canal"
   },
   {
@@ -959,7 +937,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-broken-back",
+    "uuid": "lcn-broken-back-oak-teller",
     "title": "Broken Back",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -978,7 +956,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/643-illustration_id-1764337516.jpg?itok=5AD7_oza",
-    "url": "https://lautrecanalnancy.fr/agenda/broken-back",
+    "url": "https://lautrecanalnancy.fr/agenda/broken-back-oak-teller",
     "source": "autre-canal"
   },
   {
@@ -1381,7 +1359,7 @@
     "catEmoji": "🎸",
     "subcats": [
       "Etudiant·es",
-      "Conférence"
+      "Table ronde"
     ],
     "date": "2026-11-23",
     "endDate": "2026-11-23",
@@ -2143,7 +2121,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-seth-gueko",
+    "uuid": "lcn-seth-gueko-ars-n",
     "title": "Seth Gueko",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -2161,7 +2139,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/741-field_illustration_id-1779366374.jpg%3Fitok%3DNT5F1RYJ?itok=-jrhrPC3",
-    "url": "https://lautrecanalnancy.fr/agenda/seth-gueko",
+    "url": "https://lautrecanalnancy.fr/agenda/seth-gueko-ars-n",
     "source": "autre-canal"
   },
   {
@@ -2406,6 +2384,30 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09076.jpg?itok=r59MeBpX",
     "url": "https://lautrecanalnancy.fr/agenda/decouverte-du-synthetiseur-atelier-avec-marin-hery",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-danyl",
+    "title": "Danyl",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop",
+      "Rap",
+      "Raï"
+    ],
+    "date": "2027-03-10",
+    "endDate": "2027-03-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/754-field_illustration_id-1789572347.jpg%3Fitok%3D5GKgYMj2?itok=9YMpvTE7",
+    "url": "https://lautrecanalnancy.fr/agenda/danyl",
     "source": "autre-canal"
   },
   {

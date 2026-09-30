@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Anticiper l’avancée en âge">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Dany Boon, &quot;Clown n'est pas un métier !&quot;">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0" stop-color="#991b1b"/>
@@ -16,12 +16,13 @@
         font-size="30" font-weight="700" letter-spacing="8" fill="#fecaca">SPECTACLE</text>
   <rect x="360" y="526" width="80" height="4" rx="2" fill="#fecaca" opacity=".8"/>
   <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#ffffff">
-      <text x="400" y="628" font-size="100">Anticiper</text>
-      <text x="400" y="740" font-size="100">l’avancée en</text>
-      <text x="400" y="852" font-size="100">âge</text>
+      <text x="400" y="628" font-size="100">Dany Boon,</text>
+      <text x="400" y="740" font-size="100">&quot;Clown n'est</text>
+      <text x="400" y="852" font-size="100">pas un</text>
+      <text x="400" y="964" font-size="100">métier !&quot;</text>
   </g>
   <g text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="400" y="972" font-size="50" font-weight="700" fill="#fecaca">Mardi 29 septembre</text>
-    <text x="400" y="1034" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Nancy</text>
+    <text x="400" y="1084" font-size="50" font-weight="700" fill="#fecaca">Mercredi 10 mars</text>
+    <text x="400" y="1146" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Nancy</text>
   </g>
 </svg>

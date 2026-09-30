@@ -28,8 +28,8 @@
     <text x="400" y="726" text-anchor="middle" font-size="104" font-weight="800" fill="#ffffff">JDA DIJON</text>
 
     <rect x="160" y="866" width="480" height="2" fill="#ffffff" opacity=".22"/>
-    <text x="400" y="920" font-size="40" font-weight="700" fill="#ffffff">samedi 13 mars</text>
-    <text x="400" y="958" font-size="25" font-weight="600" fill="#ffb703">horaire à confirmer</text>
-    <text x="400" y="996" font-size="27" font-weight="500" fill="#ffffff" opacity=".7">Palais des Sports Jean Weille, Nancy</text>
+    <text x="400" y="932" font-size="40" font-weight="700" fill="#ffffff">samedi 13 mars · 20h00</text>
+    
+    <text x="400" y="978" font-size="27" font-weight="500" fill="#ffffff" opacity=".7">Palais des Sports Jean Weille, Nancy</text>
   </g>
 </svg>

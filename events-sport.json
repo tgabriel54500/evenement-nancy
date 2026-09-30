@@ -4,7 +4,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2026-10-03",
-    "time": "",
+    "time": "18h00",
     "opponent": "Cholet Basket",
     "competition": "Betclic ÉLITE",
     "round": "2e journée",
@@ -13,7 +13,23 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "nancy-villers-2-ffh-2640108",
+    "club": "nancy-villers-2",
+    "sport": "hand",
+    "date": "2026-10-03",
+    "time": "19h00",
+    "opponent": "SARREBOURG MOSELLE SUD HANDBALL",
+    "competition": "Nationale 3 masculine",
+    "round": "4e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "vnvb-636443",
@@ -30,6 +46,38 @@
     "tickets": "https://www.vnvb.fr/billetterie/",
     "calendar": "https://www.vnvb.fr/",
     "source": "les-sports.info"
+  },
+  {
+    "id": "villers-f-ffh-2649419",
+    "club": "villers-f",
+    "sport": "hand",
+    "date": "2026-10-03",
+    "time": "21h00",
+    "opponent": "DAMBACH LA VILLE",
+    "competition": "Nationale 2 féminine",
+    "round": "4e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "source": "ffhandball.fr"
+  },
+  {
+    "id": "sluc-fec-135754",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-10-06",
+    "time": "20h00",
+    "opponent": "BC Vienna",
+    "competition": "FIBA Europe Cup",
+    "round": "Saison régulière · groupe D · match 1",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "fiba.basketball"
   },
   {
     "id": "asnl-633125",
@@ -68,7 +116,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2026-10-17",
-    "time": "",
+    "time": "18h00",
     "opponent": "Nanterre 92",
     "competition": "Betclic ÉLITE",
     "round": "4e journée",
@@ -77,7 +125,23 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639057",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2026-10-17",
+    "time": "20h30",
+    "opponent": "LEVALLOIS SC",
+    "competition": "Nationale 2 masculine",
+    "round": "5e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "gnvb-9960",
@@ -94,6 +158,22 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "sluc-fec-135762",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-10-20",
+    "time": "20h00",
+    "opponent": "Nitra Blue Wings",
+    "competition": "FIBA Europe Cup",
+    "round": "Saison régulière · groupe D · match 9",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "fiba.basketball"
   },
   {
     "id": "asnl-633127",
@@ -144,6 +224,22 @@
     "source": "nancy-volley.fr"
   },
   {
+    "id": "sluc-fec-135767",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-11-03",
+    "time": "20h00",
+    "opponent": "Keravnos BC",
+    "competition": "FIBA Europe Cup",
+    "round": "Saison régulière · groupe D · match 14",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "fiba.basketball"
+  },
+  {
     "id": "asnl-633129",
     "club": "asnl",
     "sport": "foot",
@@ -158,22 +254,6 @@
     "tickets": "http://asnlbillets.net/Pages/Start.aspx",
     "calendar": "https://www.asnl.net/86/calendrier/calendriers/liste/",
     "source": "les-sports.info"
-  },
-  {
-    "id": "sluc-j7",
-    "club": "sluc",
-    "sport": "basket",
-    "date": "2026-11-07",
-    "time": "",
-    "opponent": "Limoges CSP",
-    "competition": "Betclic ÉLITE",
-    "round": "7e journée",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "tickets": "https://billetterie.sluc-basket.fr/",
-    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
   },
   {
     "id": "vnvb-636449",
@@ -192,6 +272,38 @@
     "source": "les-sports.info"
   },
   {
+    "id": "sluc-j7",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-11-07",
+    "time": "20h00",
+    "opponent": "Limoges CSP",
+    "competition": "Betclic ÉLITE",
+    "round": "7e journée",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "villers-f-ffh-2649438",
+    "club": "villers-f",
+    "sport": "hand",
+    "date": "2026-11-07",
+    "time": "21h00",
+    "opponent": "REICHSTETT",
+    "competition": "Nationale 2 féminine",
+    "round": "7e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "source": "ffhandball.fr"
+  },
+  {
     "id": "gnvb-10019",
     "club": "gnvb",
     "sport": "volley",
@@ -206,6 +318,54 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639069",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2026-11-14",
+    "time": "20h30",
+    "opponent": "ABBEVILLE E A L",
+    "competition": "Nationale 2 masculine",
+    "round": "7e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
+  },
+  {
+    "id": "nancy-villers-2-ffh-2640127",
+    "club": "nancy-villers-2",
+    "sport": "hand",
+    "date": "2026-11-14",
+    "time": "21h00",
+    "opponent": "VAL DE GRAY HB",
+    "competition": "Nationale 3 masculine",
+    "round": "7e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "source": "ffhandball.fr"
+  },
+  {
+    "id": "sluc-fec-135773",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-11-17",
+    "time": "20h00",
+    "opponent": "Adversaire à déterminer",
+    "competition": "FIBA Europe Cup",
+    "round": "Saison régulière · groupe D · match 20",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "fiba.basketball"
   },
   {
     "id": "asnl-633130",
@@ -224,22 +384,6 @@
     "source": "les-sports.info"
   },
   {
-    "id": "sluc-j9",
-    "club": "sluc",
-    "sport": "basket",
-    "date": "2026-11-21",
-    "time": "",
-    "opponent": "Pau-Lacq-Orthez",
-    "competition": "Betclic ÉLITE",
-    "round": "9e journée",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "tickets": "https://billetterie.sluc-basket.fr/",
-    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
-  },
-  {
     "id": "vnvb-636451",
     "club": "vnvb",
     "sport": "volley",
@@ -256,6 +400,54 @@
     "source": "les-sports.info"
   },
   {
+    "id": "sluc-j9",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-11-21",
+    "time": "20h00",
+    "opponent": "Pau-Lacq-Orthez",
+    "competition": "Betclic ÉLITE",
+    "round": "9e journée",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "villers-f-ffh-2649452",
+    "club": "villers-f",
+    "sport": "hand",
+    "date": "2026-11-21",
+    "time": "20h00",
+    "opponent": "CHEVIGNY ST SAUVEUR HANDBALL",
+    "competition": "Nationale 2 féminine",
+    "round": "9e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "source": "ffhandball.fr"
+  },
+  {
+    "id": "nancy-villers-2-ffh-2640141",
+    "club": "nancy-villers-2",
+    "sport": "hand",
+    "date": "2026-11-28",
+    "time": "19h00",
+    "opponent": "HOENHEIM",
+    "competition": "Nationale 3 masculine",
+    "round": "9e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "source": "ffhandball.fr"
+  },
+  {
     "id": "gnvb-10007",
     "club": "gnvb",
     "sport": "volley",
@@ -270,6 +462,22 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639081",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2026-11-28",
+    "time": "20h30",
+    "opponent": "HBC LIVRY-GARGAN",
+    "competition": "Nationale 2 masculine",
+    "round": "9e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "gnvb-9995",
@@ -308,7 +516,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2026-12-12",
-    "time": "",
+    "time": "20h00",
     "opponent": "Saint-Quentin",
     "competition": "Betclic ÉLITE",
     "round": "11e journée",
@@ -317,7 +525,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "vnvb-636454",
@@ -336,6 +544,38 @@
     "source": "les-sports.info"
   },
   {
+    "id": "sluc-fec-135780",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-12-15",
+    "time": "20h00",
+    "opponent": "King Szczecin",
+    "competition": "FIBA Europe Cup",
+    "round": "Saison régulière · groupe D · match 27",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://www.fiba.basketball/en/events/fiba-europe-cup-26-27/games",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "fiba.basketball"
+  },
+  {
+    "id": "nancy-villers-2-ffh-2640154",
+    "club": "nancy-villers-2",
+    "sport": "hand",
+    "date": "2026-12-19",
+    "time": "19h00",
+    "opponent": "ENTENTE SAONE MAMIROLLE HB",
+    "competition": "Nationale 3 masculine",
+    "round": "11e journée",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "source": "ffhandball.fr"
+  },
+  {
     "id": "gnvb-9989",
     "club": "gnvb",
     "sport": "volley",
@@ -352,20 +592,20 @@
     "source": "nancy-volley.fr"
   },
   {
-    "id": "sluc-j13",
-    "club": "sluc",
-    "sport": "basket",
-    "date": "2026-12-22",
-    "time": "",
-    "opponent": "Bourg-en-Bresse",
-    "competition": "Betclic ÉLITE",
-    "round": "13e journée",
-    "place": "Palais des Sports Jean Weille",
+    "id": "nancy-villers-ffh-2639093",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2026-12-19",
+    "time": "20h30",
+    "opponent": "P2H HANDBALL",
+    "competition": "Nationale 2 masculine",
+    "round": "11e journée",
+    "place": "Gymnase Provençal",
     "city": "Nancy",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "tickets": "https://billetterie.sluc-basket.fr/",
-    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "gnvb-9983",
@@ -382,6 +622,22 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "sluc-j13",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2026-12-22",
+    "time": "20h00",
+    "opponent": "Bourg-en-Bresse",
+    "competition": "Betclic ÉLITE",
+    "round": "13e journée",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "vnvb-636457",
@@ -404,7 +660,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-01-09",
-    "time": "",
+    "time": "20h00",
     "opponent": "Le Mans",
     "competition": "Betclic ÉLITE",
     "round": "15e journée",
@@ -413,7 +669,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "gnvb-9965",
@@ -484,7 +740,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-01-23",
-    "time": "",
+    "time": "20h00",
     "opponent": "Elan Chalon",
     "competition": "Betclic ÉLITE",
     "round": "17e journée",
@@ -493,7 +749,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "asnl-633136",
@@ -544,6 +800,22 @@
     "source": "nancy-volley.fr"
   },
   {
+    "id": "nancy-villers-ffh-2639099",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2027-02-06",
+    "time": "20h30",
+    "opponent": "ELITE VAL-D'OISE",
+    "competition": "Nationale 2 masculine",
+    "round": "12e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
+  },
+  {
     "id": "asnl-633138",
     "club": "asnl",
     "sport": "foot",
@@ -558,22 +830,6 @@
     "tickets": "http://asnlbillets.net/Pages/Start.aspx",
     "calendar": "https://www.asnl.net/86/calendrier/calendriers/liste/",
     "source": "les-sports.info"
-  },
-  {
-    "id": "sluc-j20",
-    "club": "sluc",
-    "sport": "basket",
-    "date": "2027-02-13",
-    "time": "",
-    "opponent": "Gravelines-Dunkerque",
-    "competition": "Betclic ÉLITE",
-    "round": "20e journée",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "tickets": "https://billetterie.sluc-basket.fr/",
-    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
   },
   {
     "id": "vnvb-636463",
@@ -592,6 +848,22 @@
     "source": "les-sports.info"
   },
   {
+    "id": "sluc-j20",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2027-02-13",
+    "time": "20h00",
+    "opponent": "Gravelines-Dunkerque",
+    "competition": "Betclic ÉLITE",
+    "round": "20e journée",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
     "id": "gnvb-10085",
     "club": "gnvb",
     "sport": "volley",
@@ -606,6 +878,22 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639117",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2027-02-27",
+    "time": "20h30",
+    "opponent": "SAVIGNY HB 91",
+    "competition": "Nationale 2 masculine",
+    "round": "15e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "vnvb-636465",
@@ -692,7 +980,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-03-13",
-    "time": "",
+    "time": "20h00",
     "opponent": "JDA Dijon",
     "competition": "Betclic ÉLITE",
     "round": "22e journée",
@@ -701,7 +989,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "gnvb-10103",
@@ -724,7 +1012,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-03-27",
-    "time": "",
+    "time": "20h00",
     "opponent": "Chorale Roanne",
     "competition": "Betclic ÉLITE",
     "round": "24e journée",
@@ -733,7 +1021,23 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639129",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2027-03-27",
+    "time": "20h30",
+    "opponent": "ALC LONGVIC",
+    "competition": "Nationale 2 masculine",
+    "round": "17e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "asnl-633144",
@@ -756,7 +1060,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-04-03",
-    "time": "",
+    "time": "20h00",
     "opponent": "Boulazac",
     "competition": "Betclic ÉLITE",
     "round": "25e journée",
@@ -765,7 +1069,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "gnvb-10122",
@@ -800,22 +1104,6 @@
     "source": "nancy-volley.fr"
   },
   {
-    "id": "sluc-j27",
-    "club": "sluc",
-    "sport": "basket",
-    "date": "2027-04-17",
-    "time": "",
-    "opponent": "Strasbourg",
-    "competition": "Betclic ÉLITE",
-    "round": "27e journée",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "tickets": "https://billetterie.sluc-basket.fr/",
-    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
-  },
-  {
     "id": "gnvb-10133",
     "club": "gnvb",
     "sport": "volley",
@@ -830,6 +1118,38 @@
     "tickets": "https://www.nancy-volley.fr/billetterie/",
     "calendar": "https://www.nancy-volley.fr/calendrier/",
     "source": "nancy-volley.fr"
+  },
+  {
+    "id": "sluc-j27",
+    "club": "sluc",
+    "sport": "basket",
+    "date": "2027-04-17",
+    "time": "20h00",
+    "opponent": "Strasbourg",
+    "competition": "Betclic ÉLITE",
+    "round": "27e journée",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "source": "ffbb.com + lnb.fr"
+  },
+  {
+    "id": "nancy-villers-ffh-2639141",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2027-04-17",
+    "time": "20h30",
+    "opponent": "BILLY MONTIGNY",
+    "competition": "Nationale 2 masculine",
+    "round": "19e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   },
   {
     "id": "asnl-633147",
@@ -852,7 +1172,7 @@
     "club": "sluc",
     "sport": "basket",
     "date": "2027-05-01",
-    "time": "",
+    "time": "20h00",
     "opponent": "LDLC ASVEL",
     "competition": "Betclic ÉLITE",
     "round": "29e journée",
@@ -861,7 +1181,7 @@
     "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
     "tickets": "https://billetterie.sluc-basket.fr/",
     "calendar": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "source": "ffbb.com"
+    "source": "ffbb.com + lnb.fr"
   },
   {
     "id": "gnvb-10145",
@@ -910,5 +1230,21 @@
     "tickets": "http://asnlbillets.net/Pages/Start.aspx",
     "calendar": "https://www.asnl.net/86/calendrier/calendriers/liste/",
     "source": "les-sports.info"
+  },
+  {
+    "id": "nancy-villers-ffh-2639153",
+    "club": "nancy-villers",
+    "sport": "hand",
+    "date": "2027-05-22",
+    "time": "20h30",
+    "opponent": "ENT. ELITE AXONAISE HB",
+    "competition": "Nationale 2 masculine",
+    "round": "21e journée",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "tickets": "",
+    "calendar": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "source": "ffhandball.fr"
   }
 ]

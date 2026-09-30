@@ -3,20 +3,20 @@
 // Sources : agendas publics des réseaux d'affaires, de la CCI, du MEDEF 54 et
 // du Centre Prouvé (voir pro-sources.js / pro-scrape.js).
 // Régénérer : node pro-scrape.js && node update-pro.js
-// Généré le : 2026-09-28 — 22 événement(s) à venir.
+// Généré le : 2026-09-30 — 22 événement(s) à venir.
 
 const CATEGORIES = {
   "formation": {
     "label": "Ateliers & formations",
     "emoji": "🛠️"
   },
-  "petit-dej": {
-    "label": "Petits-déjeuners & déjeuners",
-    "emoji": "☕"
-  },
   "salon": {
     "label": "Salons & congrès",
     "emoji": "🏛️"
+  },
+  "petit-dej": {
+    "label": "Petits-déjeuners & déjeuners",
+    "emoji": "☕"
   },
   "conference": {
     "label": "Conférences & tables rondes",
@@ -28,7 +28,7 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-09-28";
+const GENERATED_AT = "2026-09-30";
 
 const RESEAUX = [
   {
@@ -55,7 +55,7 @@ const RESEAUX = [
     "frequency": "Deux mardis par mois environ, à 9h",
     "membersOnly": false,
     "scrape": true,
-    "count": 5
+    "count": 4
   },
   {
     "key": "adjan",
@@ -81,7 +81,7 @@ const RESEAUX = [
     "frequency": "Plusieurs rendez-vous par mois",
     "membersOnly": false,
     "scrape": true,
-    "count": 0
+    "count": 1
   },
   {
     "key": "cci",
@@ -190,33 +190,6 @@ const EVENTS = [
     "membersOnly": false,
     "price": "750,00 €",
     "description": "La formation pour comprendre comment créer votre entreprise !",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-cafesbusiness-3374",
-    "title": "Café Business chez Combi Events",
-    "category": "petit-dej",
-    "subcats": [
-      "Les Cafés Business",
-      "ouvert à tous"
-    ],
-    "date": "2026-09-29",
-    "endDate": "2026-09-29",
-    "dateText": "Mardi 29 septembre 2026",
-    "schedule": "9h00",
-    "place": "Combi Events",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3374-2026-09-29-1ybua20.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3374",
-    "source": "cafesbusiness",
-    "addedAt": "2026-09-28",
-    "network": "cafesbusiness",
-    "organizer": "Les Cafés Business",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Combi Events. Inscription en ligne, places limitées.",
     "autoPoster": true
   },
   {
@@ -350,6 +323,33 @@ const EVENTS = [
     "price": "",
     "description": "Rendez-vous le jeudi 8 octobre de 16h à 21h pour la Nuit de la Création d'entreprise !",
     "autoPoster": true
+  },
+  {
+    "uuid": "pro-medef54-formation-at-mp-sante-mentale-et-travail",
+    "title": "Formation AT/MP : Santé Mentale et Travail",
+    "category": "formation",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "Gratuit",
+      "réservé aux membres"
+    ],
+    "date": "2026-10-08",
+    "endDate": "2026-10-08",
+    "dateText": "Jeudi 8 octobre 2026",
+    "schedule": "9h00–17h00",
+    "place": "Pôle Formation UIMM Lorraine",
+    "city": "Maxéville",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/06/74ac8cb63c42f6a9a128ae7de3b75cf507bef441.png",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/129",
+    "source": "medef54",
+    "addedAt": "2026-09-30",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": true,
+    "price": "Gratuit",
+    "description": "Risques psychosociaux et prévention des RPS Dans un contexte où la santé mentale est devenue un enjeu majeur de performance, d’attractivité et de responsabilité employeur, cette formation vise à outiller les dirigeants et managers pour passer de la réaction à la prévention structurelle."
   },
   {
     "uuid": "pro-prouve-journee-serafin-ph-et-transformation-offre-handicap",

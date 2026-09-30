@@ -2,12 +2,16 @@
 // Rencontres des clubs de haut niveau du Grand Nancy, à domicile uniquement.
 // Sources : sites officiels des clubs et des ligues (voir sport-scrape.js).
 // Régénérer : node sport-scrape.js && node update-sport.js
-// Généré le : 2026-09-28 — 57 rencontre(s) à venir.
+// Généré le : 2026-09-30 — 78 rencontre(s) à venir.
 
 const CATEGORIES = {
   "basket": {
     "label": "Basket",
     "emoji": "🏀"
+  },
+  "hand": {
+    "label": "Handball",
+    "emoji": "🤾"
   },
   "volley": {
     "label": "Volley",
@@ -19,7 +23,7 @@ const CATEGORIES = {
   }
 };
 
-const GENERATED_AT = "2026-09-28";
+const GENERATED_AT = "2026-09-30";
 
 const EVENTS = [
   {
@@ -34,14 +38,35 @@ const EVENTS = [
     "date": "2026-10-03",
     "endDate": "2026-10-03",
     "dateText": "Samedi 3 octobre 2026",
-    "schedule": "",
+    "schedule": "18h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j2.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-nancy-villers-2-ffh-2640108",
+    "title": "NANCY / VILLERS 2 - SARREBOURG MOSELLE SUD HANDBALL",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball (Nationale 3)",
+      "SARREBOURG MOSELLE SUD HANDBALL",
+      "Nationale 3 masculine"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "Samedi 3 octobre 2026",
+    "schedule": "19h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-2-ffh-2640108.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "addedAt": "2026-09-30"
   },
   {
     "uuid": "sport-vnvb-636443",
@@ -63,6 +88,48 @@ const EVENTS = [
     "image": "affiches-sport/sport-vnvb-636443.svg",
     "url": "https://www.vnvb.fr/billetterie/",
     "addedAt": "2026-09-18"
+  },
+  {
+    "uuid": "sport-villers-f-ffh-2649419",
+    "title": "VILLERS HB - DAMBACH LA VILLE",
+    "category": "hand",
+    "subcats": [
+      "Villers Handball (féminines)",
+      "DAMBACH LA VILLE",
+      "Nationale 2 féminine"
+    ],
+    "date": "2026-10-03",
+    "endDate": "2026-10-03",
+    "dateText": "Samedi 3 octobre 2026",
+    "schedule": "21h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-villers-f-ffh-2649419.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "addedAt": "2026-09-29"
+  },
+  {
+    "uuid": "sport-sluc-fec-135754",
+    "title": "SLUC - BC Vienna",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "BC Vienna",
+      "FIBA Europe Cup"
+    ],
+    "date": "2026-10-06",
+    "endDate": "2026-10-06",
+    "dateText": "Mardi 6 octobre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-fec-135754.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-asnl-633125",
@@ -118,14 +185,35 @@ const EVENTS = [
     "date": "2026-10-17",
     "endDate": "2026-10-17",
     "dateText": "Samedi 17 octobre 2026",
-    "schedule": "",
+    "schedule": "18h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j4.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639057",
+    "title": "NANCY / VILLERS - LEVALLOIS SC",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "LEVALLOIS SC",
+      "Nationale 2 masculine"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "Samedi 17 octobre 2026",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639057.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-gnvb-9960",
@@ -147,6 +235,27 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-9960.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-sluc-fec-135762",
+    "title": "SLUC - Nitra Blue Wings",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Nitra Blue Wings",
+      "FIBA Europe Cup"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "dateText": "Mardi 20 octobre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-fec-135762.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-asnl-633127",
@@ -212,6 +321,27 @@ const EVENTS = [
     "addedAt": "2026-09-08"
   },
   {
+    "uuid": "sport-sluc-fec-135767",
+    "title": "SLUC - Keravnos BC",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Keravnos BC",
+      "FIBA Europe Cup"
+    ],
+    "date": "2026-11-03",
+    "endDate": "2026-11-03",
+    "dateText": "Mardi 3 novembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-fec-135767.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-29"
+  },
+  {
     "uuid": "sport-asnl-633129",
     "title": "ASNL - FC Sochaux Montbéliard",
     "category": "foot",
@@ -231,27 +361,6 @@ const EVENTS = [
     "image": "affiches-sport/sport-asnl-633129.svg",
     "url": "http://asnlbillets.net/Pages/Start.aspx",
     "addedAt": "2026-09-18"
-  },
-  {
-    "uuid": "sport-sluc-j7",
-    "title": "SLUC - Limoges CSP",
-    "category": "basket",
-    "subcats": [
-      "SLUC Nancy Basket",
-      "Limoges CSP",
-      "Betclic ÉLITE"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "Samedi 7 novembre 2026",
-    "schedule": "",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-sport/sport-sluc-j7.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "addedAt": "2026-09-06"
   },
   {
     "uuid": "sport-vnvb-636449",
@@ -275,6 +384,48 @@ const EVENTS = [
     "addedAt": "2026-09-18"
   },
   {
+    "uuid": "sport-sluc-j7",
+    "title": "SLUC - Limoges CSP",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Limoges CSP",
+      "Betclic ÉLITE"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "Samedi 7 novembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-j7.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-villers-f-ffh-2649438",
+    "title": "VILLERS HB - REICHSTETT",
+    "category": "hand",
+    "subcats": [
+      "Villers Handball (féminines)",
+      "REICHSTETT",
+      "Nationale 2 féminine"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "Samedi 7 novembre 2026",
+    "schedule": "21h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-villers-f-ffh-2649438.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "addedAt": "2026-09-29"
+  },
+  {
     "uuid": "sport-gnvb-10019",
     "title": "GNVB - Reims",
     "category": "volley",
@@ -294,6 +445,69 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-10019.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639069",
+    "title": "NANCY / VILLERS - ABBEVILLE E A L",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "ABBEVILLE E A L",
+      "Nationale 2 masculine"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "Samedi 14 novembre 2026",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639069.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
+  },
+  {
+    "uuid": "sport-nancy-villers-2-ffh-2640127",
+    "title": "NANCY / VILLERS 2 - VAL DE GRAY HB",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball (Nationale 3)",
+      "VAL DE GRAY HB",
+      "Nationale 3 masculine"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "Samedi 14 novembre 2026",
+    "schedule": "21h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-2-ffh-2640127.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "addedAt": "2026-09-30"
+  },
+  {
+    "uuid": "sport-sluc-fec-135773",
+    "title": "SLUC - Adversaire à déterminer",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Adversaire à déterminer",
+      "FIBA Europe Cup"
+    ],
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "dateText": "Mardi 17 novembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-fec-135773.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-asnl-633130",
@@ -317,27 +531,6 @@ const EVENTS = [
     "addedAt": "2026-09-18"
   },
   {
-    "uuid": "sport-sluc-j9",
-    "title": "SLUC - Pau-Lacq-Orthez",
-    "category": "basket",
-    "subcats": [
-      "SLUC Nancy Basket",
-      "Pau-Lacq-Orthez",
-      "Betclic ÉLITE"
-    ],
-    "date": "2026-11-21",
-    "endDate": "2026-11-21",
-    "dateText": "Samedi 21 novembre 2026",
-    "schedule": "",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-sport/sport-sluc-j9.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "addedAt": "2026-09-06"
-  },
-  {
     "uuid": "sport-vnvb-636451",
     "title": "VNVB - Béziers VB",
     "category": "volley",
@@ -359,6 +552,69 @@ const EVENTS = [
     "addedAt": "2026-09-18"
   },
   {
+    "uuid": "sport-sluc-j9",
+    "title": "SLUC - Pau-Lacq-Orthez",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Pau-Lacq-Orthez",
+      "Betclic ÉLITE"
+    ],
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "dateText": "Samedi 21 novembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-j9.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-villers-f-ffh-2649452",
+    "title": "VILLERS HB - CHEVIGNY ST SAUVEUR HANDBALL",
+    "category": "hand",
+    "subcats": [
+      "Villers Handball (féminines)",
+      "CHEVIGNY ST SAUVEUR HANDBALL",
+      "Nationale 2 féminine"
+    ],
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "dateText": "Samedi 21 novembre 2026",
+    "schedule": "20h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-villers-f-ffh-2649452.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-feminine-2026-2027-32609/poule-191246/",
+    "addedAt": "2026-09-29"
+  },
+  {
+    "uuid": "sport-nancy-villers-2-ffh-2640141",
+    "title": "NANCY / VILLERS 2 - HOENHEIM",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball (Nationale 3)",
+      "HOENHEIM",
+      "Nationale 3 masculine"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "Samedi 28 novembre 2026",
+    "schedule": "19h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-2-ffh-2640141.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "sport-gnvb-10007",
     "title": "GNVB - Martigues",
     "category": "volley",
@@ -378,6 +634,27 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-10007.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639081",
+    "title": "NANCY / VILLERS - HBC LIVRY-GARGAN",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "HBC LIVRY-GARGAN",
+      "Nationale 2 masculine"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "Samedi 28 novembre 2026",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639081.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-gnvb-9995",
@@ -433,13 +710,13 @@ const EVENTS = [
     "date": "2026-12-12",
     "endDate": "2026-12-12",
     "dateText": "Samedi 12 décembre 2026",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j11.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -464,6 +741,48 @@ const EVENTS = [
     "addedAt": "2026-09-18"
   },
   {
+    "uuid": "sport-sluc-fec-135780",
+    "title": "SLUC - King Szczecin",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "King Szczecin",
+      "FIBA Europe Cup"
+    ],
+    "date": "2026-12-15",
+    "endDate": "2026-12-15",
+    "dateText": "Mardi 15 décembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-fec-135780.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-29"
+  },
+  {
+    "uuid": "sport-nancy-villers-2-ffh-2640154",
+    "title": "NANCY / VILLERS 2 - ENTENTE SAONE MAMIROLLE HB",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball (Nationale 3)",
+      "ENTENTE SAONE MAMIROLLE HB",
+      "Nationale 3 masculine"
+    ],
+    "date": "2026-12-19",
+    "endDate": "2026-12-19",
+    "dateText": "Samedi 19 décembre 2026",
+    "schedule": "19h00",
+    "place": "Salle Marie Marvingt",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-2-ffh-2640154.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    "addedAt": "2026-09-30"
+  },
+  {
     "uuid": "sport-gnvb-9989",
     "title": "GNVB - Fréjus",
     "category": "volley",
@@ -485,25 +804,25 @@ const EVENTS = [
     "addedAt": "2026-09-08"
   },
   {
-    "uuid": "sport-sluc-j13",
-    "title": "SLUC - Bourg-en-Bresse",
-    "category": "basket",
+    "uuid": "sport-nancy-villers-ffh-2639093",
+    "title": "NANCY / VILLERS - P2H HANDBALL",
+    "category": "hand",
     "subcats": [
-      "SLUC Nancy Basket",
-      "Bourg-en-Bresse",
-      "Betclic ÉLITE"
+      "Entente Nancy / Villers Handball",
+      "P2H HANDBALL",
+      "Nationale 2 masculine"
     ],
-    "date": "2026-12-22",
-    "endDate": "2026-12-22",
-    "dateText": "Mardi 22 décembre 2026",
-    "schedule": "",
-    "place": "Palais des Sports Jean Weille",
+    "date": "2026-12-19",
+    "endDate": "2026-12-19",
+    "dateText": "Samedi 19 décembre 2026",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
     "city": "Nancy",
     "free": false,
-    "reservation": true,
-    "image": "affiches-sport/sport-sluc-j13.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "addedAt": "2026-09-06"
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639093.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-gnvb-9983",
@@ -525,6 +844,27 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-9983.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-sluc-j13",
+    "title": "SLUC - Bourg-en-Bresse",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Bourg-en-Bresse",
+      "Betclic ÉLITE"
+    ],
+    "date": "2026-12-22",
+    "endDate": "2026-12-22",
+    "dateText": "Mardi 22 décembre 2026",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-j13.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-06"
   },
   {
     "uuid": "sport-vnvb-636457",
@@ -559,13 +899,13 @@ const EVENTS = [
     "date": "2027-01-09",
     "endDate": "2027-01-09",
     "dateText": "Samedi 9 janvier 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j15.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -664,13 +1004,13 @@ const EVENTS = [
     "date": "2027-01-23",
     "endDate": "2027-01-23",
     "dateText": "Samedi 23 janvier 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j17.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -737,6 +1077,27 @@ const EVENTS = [
     "addedAt": "2026-09-08"
   },
   {
+    "uuid": "sport-nancy-villers-ffh-2639099",
+    "title": "NANCY / VILLERS - ELITE VAL-D'OISE",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "ELITE VAL-D'OISE",
+      "Nationale 2 masculine"
+    ],
+    "date": "2027-02-06",
+    "endDate": "2027-02-06",
+    "dateText": "Samedi 6 février 2027",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639099.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
+  },
+  {
     "uuid": "sport-asnl-633138",
     "title": "ASNL - Red Star FC",
     "category": "foot",
@@ -756,27 +1117,6 @@ const EVENTS = [
     "image": "affiches-sport/sport-asnl-633138.svg",
     "url": "http://asnlbillets.net/Pages/Start.aspx",
     "addedAt": "2026-09-18"
-  },
-  {
-    "uuid": "sport-sluc-j20",
-    "title": "SLUC - Gravelines-Dunkerque",
-    "category": "basket",
-    "subcats": [
-      "SLUC Nancy Basket",
-      "Gravelines-Dunkerque",
-      "Betclic ÉLITE"
-    ],
-    "date": "2027-02-13",
-    "endDate": "2027-02-13",
-    "dateText": "Samedi 13 février 2027",
-    "schedule": "",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-sport/sport-sluc-j20.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "addedAt": "2026-09-06"
   },
   {
     "uuid": "sport-vnvb-636463",
@@ -800,6 +1140,27 @@ const EVENTS = [
     "addedAt": "2026-09-18"
   },
   {
+    "uuid": "sport-sluc-j20",
+    "title": "SLUC - Gravelines-Dunkerque",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Gravelines-Dunkerque",
+      "Betclic ÉLITE"
+    ],
+    "date": "2027-02-13",
+    "endDate": "2027-02-13",
+    "dateText": "Samedi 13 février 2027",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-j20.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-06"
+  },
+  {
     "uuid": "sport-gnvb-10085",
     "title": "GNVB - Fréjus",
     "category": "volley",
@@ -819,6 +1180,27 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-10085.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639117",
+    "title": "NANCY / VILLERS - SAVIGNY HB 91",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "SAVIGNY HB 91",
+      "Nationale 2 masculine"
+    ],
+    "date": "2027-02-27",
+    "endDate": "2027-02-27",
+    "dateText": "Samedi 27 février 2027",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639117.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-vnvb-636465",
@@ -937,13 +1319,13 @@ const EVENTS = [
     "date": "2027-03-13",
     "endDate": "2027-03-13",
     "dateText": "Samedi 13 mars 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j22.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -979,14 +1361,35 @@ const EVENTS = [
     "date": "2027-03-27",
     "endDate": "2027-03-27",
     "dateText": "Samedi 27 mars 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j24.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639129",
+    "title": "NANCY / VILLERS - ALC LONGVIC",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "ALC LONGVIC",
+      "Nationale 2 masculine"
+    ],
+    "date": "2027-03-27",
+    "endDate": "2027-03-27",
+    "dateText": "Samedi 27 mars 2027",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639129.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-asnl-633144",
@@ -1021,13 +1424,13 @@ const EVENTS = [
     "date": "2027-04-03",
     "endDate": "2027-04-03",
     "dateText": "Samedi 3 avril 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j25.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -1073,27 +1476,6 @@ const EVENTS = [
     "addedAt": "2026-09-08"
   },
   {
-    "uuid": "sport-sluc-j27",
-    "title": "SLUC - Strasbourg",
-    "category": "basket",
-    "subcats": [
-      "SLUC Nancy Basket",
-      "Strasbourg",
-      "Betclic ÉLITE"
-    ],
-    "date": "2027-04-17",
-    "endDate": "2027-04-17",
-    "dateText": "Samedi 17 avril 2027",
-    "schedule": "",
-    "place": "Palais des Sports Jean Weille",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-sport/sport-sluc-j27.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
-    "addedAt": "2026-09-06"
-  },
-  {
     "uuid": "sport-gnvb-10133",
     "title": "GNVB - REC Volley-ball",
     "category": "volley",
@@ -1113,6 +1495,48 @@ const EVENTS = [
     "image": "affiches-sport/sport-gnvb-10133.svg",
     "url": "https://www.nancy-volley.fr/billetterie/",
     "addedAt": "2026-09-08"
+  },
+  {
+    "uuid": "sport-sluc-j27",
+    "title": "SLUC - Strasbourg",
+    "category": "basket",
+    "subcats": [
+      "SLUC Nancy Basket",
+      "Strasbourg",
+      "Betclic ÉLITE"
+    ],
+    "date": "2027-04-17",
+    "endDate": "2027-04-17",
+    "dateText": "Samedi 17 avril 2027",
+    "schedule": "20h00",
+    "place": "Palais des Sports Jean Weille",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-sport/sport-sluc-j27.svg",
+    "url": "https://billetterie.sluc-basket.fr/",
+    "addedAt": "2026-09-06"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639141",
+    "title": "NANCY / VILLERS - BILLY MONTIGNY",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "BILLY MONTIGNY",
+      "Nationale 2 masculine"
+    ],
+    "date": "2027-04-17",
+    "endDate": "2027-04-17",
+    "dateText": "Samedi 17 avril 2027",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639141.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   },
   {
     "uuid": "sport-asnl-633147",
@@ -1147,13 +1571,13 @@ const EVENTS = [
     "date": "2027-05-01",
     "endDate": "2027-05-01",
     "dateText": "Samedi 1 mai 2027",
-    "schedule": "",
+    "schedule": "20h00",
     "place": "Palais des Sports Jean Weille",
     "city": "Nancy",
     "free": false,
     "reservation": true,
     "image": "affiches-sport/sport-sluc-j29.svg",
-    "url": "https://coupedefrance.ffbb.com/masculin/equipe/calendrier/15-nancy",
+    "url": "https://billetterie.sluc-basket.fr/",
     "addedAt": "2026-09-06"
   },
   {
@@ -1218,5 +1642,26 @@ const EVENTS = [
     "image": "affiches-sport/sport-asnl-633151.svg",
     "url": "http://asnlbillets.net/Pages/Start.aspx",
     "addedAt": "2026-09-18"
+  },
+  {
+    "uuid": "sport-nancy-villers-ffh-2639153",
+    "title": "NANCY / VILLERS - ENT. ELITE AXONAISE HB",
+    "category": "hand",
+    "subcats": [
+      "Entente Nancy / Villers Handball",
+      "ENT. ELITE AXONAISE HB",
+      "Nationale 2 masculine"
+    ],
+    "date": "2027-05-22",
+    "endDate": "2027-05-22",
+    "dateText": "Samedi 22 mai 2027",
+    "schedule": "20h30",
+    "place": "Gymnase Provençal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "affiches-sport/sport-nancy-villers-ffh-2639153.svg",
+    "url": "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-2-masculine-2026-2027-32501/poule-190844/",
+    "addedAt": "2026-09-29"
   }
 ];

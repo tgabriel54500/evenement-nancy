@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Chopes et cruches et autres pots à bière">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="1er Salon du Jardin &amp; Fête des Plantes - Hippodrome Nancy Brabois">
   <defs>
     <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
       <stop offset="0" stop-color="#115e59"/>
@@ -16,13 +16,13 @@
         font-size="30" font-weight="700" letter-spacing="8" fill="#99f6e4">EXPOSITION</text>
   <rect x="360" y="526" width="80" height="4" rx="2" fill="#99f6e4" opacity=".8"/>
   <g text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-weight="700" fill="#ffffff">
-      <text x="400" y="628" font-size="100">Chopes et</text>
-      <text x="400" y="740" font-size="100">cruches et</text>
-      <text x="400" y="852" font-size="100">autres pots</text>
-      <text x="400" y="964" font-size="100">à bière</text>
+      <text x="400" y="601" font-size="66">1er Salon du Jardin</text>
+      <text x="400" y="675" font-size="66">&amp; Fête des Plantes</text>
+      <text x="400" y="749" font-size="66">- Hippodrome Nancy</text>
+      <text x="400" y="823" font-size="66">Brabois</text>
   </g>
   <g text-anchor="middle" font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif">
-    <text x="400" y="1084" font-size="50" font-weight="700" fill="#99f6e4">Jusqu'au 30 septembre</text>
-    <text x="400" y="1146" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Saint-Nicolas-de-Port</text>
+    <text x="400" y="960" font-size="50" font-weight="700" fill="#99f6e4">Jusqu'au 18 octobre</text>
+    <text x="400" y="1022" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Vandœuvre-lès-Nancy</text>
   </g>
 </svg>

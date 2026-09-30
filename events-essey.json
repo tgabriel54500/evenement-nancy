@@ -168,6 +168,27 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-bourse-aux-vetements-automnehiver",
+    "title": "Bourse aux vêtements automne/hiver",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-10-21",
+    "endDate": "2026-10-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_232231992.jpeg?h=a886d45a&amp;itok=rtL9qT62",
+    "url": "https://www.esseylesnancy.fr/agenda/bourse-aux-vetements-automnehiver",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-repas-des-seniors-dansant",
     "title": "Repas des Seniors (dansant)",
     "category": "activite",
