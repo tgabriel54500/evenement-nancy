@@ -90,12 +90,13 @@ dans la lightbox), `price` (badge), `description` (paragraphe dans la lightbox).
 - `pro.html` charge `user-events.js` et fusionne `loadApprovedUserEvents("pro")`
   (`data-kind="pro"` sur `<body>`).
 
-## Aperçu privé (pro-gate.js)
+## Accès à l'onglet (pro-gate.js)
 
-Tant que `PRO_PREVIEW.open` vaut `false` dans `pro-gate.js`, seuls les comptes de
-`PRO_PREVIEW.emails` (session Supabase via compte.html) voient l'onglet
-« 💼 Pro », la page pro.html (sinon message « en préparation ») et le sélecteur
-Type de compte.html. C'est un verrou d'affichage, pas une sécurité (data-pro.js
+Trois paliers dans `PRO_PREVIEW` : `emails` (aperçu privé, comptes listés),
+`anyAccount` (tout compte organisateur connecté ; c'est le réglage actuel depuis
+le 2026-09-30) et `open` (public). Sans autorisation, l'onglet « 💼 Pro » reste
+caché, pro.html affiche le message « réservé aux organisateurs » (#pro-lock,
+avec lien vers compte.html) et compte.html cache le sélecteur Type. C'est un verrou d'affichage, pas une sécurité (data-pro.js
 reste accessible par URL). Pour ouvrir au public : `open: true`, remettre
 pro.html dans le sitemap (deploy-cloudflare.sh), déployer.
 

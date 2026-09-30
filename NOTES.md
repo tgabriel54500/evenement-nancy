@@ -124,6 +124,7 @@
 - affiches-auto.js accepte `applyAutoPosters(events, { dir, themes, labels, labelOf })` : chaque dossier fait SON ménage, ne jamais appeler le moteur sur un dossier partagé.
 - compte.html : sélecteur Type de retour (event / pro), sport toujours absent. Base : schema.sql §7 à ré-exécuter, Edge Function moderate-event à redéployer.
 - Aucun réseau depuis les shells Claude (conteneur et VM du pont) : `node pro-scrape.js` ne tourne QUE depuis le Terminal du Mac.
+- Accès (pro-gate.js, 2026-09-30) : `anyAccount: true` = tout compte organisateur connecté voit l'onglet, le sélecteur Type et pro.html ; les non-connectés voient #pro-lock (« réservé aux organisateurs », lien vers compte.html). `open: true` pour le public (et remettre pro.html dans le sitemap). Nom de l'organisation demandé à l'inscription → `user_metadata.organization`, pré-remplit « Organisateur / réseau ».
 
 ## In-progress decisions
 <!-- recent architecture choices so other sessions don't undo them -->
