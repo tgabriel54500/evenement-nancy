@@ -167,6 +167,40 @@ const RESEAUX = [
     frequency: "",
   },
   {
+    // Réseau Dynabuy : clubs d'affaires à cotisation, réunions réservées aux
+    // membres (invités sur demande au président). clubsdaffaires.fr donne le
+    // rythme, le jour, l'horaire et le lieu, mais pas de liste de dates
+    // exploitable (calendrier calculé côté client, API external-events vide au
+    // 2026-09-30). Leurs événements ouverts (afterworks, soirées avec Café
+    // Business…) passent par LinkedIn et HelloAsso : annuaire seulement.
+    key: "dynabuy-boostees",
+    logo: "https://www.clubsdaffaires.fr/img/Dynabuy-logo1.svg",
+    logoOnDark: false,
+    name: "Dynabuy Club Nancy, Les Boostées",
+    short: "Les Boostées",
+    site: "https://www.clubsdaffaires.fr/club/nancy-les-boostees",
+    agenda: "https://www.linkedin.com/company/dynabuy-les-boostees/",
+    scrape: false,
+    membersOnly: true,
+    colors: ["#2d132c", "#ee4540"],
+    blurb: "Club d'affaires 100 % féminin du réseau Dynabuy (ex-Bouge ta Boîte Nancy) : déjeuners de club deux jeudis par mois à Office Station, et des soirées ouvertes annoncées sur LinkedIn.",
+    frequency: "Deux jeudis par mois, 12h15 à 14h",
+  },
+  {
+    key: "dynabuy-dynaffaires",
+    logo: "https://www.clubsdaffaires.fr/img/Dynabuy-logo1.svg",
+    logoOnDark: false,
+    name: "Dynabuy Club Dynaffaires Nancy",
+    short: "Dynaffaires",
+    site: "https://www.clubsdaffaires.fr/club/dynaffaires-nancy",
+    agenda: "",
+    scrape: false,
+    membersOnly: true,
+    colors: ["#2d132c", "#c72c41"],
+    blurb: "Club d'affaires du réseau Dynabuy : réunions deux mercredis par mois, chez un membre ou ailleurs à Nancy.",
+    frequency: "Deux mercredis par mois",
+  },
+  {
     key: "vhb-family-business",
     logo: "https://villers-handball.com/wp-content/uploads/2024/05/Logo-family-buisness.png",
     logoOnDark: false,

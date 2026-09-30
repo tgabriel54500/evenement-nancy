@@ -32,8 +32,12 @@ réels dans `tests/fixtures-pro/`, relevés le 2026-09-28).
 | Centre Prouvé / Parc Expo | destination-nancy.com/…/agenda-et-actualites/ | `.iris-card` : titre, plage, salle, ville, extrait, image | la page ne distingue pas pro et grand public : filtre par mots-clés (`PRO_RE` / `PUBLIC_RE` dans pro-scrape.js) |
 
 Réseaux sans agenda public, présents dans l'annuaire seulement : SLUC Business
-Club, VNVB Business Club, GNVB partenaires, Villers Handball Family Business.
-Ils sont invités à publier via compte.html.
+Club, VNVB Business Club, GNVB partenaires, Villers Handball Family Business,
+et les deux clubs Dynabuy de Nancy (Les Boostées, Dynaffaires : clubsdaffaires.fr
+donne le rythme et le lieu mais pas de dates ; leurs soirées ouvertes sont sur
+LinkedIn). Ils sont invités à publier via compte.html. À revoir : les
+« Rencontres Dirigeants » Dynabuy (rencontres-dirigeants.com, en 503 le
+2026-09-30) si elles ont des dates à Nancy.
 
 ## Visuels
 
