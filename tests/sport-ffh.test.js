@@ -52,6 +52,10 @@ test("domicile / extérieur par alias des clubs", () => {
   assert.ok(!isClub(vf, "HBC LURE VILLERS"));
   assert.ok(isClub(nv, "ENT. NANCY / VILLERS"));
   assert.ok(!isClub(nv, "ELITE VAL-D'OISE"));
+  const n3 = byKey("nancy-villers-2");
+  assert.ok(n3 && n3.ffh.poule !== nv.ffh.poule, "N2 et N3 : deux poules distinctes");
+  assert.ok(isClub(n3, "ENT. NANCY / VILLERS"));
+  assert.ok(!isClub(n3, "HBC LURE VILLERS"), "Lure Villers (adversaire en N3) n'est pas l'entente");
 });
 
 console.log(process.exitCode ? "ÉCHEC" : `OK (${n} tests)`);

@@ -112,6 +112,26 @@ const CLUBS = [
     ffh: { competition: "nationale-2-masculine-2026-2027-32501", poule: "190844", saison: "22" },
   },
   {
+    // Seconde équipe de l'entente, en Nationale 3 (poule 6). C'est celle que le
+    // site de Villers appelle « Seniors masculins 1 » : inscrite sous ses
+    // couleurs, elle reçoit surtout à Marie Marvingt (parfois à Provençal ;
+    // la salle réelle est lue match par match sur ffhandball.fr). Même
+    // libellé « ENT. NANCY / VILLERS » que la N2 sur le site fédéral.
+    key: "nancy-villers-2",
+    name: "Entente Nancy / Villers Handball (Nationale 3)",
+    short: "NANCY / VILLERS 2",
+    sport: "hand",
+    league: "Nationale 3 masculine",
+    venue: "Salle Marie Marvingt",
+    city: "Villers-lès-Nancy",
+    colors: ["#141414", "#fdd835"],
+    site: "https://villers-handball.com/",
+    tickets: "",
+    calendar: "https://www.ffhandball.fr/competitions/saison-2026-2027-22/national/nationale-3-masculine-2026-2027-32502/poule-190854/",
+    aliases: ["ent. nancy / villers", "ent nancy villers", "nancy / villers", "nancy villers"],
+    ffh: { competition: "nationale-3-masculine-2026-2027-32502", poule: "190854", saison: "22" },
+  },
+  {
     key: "villers-f",
     name: "Villers Handball (féminines)",
     short: "VILLERS HB",

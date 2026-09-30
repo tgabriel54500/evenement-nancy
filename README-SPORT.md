@@ -15,6 +15,16 @@ Supabase, `user_events` kind='sport') : c'est un autre sujet, mis en pause.
 | SLUC Nancy Basket | Basket | Betclic ÉLITE | Palais des Sports Jean Weille |
 | Vandœuvre Nancy Volley-Ball | Volley | Saforelle Power 6 | Parc des Sports des Nations |
 | Grand Nancy Volley-Ball | Volley | Ligue B Masculine | Parc des Sports des Nations |
+| Entente Nancy / Villers Handball | Handball | Nationale 2 masculine | Gymnase Provençal, Nancy |
+| Entente Nancy / Villers Handball (équipe 2) | Handball | Nationale 3 masculine | Salle Marie Marvingt, Villers (parfois Provençal) |
+| Villers Handball (féminines) | Handball | Nationale 2 féminine | Salle Marie Marvingt, Villers |
+
+Handball : depuis 2026-27, Nancy Métropole HB, Villers et Neuves-Maisons jouent
+en entente (« Entente Élite 54 »). Sur ffhandball.fr les DEUX équipes masculines
+s'appellent « ENT. NANCY / VILLERS » : la N2 (équipe première, Nancy) et la N3
+(celle que le site de Villers appelle « Seniors masculins 1 », inscrite sous ses
+couleurs). D'où deux entrées dans `sport-clubs.js`, distinguées par leur poule.
+La salle de chaque match est lue sur la fiche de rencontre (`ffhSalles`).
 
 
 Ajouter un club : une entrée dans `sport-clubs.js`, et un adaptateur dans
@@ -146,9 +156,9 @@ de ceux de la culture. Le worktree `dev-sport/` a servi à la mise au point.
   (club, adversaire, compétition, date, salle), au format 2/3 comme la culture.
   Les logos des clubs adverses ne sont pas repris : droits incertains, et le
   rendu resterait hétérogène.
-- **Nancy Handball n'y est pas.** La LNH répond « équipe non présente en LNH
-  cette saison » : le club a perdu son statut professionnel. Il reste à
-  réintégrer dans `sport-clubs.js` (avec le sport `hand`) s'il remonte.
+- **Nancy Handball (ex-Proligue) n'y est plus.** La LNH répond « équipe non
+  présente en LNH cette saison » : le club a perdu son statut professionnel et
+  ses seniors jouent dans l'entente Nancy / Villers (voir « Clubs suivis »).
 - **Un seul fichier de données.** `data-sport.js` est séparé de `data.js` : la
   galerie culture ne bouge pas, et la page sport se charge sans les 1000
   événements culturels.
