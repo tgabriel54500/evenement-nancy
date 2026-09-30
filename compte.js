@@ -79,6 +79,11 @@
   // par supabase-js : on reste connecté d'une visite à l'autre.
   let recovering = false;   // arrivée par un lien « mot de passe oublié »
 
+  // Nom de l'organisation : demandé à la création du compte et rangé dans les
+  // métadonnées utilisateur Supabase (user_metadata.organization). Il sert de
+  // valeur par défaut au champ « Organisateur / réseau » des rendez-vous pro.
+  const orgOf = (user) => String((user && user.user_metadata && user.user_metadata.organization) || "").trim();
+
   async function refresh() {
     const { data: { session } } = await sb.auth.getSession();
     show($("navAccount"), !!session);
@@ -89,7 +94,12 @@
     }
     show($("reset"), false);
     if (session) {
-      $("who").textContent = session.user.email;
+      const org = orgOf(session.user);
+      $("who").textContent = org ? `${org} · ${session.user.email}` : session.user.email;
+      // Sans organisation connue (compte ancien, ou créé par lien magique) : on
+      // la demande une fois, au-dessus des onglets.
+      show($("org-form"), !org);
+      if (org && !$("ev-organizer").value) $("ev-organizer").value = org;
       show($("auth"), false); show($("app"), true);
       loadMine();
     } else {
@@ -160,11 +170,16 @@
   $("signup-form").addEventListener("submit", async (e) => {
     e.preventDefault();
     const email = $("signup-email").value.trim();
+    const organization = $("signup-org").value.trim();
     const p1 = $("signup-password").value, p2 = $("signup-password2").value;
+    if (!organization) return msg($("auth-msg"), "Indiquez le nom de votre organisation.", "err");
     if (p1.length < 8) return msg($("auth-msg"), "Mot de passe trop court : 8 caractères minimum.", "err");
     if (p1 !== p2) return msg($("auth-msg"), "Les deux mots de passe ne sont pas identiques.", "err");
     const btn = e.target.querySelector("button[type=submit]"); btn.disabled = true;
-    const { data, error } = await sb.auth.signUp({ email, password: p1, options: { emailRedirectTo: location.href } });
+    const { data, error } = await sb.auth.signUp({
+      email, password: p1,
+      options: { emailRedirectTo: location.href, data: { organization } },
+    });
     btn.disabled = false;
     if (error) return msg($("auth-msg"), authError(error), "err");
     rememberEmail(email);
@@ -211,6 +226,18 @@
     recovering = false;
     msg($("reset-msg"), "Mot de passe enregistré.", "ok");
     setTimeout(refresh, 600);
+  });
+
+  // Organisation manquante sur un compte existant : enregistrée dans les
+  // métadonnées, puis refresh() la reprend (en-tête + champ Organisateur).
+  $("org-form").addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const organization = $("org-name").value.trim();
+    if (!organization) return msg($("org-msg"), "Indiquez le nom de votre organisation.", "err");
+    const { error } = await sb.auth.updateUser({ data: { organization } });
+    if (error) return msg($("org-msg"), authError(error), "err");
+    msg($("org-msg"), "Enregistré.", "ok");
+    setTimeout(refresh, 400);
   });
 
   $("logout").addEventListener("click", async () => { await sb.auth.signOut(); refresh(); });

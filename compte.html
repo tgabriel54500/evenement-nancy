@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css?v=nav3">
-  <link rel="stylesheet" href="compte.css?v=6">
+  <link rel="stylesheet" href="compte.css?v=7">
 </head>
 <body data-view="compte">
   <header class="hero hero--compact">
@@ -67,6 +67,9 @@
 
       <!-- Création de compte : email + mot de passe + confirmation. -->
       <form id="signup-form" class="auth-pane" method="post" action="#" autocomplete="on" hidden>
+        <label>Nom de l'organisation <small>(entreprise, association, réseau, club…)</small>
+          <input type="text" id="signup-org" name="organization" required maxlength="100" placeholder="Ex. : Les Audacieux Nancy" autocomplete="organization">
+        </label>
         <label>Email
           <input type="email" id="signup-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
         </label>
@@ -123,6 +126,15 @@
       <div class="app-head">
         <span id="who"></span>
       </div>
+      <!-- Comptes créés avant le champ « organisation », ou par lien magique :
+           on la demande une fois, ici, et elle est enregistrée sur le compte. -->
+      <form id="org-form" class="org-form" hidden>
+        <label>Nom de votre organisation <small>(entreprise, association, réseau, club…)</small>
+          <input type="text" id="org-name" name="organization" required maxlength="100" placeholder="Ex. : Les Audacieux Nancy" autocomplete="organization">
+        </label>
+        <button type="submit" class="btn-primary">Enregistrer</button>
+        <p id="org-msg" class="msg" hidden></p>
+      </form>
 
       <nav class="tabs">
         <button class="tab is-active" data-tab="publish">Publier un événement</button>
@@ -242,7 +254,7 @@
   <script src="data.js"></script>
   <script src="pro-categories.js"></script>
   <script src="pro-gate.js"></script>
-  <script src="compte.js?v=9"></script>
+  <script src="compte.js?v=10"></script>
 
   <!-- Bouton contact WhatsApp -->
   <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">

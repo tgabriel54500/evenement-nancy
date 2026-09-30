@@ -70,6 +70,8 @@ label.inline input { width: auto; margin: 0; }
 .app-head { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
 .app-head .btn-ghost { margin-top: 0; }
 #who { font-weight: 600; }
+.org-form { margin: 1rem 0 .5rem; padding: 1rem; border: 1px dashed rgba(0,0,0,.25); border-radius: 12px; background: rgba(255,255,255,.5); }
+.org-form .btn-primary { margin-top: .6rem; }
 
 .tabs { display: flex; gap: .5rem; margin: 1.2rem 0; border-bottom: 1px solid rgba(0,0,0,.1); }
 .tab { background: none; border: 0; padding: .6rem .9rem; cursor: pointer; font: inherit; font-weight: 600;

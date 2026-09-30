@@ -70,6 +70,13 @@ dans la lightbox), `price` (badge), `description` (paragraphe dans la lightbox).
 
 ## Publication par les pros (compte.html)
 
+- Création de compte : email, mot de passe (+ confirmation) et **nom de
+  l'organisation**, rangé dans `user_metadata.organization` (Supabase Auth,
+  pas de colonne à ajouter). Affiché dans l'en-tête de l'espace, il pré-remplit
+  le champ « Organisateur / réseau » des rendez-vous pro. Un compte sans
+  organisation (ancien, ou créé par lien magique) se la voit demander une fois,
+  au-dessus des onglets (`#org-form`, `auth.updateUser`).
+
 - Sélecteur Type réactivé : « Sortie, culture » (`kind='event'`) ou
   « Rendez-vous professionnel » (`kind='pro'`). Le sport reste en pause.
 - Pour `pro` : catégories de `pro-categories.js`, champ Organisateur, case
