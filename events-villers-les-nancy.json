@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Environnement"
     ],
-    "date": "2026-09-30",
+    "date": "2026-10-01",
     "endDate": "2026-12-16",
     "dateText": "",
     "schedule": "18h30 à 21h",
@@ -381,6 +381,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261023_CONCERT_NICOLAS_JULES__c__Thibaut_Derien.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-nicolas-jules",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-149",
+    "title": "Bourse radio-électronique",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Agenda"
+    ],
+    "date": "2026-10-25",
+    "endDate": "2026-10-25",
+    "dateText": "",
+    "schedule": "de 13h30 à 17h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/bourseelectronique.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/bourse-radio-electronique",
     "source": "villers-les-nancy"
   },
   {

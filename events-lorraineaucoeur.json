@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-41976",
-    "title": "Festival Film Montagne Exploration à Saulxures-lès-Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-10-01",
-    "endDate": "2026-10-03",
-    "dateText": "Du 1 au 3 octobre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Saulxures-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event41976_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-41976/festival-film-montagne-exploration-a-saulxures-les-nancy/meurthe-et-moselle-saulxures-les-nancy/festival",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42081",
     "title": "NJP Festival Nancy Jazz Pulsations",
     "category": "festival",
@@ -187,6 +168,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42082_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42082/fete-de-la-soupe-et-de-la-solidarite-a-pulnoy/meurthe-et-moselle-pulnoy/fete-animation",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42049",
+    "title": "Village des Sciences à Vandoeuvre-les-Nancy",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-10",
+    "endDate": "2026-10-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandoeuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42049_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42049/village-des-sciences-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/portes-ouvertes",
     "source": "lorraineaucoeur"
   },
   {

@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
-    "title": "On écoute : Diamond Life, Sade",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Enfance"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-01_a_11.23.27.png?itok=D7RAc_e6",
-    "url": "https://lautrecanalnancy.fr/agenda/ecoute-diamond-life-sade-sieste-musicale-des-6-mois",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-mentissa-amelyne",
     "title": "Mentissa",
     "category": "musiques-actuelles",
@@ -456,7 +435,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-fredz",
+    "uuid": "lcn-fredz-margot",
     "title": "Fredz",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -474,7 +453,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/673-illustration_id-1770738396.jpeg%3Fitok%3DlC-rsQA-?itok=XR8NqhKN",
-    "url": "https://lautrecanalnancy.fr/agenda/fredz",
+    "url": "https://lautrecanalnancy.fr/agenda/fredz-margot",
     "source": "autre-canal"
   },
   {
@@ -1655,6 +1634,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_lindaflorin_2025-2_copie.jpg?itok=GX3B4CvU",
     "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-grand-concert-de-la-fanfare-des-enfants-du-boucher-fetes-de-saint-nicolas",
+    "title": "Grand concert de la Fanfare des enfants du Boucher",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Fanfare",
+      "Rap"
+    ],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/concert-fanfare-des-enfants-du-boucher-_270.jpg?itok=Ydbs2g1j",
+    "url": "https://lautrecanalnancy.fr/agenda/grand-concert-de-la-fanfare-des-enfants-du-boucher-fetes-de-saint-nicolas",
     "source": "autre-canal"
   },
   {
