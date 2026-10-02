@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-mentissa-amelyne",
-    "title": "Mentissa",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Pop"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/642-illustration_id-1764597696.jpg?itok=drV4RusV",
-    "url": "https://lautrecanalnancy.fr/agenda/mentissa-amelyne",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-21",
     "title": "Marché bio et local",
     "category": "activite",
@@ -413,8 +391,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-rencontre-avec-fredz-blindtest-n-oubliez-pas-les-paroles-par-aymerick-roussas",
-    "title": "Rencontre avec Fredz",
+    "uuid": "lcn-blindtest-et-rencontre-avec-fredz",
+    "title": "Blindtest et rencontre avec Fredz",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -431,7 +409,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/673-illustration_id-1770738396.jpeg%3Fitok%3DlC-rsQA-?itok=XR8NqhKN",
-    "url": "https://lautrecanalnancy.fr/agenda/rencontre-avec-fredz-blindtest-n-oubliez-pas-les-paroles-par-aymerick-roussas",
+    "url": "https://lautrecanalnancy.fr/agenda/blindtest-et-rencontre-avec-fredz",
     "source": "autre-canal"
   },
   {
@@ -589,7 +567,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-club-dancing-kids-halloween-2026-avec-rachid-wallas-et-lisko",
+    "uuid": "lcn-club-dancing-kids-halloween-2026-avec-rachid-wallas-et-taipan",
     "title": "Club Dancing Kids Halloween 2026",
     "category": "activite",
     "catLabel": "Activités & ateliers",
@@ -606,7 +584,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/vignettes_cdk.jpg?itok=TuEWsmid",
-    "url": "https://lautrecanalnancy.fr/agenda/club-dancing-kids-halloween-2026-avec-rachid-wallas-et-lisko",
+    "url": "https://lautrecanalnancy.fr/agenda/club-dancing-kids-halloween-2026-avec-rachid-wallas-et-taipan",
     "source": "autre-canal"
   },
   {

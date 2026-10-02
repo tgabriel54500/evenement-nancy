@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -18,52 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-103",
-    "title": "Repair café",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Environnement"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-12-16",
-    "dateText": "",
-    "schedule": "18h30 à 21h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-569",
-    "title": "Permanences - Avec vous pour vos droits",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Citoyenneté",
-      "Solidarité",
-      "Sénior",
-      "Culture",
-      "Sport"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "",
-    "schedule": "de 14h à 16h",
-    "place": "Clairlieu",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/image-from-rawpixel-id-391823-jpeg.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/permanences-avec-vous-pour-vos-droits",
     "source": "villers-les-nancy"
   },
   {
@@ -256,6 +210,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-103",
+    "title": "Repair café",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-10-14",
+    "endDate": "2026-12-16",
+    "dateText": "",
+    "schedule": "18h30 à 21h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-481",
     "title": "Conférence : Jules CAYETTE, un artiste de transition entre Art Nouveau et Art déco",
     "category": "conference",
@@ -343,7 +318,7 @@
   },
   {
     "uuid": "vln-285",
-    "title": "Les visites chocottes",
+    "title": "Les visites chocottes [COMPLET]",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -353,7 +328,7 @@
     "date": "2026-10-20",
     "endDate": "2026-10-23",
     "dateText": "",
-    "schedule": "17h30",
+    "schedule": "17h30 - COMPLET",
     "place": "Le château Mme de Graffigny",
     "city": "Villers-lès-Nancy",
     "free": false,

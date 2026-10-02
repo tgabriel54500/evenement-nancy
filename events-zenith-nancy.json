@@ -141,7 +141,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/2026-04_zimmer_williams_WEB_Zenith-Nancy-1191x1684-1-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/les-musiques-de-hans-zimmer-alan-silvestri/",
     "source": "zenith-nancy"

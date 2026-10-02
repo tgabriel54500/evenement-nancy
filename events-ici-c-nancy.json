@@ -1,7 +1,7 @@
 [
   {
-    "uuid": "icn-1153",
-    "title": "VOLLEY - SAFORELLE POWER 6: LE VANDŒUVRE NANCY VOLLEY-BALL (VNVB) AFFRONTE BORDEAUX",
+    "uuid": "icn-1164",
+    "title": "VNVB-BORDEAUX",
     "category": "sport",
     "catLabel": "Sport",
     "catEmoji": "⚽",
@@ -10,12 +10,12 @@
     "endDate": "2026-10-03",
     "dateText": "",
     "schedule": "19:30",
-    "place": "Vandœuvre-lès-Nancy, France",
-    "city": "",
+    "place": "Parc des Sports de Vandoeuvre",
+    "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_agenda1-vnvb.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1153-volley-saforelle-power-6-vandoeuvre-nancy-volley-ball-vnvb-affronte-bordeaux/2026-10-03-19-30.html",
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_vnvb-bordeaux.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1164-vnvb-bordeaux-2/2026-10-03-19-30.html",
     "source": "ici-c-nancy"
   },
   {

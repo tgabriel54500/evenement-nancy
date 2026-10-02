@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "po-ee2f2eae-4883-11f1-b6e5-2524aa61e1f4",
-    "title": "Olivier de Benoist",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle",
-      "Humour"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "Jeudi 1er octobre 2026",
-    "schedule": "de 20h à 22h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/ee2f2eae-4883-11f1-b6e5-2524aa61e1f4/0/ORIGINE_M_69f9ec82053f4.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=ee2f2eae-4883-11f1-b6e5-2524aa61e1f4",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -30,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-01",
+    "date": "2026-10-02",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
