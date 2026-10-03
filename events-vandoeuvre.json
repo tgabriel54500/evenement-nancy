@@ -1067,7 +1067,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-10-02",
+    "date": "2026-10-03",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1077,27 +1077,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29347",
-    "title": "Tiny Glade Challenge : à vous de construire !",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "De 16h à 19h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/tiny-glade-challenge-a-vous-de-construire/",
     "source": "vandoeuvre"
   },
   {

@@ -1,54 +1,10 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-21",
-    "title": "Marché bio et local",
+    "uuid": "lcn-njp-2026",
+    "title": "NJP 2026",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web8.jpg?itok=ipKsVB-E",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-21",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-sisters-mercy-real-farmer",
-    "title": "The Sisters of Mercy",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Rock"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/tsom_40x60_originale_copie.jpg?itok=oAx-FmtG",
-    "url": "https://lautrecanalnancy.fr/agenda/sisters-mercy-real-farmer",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-njp-2026",
-    "title": "NJP 2026",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
     "subcats": [],
     "date": "2026-10-03",
     "endDate": "2026-10-03",

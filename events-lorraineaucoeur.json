@@ -1,5 +1,24 @@
 [
   {
+    "uuid": "lac-42143",
+    "title": "Jardin Éphémère Nancy",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-10-03",
+    "endDate": "2026-11-01",
+    "dateText": "Du 2 octobre au 1 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42143_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42143/jardin-ephemere-nancy/meurthe-et-moselle-nancy/fete-animation",
+    "source": "lorraineaucoeur"
+  },
+  {
     "uuid": "lac-42081",
     "title": "NJP Festival Nancy Jazz Pulsations",
     "category": "festival",
@@ -149,6 +168,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42049_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42049/village-des-sciences-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/portes-ouvertes",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42141",
+    "title": "Fête de l'allaitement maternel à Vandoeuvre-les-Nancy",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-10-11",
+    "endDate": "2026-10-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandoeuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42141_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42141/fete-de-l-allaitement-maternel-a-vandoeuvre-les-nancy/meurthe-et-moselle-vandoeuvre-les-nancy/fete-animation",
     "source": "lorraineaucoeur"
   },
   {
