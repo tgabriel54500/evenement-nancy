@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-03",
+    "date": "2026-10-04",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-03",
+    "date": "2026-10-04",
     "endDate": "2026-10-11",
     "dateText": "",
     "schedule": "20h",
@@ -39,27 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0508_ARDELE_MARGUERITE_ROELE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/ardele-et-la-marguerite",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-319",
-    "title": "Loto lorrain",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "14h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/lotoBNV.jpeg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/loto",
     "source": "villers-les-nancy"
   },
   {

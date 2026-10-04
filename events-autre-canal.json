@@ -1,45 +1,5 @@
 [
   {
-    "uuid": "lcn-njp-2026",
-    "title": "NJP 2026",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-26_a_15.40.33.png?itok=uE0mx8Ed",
-    "url": "https://lautrecanalnancy.fr/agenda/njp-2026",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-nancy-ink-tattoo",
-    "title": "Nancy Ink Tattoo",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/ink_tatoo_copie.jpeg?itok=Z8lpIsY3",
-    "url": "https://lautrecanalnancy.fr/agenda/nancy-ink-tattoo",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-metier-action-culturelle",
     "title": "Atelier métier : Action culturelle",
     "category": "musiques-actuelles",
@@ -2767,6 +2727,25 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-njp-2026",
+    "title": "NJP 2026",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2027-10-03",
+    "endDate": "2027-10-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-26_a_15.40.33.png?itok=uE0mx8Ed",
+    "url": "https://lautrecanalnancy.fr/agenda/njp-2026",
     "source": "autre-canal"
   }
 ]

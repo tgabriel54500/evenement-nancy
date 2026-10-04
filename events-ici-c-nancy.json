@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1164",
-    "title": "VNVB-BORDEAUX",
-    "category": "sport",
-    "catLabel": "Sport",
-    "catEmoji": "⚽",
-    "subcats": [],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "19:30",
-    "place": "Parc des Sports de Vandoeuvre",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_vnvb-bordeaux.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1164-vnvb-bordeaux-2/2026-10-03-19-30.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1120",
     "title": "MATCH NANCY - GUINGAMP (LIGUE 2 - 8ÈME JOURNÉE)",
     "category": "sport",
