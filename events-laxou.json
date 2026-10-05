@@ -209,6 +209,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-journees-nationales-des-artistes-1",
+    "title": "Journées Nationales des Artistes",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-10-02",
+    "endDate": "2026-10-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Atelier de Marco PERNA",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/278/1200_630_7_marco-perna-2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/journees-nationales-des-artistes-1_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-journee-du-patrimoine-economique",
     "title": "JOURNÉE DU PATRIMOINE ÉCONOMIQUE",
     "category": "autre",
@@ -228,25 +247,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-journees-nationales-des-artistes-1",
-    "title": "Journées Nationales des Artistes",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "Atelier de Marco PERNA",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/278/1200_630_7_marco-perna-2026.png",
-    "url": "https://www.laxou.fr/fr/agenda/journees-nationales-des-artistes-1_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-coupure-d-eau",
     "title": "Coupure d'eau",
     "category": "autre",
@@ -263,6 +263,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/281/1200_630_7_coupure-eau-deroulede.jpg",
     "url": "https://www.laxou.fr/fr/agenda/coupure-d-eau_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-semaine-bleue-1",
+    "title": "SEMAINE BLEUE",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-05",
+    "endDate": "2026-10-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/282/1200_630_7_semaine-bleue-2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/semaine-bleue-1_-d.html",
     "source": "laxou"
   },
   {
@@ -320,6 +339,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/233/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-2_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-conference-francois-vernier",
+    "title": "Conférence François VERNIER",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [],
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Louis Pergaud",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/283/1200_630_7_foret-oct2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/conference-francois-vernier_-d.html",
     "source": "laxou"
   },
   {

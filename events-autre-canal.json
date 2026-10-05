@@ -461,6 +461,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-ateliers-de-creation",
+    "title": "Ateliers de création",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Petite Halle"
+    ],
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09250.jpg?itok=qNn4nIEt",
+    "url": "https://lautrecanalnancy.fr/agenda/ateliers-de-creation",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-jure-crache-2026-salon-des-vins-vivants",
     "title": "Juré Craché 2026",
     "category": "activite",
@@ -520,7 +542,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/624-illustration_id-1760603362.jpg?itok=9TlfNVrD",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251120_club_vedettes_c_lautre_canal1.jpeg?itok=z37YFm6u",
     "url": "https://lautrecanalnancy.fr/agenda/soiree-prestige-benjamin-biolay",
     "source": "autre-canal"
   },
@@ -566,6 +588,27 @@
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250704_ade_en_fanfare_lautre_canal18.jpg?itok=qTA2_5JW",
     "url": "https://lautrecanalnancy.fr/agenda/etape-de-residence-de-la-fanfare-des-enfants-du-boucher",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-visite-du-site-l-autre-canal-l-octroi",
+    "title": "Visite du site L’Autre Canal – L’Octroi",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous"
+    ],
+    "date": "2026-10-25",
+    "endDate": "2026-10-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250920_journee_matrimoine_calice_chatard6.jpg?itok=UNJ0X0Et",
+    "url": "https://lautrecanalnancy.fr/agenda/visite-du-site-l-autre-canal-l-octroi",
     "source": "autre-canal"
   },
   {
@@ -2574,6 +2617,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-loic-nottet-0",
+    "title": "Loic Nottet",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop"
+    ],
+    "date": "2027-04-07",
+    "endDate": "2027-04-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/1080x1080.png?itok=pZQP4Ucg",
+    "url": "https://lautrecanalnancy.fr/agenda/loic-nottet-0",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-rodrigo-y-gabriela-midori-jaeger",
     "title": "Rodrigo y Gabriela",
     "category": "musiques-actuelles",
@@ -2705,6 +2770,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/765-field_illustration_id-1788886514.jpg%3Fitok%3D-6kA-71R?itok=P1MgqoML",
     "url": "https://lautrecanalnancy.fr/agenda/howlin-jaws-komodor",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-groundation-tribute-bob-marley",
+    "title": "Groundation",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Reggae"
+    ],
+    "date": "2027-05-14",
+    "endDate": "2027-05-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/787-field_illustration_id-1789048060.jpg%3Fitok%3DG7hvRVsn?itok=BIUDTu8v",
+    "url": "https://lautrecanalnancy.fr/agenda/groundation-tribute-bob-marley",
     "source": "autre-canal"
   },
   {
