@@ -1067,7 +1067,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-10-05",
+    "date": "2026-10-06",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1077,25 +1077,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-5365",
-    "title": "Conseil Municipal en direct",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "19h",
-    "place": "Mairie",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/salle_du_cm.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conseil-municipal-en-direct/",
     "source": "vandoeuvre"
   },
   {
@@ -1155,6 +1136,27 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-bien-etre/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-26469",
+    "title": "Journée nationale contre les cancers des seniors",
+    "category": "sante",
+    "catLabel": "Santé",
+    "catEmoji": "🩺",
+    "subcats": [
+      "Seniors"
+    ],
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "dateText": "",
+    "schedule": "De 9h à 17h",
+    "place": "Hôpitaux de Brabois",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/jeux-video.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/journee-nationale-contre-les-cancers-des-seniors/",
     "source": "vandoeuvre"
   },
   {

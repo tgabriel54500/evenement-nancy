@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-metier-action-culturelle",
-    "title": "Atelier métier : Action culturelle",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Etudiant·es"
-    ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_mirabelle.png?itok=1hj3NoO0",
-    "url": "https://lautrecanalnancy.fr/agenda/metier-action-culturelle",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-decouverte-de-la-filiere-et-de-l-ecosysteme-musical",
     "title": "Découverte de la filière et de l’écosystème musical",
     "category": "activite",
@@ -984,7 +963,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-scene-ouverte-des-studios-de-repetitions",
+    "uuid": "lcn-scene-ouverte-nov-2026",
     "title": "Scène Ouverte des studios de répétitions",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -1002,7 +981,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/coeur_bavard-4l.jpg?itok=rvZI6Bwo",
-    "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-des-studios-de-repetitions",
+    "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-nov-2026",
     "source": "autre-canal"
   },
   {
@@ -1227,7 +1206,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-sono-mondiale-4-jours-pour-explorer-des-cultures-musicales",
+    "uuid": "lcn-semaine-sono-mondiale",
     "title": "Sono mondiale",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -1242,7 +1221,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jv.png?itok=EpjOwPJY",
-    "url": "https://lautrecanalnancy.fr/agenda/sono-mondiale-4-jours-pour-explorer-des-cultures-musicales",
+    "url": "https://lautrecanalnancy.fr/agenda/semaine-sono-mondiale",
     "source": "autre-canal"
   },
   {
@@ -1462,6 +1441,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/685-field_illustration_id-1779815884.jpg?itok=Cf1fyiT0",
     "url": "https://lautrecanalnancy.fr/agenda/magma-appartamento",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-somniac-one-mindset",
+    "title": "Somniac One + MA ČKA",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Techno"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/2025_09_26_somniac_one_fanyb_42_copie.jpg?itok=1mVz_f_4",
+    "url": "https://lautrecanalnancy.fr/agenda/somniac-one-mindset",
     "source": "autre-canal"
   },
   {
@@ -2268,6 +2269,7 @@
     "catEmoji": "🎸",
     "subcats": [
       "Concert",
+      "Dub",
       "Hybrid electro trance"
     ],
     "date": "2027-02-27",
