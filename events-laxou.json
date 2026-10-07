@@ -323,6 +323,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-participez-au-conseil-de-proximite",
+    "title": "Participez au Conseil de proximité",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-09",
+    "endDate": "2026-10-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "Maison de la Vie Associative et du Temps Libre",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/284/1200_630_7_conseil-proximite-du-09102026.png",
+    "url": "https://www.laxou.fr/fr/agenda/participez-au-conseil-de-proximite_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-jeudis-de-pergaud",
     "title": "Jeudis de Pergaud",
     "category": "spectacle",
@@ -339,6 +358,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/62/1200_630_7_affiche-jeudis-de-pergaud.jpg",
     "url": "https://www.laxou.fr/fr/agenda/jeudis-de-pergaud_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-ateliers-creatifs-avec-violette-pasques",
+    "title": "Ateliers créatifs avec Violette Pasques",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [],
+    "date": "2026-10-24",
+    "endDate": "2026-10-24",
+    "dateText": "",
+    "schedule": "",
+    "place": "Bibliothèques-Médiathèques de Laxou",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/133/1200_630_7_affiche-atelier-violette-pasques.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/ateliers-creatifs-avec-violette-pasques_-d.html",
     "source": "laxou"
   },
   {

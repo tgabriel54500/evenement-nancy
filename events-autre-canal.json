@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-decouverte-de-la-filiere-et-de-l-ecosysteme-musical",
-    "title": "Découverte de la filière et de l’écosystème musical",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Musicien•nes"
-    ],
-    "date": "2026-10-06",
-    "endDate": "2026-10-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/_emma_rochefeuille28.jpg?itok=XFUReQLY",
-    "url": "https://lautrecanalnancy.fr/agenda/decouverte-de-la-filiere-et-de-l-ecosysteme-musical",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
     "title": "Emile Londonien × Pierre Henry Gomont",
     "category": "musiques-actuelles",
@@ -239,6 +218,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/benpi_bm2455j3_bon_moment_2024_benpi.jpg?itok=KQNTOIZu",
     "url": "https://lautrecanalnancy.fr/agenda/160e-anniversaire-du-sport-nautique-de-nancy",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-philanthropie-culture-quelles-alliances-pour-demain",
+    "title": "Philanthropie & Culture : quelles alliances pour demain ?",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/color_vignettes_26_274.jpg?itok=AVuP9WPl",
+    "url": "https://lautrecanalnancy.fr/agenda/philanthropie-culture-quelles-alliances-pour-demain",
     "source": "autre-canal"
   },
   {
@@ -964,7 +964,7 @@
   },
   {
     "uuid": "lcn-scene-ouverte-nov-2026",
-    "title": "Scène Ouverte des studios de répétitions",
+    "title": "Scène Ouverte des studios de répétition",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -980,7 +980,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/coeur_bavard-4l.jpg?itok=rvZI6Bwo",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bogdywoody-5l.jpg?itok=Ny4bLoHf",
     "url": "https://lautrecanalnancy.fr/agenda/scene-ouverte-nov-2026",
     "source": "autre-canal"
   },
@@ -1439,7 +1439,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/685-field_illustration_id-1779815884.jpg?itok=Cf1fyiT0",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/magma.jpg?itok=KI13joSf",
     "url": "https://lautrecanalnancy.fr/agenda/magma-appartamento",
     "source": "autre-canal"
   },
@@ -1706,6 +1706,27 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-sortie-de-residence-les-fantomatiques-attaquent",
+    "title": "Sortie de résidence : Les Fantômatiques attaquent",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/i60a0061.jpg?itok=AlfFBGm0",
+    "url": "https://lautrecanalnancy.fr/agenda/sortie-de-residence-les-fantomatiques-attaquent",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-marche-bio-et-local-29",
     "title": "Marché bio et local",
     "category": "activite",
@@ -1859,6 +1880,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/madame_arthur_1080x1080_copie.jpg?itok=Apu5cocN",
     "url": "https://lautrecanalnancy.fr/agenda/madame-arthur-chante-celine-diam-s",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-mpl",
+    "title": "MPL",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Chanson",
+      "Pop"
+    ],
+    "date": "2027-01-28",
+    "endDate": "2027-01-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/mpl_4361_def_copie.jpg?itok=ad6WZzgq",
+    "url": "https://lautrecanalnancy.fr/agenda/mpl",
     "source": "autre-canal"
   },
   {
