@@ -227,7 +227,7 @@
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
     "subcats": [
-      "Evénement"
+      "Pro"
     ],
     "date": "2026-10-20",
     "endDate": "2026-10-20",
@@ -1139,6 +1139,25 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-petit-moment-novembre",
+    "title": "Petit Moment - Novembre",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/_emma_rochefeuille53.jpg?itok=EjvHQC5M",
+    "url": "https://lautrecanalnancy.fr/agenda/petit-moment-novembre",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-rila",
     "title": "Marché bio et local",
     "category": "activite",
@@ -1159,6 +1178,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web6.jpg?itok=5ldoYiVj",
     "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-concert-mensuel-rila",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-marche-de-noel-de-l-autre-canal-l-octroi-nancy",
+    "title": "Marché de Noël de L’Autre Canal – L’Octroi-Nancy",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Evénement"
+    ],
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/artwork_copie.jpg?itok=5E8MOtdu",
+    "url": "https://lautrecanalnancy.fr/agenda/marche-de-noel-de-l-autre-canal-l-octroi-nancy",
     "source": "autre-canal"
   },
   {
@@ -2571,6 +2611,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/low_def_hatik_2024-25_refonte_elts-promoteur_draft1_copie.jpg?itok=1oXyY9UR",
     "url": "https://lautrecanalnancy.fr/agenda/hatik",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-nuit-incolore",
+    "title": "Nuit Incolore",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop"
+    ],
+    "date": "2027-03-31",
+    "endDate": "2027-03-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/798-field_illustration_id-1790339810.jpg%3Fitok%3DqOFxKGoE?itok=FhAPS1MI",
+    "url": "https://lautrecanalnancy.fr/agenda/nuit-incolore",
     "source": "autre-canal"
   },
   {
