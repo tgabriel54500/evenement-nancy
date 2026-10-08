@@ -229,6 +229,29 @@ const SRC_RANK = {
 const srcRank = (e) => SRC_RANK[e.source || "ville-de-nancy"] ?? 9;
 const richness = (e) => (e.dateText ? 2 : 0) + (e.image ? 1 : 0) + (e.place ? 0.5 : 0);
 
+// Autorité TARIFAIRE, distincte de la priorité de fiche : « gratuit » ne doit
+// venir que de qui vend les billets. Les salles (L'Autre Canal, Poirel, Zénith)
+// connaissent leur billetterie ; la Ville de Nancy (API) est fiable ; les autres
+// sources recopient ou devinent, et Alentoor marque « gratuit » dès qu'une offre
+// est à 0 € (souvent « prix inconnu »). Vu le 2026-10-08 : BD-concert NJP à
+// L'Autre Canal, 15 € partout, affiché « Gratuit » parce qu'Alentoor le disait.
+// Règle : si une source qui fait autorité est dans le groupe, seules les fiches
+// du meilleur rang présent votent. Sinon (communes, Destination Nancy, presse,
+// Facebook, Alentoor…), `free: false` veut souvent dire « inconnu » : on garde
+// l'ancien comportement, un « gratuit » quelconque l'emporte, et l'overlay
+// events-pricing.json (enrich-pricing.js) corrige ensuite ce qu'il peut.
+const PRICE_RANK = {
+  "autre-canal": 0, "poirel": 0, "zenith-nancy": 0,
+  "ville-de-nancy": 1,
+};
+const priceRank = (e) => PRICE_RANK[e.source || "ville-de-nancy"];
+function pickFree(cluster) {
+  const ranks = cluster.map(priceRank).filter((r) => r !== undefined);
+  if (!ranks.length) return cluster.some((e) => e.free);
+  const best = Math.min(...ranks);
+  return cluster.filter((e) => priceRank(e) === best).some((e) => e.free);
+}
+
 function pickBase(cluster) {
   return cluster.slice().sort((a, b) => (richness(b) - richness(a)) || (srcRank(a) - srcRank(b)))[0];
 }
@@ -245,7 +268,7 @@ function mergeCluster(cluster) {
     city: base.city || cluster.map((e) => e.city).find(Boolean) || "",
     image: base.image || cluster.map((e) => e.image).find(Boolean) || null,
     dateText: base.dateText || cluster.map((e) => e.dateText).find(Boolean) || "",
-    free: cluster.some((e) => e.free),
+    free: pickFree(cluster),
     reservation: cluster.some((e) => e.reservation),
     subcats: [...new Set(cluster.flatMap((e) => e.subcats || []))],
   };
@@ -373,4 +396,4 @@ function cleanupMerged(events) {
   return etalerSeriesCourtes(dedupeCrossSource(normalized)).map((e) => fillPeriod(e, todayISO));
 }
 
-module.exports = { cleanCity, cleanPlace, remapCategory, dedupeCrossSource, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };
+module.exports = { cleanCity, cleanPlace, remapCategory, dedupeCrossSource, pickFree, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };
