@@ -1,50 +1,5 @@
 [
   {
-    "uuid": "lcn-emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
-    "title": "Emile Londonien × Pierre Henry Gomont",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "BD Concert",
-      "Electro",
-      "Jazz"
-    ],
-    "date": "2026-10-08",
-    "endDate": "2026-10-08",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/emile_londonien.jpg?itok=T_dLEklH",
-    "url": "https://lautrecanalnancy.fr/agenda/emile-londonien-x-pierre-henry-gomont-jean-michel-moog-son-batard",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-moulage-de-protecteurs-auditifs",
-    "title": "Moulage de protecteurs auditifs",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Musicien•nes"
-    ],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bouchon.jpg?itok=U-2fH9hF",
-    "url": "https://lautrecanalnancy.fr/agenda/moulage-de-protecteurs-auditifs",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-22",
     "title": "Marché bio et local",
     "category": "activite",
@@ -1719,7 +1674,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2023-12-20_a_12.47.54.png?itok=WBXGvdrH",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/photo_batterie_nicolas_stroebeljpg.jpg?itok=O1lhrdMK",
     "url": "https://lautrecanalnancy.fr/agenda/le-son-et-l-accordage-de-la-batterie-acoustique-atelier-avec-nicolas-stroebel",
     "source": "autre-canal"
   },
@@ -2249,7 +2204,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/head1st_d.jpg?itok=LewbppGO",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/651184689_10236579733746848_4739228687593280079_n.jpg?itok=Xucb6Kor",
     "url": "https://lautrecanalnancy.fr/agenda/encore-plus-de-basse-atelier-avec-juliette-barrier",
     "source": "autre-canal"
   },
