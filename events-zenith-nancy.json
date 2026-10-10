@@ -78,7 +78,7 @@
     "place": "Zénith de Nancy",
     "city": "Maxéville",
     "free": false,
-    "reservation": true,
+    "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Balavoine_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/balavoine-ma-bataille/",
     "source": "zenith-nancy"
@@ -541,7 +541,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/SOLITUDES-POST-NANCY-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/11/Fabrice-Eboue_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/fabrice-eboue/",
     "source": "zenith-nancy"
   },

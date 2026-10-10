@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-22",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal_web6.jpg?itok=5ldoYiVj",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-22",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-bon-entendeur-lizy-dionysa-aspasie-adelma",
     "title": "Bon Entendeur",
     "category": "musiques-actuelles",
@@ -194,6 +172,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/color_vignettes_26_274.jpg?itok=AVuP9WPl",
     "url": "https://lautrecanalnancy.fr/agenda/philanthropie-culture-quelles-alliances-pour-demain",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-aperographik",
+    "title": "Apérographik",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Petite Halle"
+    ],
+    "date": "2026-10-20",
+    "endDate": "2026-10-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-10-09_a_15.35.08.png?itok=wyOZw5nB",
+    "url": "https://lautrecanalnancy.fr/agenda/aperographik",
     "source": "autre-canal"
   },
   {
@@ -897,8 +897,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-blindtest-party",
-    "title": "Blindtest Party",
+    "uuid": "lcn-blind-test-party-0",
+    "title": "Blind Test Party",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
@@ -914,7 +914,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jkf05650-2.jpg?itok=nNa4DNHL",
-    "url": "https://lautrecanalnancy.fr/agenda/blindtest-party",
+    "url": "https://lautrecanalnancy.fr/agenda/blind-test-party-0",
     "source": "autre-canal"
   },
   {
@@ -1006,7 +1006,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-release-party-d-allivm-orilia",
+    "uuid": "lcn-release-party-d-allivm-orilia-rencontre-blindtest",
     "title": "Release Party d'Allivm",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -1025,7 +1025,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/682-field_illustration_id-1788528224.jpg%3Fitok%3DmvdwvYLp?itok=0c0bQIWx",
-    "url": "https://lautrecanalnancy.fr/agenda/release-party-d-allivm-orilia",
+    "url": "https://lautrecanalnancy.fr/agenda/release-party-d-allivm-orilia-rencontre-blindtest",
     "source": "autre-canal"
   },
   {
@@ -2055,6 +2055,25 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-atelier-pression-du-musicien-de-la-musicienne-corps-mental-et-gestion-du-stress",
+    "title": "ATELIER - Pression du musicien, de la musicienne : corps, mental et gestion du stress",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2027-02-06",
+    "endDate": "2027-02-06",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/811-field_illustration_id-1791550493.png%3Fitok%3D0oNBSCjx?itok=m6oOAn56",
+    "url": "https://lautrecanalnancy.fr/agenda/atelier-pression-du-musicien-de-la-musicienne-corps-mental-et-gestion-du-stress",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-and-also-trees-catherine-graindorge",
     "title": "And Also The Trees",
     "category": "musiques-actuelles",
@@ -2788,6 +2807,25 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/786-field_illustration_id-1789578990.jpg%3Fitok%3DyiW8MEUQ?itok=LZYOlqLw",
     "url": "https://lautrecanalnancy.fr/agenda/dinguerie-blu-samu-cheri-guests",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-atelier-recuperation-addictions-et-equilibre-du-musicien-de-la-musicienne-atelier-avec-benedicte-lelay",
+    "title": "ATELIER - Récupération, addictions et équilibre du musicien, de la musicienne",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2027-04-17",
+    "endDate": "2027-04-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/812-field_illustration_id-1791550610.png%3Fitok%3Dv40hSPGR?itok=fgZicjVF",
+    "url": "https://lautrecanalnancy.fr/agenda/atelier-recuperation-addictions-et-equilibre-du-musicien-de-la-musicienne-atelier-avec-benedicte-lelay",
     "source": "autre-canal"
   },
   {
