@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-10",
+    "date": "2026-10-11",
     "endDate": "2026-10-11",
     "dateText": "",
     "schedule": "20h",
@@ -39,48 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0508_ARDELE_MARGUERITE_ROELE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/ardele-et-la-marguerite",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-599",
-    "title": "Villers en rose",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "9h > 13h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/image-from-rawpixel-id-235138-original.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-rose",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-312",
-    "title": "Trail des Lumières",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/trail.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/trail-des-lumieres",
     "source": "villers-les-nancy"
   },
   {

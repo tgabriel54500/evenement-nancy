@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-bon-entendeur-lizy-dionysa-aspasie-adelma",
-    "title": "Bon Entendeur",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Electro"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/751-field_illustration_id-1779781260.png?itok=Xr2ThbQU",
-    "url": "https://lautrecanalnancy.fr/agenda/bon-entendeur-lizy-dionysa-aspasie-adelma",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-temples-metro-verlaine",
     "title": "Temples",
     "category": "musiques-actuelles",
