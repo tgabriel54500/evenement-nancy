@@ -2033,12 +2033,14 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-atelier-pression-du-musicien-de-la-musicienne-corps-mental-et-gestion-du-stress",
-    "title": "ATELIER - Pression du musicien, de la musicienne : corps, mental et gestion du stress",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
+    "uuid": "lcn-pression-dude-la-musicienne-corps-mental-gestion-du-stress-atelier-avec-benedicte-lelay",
+    "title": "Pression du·de la musicien·ne : corps, mental & gestion du stress",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Musicien•nes"
+    ],
     "date": "2027-02-06",
     "endDate": "2027-02-06",
     "dateText": "",
@@ -2048,7 +2050,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/811-field_illustration_id-1791550493.png%3Fitok%3D0oNBSCjx?itok=m6oOAn56",
-    "url": "https://lautrecanalnancy.fr/agenda/atelier-pression-du-musicien-de-la-musicienne-corps-mental-et-gestion-du-stress",
+    "url": "https://lautrecanalnancy.fr/agenda/pression-dude-la-musicienne-corps-mental-gestion-du-stress-atelier-avec-benedicte-lelay",
     "source": "autre-canal"
   },
   {
@@ -2788,12 +2790,14 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-atelier-recuperation-addictions-et-equilibre-du-musicien-de-la-musicienne-atelier-avec-benedicte-lelay",
-    "title": "ATELIER - Récupération, addictions et équilibre du musicien, de la musicienne",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [],
+    "uuid": "lcn-recuperation-addictions-et-equilibre-dude-la-musicienne-atelier-avec-benedicte-lelay",
+    "title": "Récupération, addictions et équilibre du/de la musicien·ne",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Musicien•nes"
+    ],
     "date": "2027-04-17",
     "endDate": "2027-04-17",
     "dateText": "",
@@ -2803,7 +2807,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/812-field_illustration_id-1791550610.png%3Fitok%3Dv40hSPGR?itok=fgZicjVF",
-    "url": "https://lautrecanalnancy.fr/agenda/atelier-recuperation-addictions-et-equilibre-du-musicien-de-la-musicienne-atelier-avec-benedicte-lelay",
+    "url": "https://lautrecanalnancy.fr/agenda/recuperation-addictions-et-equilibre-dude-la-musicienne-atelier-avec-benedicte-lelay",
     "source": "autre-canal"
   },
   {

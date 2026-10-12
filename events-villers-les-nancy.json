@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-11",
+    "date": "2026-10-12",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -18,48 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-538",
-    "title": "Ardèle et la marguerite",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-11",
-    "endDate": "2026-10-11",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Caveau de la Roële",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0508_ARDELE_MARGUERITE_ROELE.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/ardele-et-la-marguerite",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-490",
-    "title": "Villers en marche - Octobre rose",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Sport"
-    ],
-    "date": "2026-10-11",
-    "endDate": "2026-10-11",
-    "dateText": "",
-    "schedule": "À partir de 8h",
-    "place": "Stade Roger Bambuck",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Format_169.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/villers-en-marche-en-faveur-doctobre-rose",
     "source": "villers-les-nancy"
   },
   {
@@ -296,6 +254,48 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-604",
+    "title": "Exposition de l’Amicale de Villers centre",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-01",
+    "endDate": "2026-11-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261101_EXPO_AMICALE_VILLERS_CENTRE__c__Photo_generee_par_IA.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-lamicale-de-villers-centre",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-605",
+    "title": "Exposition - Delatte, l'éclat retrouvé",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-06",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "Galerie Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261106_EXPO_DELATTE.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-delatte-leclat-retrouve",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-134",
     "title": "Marches de nettoyage",
     "category": "activite",
@@ -314,6 +314,48 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marchedenettoyage.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/marche-de-nettoyage",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-606",
+    "title": "Concerts de l’Orchestre d’Harmonie de Vandoeuvre",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "17h",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261108_CONCERT_ORCHESTRE__c__Stephane_Noll.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concerts-de-lorchestre-dharmonie-de-vandoeuvre",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-607",
+    "title": "Concert de jazz de Pierre-Alain Goualch Trio",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261110_CONCERT_JAZZ.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-jazz-de-pierre-alain-goualch-trio",
     "source": "villers-les-nancy"
   },
   {
@@ -359,6 +401,153 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-485",
+    "title": "Puisque vous partez en voyage… ",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-13",
+    "endDate": "2026-11-21",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0130_THEATRE.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/puisque-vous-partez-en-voyage",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-329",
+    "title": "Les Rendez-vous Prestige de la Saint Nicolas",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "Le château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/IMG_5108.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rendez-vous-prestige-de-la-saint-nicolas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-609",
+    "title": "Les Rencontres littéraires de Villers reçoivent Hélène Gestern",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "",
+    "schedule": "18h45",
+    "place": "Château Mme de Graffigny",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261119_RLV_HELENE_GESTERN__c__Philippe_MATSAS_-_ARLEA.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rencontres-litteraires-de-villers-recoivent-helene-gestern",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-608",
+    "title": "Concert de Barzingault",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-22",
+    "endDate": "2026-11-22",
+    "dateText": "",
+    "schedule": "15h45",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261122_CONCERT_BARZINGAULT__c__En_attente_credit_photo.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-barzingault",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-70",
+    "title": "Silence, on tourne !",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-27",
+    "endDate": "2026-12-06",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/Silence_on_tourne.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/silence-on-tourne",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-349",
+    "title": "Défilé de Saint-Nicolas",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/Aff-St-Nicolas-2024-A3_imp.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/defile-de-saint-nicolas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-610",
+    "title": "Concert du chœur des Cordeliers de Saint-Max",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-29",
+    "endDate": "2026-11-29",
+    "dateText": "",
+    "schedule": "15h30",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/cordeliers.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-du-choeur-des-cordeliers-de-saint-max",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-603",
     "title": "Conférence : Renard, les yeux dans les yeux",
     "category": "conference",
@@ -398,6 +587,71 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Portrait_de_Madame_Marie-Elisabeth_de_Ludres.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-de-dominique-baguet-la-chanoinesse-isabelle-de-ludres",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-518",
+    "title": "5e étage",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-12-11",
+    "endDate": "2026-12-19",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0123_THEATRE__c__Gallica_Bnf.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/5e-etage",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-291",
+    "title": "Bal Folk - Lune à Tics invite le Free Folk Quartet",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261212_BAL_FOLK.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/bal-folk-lune-a-tics-invite-le-free-folk-quartet",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-330",
+    "title": "Ciné de Noël",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Education",
+      "Culture",
+      "Petite enfance"
+    ],
+    "date": "2026-12-13",
+    "endDate": "2026-12-13",
+    "dateText": "",
+    "schedule": "15h",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/spectacles-de-noel.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-de-noel",
     "source": "villers-les-nancy"
   }
 ]
