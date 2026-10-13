@@ -304,6 +304,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-ateliers-de-creation",
+    "title": "Ateliers de création",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous",
+      "Petite Halle"
+    ],
+    "date": "2026-10-23",
+    "endDate": "2026-10-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09250.jpg?itok=qNn4nIEt",
+    "url": "https://lautrecanalnancy.fr/agenda/ateliers-de-creation",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-marche-bio-et-local-concert-mensuel-orwell",
     "title": "Marché bio et local",
     "category": "activite",
@@ -370,28 +392,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/663-illustration_id-1769442104.png?itok=rDUDr9Y_",
     "url": "https://lautrecanalnancy.fr/agenda/carpenter-brut-ghost-dance",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ateliers-de-creation",
-    "title": "Ateliers de création",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Petite Halle"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/dsc09250.jpg?itok=qNn4nIEt",
-    "url": "https://lautrecanalnancy.fr/agenda/ateliers-de-creation",
     "source": "autre-canal"
   },
   {
@@ -1002,7 +1002,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/682-field_illustration_id-1788528224.jpg%3Fitok%3DmvdwvYLp?itok=0c0bQIWx",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/affiche-rs.jpg?itok=deNJ5NT8",
     "url": "https://lautrecanalnancy.fr/agenda/release-party-d-allivm-orilia-rencontre-blindtest",
     "source": "autre-canal"
   },

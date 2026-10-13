@@ -1918,5 +1918,15 @@
   "lat": 48.498493,
   "lon": 6.65618,
   "city": "Flin"
+ },
+ "neuville-les-vaucouleurs": {
+  "lat": 48.577692,
+  "lon": 5.67303,
+  "city": "Neuville-lès-Vaucouleurs"
+ },
+ "pournoy-la-chetive": {
+  "lat": 49.019018,
+  "lon": 6.153323,
+  "city": "Pournoy-la-Chétive"
  }
 }
