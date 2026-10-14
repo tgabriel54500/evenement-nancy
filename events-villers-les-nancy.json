@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-13",
+    "date": "2026-10-14",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -18,48 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-73",
-    "title": "Cercle des lecteurs",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-13",
-    "endDate": "2026-12-08",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/cercledeslecteurs.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cercle-des-lecteurs",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-301",
-    "title": "Groupes de parole pour les proches aidants Orchidée",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Solidarité"
-    ],
-    "date": "2026-10-13",
-    "endDate": "2027-06-29",
-    "dateText": "",
-    "schedule": "14 à 16h",
-    "place": "Résidence autonomie Paul Adam",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
     "source": "villers-les-nancy"
   },
   {
@@ -359,6 +317,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-73",
+    "title": "Cercle des lecteurs",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-12-08",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/cercledeslecteurs.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cercle-des-lecteurs",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-343",
     "title": "Cérémonie  de commémoration de l’armistice du 11 novembre 1918  ",
     "category": "citoyennete",
@@ -440,6 +419,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/IMG_5108.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rendez-vous-prestige-de-la-saint-nicolas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-301",
+    "title": "Groupes de parole pour les proches aidants Orchidée",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-11-17",
+    "endDate": "2027-06-29",
+    "dateText": "",
+    "schedule": "14 à 16h",
+    "place": "Résidence autonomie Paul Adam",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
     "source": "villers-les-nancy"
   },
   {

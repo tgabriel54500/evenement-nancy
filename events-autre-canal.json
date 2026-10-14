@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-temples-metro-verlaine",
-    "title": "Temples",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Rock psyché"
-    ],
-    "date": "2026-10-13",
-    "endDate": "2026-10-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/702-illustration_id-1775744652.jpg%3Fitok%3DQ0NQOuXI?itok=3aa2xj0q",
-    "url": "https://lautrecanalnancy.fr/agenda/temples-metro-verlaine",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-ecoute-bodies-crowd-en-live-sieste-musicale-des-6-mois",
     "title": "On écoute : Bodies In The Crowd, en live",
     "category": "musiques-actuelles",
@@ -1526,8 +1504,8 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-soen-tribulation",
-    "title": "Soen + Tribulation",
+    "uuid": "lcn-soen-tribulation-vulkan",
+    "title": "Soen + Tribulation + Vulkan",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -1543,8 +1521,8 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_lindaflorin_2025-2_copie.jpg?itok=GX3B4CvU",
-    "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/soen_reliance_cover-scaled.jpg?itok=mZST-HRM",
+    "url": "https://lautrecanalnancy.fr/agenda/soen-tribulation-vulkan",
     "source": "autre-canal"
   },
   {
