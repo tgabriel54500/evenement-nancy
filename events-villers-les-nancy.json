@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Environnement"
     ],
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "endDate": "2026-12-16",
     "dateText": "",
     "schedule": "18h30 à 21h",
@@ -102,6 +102,31 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0320_THEATRE_DUMAS.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/signe-dumas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-611",
+    "title": "Journée du jeu",
+    "category": "jeune-public",
+    "catLabel": "Jeune public",
+    "catEmoji": "🧸",
+    "subcats": [
+      "Education",
+      "Solidarité",
+      "Sénior",
+      "Culture",
+      "Petite enfance"
+    ],
+    "date": "2026-10-17",
+    "endDate": "2026-10-17",
+    "dateText": "",
+    "schedule": "à partir de 15h",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/64acd5df-30b7-4792-96bf-1eae5dfacf91.png",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/journee-du-jeu",
     "source": "villers-les-nancy"
   },
   {

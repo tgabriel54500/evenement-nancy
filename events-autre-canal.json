@@ -1,48 +1,5 @@
 [
   {
-    "uuid": "lcn-ecoute-bodies-crowd-en-live-sieste-musicale-des-6-mois",
-    "title": "On écoute : Bodies In The Crowd, en live",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Enfance"
-    ],
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/plug-article-262741_19655_20260623185003_4600145.jpeg?itok=99NdFI0k",
-    "url": "https://lautrecanalnancy.fr/agenda/ecoute-bodies-crowd-en-live-sieste-musicale-des-6-mois",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-rendez-vous-d-infos-sur-les-candidatures-aux-inouis-rdv-info-conseil-ressource",
-    "title": "Rendez-vous d'infos sur les candidatures aux Inouïs",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Musicien•nes"
-    ],
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/fond_inouis.jpg?itok=7Ql5POB7",
-    "url": "https://lautrecanalnancy.fr/agenda/rendez-vous-d-infos-sur-les-candidatures-aux-inouis-rdv-info-conseil-ressource",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-altin-gun-yuuf",
     "title": "Altin Gün",
     "category": "musiques-actuelles",
@@ -1113,7 +1070,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-les-fatals-picards",
+    "uuid": "lcn-les-fatals-picards-charcoal",
     "title": "Les Fatals Picards",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -1131,7 +1088,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/598-illustration_id-1760433164.jpeg?itok=Nuyf2sth",
-    "url": "https://lautrecanalnancy.fr/agenda/les-fatals-picards",
+    "url": "https://lautrecanalnancy.fr/agenda/les-fatals-picards-charcoal",
     "source": "autre-canal"
   },
   {

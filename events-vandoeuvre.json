@@ -1067,7 +1067,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-10-14",
+    "date": "2026-10-15",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1077,44 +1077,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29166",
-    "title": "Fête de la paix",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "dateText": "",
-    "schedule": "14h",
-    "place": "Espace Yves Coppens",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/fete-de-la-paix/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29357",
-    "title": "Atelier “Nature à croquer”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "dateText": "",
-    "schedule": "De 14h à 16h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/atelier-nature-a-croquer/",
     "source": "vandoeuvre"
   },
   {
@@ -1415,6 +1377,27 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29621",
+    "title": "Tournoi Mystère",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Jeunes"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "",
+    "schedule": "Ouverture des inscriptions sur place à 14h et début du tournoi à 15h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/tournoi-mystere-2/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-11099",
     "title": "Grande Braderie et vide-grenier",
     "category": "famille",
@@ -1606,6 +1589,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/09/2-rue-de-malines.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/au-2-rue-de-malines-rentree-litteraire/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29624",
+    "title": "Atelier créatif “Histoires bricolées”",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "De 10h30 à 12h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/08/mouvacademie.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/atelier-creatif-histoires-bricolees/",
     "source": "vandoeuvre"
   },
   {
