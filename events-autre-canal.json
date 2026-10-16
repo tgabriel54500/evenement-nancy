@@ -1,28 +1,5 @@
 [
   {
-    "uuid": "lcn-altin-gun-yuuf",
-    "title": "Altin Gün",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Psyché",
-      "Turque"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/720-field_illustration_id-1779781162.png?itok=JSlyAUC1",
-    "url": "https://lautrecanalnancy.fr/agenda/altin-gun-yuuf",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-23",
     "title": "Marché bio et local",
     "category": "activite",

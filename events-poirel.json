@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-9ec9ec26-b8ab-11f1-b465-6b794522c650",
-    "title": "Les rendez-vous du Collectif Autrement Dit",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-17",
-    "dateText": "Du 13 au 17 octobre",
-    "schedule": "",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9ec9ec26-b8ab-11f1-b465-6b794522c650/0/1-1_M_6ab6172214412.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=9ec9ec26-b8ab-11f1-b465-6b794522c650",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-a936525e-8443-11f1-8277-c597bc448103",
     "title": "Ces Mondes en nous",
     "category": "musique-classique",
@@ -32,7 +11,7 @@
       "Opéra / lyrique",
       "Musique de chambre / chorale"
     ],
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "endDate": "2026-10-16",
     "dateText": "Les 15 et 16 octobre 2026",
     "schedule": "20h",
@@ -45,6 +24,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-9ec9ec26-b8ab-11f1-b465-6b794522c650",
+    "title": "Les rendez-vous du Collectif Autrement Dit",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2026-10-16",
+    "endDate": "2026-10-17",
+    "dateText": "Du 13 au 17 octobre",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/9ec9ec26-b8ab-11f1-b465-6b794522c650/0/1-1_M_6ab6172214412.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=9ec9ec26-b8ab-11f1-b465-6b794522c650",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -53,7 +53,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",

@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-42143",
-    "title": "Jardin Éphémère Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-10-15",
-    "endDate": "2026-11-01",
-    "dateText": "Du 2 octobre au 1 novembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42143_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42143/jardin-ephemere-nancy/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42196",
     "title": "Salon Habitat de la Porte Verte Seichamps",
     "category": "festival",
@@ -54,6 +35,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42168_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42168/cirque-arlette-gruss-nancy/meurthe-et-moselle-nancy/spectacle",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42143",
+    "title": "Jardin Éphémère Nancy",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-10-16",
+    "endDate": "2026-11-01",
+    "dateText": "Du 2 octobre au 1 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42143_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42143/jardin-ephemere-nancy/meurthe-et-moselle-nancy/fete-animation",
     "source": "lorraineaucoeur"
   },
   {
@@ -168,6 +168,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42144_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42144/fete-o-village-edition-halloween-a-vandoeuvre/meurthe-et-moselle-vandoeuvre-les-nancy/marche-artisanal-et-terroir",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42214",
+    "title": "Fête de la Truffe à Pulnoy",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-11-06",
+    "endDate": "2026-11-08",
+    "dateText": "Du 6 au 8 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Pulnoy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42214_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42214/fete-de-la-truffe-a-pulnoy/meurthe-et-moselle-pulnoy/fete-animation",
     "source": "lorraineaucoeur"
   }
 ]

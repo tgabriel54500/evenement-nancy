@@ -17,24 +17,5 @@
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_cross.png",
     "url": "https://www.ici-c-nancy.fr/agenda/1167-cross-departemental-des-sapeurs-pompiers-de-meurthe-et-moselle/2026-10-17-09-30.html",
     "source": "ici-c-nancy"
-  },
-  {
-    "uuid": "icn-1154",
-    "title": "MATCH NANCY - LAVAL (LIGUE 2 - 10ÈME JOURNÉE)",
-    "category": "sport",
-    "catLabel": "Sport",
-    "catEmoji": "⚽",
-    "subcats": [],
-    "date": "2026-10-23",
-    "endDate": "2026-10-23",
-    "dateText": "",
-    "schedule": "20:00",
-    "place": "",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_picot9mai.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1154-match-nancy-laval-ligue-2-10eme-journee/2026-10-23-20-00.html",
-    "source": "ici-c-nancy"
   }
 ]

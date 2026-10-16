@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Environnement"
     ],
-    "date": "2026-10-15",
+    "date": "2026-10-16",
     "endDate": "2026-12-16",
     "dateText": "",
     "schedule": "18h30 à 21h",
@@ -39,48 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-481",
-    "title": "Conférence : Jules CAYETTE, un artiste de transition entre Art Nouveau et Art déco",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/jules.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-jules-cayette-un-artiste-de-transition-entre-art-nouveau-et-art-deco",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-592",
-    "title": "Les Rencontres littéraires de Villers reçoivent Catherine Kazan",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "dateText": "",
-    "schedule": "18h45",
-    "place": "Château Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261015_RLV_CATHERINE_KAZAN.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rencontres-litteraires-de-villers-recoivent-catherine-kazan",
     "source": "villers-les-nancy"
   },
   {
