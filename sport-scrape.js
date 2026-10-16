@@ -111,13 +111,15 @@ function splitWhen(v) {
   return d ? { date: d[1], time: "" } : { date: "", time: "" };
 }
 
-function makeMatch(club, { id, date, time, opponent, competition, round, salle, url, source }) {
+function makeMatch(club, { id, date, dateEnd, dateTbc, time, opponent, competition, round, salle, url, source }) {
   const v = resolveVenue(club, salle);
   return {
     id: `${club.key}-${id}`,
     club: club.key,
     sport: club.sport,
     date,
+    ...(dateEnd && dateEnd !== date ? { dateEnd } : {}),
+    ...(dateTbc ? { dateTbc: true } : {}),
     time: time || "",
     opponent: String(opponent || "").trim(),
     competition: competition || club.league,
@@ -623,6 +625,21 @@ function ffhJournees(html) {
   const list = typeof p.journees === "string" ? JSON.parse(p.journees) : p.journees;
   return Array.isArray(list) ? list.map(j => Number(j.journee_numero)).filter(Boolean) : [];
 }
+// Week-end prévu de chaque journée (date_debut / date_fin du calendrier de la
+// poule). Sert quand la rencontre n'a pas encore de date fixée : la FFHandball
+// ne publie jour et heure qu'au fil de la saison (date à null dans la liste).
+function ffhJourneeDates(html) {
+  const js = ffhComponent(html, "competitions---journee-selector") || ffhComponent(html, "competitions---rencontre-list");
+  const p = js && js.poule;
+  if (!p || !p.journees) return {};
+  const list = typeof p.journees === "string" ? JSON.parse(p.journees) : p.journees;
+  const out = {};
+  for (const j of Array.isArray(list) ? list : []) {
+    const n = Number(j.journee_numero);
+    if (n && /^\d{4}-\d{2}-\d{2}$/.test(j.date_debut || "")) out[n] = { debut: j.date_debut, fin: j.date_fin || j.date_debut };
+  }
+  return out;
+}
 // « 2026-10-03T21:00:00+02:00 » → date locale et heure locale (l'offset est
 // celui de la salle, pas besoin de convertir).
 function ffhWhen(v) {
@@ -636,6 +653,7 @@ async function scrapeFFH(club, cache) {
   const base = `${FFH}saison-2026-2027-${cfg.saison}/national/${cfg.competition}/poule-${cfg.poule}/`;
   const first = await get(base, { name: `ffh-${club.key}.html` });
   const journees = ffhJournees(first);
+  const semaines = ffhJourneeDates(first);
   if (!journees.length) throw new Error("aucune journée lue dans la page de poule (maquette changée ?)");
   cache.ffhSalles = cache.ffhSalles || {};
   const out = [];
@@ -646,8 +664,14 @@ async function scrapeFFH(club, cache) {
     for (const r of ffhRencontres(html)) {
       const home = decodeEntities(r.equipe1Libelle || ""), away = decodeEntities(r.equipe2Libelle || "");
       if (!isClub(club, home)) continue;
-      const { date, time } = ffhWhen(r.date);
-      if (!date) continue;
+      let { date, time } = ffhWhen(r.date);
+      let dateEnd = "", dateTbc = false;
+      if (!date) {
+        // Pas encore programmée : on garde le match sur le week-end de la journée.
+        const w = semaines[j];
+        if (!w) continue;
+        date = w.debut; dateEnd = w.fin; time = ""; dateTbc = true;
+      }
       // Salle : cache par identifiant, sinon page de la rencontre, sinon salle du club.
       let salle = cache.ffhSalles[r.equipementId];
       if (!salle && r.equipementId && r.ext_rencontreId) {
@@ -660,7 +684,7 @@ async function scrapeFFH(club, cache) {
       }
       out.push(makeMatch(club, {
         id: `ffh-${r.ext_rencontreId || r.id}`,
-        date, time,
+        date, dateEnd, dateTbc, time,
         opponent: away.replace(/\s+\(N\d\)$/i, ""),
         competition: club.league,
         round: `${j}${j === 1 ? "re" : "e"} journée`,
@@ -675,7 +699,7 @@ async function scrapeFFH(club, cache) {
 }
 
 module.exports = {
-  parseFibaGames, fibaHomeMatches, ffhComponent, ffhRencontres, ffhJournees, ffhWhen,
+  parseFibaGames, fibaHomeMatches, ffhComponent, ffhRencontres, ffhJournees, ffhJourneeDates, ffhWhen, scrapeFFH,
   lnbHomeMatches, fusionSluc, heureParis, saisonLNB,
 };
 

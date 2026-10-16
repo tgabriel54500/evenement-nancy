@@ -124,7 +124,8 @@ function afficheSVG(club, m) {
   const [bg, accent] = club.colors;
   const dark = shade(bg, -0.3);
   const d = new Date(m.date + "T12:00:00");
-  const dateTxt = `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  const dateTxt = m.dateTbc ? semaineTxt(m) : `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]}`;
+  const aConfirmer = m.dateTbc ? "date et horaire à confirmer" : "horaire à confirmer";
 
   // Zone sûre verticale : la galerie superpose un ruban et une pastille de date
   // en haut, le titre de l'événement en bas. Tout le contenu de l'affiche tient
@@ -171,8 +172,8 @@ function afficheSVG(club, m) {
     ${adv}
 
     <rect x="160" y="866" width="480" height="2" fill="#ffffff" opacity=".22"/>
-    <text x="400" y="${m.time ? 932 : 920}" font-size="40" font-weight="700" fill="#ffffff">${esc(dateTxt)}${m.time ? " · " + esc(m.time) : ""}</text>
-    ${m.time ? "" : `<text x="400" y="958" font-size="25" font-weight="600" fill="${accent}">horaire à confirmer</text>`}
+    <text x="400" y="${m.time ? 932 : 920}" font-size="${fit([dateTxt], 40, 30)}" font-weight="700" fill="#ffffff">${esc(dateTxt)}${m.time ? " · " + esc(m.time) : ""}</text>
+    ${m.time ? "" : `<text x="400" y="958" font-size="25" font-weight="600" fill="${accent}">${aConfirmer}</text>`}
     <text x="400" y="${m.time ? 978 : 996}" font-size="${fit([lieu], 27, 18)}" font-weight="500" fill="#ffffff" opacity=".7">${esc(lieu)}</text>
   </g>
 </svg>
@@ -181,12 +182,25 @@ function afficheSVG(club, m) {
 
 // ── Construction des événements ─────────────────────────────────────────────
 
+// Match dont la fédération n'a pas encore fixé le jour : seul le week-end de la
+// journée est connu (« week-end des 9 et 10 janvier », « samedi 27 février »).
+function semaineTxt(m, withYear = false) {
+  const a = new Date(m.date + "T12:00:00");
+  const b = new Date((m.dateEnd || m.date) + "T12:00:00");
+  const y = withYear ? ` ${b.getFullYear()}` : "";
+  if (a.getTime() === b.getTime()) return `${DAYS[a.getDay()]} ${a.getDate()} ${MONTHS[a.getMonth()]}${y}`;
+  if (a.getMonth() === b.getMonth()) return `week-end des ${a.getDate()} et ${b.getDate()} ${MONTHS[b.getMonth()]}${y}`;
+  return `week-end des ${a.getDate()} ${MONTHS[a.getMonth()]} et ${b.getDate()} ${MONTHS[b.getMonth()]}${y}`;
+}
+
 function toEvent(m, firstseen) {
   const club = byKey(m.club);
   if (!club) return null;
   const uuid = `sport-${m.id}`;
   const d = new Date(m.date + "T12:00:00");
-  const dateText = `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
+  const dateText = m.dateTbc
+    ? `${semaineTxt(m, true)} (date à confirmer)`
+    : `${DAYS[d.getDay()]} ${d.getDate()} ${MONTHS[d.getMonth()]} ${d.getFullYear()}`;
   if (!firstseen[uuid]) firstseen[uuid] = todayISO;
   return {
     uuid,
@@ -194,7 +208,7 @@ function toEvent(m, firstseen) {
     category: club.sport,
     subcats: [club.name, m.opponent, m.competition || club.league].filter(Boolean),
     date: m.date,
-    endDate: m.date,
+    endDate: m.dateEnd || m.date,
     dateText: dateText.charAt(0).toUpperCase() + dateText.slice(1),
     schedule: m.time || "",
     place: m.place,

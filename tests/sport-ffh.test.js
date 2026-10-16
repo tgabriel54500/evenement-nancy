@@ -58,4 +58,39 @@ test("domicile / extérieur par alias des clubs", () => {
   assert.ok(!isClub(n3, "HBC LURE VILLERS"), "Lure Villers (adversaire en N3) n'est pas l'entente");
 });
 
-console.log(process.exitCode ? "ÉCHEC" : `OK (${n} tests)`);
+test("week-end de chaque journée lu dans le sélecteur", () => {
+  const sel = comp("competitions---journee-selector", { poule: { journees: JSON.stringify([
+    { journee_numero: 10, date_debut: "2027-01-09", date_fin: "2027-01-10" },
+    { journee_numero: 14, date_debut: "2027-02-27", date_fin: "2027-02-27" },
+  ]) } });
+  assert.deepStrictEqual(S.ffhJourneeDates(sel), {
+    10: { debut: "2027-01-09", fin: "2027-01-10" },
+    14: { debut: "2027-02-27", fin: "2027-02-27" },
+  });
+});
+
+// Asynchrone : rencontre sans date fixée (date null, cas de toute la phase
+// retour en octobre) → gardée sur le week-end de sa journée, « à confirmer ».
+(async () => {
+  const club = byKey("villers-f");
+  const poule2 = { journees: JSON.stringify([{ journee_numero: 11, date_debut: "2027-01-16", date_fin: "2027-01-17" }]) };
+  const rs = [
+    { id: "1", ext_rencontreId: "9001", date: null, equipe1Libelle: "VILLERS HANDBALL", equipe2Libelle: "COLMAR CENTRE ALSACE", equipementId: "1604" },
+    { id: "2", ext_rencontreId: "9002", date: null, equipe1Libelle: "REICHSTETT", equipe2Libelle: "VILLERS HANDBALL", equipementId: "77" },
+  ];
+  const page = "<html>" + comp("competitions---journee-selector", { poule: poule2 })
+    + comp("competitions---rencontre-list", { poule: poule2, rencontres: JSON.stringify(rs) }) + "</html>";
+  const realFetch = global.fetch;
+  global.fetch = async () => ({ ok: true, status: 200, text: async () => page });
+  try {
+    const out = await S.scrapeFFH(club, { ffhSalles: { 1604: "MARIE MARVINGT VILLERS LES NANCY" } });
+    assert.strictEqual(out.length, 1, "seul le match à domicile");
+    assert.strictEqual(out[0].date, "2027-01-16");
+    assert.strictEqual(out[0].dateEnd, "2027-01-17");
+    assert.strictEqual(out[0].dateTbc, true);
+    assert.strictEqual(out[0].time, "");
+    n++; console.log("  ✓ rencontre sans date → week-end de la journée, à confirmer");
+  } catch (e) { console.error("  ✗ rencontre sans date\n   ", e.message); process.exitCode = 1; }
+  finally { global.fetch = realFetch; }
+  console.log(process.exitCode ? "ÉCHEC" : `OK (${n} tests)`);
+})();
