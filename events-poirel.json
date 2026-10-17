@@ -1,29 +1,5 @@
 [
   {
-    "uuid": "po-a936525e-8443-11f1-8277-c597bc448103",
-    "title": "Ces Mondes en nous",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Spectacle",
-      "Concert",
-      "Opéra / lyrique",
-      "Musique de chambre / chorale"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "Les 15 et 16 octobre 2026",
-    "schedule": "20h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/a936525e-8443-11f1-8277-c597bc448103/0/ORIGINE_M_6a5e2a7c43867.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=a936525e-8443-11f1-8277-c597bc448103",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-9ec9ec26-b8ab-11f1-b465-6b794522c650",
     "title": "Les rendez-vous du Collectif Autrement Dit",
     "category": "spectacle",
@@ -32,7 +8,7 @@
     "subcats": [
       "Théâtre"
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "endDate": "2026-10-17",
     "dateText": "Du 13 au 17 octobre",
     "schedule": "",
@@ -53,7 +29,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -256,6 +232,50 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
+    "title": "Voyage en Italie",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert",
+      "Musique de chambre / chorale",
+      "Culture"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "Dimanche 8 novembre 2026",
+    "schedule": "de 16h30 à 18h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4a9fe612-c942-11f1-b2a4-3b8ca9c8a400/0/ORIGINE_M_6ad1eb764fa00.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-6f5a5b22-c942-11f1-b898-8f43ae37353c",
+    "title": "Les deux Andalousie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "dateText": "Mardi 10 novembre 2026",
+    "schedule": "de 20h à 22h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6f5a5b22-c942-11f1-b898-8f43ae37353c/0/ORIGINE_M_6ad1ebb3e2e2d.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6f5a5b22-c942-11f1-b898-8f43ae37353c",
     "source": "poirel"
   },
   {

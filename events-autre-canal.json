@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-23",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-23",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-160e-anniversaire-du-sport-nautique-de-nancy",
     "title": "160e anniversaire du Sport Nautique de Nancy",
     "category": "activite",
@@ -60,7 +38,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/color_vignettes_26_274.jpg?itok=AVuP9WPl",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-10-06_a_14.07.17.png?itok=buHtj5_v",
     "url": "https://lautrecanalnancy.fr/agenda/philanthropie-culture-quelles-alliances-pour-demain",
     "source": "autre-canal"
   },
@@ -393,7 +371,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-etape-de-residence-de-la-fanfare-des-enfants-du-boucher",
+    "uuid": "lcn-etape-de-residence-de-la-fanfare-des-enfants-du-boucher-avec-lobo-el-cotchei",
     "title": "Étape de résidence de La fanfare des enfants du boucher",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -411,7 +389,7 @@
     "free": true,
     "reservation": false,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20250704_ade_en_fanfare_lautre_canal18.jpg?itok=qTA2_5JW",
-    "url": "https://lautrecanalnancy.fr/agenda/etape-de-residence-de-la-fanfare-des-enfants-du-boucher",
+    "url": "https://lautrecanalnancy.fr/agenda/etape-de-residence-de-la-fanfare-des-enfants-du-boucher-avec-lobo-el-cotchei",
     "source": "autre-canal"
   },
   {
@@ -1723,7 +1701,7 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-zelie",
+    "uuid": "lcn-zelie-marie-jay",
     "title": "Zelie",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
@@ -1741,7 +1719,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/679-illustration_id-1772640477.jpeg?itok=5vRXZyvf",
-    "url": "https://lautrecanalnancy.fr/agenda/zelie",
+    "url": "https://lautrecanalnancy.fr/agenda/zelie-marie-jay",
     "source": "autre-canal"
   },
   {
@@ -2809,25 +2787,6 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-njp-2026",
-    "title": "NJP 2026",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [],
-    "date": "2027-10-03",
-    "endDate": "2027-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-05-26_a_15.40.33.png?itok=uE0mx8Ed",
-    "url": "https://lautrecanalnancy.fr/agenda/njp-2026",
     "source": "autre-canal"
   }
 ]

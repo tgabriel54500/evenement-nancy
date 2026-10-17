@@ -989,7 +989,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/beaujolais-nouveau/",
     "source": "vandoeuvre"
   },
@@ -1067,7 +1067,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1077,46 +1077,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-24200",
-    "title": "Réunion d’information et de concertation sur les futurs aménagements de Vand’Est-Etoile",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "Espace Yves Coppens",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/reunion-dinformation-et-de-concertation-sur-les-futurs-amenagements-de-vandest-etoile/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-24385",
-    "title": "Club Lecture “Les chasseurs de récits”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/club-lecture-les-chasseurs-de-recits/",
     "source": "vandoeuvre"
   },
   {
@@ -1153,7 +1113,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-lheritage-prouve/",
     "source": "vandoeuvre"
   },
@@ -1174,7 +1134,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-2/",
     "source": "vandoeuvre"
   },
@@ -1193,7 +1153,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/braderie-du-secours-catholique/",
     "source": "vandoeuvre"
   },
@@ -1231,7 +1191,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre"
   },
@@ -1311,7 +1271,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/theatre-debat-radicale/",
     "source": "vandoeuvre"
   },
@@ -1353,7 +1313,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
     "source": "vandoeuvre"
   },
@@ -1372,7 +1332,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news-2/",
     "source": "vandoeuvre"
   },
@@ -1393,7 +1353,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/tournoi-mystere-2/",
     "source": "vandoeuvre"
   },
@@ -1431,7 +1391,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
@@ -1471,7 +1431,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre"
   },
@@ -1568,7 +1528,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-collections-nationales-2/",
     "source": "vandoeuvre"
   },
@@ -1606,7 +1566,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-creatif-histoires-bricolees/",
     "source": "vandoeuvre"
   },
@@ -1646,7 +1606,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
@@ -1665,7 +1625,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   },
@@ -1686,7 +1646,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre"
   },
@@ -1705,7 +1665,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
     "source": "vandoeuvre"
   },
@@ -1724,7 +1684,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/seniors-sortie-au-marche-de-noel-de-treves/",
     "source": "vandoeuvre"
   },
@@ -1743,7 +1703,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre"
   },
@@ -1762,7 +1722,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/exposition-anahita/",
     "source": "vandoeuvre"
   },
@@ -1781,7 +1741,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2025/09/vacansante.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/03/meli-melodie.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   },

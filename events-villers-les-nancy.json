@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -21,27 +21,6 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-103",
-    "title": "Repair café",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Environnement"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-12-16",
-    "dateText": "",
-    "schedule": "18h30 à 21h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-528",
     "title": "Signé Dumas",
     "category": "activite",
@@ -50,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-16",
+    "date": "2026-10-17",
     "endDate": "2026-11-08",
     "dateText": "",
     "schedule": "20h",
@@ -465,6 +444,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261122_CONCERT_BARZINGAULT__c__En_attente_credit_photo.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-barzingault",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-103",
+    "title": "Repair café",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Environnement"
+    ],
+    "date": "2026-11-25",
+    "endDate": "2026-12-16",
+    "dateText": "",
+    "schedule": "18h30 à 21h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
     "source": "villers-les-nancy"
   },
   {

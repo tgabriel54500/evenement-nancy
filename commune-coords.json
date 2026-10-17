@@ -1928,5 +1928,10 @@
   "lat": 49.019018,
   "lon": 6.153323,
   "city": "Pournoy-la-Chétive"
+ },
+ "langley": {
+  "lat": 48.360285,
+  "lon": 6.325519,
+  "city": "Langley"
  }
 }
