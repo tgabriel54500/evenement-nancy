@@ -32,7 +32,10 @@ const PROJ = __dirname;
 const DIST = path.resolve(process.argv[2] || path.join(PROJ, "dist"));
 const SITE = "https://agenda-grandnancy.fr";
 const TODAY = new Date().toISOString().slice(0, 10);
-const VER = new Date().toISOString().slice(0, 16).replace(/\D/g, "");
+// Version des fichiers communs : empreinte de leur contenu (calculée plus bas),
+// pas l'heure. Une page dont rien n'a changé reste identique d'une publication à
+// l'autre, et Cloudflare ne renvoie que les pages réellement modifiées.
+let VER = "";
 
 // ── Données ──────────────────────────────────────────────────────────────────
 
@@ -502,6 +505,7 @@ function sameShow(a, b) {
 }
 
 function main() {
+  VER = crypto.createHash("sha1").update(CSS + JS).digest("hex").slice(0, 8);
   if (!fs.existsSync(DIST)) { console.error(`gen-pages : dossier ${DIST} introuvable`); process.exit(1); }
   const upcoming = EVENTS.filter((e) => e && e.title && e.date && (e.endDate || e.date) >= TODAY);
   const used = new Set();
