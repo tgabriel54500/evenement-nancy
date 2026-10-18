@@ -268,6 +268,10 @@ function mergeCluster(cluster) {
     city: base.city || cluster.map((e) => e.city).find(Boolean) || "",
     image: base.image || cluster.map((e) => e.image).find(Boolean) || null,
     dateText: base.dateText || cluster.map((e) => e.dateText).find(Boolean) || "",
+    // Pages du même événement chez les autres sources : enrich-fiches.js y
+    // cherche une description plus complète, gen-pages.js les cite. Retiré du
+    // data.js publié (deploy-cloudflare.sh), comme `source` et `uuid`.
+    altUrls: [...new Set(cluster.map((e) => e.url).filter((u) => u && u !== base.url))],
     free: pickFree(cluster),
     reservation: cluster.some((e) => e.reservation),
     subcats: [...new Set(cluster.flatMap((e) => e.subcats || []))],

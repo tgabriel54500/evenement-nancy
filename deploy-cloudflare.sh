@@ -272,6 +272,18 @@ if [ -f "$DIST/index.html" ] && [ -f "$DIST/data.js" ]; then
   ' "$DIST/index.html" "$DIST/data.js" "$TODAY"
 fi
 
+# 5) PAGES ÉVÉNEMENT : une page par événement à venir (dist/evenement/<slug>/),
+#    avec affiche d'origine, infos complètes lues chez la source (fiches.json,
+#    rempli par enrich-fiches.js dans refresh-all.sh), billetterie, JSON-LD
+#    Event et Open Graph. Pose aussi le champ `page` dans dist/data.js (« Plus
+#    d'infos » de la galerie y mène) et ajoute les pages au sitemap. Doit tourner
+#    AVANT le durcissement ci-dessous, qui retire uuid/source dont il a besoin.
+#    Un échec ici n'empêche pas la publication : la galerie retombe sur les
+#    liens des sources.
+if [ -f "$PROJ/gen-pages.js" ]; then
+  node "$PROJ/gen-pages.js" "$DIST" || echo "⚠ gen-pages.js en échec : site publié sans pages événement"
+fi
+
 # DURCISSEMENT data.js : on retire les métadonnées internes qui révèlent la MÉTHODE
 # d'agrégation (champ `source` qui nomme chaque site, `uuid` préfixé par source) et
 # on minifie (JSON compact). app.js/galerie.js n'utilisent ni source ni uuid → 0
@@ -282,7 +294,7 @@ node -e '
   const code = fs.readFileSync(p, "utf8");
   const { CATEGORIES, GENERATED_AT, EVENTS } =
     new Function(code + "; return { CATEGORIES, GENERATED_AT, EVENTS };")();
-  const slim = EVENTS.map(({ source, uuid, ...rest }) => rest);
+  const slim = EVENTS.map(({ source, uuid, altUrls, ...rest }) => rest);
   const out =
     "const CATEGORIES=" + JSON.stringify(CATEGORIES) + ";" +
     "const GENERATED_AT=" + JSON.stringify(GENERATED_AT) + ";" +

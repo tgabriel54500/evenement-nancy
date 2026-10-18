@@ -79,6 +79,12 @@ fi
 # --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
 run_step "update-events.js"
 
+# Fiches détaillées des événements (description complète, tarifs, billetterie)
+# lues sur la page de chaque événement chez sa source, avec cache : seules les
+# fiches nouvelles ou anciennes sont relues. Sert aux pages événement que
+# deploy-cloudflare.sh génère (gen-pages.js). Un échec ici ne bloque rien.
+run_step "enrich-fiches.js"
+
 # Rencontres sportives : récupération puis fabrication de data-sport.js et des
 # affiches. Séparé de la culture, un échec ici ne compromet pas la galerie.
 run_step "sport-scrape.js"

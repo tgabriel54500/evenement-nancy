@@ -41,3 +41,6 @@ bilan-goatcounter/
 events-pro-report.json
 affiches-pro/logos/*
 !affiches-pro/logos/cci.svg
+
+# Cache des fiches détaillées (enrich-fiches.js) : régénérable, volumineux
+fiches.json

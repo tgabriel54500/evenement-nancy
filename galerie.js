@@ -756,7 +756,12 @@ function openLightbox(ev) {
       </div>
       ${desc}
       <div class="lightbox__actions">
-        ${ev.url ? `<a class="lightbox__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">Plus d'infos ${lbIcon.arrow}</a>` : ""}
+        ${ev.page
+          // Page de l'événement sur notre site (gen-pages.js) : toutes les infos,
+          // même onglet. À défaut (événement d'organisateur, page pas encore
+          // générée), la source, dans un nouvel onglet comme avant.
+          ? `<a class="lightbox__cta" href="${escapeHtml(ev.page)}">Plus d'infos ${lbIcon.arrow}</a>`
+          : ev.url ? `<a class="lightbox__cta" href="${escapeHtml(ev.url)}" target="_blank" rel="noopener">Plus d'infos ${lbIcon.arrow}</a>` : ""}
         <button class="lightbox__fav ${isFav(ev) ? "is-fav" : ""}" id="lbFav" aria-pressed="${isFav(ev)}">${HEART}<span>${isFav(ev) ? "Dans vos favoris" : "Ajouter aux favoris"}</span></button>
       </div>
     </div>`;
