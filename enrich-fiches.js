@@ -49,6 +49,14 @@ const REFRESH_DAYS = 7;
 const SOON_REFRESH_DAYS = 2;
 const TIMEOUT_MS = 20000;
 
+// Sites jamais lus par ce script :
+//  - estrepublicain.fr déclare une réserve de fouille de textes et de données
+//    (tdm-reservation) : le projet ne le lit pas en automatique, ses pages sont
+//    enregistrées à la main (est-republicain-pages.js) ;
+//  - alentoor.fr : alentoor.js lit déjà chaque fiche et en garde la description
+//    (events-alentoor.json), reprise ci-dessous sans nouvelle requête.
+const NO_FETCH = /(^|\.)(estrepublicain\.fr|alentoor\.fr)$/;
+
 const UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0 Safari/537.36";
 const UA_FB = "facebookexternalhit/1.1 (+http://www.facebook.com/externalhit_uatext.php)";
 
@@ -111,11 +119,27 @@ async function main() {
       if (!/^https?:/.test(u)) continue;
       const h = hostOf(u);
       if (NO_FB && h === "facebook.com") continue;
+      if (NO_FETCH.test(h)) continue;
       if (ONLY && !h.includes(ONLY)) continue;
       const prev = jobs.get(u);
       if (!prev || (e.date || "") < (prev.date || "")) jobs.set(u, e);
     }
   }
+  // Fiches déjà collectées par les scrapers eux-mêmes (Alentoor) : reprises
+  // telles quelles, sans requête.
+  let seeded = 0;
+  for (const file of ["events-alentoor.json"]) {
+    let list = [];
+    try { list = JSON.parse(fs.readFileSync(path.join(DIR, file), "utf8")); } catch (_) { continue; }
+    for (const e of Array.isArray(list) ? list : (list.events || [])) {
+      if (!e || !e.url || !e.description) continue;
+      cache[e.url] = { status: "ok", description: e.description, street: e.street || "", postalCode: e.postalCode || "",
+        venue: e.place || "", tickets: [], priceLines: [], free: !!e.free, image: e.image || "", fetchedAt: todayISO, from: file };
+      seeded++;
+    }
+  }
+  if (seeded) console.log(`fiches : ${seeded} reprises des scrapers (sans requête).`);
+
   const todo = [...jobs.entries()].filter(([u, e]) => needsFetch(cache[u], e))
     // Les événements les plus proches d'abord : ce sont ceux qu'on consulte.
     .sort((a, b) => (a[1].date || "").localeCompare(b[1].date || ""));

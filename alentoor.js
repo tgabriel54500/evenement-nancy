@@ -291,6 +291,12 @@ async function fetchDetail(stub) {
     image,
     url: ev.url || stub.url,
     source: "alentoor",
+    // Description complète et adresse, déjà présentes dans le JSON-LD lu ici :
+    // enrich-fiches.js les reprend pour les pages événement au lieu de
+    // relire chaque fiche (Alentoor recevait sinon deux fois les mêmes requêtes).
+    description: unescapeHtml(String(ev.description || "").replace(/<br\s*\/?>/gi, "\n").replace(/<\/p>/gi, "\n\n").replace(/<[^>]+>/g, " ")).replace(/[ \t]+/g, " ").replace(/ *\n */g, "\n").replace(/\n{3,}/g, "\n\n").trim(),
+    street: addr.streetAddress || "",
+    postalCode: addr.postalCode || "",
   };
 }
 
@@ -316,7 +322,10 @@ async function mapPool(items, worker, concurrency) {
 }
 
 // ── Orchestration ──────────────────────────────────────────────────────────
-async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max = null, concurrency = 8 } = {}) {
+// Concurrence ramenée de 8 à 3 (2026-10-18) : Alentoor refuse désormais les
+// pages au navigateur depuis la connexion du Mac (403 « administrative rules »),
+// probablement à cause du volume quotidien (≈1 100 pages-date + ≈300 fiches).
+async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max = null, concurrency = 3 } = {}) {
   process.stderr.write(`→ Alentoor : balayage de ${cities.length} communes sur ${horizon} jours…\n`);
   let stubs = await fetchAllStubs({ cities, horizon, concurrency });
   if (max) stubs = stubs.slice(0, max);
@@ -349,7 +358,7 @@ async function main() {
     cities: a.cities ? String(a.cities).split(",").map((s) => s.trim()).filter(Boolean) : DEFAULT_CITIES,
     horizon: a.horizon ? Number(a.horizon) : DEFAULT_HORIZON,
     max: a.max ? Number(a.max) : null,
-    concurrency: a.concurrency ? Number(a.concurrency) : 8,
+    concurrency: a.concurrency ? Number(a.concurrency) : 3,
   });
   const out = a.out || path.join(__dirname, "events-alentoor.json");
   fs.writeFileSync(out, JSON.stringify(list, null, 2), "utf8");
