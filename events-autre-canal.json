@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-160e-anniversaire-du-sport-nautique-de-nancy",
-    "title": "160e anniversaire du Sport Nautique de Nancy",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Evénement",
-      "Grande Halle"
-    ],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/benpi_bm2455j3_bon_moment_2024_benpi.jpg?itok=KQNTOIZu",
-    "url": "https://lautrecanalnancy.fr/agenda/160e-anniversaire-du-sport-nautique-de-nancy",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-philanthropie-culture-quelles-alliances-pour-demain",
     "title": "Philanthropie & Culture : quelles alliances pour demain ?",
     "category": "activite",

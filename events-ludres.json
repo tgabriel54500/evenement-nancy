@@ -1,23 +1,191 @@
 [
   {
-    "uuid": "lud-exposition-focus-sur-le-jazz",
-    "title": "Exposition“ Focus sur le jazz ”",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
+    "uuid": "lud-conte-musical-lanniversaire-de-gribouille",
+    "title": "Conte musical – L anniversaire de Gribouille",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
     "subcats": [
       "Culture"
     ],
-    "date": "2027-10-01",
-    "endDate": "2027-10-01",
+    "date": "2026-10-21",
+    "endDate": "2026-10-21",
     "dateText": "",
     "schedule": "",
-    "place": "17",
+    "place": "Médiathèque",
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/09/exposition-focus-jazz-1.jpg",
-    "url": "https://www.ludres.com/liste-evenements/exposition-focus-sur-le-jazz/",
+    "image": "https://www.ludres.com/wp-content/uploads/2026/09/anniversaire-gribouille.jpg",
+    "url": "https://www.ludres.com/liste-evenements/conte-musical-lanniversaire-de-gribouille/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-salon-gourmandises-et-chocolat-3",
+    "title": "Salon Gourmandises et Chocolat",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-10-31",
+    "endDate": "2026-10-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/09/20271101_SalonChoc_Web.jpg",
+    "url": "https://www.ludres.com/liste-evenements/salon-gourmandises-et-chocolat-3/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-point-justice-3",
+    "title": "Point justice",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-11-04",
+    "endDate": "2026-11-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "Hôtel de Ville",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2022/01/point-justice.jpg",
+    "url": "https://www.ludres.com/liste-evenements/point-justice-3/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-linh",
+    "title": "Linh",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2025/12/20261107_Linh-Web.jpg",
+    "url": "https://www.ludres.com/liste-evenements/linh/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-the-5-rosies",
+    "title": "The 5 Rosies",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-10",
+    "endDate": "2026-11-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261110-The5Rosies_SiteWeb.jpg",
+    "url": "https://www.ludres.com/liste-evenements/the-5-rosies/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-poetic-lover-tour",
+    "title": "Poetic Lover Tour",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/01/2026114-PoeticL_Siteweb-1.jpg",
+    "url": "https://www.ludres.com/liste-evenements/poetic-lover-tour/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-stephan-eicher",
+    "title": "Stéphan Eicher",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261119-Stephan-Eicher_WEB.jpg",
+    "url": "https://www.ludres.com/liste-evenements/stephan-eicher/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-moguiz",
+    "title": "Moguiz",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-22",
+    "endDate": "2026-11-22",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/02/20261122-Moguiz-Siteweb.jpg",
+    "url": "https://www.ludres.com/liste-evenements/moguiz/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-arnaud-tsamere",
+    "title": "Arnaud TSAMERE",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "Chaudeau",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2024/11/20261126_ArnaudTsamere_SiteWeb.jpg",
+    "url": "https://www.ludres.com/liste-evenements/arnaud-tsamere/",
     "source": "ludres"
   }
 ]
