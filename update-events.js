@@ -13,7 +13,7 @@
 
 const fs = require("fs");
 const path = require("path");
-const { cleanupMerged } = require("./normalize");
+const { cleanupMerged, doublonsSuspects } = require("./normalize");
 
 const API = "https://agenda-integration.grandnancy.eu/api/vdn/events";
 const DETAIL_URL = "https://www.nancy.fr/agenda/details-agenda?uuid=";
@@ -413,6 +413,15 @@ async function main() {
 
   // Filtre géographique : rien au-delà de 30 km de Nancy (cf. filterByDistance).
   const merged = await filterByDistance(deduped);
+  // Garde-fou : ce qui ressemble encore à un doublon, pour relecture.
+  try {
+    const sus = doublonsSuspects(merged);
+    fs.writeFileSync(path.join(__dirname, "doublons-suspects.txt"),
+      `Doublons possibles non fusionnés (${sus.length}), ${new Date().toISOString().slice(0, 16)}\n` +
+      "Même jour, même commune, sources différentes, au moins un mot distinctif commun.\n\n" +
+      sus.map((x) => `${x.date} ${x.city} [${x.mots.join(", ")}]\n  ${x.sa} : ${x.a}\n  ${x.sb} : ${x.b}`).join("\n") + "\n");
+    console.log(`  ⤷ ${sus.length} doublon(s) possible(s) laissé(s) en place → doublons-suspects.txt`);
+  } catch (e) { console.warn("  ⚠ contrôle des doublons :", e.message); }
 
   // ── Suivi des NOUVEAUTÉS : date de première apparition de chaque événement ──
   // On mémorise dans events-firstseen.json { uuid -> date ISO } la première fois

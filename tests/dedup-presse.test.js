@@ -24,6 +24,24 @@ test("coquille d'une lettre et pluriel", () => {
 test("pas de fusion : autre commune, mot générique, ou moins de la moitié des mots", () => {
   assert.strictEqual(cleanupMerged([erp({ title: "Sorcière" }), ev({ title: "Atelier : la sorcière", city: "Laxou", image: img })]).length, 2);
   assert.strictEqual(cleanupMerged([erp({ title: "Encore une histoire" }), ev({ title: "Musée en famille : histoire de s'amuser", image: img })]).length, 2);
-  assert.strictEqual(cleanupMerged([erp({ title: "Emile Gallé lecteur de la Bible par le frère Jean" }), ev({ title: "Émile Gallé. Portrait d'une vie", image: img })]).length, 2);
+  assert.strictEqual(cleanupMerged([erp({ title: "Emile Gallé lecteur de la Bible par le frère Jean" }), ev({ title: "Émile Gallé. Portrait d'une vie", endDate: "2031-01-31", image: img })]).length, 2);
+});
+test("mot rare commun le même jour (Chevreuil), pas un mot partagé par d'autres sorties (Halloween)", () => {
+  const a = ev({ title: "Chevreuil (rock expérimental) + Tony Geranno", source: "ville-de-nancy" });
+  const b = ev({ title: "Concert - Chevreuil et Tony Geranno - Association", source: "destination-nancy" });
+  assert.strictEqual(cleanupMerged([a, b]).length, 1);
+  const h1 = ev({ title: "Club Dancing Kids d'Halloween", source: "autre-canal" });
+  const h2 = ev({ title: "Marché Halloween et flashs tattoo", source: "facebook" });
+  const h3 = ev({ title: "Après-midi Halloween au musée", source: "curieux-net" });
+  assert.strictEqual(cleanupMerged([h1, h2, h3]).length, 3);
+});
+test("heures différentes = deux séances", () => {
+  const a = ev({ title: "Linh", schedule: "15h", source: "curieux-net" });
+  const b = ev({ title: "Linh - la Tournée", schedule: "20h30", source: "alentoor" });
+  assert.strictEqual(cleanupMerged([a, b]).length, 2);
+  assert.strictEqual(cleanupMerged([{ ...a, schedule: "20h30" }, b]).length, 1);
+});
+test("une lettre changée n'est pas une coquille (centre / contre)", () => {
+  assert.strictEqual(cleanupMerged([ev({ title: "Visite guidée du centre", source: "alentoor" }), ev({ title: "Atelier contre le patriarcat", source: "curieux-net" })]).length, 2);
 });
 console.log(process.exitCode ? "ÉCHEC" : `OK (${n} tests)`);

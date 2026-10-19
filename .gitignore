@@ -44,3 +44,6 @@ affiches-pro/logos/*
 
 # Cache des fiches détaillées (enrich-fiches.js) : régénérable, volumineux
 fiches.json
+
+# Rapport nocturne des doublons possibles (update-events.js)
+doublons-suspects.txt

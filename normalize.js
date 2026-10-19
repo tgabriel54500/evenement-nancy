@@ -144,7 +144,7 @@ const TITLE_STOP = new Set(
   ("de la le les des du un une et a au aux en dans par pour avec sur " +
    "recital concert visite guidee guidees commentee flash spectacle exposition expo " +
    "atelier ateliers festival soiree stage stages loisirs animations estivales edition " +
-   "nancy 2024 2025 2026 2027 2028").split(" "));
+   "nancy 2024 2025 2026 2027 2028 the and with").split(" "));
 
 function sigTokens(title) {
   // &#038; & co. (entités HTML laissées par certains scrapers) : sinon « 038 » compte comme un mot.
@@ -214,7 +214,9 @@ function sameShortEvent(x, e) {
 const racine = (w) => w.replace(/(s|x)$/, "");
 function presque(a, b) {
   if (a === b || racine(a) === racine(b)) return true;
-  if (a.length < 6 || b.length < 6 || Math.abs(a.length - b.length) > 1) return false;
+  // Une lettre en plus ou en moins seulement (obscrure / obscure, Lelouche /
+  // Lellouche) : une lettre CHANGÉE suffit à faire un autre mot (centre / contre).
+  if (a.length < 6 || b.length < 6 || Math.abs(a.length - b.length) !== 1) return false;
   // distance d'édition ≤ 1
   let i = 0, j = 0, diff = 0;
   while (i < a.length && j < b.length) {
@@ -237,6 +239,44 @@ function presseDoublon(x, e) {
   // Au moins la moitié des mots de l'annonce de presse : « Émile Gallé lecteur
   // de la Bible » n'est pas l'exposition « Émile Gallé. Portrait d'une vie ».
   return (communs.length >= 2 && communs.length / tp.length >= 0.5) || (tp.length === 1 && distinctifs.length === 1);
+}
+
+// Garde-fou général (2026-10-19) : la MÊME sortie publiée par deux sources avec
+// des titres de longueur différente (« Linh » / « Linh - la Tournée »,
+// « Frankenlégume » / « Frankenlégume - Parcours Halloween ») ou au singulier et
+// au pluriel (« Journée en famille » / « Journées en famille »). Les règles
+// ci-dessus exigent 2 mots identiques, ou un mot de 5 lettres et deux
+// événements courts. Ici : même jour de début, même commune, tous les mots du
+// titre le plus court se retrouvent dans l'autre (pluriel et coquille d'une
+// lettre tolérés), dont au moins un mot distinctif. Contre-garde : deux heures
+// de début connues et différentes = deux séances distinctes, on ne fusionne pas.
+const heureDebut = (e) => {
+  const m = String(e.schedule || e.dateText || "").match(/(\d{1,2})\s*[h:]\s*(\d{2})?/);
+  return m ? (+m[1]) * 60 + (+(m[2] || 0)) : null;
+};
+function memeSortie(x, e) {
+  const sx = x.source || "ville-de-nancy", se = e.source || "ville-de-nancy";
+  if (!x.date || x.date !== e.date) return false;
+  const cx = slugKey(x.city), ce = slugKey(e.city);
+  if (!cx || cx !== ce) return false;
+  const hx = heureDebut(x), he = heureDebut(e);
+  if (hx !== null && he !== null && Math.abs(hx - he) > 30) return false;
+  const tx = [...sigTokens(x.title)].map(racine), te = [...sigTokens(e.title)].map(racine);
+  if (!tx.length || !te.length) return false;
+  // Même source : seulement si les titres sont identiques au pluriel près
+  // (« Promenade littéraire » / « Promenades littéraires »).
+  if (sx === se) return tx.length === te.length && tx.every((w) => te.includes(w));
+  const [small, big] = tx.length <= te.length ? [tx, te] : [te, tx];
+  const distinctif = (w) => w.length >= 4 && !MOTS_GENERIQUES.has(w) && !/^\d+$/.test(w);
+  const communs = small.filter((w) => big.some((v) => presque(w, v)));
+  if (communs.length === small.length) return communs.some(distinctif);
+  // Titres reformulés des deux côtés (« Sur les toits, film de Nicolas Drolc » /
+  // « Ciné-Rencontre - Sur les toits de Nicolas Drolc ») : seulement si les deux
+  // heures de début sont connues et identiques, avec au moins 2 mots distinctifs
+  // communs couvrant la moitié du titre le plus court.
+  if (hx === null || he === null) return false;
+  const forts = communs.filter(distinctif);
+  return forts.length >= 2 && communs.length / small.length >= 0.5;
 }
 
 // Deux intervalles [date, endDate] se chevauchent-ils ?
@@ -326,11 +366,53 @@ function mergeCluster(cluster) {
 // nage). L'ordre du prédicat court-circuite le coûteux titleSimilar : overlap()
 // (comparaison de chaînes) élimine d'emblée la quasi-totalité des paires (dates
 // différentes). Un titre vide n'est jamais fusionné (titleSimilar → false).
+// Mot rare partagé (2026-10-19) : « Chevreuil (rock expérimental) + Tony
+// Geranno » / « Concert - Chevreuil et Tony Geranno », « Cur de Pirate » /
+// « Cœur de Pirate + Suzanne Belaubre ». Même jour, même commune, sources
+// différentes, heures compatibles, et les mots distinctifs communs ne figurent
+// dans AUCUN autre événement de ce jour-là dans cette commune (« Saint-Nicolas »,
+// « Halloween » ou « bergamote », partagés par plusieurs sorties, ne comptent
+// pas). Il faut 2 mots rares communs, ou 1 seul de 6 lettres au moins quand le
+// titre le plus court n'a pas plus de 2 mots distinctifs.
+const motsCache = new WeakMap();
+const motsDe = (e) => {
+  if (!motsCache.has(e)) motsCache.set(e, [...sigTokens(e.title)].map(racine)
+    .filter((w) => w.length >= 4 && !MOTS_GENERIQUES.has(w) && !/^\d+$/.test(w)));
+  return motsCache.get(e);
+};
+function motRare(events) {
+  // Un événement de plusieurs jours compte aussi les jours suivants : on regarde
+  // tout ce qui est en cours ce jour-là dans la commune.
+  // Toutes communes confondues : « bergamote » sans commune ou à Villers compte aussi.
+  const actifs = (date) => events.filter((o) => (o.date || "") <= date && date <= (o.endDate || o.date || ""));
+  const memo = new Map();
+  return (x, e) => {
+    if ((x.source || "ville-de-nancy") === (e.source || "ville-de-nancy")) return false;
+    // Deux sorties courtes : les longues séries ont toutes pour date de début
+    // « aujourd'hui » (événements en cours), ce qui ne prouve rien.
+    if (!x.date || x.date !== e.date || !courte(x) || !courte(e)) return false;
+    const city = slugKey(x.city);
+    if (!city || city !== slugKey(e.city)) return false;
+    const hx = heureDebut(x), he = heureDebut(e);
+    if (hx !== null && he !== null && Math.abs(hx - he) > 30) return false;
+    const mx = motsDe(x), me = motsDe(e);
+    const communs = mx.filter((w) => me.some((v) => presque(w, v)));
+    if (!communs.length) return false;
+    const court = mx.length <= me.length ? mx : me;
+    if (!(communs.length >= 2 || (communs.length === 1 && communs[0].length >= 6 && court.length <= 2))) return false;
+    const k = `${x.date}|${city}`;
+    if (!memo.has(k)) memo.set(k, actifs(x.date));
+    return memo.get(k).every((o) => o === x || o === e ||
+      !communs.some((w) => motsDe(o).some((v) => presque(w, v))));
+  };
+}
+
 function dedupeCrossSource(events) {
   const clusters = [];
+  const rare = motRare(events);
   for (const e of events) {
     const c = clusters.find((cl) =>
-      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e) || presseDoublon(x, e))));
+      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e) || presseDoublon(x, e) || memeSortie(x, e) || rare(x, e))));
     if (c) c.push(e); else clusters.push([e]);
   }
   return clusters
@@ -441,4 +523,28 @@ function cleanupMerged(events) {
   return etalerSeriesCourtes(dedupeCrossSource(normalized)).map((e) => fillPeriod(e, todayISO));
 }
 
-module.exports = { cleanCity, cleanPlace, remapCategory, dedupeCrossSource, pickFree, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };
+// Contrôle après fusion : paires encore suspectes (même jour, même commune,
+// sources différentes, un mot distinctif commun) que les règles n'ont pas
+// osé fusionner. Écrit chaque nuit dans doublons-suspects.txt pour qu'on les
+// voie, sans rien masquer automatiquement.
+function doublonsSuspects(events) {
+  const out = [];
+  const byDay = new Map();
+  for (const e of events) {
+    const k = `${e.date}|${slugKey(e.city)}`;
+    if (!byDay.has(k)) byDay.set(k, []);
+    byDay.get(k).push(e);
+  }
+  for (const list of byDay.values()) {
+    for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
+      const a = list[i], b = list[j];
+      if ((a.source || "ville-de-nancy") === (b.source || "ville-de-nancy")) continue;
+      const ta = [...sigTokens(a.title)].map(racine), tb = [...sigTokens(b.title)].map(racine);
+      const communs = ta.filter((w) => w.length >= 4 && !MOTS_GENERIQUES.has(w) && tb.some((v) => presque(w, v)));
+      if (communs.length) out.push({ date: a.date, city: a.city, a: a.title, b: b.title, sa: a.source || "ville-de-nancy", sb: b.source || "ville-de-nancy", mots: communs });
+    }
+  }
+  return out.sort((x, y) => x.date.localeCompare(y.date));
+}
+
+module.exports = { doublonsSuspects, cleanCity, cleanPlace, remapCategory, dedupeCrossSource, pickFree, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };
