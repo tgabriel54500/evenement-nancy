@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1178",
-    "title": "TRAIL DE BOIS LE DUC À VANDŒUVRE-LÈS-NANCY : CHAUSSEZ VOS BASKETS CE DIMANCHE 18 OCTOBRE !",
-    "category": "sport",
-    "catLabel": "Sport",
-    "catEmoji": "⚽",
-    "subcats": [],
-    "date": "2026-10-18",
-    "endDate": "2026-10-18",
-    "dateText": "",
-    "schedule": "18:03",
-    "place": "Vandœuvre-lès-Nancy, France",
-    "city": "",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_trailbois.png",
-    "url": "https://www.ici-c-nancy.fr/agenda/1178-trail-du-bois-le-duc-a-vandoeuvre-les-nancy-chaussez-vos-baskets-ce-dimanche-18-octobre/2026-10-18-18-03.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1154",
     "title": "MATCH NANCY - LAVAL (LIGUE 2 - 10ÈME JOURNÉE)",
     "category": "sport",

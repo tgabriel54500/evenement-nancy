@@ -1933,5 +1933,15 @@
   "lat": 48.360285,
   "lon": 6.325519,
   "city": "Langley"
+ },
+ "vannes-le-chatel": {
+  "lat": 48.545707,
+  "lon": 5.785108,
+  "city": "Vannes-le-Châtel"
+ },
+ "moriville": {
+  "lat": 48.348681,
+  "lon": 6.41913,
+  "city": "Moriville"
  }
 }

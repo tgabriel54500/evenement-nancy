@@ -228,6 +228,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-appel-a-la-mobilisation",
+    "title": "Appel à la mobilisation",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-10-19",
+    "endDate": "2026-10-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/286/1200_630_7_amf-photo19-oct.png",
+    "url": "https://www.laxou.fr/fr/agenda/appel-a-la-mobilisation_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-ateliers-creatifs-avec-violette-pasques",
     "title": "Ateliers créatifs avec Violette Pasques",
     "category": "activite",
