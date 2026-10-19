@@ -730,6 +730,11 @@ const lbIcon = {
 };
 
 function openLightbox(ev) {
+  // Événement qui a sa page (gen-pages.js) : on y va directement, sans passer
+  // par la fiche intermédiaire (décision du 2026-10-19). La fiche reste pour ce
+  // qui n'a pas de page (événements d'organisateurs, rencontres sportives).
+  // Retour arrière : le navigateur restaure la galerie telle quelle (cache de page).
+  if (ev.page) { location.href = ev.page; return; }
   if (window.trackUserEventClick) trackUserEventClick(ev);   // compteur de clics (events utilisateurs)
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const place = [ev.place, ev.city].filter(Boolean).join(" — ");

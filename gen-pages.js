@@ -467,6 +467,10 @@ h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(3
 `;
 
 const JS = `(function(){
+// « Tout l'agenda » : retour à la galerie telle qu'on l'a laissée (filtres,
+// position) quand on vient d'elle, sinon simple lien vers l'accueil.
+document.querySelectorAll('a[href="/"]').forEach(function(a){a.addEventListener("click",function(e){
+  try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){e.preventDefault();history.back()}}catch(_){}})});
 var m=document.querySelector("main[data-fav-key]");if(!m)return;var d=m.dataset;
 function toast(t){var e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(function(){e.remove()},2200)}
 // Favoris : même stockage que la galerie (events-core.js, clé agenda-nancy:favoris).
