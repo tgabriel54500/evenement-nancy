@@ -509,6 +509,12 @@ let visible = [];
 // site (images/fb, affiches-auto) peuvent recevoir un 429 de la limitation de débit
 // Cloudflare quand on fait défiler vite ; avant, l'image était retirée pour de bon.
 function posterImgError(img) {
+  // Affiche de secours (affiches-auto.js) : tout de suite, sans réessayer.
+  if (img.dataset.fallback && !img.dataset.usedFallback) {
+    img.dataset.usedFallback = "1";
+    img.src = img.dataset.fallback;
+    return;
+  }
   const n = Number(img.dataset.retry || 0);
   if (n < 2) {
     img.dataset.retry = n + 1;
@@ -534,7 +540,7 @@ function tileHTML(ev, i) {
   // Pas de commune sur l'onglet Sport (demande user) : le lieu y est implicite.
   const cityHTML = ev.city && document.body.dataset.view !== "sport" ? `<span class="poster__city">📍 ${escapeHtml(ev.city)}</span>` : "";
   const media = ev.image
-    ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"
+    ? `<img class="poster__img" src="${escapeHtml(ev.image)}" alt="${escapeHtml(ev.title)}" loading="lazy" decoding="async" referrerpolicy="no-referrer"${ev.fallbackImage ? ` data-fallback="${escapeHtml(ev.fallbackImage)}"` : ""}
          onerror="posterImgError(this)">`
     : "";
   const fav = isFav(ev);

@@ -150,7 +150,20 @@ function applyAutoPosters(events, opts = {}) {
   fs.mkdirSync(dir, { recursive: true });
   const kept = new Set();
   let n = 0;
+  // Images hébergées chez une source qui peut les refuser (Alentoor) : on garde
+  // l'image d'origine et on prépare une affiche de secours (`fallbackImage`),
+  // affichée par la galerie et les pages si l'image ne se charge pas.
+  const FRAGILE = /^https?:\/\/(www\.)?alentoor\.fr\//;
   for (const ev of events) {
+    if (ev.image && !ev.autoPoster && FRAGILE.test(ev.image)) {
+      const file = `${posterKey(ev)}.svg`;
+      const svg = posterSVG(ev, opts);
+      const full = path.join(dir, file);
+      if (!fs.existsSync(full) || fs.readFileSync(full, "utf8") !== svg) fs.writeFileSync(full, svg, "utf8");
+      ev.fallbackImage = `${dirName}/${file}`;
+      kept.add(file);
+      continue;
+    }
     if (ev.image && !ev.autoPoster) continue;
     const file = `${posterKey(ev)}.svg`;
     const svg = posterSVG(ev, opts);

@@ -93,6 +93,12 @@ else
   log "SKIP  est-republicain-pages.js (aucune page .html dans ics-est-republicain/)"
 fi
 
+# Affiches des événements Facebook : rattache celles déjà téléchargées dans
+# images/fb/ et télécharge les manquantes. Indispensable après chaque import
+# Facebook (facebook.js réécrit events-facebook.json sans images) : oublié le
+# 2026-10-16, 460 événements s'étaient retrouvés avec l'affiche générée.
+run_step "fb-posters.js"
+
 # --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
 run_step "update-events.js"
 

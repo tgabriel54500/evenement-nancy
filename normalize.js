@@ -227,6 +227,7 @@ const SRC_RANK = {
   "alentoor": 8,
 };
 const srcRank = (e) => SRC_RANK[e.source || "ville-de-nancy"] ?? 9;
+const FRAGILE_IMG = /^https?:\/\/(www\.)?alentoor\.fr\//;
 const richness = (e) => (e.dateText ? 2 : 0) + (e.image ? 1 : 0) + (e.place ? 0.5 : 0);
 
 // Autorité TARIFAIRE, distincte de la priorité de fiche : « gratuit » ne doit
@@ -266,7 +267,10 @@ function mergeCluster(cluster) {
     endDate: ends[ends.length - 1] || base.endDate,
     place: base.place || cluster.map((e) => e.place).find(Boolean) || "",
     city: base.city || cluster.map((e) => e.city).find(Boolean) || "",
-    image: base.image || cluster.map((e) => e.image).find(Boolean) || null,
+    // Image : on évite celles d'Alentoor quand une autre source en a une (Alentoor
+    // refuse ses images à certains visiteurs, constaté le 2026-10-19).
+    image: [base.image, ...cluster.map((e) => e.image)].filter(Boolean)
+      .sort((a, b) => FRAGILE_IMG.test(a) - FRAGILE_IMG.test(b))[0] || null,
     dateText: base.dateText || cluster.map((e) => e.dateText).find(Boolean) || "",
     // Pages du même événement chez les autres sources : enrich-fiches.js y
     // cherche une description plus complète, gen-pages.js les cite. Retiré du

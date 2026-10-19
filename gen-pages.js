@@ -205,7 +205,7 @@ function card(ev) {
   const img = ev.image && !/^affiches-auto\//.test(ev.image) ? (ev.image.startsWith("http") ? ev.image : "/" + ev.image) : (ev.image ? "/" + ev.image : "");
   const cat = CATEGORIES[ev.category] || {};
   return `<a class="ev-card" href="/evenement/${ev._slug}/">
-        <div class="ev-card__media">${img ? `<img src="${esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer">` : ""}<span class="ev-card__date">${DAYS_SHORT[d.getDay()]} ${d.getDate()} ${MONTHS_SHORT[d.getMonth()]}</span></div>
+        <div class="ev-card__media">${img ? `<img src="${esc(img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer"${ev.fallbackImage ? ` onerror="if(!this.dataset.u){this.dataset.u=1;this.src='/${esc(ev.fallbackImage)}'}"` : ""}>` : ""}<span class="ev-card__date">${DAYS_SHORT[d.getDay()]} ${d.getDate()} ${MONTHS_SHORT[d.getMonth()]}</span></div>
         <div class="ev-card__body"><div class="ev-card__title">${esc(ev.title)}</div><div class="ev-card__meta">${esc([cat.label, ev.schedule].filter(Boolean).join(" · "))}</div></div>
       </a>`;
 }
@@ -334,7 +334,7 @@ function render(ev, fiche, related, relatedTitle) {
 
     <div class="layout">
       <figure class="poster">
-        ${imageSrc ? `<div class="poster__frame"><img src="${esc(imageSrc)}" alt="Affiche : ${esc(title)}" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"></div>` : ""}
+        ${imageSrc ? `<div class="poster__frame"><img src="${esc(imageSrc)}" alt="Affiche : ${esc(title)}" decoding="async" fetchpriority="high" referrerpolicy="no-referrer"${ev.fallbackImage ? ` data-fallback="/${esc(ev.fallbackImage)}" onerror="if(!this.dataset.u){this.dataset.u=1;this.src=this.dataset.fallback}"` : ""}></div>` : ""}
         ${imgCredit ? `<figcaption>Affiche : ${esc(imgCredit)}</figcaption>` : ""}
       </figure>
 
