@@ -5,12 +5,13 @@
    Strategie : RESEAU D'ABORD partout (les donnees restent fraiches, data.js
    est regenere chaque nuit), le cache ne sert que de filet de secours. */
 
-const CACHE = 'agenda-gn-v1';
+const CACHE = 'agenda-gn-v2';
 const SHELL = [
   '/',
   '/index.html',
   '/style.css',
   '/logo.svg',
+  '/da/logo.svg',
   '/icon-192.png',
   '/site.webmanifest'
 ];

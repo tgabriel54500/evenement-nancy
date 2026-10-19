@@ -57,6 +57,13 @@ for f in $FILES; do
   fi
 done
 
+# Identite visuelle (logo, statue, tete) : da/*.svg, references par les pages,
+# le CSS et les pages evenement.
+if [ -d "$PROJ/da" ]; then
+  mkdir -p "$DIST/da"
+  cp "$PROJ"/da/*.svg "$DIST/da/"
+fi
+
 # Affiches des événements Facebook, réhébergées en local (cf. fb-posters.js). data.js
 # référence images/fb/<id>.jpg → on copie tout le dossier dans le build public.
 if [ -d "$PROJ/images/fb" ]; then

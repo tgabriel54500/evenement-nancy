@@ -19,7 +19,7 @@
 .card-pane + .card-pane { margin-top: 1.2rem; }
 .card-pane h2 {
   margin-top: 0;
-  font-family: "Fraunces", Georgia, serif;
+  font-family: var(--font-display);
   font-weight: 900;
   letter-spacing: -.01em;
 }
@@ -150,14 +150,14 @@ label.inline input { width: auto; margin: 0; }
 
 /* ---------- Aperçu de l'annonce (formulaire de publication) ---------- */
 .apercu { margin: 1.4rem 0 1.2rem; padding: 1rem 1.1rem 1.2rem; border-radius: 14px; background: #f7f3ec; border: 1px dashed rgba(28,26,23,.18); }
-.apercu__title { margin: 0 0 .2rem; font-family: "Fraunces", serif; font-weight: 600; font-size: 1.1rem; }
+.apercu__title { margin: 0 0 .2rem; font-family: var(--font-display); font-weight: 600; font-size: 1.1rem; }
 .apercu__hint { margin: 0 0 .9rem; font-size: .85rem; color: var(--ink-soft); }
 .apercu__body { display: grid; grid-template-columns: 200px 1fr; gap: 1.1rem; align-items: start; }
 .apercu__tile .poster { width: 200px; aspect-ratio: 2 / 3; cursor: default; animation: none; }
 .apercu__tile .poster__title { font-size: .9rem; }
 .apercu__fiche { min-width: 0; }
 .apercu__cat { font-size: .78rem; font-weight: 600; color: var(--accent); text-transform: uppercase; letter-spacing: .04em; }
-.apercu__fiche h4 { margin: .15rem 0 .5rem; font-family: "Fraunces", serif; font-weight: 600; font-size: 1.25rem; line-height: 1.2; }
+.apercu__fiche h4 { margin: .15rem 0 .5rem; font-family: var(--font-display); font-weight: 600; font-size: 1.25rem; line-height: 1.2; }
 .apercu__badges { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .6rem; }
 .apercu__meta { margin: 0 0 .6rem; padding: 0; list-style: none; font-size: .9rem; color: var(--ink); }
 .apercu__meta li { margin: .15rem 0; }
@@ -193,3 +193,46 @@ label.inline input { width: auto; margin: 0; }
 .auth-tab.is-active { color: var(--ink); border-bottom-color: var(--accent); }
 .auth-links { margin: .9rem 0 0; font-size: .88rem; color: var(--ink-soft); }
 .auth-links a { color: var(--accent); }
+
+/* ==========================================================================
+   DIRECTION ARTISTIQUE 2026-10 : thème sombre (voir style.css). Le logo en
+   haut à gauche ramène à l'agenda, il remplace l'ancien bouton « ← Agenda ».
+   ========================================================================== */
+.hero--compact { padding: clamp(6.5rem, 10vw, 8rem) 1.25rem clamp(1.8rem, 3vw, 2.6rem); }
+.hero__subtitle { color: var(--ink-soft); }
+.home-link:hover { color: var(--blanc); }
+.card-pane { background: var(--anthracite); border-color: var(--line); box-shadow: none; color: var(--ink); }
+.card-pane h2 { font-weight: 800; letter-spacing: -.02em; }
+form input, form select, form textarea { background: var(--noir); color: var(--ink); border-color: #3a3a3a; }
+form input::placeholder, form textarea::placeholder { color: #77776f; }
+form input:focus, form select:focus, form textarea:focus { border-color: var(--rouge); box-shadow: 0 0 0 4px rgba(230,50,38,.18); }
+form select option { background: var(--anthracite); color: var(--ink); }
+.btn-primary { background: var(--rouge); }
+.btn-primary:hover { background: var(--accent-deep); }
+.btn-ghost { border-color: #4a4a4a; color: var(--ink); }
+.btn-ghost:hover { border-color: var(--blanc); }
+.btn-ghost.danger { color: #ff8a80; border-color: rgba(255,138,128,.4); }
+.msg { background: rgba(255,255,255,.06); }
+.msg.ok { background: rgba(60,180,100,.14); color: #8fe0a8; }
+.msg.err { background: rgba(230,50,38,.16); color: #ff8a80; }
+.org-form { background: rgba(255,255,255,.03); border-color: #3a3a3a; }
+.tabs, .auth-tabs { border-bottom-color: var(--line); }
+.tab.is-active, .auth-tab.is-active { border-bottom-color: var(--rouge); }
+.mine-item { border-color: var(--line); background: var(--card-2); }
+.mine-thumb--empty { background: #2a2a2a; }
+.mine-reason { color: #ff8a80; }
+.st-pending { background: rgba(240,190,40,.16); color: #f3cd62; }
+.st-ok { background: rgba(60,180,100,.16); color: #8fe0a8; }
+.st-no { background: rgba(230,50,38,.18); color: #ff8a80; }
+.ac-list { background: var(--anthracite); border-color: #3a3a3a; box-shadow: 0 12px 30px -10px rgba(0,0,0,.6); }
+.ac-item { color: var(--ink); }
+.ac-item + .ac-item { border-top-color: var(--line); }
+.ac-item:hover { background: rgba(230,50,38,.12); }
+.nav-menu__who { border-bottom-color: var(--line); }
+.nav-menu__btn { color: inherit; }
+.apercu { background: var(--noir); border-color: #3a3a3a; }
+.apercu__cat, .auth-links a { color: var(--rouge); }
+.apercu__cta { background: var(--rouge); }
+@media (max-width: 640px) {
+  .hero--compact { padding: 5.2rem 1rem 1.4rem; }
+}

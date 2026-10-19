@@ -162,7 +162,7 @@ function afficheSVG(club, m) {
   ${motifSport(club.sport, accent)}
   <path d="M0 1010 L800 890 L800 1200 L0 1200 Z" fill="${accent}" opacity=".14"/>
   <rect width="800" height="1200" fill="url(#v)"/>
-  <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+  <g font-family="'Sets Grotesk', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
     <text x="400" y="256" font-size="30" font-weight="700" fill="#ffffff" opacity=".55" letter-spacing="9">${esc(sportTxt)}</text>
     <text x="400" y="330" font-size="34" font-weight="600" fill="${accent}" letter-spacing="3">${esc((m.competition || club.league).toUpperCase())}</text>
     ${m.round ? `<text x="400" y="378" font-size="27" font-weight="500" fill="#ffffff" opacity=".65">${esc(m.round)}</text>` : ""}
