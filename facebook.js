@@ -402,6 +402,14 @@ function toEvent(node, todayISO) {
 }
 
 // ── Collecte des fichiers ───────────────────────────────────────────────────
+// Date d'enregistrement d'une page : dans le nom (fb-2026-10-16.html), sinon
+// la date de modification du fichier.
+function fileDateISO(f) {
+  const m = path.basename(f).match(/(20\d{2}-\d{2}-\d{2})/);
+  if (m) return m[1];
+  try { return new Date(fs.statSync(f).mtimeMs).toISOString().slice(0, 10); } catch { return ""; }
+}
+
 function gather(inputs, dir) {
   const files = [];
   const add = (p) => {
@@ -444,8 +452,13 @@ function main() {
     if (/view-source/i.test(path.basename(f)) || /&lt;script/.test(raw)) {
       raw = raw.replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&quot;/g, '"').replace(/&amp;/g, "&");
     }
-    for (const node of extractEventNodes(raw)) { const ev = toEvent(node, todayISO); if (ev) { all.push(ev); nJson++; } }
-    for (const node of extractEventCards(raw)) { const ev = toEvent(node, todayISO); if (ev) { all.push(ev); nCard++; } }
+    // Les cartes n'affichent pas l'année (« 16 juin à 21:00 ») : on la déduit
+    // par rapport au jour où la page a été ENREGISTRÉE, pas à aujourd'hui.
+    // Sinon une page de juin relue en octobre envoyait ses matchs de la Coupe
+    // du monde en juin 2027 (constaté le 2026-10-19 : 21 faux événements).
+    const savedISO = fileDateISO(f) || todayISO;
+    for (const node of extractEventNodes(raw)) { const ev = toEvent(node, savedISO); if (ev) { all.push(ev); nJson++; } }
+    for (const node of extractEventCards(raw)) { const ev = toEvent(node, savedISO); if (ev) { all.push(ev); nCard++; } }
   }
   // Dédup par id : on PRÉFÈRE la version JSON (date exacte) à la carte HTML.
   const byId = new Map();

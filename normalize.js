@@ -202,6 +202,43 @@ function sameShortEvent(x, e) {
   return w.length >= 5 && !MOTS_GENERIQUES.has(w) && big.has(w);
 }
 
+// Annonce de presse SANS image (Est Républicain : titres courts, souvent
+// reformulés, parfois avec une coquille) face à la même sortie publiée avec son
+// affiche par une autre source. Les règles générales exigent 2 mots identiques
+// et des dates de début égales ; ici on rapproche aussi les pluriels (roller /
+// rollers), les coquilles d'une lettre (obscrure / obscure) et un événement de
+// presse d'un jour tombant dans la période de l'autre. Garde-fous : même
+// commune renseignée des deux côtés, l'autre fiche a une image, et au moins un
+// mot commun distinctif (pas « histoire », « théâtre »…). Constaté le
+// 2026-10-19 : « Sorcière » affichée deux fois, l'une sans affiche.
+const racine = (w) => w.replace(/(s|x)$/, "");
+function presque(a, b) {
+  if (a === b || racine(a) === racine(b)) return true;
+  if (a.length < 6 || b.length < 6 || Math.abs(a.length - b.length) > 1) return false;
+  // distance d'édition ≤ 1
+  let i = 0, j = 0, diff = 0;
+  while (i < a.length && j < b.length) {
+    if (a[i] === b[j]) { i++; j++; continue; }
+    if (++diff > 1) return false;
+    if (a.length > b.length) i++; else if (b.length > a.length) j++; else { i++; j++; }
+  }
+  return diff + (a.length - i) + (b.length - j) <= 1;
+}
+function presseDoublon(x, e) {
+  const [p, q] = x.source === "est-republicain" ? [x, e] : e.source === "est-republicain" ? [e, x] : [null, null];
+  if (!p || q.source === "est-republicain" || p.image || !q.image) return false;
+  const cp = slugKey(p.city), cq = slugKey(q.city);
+  if (!cp || cp !== cq) return false;
+  const tp = [...sigTokens(p.title)], tq = [...sigTokens(q.title)];
+  if (!tp.length) return false;
+  const communs = tp.filter((w) => tq.some((v) => presque(w, v)));
+  const distinctifs = communs.filter((w) => w.length >= 5 && !MOTS_GENERIQUES.has(racine(w)) && !MOTS_GENERIQUES.has(w));
+  if (!distinctifs.length) return false;
+  // Au moins la moitié des mots de l'annonce de presse : « Émile Gallé lecteur
+  // de la Bible » n'est pas l'exposition « Émile Gallé. Portrait d'une vie ».
+  return (communs.length >= 2 && communs.length / tp.length >= 0.5) || (tp.length === 1 && distinctifs.length === 1);
+}
+
 // Deux intervalles [date, endDate] se chevauchent-ils ?
 function overlap(a, b) {
   const as = a.date || "", ae = a.endDate || a.date || "";
@@ -293,7 +330,7 @@ function dedupeCrossSource(events) {
   const clusters = [];
   for (const e of events) {
     const c = clusters.find((cl) =>
-      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e))));
+      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e) || presseDoublon(x, e))));
     if (c) c.push(e); else clusters.push([e]);
   }
   return clusters
