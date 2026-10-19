@@ -1352,7 +1352,9 @@ a { color: inherit; }
   background: var(--bg);
   border-bottom: 1px solid var(--line);
   overflow: hidden;
-  padding: clamp(6.5rem, 11vw, 8.5rem) 1.25rem clamp(2.6rem, 5vw, 3.6rem);
+  /* La barre d'état de l'iPhone (appli installée, barre translucide) passe
+     par-dessus le haut de page : on ajoute sa hauteur au lieu de la subir. */
+  padding: calc(clamp(6.5rem, 11vw, 8.5rem) + env(safe-area-inset-top, 0px)) 1.25rem clamp(2.6rem, 5vw, 3.6rem);
 }
 .hero::after {             /* la statue, dessinée au trait, en bas à droite */
   content: "";
@@ -1366,7 +1368,7 @@ a { color: inherit; }
 .hero__inner > *:not(.nav-account) { position: relative; z-index: 1; }
 .brand {
   position: absolute; z-index: 2;
-  top: max(1.1rem, env(safe-area-inset-top)); left: clamp(1rem, 3vw, 2.2rem);
+  top: calc(1.1rem + env(safe-area-inset-top, 0px)); left: clamp(1rem, 3vw, 2.2rem);
   display: block; width: clamp(128px, 14vw, 168px); line-height: 0;
 }
 .brand img { width: 100%; height: auto; display: block; }
@@ -1409,7 +1411,7 @@ a { color: inherit; }
 .view-switch.is-active { background: var(--blanc); color: var(--noir); }
 
 /* Menu : bouton rond au trait, burger sur toutes les tailles d'écran. */
-.nav-account { top: max(1.1rem, env(safe-area-inset-top)); right: clamp(1rem, 3vw, 2.2rem); }
+.nav-account { top: calc(1.1rem + env(safe-area-inset-top, 0px)); right: clamp(1rem, 3vw, 2.2rem); }
 .nav-account__btn { width: 48px; height: 48px; background: transparent; color: var(--blanc); border: 1px solid #3a3a3a; box-shadow: none; }
 .nav-account__btn:hover { border-color: var(--blanc); color: var(--blanc); }
 .nav-account__btn .ico--user { display: none; }
@@ -1551,16 +1553,16 @@ a { color: inherit; }
 
 /* ---------- Téléphone ---------- */
 @media (max-width: 640px) {
-  .hero { padding: 5.2rem 1rem 1.4rem; }
+  .hero { padding: calc(5.4rem + env(safe-area-inset-top, 0px)) 1rem 1.4rem; }
   .hero::after { width: 92vw; right: -30%; bottom: -8%; opacity: .06; }
-  .brand { width: 112px; top: max(.9rem, env(safe-area-inset-top)); left: 1rem; }
+  .brand { width: 112px; top: calc(1rem + env(safe-area-inset-top, 0px)); left: 1rem; }
   .hero__eyebrow { display: block; font-size: .64rem; margin-bottom: .55rem; }
   .hero__title { font-size: clamp(2.05rem, 10vw, 2.7rem); padding: 0; }
   .hero__tagline { font-size: .9rem; margin-top: .7rem; }
   .hero__search { margin-top: 1.1rem; padding: .75rem 1.05rem; }
   .hero__views { margin-top: .9rem; }
   .view-switch { font-size: .84rem; padding: .45rem 1rem; }
-  .nav-account { top: max(.9rem, env(safe-area-inset-top)); right: 1rem; }
+  .nav-account { top: calc(1rem + env(safe-area-inset-top, 0px)); right: 1rem; }
   .nav-account__btn { width: 44px; height: 44px; }
   .fbar { border-bottom-color: var(--line); }
 }

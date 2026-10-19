@@ -198,7 +198,7 @@ label.inline input { width: auto; margin: 0; }
    DIRECTION ARTISTIQUE 2026-10 : thème sombre (voir style.css). Le logo en
    haut à gauche ramène à l'agenda, il remplace l'ancien bouton « ← Agenda ».
    ========================================================================== */
-.hero--compact { padding: clamp(6.5rem, 10vw, 8rem) 1.25rem clamp(1.8rem, 3vw, 2.6rem); }
+.hero--compact { padding: calc(clamp(6.5rem, 10vw, 8rem) + env(safe-area-inset-top, 0px)) 1.25rem clamp(1.8rem, 3vw, 2.6rem); }
 .hero__subtitle { color: var(--ink-soft); }
 .home-link:hover { color: var(--blanc); }
 .card-pane { background: var(--anthracite); border-color: var(--line); box-shadow: none; color: var(--ink); }
@@ -234,5 +234,5 @@ form select option { background: var(--anthracite); color: var(--ink); }
 .apercu__cat, .auth-links a { color: var(--rouge); }
 .apercu__cta { background: var(--rouge); }
 @media (max-width: 640px) {
-  .hero--compact { padding: 5.2rem 1rem 1.4rem; }
+  .hero--compact { padding: calc(5.4rem + env(safe-area-inset-top, 0px)) 1rem 1.4rem; }
 }
