@@ -1295,3 +1295,31 @@ body.has-sheet { overflow: hidden; }
 }
 @keyframes sheetUp { from { transform: translateY(100%); } to { transform: none; } }
 .has-sheet .wa-fab { display: none; }
+
+/* ---------- Page d'événement en panneau (galerie.js, openEventSheet) ---------- */
+.evsheet { position: fixed; inset: 0; z-index: 10000; }  /* au-dessus du bouton compte et du bouton WhatsApp */
+.evsheet__backdrop { position: absolute; inset: 0; background: rgba(28,26,23,.55); opacity: 0; transition: opacity .25s; }
+.evsheet__panel {
+  position: absolute; left: 50%; top: 4vh; bottom: 4vh; width: min(1180px, 94vw);
+  transform: translate(-50%, 24px); opacity: 0;
+  background: var(--bg); border-radius: 20px; overflow: hidden;
+  box-shadow: 0 30px 80px -20px rgba(0,0,0,.45);
+  display: flex; flex-direction: column;
+  transition: transform .25s ease, opacity .25s ease;
+}
+.evsheet.is-open .evsheet__backdrop { opacity: 1; }
+.evsheet.is-open .evsheet__panel { opacity: 1; transform: translate(-50%, 0); }
+/* Ordinateur : pas de barre, le bouton de fermeture flotte en haut à droite. */
+.evsheet__bar { position: absolute; top: 12px; right: 14px; z-index: 2; touch-action: none; }
+.evsheet__grip { display: none; }
+.evsheet__close { width: 44px; height: 44px; border-radius: 999px; border: 1px solid var(--line); background: #fff; color: var(--ink); display: inline-flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 4px 14px -6px rgba(0,0,0,.35); }
+.evsheet__close:hover { border-color: var(--accent); color: var(--accent); }
+.evsheet__frame { flex: 1 1 auto; width: 100%; border: 0; background: var(--bg); }
+@media (max-width: 720px) {
+  .evsheet__panel { left: 0; right: 0; top: 6vh; bottom: 0; width: auto; border-radius: 18px 18px 0 0; transform: translateY(100%); opacity: 1; }
+  .evsheet.is-open .evsheet__panel { transform: translateY(0); }
+  .evsheet__bar { position: relative; top: auto; right: auto; flex: 0 0 auto; height: 44px; display: flex; align-items: center; justify-content: center; background: #fffdf9; border-bottom: 1px solid var(--line); cursor: grab; }
+  .evsheet__grip { display: block; width: 44px; height: 5px; border-radius: 999px; background: #d6cbbb; }
+  .evsheet__close { position: absolute; right: 8px; top: 2px; width: 40px; height: 40px; }
+}
+@media (prefers-reduced-motion: reduce) { .evsheet__panel, .evsheet__backdrop { transition: none; } }

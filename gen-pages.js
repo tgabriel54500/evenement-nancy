@@ -252,7 +252,8 @@ function render(ev, fiche, related, relatedTitle) {
     : officialUrl
       ? `<a class="btn btn--primary" href="${esc(officialUrl)}" target="_blank" rel="noopener">Voir sur ${esc(onSite(sourceName(officialUrl)))} ${ICON.out}</a>`
       : "";
-  const otherTickets = fiche.tickets.slice(1).map((t) => `<a class="link-out" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.label)} ${ICON.out}</a>`).join("");
+  const seenLabels = new Set([mainTicket ? ticketLabel(mainTicket) : ""]);
+  const otherTickets = fiche.tickets.slice(1).filter((t) => !seenLabels.has(t.label) && seenLabels.add(t.label)).map((t) => `<a class="link-out" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.label)} ${ICON.out}</a>`).join("");
 
   const descSource = fiche.descFrom ? sourceName(fiche.descFrom) : "";
   const about = fiche.description
@@ -318,6 +319,7 @@ function render(ev, fiche, related, relatedTitle) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script>if(window.top!==window.self)document.documentElement.className+=" embedded";</script>
   <link rel="stylesheet" href="/evenement.css?v=${VER}">
   <script type="application/ld+json">${ldJson}</script>
 </head>
@@ -442,6 +444,10 @@ h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(3
 .ev-card__body{padding:12px 14px 16px}.ev-card__title{font-weight:700;line-height:1.3}.ev-card__meta{font-size:14px;color:var(--soft)}
 .foot{border-top:1px solid var(--line);background:#fffdf9;margin-top:64px}.foot__inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:26px;padding-bottom:26px;font-size:14px}.foot a{color:var(--soft)}
 .sticky-cta{display:none}
+/* Ouverte en panneau depuis la galerie : la barre du panneau remplace l'en-tête. */
+html.embedded .top,html.embedded .crumbs,html.embedded .foot{display:none}html.embedded main{padding-top:24px}
+@media (min-width:721px){html.embedded .facts{padding-right:52px}}
+.top .btn--close{width:46px;padding:0;font-size:0}
 .toast{position:fixed;left:50%;bottom:90px;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 16px;border-radius:999px;font-size:14px;z-index:20}
 @media (max-width:720px){
   .wrap{padding:0 16px}.brand{font-size:18px}.top .btn{min-height:40px;padding:0 12px;font-size:14px}
@@ -467,9 +473,13 @@ h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(3
 `;
 
 const JS = `(function(){
-// « Tout l'agenda » : retour à la galerie telle qu'on l'a laissée (filtres,
-// position) quand on vient d'elle, sinon simple lien vers l'accueil.
+var inSheet=window.top!==window.self;
+// Dans le panneau de la galerie : tout lien vers l'agenda ferme le panneau, et
+// la galerie suit les changements de page (adresse affichée).
+if(inSheet){try{parent.postMessage({evsheet:"page",path:location.pathname},location.origin)}catch(_){}}
 document.querySelectorAll('a[href="/"]').forEach(function(a){a.addEventListener("click",function(e){
+  if(inSheet){e.preventDefault();parent.postMessage({evsheet:"close"},location.origin);return}
+  // Page ouverte seule : retour à la galerie telle qu'on l'a laissée si on en vient.
   try{var r=document.referrer&&new URL(document.referrer);if(r&&r.origin===location.origin&&history.length>1){e.preventDefault();history.back()}}catch(_){}})});
 var m=document.querySelector("main[data-fav-key]");if(!m)return;var d=m.dataset;
 function toast(t){var e=document.createElement("div");e.className="toast";e.textContent=t;document.body.appendChild(e);setTimeout(function(){e.remove()},2200)}

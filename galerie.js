@@ -739,8 +739,7 @@ function openLightbox(ev) {
   // Événement qui a sa page (gen-pages.js) : on y va directement, sans passer
   // par la fiche intermédiaire (décision du 2026-10-19). La fiche reste pour ce
   // qui n'a pas de page (événements d'organisateurs, rencontres sportives).
-  // Retour arrière : le navigateur restaure la galerie telle quelle (cache de page).
-  if (ev.page) { location.href = ev.page; return; }
+  if (ev.page) { openEventSheet(ev); return; }
   if (window.trackUserEventClick) trackUserEventClick(ev);   // compteur de clics (events utilisateurs)
   const cat = CATEGORIES[ev.category] || { label: "Événement", emoji: "📌" };
   const place = [ev.place, ev.city].filter(Boolean).join(" — ");
@@ -831,7 +830,94 @@ function closeLightbox() {
   else hideLightbox();
 }
 
-window.addEventListener("popstate", () => { if (lbOpen) hideLightbox(); });
+window.addEventListener("popstate", () => {
+  if (lbOpen) hideLightbox();
+  if (sheetOpen && !(history.state && history.state.evsheet)) hideEventSheet();
+});
+
+// ── Page de l'événement en panneau par-dessus l'agenda ───────────────────────
+// La page complète (gen-pages.js) s'ouvre dans un panneau : glissé vers le bas
+// sur téléphone pour revenir à l'agenda, clic à côté ou Échap sur ordinateur,
+// et bouton de fermeture en haut à droite partout. L'adresse affichée devient
+// celle de la page (partage, rechargement), le bouton retour ferme le panneau.
+// La page est chargée dans un cadre : ses styles ne touchent pas la galerie.
+let sheetOpen = false, sheetEls = null, sheetReturnUrl = "";
+function buildEventSheet() {
+  const root = document.createElement("div");
+  root.className = "evsheet";
+  root.hidden = true;
+  root.innerHTML = `
+    <div class="evsheet__backdrop" data-close></div>
+    <div class="evsheet__panel" role="dialog" aria-modal="true" aria-label="Événement">
+      <div class="evsheet__bar">
+        <span class="evsheet__grip" aria-hidden="true"></span>
+        <button type="button" class="evsheet__close" data-close aria-label="Fermer et revenir à l'agenda">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+      <iframe class="evsheet__frame" title="Page de l'événement"></iframe>
+    </div>`;
+  document.body.appendChild(root);
+  const panel = root.querySelector(".evsheet__panel");
+  const bar = root.querySelector(".evsheet__bar");
+  root.querySelectorAll("[data-close]").forEach(el => el.addEventListener("click", closeEventSheet));
+  // Glisser vers le bas (barre du haut) pour fermer.
+  let y0 = null, dy = 0;
+  bar.addEventListener("pointerdown", e => {
+    if (e.target.closest(".evsheet__close")) return;
+    y0 = e.clientY; dy = 0; panel.style.transition = "none"; bar.setPointerCapture(e.pointerId);
+  });
+  bar.addEventListener("pointermove", e => {
+    if (y0 === null) return;
+    dy = Math.max(0, e.clientY - y0);
+    panel.style.transform = `translateY(${dy}px)`;
+  });
+  const end = () => {
+    if (y0 === null) return;
+    y0 = null; panel.style.transition = "";
+    if (dy > Math.min(140, window.innerHeight * 0.18)) closeEventSheet();
+    else panel.style.transform = "";
+  };
+  bar.addEventListener("pointerup", end);
+  bar.addEventListener("pointercancel", end);
+  // Messages de la page chargée : fermeture (« Tout l'agenda ») et changement
+  // de page (clic sur un autre événement dans « Prochainement »).
+  window.addEventListener("message", e => {
+    if (e.origin !== location.origin || !sheetOpen || !e.data) return;
+    if (e.data.evsheet === "close") closeEventSheet();
+    if (e.data.evsheet === "page" && typeof e.data.path === "string" && e.data.path.startsWith("/evenement/")) {
+      history.replaceState({ evsheet: true }, "", e.data.path);
+    }
+  });
+  return { root, panel, frame: root.querySelector(".evsheet__frame") };
+}
+function openEventSheet(ev) {
+  if (!sheetEls) sheetEls = buildEventSheet();
+  sheetReturnUrl = location.pathname + location.search + location.hash;
+  sheetEls.frame.src = ev.page;
+  sheetEls.panel.style.transform = "";
+  sheetEls.root.hidden = false;
+  requestAnimationFrame(() => sheetEls.root.classList.add("is-open"));
+  document.body.style.overflow = "hidden";
+  sheetOpen = true;
+  history.pushState({ evsheet: true }, "", ev.page);
+  sheetEls.root.querySelector(".evsheet__close").focus({ preventScroll: true });
+}
+function hideEventSheet() {
+  if (!sheetEls) return;
+  sheetOpen = false;
+  sheetEls.root.classList.remove("is-open");
+  document.body.style.overflow = "";
+  setTimeout(() => { if (!sheetOpen) { sheetEls.root.hidden = true; sheetEls.frame.src = "about:blank"; } }, 260);
+  // Favoris modifiés dans la page : même stockage, on resynchronise les cœurs.
+  favs = favLoad();
+  if (state.favOnly) render(); else syncHearts();
+}
+function closeEventSheet() {
+  if (sheetOpen && history.state && history.state.evsheet) history.back();
+  else { hideEventSheet(); if (sheetReturnUrl) history.replaceState(null, "", sheetReturnUrl); }
+}
+document.addEventListener("keydown", e => { if (e.key === "Escape" && sheetOpen) closeEventSheet(); });
 els.lightboxClose.addEventListener("click", closeLightbox);
 els.lightbox.addEventListener("click", e => { if (e.target === els.lightbox) closeLightbox(); });
 document.addEventListener("keydown", e => { if (e.key === "Escape" && lbOpen) closeLightbox(); });
