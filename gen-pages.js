@@ -560,10 +560,12 @@ function main() {
   if (fs.existsSync(pData)) {
     const code = fs.readFileSync(pData, "utf8");
     const d = new Function(code + "; return { CATEGORIES, GENERATED_AT: typeof GENERATED_AT !== 'undefined' ? GENERATED_AT : null, EVENTS };")();
-    const slugOf = new Map(upcoming.map((e) => [e.uuid + "|" + e.date + "|" + e.title, e._slug]));
+    // Clé sans uuid : dist/data.js peut déjà être « durci » (uuid retiré).
+    const keyOf = (e) => [e.title, e.date, e.endDate || e.date, e.place, e.city, e.url].join("|");
+    const slugOf = new Map(upcoming.map((e) => [keyOf(e), e._slug]));
     let n = 0;
     for (const e of d.EVENTS) {
-      const s = slugOf.get(e.uuid + "|" + e.date + "|" + e.title);
+      const s = slugOf.get(keyOf(e));
       if (s) { e.page = `/evenement/${s}/`; n++; }
     }
     fs.writeFileSync(pData, "const CATEGORIES=" + JSON.stringify(d.CATEGORIES) + ";const GENERATED_AT=" + JSON.stringify(d.GENERATED_AT) + ";const EVENTS=" + JSON.stringify(d.EVENTS) + ";");

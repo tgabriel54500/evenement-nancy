@@ -42,6 +42,23 @@ run_step() {
   fi
 }
 
+# --- Un seul passage à la fois ---------------------------------------------
+# Le 2026-10-19, le passage de 5 h (resté en pause pendant la veille du Mac) et
+# un passage lancé à 8 h 58 ont reconstruit dist/ et publié en même temps. Un
+# verrou (dossier créé atomiquement) empêche ce chevauchement ; un verrou de plus
+# de 3 heures est considéré comme abandonné (Mac éteint en plein passage).
+LOCK="$PROJECT_DIR/.refresh-all.lock"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +180 2>/dev/null)" ]; then
+    log "Verrou de plus de 3 h trouvé : passage précédent abandonné, on reprend."
+    rmdir "$LOCK" 2>/dev/null; mkdir "$LOCK" 2>/dev/null
+  else
+    log "SKIP  refresh-all : un autre passage est déjà en cours (verrou $LOCK)."
+    exit 0
+  fi
+fi
+trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+
 log "===== DEBUT refresh-all (node $("$NODE_BIN" --version 2>/dev/null)) ====="
 
 # --- 1. Les scrapers, séquentiels, chacun protégé ---
