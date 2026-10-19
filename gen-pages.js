@@ -36,6 +36,9 @@ const TODAY = new Date().toISOString().slice(0, 10);
 // pas l'heure. Une page dont rien n'a changé reste identique d'une publication à
 // l'autre, et Cloudflare ne renvoie que les pages réellement modifiées.
 let VER = "";
+// « À propos » : nombre de caractères au-delà duquel le texte défile dans un
+// cadre (décision du 2026-10-19 : pas de défilement tant que ce n'est pas long).
+const ABOUT_SCROLL = 2500;
 
 // ── Données ──────────────────────────────────────────────────────────────────
 
@@ -256,8 +259,11 @@ function render(ev, fiche, related, relatedTitle) {
   const otherTickets = fiche.tickets.slice(1).filter((t) => !seenLabels.has(t.label) && seenLabels.add(t.label)).map((t) => `<a class="link-out" href="${esc(t.url)}" target="_blank" rel="noopener">${esc(t.label)} ${ICON.out}</a>`).join("");
 
   const descSource = fiche.descFrom ? sourceName(fiche.descFrom) : "";
+  // Texte affiché en entier jusqu'à ABOUT_SCROLL caractères ; au-delà (une
+  // quinzaine de pages), cadre à hauteur fixe qui défile à l'intérieur.
+  const aboutLong = String(fiche.description || "").length > ABOUT_SCROLL;
   const about = fiche.description
-    ? `<div class="about" tabindex="0" aria-label="Description complète">${descHtml(fiche.description)}</div>
+    ? `<div class="about${aboutLong ? " about--long" : ""}"${aboutLong ? ' tabindex="0"' : ""} aria-label="Description complète">${descHtml(fiche.description)}</div>
         <p class="about__credit">Texte : ${esc(descSource)}${fiche.descFrom ? ` · <a href="${esc(fiche.descFrom)}" target="_blank" rel="noopener">page d'origine</a>` : ""}</p>`
     : `<p class="about__empty">L'organisateur n'a pas encore publié de description détaillée.${officialUrl ? ` Les dernières informations sont sur <a href="${esc(officialUrl)}" target="_blank" rel="noopener">${esc(sourceName(officialUrl))}</a>.` : ""}</p>`;
 
@@ -426,7 +432,8 @@ h1{margin:0;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:clamp(3
 .actions{display:flex;flex-direction:column;gap:10px}.actions__row{display:flex;gap:10px;flex-wrap:wrap}.actions__row .btn{flex:1 1 0;padding:0 10px;font-size:15px;white-space:nowrap}
 .links-out{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:15px}.link-out{display:inline-flex;align-items:center;gap:4px}
 .block h2,.related h2{margin:0 0 14px;font-family:Fraunces,Georgia,serif;font-weight:900;font-size:28px;letter-spacing:-.01em}
-.about{max-height:30rem;overflow-y:auto;padding:4px 18px 4px 0;font-size:17px;overscroll-behavior:contain;
+.about{padding:4px 0;font-size:17px}
+.about--long{max-height:40rem;overflow-y:auto;padding:4px 18px 4px 0;overscroll-behavior:contain;
   background:linear-gradient(var(--bg) 30%,rgba(250,247,242,0)) center top,linear-gradient(rgba(250,247,242,0),var(--bg) 70%) center bottom,radial-gradient(farthest-side at 50% 0,rgba(28,26,23,.14),transparent) center top,radial-gradient(farthest-side at 50% 100%,rgba(28,26,23,.14),transparent) center bottom;
   background-repeat:no-repeat;background-size:100% 40px,100% 40px,100% 12px,100% 12px;background-attachment:local,local,scroll,scroll}
 .about p{margin:0 0 14px;max-width:70ch}.about:focus-visible{outline:2px solid var(--accent);outline-offset:4px;border-radius:8px}
@@ -454,7 +461,7 @@ html.embedded .top,html.embedded .crumbs,html.embedded .foot{display:none}html.e
   .layout{grid-template-columns:minmax(0,1fr);grid-template-areas:"poster" "facts" "about";row-gap:24px}.facts{position:static}
   .poster{margin:0 -16px}.poster__frame{border-radius:0}.poster figcaption{padding:0 16px}
   .poster__frame img{max-height:none;width:100%}
-  .about{max-height:60vh;font-size:16px}
+  .about{font-size:16px}.about--long{max-height:70vh}
   .box--desk{display:none}.box--mob{display:block}
   .actions__row{flex-wrap:nowrap;gap:8px}.actions__row .btn{font-size:14px;padding:0 8px;gap:6px}
   .cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.ev-card__body{padding:10px 10px 12px}.ev-card__title{font-size:15px}
@@ -468,7 +475,7 @@ html.embedded .top,html.embedded .crumbs,html.embedded .foot{display:none}html.e
   .top,.box,.foot,.sticky-cta{background:#1d1a17}.btn,.infos,.ev-card,.chip{background:#221f1c;color:var(--ink)}
   .chip--cat{background:var(--tint);border-color:var(--tint);color:#f3b3a4}.chip--free{background:#1e3324;border-color:#1e3324;color:#9fd6ab}
   .ev-card__date{background:#221f1c;color:var(--ink)}a:hover{color:#f8a996}.infos>div{border-color:var(--line)}
-  .about{background:linear-gradient(var(--bg) 30%,rgba(23,21,19,0)) center top,linear-gradient(rgba(23,21,19,0),var(--bg) 70%) center bottom,radial-gradient(farthest-side at 50% 0,rgba(0,0,0,.5),transparent) center top,radial-gradient(farthest-side at 50% 100%,rgba(0,0,0,.5),transparent) center bottom;background-repeat:no-repeat;background-size:100% 40px,100% 40px,100% 12px,100% 12px;background-attachment:local,local,scroll,scroll}
+  .about--long{background:linear-gradient(var(--bg) 30%,rgba(23,21,19,0)) center top,linear-gradient(rgba(23,21,19,0),var(--bg) 70%) center bottom,radial-gradient(farthest-side at 50% 0,rgba(0,0,0,.5),transparent) center top,radial-gradient(farthest-side at 50% 100%,rgba(0,0,0,.5),transparent) center bottom;background-repeat:no-repeat;background-size:100% 40px,100% 40px,100% 12px,100% 12px;background-attachment:local,local,scroll,scroll}
 }
 `;
 

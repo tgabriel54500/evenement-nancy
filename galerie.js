@@ -841,7 +841,33 @@ window.addEventListener("popstate", () => {
 // et bouton de fermeture en haut à droite partout. L'adresse affichée devient
 // celle de la page (partage, rechargement), le bouton retour ferme le panneau.
 // La page est chargée dans un cadre : ses styles ne touchent pas la galerie.
-let sheetOpen = false, sheetEls = null, sheetReturnUrl = "";
+let sheetOpen = false, sheetEls = null, sheetReturnUrl = "", sheetScrollY = 0, sheetHistBase = 0;
+// Le cadre partage l'historique du navigateur : le charger avec src= ajoutait
+// une entrée, et « retour » (croix, glissé) vidait alors le cadre au lieu de
+// fermer le panneau. On le charge donc en remplaçant l'entrée courante.
+function frameGo(url) {
+  const f = sheetEls.frame;
+  try { f.contentWindow.location.replace(new URL(url, location.href).href); }
+  catch (_) { f.src = url; }
+}
+// Verrou de défilement de l'agenda pendant que le panneau est ouvert. Sur
+// iPhone, overflow:hidden ne bloque pas le doigt : glisser le panneau faisait
+// défiler l'agenda derrière, et l'on se retrouvait en haut à la fermeture. On
+// fige donc la page à sa position et on la remet exactement au même endroit.
+function lockPageScroll() {
+  sheetScrollY = window.scrollY;
+  const b = document.body.style;
+  b.position = "fixed"; b.top = `-${sheetScrollY}px`; b.left = "0"; b.right = "0"; b.width = "100%";
+  b.overflow = "hidden";
+}
+function unlockPageScroll() {
+  const b = document.body.style;
+  b.position = ""; b.top = ""; b.left = ""; b.right = ""; b.width = ""; b.overflow = "";
+  window.scrollTo(0, sheetScrollY);
+  // Le navigateur peut restaurer sa propre position après le retour arrière :
+  // on repasse derrière lui.
+  requestAnimationFrame(() => window.scrollTo(0, sheetScrollY));
+}
 function buildEventSheet() {
   const root = document.createElement("div");
   root.className = "evsheet";
@@ -880,6 +906,52 @@ function buildEventSheet() {
   };
   bar.addEventListener("pointerup", end);
   bar.addEventListener("pointercancel", end);
+  // Glisser vers le bas DANS la page, quand elle est déjà tout en haut : c'est
+  // le panneau entier qui descend (comme une feuille native). Le cadre est sur
+  // notre domaine, on écoute donc directement ses gestes. Coordonnées de la fenêtre :
+  // le cadre bouge avec le panneau, ses coordonnées propres se décaleraient
+  // (position dans le cadre + position du cadre dans la fenêtre).
+  const frame = root.querySelector(".evsheet__frame");
+  frame.addEventListener("load", () => {
+    let doc;
+    try { doc = frame.contentDocument; } catch (_) { return; }
+    if (!doc || !doc.documentElement || doc.location.href === "about:blank") return;
+    const top = () => (doc.scrollingElement || doc.documentElement).scrollTop <= 0;
+    // Zone qui défile elle-même (texte « À propos ») et n'est pas en haut : on la laisse défiler.
+    const innerScrolled = t => {
+      for (let n = t && t.nodeType === 1 ? t : t && t.parentElement; n && n !== doc.body; n = n.parentElement) {
+        if (n.scrollHeight > n.clientHeight + 1 && n.scrollTop > 0 && /auto|scroll/.test(doc.defaultView.getComputedStyle(n).overflowY)) return true;
+      }
+      return false;
+    };
+    const yOf = e => e.touches[0].clientY + frame.getBoundingClientRect().top;
+    let last = null, start = null, dragging = false, d = 0, skip = false;
+    doc.addEventListener("touchstart", e => {
+      // Seulement sur téléphone, où le panneau monte du bas de l'écran.
+      if (e.touches.length !== 1 || !window.matchMedia("(max-width: 720px)").matches) { last = null; return; }
+      last = yOf(e); dragging = false; d = 0; skip = innerScrolled(e.target);
+    }, { passive: true });
+    doc.addEventListener("touchmove", e => {
+      if (last === null || skip) return;
+      const yy = yOf(e), down = yy > last;
+      last = yy;
+      if (!dragging && down && top()) { dragging = true; start = yy; panel.style.transition = "none"; }
+      if (!dragging) return;
+      e.preventDefault();
+      d = Math.max(0, yy - start);
+      panel.style.transform = `translateY(${d}px)`;
+      if (d === 0 && !down) { dragging = false; panel.style.transition = ""; panel.style.transform = ""; }
+    }, { passive: false });
+    const stop = () => {
+      last = null;
+      if (!dragging) return;
+      dragging = false; panel.style.transition = "";
+      if (d > Math.min(140, window.innerHeight * 0.18)) closeEventSheet();
+      else panel.style.transform = "";
+    };
+    doc.addEventListener("touchend", stop);
+    doc.addEventListener("touchcancel", stop);
+  });
   // Messages de la page chargée : fermeture (« Tout l'agenda ») et changement
   // de page (clic sur un autre événement dans « Prochainement »).
   window.addEventListener("message", e => {
@@ -893,28 +965,32 @@ function buildEventSheet() {
 }
 function openEventSheet(ev) {
   if (!sheetEls) sheetEls = buildEventSheet();
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
   sheetReturnUrl = location.pathname + location.search + location.hash;
-  sheetEls.frame.src = ev.page;
+  frameGo(ev.page);
   sheetEls.panel.style.transform = "";
   sheetEls.root.hidden = false;
   requestAnimationFrame(() => sheetEls.root.classList.add("is-open"));
-  document.body.style.overflow = "hidden";
+  lockPageScroll();
   sheetOpen = true;
   history.pushState({ evsheet: true }, "", ev.page);
+  sheetHistBase = history.length - 1;   // après pushState : les entrées « en avant » sont déjà purgées
   sheetEls.root.querySelector(".evsheet__close").focus({ preventScroll: true });
 }
 function hideEventSheet() {
   if (!sheetEls) return;
   sheetOpen = false;
   sheetEls.root.classList.remove("is-open");
-  document.body.style.overflow = "";
-  setTimeout(() => { if (!sheetOpen) { sheetEls.root.hidden = true; sheetEls.frame.src = "about:blank"; } }, 260);
+  unlockPageScroll();
+  setTimeout(() => { if (!sheetOpen) { sheetEls.root.hidden = true; frameGo("about:blank"); } }, 260);
   // Favoris modifiés dans la page : même stockage, on resynchronise les cœurs.
   favs = favLoad();
   if (state.favOnly) render(); else syncHearts();
 }
 function closeEventSheet() {
-  if (sheetOpen && history.state && history.state.evsheet) history.back();
+  // Autant de pas en arrière que d'entrées ajoutées depuis l'ouverture (la
+  // nôtre, plus les événements ouverts depuis « Prochainement » dans le cadre).
+  if (sheetOpen && history.state && history.state.evsheet) history.go(-Math.max(1, history.length - sheetHistBase));
   else { hideEventSheet(); if (sheetReturnUrl) history.replaceState(null, "", sheetReturnUrl); }
 }
 document.addEventListener("keydown", e => { if (e.key === "Escape" && sheetOpen) closeEventSheet(); });
