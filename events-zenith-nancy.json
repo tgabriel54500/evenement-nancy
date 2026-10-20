@@ -1,5 +1,26 @@
 [
   {
+    "uuid": "zen-pietragalla-barbara",
+    "title": "Pietragalla Barbara",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-04-21",
+    "endDate": "2026-04-10",
+    "dateText": "21 nov. 2026 & 10 avr. 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Pietragalla-Barbara-affiche-WEB-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/pietragalla-barbara/",
+    "source": "zenith-nancy"
+  },
+  {
     "uuid": "zen-patrick-bruel",
     "title": "Patrick Bruel",
     "category": "musiques-actuelles",
@@ -102,27 +123,6 @@
     "reservation": true,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette/",
-    "source": "zenith-nancy"
-  },
-  {
-    "uuid": "zen-pietragalla-barbara",
-    "title": "Pietragalla Barbara",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-11-21",
-    "endDate": "2026-11-21",
-    "dateText": "Samedi 21 novembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/04/Pietragalla-Barbara-affiche-WEB-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/pietragalla-barbara/",
     "source": "zenith-nancy"
   },
   {

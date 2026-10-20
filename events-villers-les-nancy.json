@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-19",
+    "date": "2026-10-20",
     "endDate": "2026-11-01",
     "dateText": "",
     "schedule": "",
@@ -18,50 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-528",
-    "title": "Signé Dumas",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-19",
-    "endDate": "2026-11-08",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Caveau de la Roële",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0320_THEATRE_DUMAS.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/signe-dumas",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-593",
-    "title": "Ciné jeunes apéro-philo",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Education",
-      "Culture",
-      "Petite enfance"
-    ],
-    "date": "2026-10-19",
-    "endDate": "2027-06-12",
-    "dateText": "",
-    "schedule": "10h",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/1017_CINE_JEUNE_WONDER__c__Studiocanal_GmbH_-_Dale_Robinette.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-jeunes-apero-philo",
     "source": "villers-les-nancy"
   },
   {
@@ -188,6 +144,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261106_EXPO_DELATTE.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-delatte-leclat-retrouve",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-528",
+    "title": "Signé Dumas",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-06",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Caveau de la Roële",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0320_THEATRE_DUMAS.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/signe-dumas",
     "source": "villers-les-nancy"
   },
   {
@@ -431,7 +408,7 @@
       "Environnement"
     ],
     "date": "2026-11-25",
-    "endDate": "2026-12-16",
+    "endDate": "2027-06-30",
     "dateText": "",
     "schedule": "18h30 à 21h",
     "place": "MJC Jean Savine",
@@ -610,6 +587,29 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/spectacles-de-noel.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-de-noel",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-593",
+    "title": "Ciné jeunes apéro-philo",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Education",
+      "Culture",
+      "Petite enfance"
+    ],
+    "date": "2026-12-19",
+    "endDate": "2027-06-12",
+    "dateText": "",
+    "schedule": "10h",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/1017_CINE_JEUNE_WONDER__c__Studiocanal_GmbH_-_Dale_Robinette.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/cine-jeunes-apero-philo",
     "source": "villers-les-nancy"
   }
 ]

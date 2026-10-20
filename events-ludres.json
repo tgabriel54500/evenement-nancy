@@ -84,108 +84,22 @@
     "source": "ludres"
   },
   {
-    "uuid": "lud-the-5-rosies",
-    "title": "The 5 Rosies",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Chaudeau"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
+    "uuid": "lud-exposition-annuelle-des-artistes-de-ludo-arts-2",
+    "title": "Exposition annuelle des artistes de Ludo arts",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-11-07",
+    "endDate": "2026-11-07",
     "dateText": "",
     "schedule": "",
-    "place": "Chaudeau",
+    "place": "15",
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261110-The5Rosies_SiteWeb.jpg",
-    "url": "https://www.ludres.com/liste-evenements/the-5-rosies/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-poetic-lover-tour",
-    "title": "Poetic Lover Tour",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Chaudeau"
-    ],
-    "date": "2026-11-14",
-    "endDate": "2026-11-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "Chaudeau",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/01/2026114-PoeticL_Siteweb-1.jpg",
-    "url": "https://www.ludres.com/liste-evenements/poetic-lover-tour/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-stephan-eicher",
-    "title": "Stéphan Eicher",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Chaudeau"
-    ],
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "Chaudeau",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261119-Stephan-Eicher_WEB.jpg",
-    "url": "https://www.ludres.com/liste-evenements/stephan-eicher/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-moguiz",
-    "title": "Moguiz",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Chaudeau"
-    ],
-    "date": "2026-11-22",
-    "endDate": "2026-11-22",
-    "dateText": "",
-    "schedule": "",
-    "place": "Chaudeau",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/02/20261122-Moguiz-Siteweb.jpg",
-    "url": "https://www.ludres.com/liste-evenements/moguiz/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-arnaud-tsamere",
-    "title": "Arnaud TSAMERE",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Chaudeau"
-    ],
-    "date": "2026-11-26",
-    "endDate": "2026-11-26",
-    "dateText": "",
-    "schedule": "",
-    "place": "Chaudeau",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2024/11/20261126_ArnaudTsamere_SiteWeb.jpg",
-    "url": "https://www.ludres.com/liste-evenements/arnaud-tsamere/",
+    "image": "https://www.ludres.com/wp-content/uploads/2026/10/peinture-ludo-arts.jpg",
+    "url": "https://www.ludres.com/liste-evenements/exposition-annuelle-des-artistes-de-ludo-arts-2/",
     "source": "ludres"
   }
 ]
