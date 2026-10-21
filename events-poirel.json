@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-20",
+    "date": "2026-10-21",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -193,6 +193,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "title": "Voyage en Italie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "Le 08 novembre à 16h30",
+    "schedule": "",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
     "title": "Voyage en Italie",
     "category": "musique-classique",
@@ -213,27 +234,6 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4a9fe612-c942-11f1-b2a4-3b8ca9c8a400/0/ORIGINE_M_6ad1eb764fa00.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
-    "title": "Voyage en Italie",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "Le 08 novembre à 16h30",
-    "schedule": "",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
     "source": "poirel"
   },
   {
@@ -860,6 +860,28 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/3992a932-8440-11f1-aa7a-9d91bc444512/0/ORIGINE_M_6a5e24b873e44.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=3992a932-8440-11f1-aa7a-9d91bc444512",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-e3d629fc-cd27-11f1-8a67-cb7b5e59c4d3",
+    "title": "MOYETTE",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Danse",
+      "Théâtre"
+    ],
+    "date": "2027-02-26",
+    "endDate": "2027-02-27",
+    "dateText": "Le 26 et 27 février à 18h",
+    "schedule": "18h",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e3d629fc-cd27-11f1-8a67-cb7b5e59c4d3/0/1-1_M_6ad875ad114ed.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=e3d629fc-cd27-11f1-8a67-cb7b5e59c4d3",
     "source": "poirel"
   },
   {
