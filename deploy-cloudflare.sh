@@ -64,6 +64,14 @@ if [ -d "$PROJ/da" ]; then
   cp "$PROJ"/da/*.svg "$DIST/da/"
 fi
 
+# Copies locales des affiches des sources (images-cache.js) : data.js
+# référence images/c/<empreinte>.jpg.
+if [ -d "$PROJ/images/c" ]; then
+  mkdir -p "$DIST/images/c"
+  cp "$PROJ"/images/c/*.jpg "$DIST/images/c/" 2>/dev/null
+  echo "  affiches en copie locale : $(ls -1 "$DIST/images/c" 2>/dev/null | wc -l | tr -d ' ')"
+fi
+
 # Affiches des événements Facebook, réhébergées en local (cf. fb-posters.js). data.js
 # référence images/fb/<id>.jpg → on copie tout le dossier dans le build public.
 if [ -d "$PROJ/images/fb" ]; then
@@ -301,7 +309,7 @@ node -e '
   const code = fs.readFileSync(p, "utf8");
   const { CATEGORIES, GENERATED_AT, EVENTS } =
     new Function(code + "; return { CATEGORIES, GENERATED_AT, EVENTS };")();
-  const slim = EVENTS.map(({ source, uuid, altUrls, ...rest }) => rest);
+  const slim = EVENTS.map(({ source, uuid, altUrls, imageSource, ...rest }) => rest);
   const out =
     "const CATEGORIES=" + JSON.stringify(CATEGORIES) + ";" +
     "const GENERATED_AT=" + JSON.stringify(GENERATED_AT) + ";" +

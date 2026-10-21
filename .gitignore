@@ -47,3 +47,6 @@ fiches.json
 
 # Rapport nocturne des doublons possibles (update-events.js)
 doublons-suspects.txt
+
+# Copies locales des affiches des sources (images-cache.js), régénérées à chaque mise à jour
+images/c/

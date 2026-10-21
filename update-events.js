@@ -505,6 +505,11 @@ async function main() {
   for (const k of order) if (cats[k]) orderedCats[k] = cats[k];
   for (const k of Object.keys(cats)) if (!orderedCats[k]) orderedCats[k] = cats[k];
 
+  // Copie locale et allégée des affiches distantes (cf. images-cache.js) : une
+  // panne chez la source ne vide plus la galerie, et les pages chargent vite.
+  try { await require("./images-cache").cacheImages(merged); }
+  catch (e) { console.warn("  ⚠ images-cache.js en échec, images laissées chez leur source :", e.message); }
+
   // Affiche générée pour chaque événement sans image (cf. affiches-auto.js).
   try { require("./affiches-auto").applyAutoPosters(merged); }
   catch (e) { console.warn("  ⚠ affiches-auto.js en échec, événements laissés sans affiche :", e.message); }

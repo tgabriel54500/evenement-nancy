@@ -20,3 +20,9 @@
 # version reste active des semaines sur les telephones.
 /sw.js
   Cache-Control: no-cache
+
+# Affiches copiées en local (images-cache.js, fb-posters.js) : le nom ne
+# change pas tant que l'image ne change pas, le navigateur les garde une
+# semaine au lieu de les redemander à chaque visite.
+/images/*
+  Cache-Control: public, max-age=604800

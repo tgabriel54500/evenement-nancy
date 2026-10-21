@@ -196,10 +196,11 @@ function applyAutoPosters(events, opts = {}) {
   fs.mkdirSync(dir, { recursive: true });
   const kept = new Set();
   let n = 0;
-  // Images hébergées chez une source qui peut les refuser (Alentoor) : on garde
-  // l'image d'origine et on prépare une affiche de secours (`fallbackImage`),
+  // Image restée chez sa source (pas encore copiée par images-cache.js) : elle
+  // peut être refusée (Alentoor) ou en panne (Grand Nancy, 2026-10-21). On garde
+  // l'adresse d'origine et on prépare une affiche de secours (`fallbackImage`),
   // affichée par la galerie et les pages si l'image ne se charge pas.
-  const FRAGILE = /^https?:\/\/(www\.)?alentoor\.fr\//;
+  const FRAGILE = /^https?:\/\//;
   for (const ev of events) {
     if (ev.image && !ev.autoPoster && FRAGILE.test(ev.image)) {
       const file = `${posterKey(ev)}.svg`;
