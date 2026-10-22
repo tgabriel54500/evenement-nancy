@@ -135,17 +135,62 @@ async function filterByDistance(events) {
   return kept;
 }
 
+// Agenda de la Ville : si l'API ne répond pas, on ne bloque plus TOUTE la mise
+// à jour. Le 2026-10-21, la Métropole a mis ses serveurs en « maintenance de
+// sécurité » (503) : update-events.js s'arrêtait net, data.js n'était plus
+// régénéré et aucune autre source n'était mise à jour. Désormais : dernière
+// réponse valide gardée dans events-ville-nancy-api.json et réutilisée en cas
+// de panne ; à défaut, les fiches Ville du data.js actuel.
+const VILLE_CACHE = path.join(__dirname, "events-ville-nancy-api.json");
+async function loadVilleRaw() {
+  try {
+    const res = await fetch(API, { headers: { Accept: "application/json" } });
+    if (!res.ok) throw new Error("API HTTP " + res.status);
+    const raw = await res.json();
+    if (!Array.isArray(raw) || raw.length < 50) throw new Error(`réponse inattendue (${Array.isArray(raw) ? raw.length : typeof raw})`);
+    try { fs.writeFileSync(VILLE_CACHE, JSON.stringify(raw), "utf8"); } catch (_) {}
+    console.log(`  ${raw.length} événements reçus.`);
+    return { raw };
+  } catch (e) {
+    console.warn(`  ⚠ Agenda de la Ville indisponible (${e.message}).`);
+    if (fs.existsSync(VILLE_CACHE)) {
+      try {
+        const raw = JSON.parse(fs.readFileSync(VILLE_CACHE, "utf8"));
+        const quand = fs.statSync(VILLE_CACHE).mtime.toISOString().slice(0, 16).replace("T", " ");
+        console.warn(`    → dernière copie reçue le ${quand} UTC réutilisée (${raw.length} événements).`);
+        return { raw };
+      } catch (_) { /* copie illisible : on passe au data.js */ }
+    }
+    try {
+      const src = fs.readFileSync(path.join(__dirname, "data.js"), "utf8");
+      const mod = { exports: {} };
+      new Function("module", src + ";module.exports={CATEGORIES,EVENTS}")(mod);
+      const { CATEGORIES = {}, EVENTS = [] } = mod.exports;
+      const ville = EVENTS.filter(ev => !ev.source).map(({ fallbackImage, imageSource, ...ev }) => ({
+        ...ev,
+        image: ev.autoPoster ? null : (imageSource || ev.image),
+        autoPoster: undefined,
+        catLabel: (CATEGORIES[ev.category] || {}).label || ev.category,
+        catEmoji: (CATEGORIES[ev.category] || {}).emoji || "📌",
+      }));
+      console.warn(`    → ${ville.length} événements Ville repris du data.js actuel.`);
+      return { mapped: ville };
+    } catch (e2) {
+      throw new Error("API indisponible et aucune copie de secours : " + e2.message);
+    }
+  }
+}
+
 async function main() {
   console.log("→ Récupération de l'agenda officiel de Nancy…");
-  const res = await fetch(API, { headers: { Accept: "application/json" } });
-  if (!res.ok) throw new Error("API HTTP " + res.status);
-  const raw = await res.json();
-  console.log(`  ${raw.length} événements reçus.`);
+  const ville = await loadVilleRaw();
 
   const today = new Date();
   const todayISO = today.toISOString().slice(0, 10);
 
-  const events = raw
+  const events = ville.mapped
+    ? ville.mapped.filter(e => e.endDate >= todayISO || e.date >= todayISO).sort((a, b) => a.date.localeCompare(b.date))
+    : ville.raw
     .map(ev => {
       const cat = resolveCategory(ev.mainCategory);
       const when = pickWhen(ev, todayISO);

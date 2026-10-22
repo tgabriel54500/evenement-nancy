@@ -50,3 +50,6 @@ doublons-suspects.txt
 
 # Copies locales des affiches des sources (images-cache.js), régénérées à chaque mise à jour
 images/c/
+
+# Dernière réponse de l'API de la Ville (secours en cas de panne)
+events-ville-nancy-api.json

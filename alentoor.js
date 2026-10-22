@@ -191,15 +191,21 @@ async function fetchAllStubs({ cities, horizon, concurrency }) {
       jobs.push(`${ORIGIN}/${city}/agenda/${isoDate(d)}`);
     }
   }
-  let done = 0;
+  let done = 0, received = 0;
   for (let start = 0; start < jobs.length; start += concurrency) {
     const batch = jobs.slice(start, start + concurrency);
     const pages = await Promise.all(batch.map((u) => getText(u).catch(() => null)));
     for (const html of pages) {
       if (!html) continue;
+      received++;
       for (const [id, url] of parseListing(html)) if (!byId.has(id)) byId.set(id, url);
     }
     done += batch.length;
+    // Accès refusé (403) : inutile d'insister pendant 1 h 30 sur 1 100 pages
+    // (constaté le 2026-10-22). Après 30 pages sans aucune réponse, on abandonne.
+    if (done >= 30 && received === 0 && byId.size === 0) {
+      throw new Error(`Alentoor ne répond plus à ce Mac (${done} pages refusées d'affilée)`);
+    }
     process.stderr.write(`  listing : ${done}/${jobs.length} pages-date, ${byId.size} fiches uniques\n`);
   }
   return [...byId.entries()].map(([id, url]) => ({ id, url }));
@@ -361,6 +367,14 @@ async function main() {
     concurrency: a.concurrency ? Number(a.concurrency) : 3,
   });
   const out = a.out || path.join(__dirname, "events-alentoor.json");
+  // Garde-fou : une récolte vide ou effondrée (blocage, site modifié) ne doit
+  // pas effacer la précédente. Le 2026-10-21, un fichier vide a fait disparaître
+  // 227 événements du site.
+  let previous = 0;
+  try { previous = JSON.parse(fs.readFileSync(out, "utf8")).length || 0; } catch (_) {}
+  if (list.length === 0 || (previous >= 50 && list.length < previous * 0.3)) {
+    throw new Error(`récolte anormale (${list.length} événements contre ${previous} la dernière fois) : fichier précédent conservé`);
+  }
   fs.writeFileSync(out, JSON.stringify(list, null, 2), "utf8");
   process.stderr.write(`✓ écrit : ${out} (${list.length} événements)\n`);
 }
