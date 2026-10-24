@@ -8,8 +8,8 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-21",
-    "endDate": "2026-11-01",
+    "date": "2026-10-24",
+    "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
     "place": "Galerie Mme de Graffigny",
@@ -18,48 +18,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/260918_EXPO_JYM_FACTORY__c__Jym_Factory.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-jym-factory",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-285",
-    "title": "Les visites chocottes [COMPLET]",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-21",
-    "endDate": "2026-10-23",
-    "dateText": "",
-    "schedule": "17h30 - COMPLET",
-    "place": "Le château Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/chocottes.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/les-visites-chocottes",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-594",
-    "title": "Concert de Nicolas Jules",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-10-23",
-    "endDate": "2026-10-23",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "MJC Jean Savine",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261023_CONCERT_NICOLAS_JULES__c__Thibaut_Derien.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-nicolas-jules",
     "source": "villers-les-nancy"
   },
   {
@@ -123,27 +81,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261101_EXPO_AMICALE_VILLERS_CENTRE__c__Photo_generee_par_IA.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-lamicale-de-villers-centre",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-605",
-    "title": "Exposition - Delatte, l'éclat retrouvé",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-12-12",
-    "dateText": "",
-    "schedule": "",
-    "place": "Galerie Mme de Graffigny",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261106_EXPO_DELATTE.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-delatte-leclat-retrouve",
     "source": "villers-les-nancy"
   },
   {
@@ -378,6 +315,27 @@
     "source": "villers-les-nancy"
   },
   {
+    "uuid": "vln-131",
+    "title": "Réunion publique des référents de quartier de Clairlieu",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "MJC Jean Savine",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/reunionspubliques.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/reunion-publique-des-referents-de-quartier-de-clairlieu",
+    "source": "villers-les-nancy"
+  },
+  {
     "uuid": "vln-608",
     "title": "Concert de Barzingault",
     "category": "musique-classique",
@@ -417,6 +375,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/OK_1_MJC_Jean_Savine.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/repair-cafe",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-130",
+    "title": "Réunion publique des référents de quartier Placieux-Val",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "",
+    "schedule": "18h30",
+    "place": "Hôtel de Ville",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/user_upload/reunionspubliques.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/reunion-publique-des-referents-de-quartier-placieux-val",
     "source": "villers-les-nancy"
   },
   {
@@ -480,6 +459,49 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/cordeliers.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-du-choeur-des-cordeliers-de-saint-max",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-132",
+    "title": "Réunion publique des référents de quartier de village centre",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/reunionspubliques.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/reunion-publique-des-referents-de-quartier-de-village-centre",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-613",
+    "title": "Concert Solidaire : Le Chœur Gospel Mississippi s'mobilise pour l'hôpital de Brabois !",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Solidarité",
+      "Culture"
+    ],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/gospel.jpeg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-solidaire-le-choeur-gospel-mississippi-smobilise-pour-lhopital-de-brabois",
     "source": "villers-les-nancy"
   },
   {

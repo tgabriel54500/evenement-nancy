@@ -1067,7 +1067,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-10-21",
+    "date": "2026-10-24",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1077,25 +1077,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29365",
-    "title": "Visite libre – Nouvelle Aquitaine",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-10-21",
-    "endDate": "2026-10-21",
-    "dateText": "",
-    "schedule": "De 14h30 à 17h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/visite-libre-nouvelle-aquitaine/",
     "source": "vandoeuvre"
   },
   {
@@ -1155,27 +1136,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-de-depistage-du-diabete/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29587",
-    "title": "Théâtre-débat “Radicale”",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Santé"
-    ],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "18h",
-    "place": "ICL",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/theatre-debat-radicale/",
     "source": "vandoeuvre"
   },
   {
@@ -1570,25 +1530,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29497",
-    "title": "Seniors : Sortie au Marché de Noël de Trèves",
-    "category": "seniors",
-    "catLabel": "Seniors",
-    "catEmoji": "👵",
-    "subcats": [],
-    "date": "2026-12-15",
-    "endDate": "2026-12-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2026/07/chevalier-fleurs.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/seniors-sortie-au-marche-de-noel-de-treves/",
     "source": "vandoeuvre"
   },
   {

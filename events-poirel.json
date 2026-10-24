@@ -1,47 +1,5 @@
 [
   {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-10-21",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-864ab928-eade-11f0-bdc5-a765d39e7aeb",
-    "title": "Akim Omiri - Spectacle",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Humour"
-    ],
-    "date": "2026-10-22",
-    "endDate": "2026-10-22",
-    "dateText": "Jeudi 22 octobre 2026",
-    "schedule": "de 20h à 22h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/864ab928-eade-11f0-bdc5-a765d39e7aeb/0/ORIGINE_M_695ccfce94a82.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=864ab928-eade-11f0-bdc5-a765d39e7aeb",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-76d4d0b4-c260-11f1-afbf-ff67d1befbe5",
     "title": "Chevreuil  (rock expérimental) + Tony Geranno (chanson foutue)",
     "category": "musiques-actuelles",
@@ -60,6 +18,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/76d4d0b4-c260-11f1-afbf-ff67d1befbe5/0/ORIGINE_M_6ac65f9b407ae.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=76d4d0b4-c260-11f1-afbf-ff67d1befbe5",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-10-24",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {
@@ -280,27 +259,6 @@
     "source": "poirel"
   },
   {
-    "uuid": "po-28b4dd72-804b-11f1-8b3e-7f3f616f0d34",
-    "title": "ICI…OU LÀ (AUTOUR DES CARTES) - Cie la Machoire 36",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre"
-    ],
-    "date": "2026-11-12",
-    "endDate": "2026-11-12",
-    "dateText": "Le 12 novembre 2026 et le 28 janvier 2027",
-    "schedule": "",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/28b4dd72-804b-11f1-8b3e-7f3f616f0d34/0/1-1_M_6a5781a454a61.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=28b4dd72-804b-11f1-8b3e-7f3f616f0d34",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-b8243926-43d8-11f1-8656-7338c7a24b73",
     "title": "Camille Chamoux",
     "category": "spectacle",
@@ -430,6 +388,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/116eefb4-7b9a-11f1-bd64-f38bd498ae60/0/ORIGINE_M_6a4fa1fb60f52.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=116eefb4-7b9a-11f1-bd64-f38bd498ae60",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-8dff7132-cd5e-11f1-aadf-99272785c7d0",
+    "title": "Être vivant·es. Le vivant et la jeune création",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-12-03",
+    "endDate": "2027-05-09",
+    "dateText": "Du 3 décembre 2026 au 9 mai 2027",
+    "schedule": "de 14h à 18h",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8dff7132-cd5e-11f1-aadf-99272785c7d0/0/1-1_M_6ad8d39a17f81.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8dff7132-cd5e-11f1-aadf-99272785c7d0",
     "source": "poirel"
   },
   {
@@ -644,6 +623,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/cfb19798-4ddb-11f1-b478-9d28cea11105/0/ORIGINE_M_6a02e36e5d182.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=cfb19798-4ddb-11f1-b478-9d28cea11105",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-28b4dd72-804b-11f1-8b3e-7f3f616f0d34",
+    "title": "ICI…OU LÀ (AUTOUR DES CARTES) - Cie la Machoire 36",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre"
+    ],
+    "date": "2027-01-28",
+    "endDate": "2027-01-28",
+    "dateText": "Le 12 novembre 2026 et le 28 janvier 2027",
+    "schedule": "",
+    "place": "Théâtre de Mon désert",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/28b4dd72-804b-11f1-8b3e-7f3f616f0d34/0/1-1_M_6a5781a454a61.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=28b4dd72-804b-11f1-8b3e-7f3f616f0d34",
     "source": "poirel"
   },
   {
