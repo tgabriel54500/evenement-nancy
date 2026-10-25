@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-76d4d0b4-c260-11f1-afbf-ff67d1befbe5",
-    "title": "Chevreuil  (rock expérimental) + Tony Geranno (chanson foutue)",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "Samedi 24 octobre 2026",
-    "schedule": "de 20h à 00h",
-    "place": "Théâtre de Mon désert",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/76d4d0b4-c260-11f1-afbf-ff67d1befbe5/0/ORIGINE_M_6ac65f9b407ae.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=76d4d0b4-c260-11f1-afbf-ff67d1befbe5",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "title": "Présents - La Conserverie, un lieu d'archives",
     "category": "exposition",
@@ -29,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-24",
+    "date": "2026-10-25",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -172,27 +151,6 @@
     "source": "poirel"
   },
   {
-    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
-    "title": "Voyage en Italie",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "Le 08 novembre à 16h30",
-    "schedule": "",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
     "title": "Voyage en Italie",
     "category": "musique-classique",
@@ -213,6 +171,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4a9fe612-c942-11f1-b2a4-3b8ca9c8a400/0/ORIGINE_M_6ad1eb764fa00.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "title": "Voyage en Italie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "Le 08 novembre à 16h30",
+    "schedule": "",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
     "source": "poirel"
   },
   {

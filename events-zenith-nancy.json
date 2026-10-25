@@ -21,27 +21,6 @@
     "source": "zenith-nancy"
   },
   {
-    "uuid": "zen-patrick-bruel",
-    "title": "Patrick Bruel",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "Samedi 24 octobre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2023/11/PATRICK-BRUEL-CHAMBERY-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/patrick-bruel/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-legendary-rock-voices",
     "title": "Legendary Rock Voices",
     "category": "spectacle",
