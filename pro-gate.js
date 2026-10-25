@@ -46,6 +46,7 @@ window.PRO_PREVIEW = {
   async function check() {
     if (P.open) return reveal();
     try {
+      if (window.supabaseReady) await window.supabaseReady;   // chargement différé (supabase-loader.js)
       if (!window.supabase || !window.SUPABASE_URL || /TON-PROJET/.test(window.SUPABASE_URL)) return;
       const c = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
       const s = (await c.auth.getSession()).data.session;

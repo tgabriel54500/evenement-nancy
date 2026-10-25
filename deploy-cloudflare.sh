@@ -45,7 +45,7 @@ mkdir -p "$DIST"
 # figure dans la nav. À ne pas confondre avec le chantier « sport amateur »
 # (publication par les clubs via Supabase), toujours en pause : sport.js, lui,
 # n'est pas publié.
-FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js pro.html data-pro.js pro-categories.js pro-gate.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
+FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js pro.html data-pro.js pro-categories.js pro-gate.js supabase-loader.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
@@ -138,7 +138,7 @@ for page in index.html nouveautes.html sport.html pro.html compte.html mentions-
     const [p, v] = process.argv.slice(1);
     let h = fs.readFileSync(p, "utf8");
     // (\?[^"]*)? : remplace aussi un éventuel ?v=… déjà présent dans les sources.
-    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js|data-sport\.js|data-pro\.js|pro-categories\.js|pro-gate\.js|compte\.js|compte\.css|user-events\.js|config-supabase\.js)(\?[^"]*)?"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
+    h = h.replace(/(href|src)="(style\.css|events-core\.js|galerie\.js|data\.js|data-sport\.js|data-pro\.js|pro-categories\.js|pro-gate\.js|compte\.js|compte\.css|user-events\.js|config-supabase\.js|supabase-loader\.js)(\?[^"]*)?"/g, (m, a, f) => `${a}="${f}?v=${v}"`);
     fs.writeFileSync(p, h);
   ' "$DIST/$page" "$VER"
 done

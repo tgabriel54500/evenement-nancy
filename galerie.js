@@ -673,10 +673,6 @@ function renderNouveautes() {
     ? "Aucun favori parmi les nouveautés. Cliquez sur le ♥ d'une affiche pour l'ajouter ici."
     : "Aucune nouveauté ces 3 derniers jours pour le moment. Revenez bientôt : de nouveaux événements sont ajoutés régulièrement !";
   els.count.textContent = visible.length ? `${visible.length} nouveauté${visible.length > 1 ? "s" : ""}` : "";
-  els.gallery.querySelectorAll(".poster").forEach(btn =>
-    btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
-  els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
-    btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(visible[Number(btn.dataset.i)], btn); }));
 }
 
 // Séries étalées (normalize.js : une fiche par jour pour les événements de 2 à 4
@@ -699,15 +695,67 @@ function regrouperSeries(list) {
   return out;
 }
 
-function render() {
+// Clics sur les affiches et les cœurs : un seul écouteur sur la galerie (les
+// affiches sont ajoutées au fil du défilement, cf. render()).
+els.gallery.addEventListener("click", (e) => {
+  const fav = e.target.closest(".fav-btn");
+  if (fav && els.gallery.contains(fav)) { e.stopPropagation(); onToggleFav(visible[Number(fav.dataset.i)], fav); return; }
+  const tile = e.target.closest(".poster");
+  if (tile && els.gallery.contains(tile)) openLightbox(visible[Number(tile.dataset.i)]);
+});
+
+// Affichage progressif (2026-10-25) : construire d'un coup ~1 000 affiches
+// bloquait le téléphone plusieurs secondes au chargement. On pose les premières
+// tout de suite, puis les suivantes par paquets quand on approche du bas.
+const PREMIER_PAQUET = 36, PAQUET = 60;
+let rendered = 0, firstMultiIdx = -1;
+const sentinel = document.createElement("div");
+sentinel.className = "gallery-sentinel";
+sentinel.setAttribute("aria-hidden", "true");
+els.gallery.after(sentinel);
+function tilesRange(from, to) {
+  let h = "";
+  for (let i = from; i < to; i++) {
+    if (i === firstMultiIdx) h += `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${visible.length - firstMultiIdx}</span></h2>`;
+    h += tileHTML(visible[i], i);
+  }
+  return h;
+}
+function renderMore() {
+  if (NOUVEAUTES || rendered >= visible.length) return;
+  const to = Math.min(visible.length, rendered + PAQUET);
+  els.gallery.insertAdjacentHTML("beforeend", tilesRange(rendered, to));
+  rendered = to;
+  requestAnimationFrame(fillIfNeeded);
+}
+// L'observateur ne prévient qu'aux changements : si le repère reste dans la zone
+// après un paquet (grand écran, défilement rapide), on enchaîne le suivant.
+function fillIfNeeded() {
+  if (sentinel.getBoundingClientRect().top < window.innerHeight + 1600) renderMore();
+}
+if ("IntersectionObserver" in window) {
+  new IntersectionObserver((entries) => {
+    if (entries.some((en) => en.isIntersecting)) renderMore();
+  }, { rootMargin: "1600px 0px" }).observe(sentinel);
+}
+
+function render(garderAffiches) {
   if (NOUVEAUTES) return renderNouveautes();
+  const dejaAffichees = rendered;
   visible = regrouperSeries(sortedEvents.filter(matches));
   // Titre de bascule mono-jour → multi-jours (1er multi-jours de la liste triée).
   // Une série regroupée (_serie) reste à sa place parmi les mono-jour.
-  const firstMulti = visible.findIndex(ev => isMulti(ev) && !ev._serie);
-  els.gallery.innerHTML = visible.map((ev, i) =>
-    (i === firstMulti ? `<h2 class="nouv-group">📆 Sur plusieurs jours<span>${visible.length - firstMulti}</span></h2>` : "")
-    + tileHTML(ev, i)).join("");
+  firstMultiIdx = visible.findIndex(ev => isMulti(ev) && !ev._serie);
+  // Sans IntersectionObserver (très vieux navigateurs) : tout, comme avant.
+  // garderAffiches : mise à jour des données sans action du visiteur (événements
+  // des organisateurs) ; on garde autant d'affiches qu'avant pour que la page ne
+  // saute pas sous son doigt.
+  const cible = garderAffiches ? Math.max(PREMIER_PAQUET, dejaAffichees) : PREMIER_PAQUET;
+  rendered = "IntersectionObserver" in window ? Math.min(visible.length, cible) : visible.length;
+  els.gallery.innerHTML = tilesRange(0, rendered);
+  // Le repère du bas peut être déjà visible (écran haut, peu d'affiches) :
+  // l'observateur ne se redéclenche pas tout seul, on complète au prochain tour.
+  requestAnimationFrame(fillIfNeeded);
   els.empty.hidden = visible.length > 0;
   if (visible.length === 0) {
     els.empty.textContent = state.favOnly
@@ -717,10 +765,6 @@ function render() {
   els.count.textContent = visible.length ? `${visible.length} affiche${visible.length > 1 ? "s" : ""}` : "";
   updateFilterCounts();
   syncBar();
-  els.gallery.querySelectorAll(".poster").forEach(btn =>
-    btn.addEventListener("click", () => openLightbox(visible[Number(btn.dataset.i)])));
-  els.gallery.querySelectorAll(".fav-btn").forEach(btn =>
-    btn.addEventListener("click", (e) => { e.stopPropagation(); onToggleFav(visible[Number(btn.dataset.i)], btn); }));
 }
 
 // ---------- Favoris : compteur (le bouton vit dans la barre d'outils) ----------
@@ -1024,6 +1068,6 @@ if (window.loadApprovedUserEvents) {
     if (!extra || !extra.length) return;
     sortedEvents = buildSorted(extra);
     if (!NOUVEAUTES) { buildSelections(); buildFilters(); }   // recalcule les compteurs
-    render();
+    render(true);
   });
 }

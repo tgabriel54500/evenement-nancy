@@ -29,10 +29,10 @@
   <link rel="stylesheet" href="style.css?v=da3">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap"></noscript>
   <!-- Sets Grotesk (titres) : projet web Adobe Fonts « agenda-grandnancy ». -->
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-  <link rel="stylesheet" href="https://use.typekit.net/vvq4moz.css">
+  <link rel="preload" as="style" href="https://use.typekit.net/vvq4moz.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://use.typekit.net/vvq4moz.css"></noscript>
 </head>
 <body>
   <header class="hero">
@@ -111,6 +111,7 @@
       // (Client Supabase chargé plus bas → on attend le chargement complet.)
       window.addEventListener("load", async function () {
         try {
+          if (window.supabaseReady) await window.supabaseReady;
           if (!window.supabase || !window.SUPABASE_URL || /TON-PROJET/.test(window.SUPABASE_URL)) return;
           var c = window.supabase.createClient(window.SUPABASE_URL, window.SUPABASE_ANON_KEY);
           var s = (await c.auth.getSession()).data.session;
@@ -130,7 +131,7 @@
 
   <script src="data.js"></script>
   <script src="events-core.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="supabase-loader.js"></script>
   <script src="config-supabase.js"></script>
   <script src="user-events.js"></script>
   <script src="galerie.js"></script>

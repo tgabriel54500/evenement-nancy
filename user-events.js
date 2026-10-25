@@ -47,6 +47,7 @@
 
   // Renvoie les events approuvés (kind 'event' par défaut) prêts à fusionner.
   window.loadApprovedUserEvents = async function (kind = "event") {
+    if (window.supabaseReady) await window.supabaseReady;   // chargement différé (supabase-loader.js)
     const c = client();
     if (!c) return [];
     try {

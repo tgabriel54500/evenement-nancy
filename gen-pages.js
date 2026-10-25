@@ -326,8 +326,8 @@ function render(ev, fiche, related, relatedTitle) {
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://use.typekit.net" crossorigin>
-  <link rel="stylesheet" href="https://use.typekit.net/vvq4moz.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://use.typekit.net/vvq4moz.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://use.typekit.net/vvq4moz.css"></noscript>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap"></noscript>
   <meta name="theme-color" content="#121212">
   <script>if(window.top!==window.self)document.documentElement.className+=" embedded";</script>
   <link rel="stylesheet" href="/evenement.css?v=${VER}">
