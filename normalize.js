@@ -374,12 +374,19 @@ function mergeCluster(cluster) {
 // « Halloween » ou « bergamote », partagés par plusieurs sorties, ne comptent
 // pas). Il faut 2 mots rares communs, ou 1 seul de 6 lettres au moins quand le
 // titre le plus court n'a pas plus de 2 mots distinctifs.
+// Mots de saison ou de circonstance, partagés par des sorties sans rapport le
+// même jour (« Halloween », « gratuite », « annulé ») : jamais « rares ».
+const MOTS_DE_SAISON = new Set(("halloween noel nicola saint paque carnaval ete hiver automne printemps " +
+  "fete gratuit gratuite entree libre annule complet reporte special speciale nocturne decouverte " +
+  "initiation ouverture inauguration vacance toussaint party soiree night live show").split(" "));
 const motsCache = new WeakMap();
 const motsDe = (e) => {
   if (!motsCache.has(e)) motsCache.set(e, [...sigTokens(e.title)].map(racine)
-    .filter((w) => w.length >= 4 && !MOTS_GENERIQUES.has(w) && !/^\d+$/.test(w)));
+    .filter((w) => w.length >= 4 && !MOTS_GENERIQUES.has(w) && !MOTS_DE_SAISON.has(w) && !/^\d+$/.test(w)));
   return motsCache.get(e);
 };
+const assezCourte = (e) => !e.endDate || e.endDate <= e.date ||
+  (Date.parse(e.endDate) - Date.parse(e.date)) / DAY_MS <= 14;
 function motRare(events) {
   // Un événement de plusieurs jours compte aussi les jours suivants : on regarde
   // tout ce qui est en cours ce jour-là dans la commune.
@@ -390,7 +397,9 @@ function motRare(events) {
     if ((x.source || "ville-de-nancy") === (e.source || "ville-de-nancy")) return false;
     // Deux sorties courtes : les longues séries ont toutes pour date de début
     // « aujourd'hui » (événements en cours), ce qui ne prouve rien.
-    if (!x.date || x.date !== e.date || !courte(x) || !courte(e)) return false;
+    // (jusqu'à 14 jours : une série de représentations, « Candide » du 15 au 22,
+    // reste comparable ; les saisons entières non.)
+    if (!x.date || x.date !== e.date || !assezCourte(x) || !assezCourte(e)) return false;
     const city = slugKey(x.city);
     if (!city || city !== slugKey(e.city)) return false;
     const hx = heureDebut(x), he = heureDebut(e);
@@ -399,11 +408,27 @@ function motRare(events) {
     const communs = mx.filter((w) => me.some((v) => presque(w, v)));
     if (!communs.length) return false;
     const court = mx.length <= me.length ? mx : me;
-    if (!(communs.length >= 2 || (communs.length === 1 && communs[0].length >= 6 && court.length <= 2))) return false;
+    // Un seul mot commun : 6 lettres au moins et un titre court d'au plus 2 mots
+    // distinctifs ; un mot de 5 lettres (« Rosies », « années ») seulement si
+    // les DEUX titres sont courts (« Murder party » ≠ « Road to Invasion :
+    // Halloween Party • L'Autre Canal »).
+    const long_ = mx.length <= me.length ? me : mx;
+    const seul = communs.length === 1 && court.length <= 2 &&
+      (communs[0].length >= 6 || (communs[0].length === 5 && long_.length <= 3));
+    if (!(communs.length >= 2 || seul)) return false;
     const k = `${x.date}|${city}`;
     if (!memo.has(k)) memo.set(k, actifs(x.date));
-    return memo.get(k).every((o) => o === x || o === e ||
-      !communs.some((w) => motsDe(o).some((v) => presque(w, v))));
+    const sx = x.source || "ville-de-nancy", se = e.source || "ville-de-nancy";
+    // Une 3e sortie du jour qui porte ces mots bloque la fusion si elle vient
+    // d'une des deux mêmes sources : la source publie alors plusieurs sorties
+    // distinctes avec ces mots (« Saint-Nicolas », « bergamote »). Une 3e source
+    // qui porte les mêmes mots est le plus souvent un 3e doublon.
+    return memo.get(k).every((o) => {
+      if (o === x || o === e) return true;
+      if (!communs.some((w) => motsDe(o).some((v) => presque(w, v)))) return true;
+      const so = o.source || "ville-de-nancy";
+      return so !== sx && so !== se;
+    });
   };
 }
 

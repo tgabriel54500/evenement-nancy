@@ -44,4 +44,12 @@ test("heures différentes = deux séances", () => {
 test("une lettre changée n'est pas une coquille (centre / contre)", () => {
   assert.strictEqual(cleanupMerged([ev({ title: "Visite guidée du centre", source: "alentoor" }), ev({ title: "Atelier contre le patriarcat", source: "curieux-net" })]).length, 2);
 });
+test("revue du 29/10 : Candide et 5 Rosies fusionnés, pas Murder party ni les entrées gratuites", () => {
+  assert.strictEqual(cleanupMerged([ev({ title: "Candide de Bernstein", endDate: "2030-10-26", schedule: "20h", source: "ville-de-nancy" }), ev({ title: "Opéra - Candide", source: "destination-nancy" })]).length, 1);
+  assert.strictEqual(cleanupMerged([ev({ title: "THE 5 ROSIES - TRIBUTE TO AC/DC", source: "curieux-net" }), ev({ title: "The 5 Rosies • Chaudeau", source: "facebook" })]).length, 1);
+  assert.strictEqual(cleanupMerged([ev({ title: "Murder party", source: "destination-nancy" }), ev({ title: "Road To Invasion : Halloween Party • L'Autre Canal Nancy", source: "facebook" })]).length, 2);
+  assert.strictEqual(cleanupMerged([ev({ title: "Entrée gratuite dans les musées", source: "ville-de-nancy" }), ev({ title: "Visites gratuites de la Cathédrale", source: "destination-nancy" })]).length, 2);
+  // Plusieurs « Saint-Nicolas » publiés par la même source le même jour : rien ne fusionne.
+  assert.strictEqual(cleanupMerged([ev({ title: "Les légendes de Saint Nicolas", source: "ville-de-nancy" }), ev({ title: "Saint-Nicolas dans les quartiers : le génie de la grande horloge", source: "ville-de-nancy" }), ev({ title: "Lecture - Fêtes de Saint Nicolas - Conte", source: "destination-nancy" })]).length, 3);
+});
 console.log(process.exitCode ? "ÉCHEC" : `OK (${n} tests)`);
