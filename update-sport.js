@@ -243,7 +243,11 @@ function main() {
     if (m.opponent) parAdversaire.set(`${m.club}|${norm(m.opponent)}`, k);
   }
   for (const m of manuel) {
-    const kAdv = m.opponent ? parAdversaire.get(`${m.club}|${norm(m.opponent)}`) : null;
+    // Rapprochement par adversaire seulement dans la même compétition : la
+    // Supercoupe contre Mulhouse (11/11) n'est pas le match de championnat
+    // contre Mulhouse (30/12), constaté le 2026-10-29.
+    let kAdv = m.opponent ? parAdversaire.get(`${m.club}|${norm(m.opponent)}`) : null;
+    if (kAdv && m.competition && norm(m.competition) !== norm((byIdent.get(kAdv) || {}).competition || "")) kAdv = null;
     const cle = kAdv || `${m.club}|${m.date}`;
     const base = byIdent.get(cle);
     if (!base) {

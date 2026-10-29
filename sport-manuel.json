@@ -1,1 +1,19 @@
-[]
+[
+  {
+    "id": "vnvb-supercoupe-2026",
+    "club": "vnvb",
+    "sport": "volley",
+    "date": "2026-11-11",
+    "time": "18h00",
+    "opponent": "Volley Mulhouse Alsace",
+    "competition": "SuperCoupe de France",
+    "round": "Finale féminine",
+    "place": "Palais des Sports Jean-Weille",
+    "city": "Nancy",
+    "url": "https://www.vnvb.fr/",
+    "tickets": "https://billetterie.sluc-basket.fr/",
+    "calendar": "https://www.vnvb.fr/",
+    "note": "Ouverture des portes à 12h30. Finale masculine Montpellier - Paris à 14h, même salle. Billets de 5 à 20 € (pass deux finales de 9 à 30 €).",
+    "source": "saisie manuelle (info-lux.com, organisation VNVB)"
+  }
+]
