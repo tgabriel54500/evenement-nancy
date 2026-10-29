@@ -201,6 +201,7 @@ async function fetchAllStubs({ cities, horizon, concurrency }) {
       for (const [id, url] of parseListing(html)) if (!byId.has(id)) byId.set(id, url);
     }
     done += batch.length;
+    await sleep(700);   // politesse : ~10 min pour le balayage hebdomadaire
     // Accès refusé (403) : inutile d'insister pendant 1 h 30 sur 1 100 pages
     // (constaté le 2026-10-22). Après 30 pages sans aucune réponse, on abandonne.
     if (done >= 30 && received === 0 && byId.size === 0) {
@@ -331,12 +332,20 @@ async function mapPool(items, worker, concurrency) {
 // Concurrence ramenée de 8 à 3 (2026-10-18) : Alentoor refuse désormais les
 // pages au navigateur depuis la connexion du Mac (403 « administrative rules »),
 // probablement à cause du volume quotidien (≈1 100 pages-date + ≈300 fiches).
-async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max = null, concurrency = 3 } = {}) {
+async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max = null, concurrency = 3, previous = [] } = {}) {
   process.stderr.write(`→ Alentoor : balayage de ${cities.length} communes sur ${horizon} jours…\n`);
   let stubs = await fetchAllStubs({ cities, horizon, concurrency });
   if (max) stubs = stubs.slice(0, max);
-  process.stderr.write(`→ ${stubs.length} fiches à lire (concurrence ${concurrency})…\n`);
-  const events = (await mapPool(stubs, fetchDetail, concurrency)).filter(Boolean);
+  // Fiches déjà lues depuis moins de 4 semaines : on les reprend telles quelles
+  // au lieu de les redemander (allègement du 2026-10-29, cf. main()).
+  const today = new Date().toISOString().slice(0, 10);
+  const recent = new Date(Date.now() - 28 * 86400000).toISOString().slice(0, 10);
+  const known = new Map(previous.filter((e) => e && e.uuid && (e.fetchedAt || "") >= recent).map((e) => [e.uuid, e]));
+  const toRead = stubs.filter((st) => !known.has("al-" + st.id));
+  process.stderr.write(`→ ${stubs.length} fiches : ${stubs.length - toRead.length} déjà connues, ${toRead.length} à lire (concurrence ${concurrency})…\n`);
+  const fresh = (await mapPool(toRead, fetchDetail, concurrency)).filter(Boolean).map((e) => ({ ...e, fetchedAt: today }));
+  const reused = stubs.map((st) => known.get("al-" + st.id)).filter(Boolean).map(rafraichirDate);
+  const events = [...fresh, ...reused];
 
   const byId = new Map();
   for (const e of events) if (!byId.has(e.uuid)) byId.set(e.uuid, e);
@@ -346,6 +355,13 @@ async function collect({ cities = DEFAULT_CITIES, horizon = DEFAULT_HORIZON, max
     process.stderr.write(`  écartées : ${DIAG.noLd} sans JSON-LD Event, ${DIAG.noDate} sans date, erreurs ${JSON.stringify(DIAG.errors)}${DIAG.sample ? `, exemple de page reçue : « ${DIAG.sample} »` : ""}\n`);
   }
   return list;
+}
+
+// Date de tri d'une fiche reprise : « aujourd'hui » si elle est en cours.
+function rafraichirDate(e) {
+  const today = new Date().toISOString().slice(0, 10);
+  const end = e.endDate || e.date;
+  return e.date < today && end >= today ? { ...e, date: today } : e;
 }
 
 // ── CLI ─────────────────────────────────────────────────────────────────────
@@ -358,9 +374,45 @@ function parseArgs(argv) {
   return o;
 }
 
+// Allègement (2026-10-29) : Alentoor a bloqué le Mac pendant plusieurs jours
+// (≈ 1 400 pages lues chaque nuit). On ne balaie plus leur agenda qu'une fois
+// par semaine, avec une pause entre les paquets, et on ne lit que les fiches
+// nouvelles. Les autres nuits, aucune requête : on reprend la dernière récolte
+// (dates « en cours » remises à jour, événements passés retirés).
+const INTERVALLE_JOURS = 6.5;
+function relireSansReseau(out) {
+  const today = new Date().toISOString().slice(0, 10);
+  const prev = JSON.parse(fs.readFileSync(out, "utf8"));
+  const list = prev.filter((e) => (e.endDate || e.date) >= today).map(rafraichirDate)
+    .sort((x, y) => x.date.localeCompare(y.date));
+  fs.writeFileSync(out, JSON.stringify(list, null, 2), "utf8");
+  return list.length;
+}
+
 async function main() {
   const a = parseArgs(process.argv.slice(2));
+  const outPath = a.out || path.join(__dirname, "events-alentoor.json");
+  let previous = [];
+  let ageJours = Infinity;
+  try {
+    previous = JSON.parse(fs.readFileSync(outPath, "utf8")) || [];
+    // Date de la dernière VRAIE collecte : dans .alentoor-derniere-collecte (les
+    // nuits sans requête réécrivent events-alentoor.json, sa date ne compte pas).
+    const stamp = path.join(__dirname, ".alentoor-derniere-collecte");
+    if (!fs.existsSync(stamp)) {
+      const t = fs.statSync(outPath).mtime;
+      fs.writeFileSync(stamp, t.toISOString() + "\n");
+      fs.utimesSync(stamp, t, t);
+    }
+    ageJours = (Date.now() - fs.statSync(stamp).mtimeMs) / 86400000;
+  } catch (_) { /* première collecte */ }
+  if (!a.force && previous.length && ageJours < INTERVALLE_JOURS) {
+    const n = relireSansReseau(outPath);
+    process.stderr.write(`✓ Alentoor : collecte hebdomadaire (dernière il y a ${ageJours.toFixed(1)} j) : ${n} événements repris sans requête. Forcer : node alentoor.js --force\n`);
+    return;
+  }
   const list = await collect({
+    previous,
     cities: a.cities ? String(a.cities).split(",").map((s) => s.trim()).filter(Boolean) : DEFAULT_CITIES,
     horizon: a.horizon ? Number(a.horizon) : DEFAULT_HORIZON,
     max: a.max ? Number(a.max) : null,
@@ -370,12 +422,12 @@ async function main() {
   // Garde-fou : une récolte vide ou effondrée (blocage, site modifié) ne doit
   // pas effacer la précédente. Le 2026-10-21, un fichier vide a fait disparaître
   // 227 événements du site.
-  let previous = 0;
-  try { previous = JSON.parse(fs.readFileSync(out, "utf8")).length || 0; } catch (_) {}
-  if (list.length === 0 || (previous >= 50 && list.length < previous * 0.3)) {
-    throw new Error(`récolte anormale (${list.length} événements contre ${previous} la dernière fois) : fichier précédent conservé`);
+  const avant = previous.length;
+  if (list.length === 0 || (avant >= 50 && list.length < avant * 0.3)) {
+    throw new Error(`récolte anormale (${list.length} événements contre ${avant} la dernière fois) : fichier précédent conservé`);
   }
   fs.writeFileSync(out, JSON.stringify(list, null, 2), "utf8");
+  try { fs.writeFileSync(path.join(__dirname, ".alentoor-derniere-collecte"), new Date().toISOString() + "\n"); } catch (_) {}
   process.stderr.write(`✓ écrit : ${out} (${list.length} événements)\n`);
 }
 
