@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-42171",
-    "title": "Foire d'Automne à Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-10-29",
-    "endDate": "2026-11-15",
-    "dateText": "Du 22 octobre au 15 novembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42171_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42171/foire-d-automne-a-nancy/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42230",
     "title": "Salon du vin et de la gastronomie Houdemont",
     "category": "festival",
@@ -57,6 +38,25 @@
     "source": "lorraineaucoeur"
   },
   {
+    "uuid": "lac-42263",
+    "title": "Marché de Noël des Créateurs Saint-Max Créas",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [],
+    "date": "2026-10-31",
+    "endDate": "2026-11-01",
+    "dateText": "Du 31 octobre au 1 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Saint-Max",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42263_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42263/marche-de-noel-des-createurs-saint-max-creas/meurthe-et-moselle-saint-max/marche-artisanal-et-terroir",
+    "source": "lorraineaucoeur"
+  },
+  {
     "uuid": "lac-42208",
     "title": "Salon Bien-Etre et Legendes de Lorraine à Laxou",
     "category": "festival",
@@ -73,25 +73,6 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42208_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42208/salon-bien-etre-et-legendes-de-lorraine-a-laxou/meurthe-et-moselle-laxou/foire-salon",
-    "source": "lorraineaucoeur"
-  },
-  {
-    "uuid": "lac-42172",
-    "title": "Théâtre-débat \"Radicale\" cancers masculins à Vandoeuvre",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandoeuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42172_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42172/theatre-debat-radicale-cancers-masculins-a-vandoeuvre/meurthe-et-moselle-vandoeuvre-les-nancy/theatre",
     "source": "lorraineaucoeur"
   },
   {
