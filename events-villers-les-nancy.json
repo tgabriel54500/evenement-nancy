@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-10-30",
+    "date": "2026-10-31",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -326,8 +326,8 @@
     "date": "2026-11-25",
     "endDate": "2027-06-30",
     "dateText": "",
-    "schedule": "18h30 à 21h",
-    "place": "MJC Jean Savine",
+    "schedule": "17h > 19h",
+    "place": "",
     "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": false,
@@ -442,7 +442,7 @@
   },
   {
     "uuid": "vln-613",
-    "title": "Concert Solidaire : Le Chœur Gospel Mississippi s'mobilise pour l'hôpital de Brabois !",
+    "title": "Concert solidaire - Chœur Gospel Mississippi",
     "category": "musique-classique",
     "catLabel": "Musique classique",
     "catEmoji": "🎻",

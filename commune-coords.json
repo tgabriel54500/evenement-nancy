@@ -1953,5 +1953,10 @@
   "lat": 48.600511,
   "lon": 5.667623,
   "city": "Vaucouleurs"
+ },
+ "floremont": {
+  "lat": 48.366088,
+  "lon": 6.259097,
+  "city": "Florémont"
  }
 }

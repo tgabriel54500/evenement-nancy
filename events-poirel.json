@@ -1,48 +1,5 @@
 [
   {
-    "uuid": "po-e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb",
-    "title": "David Sun - Titi",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle",
-      "Humour"
-    ],
-    "date": "2026-10-30",
-    "endDate": "2026-10-30",
-    "dateText": "Vendredi 30 octobre 2026",
-    "schedule": "de 20h à 21h20",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb/0/ORIGINE_M_691c3a796e01d.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=e3ed8ce0-c45f-11f0-9fc1-47d50c9f7dcb",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-10-30",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-56a70f60-da8e-11f0-af97-71111171b359",
     "title": "Louis Cattelat",
     "category": "spectacle",
@@ -61,6 +18,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/56a70f60-da8e-11f0-af97-71111171b359/0/ORIGINE_M_6960da36839fc.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=56a70f60-da8e-11f0-af97-71111171b359",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-10-31",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {
@@ -151,6 +129,27 @@
     "source": "poirel"
   },
   {
+    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "title": "Voyage en Italie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Concert"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "Le 08 novembre à 16h30",
+    "schedule": "",
+    "place": "Salle Poirel",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
+    "source": "poirel"
+  },
+  {
     "uuid": "po-4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
     "title": "Voyage en Italie",
     "category": "musique-classique",
@@ -171,27 +170,6 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4a9fe612-c942-11f1-b2a4-3b8ca9c8a400/0/ORIGINE_M_6ad1eb764fa00.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
-    "title": "Voyage en Italie",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "Le 08 novembre à 16h30",
-    "schedule": "",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/27f89e3c-c79f-11f1-933d-f54b3edbb378/0/1-1_M_6acf2c8f47519.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=27f89e3c-c79f-11f1-933d-f54b3edbb378",
     "source": "poirel"
   },
   {

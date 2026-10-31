@@ -1,49 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-24",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-10-30",
-    "endDate": "2026-10-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal6.jpg?itok=qEcfbcxV",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-24",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-ensemble-julien-m-dit",
-    "title": "Ensemble !!!",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Reggae"
-    ],
-    "date": "2026-10-30",
-    "endDate": "2026-10-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/638-illustration_id-1763483095.jpg%3Fitok%3DWVClqJ7F?itok=DBIbU9Z3",
-    "url": "https://lautrecanalnancy.fr/agenda/ensemble-julien-m-dit",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-road-invasion-halloween-edition",
     "title": "Road to Invasion : Halloween Edition",
     "category": "musiques-actuelles",
@@ -2304,6 +2260,28 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/787-field_illustration_id-1789048060.jpg%3Fitok%3DG7hvRVsn?itok=BIUDTu8v",
     "url": "https://lautrecanalnancy.fr/agenda/groundation-tribute-bob-marley",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-justeniels",
+    "title": "Justeniels",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Chanson"
+    ],
+    "date": "2027-05-15",
+    "endDate": "2027-05-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/813-field_illustration_id-1793127143.png%3Fitok%3DO3HL4J-m?itok=Vb4rvDvP",
+    "url": "https://lautrecanalnancy.fr/agenda/justeniels",
     "source": "autre-canal"
   },
   {
