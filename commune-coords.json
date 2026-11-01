@@ -1958,5 +1958,15 @@
   "lat": 48.366088,
   "lon": 6.259097,
   "city": "Florémont"
+ },
+ "mazirot": {
+  "lat": 48.321661,
+  "lon": 6.146361,
+  "city": "Mazirot"
+ },
+ "vandieres": {
+  "lat": 48.953251,
+  "lon": 6.0319,
+  "city": "Vandières"
  }
 }

@@ -1,27 +1,5 @@
 [
   {
-    "uuid": "lcn-road-invasion-halloween-edition",
-    "title": "Road to Invasion : Halloween Edition",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Hardcore"
-    ],
-    "date": "2026-10-31",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/invasion_nancy_octobre_2026_lineup_story_copie.jpg?itok=BlO3tzY3",
-    "url": "https://lautrecanalnancy.fr/agenda/road-invasion-halloween-edition",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-rencontre-avec-la-sacem-1",
     "title": "RENCONTRE avec la SACEM",
     "category": "activite",
