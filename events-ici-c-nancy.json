@@ -1,1 +1,40 @@
-[]
+[
+  {
+    "uuid": "icn-1181",
+    "title": "COURSES DE LA ST NICOLAS 2026, RELEVEZ LE DÉFI À NANCY !",
+    "category": "sport",
+    "catLabel": "Sport",
+    "catEmoji": "⚽",
+    "subcats": [],
+    "date": "2026-11-22",
+    "endDate": "2026-11-22",
+    "dateText": "",
+    "schedule": "18:39",
+    "place": "Nancy, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_coursesaintnicolas.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1181-courses-de-la-st-nicolas-2026-relevez-le-defi-a-nancy/2026-11-22-18-39.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1184",
+    "title": "DÉFILÉ DE SAINT-NICOLAS 2026 À VILLERS-LÈS-NANCY",
+    "category": "jeune-public",
+    "catLabel": "Jeune public",
+    "catEmoji": "🧸",
+    "subcats": [],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "19:22",
+    "place": "Villers-lès-Nancy, France",
+    "city": "",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_defile-villers.png",
+    "url": "https://www.ici-c-nancy.fr/agenda/1184-defile-de-saint-nicolas-2026-a-villers-les-nancy/2026-11-28-19-22.html",
+    "source": "ici-c-nancy"
+  }
+]

@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-11-01",
+    "date": "2026-11-02",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -328,7 +328,7 @@
   },
   {
     "uuid": "po-8dff7132-cd5e-11f1-aadf-99272785c7d0",
-    "title": "Être vivant·es. Le vivant et la jeune création",
+    "title": "Être vivant·es.",
     "category": "exposition",
     "catLabel": "Expositions",
     "catEmoji": "🖼️",
@@ -343,7 +343,7 @@
     "city": "Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8dff7132-cd5e-11f1-aadf-99272785c7d0/0/1-1_M_6ad8d39a17f81.jpeg",
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/8dff7132-cd5e-11f1-aadf-99272785c7d0/0/ORIGINE_M_6ae85e636e1c4.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=8dff7132-cd5e-11f1-aadf-99272785c7d0",
     "source": "poirel"
   },
