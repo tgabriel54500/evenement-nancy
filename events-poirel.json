@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-11-02",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-1572aeee-8418-11f1-9b22-17a8e2bc0998",
     "title": "Charlelie Couture",
     "category": "musiques-actuelles",
@@ -39,6 +18,27 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/1572aeee-8418-11f1-9b22-17a8e2bc0998/0/ORIGINE_M_6a5de16001613.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=1572aeee-8418-11f1-9b22-17a8e2bc0998",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-11-03",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {

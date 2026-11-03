@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-rencontre-avec-la-sacem-1",
-    "title": "RENCONTRE avec la SACEM",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Musicien•nes"
-    ],
-    "date": "2026-11-02",
-    "endDate": "2026-11-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/degrade_site_vrt_jaune.png?itok=lwSmIiup",
-    "url": "https://lautrecanalnancy.fr/agenda/rencontre-avec-la-sacem-1",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-lectures-musicales-avec-arthur-ely-mediatheque-manufacture",
     "title": "Lectures musicales avec Arthur Ely",
     "category": "activite",
@@ -239,6 +218,27 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-burning-void-iv-friperie-designers-dj-sets",
+    "title": "Burning the Void IV",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Rendez-vous"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/btv_iv_lac.jpg?itok=Np1-LJo_",
+    "url": "https://lautrecanalnancy.fr/agenda/burning-void-iv-friperie-designers-dj-sets",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-blind-test-party-0",
     "title": "Blind Test Party",
     "category": "activite",
@@ -368,6 +368,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/affiche-rs.jpg?itok=deNJ5NT8",
     "url": "https://lautrecanalnancy.fr/agenda/release-party-d-allivm-orilia-rencontre-blindtest",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-these-en-fete-prix-de-these-metropolitain",
+    "title": "Thèse en fête",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Etudiant·es"
+    ],
+    "date": "2026-11-16",
+    "endDate": "2026-11-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/these_en_fete.jpg?itok=ZsqMasoN",
+    "url": "https://lautrecanalnancy.fr/agenda/these-en-fete-prix-de-these-metropolitain",
     "source": "autre-canal"
   },
   {
@@ -1619,6 +1640,25 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-a2h",
+    "title": "A2H",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2027-02-25",
+    "endDate": "2027-02-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/a2h.jpg?itok=YDFB9Js3",
+    "url": "https://lautrecanalnancy.fr/agenda/a2h",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-busta-flex-scred-connexion",
     "title": "Busta Flex + Scred Connexion",
     "category": "musiques-actuelles",
@@ -1772,6 +1812,25 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/pomme_1_c_nicola_delorme.jpg?itok=XswCDye9",
     "url": "https://lautrecanalnancy.fr/agenda/pomme-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-celtic-tramps",
+    "title": "The Celtic Tramps",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [],
+    "date": "2027-03-17",
+    "endDate": "2027-03-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/678-field_illustration_id-1793213050.jpg%3Fitok%3D4epSevCu?itok=CPajHMbA",
+    "url": "https://lautrecanalnancy.fr/agenda/celtic-tramps",
     "source": "autre-canal"
   },
   {

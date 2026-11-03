@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-42171",
-    "title": "Foire d'Automne à Nancy",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [],
-    "date": "2026-11-02",
-    "endDate": "2026-11-15",
-    "dateText": "Du 22 octobre au 15 novembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42171_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42171/foire-d-automne-a-nancy/meurthe-et-moselle-nancy/fete-animation",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42172",
     "title": "Théâtre-débat \"Radicale\" cancers masculins à Vandoeuvre",
     "category": "spectacle",
@@ -73,25 +54,6 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42218_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42218/marche-du-monde-solidaire-de-luneville/meurthe-et-moselle-luneville/marche-artisanal-et-terroir",
-    "source": "lorraineaucoeur"
-  },
-  {
-    "uuid": "lac-42140",
-    "title": "Vente de jouets Trésor des Lutins à Seichamps",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-11-07",
-    "endDate": "2026-11-08",
-    "dateText": "Du 7 au 8 novembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Seichamps",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42140_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42140/vente-de-jouets-tresor-des-lutins-a-seichamps/meurthe-et-moselle-seichamps/bourse",
     "source": "lorraineaucoeur"
   },
   {
@@ -244,6 +206,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42241_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42241/conference-l-univers-des-drones-nancy/meurthe-et-moselle-nancy/conference-debat",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42234",
+    "title": "Un air d'Arménie : musique, poésie et danses",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42234_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42234/un-air-d-armenie-musique-poesie-et-danses/meurthe-et-moselle-nancy/soiree",
     "source": "lorraineaucoeur"
   }
 ]
