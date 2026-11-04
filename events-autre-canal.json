@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-lectures-musicales-avec-arthur-ely-mediatheque-manufacture",
-    "title": "Lectures musicales avec Arthur Ely",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous"
-    ],
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/756-field_illustration_id-1783415566.jpeg%3Fitok%3Dk9DTgBmD?itok=arnU__MA",
-    "url": "https://lautrecanalnancy.fr/agenda/lectures-musicales-avec-arthur-ely-mediatheque-manufacture",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-ecoute-what-s-going-marvin-gaye-sieste-musicale-des-6-mois",
     "title": "On écoute : What's Going On, Marvin Gaye",
     "category": "activite",
@@ -224,7 +203,8 @@
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
     "subcats": [
-      "Rendez-vous"
+      "Rendez-vous",
+      "Petite Halle"
     ],
     "date": "2026-11-08",
     "endDate": "2026-11-08",
@@ -1654,7 +1634,7 @@
     "city": "Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/a2h.jpg?itok=YDFB9Js3",
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/web_a2h_bataclan-cred-hanoh_szpira-2.jpeg?itok=OX4bR99p",
     "url": "https://lautrecanalnancy.fr/agenda/a2h",
     "source": "autre-canal"
   },
@@ -1815,12 +1795,16 @@
     "source": "autre-canal"
   },
   {
-    "uuid": "lcn-celtic-tramps",
-    "title": "The Celtic Tramps",
+    "uuid": "lcn-celtic-tramps-bredelers-fetez-la-saint-patrick",
+    "title": "The Celtic Tramps + Bredelers",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
-    "subcats": [],
+    "subcats": [
+      "Concert",
+      "Celtique",
+      "Rock"
+    ],
     "date": "2027-03-17",
     "endDate": "2027-03-17",
     "dateText": "",
@@ -1830,7 +1814,7 @@
     "free": false,
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/678-field_illustration_id-1793213050.jpg%3Fitok%3D4epSevCu?itok=CPajHMbA",
-    "url": "https://lautrecanalnancy.fr/agenda/celtic-tramps",
+    "url": "https://lautrecanalnancy.fr/agenda/celtic-tramps-bredelers-fetez-la-saint-patrick",
     "source": "autre-canal"
   },
   {

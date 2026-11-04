@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-03",
+    "date": "2026-11-04",
     "endDate": "2026-11-13",
     "dateText": "",
     "schedule": "",
@@ -158,7 +158,7 @@
     "date": "2026-11-11",
     "endDate": "2026-11-11",
     "dateText": "",
-    "schedule": "9h",
+    "schedule": "9h30",
     "place": "",
     "city": "Villers-lès-Nancy",
     "free": false,
@@ -249,6 +249,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/orchidees.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/groupes-de-parole-pour-les-proches-aidants-orchidee",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-504",
+    "title": "Conférence - Fractures chrétiennes",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Citoyenneté"
+    ],
+    "date": "2026-11-17",
+    "endDate": "2026-11-17",
+    "dateText": "",
+    "schedule": "20h30",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/Iribarne.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/conference-debat-le-je-le-nous",
     "source": "villers-les-nancy"
   },
   {

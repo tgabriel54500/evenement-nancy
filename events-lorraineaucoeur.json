@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "lac-42172",
-    "title": "Théâtre-débat \"Radicale\" cancers masculins à Vandoeuvre",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandoeuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42172_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42172/theatre-debat-radicale-cancers-masculins-a-vandoeuvre/meurthe-et-moselle-vandoeuvre-les-nancy/theatre",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42214",
     "title": "Fête de la Truffe à Pulnoy",
     "category": "festival",
@@ -133,6 +114,25 @@
     "source": "lorraineaucoeur"
   },
   {
+    "uuid": "lac-42290",
+    "title": "Les Rendez-Vous Prestige de la Saint Nicolas",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-11-14",
+    "endDate": "2026-11-15",
+    "dateText": "Du 14 au 15 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42290_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42290/les-rendez-vous-prestige-de-la-saint-nicolas/meurthe-et-moselle-villers-les-nancy/exposition",
+    "source": "lorraineaucoeur"
+  },
+  {
     "uuid": "lac-42235",
     "title": "Les Jeux du Stan 10ème Edition",
     "category": "festival",
@@ -171,25 +171,6 @@
     "source": "lorraineaucoeur"
   },
   {
-    "uuid": "lac-42177",
-    "title": "Ciné-Conférence les Açores à Nancy",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [],
-    "date": "2026-11-16",
-    "endDate": "2026-11-17",
-    "dateText": "Du 16 au 17 novembre 2026",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42177_min.jpg",
-    "url": "https://www.lorraineaucoeur.com/evt-42177/cine-conference-les-acores-a-nancy/meurthe-et-moselle-nancy/conference-debat",
-    "source": "lorraineaucoeur"
-  },
-  {
     "uuid": "lac-42241",
     "title": "Conférence l'univers des drônes Nancy",
     "category": "conference",
@@ -225,6 +206,25 @@
     "reservation": false,
     "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42234_min.jpg",
     "url": "https://www.lorraineaucoeur.com/evt-42234/un-air-d-armenie-musique-poesie-et-danses/meurthe-et-moselle-nancy/soiree",
+    "source": "lorraineaucoeur"
+  },
+  {
+    "uuid": "lac-42289",
+    "title": "Soirée Saint-Sylvestre Théâtre Humour à Seichamps",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [],
+    "date": "2026-12-31",
+    "endDate": "2026-12-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Seichamps",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.lorraineaucoeur.com/uploads/compte/images/3517/event42289_min.jpg",
+    "url": "https://www.lorraineaucoeur.com/evt-42289/soiree-saint-sylvestre-theatre-humour-a-seichamps/meurthe-et-moselle-seichamps/nouvel-an-reveillon-st-sylvestre-2026",
     "source": "lorraineaucoeur"
   }
 ]
