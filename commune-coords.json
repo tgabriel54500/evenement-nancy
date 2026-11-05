@@ -1968,5 +1968,10 @@
   "lat": 48.953251,
   "lon": 6.0319,
   "city": "Vandières"
+ },
+ "coin-sur-seille": {
+  "lat": 49.010936,
+  "lon": 6.163748,
+  "city": "Coin-sur-Seille"
  }
 }

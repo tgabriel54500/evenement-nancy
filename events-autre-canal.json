@@ -1,48 +1,5 @@
 [
   {
-    "uuid": "lcn-ecoute-what-s-going-marvin-gaye-sieste-musicale-des-6-mois",
-    "title": "On écoute : What's Going On, Marvin Gaye",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Enfance"
-    ],
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/capture_decran_2026-09-01_a_11.25.07.png?itok=GAJjrhoD",
-    "url": "https://lautrecanalnancy.fr/agenda/ecoute-what-s-going-marvin-gaye-sieste-musicale-des-6-mois",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-lisa-pariente-arthur-ely",
-    "title": "Lisa Pariente + Arthur Ely",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Pop"
-    ],
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/652-field_illustration_id-1780585301.jpg?itok=PksYdVtw",
-    "url": "https://lautrecanalnancy.fr/agenda/lisa-pariente-arthur-ely",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-soiree-finta",
     "title": "Soirée FINTA+",
     "category": "activite",
@@ -1330,6 +1287,27 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-la-creation-musicale-et-les-musiques-l-image-masterclass-sacem-universite",
+    "title": "La création musicale et les musiques à l’image",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Musicien•nes"
+    ],
+    "date": "2027-02-01",
+    "endDate": "2027-02-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/sacem_univ_0.jpg?itok=H63Dqtgv",
+    "url": "https://lautrecanalnancy.fr/agenda/la-creation-musicale-et-les-musiques-l-image-masterclass-sacem-universite",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-kid-francescoli",
     "title": "Kid Francescoli",
     "category": "musiques-actuelles",
@@ -1574,6 +1552,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-balkan-paradise-orchestra",
+    "title": "Balkan Paradise Orchestra",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Fanfare"
+    ],
+    "date": "2027-02-20",
+    "endDate": "2027-02-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/776-field_illustration_id-1793296552.jpg%3Fitok%3D0_swDhTT?itok=mAUt6CiS",
+    "url": "https://lautrecanalnancy.fr/agenda/balkan-paradise-orchestra",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-shredfest-obscura-pestilence-cryptic-shift-thus-dvrk",
     "title": "Shredfest",
     "category": "musiques-actuelles",
@@ -1625,7 +1625,10 @@
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
-    "subcats": [],
+    "subcats": [
+      "Concert",
+      "Rap"
+    ],
     "date": "2027-02-25",
     "endDate": "2027-02-25",
     "dateText": "",
@@ -1904,6 +1907,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/331746580_965931317662341_5070897150008864832_n.jpg?itok=6ZL0Pw83",
     "url": "https://lautrecanalnancy.fr/agenda/flrsn-du-cycle-4-4e-la-terminale",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-createur-producer-la-mao-outil-de-creation-masterclass-sacem-universite",
+    "title": "Créateur Producer, la MAO outil de création",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Musicien•nes"
+    ],
+    "date": "2027-03-22",
+    "endDate": "2027-03-22",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/sacem_univ_0.jpg?itok=H63Dqtgv",
+    "url": "https://lautrecanalnancy.fr/agenda/createur-producer-la-mao-outil-de-creation-masterclass-sacem-universite",
     "source": "autre-canal"
   },
   {
@@ -2192,6 +2216,27 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/812-field_illustration_id-1791550610.png%3Fitok%3Dv40hSPGR?itok=fgZicjVF",
     "url": "https://lautrecanalnancy.fr/agenda/recuperation-addictions-et-equilibre-dude-la-musicienne-atelier-avec-benedicte-lelay",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-les-revenus-des-artistes-auteurs-interpretes-construire-son-modele-economique-masterclass-sacem-universite",
+    "title": "Les revenus des artistes – auteurs - interprètes : Construire son modèle économique",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Musicien•nes"
+    ],
+    "date": "2027-04-19",
+    "endDate": "2027-04-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/sacem_univ_0.jpg?itok=H63Dqtgv",
+    "url": "https://lautrecanalnancy.fr/agenda/les-revenus-des-artistes-auteurs-interpretes-construire-son-modele-economique-masterclass-sacem-universite",
     "source": "autre-canal"
   },
   {
