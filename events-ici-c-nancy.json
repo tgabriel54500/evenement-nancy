@@ -1,5 +1,24 @@
 [
   {
+    "uuid": "icn-1187",
+    "title": "ASNL - SOCHAUX (LIGUE 2 - 12 ÈME JOURNÉE)",
+    "category": "sport",
+    "catLabel": "Sport",
+    "catEmoji": "⚽",
+    "subcats": [],
+    "date": "2026-11-06",
+    "endDate": "2026-11-06",
+    "dateText": "",
+    "schedule": "20:00",
+    "place": "Stade Marcel Picot",
+    "city": "Tomblaine",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_asnl-sochaux.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1187-match-nancy-sochaux-ligue-2-12-eme-journee/2026-11-06-20-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
     "uuid": "icn-1195",
     "title": "VNVB-CHAMALIÈRES",
     "category": "sport",

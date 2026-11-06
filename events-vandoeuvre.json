@@ -1048,7 +1048,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-11-05",
+    "date": "2026-11-06",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1058,25 +1058,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-20510",
-    "title": "Journée de dépistage du diabète",
-    "category": "sante",
-    "catLabel": "Santé",
-    "catEmoji": "🩺",
-    "subcats": [],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "De 9h à 16h",
-    "place": "Maison des Jeunes et de la Culture",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/journee-de-depistage-du-diabete/",
     "source": "vandoeuvre"
   },
   {
@@ -1200,8 +1181,8 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-29286",
-    "title": "Conférence sur les champignons",
+    "uuid": "vdv-29290",
+    "title": "Conférence “La gestion des prairies urbaine pour favoriser la biodiversité”",
     "category": "nature",
     "catLabel": "Nature",
     "catEmoji": "🌳",
@@ -1215,7 +1196,7 @@
     "free": false,
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   },
   {
@@ -1731,6 +1712,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-29762",
+    "title": "Projection Cine-Folie",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-12-05",
+    "endDate": "2026-12-05",
+    "dateText": "",
+    "schedule": "14h",
+    "place": "Médiathèque",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/projection-cine-folie/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-12623",
     "title": "Défilé de la Saint Nicolas et feu d’artifice",
     "category": "famille",
@@ -1792,8 +1792,8 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-29288",
-    "title": "Conférence “Lire l’environnement grâce aux plantes”",
+    "uuid": "vdv-29286",
+    "title": "Conférence sur les champignons",
     "category": "nature",
     "catLabel": "Nature",
     "catEmoji": "🌳",
@@ -1807,7 +1807,7 @@
     "free": false,
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
   {
@@ -1986,6 +1986,25 @@
     "source": "vandoeuvre"
   },
   {
+    "uuid": "vdv-12208",
+    "title": "Concert d’hiver de l’EmMV",
+    "category": "culture",
+    "catLabel": "Culture",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "dateText": "",
+    "schedule": "20h",
+    "place": "Salle des Fêtes",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/10/concert-hiver-emmv.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/concert-dhiver-de-lemmv/",
+    "source": "vandoeuvre"
+  },
+  {
     "uuid": "vdv-29313",
     "title": "Focus jeux vidéo",
     "category": "culture",
@@ -2062,8 +2081,8 @@
     "source": "vandoeuvre"
   },
   {
-    "uuid": "vdv-29290",
-    "title": "Conférence “La gestion des prairies urbaine pour favoriser la biodiversité”",
+    "uuid": "vdv-29288",
+    "title": "Conférence “Lire l’environnement grâce aux plantes”",
     "category": "nature",
     "catLabel": "Nature",
     "catEmoji": "🌳",
@@ -2077,7 +2096,7 @@
     "free": false,
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
+    "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
   {

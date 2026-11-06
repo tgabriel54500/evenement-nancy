@@ -1,72 +1,5 @@
 [
   {
-    "uuid": "lcn-soiree-finta",
-    "title": "Soirée FINTA+",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Musicien•nes"
-    ],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/04-17_-184759_-_nf5_2169.jpg?itok=P2dybT0Y",
-    "url": "https://lautrecanalnancy.fr/agenda/soiree-finta",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-broken-back-oak-teller",
-    "title": "Broken Back",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Folk",
-      "Pop"
-    ],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/643-illustration_id-1764337516.jpg?itok=5AD7_oza",
-    "url": "https://lautrecanalnancy.fr/agenda/broken-back-oak-teller",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-izia-2027",
-    "title": "Izïa",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Pop",
-      "Rock"
-    ],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/758-field_illustration_id-1781786806.jpg?itok=KSZnbkMT",
-    "url": "https://lautrecanalnancy.fr/agenda/izia-2027",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-marche-bio-et-local-25",
     "title": "Marché bio et local",
     "category": "activite",
@@ -2370,6 +2303,29 @@
     "reservation": true,
     "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/bon_moment-043_copie.jpg?itok=DL5eMaMv",
     "url": "https://lautrecanalnancy.fr/agenda/bon-moment-2027",
+    "source": "autre-canal"
+  },
+  {
+    "uuid": "lcn-izia-2027",
+    "title": "Izïa",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Pop",
+      "Rock"
+    ],
+    "date": "2027-11-05",
+    "endDate": "2027-11-05",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/758-field_illustration_id-1781786806.jpg?itok=KSZnbkMT",
+    "url": "https://lautrecanalnancy.fr/agenda/izia-2027",
     "source": "autre-canal"
   }
 ]
