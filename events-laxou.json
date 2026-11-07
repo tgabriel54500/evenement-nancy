@@ -228,25 +228,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-festivites-quartier-des-provinces",
-    "title": "Festivités Quartier des Provinces",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Quartier des Provinces",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/290/1200_630_7_demain-les-provinces2026.png",
-    "url": "https://www.laxou.fr/fr/agenda/festivites-quartier-des-provinces_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-rencontre-litteraire",
     "title": "Rencontre littéraire",
     "category": "conference",

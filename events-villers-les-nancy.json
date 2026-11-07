@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "endDate": "2026-11-13",
     "dateText": "",
     "schedule": "",
@@ -50,7 +50,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-06",
+    "date": "2026-11-07",
     "endDate": "2026-11-08",
     "dateText": "",
     "schedule": "20h",
@@ -85,7 +85,7 @@
   },
   {
     "uuid": "vln-606",
-    "title": "Concerts de l’Orchestre d’Harmonie de Vandoeuvre",
+    "title": "Concert de l’Orchestre d’Harmonie de Vandoeuvre",
     "category": "musique-classique",
     "catLabel": "Musique classique",
     "catEmoji": "🎻",

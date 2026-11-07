@@ -21,27 +21,6 @@
     "source": "zenith-nancy"
   },
   {
-    "uuid": "zen-legendary-rock-voices",
-    "title": "Legendary Rock Voices",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "Vendredi 6 novembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/LRV_nancy_artwork3_1080x1920-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/legendary-rock-voices/",
-    "source": "zenith-nancy"
-  },
-  {
     "uuid": "zen-kad-merad-michele-laroque",
     "title": "Kad Merad &#038; Michèle Laroque",
     "category": "spectacle",

@@ -1973,5 +1973,10 @@
   "lat": 49.010936,
   "lon": 6.163748,
   "city": "Coin-sur-Seille"
+ },
+ "autigny-la-tour": {
+  "lat": 48.399375,
+  "lon": 5.75998,
+  "city": "Autigny-la-Tour"
  }
 }

@@ -1,49 +1,5 @@
 [
   {
-    "uuid": "lcn-marche-bio-et-local-25",
-    "title": "Marché bio et local",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous",
-      "Halle ouverte"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/20251020_valentine_laurent_-_marche_bio_clautre_canal5.jpg?itok=7y5tmX2I",
-    "url": "https://lautrecanalnancy.fr/agenda/marche-bio-et-local-25",
-    "source": "autre-canal"
-  },
-  {
-    "uuid": "lcn-elmer-food-beat-mr-zero",
-    "title": "Elmer Food Beat",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert",
-      "Chanson festive"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/import/599-illustration_id-1759343587.jpg%3Fitok%3D3rx_mCsr?itok=TbzItVDC",
-    "url": "https://lautrecanalnancy.fr/agenda/elmer-food-beat-mr-zero",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-les-commandes-de-la-voix-atelier-de-technique-vocale",
     "title": "Les commandes de la voix",
     "category": "activite",

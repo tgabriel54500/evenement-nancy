@@ -1,24 +1,5 @@
 [
   {
-    "uuid": "icn-1187",
-    "title": "ASNL - SOCHAUX (LIGUE 2 - 12 ÈME JOURNÉE)",
-    "category": "sport",
-    "catLabel": "Sport",
-    "catEmoji": "⚽",
-    "subcats": [],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "20:00",
-    "place": "Stade Marcel Picot",
-    "city": "Tomblaine",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_asnl-sochaux.jpg",
-    "url": "https://www.ici-c-nancy.fr/agenda/1187-match-nancy-sochaux-ligue-2-12-eme-journee/2026-11-06-20-00.html",
-    "source": "ici-c-nancy"
-  },
-  {
     "uuid": "icn-1195",
     "title": "VNVB-CHAMALIÈRES",
     "category": "sport",
@@ -54,6 +35,25 @@
     "reservation": false,
     "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_avant-premiere-claude.png",
     "url": "https://www.ici-c-nancy.fr/agenda/1196-ugc-cine-cite-ludres-avant-premiere-claude/2026-11-07-20-00.html",
+    "source": "ici-c-nancy"
+  },
+  {
+    "uuid": "icn-1199",
+    "title": "PESTACLES UGC : \" L'ÉTRANGE POUVOIR DE NORMAN \"",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [],
+    "date": "2026-11-08",
+    "endDate": "2026-11-08",
+    "dateText": "",
+    "schedule": "11:00",
+    "place": "UGC Ciné Cité Ludres",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ici-c-nancy.fr/images/icagenda/thumbs/themes/ic_medium_w300h300q100_norman.jpg",
+    "url": "https://www.ici-c-nancy.fr/agenda/1199-pestacles-ugc-letrange-pouvoir-de-norman/2026-11-08-11-00.html",
     "source": "ici-c-nancy"
   },
   {
