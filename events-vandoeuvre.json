@@ -949,7 +949,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/petits-dejeuners-de-coppens/",
     "source": "vandoeuvre"
   },
@@ -970,7 +970,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/mouvfun/",
     "source": "vandoeuvre"
   },
@@ -989,7 +989,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/beaujolais-nouveau/",
     "source": "vandoeuvre"
   },
@@ -1010,7 +1010,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/pause-sportive/",
     "source": "vandoeuvre"
   },
@@ -1048,7 +1048,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-11-07",
+    "date": "2026-11-08",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1058,107 +1058,6 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2021/03/insc_bouge_mercredis.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/inscriptions-vandsport-et-eveil-sportif/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-19942",
-    "title": "Ateliers philo",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Famille"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "De 10h30 à 11h30",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-4/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29221",
-    "title": "Installons Linux",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "De 10h à 12h",
-    "place": "Fabrique des Possibles",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/installons-linux-3/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29394",
-    "title": "Atelier numérique : Sensibilisation à la désinformation et aux fake news",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "De 10h30 à 12h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-sensibilisation-a-la-desinformation-et-aux-fake-news-2/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29621",
-    "title": "Tournoi Mystère",
-    "category": "culture",
-    "catLabel": "Culture",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Jeunes"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "Ouverture des inscriptions sur place à 14h et début du tournoi à 15h",
-    "place": "Médiathèque",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/tournoi-mystere-2/",
-    "source": "vandoeuvre"
-  },
-  {
-    "uuid": "vdv-29704",
-    "title": "Café de la parole solidaire",
-    "category": "social",
-    "catLabel": "Social",
-    "catEmoji": "🫶",
-    "subcats": [],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
-    "url": "https://www.vandoeuvre.fr/evenement/cafe-de-la-parole-solidaire/",
     "source": "vandoeuvre"
   },
   {
@@ -1195,7 +1094,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-la-gestion-des-prairies-urbaine-pour-favoriser-la-biodiversite/",
     "source": "vandoeuvre"
   },
@@ -1216,7 +1115,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/journee-de-sensibilisation-et-de-depistage-de-la-maladie-cameleon/",
     "source": "vandoeuvre"
   },
@@ -1254,7 +1153,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/sensibilisation-aux-gestes-qui-sauvent-2/",
     "source": "vandoeuvre"
   },
@@ -1275,7 +1174,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/installons-linux-4/",
     "source": "vandoeuvre"
   },
@@ -1294,7 +1193,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/operation-livraison-de-petits-dejeuners-a-domicile/",
     "source": "vandoeuvre"
   },
@@ -1313,7 +1212,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/stage-fitness-100-femmes/",
     "source": "vandoeuvre"
   },
@@ -1332,7 +1231,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-cornet-a-bouquin-et-orgue/",
     "source": "vandoeuvre"
   },
@@ -1372,7 +1271,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-up2v-eau/",
     "source": "vandoeuvre"
   },
@@ -1391,7 +1290,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/concert-akoustik-b/",
     "source": "vandoeuvre"
   },
@@ -1448,7 +1347,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-la-grande-statutaire-champenoise-du-16eme-siecle/",
     "source": "vandoeuvre"
   },
@@ -1467,7 +1366,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/heure-musicale-instruments-a-cordes/",
     "source": "vandoeuvre"
   },
@@ -1486,7 +1385,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-collections-nationales-2/",
     "source": "vandoeuvre"
   },
@@ -1505,7 +1404,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-le-grand-marechal-duroc/",
     "source": "vandoeuvre"
   },
@@ -1524,7 +1423,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/loto-seniors/",
     "source": "vandoeuvre"
   },
@@ -1562,7 +1461,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-creatif-histoires-bricolees/",
     "source": "vandoeuvre"
   },
@@ -1604,7 +1503,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-cree-ton-jeu-video-avec-scratch-2/",
     "source": "vandoeuvre"
   },
@@ -1623,7 +1522,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-collection-residences-royales-europeennes/",
     "source": "vandoeuvre"
   },
@@ -1665,7 +1564,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/junior-book-club/",
     "source": "vandoeuvre"
   },
@@ -1686,7 +1585,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/formation-secourisme-enfants/",
     "source": "vandoeuvre"
   },
@@ -1707,7 +1606,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/jazz-clarinet-day/",
     "source": "vandoeuvre"
   },
@@ -1726,7 +1625,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projection-cine-folie/",
     "source": "vandoeuvre"
   },
@@ -1787,7 +1686,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/recital-piano/",
     "source": "vandoeuvre"
   },
@@ -1806,7 +1705,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-champignons/",
     "source": "vandoeuvre"
   },
@@ -1825,7 +1724,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/projection-opera-platee/",
     "source": "vandoeuvre"
   },
@@ -1863,7 +1762,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-des-lutins/",
     "source": "vandoeuvre"
   },
@@ -1882,7 +1781,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers/",
     "source": "vandoeuvre"
   },
@@ -1903,7 +1802,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/ateliers-philo-5/",
     "source": "vandoeuvre"
   },
@@ -1922,7 +1821,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/atelier-numerique-risques-et-arnaques-numeriques/",
     "source": "vandoeuvre"
   },
@@ -1941,7 +1840,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-sur-les-chevaliers-2/",
     "source": "vandoeuvre"
   },
@@ -1960,7 +1859,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-collection-residences-royales-europeennes-2/",
     "source": "vandoeuvre"
   },
@@ -1981,7 +1880,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/heure-musicale-instruments-a-cordes-2/",
     "source": "vandoeuvre"
   },
@@ -2019,7 +1918,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/focus-jeux-video-2/",
     "source": "vandoeuvre"
   },
@@ -2038,7 +1937,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/exposition-anahita/",
     "source": "vandoeuvre"
   },
@@ -2057,7 +1956,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/exposition-sur-anahita/",
     "source": "vandoeuvre"
   },
@@ -2095,7 +1994,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/10/petit-dejeuner-coppens.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/conference-lire-lenvironnement-grace-aux-plantes/",
     "source": "vandoeuvre"
   },
@@ -2116,7 +2015,7 @@
     "city": "Vandœuvre-lès-Nancy",
     "free": false,
     "reservation": false,
-    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/07/atelier-philo.jpg",
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2023/08/marche-createurs.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/marche-des-createurs/",
     "source": "vandoeuvre"
   }

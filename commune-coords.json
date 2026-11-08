@@ -1978,5 +1978,20 @@
   "lat": 48.399375,
   "lon": 5.75998,
   "city": "Autigny-la-Tour"
+ },
+ "pagny-sur-moselle": {
+  "lat": 48.983705,
+  "lon": 6.017877,
+  "city": "Pagny-sur-Moselle"
+ },
+ "lorry-mardigny": {
+  "lat": 48.981095,
+  "lon": 6.086246,
+  "city": "Lorry-Mardigny"
+ },
+ "domjevin": {
+  "lat": 48.574503,
+  "lon": 6.696177,
+  "city": "Domjevin"
  }
 }

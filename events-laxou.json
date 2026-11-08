@@ -228,25 +228,6 @@
     "source": "laxou"
   },
   {
-    "uuid": "lx-rencontre-litteraire",
-    "title": "Rencontre littéraire",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "Bibliothèque-Médiathèque Gérard-Thirion",
-    "city": "Laxou",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/207/1200_630_7_rencontre-dedicace-christian-perconte.jpg",
-    "url": "https://www.laxou.fr/fr/agenda/rencontre-litteraire_-d.html",
-    "source": "laxou"
-  },
-  {
     "uuid": "lx-film-ces-violences-qui-nous-echappent",
     "title": "FILM - Ces violences qui nous échappent",
     "category": "conference",

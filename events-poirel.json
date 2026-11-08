@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "title": "Présents - La Conserverie, un lieu d'archives",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-21",
-    "dateText": "Du 5 septembre au 21 novembre 2026",
-    "schedule": "",
-    "place": "Galerie Poirel",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
     "uuid": "po-27f89e3c-c79f-11f1-933d-f54b3edbb378",
     "title": "Voyage en Italie",
     "category": "spectacle",
@@ -62,6 +41,27 @@
     "reservation": true,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/4a9fe612-c942-11f1-b2a4-3b8ca9c8a400/0/ORIGINE_M_6ad1eb764fa00.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=4a9fe612-c942-11f1-b2a4-3b8ca9c8a400",
+    "source": "poirel"
+  },
+  {
+    "uuid": "po-98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
+    "title": "Présents - La Conserverie, un lieu d'archives",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-11-08",
+    "endDate": "2026-11-21",
+    "dateText": "Du 5 septembre au 21 novembre 2026",
+    "schedule": "",
+    "place": "Galerie Poirel",
+    "city": "Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
+    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
     "source": "poirel"
   },
   {
