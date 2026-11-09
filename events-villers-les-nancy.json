@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-08",
+    "date": "2026-11-09",
     "endDate": "2026-11-13",
     "dateText": "",
     "schedule": "",
@@ -39,69 +39,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261101_EXPO_AMICALE_VILLERS_CENTRE__c__Photo_generee_par_IA.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/exposition-de-lamicale-de-villers-centre",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-528",
-    "title": "Signé Dumas",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "",
-    "schedule": "20h",
-    "place": "Caveau de la Roële",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/0320_THEATRE_DUMAS.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/signe-dumas",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-134",
-    "title": "Marches de nettoyage",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Environnement"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "",
-    "schedule": "10h",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/marchedenettoyage.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/marche-de-nettoyage",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-606",
-    "title": "Concert de l’Orchestre d’Harmonie de Vandoeuvre",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-11-08",
-    "endDate": "2026-11-08",
-    "dateText": "",
-    "schedule": "17h",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261108_CONCERT_ORCHESTRE__c__Stephane_Noll.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/concerts-de-lorchestre-dharmonie-de-vandoeuvre",
     "source": "villers-les-nancy"
   },
   {

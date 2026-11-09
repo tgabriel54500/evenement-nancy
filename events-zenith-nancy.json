@@ -1,5 +1,26 @@
 [
   {
+    "uuid": "zen-casse-noisette",
+    "title": "Casse-Noisette",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Ballet"
+    ],
+    "date": "2026-01-19",
+    "endDate": "2026-01-31",
+    "dateText": "19 nov. 2026 & 31 janv. 2027",
+    "schedule": "",
+    "place": "Zénith de Nancy",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
+    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette/",
+    "source": "zenith-nancy"
+  },
+  {
     "uuid": "zen-pietragalla-barbara",
     "title": "Pietragalla Barbara",
     "category": "spectacle",
@@ -60,27 +81,6 @@
     "reservation": false,
     "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2026/03/Balavoine_40x60_originale-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/balavoine-ma-bataille/",
-    "source": "zenith-nancy"
-  },
-  {
-    "uuid": "zen-casse-noisette",
-    "title": "Casse-Noisette",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Ballet"
-    ],
-    "date": "2026-11-19",
-    "endDate": "2026-11-19",
-    "dateText": "Jeudi 19 novembre 2026",
-    "schedule": "",
-    "place": "Zénith de Nancy",
-    "city": "Maxéville",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/12/CASSE-NOISETTE27-9-16-350x524.jpg",
-    "url": "https://www.zenith-de-nancy.com/evenement/casse-noisette/",
     "source": "zenith-nancy"
   },
   {

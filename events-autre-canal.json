@@ -1002,6 +1002,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-techno-story-2027",
+    "title": "Techno Story 2027",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Techno"
+    ],
+    "date": "2027-01-23",
+    "endDate": "2027-01-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/techno-story-fond-vierge-1080x1080px.jpg?itok=_sUIhMhy",
+    "url": "https://lautrecanalnancy.fr/agenda/techno-story-2027",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-mpl",
     "title": "MPL",
     "category": "musiques-actuelles",
