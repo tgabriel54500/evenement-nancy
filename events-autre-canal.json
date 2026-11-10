@@ -1220,6 +1220,28 @@
     "source": "autre-canal"
   },
   {
+    "uuid": "lcn-stephane-hoareau-trans-kabar",
+    "title": "Stéphane Hoareau - Trans Kabar",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert",
+      "Transe maloya électrique"
+    ],
+    "date": "2027-02-06",
+    "endDate": "2027-02-06",
+    "dateText": "",
+    "schedule": "",
+    "place": "L'Autre Canal",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/2025.trans_kabar_c_marie_planeille.jpg?itok=wfPCrddm",
+    "url": "https://lautrecanalnancy.fr/agenda/stephane-hoareau-trans-kabar",
+    "source": "autre-canal"
+  },
+  {
     "uuid": "lcn-and-also-trees-catherine-graindorge",
     "title": "And Also The Trees",
     "category": "musiques-actuelles",

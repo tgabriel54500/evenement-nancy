@@ -1048,7 +1048,7 @@
     "subcats": [
       "Sport"
     ],
-    "date": "2026-11-09",
+    "date": "2026-11-10",
     "endDate": "2027-06-23",
     "dateText": "Du 3 septembre 2026 au 23 juin 2027",
     "schedule": "",
@@ -1524,6 +1524,25 @@
     "reservation": false,
     "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
     "url": "https://www.vandoeuvre.fr/evenement/visite-libre-collection-residences-royales-europeennes/",
+    "source": "vandoeuvre"
+  },
+  {
+    "uuid": "vdv-29779",
+    "title": "Patron(s) dans ma ville",
+    "category": "economie",
+    "catLabel": "Économie",
+    "catEmoji": "💼",
+    "subcats": [],
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parc des Sports",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.vandoeuvre.fr/wp-content/uploads/2024/07/gestes-qui-sauvent.jpg",
+    "url": "https://www.vandoeuvre.fr/evenement/patrons-dans-ma-ville/",
     "source": "vandoeuvre"
   },
   {

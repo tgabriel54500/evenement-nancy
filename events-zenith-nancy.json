@@ -219,8 +219,8 @@
       "Danse"
     ],
     "date": "2027-01-07",
-    "endDate": "2027-01-07",
-    "dateText": "Jeudi 7 janvier 2027",
+    "endDate": "2027-01-05",
+    "dateText": "7 janv. 2027 & 5 févr. 2028",
     "schedule": "",
     "place": "Zénith de Nancy",
     "city": "Maxéville",
@@ -625,7 +625,7 @@
     "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/KeenV-A-nos-20-ans-Visuel-de-MEV-350x524.jpg",
+    "image": "https://www.zenith-de-nancy.com/wp/wp-content/uploads/sites/14/2025/09/Affiche-KeenV-vierge-350x524.jpg",
     "url": "https://www.zenith-de-nancy.com/evenement/keenv/",
     "source": "zenith-nancy"
   },
