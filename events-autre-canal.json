@@ -1,26 +1,5 @@
 [
   {
-    "uuid": "lcn-blind-test-party-0",
-    "title": "Blind Test Party",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Rendez-vous"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "L'Autre Canal",
-    "city": "Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://lautrecanalnancy.fr/sites/default/files/lautrecanal/styles/a4_800/public/ged/jkf05650-2.jpg?itok=nNa4DNHL",
-    "url": "https://lautrecanalnancy.fr/agenda/blind-test-party-0",
-    "source": "autre-canal"
-  },
-  {
     "uuid": "lcn-scene-ouverte-nov-2026",
     "title": "Scène Ouverte des studios de répétition",
     "category": "musiques-actuelles",

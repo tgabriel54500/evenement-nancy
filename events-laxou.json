@@ -323,6 +323,25 @@
     "source": "laxou"
   },
   {
+    "uuid": "lx-marches-de-noel",
+    "title": "Marchés de Noël",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-11-30",
+    "endDate": "2026-11-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "Salle Pierre Juillière",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/292/1200_630_7_st-genes2026.png",
+    "url": "https://www.laxou.fr/fr/agenda/marches-de-noel_-d.html",
+    "source": "laxou"
+  },
+  {
     "uuid": "lx-jardin-des-1000-fleurs-4",
     "title": "Jardin des 1000 fleurs",
     "category": "activite",
@@ -339,6 +358,25 @@
     "reservation": false,
     "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/235/1200_630_7_2026-planning-du-jardin-des-1000-fleurs-1.png",
     "url": "https://www.laxou.fr/fr/agenda/jardin-des-1000-fleurs-4_-d.html",
+    "source": "laxou"
+  },
+  {
+    "uuid": "lx-marche-te-defile-de-la-saint-nicolas",
+    "title": "Marché te défilé de la Saint-Nicolas",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [],
+    "date": "2026-12-13",
+    "endDate": "2026-12-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "Parking de l'Hôtel de Ville",
+    "city": "Laxou",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.laxou.fr/globalflexit/images/img_base/agendas/291/1200_630_7_affiche-muppi-sn-2026.jpg",
+    "url": "https://www.laxou.fr/fr/agenda/marche-te-defile-de-la-saint-nicolas_-d.html",
     "source": "laxou"
   }
 ]

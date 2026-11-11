@@ -8,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "endDate": "2026-11-21",
     "dateText": "Du 5 septembre au 21 novembre 2026",
     "schedule": "",
@@ -18,49 +18,6 @@
     "reservation": false,
     "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/98dc7bdc-7939-11f1-a0db-9d74cfbbfccf/0/1-1_M_6a4baea1c5541.jpeg",
     "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=98dc7bdc-7939-11f1-a0db-9d74cfbbfccf",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-6f5a5b22-c942-11f1-b898-8f43ae37353c",
-    "title": "Les deux Andalousie",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Concert"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "Mardi 10 novembre 2026",
-    "schedule": "de 20h à 22h",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/6f5a5b22-c942-11f1-b898-8f43ae37353c/0/ORIGINE_M_6ad1ebb3e2e2d.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=6f5a5b22-c942-11f1-b898-8f43ae37353c",
-    "source": "poirel"
-  },
-  {
-    "uuid": "po-c20b2918-b755-11f1-b0b9-0f076f143d53",
-    "title": "Les deux andalousie",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Danse",
-      "Concert"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "Le 10 novembre",
-    "schedule": "20h00",
-    "place": "Salle Poirel",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://agenda-static.grandnancy.eu/fichiers/EVENT/c20b2918-b755-11f1-b0b9-0f076f143d53/0/1-1_M_6ab3daffadbf0.jpeg",
-    "url": "https://poirel.nancy.fr/agenda/details-agenda?uuid=c20b2918-b755-11f1-b0b9-0f076f143d53",
     "source": "poirel"
   },
   {

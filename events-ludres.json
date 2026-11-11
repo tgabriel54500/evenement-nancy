@@ -1,5 +1,47 @@
 [
   {
+    "uuid": "lud-stephan-eicher",
+    "title": "Stéphan Eicher",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Chaudeau"
+    ],
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261119-Stephan-Eicher_WEB.jpg",
+    "url": "https://www.ludres.com/liste-evenements/stephan-eicher/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-heure-du-conte-grands",
+    "title": "Heure du conte – Grands",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://www.ludres.com/liste-evenements/heure-du-conte-grands/",
+    "source": "ludres"
+  },
+  {
     "uuid": "lud-exposition-sur-la-grotte-chauvet",
     "title": "Exposition sur la grotte Chauvet",
     "category": "exposition",

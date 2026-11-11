@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "endDate": "2026-11-13",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "endDate": "2026-12-15",
     "dateText": "",
     "schedule": "de 14h à 16h",
@@ -67,27 +67,6 @@
     "source": "villers-les-nancy"
   },
   {
-    "uuid": "vln-607",
-    "title": "Concert de jazz de Pierre-Alain Goualch Trio",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Culture"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "Centre culturel Les Ecraignes",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261110_CONCERT_JAZZ.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/concert-de-jazz-de-pierre-alain-goualch-trio",
-    "source": "villers-les-nancy"
-  },
-  {
     "uuid": "vln-73",
     "title": "Cercle des lecteurs",
     "category": "activite",
@@ -96,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-10",
+    "date": "2026-11-11",
     "endDate": "2026-12-08",
     "dateText": "",
     "schedule": "20h",
@@ -190,6 +169,27 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/IMG_5108.jpeg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/les-rendez-vous-prestige-de-la-saint-nicolas",
+    "source": "villers-les-nancy"
+  },
+  {
+    "uuid": "vln-616",
+    "title": "Boîte noire - Exposition de Nadine DIDIER",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-16",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "Centre culturel Les Ecraignes",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2026/261116_EXPO_BOITE_NOIRE_NADINE_DIDIER_page-0001.jpg",
+    "url": "https://www.villerslesnancy.fr/agenda/evenement/boite-noire-exposition-de-nadine-didier",
     "source": "villers-les-nancy"
   },
   {
