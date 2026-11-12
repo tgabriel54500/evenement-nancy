@@ -1,0 +1,28 @@
+{
+  // Configuration Cloudflare Workers — sert le site statique (Static Assets).
+  // `npx wrangler deploy` publie le dossier `dist/` (build DURCI produit par
+  // deploy-cloudflare.sh : data.js minifié sans source/uuid, GoatCounter injecté,
+  // ?v= anti-cache) comme site statique, sans code Worker (pas de champ "main").
+  // ⚠️ On ne publie PLUS la racine brute (".") : dist/ ne contient QUE le front
+  // public, donc plus besoin de .assetsignore. Les _headers/_redirects de dist/
+  // sont pris en charge nativement par Cloudflare.
+  // Build + déploiement : `bash deploy-cloudflare.sh` (lancé par refresh-all.sh).
+  "name": "evenement-nancy",
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "dist"
+  },
+  // STAGING — bac à sable. `wrangler deploy --env staging` publie un 2e worker
+  // (evenement-nancy-staging) sur une URL gratuite *.workers.dev, séparé de la
+  // prod. Il déploie dist-staging/ (assemblé par deploy-staging.sh : noindex, sans
+  // GoatCounter). La prod (champ racine ci-dessus) n'est jamais touchée.
+  "env": {
+    "staging": {
+      "name": "evenement-nancy-staging",
+      "workers_dev": true,
+      "assets": {
+        "directory": "dist-staging"
+      }
+    }
+  }
+}

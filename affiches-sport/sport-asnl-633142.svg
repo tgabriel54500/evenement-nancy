@@ -19,7 +19,7 @@
   <path d="M400 1010 a95 95 0 0 1 0 0 M305 1010 a95 95 0 0 0 190 0" fill="none" stroke="#ff5a5f" stroke-width="6" opacity=".13"/>
   <path d="M0 1010 L800 890 L800 1200 L0 1200 Z" fill="#ff5a5f" opacity=".14"/>
   <rect width="800" height="1200" fill="url(#v)"/>
-  <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+  <g font-family="'Sets Grotesk', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
     <text x="400" y="256" font-size="30" font-weight="700" fill="#ffffff" opacity=".55" letter-spacing="9">FOOTBALL</text>
     <text x="400" y="330" font-size="34" font-weight="600" fill="#ff5a5f" letter-spacing="3">LIGUE 2 BKT</text>
     <text x="400" y="378" font-size="27" font-weight="500" fill="#ffffff" opacity=".65">25e journée</text>

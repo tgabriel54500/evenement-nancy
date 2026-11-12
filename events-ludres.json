@@ -1,15 +1,36 @@
 [
   {
-    "uuid": "lud-don-du-sang-2",
-    "title": "Don du sang",
+    "uuid": "lud-stephan-eicher",
+    "title": "Stéphan Eicher",
     "category": "autre",
     "catLabel": "Autre",
     "catEmoji": "📌",
     "subcats": [
-      "Santé"
+      "Chaudeau"
     ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2026/03/20261119-Stephan-Eicher_WEB.jpg",
+    "url": "https://www.ludres.com/liste-evenements/stephan-eicher/",
+    "source": "ludres"
+  },
+  {
+    "uuid": "lud-coups-de-coeur-cafe-4",
+    "title": "Coups de cœur café",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Culture"
+    ],
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
     "dateText": "",
     "schedule": "",
     "place": "Médiathèque",
@@ -17,93 +38,49 @@
     "free": false,
     "reservation": false,
     "image": null,
-    "url": "https://www.ludres.com/liste-evenements/don-du-sang-2/",
+    "url": "https://www.ludres.com/liste-evenements/coups-de-coeur-cafe-4/",
     "source": "ludres"
   },
   {
-    "uuid": "lud-repair-cafe-5",
-    "title": "Repair Café",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
+    "uuid": "lud-heure-du-conte-grands",
+    "title": "Heure du conte – Grands",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
     "subcats": [
-      "Citoyenneté",
-      "Environnement"
+      "Culture"
     ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "Espace Séquoia",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/01/repair-cafe.jpg",
-    "url": "https://www.ludres.com/liste-evenements/repair-cafe-5/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-heure-du-conte-des-3-4-ans",
-    "title": "Heure du conte – Petits",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Culture",
-      "Loisirs"
-    ],
-    "date": "2026-10-06",
-    "endDate": "2026-10-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "Salle Schweitzer",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2023/09/heure-conte-1.jpg",
-    "url": "https://www.ludres.com/liste-evenements/heure-du-conte-des-3-4-ans/",
-    "source": "ludres"
-  },
-  {
-    "uuid": "lud-octobre-rose-conference-renaissance-rose",
-    "title": "Octobre Rose : Conférence rose",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Santé"
-    ],
-    "date": "2026-10-07",
-    "endDate": "2026-10-07",
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
     "dateText": "",
     "schedule": "",
     "place": "Médiathèque",
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2026/09/9-octobre.jpg",
-    "url": "https://www.ludres.com/liste-evenements/octobre-rose-conference-renaissance-rose/",
+    "image": null,
+    "url": "https://www.ludres.com/liste-evenements/heure-du-conte-grands/",
     "source": "ludres"
   },
   {
-    "uuid": "lud-fete-foraine-3",
-    "title": "Fête Foraine",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
+    "uuid": "lud-exposition-sur-la-grotte-chauvet",
+    "title": "Exposition sur la grotte Chauvet",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
     "subcats": [
-      "Loisirs"
+      "Culture"
     ],
-    "date": "2027-09-26",
-    "endDate": "2027-09-26",
+    "date": "2027-10-20",
+    "endDate": "2027-10-20",
     "dateText": "",
     "schedule": "",
-    "place": "30",
+    "place": "14",
     "city": "Ludres",
     "free": false,
     "reservation": false,
-    "image": "https://www.ludres.com/wp-content/uploads/2025/09/ff.jpg",
-    "url": "https://www.ludres.com/liste-evenements/fete-foraine-3/",
+    "image": "https://www.ludres.com/wp-content/uploads/2026/10/grotte-chauvet.jpg",
+    "url": "https://www.ludres.com/liste-evenements/exposition-sur-la-grotte-chauvet/",
     "source": "ludres"
   }
 ]

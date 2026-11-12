@@ -1,0 +1,225 @@
+
+/* ==========================================================================
+   DIRECTION ARTISTIQUE 2026-10 : thème sombre « Stanislas »
+   (maquettes : DA/Agenda Grand-Nancy.pdf). Couche posée par-dessus les règles
+   historiques : elle remplace leurs couleurs claires codées en dur.
+   ========================================================================== */
+html { background: var(--bg); }
+body { font-family: var(--font-body); font-weight: 400; }
+::selection { background: var(--rouge); color: #fff; }
+a { color: inherit; }
+
+/* ---------- En-tête : logo, menu rond, Stanislas en filigrane ---------- */
+.hero {
+  background: var(--bg);
+  border-bottom: 1px solid var(--line);
+  overflow: hidden;
+  padding: clamp(6.5rem, 11vw, 8.5rem) 1.25rem clamp(2.6rem, 5vw, 3.6rem);
+}
+.hero::after {             /* la statue, dessinée au trait, en bas à droite */
+  content: "";
+  position: absolute; right: -4%; bottom: -22%;
+  width: min(62vw, 760px); aspect-ratio: 480 / 454;
+  background: url("da/stanislas.svg") no-repeat center / contain;
+  opacity: .07; pointer-events: none; z-index: 0;
+}
+.hero__inner { position: relative; z-index: 1; }
+.brand {
+  position: absolute; z-index: 2;
+  top: max(1.1rem, env(safe-area-inset-top)); left: clamp(1rem, 3vw, 2.2rem);
+  display: block; width: clamp(128px, 14vw, 168px); line-height: 0;
+}
+.brand img { width: 100%; height: auto; display: block; }
+.hero__eyebrow { color: var(--rouge); font-family: var(--font-body); font-weight: 600; letter-spacing: .22em; }
+.hero__title {
+  font-family: var(--font-display); font-weight: 800;
+  font-size: clamp(2.5rem, 7.2vw, 4.9rem); line-height: .98; letter-spacing: -.035em;
+  color: var(--blanc);
+}
+.hero__title span {
+  color: inherit; font-style: normal; white-space: nowrap;
+  text-decoration: underline; text-decoration-color: var(--rouge);
+  text-decoration-thickness: .085em; text-underline-offset: .14em; text-decoration-skip-ink: none;
+}
+.hero__tagline {
+  font-family: var(--font-body); font-style: normal; font-weight: 400;
+  font-size: clamp(1rem, 1.6vw, 1.12rem); line-height: 1.55;
+  color: var(--ink-soft); max-width: 34rem; margin-top: 1.1rem;
+}
+.hero__subtitle { color: var(--ink-soft); }
+.hero__search {
+  background: var(--anthracite); border: 1px solid #333; box-shadow: none;
+  max-width: 560px; padding: .95rem 1.35rem; margin-top: 2.1rem;
+}
+.hero__search:focus-within { border-color: var(--rouge); box-shadow: 0 0 0 4px rgba(230,50,38,.18); }
+.hero__search svg { color: var(--ink-soft); }
+.hero__search input { color: var(--blanc); font-size: 1rem; }
+.hero__search input::placeholder { color: #8b8b87; }
+
+/* Agenda / Sport / Pro : contrôle segmenté en pilule. */
+.hero__views {
+  width: fit-content; margin: 1.3rem auto 0; padding: .3rem; gap: .2rem;
+  border: 1px solid #333; border-radius: 999px; background: rgba(28,28,28,.6);
+}
+.view-switch {
+  background: transparent; border: 0; color: var(--ink-soft);
+  font-family: var(--font-body); font-weight: 600; font-size: .9rem; padding: .5rem 1.15rem;
+}
+.view-switch:hover { color: var(--blanc); }
+.view-switch.is-active { background: var(--blanc); color: var(--noir); }
+
+/* Menu : bouton rond au trait, burger sur toutes les tailles d'écran. */
+.nav-account { top: max(1.1rem, env(safe-area-inset-top)); right: clamp(1rem, 3vw, 2.2rem); }
+.nav-account__btn { width: 48px; height: 48px; background: transparent; color: var(--blanc); border: 1px solid #3a3a3a; box-shadow: none; }
+.nav-account__btn:hover { border-color: var(--blanc); color: var(--blanc); }
+.nav-account__btn .ico--user { display: none; }
+.nav-account__btn .ico--burger { display: block; }
+.nav-menu { background: var(--anthracite); border-color: #333; box-shadow: 0 20px 40px -18px rgba(0,0,0,.7); }
+.nav-menu__link { color: var(--blanc); }
+.nav-menu__link:hover { background: rgba(230,50,38,.12); color: #fff; }
+
+/* Pages secondaires (compte, mentions) : en-tête compact. */
+.hero--compact { padding-top: clamp(6rem, 10vw, 7.5rem); }
+.hero--compact::after { width: min(46vw, 480px); bottom: -35%; }
+
+/* ---------- Barre de filtres et panneaux ---------- */
+.fbar { background: rgba(18,18,18,.88); border-bottom: 1px solid var(--line); }
+.fpill { background: transparent; border-color: #3a3a3a; color: var(--blanc); font-family: var(--font-body); }
+.fpill:hover { border-color: var(--blanc); }
+.fpill.is-active { background: var(--blanc); border-color: var(--blanc); color: var(--noir); }
+.fpill.is-active .tool-badge { background: var(--rouge); color: #fff; }
+.fpill--fav .heart { fill: none; stroke: currentColor; }
+.fpill--fav.is-active { background: var(--rouge); border-color: var(--rouge); color: #fff; }
+.fpill--reset { color: var(--rouge); border-color: rgba(230,50,38,.5); }
+.results-count { color: var(--ink-soft); }
+.results-count strong, .results-count b { color: var(--blanc); }
+
+.fsheet__panel { background: var(--noir); border: 1px solid #2a2a2a; }
+.fsheet__title { font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; }
+.fsheet__close { background: var(--anthracite); color: var(--blanc); }
+.fsheet__foot { background: var(--anthracite); border-color: var(--line); }
+.fsheet__grip { background: #444 !important; }
+.fsheet #dateFilters .datefilter { background: var(--anthracite); border-color: #333; color: var(--blanc); }
+.fsheet #dateFilters .datefilter.is-active { background: var(--blanc); border-color: var(--blanc); color: var(--noir); }
+
+.datefilters { background: var(--anthracite); border-color: #333; box-shadow: none; }
+.datefilter { color: var(--ink-soft); }
+.datefilter:hover { color: var(--blanc); }
+.datefilter.is-active, .daterange.is-active { background: var(--blanc); color: var(--noir); box-shadow: none; }
+.daterange.is-active .daterange__trigger { color: var(--noir); }
+.daterange__trigger:hover { background: var(--card-2); color: var(--blanc); }
+
+.filter { background: var(--anthracite); border-color: #333; color: var(--blanc); }
+.filter:hover { border-color: var(--blanc); }
+.filter.is-active { background: var(--rouge); border-color: var(--rouge); color: #fff; box-shadow: none; }
+
+.selection { background: var(--anthracite); border-color: #4a3b1c; color: var(--blanc); }
+.selection.is-active { background: var(--rouge); border-color: var(--rouge); color: #fff; box-shadow: none; }
+.selections__label { color: var(--blanc); }
+
+.tool-btn, .favtoggle, .seg__btn { background: var(--anthracite); border-color: #333; color: var(--blanc); }
+.seg__btn { background: transparent; color: var(--ink-soft); }
+.seg__btn:hover { border-color: var(--blanc); color: var(--blanc); }
+.seg__btn.is-active { background: var(--blanc); border-color: var(--blanc); color: var(--noir); }
+.tool-btn:hover, .favtoggle:hover { border-color: var(--blanc); }
+
+/* Calendrier */
+.cal { background: var(--anthracite); border-color: #333; box-shadow: 0 24px 48px -20px rgba(0,0,0,.8); }
+.cal::before { background: var(--anthracite); border-color: #333; }
+.cal__title { font-family: var(--font-display); font-weight: 800; }
+.cal__nav { background: var(--card-2); border-color: #3a3a3a; color: var(--blanc); }
+.cal__day { color: var(--blanc); }
+.cal__day:hover:not(:disabled):not(.is-sel) { background: #2c2c2c; }
+.cal__day.is-past, .cal__clear:disabled { color: #5a5a57; }
+.cal__day.is-range { background: rgba(230,50,38,.2); }
+.dn-pop input[type="date"] { background: var(--card-2); border-color: #3a3a3a; color: var(--blanc); color-scheme: dark; }
+
+/* ---------- Mur d'affiches ---------- */
+.poster { background: var(--anthracite); border-radius: 16px; box-shadow: none; }
+.poster:hover { box-shadow: 0 0 0 1px #3a3a3a, 0 22px 40px -20px rgba(0,0,0,.9); }
+.poster__cat {
+  background: rgba(18,18,18,.72); color: var(--blanc);
+  -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
+  box-shadow: none; font-family: var(--font-body);
+}
+.poster__date { background: var(--rouge); box-shadow: 0 6px 16px -6px rgba(230,50,38,.7); border-radius: 12px; }
+.poster__date .day { font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; }
+.poster__date .wd, .poster__date .month { font-family: var(--font-body); font-weight: 700; }
+.poster__overlay { background: linear-gradient(to top, rgba(12,12,12,.96), rgba(12,12,12,.6) 55%, transparent); }
+.poster__title { font-family: var(--font-display); font-weight: 700; letter-spacing: -.01em; }
+.poster__city { font-family: var(--font-body); }
+.poster--noimg .poster__fallback { color: var(--blanc); font-family: var(--font-display); font-weight: 700; }
+.poster--noimg .poster__fallback .poster__city { color: var(--ink-soft); }
+.fav-btn { background: rgba(18,18,18,.6); }
+.fav-btn.is-fav { background: var(--blanc); color: var(--rouge); }
+.poster__new, .card__new { background: var(--blanc); color: var(--noir); }
+.poster__members { background: rgba(18,18,18,.86); color: #f5d47a; }
+.nouv-group { color: var(--blanc); font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; }
+.nouv-group span { background: var(--anthracite); border-color: #333; color: var(--ink-soft); }
+
+/* Cartes (vue Sport) et lightbox */
+.card { background: var(--anthracite); border-color: #2c2c2c; }
+.card:hover { border-color: #3a3a3a; }
+.card__media { background: #222; }
+.card__cat { background: rgba(18,18,18,.72); color: var(--blanc); box-shadow: none; }
+.card__date { background: var(--rouge); box-shadow: none; }
+.card h2 { font-family: var(--font-display); font-weight: 700; }
+.badge { background: #2a2a2a; color: var(--ink-soft); }
+.badge--free { background: rgba(80,190,120,.16); color: #8fe0ad; }
+.badge--members { background: rgba(245,212,122,.14); color: #f5d47a; }
+.card__cta { border-color: #3a3a3a; color: var(--blanc); }
+.card__cta:hover { background: var(--rouge); border-color: var(--rouge); }
+.lightbox { background: rgba(10,10,10,.86); }
+.lightbox__inner { background: var(--anthracite); }
+.lightbox__media { background: #0c0c0c; }
+.lightbox__info h2 { font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; }
+.lightbox__cat { color: var(--rouge); }
+.lightbox__fav { background: transparent; border-color: #3a3a3a; color: var(--blanc); }
+
+/* ---------- Pro : annuaire des réseaux ---------- */
+.reseau { background: var(--anthracite); border-color: #2c2c2c; }
+.reseau--membres { background: #221f18; }
+.reseau__logo { background: var(--blanc); }
+.reseau__logo--dark { background: #2b2b2b; }
+.reseau__count { color: var(--blanc); }
+.pro-lock h2, .reseaux-section__title, .reseau__name { font-family: var(--font-display); font-weight: 800; letter-spacing: -.02em; }
+
+/* ---------- Pied de page, bouton contact, bandeau d'installation ---------- */
+.footer { border-top-color: var(--line); color: var(--ink-soft); }
+.footer a { color: var(--blanc); }
+.wa-fab {            /* bouton rond blanc, bulle au trait (maquette) */
+  background: var(--blanc); color: var(--noir); font-family: var(--font-body);
+  box-shadow: 0 10px 30px -10px rgba(0,0,0,.8);
+}
+.wa-fab:hover { background: #fff; box-shadow: 0 14px 34px -10px rgba(0,0,0,.9); }
+.wa-fab svg { fill: var(--noir); }
+.a2hs, .a2hs-sheet__box { background: var(--anthracite); border-color: #333; }
+.a2hs-sheet__title { font-family: var(--font-display); font-weight: 800; }
+.a2hs-sheet__note { background: rgba(230,50,38,.12); }
+
+/* ---------- Panneau « page de l'événement » ---------- */
+.evsheet__backdrop { background: rgba(8,8,8,.7); }
+.evsheet__panel { background: var(--noir); box-shadow: 0 30px 90px -20px rgba(0,0,0,.9), 0 0 0 1px #2a2a2a; }
+.evsheet__frame { background: var(--noir); }
+.evsheet__close { background: var(--anthracite); border-color: #3a3a3a; color: var(--blanc); }
+.evsheet__close:hover { border-color: var(--blanc); color: var(--blanc); }
+@media (max-width: 720px) {
+  .evsheet__bar { background: var(--noir); border-bottom-color: #2a2a2a; }
+  .evsheet__grip { background: #4a4a4a; }
+}
+
+/* ---------- Téléphone ---------- */
+@media (max-width: 640px) {
+  .hero { padding: 5.2rem 1rem 1.4rem; }
+  .hero::after { width: 92vw; right: -30%; bottom: -8%; opacity: .06; }
+  .brand { width: 112px; top: max(.9rem, env(safe-area-inset-top)); left: 1rem; }
+  .hero__eyebrow { display: block; font-size: .64rem; margin-bottom: .55rem; }
+  .hero__title { font-size: clamp(2.05rem, 10vw, 2.7rem); padding: 0; }
+  .hero__tagline { font-size: .9rem; margin-top: .7rem; }
+  .hero__search { margin-top: 1.1rem; padding: .75rem 1.05rem; }
+  .hero__views { margin-top: .9rem; }
+  .view-switch { font-size: .84rem; padding: .45rem 1rem; }
+  .nav-account { top: max(.9rem, env(safe-area-inset-top)); right: 1rem; }
+  .nav-account__btn { width: 44px; height: 44px; }
+  .fbar { border-bottom-color: var(--line); }
+}

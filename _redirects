@@ -1,0 +1,6 @@
+# Liens courts de diffusion (lus nativement par Cloudflare, copiés dans dist/ par deploy-cloudflare.sh).
+# Le parametre ?ref= est repris par GoatCounter comme "source" dans Referrers,
+# ce qui permet de compter les visites venues de chaque canal.
+# Format : <lien court> <destination> <code>
+/fb   /?ref=fb-amandine  302
+/fb/  /?ref=fb-amandine  302

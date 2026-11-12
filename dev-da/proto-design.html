@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda · Grand Nancy — prototype</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Archivo:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   AGENDA · GRAND NANCY — prototype design « École de Nancy »
+   Identité : Art Nouveau / ferronnerie dorée de la Place Stanislas,
+   verre Daum. Fond fer patiné, or, vert-verre, parchemin.
+   ============================================================ */
+:root{
+  --ink:#14110F;          /* fond fer patiné chaud */
+  --ink-2:#1B1714;        /* panneaux surélevés */
+  --ink-3:#221C18;        /* cartes */
+  --gilt:#C9A24B;         /* or des grilles Stanislas */
+  --gilt-bright:#E7CD8B;  /* or éclairé (hover/actif) */
+  --verre:#6E9079;        /* vert-verre Daum */
+  --amber:#CB7A41;        /* ambre, accent rare (payant) */
+  --parchment:#ECE3D2;    /* texte principal */
+  --parchment-dim:#9E927B;/* texte atténué */
+  --line:rgba(201,162,75,.22);
+  --line-soft:rgba(201,162,75,.12);
+  --display:"Fraunces",Georgia,serif;
+  --body:"Archivo",system-ui,sans-serif;
+  --maxw:1240px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ink);color:var(--parchment);
+  font-family:var(--body);font-weight:400;line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+  /* grain de papier très léger + halo chaud en haut */
+  background-image:
+    radial-gradient(120% 70% at 50% -10%, rgba(201,162,75,.07), transparent 60%),
+    radial-gradient(90% 60% at 90% 110%, rgba(110,144,121,.06), transparent 60%);
+}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gilt);color:var(--ink)}
+
+/* ---- typographie utilitaire ---- */
+.eyebrow{
+  font-family:var(--body);font-weight:600;
+  text-transform:uppercase;letter-spacing:.26em;
+  font-size:.7rem;color:var(--gilt);
+}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 clamp(1.1rem,4vw,3rem)}
+
+/* ============================ EN-TÊTE ============================ */
+.topbar{
+  position:sticky;top:0;z-index:40;
+  background:rgba(20,17,15,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.topbar__in{display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;padding:.85rem clamp(1.1rem,4vw,3rem)}
+.wordmark{display:flex;align-items:baseline;gap:.6rem}
+.wordmark b{font-family:var(--display);font-weight:500;font-size:1.18rem;
+  letter-spacing:.01em}
+.wordmark span{font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;
+  color:var(--parchment-dim)}
+.topnav{display:flex;gap:1.6rem;align-items:center}
+.topnav a{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--parchment-dim);transition:color .25s}
+.topnav a:hover{color:var(--gilt-bright)}
+@media(max-width:640px){.topnav{display:none}}
+
+/* ============================ HÉRO ============================ */
+.hero{position:relative;padding:clamp(2.5rem,6vw,5rem) 0 clamp(2rem,4vw,3.5rem)}
+.hero__grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(1.5rem,4vw,3.5rem);
+  align-items:center}
+@media(max-width:880px){.hero__grid{grid-template-columns:1fr;gap:2rem}}
+
+.hero__kicker{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem}
+.hero__kicker .rule{height:1px;flex:1;max-width:90px;
+  background:linear-gradient(90deg,var(--gilt),transparent)}
+.hero h1{
+  font-family:var(--display);font-weight:300;
+  font-size:clamp(2.7rem,7.2vw,5.6rem);line-height:.98;
+  letter-spacing:-.015em;margin:0 0 1.3rem;
+  font-optical-sizing:auto;
+}
+.hero h1 em{font-style:italic;font-weight:400;color:var(--gilt-bright)}
+.hero__lede{font-size:1.05rem;color:var(--parchment-dim);max-width:46ch;
+  margin:0 0 1.8rem}
+.hero__meta{display:flex;flex-wrap:wrap;gap:.55rem;align-items:center}
+
+/* visuel à l'affiche : poster encadré par la ferronnerie SVG */
+.affiche{position:relative;aspect-ratio:4/5;width:100%;max-width:460px;
+  margin-inline:auto;border-radius:2px;overflow:visible}
+.affiche__img{position:absolute;inset:14px;width:calc(100% - 28px);
+  height:calc(100% - 28px);object-fit:cover;border-radius:1px;
+  filter:saturate(1.02) contrast(1.02)}
+.affiche__frame{position:absolute;inset:0;width:100%;height:100%;
+  pointer-events:none;overflow:visible}
+.affiche__frame path,.affiche__frame line,.affiche__frame circle{
+  fill:none;stroke:var(--gilt);stroke-width:1.1;vector-effect:non-scaling-stroke}
+.affiche__tag{position:absolute;left:50%;bottom:-13px;transform:translateX(-50%);
+  background:var(--ink);border:1px solid var(--line);
+  padding:.4rem 1rem;font-size:.66rem;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--gilt);white-space:nowrap}
+
+/* puces gravées (gratuit / réservation / date) */
+.chip{font-size:.72rem;letter-spacing:.06em;padding:.42rem .8rem;border-radius:999px;
+  border:1px solid var(--line);color:var(--parchment);display:inline-flex;
+  align-items:center;gap:.45rem;background:var(--ink-2)}
+.chip--gilt{border-color:rgba(201,162,75,.5);color:var(--gilt-bright)}
+.chip--verre{border-color:rgba(110,144,121,.5);color:var(--verre)}
+.chip .dot{width:5px;height:5px;border-radius:50%;background:currentColor;opacity:.8}
+
+.cta{display:inline-flex;align-items:center;gap:.6rem;
+  font-family:var(--body);font-weight:600;font-size:.82rem;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--ink);background:var(--gilt);
+  padding:.85rem 1.5rem;border-radius:999px;transition:transform .25s,background .25s}
+.cta:hover{background:var(--gilt-bright);transform:translateY(-2px)}
+
+/* divider filigrane central */
+.filigree{display:block;margin:clamp(2rem,5vw,3.5rem) auto;width:min(280px,60%);
+  height:34px;overflow:visible}
+.filigree path,.filigree circle{fill:none;stroke:var(--gilt);stroke-width:1;
+  vector-effect:non-scaling-stroke;opacity:.7}
+
+/* ============================ FILTRES ============================ */
+.agenda{padding-bottom:5rem}
+.agenda__head{display:flex;align-items:flex-end;justify-content:space-between;
+  gap:1rem;flex-wrap:wrap;margin-bottom:1.6rem}
+.agenda__head h2{font-family:var(--display);font-weight:400;
+  font-size:clamp(1.7rem,3.4vw,2.5rem);margin:.3rem 0 0;letter-spacing:-.01em}
+.count{font-size:.78rem;color:var(--parchment-dim);letter-spacing:.04em}
+
+.cats{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem;margin:0 0 2.2rem;
+  padding:1rem 0;border-top:1px solid var(--line-soft);border-bottom:1px solid var(--line-soft)}
+.cat{position:relative;background:none;border:0;cursor:pointer;
+  font-family:var(--body);font-size:.84rem;letter-spacing:.04em;
+  color:var(--parchment-dim);padding:.35rem 0;transition:color .25s}
+.cat:hover{color:var(--parchment)}
+.cat .n{font-size:.66rem;color:var(--gilt);margin-left:.35rem;vertical-align:.15em}
+.cat[aria-pressed="true"]{color:var(--gilt-bright)}
+.cat[aria-pressed="true"]::after{content:"";position:absolute;left:0;right:0;
+  bottom:-2px;height:7px;
+  background:no-repeat center/100% url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 80 8'%3E%3Cpath d='M2 4 C 14 -2, 26 10, 40 4 S 66 -2, 78 4' fill='none' stroke='%23E7CD8B' stroke-width='1.4'/%3E%3C/svg%3E")}
+
+/* ============================ MUR D'AFFICHES ============================ */
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(218px,1fr));
+  gap:clamp(1rem,2.2vw,1.9rem)}
+.card{position:relative;background:var(--ink-3);border:1px solid var(--line-soft);
+  border-radius:2px;overflow:hidden;cursor:pointer;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),border-color .35s,box-shadow .35s}
+.card:hover{transform:translateY(-6px);border-color:var(--line);
+  box-shadow:0 18px 40px -22px rgba(0,0,0,.8)}
+.card__poster{aspect-ratio:3/4;width:100%;overflow:hidden;background:var(--ink-2)}
+.card__poster img{width:100%;height:100%;object-fit:cover;
+  transition:transform .6s cubic-bezier(.2,.7,.2,1);transform:scale(1.01)}
+.card:hover .card__poster img{transform:scale(1.06)}
+.card__noimg{display:grid;place-items:center;height:100%;
+  font-family:var(--display);font-style:italic;color:var(--parchment-dim);
+  font-size:1.4rem;padding:1rem;text-align:center}
+/* coin doré qui éclôt au survol (le « coup de fouet ») */
+.card__corner{position:absolute;top:0;right:0;width:46px;height:46px;
+  pointer-events:none;opacity:0;transform:translate(6px,-6px);
+  transition:opacity .35s,transform .45s}
+.card:hover .card__corner{opacity:1;transform:translate(0,0)}
+.card__corner path{fill:none;stroke:var(--gilt-bright);stroke-width:1.1;
+  vector-effect:non-scaling-stroke}
+.card__body{padding:.85rem .9rem 1rem}
+.card__cat{font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--gilt);display:block;margin-bottom:.45rem}
+.card__title{font-family:var(--display);font-weight:500;font-size:1.04rem;
+  line-height:1.15;margin:0 0 .55rem;
+  display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.card__meta{font-size:.74rem;color:var(--parchment-dim);
+  display:flex;flex-direction:column;gap:.15rem}
+.card__meta .when{color:var(--parchment)}
+.card__price{position:absolute;top:.7rem;left:.7rem;font-size:.6rem;
+  letter-spacing:.14em;text-transform:uppercase;padding:.28rem .55rem;
+  background:rgba(20,17,15,.78);backdrop-filter:blur(4px);border-radius:999px;
+  border:1px solid var(--line-soft)}
+.card__price.free{color:var(--verre)}
+.card__price.paid{color:var(--amber)}
+
+/* ============================ PIED ============================ */
+.foot{border-top:1px solid var(--line);padding:2.5rem 0 3rem;text-align:center}
+.foot p{color:var(--parchment-dim);font-size:.78rem;letter-spacing:.04em;margin:.4rem 0}
+.foot .mk{font-family:var(--display);font-style:italic;color:var(--gilt);font-size:1.1rem}
+
+/* ============================ REVEAL ============================ */
+.reveal{opacity:0;transform:translateY(18px);
+  transition:opacity .7s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+/* tracé de la ferronnerie au chargement */
+.draw{stroke-dasharray:var(--len,600);stroke-dashoffset:var(--len,600);
+  animation:draw 2.2s cubic-bezier(.45,.05,.2,1) forwards}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+@media(prefers-reduced-motion:reduce){
+  .draw{animation:none;stroke-dashoffset:0}
+  .reveal{opacity:1;transform:none;transition:none}
+  *{scroll-behavior:auto}
+}
+:focus-visible{outline:2px solid var(--gilt-bright);outline-offset:3px;border-radius:2px}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar__in">
+    <div class="wordmark">
+      <b>Agenda</b><span>Grand Nancy</span>
+    </div>
+    <nav class="topnav">
+      <a href="#agenda">À l'affiche</a>
+      <a href="#agenda">Ce week-end</a>
+      <a href="#agenda">Expositions</a>
+      <a href="#agenda">Tout l'agenda</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ====================== HÉRO ====================== -->
+  <section class="hero">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <div class="hero__kicker reveal">
+          <span class="eyebrow" id="heroEyebrow">À l'affiche ce soir</span>
+          <span class="rule"></span>
+        </div>
+        <h1 class="reveal" id="heroTitle">Nancy, <em>en mouvement</em>.</h1>
+        <p class="hero__lede reveal" id="heroLede">
+          Tout ce qui se joue, s'expose et se danse dans la métropole — réuni,
+          jour après jour, en un seul agenda.</p>
+        <div class="hero__meta reveal" id="heroMeta"></div>
+        <p style="margin-top:1.9rem" class="reveal">
+          <a class="cta" href="#agenda">Parcourir l'agenda
+            <svg width="16" height="10" viewBox="0 0 16 10"><path d="M1 5h13M10 1l4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.4"/></svg>
+          </a>
+        </p>
+      </div>
+
+      <div class="hero__visual reveal">
+        <figure class="affiche">
+          <img class="affiche__img" id="heroImg" alt="" referrerpolicy="no-referrer">
+          <!-- ferronnerie Art Nouveau : cadre + coups de fouet aux 4 angles -->
+          <svg class="affiche__frame" viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true">
+            <rect x="6" y="6" width="388" height="488" rx="2" class="draw" style="--len:1760"/>
+            <!-- angle haut-gauche -->
+            <path class="draw" style="--len:240" d="M6 70 C 6 36 20 10 60 8 C 30 12 14 26 12 54"/>
+            <path class="draw" style="--len:200" d="M30 8 C 60 8 78 24 80 52 C 78 30 60 20 36 24"/>
+            <circle cx="26" cy="28" r="5" class="draw" style="--len:40"/>
+            <!-- angle bas-droit (miroir) -->
+            <path class="draw" style="--len:240" d="M394 430 C 394 464 380 490 340 492 C 370 488 386 474 388 446"/>
+            <path class="draw" style="--len:200" d="M370 492 C 340 492 322 476 320 448 C 322 470 340 480 364 476"/>
+            <circle cx="374" cy="472" r="5" class="draw" style="--len:40"/>
+          </svg>
+          <figcaption class="affiche__tag" id="heroTag">Festival</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <!-- divider filigrane -->
+    <svg class="filigree reveal" viewBox="0 0 280 34" aria-hidden="true">
+      <path class="draw" style="--len:300" d="M10 17 H 110"/>
+      <path class="draw" style="--len:300" d="M170 17 H 270"/>
+      <path class="draw" style="--len:160" d="M110 17 C 124 17 128 5 140 5 C 152 5 156 17 170 17 C 156 17 152 29 140 29 C 128 29 124 17 110 17 Z"/>
+      <circle cx="140" cy="17" r="3.2" class="draw" style="--len:24"/>
+    </svg>
+  </section>
+
+  <!-- ====================== AGENDA ====================== -->
+  <section class="agenda" id="agenda">
+    <div class="agenda__head">
+      <div>
+        <span class="eyebrow">L'agenda · jour après jour</span>
+        <h2>À l'affiche dans la métropole</h2>
+      </div>
+      <span class="count" id="count"></span>
+    </div>
+
+    <div class="cats" id="cats" role="group" aria-label="Filtrer par discipline"></div>
+
+    <div class="wall" id="wall"></div>
+  </section>
+</main>
+
+<footer class="foot">
+  <p class="mk">Agenda · Grand Nancy</p>
+  <p>Prototype design — hommage à l'École de Nancy. Données réelles, non publié.</p>
+</footer>
+
+<!-- vraies données -->
+<script src="data.js"></script>
+<script>
+(function(){
+  const EV = (window.EVENTS||[]).slice();
+  const CATS = window.CATEGORIES||{};
+  const TODAY = new Date().toISOString().slice(0,10);
+
+  // à venir, triés par date
+  const upcoming = EV
+    .filter(e => (e.endDate||e.date||"") >= TODAY)
+    .sort((a,b)=>(a.date||"").localeCompare(b.date||""));
+
+  const fmt = (e)=>{
+    if(e.dateText) return e.dateText;
+    const d=(e.date||"").slice(0,10); if(!d) return "";
+    const [Y,M,D]=d.split("-");
+    const mois=["janv.","févr.","mars","avr.","mai","juin","juil.","août","sept.","oct.","nov.","déc."];
+    return `${+D} ${mois[+M-1]||""}${e.schedule&&/^\d/.test(e.schedule)?" · "+e.schedule:""}`;
+  };
+
+  // ---------- HÉRO : 1er à venir avec image, on privilégie festival/spectacle ----------
+  const hero = upcoming.find(e=>e.image && /festival|spectacle|musiques/.test(e.category))
+            || upcoming.find(e=>e.image) || upcoming[0];
+  if(hero){
+    const img=document.getElementById('heroImg');
+    img.src=hero.image||""; img.alt=hero.title||"";
+    document.getElementById('heroTitle').innerHTML =
+      hero.title.replace(/\s+(\S+)$/, ' <em>$1</em>'); // dernier mot en italique doré
+    document.getElementById('heroLede').textContent =
+      `${hero.place||hero.city||"Grand Nancy"}${hero.city&&hero.place?` · ${hero.city}`:""}. ${fmt(hero)}.`;
+    document.getElementById('heroTag').textContent = (CATS[hero.category]||{}).label || "À l'affiche";
+    document.getElementById('heroEyebrow').textContent =
+      (hero.date===TODAY)?"À l'affiche aujourd'hui":"Prochainement à l'affiche";
+    const meta=document.getElementById('heroMeta');
+    const chips=[];
+    chips.push(`<span class="chip chip--gilt"><span class="dot"></span>${fmt(hero)}</span>`);
+    if(hero.free) chips.push(`<span class="chip chip--verre">Accès libre</span>`);
+    else chips.push(`<span class="chip">Payant</span>`);
+    if(hero.reservation) chips.push(`<span class="chip">Sur réservation</span>`);
+    meta.innerHTML=chips.join("");
+  }
+
+  // ---------- FILTRES catégories ----------
+  const counts={};
+  upcoming.forEach(e=>counts[e.category]=(counts[e.category]||0)+1);
+  const order=Object.keys(CATS).filter(k=>counts[k]).sort((a,b)=>counts[b]-counts[a]);
+  let active=null;
+  const catsEl=document.getElementById('cats');
+  const mkCat=(key,label,n)=>`<button class="cat" data-k="${key}" aria-pressed="${active===key}">${label}<span class="n">${n}</span></button>`;
+  function renderCats(){
+    catsEl.innerHTML =
+      mkCat("", "Tout", upcoming.length) +
+      order.map(k=>mkCat(k,(CATS[k]||{}).label||k,counts[k])).join("");
+    catsEl.querySelectorAll('.cat').forEach(b=>b.addEventListener('click',()=>{
+      active = b.dataset.k || null; renderCats(); renderWall();
+    }));
+  }
+
+  // ---------- MUR ----------
+  const wall=document.getElementById('wall');
+  const cornerSVG=`<svg class="card__corner" viewBox="0 0 46 46" aria-hidden="true"><path d="M46 4 C 30 4 18 10 16 28 C 18 14 30 8 46 12 M46 4 C 46 20 40 32 22 34"/><circle cx="40" cy="24" r="3" fill="none"/></svg>`;
+  function renderWall(){
+    const list = (active? upcoming.filter(e=>e.category===active):upcoming).slice(0,60);
+    document.getElementById('count').textContent =
+      `${(active?counts[active]:upcoming.length)} événements à venir`;
+    wall.innerHTML = list.map(e=>{
+      const cat=(CATS[e.category]||{}).label||"";
+      const poster = e.image
+        ? `<div class="card__poster"><img src="${e.image}" alt="" loading="lazy" referrerpolicy="no-referrer"></div>`
+        : `<div class="card__poster"><div class="card__noimg">${(e.title||"").slice(0,42)}</div></div>`;
+      const price = e.free
+        ? `<span class="card__price free">Libre</span>`
+        : `<span class="card__price paid">Payant</span>`;
+      return `<a class="card" href="${e.url||'#'}" target="_blank" rel="noopener">
+        ${poster}${price}${cornerSVG}
+        <div class="card__body">
+          <span class="card__cat">${cat}</span>
+          <h3 class="card__title">${e.title||""}</h3>
+          <div class="card__meta">
+            <span class="when">${fmt(e)}</span>
+            <span>${e.place||e.city||""}</span>
+          </div>
+        </div>
+      </a>`;
+    }).join("");
+  }
+
+  renderCats(); renderWall();
+
+  // ---------- reveals au scroll ----------
+  const io=new IntersectionObserver((es)=>{
+    es.forEach(x=>{ if(x.isIntersecting){x.target.classList.add('in'); io.unobserve(x.target);} });
+  },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{
+    el.style.transitionDelay=(Math.min(i,6)*70)+'ms'; io.observe(el);
+  });
+})();
+</script>
+</body>
+</html>

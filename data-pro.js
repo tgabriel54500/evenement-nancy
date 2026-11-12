@@ -3,32 +3,36 @@
 // Sources : agendas publics des réseaux d'affaires, de la CCI, du MEDEF 54 et
 // du Centre Prouvé (voir pro-sources.js / pro-scrape.js).
 // Régénérer : node pro-scrape.js && node update-pro.js
-// Généré le : 2026-09-30 — 22 événement(s) à venir.
+// Généré le : 2026-11-12 — 19 événement(s) à venir.
 
 const CATEGORIES = {
-  "formation": {
-    "label": "Ateliers & formations",
-    "emoji": "🛠️"
-  },
-  "salon": {
-    "label": "Salons & congrès",
-    "emoji": "🏛️"
+  "emploi": {
+    "label": "Emploi & recrutement",
+    "emoji": "💼"
   },
   "petit-dej": {
     "label": "Petits-déjeuners & déjeuners",
     "emoji": "☕"
   },
+  "salon": {
+    "label": "Salons & congrès",
+    "emoji": "🏛️"
+  },
+  "afterwork": {
+    "label": "Afterworks & networking",
+    "emoji": "🥂"
+  },
   "conference": {
     "label": "Conférences & tables rondes",
     "emoji": "🎤"
   },
-  "emploi": {
-    "label": "Emploi & recrutement",
-    "emoji": "💼"
+  "formation": {
+    "label": "Ateliers & formations",
+    "emoji": "🛠️"
   }
 };
 
-const GENERATED_AT = "2026-09-30";
+const GENERATED_AT = "2026-11-12";
 
 const RESEAUX = [
   {
@@ -55,7 +59,7 @@ const RESEAUX = [
     "frequency": "Deux mardis par mois environ, à 9h",
     "membersOnly": false,
     "scrape": true,
-    "count": 4
+    "count": 0
   },
   {
     "key": "adjan",
@@ -81,7 +85,7 @@ const RESEAUX = [
     "frequency": "Plusieurs rendez-vous par mois",
     "membersOnly": false,
     "scrape": true,
-    "count": 1
+    "count": 7
   },
   {
     "key": "cci",
@@ -94,7 +98,7 @@ const RESEAUX = [
     "frequency": "Plusieurs rendez-vous par mois",
     "membersOnly": false,
     "scrape": true,
-    "count": 3
+    "count": 0
   },
   {
     "key": "prouve",
@@ -107,7 +111,7 @@ const RESEAUX = [
     "frequency": "Selon le calendrier des congrès",
     "membersOnly": false,
     "scrape": true,
-    "count": 10
+    "count": 7
   },
   {
     "key": "sluc-business",
@@ -149,6 +153,32 @@ const RESEAUX = [
     "count": 0
   },
   {
+    "key": "dynabuy-boostees",
+    "name": "Dynabuy Club Nancy, Les Boostées",
+    "site": "https://www.clubsdaffaires.fr/club/nancy-les-boostees",
+    "agenda": "https://www.linkedin.com/company/dynabuy-les-boostees/",
+    "blurb": "Club d'affaires 100 % féminin du réseau Dynabuy (ex-Bouge ta Boîte Nancy) : déjeuners de club deux jeudis par mois à Office Station, et des soirées ouvertes annoncées sur LinkedIn.",
+    "logo": "affiches-pro/logos/dynabuy-boostees.svg",
+    "logoOnDark": false,
+    "frequency": "Deux jeudis par mois, 12h15 à 14h",
+    "membersOnly": true,
+    "scrape": false,
+    "count": 0
+  },
+  {
+    "key": "dynabuy-dynaffaires",
+    "name": "Dynabuy Club Dynaffaires Nancy",
+    "site": "https://www.clubsdaffaires.fr/club/dynaffaires-nancy",
+    "agenda": "",
+    "blurb": "Club d'affaires du réseau Dynabuy : réunions deux mercredis par mois, chez un membre ou ailleurs à Nancy.",
+    "logo": "affiches-pro/logos/dynabuy-dynaffaires.svg",
+    "logoOnDark": false,
+    "frequency": "Deux mercredis par mois",
+    "membersOnly": true,
+    "scrape": false,
+    "count": 0
+  },
+  {
     "key": "vhb-family-business",
     "name": "Villers Handball, Family Business",
     "site": "https://villers-handball.com/accueil/family-business/les-evenements/",
@@ -159,410 +189,11 @@ const RESEAUX = [
     "frequency": "Une vingtaine d'événements par saison",
     "membersOnly": true,
     "scrape": false,
-    "count": 0
+    "count": 1
   }
 ];
 
 const EVENTS = [
-  {
-    "uuid": "pro-cci-creation-entreprise-identifier-les-points-cles-pour-un-projet-reussi",
-    "title": "Création entreprise : identifier les points-clés pour un projet réussi",
-    "category": "formation",
-    "subcats": [
-      "CCI Grand Nancy Métropole",
-      "750,00 €",
-      "ouvert à tous"
-    ],
-    "date": "2026-09-28",
-    "endDate": "2026-10-02",
-    "dateText": "Du 28 au 2 octobre 2026",
-    "schedule": "9h00–17h00",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-cci-creation-entreprise-identifier-les-points-cles-pour--16hxw7l.svg",
-    "url": "https://www.nancy.cci.fr/evenement/creation-entreprise-identifier-les-points-cles-pour-un-projet-reussi",
-    "source": "cci",
-    "addedAt": "2026-09-28",
-    "network": "cci",
-    "organizer": "CCI Grand Nancy Métropole",
-    "membersOnly": false,
-    "price": "750,00 €",
-    "description": "La formation pour comprendre comment créer votre entreprise !",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-prouve-2emes-rencontres-du-reseau-velo-et-marche",
-    "title": "2èmes Rencontres du Réseau vélo et marche",
-    "category": "salon",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-02",
-    "dateText": "Du 30 au 2 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25409/rencontres-velo-2026-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/2emes-rencontres-du-reseau-velo-et-marche/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Cette année, les 2èmes Rencontres du Réseau vélo et marche se tiendront du 30 septembre au 02 octobre 2026 au Centre Prouvé de Nancy. L’événement de référence qui réunit l’ensemble de l’écosystème français des mobilités actives. Il permet aux élus, techniciens, aménageurs, usagers et acteurs du tourisme à vélo de se rencontrer, d’échanger leurs expériences…"
-  },
-  {
-    "uuid": "pro-audacieux-petit-dej-audacieux-b-coworker-nancy-2026-10-01",
-    "title": "Petit déj Audacieux – B’CoWorker Nancy",
-    "category": "petit-dej",
-    "subcats": [
-      "Les Audacieux Nancy",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "Jeudi 1 octobre 2026",
-    "schedule": "8h30",
-    "place": "B'CoWorker Nancy",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-audacieux-petit-dej-audacieux-b-coworker-nancy-2026-10-0-18bmycn.svg",
-    "url": "https://adsum.social/e/petit-dej-audacieux-b-coworker-nancy",
-    "source": "audacieux",
-    "addedAt": "2026-09-28",
-    "network": "audacieux",
-    "organizer": "Les Audacieux Nancy",
-    "membersOnly": false,
-    "price": "",
-    "description": "Comme toujours, l’objectif est simple : se rencontrer, échanger et créer des opportunités business dans une ambiance détendue et bienveillante. Le déroulement du petit dej : 8h30 – Accueil des participants. 9h00 – Mot de bienvenue et présentation du B’cowoker Nancy Tour de table et networking. Tu as envie de rencontrer des entrepreneurs et commerciaux de la métropole nancéienne ? De développer son réseau professionnel ? Partager des idées, des conseils et des opportunités ? Que tu sois déjà membre ou nouveau curieux, ce petit dej est ouvert à tous les esprits audacieux qui souhaitent élargir l",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-prouve-journees-des-donnees-de-sante-et-finances-hospitalieres",
-    "title": "Journées des données de santé et finances hospitalières",
-    "category": "formation",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-06",
-    "dateText": "Du 5 au 6 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25410/fhf2026-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/journees-des-donnees-de-sante-et-finances-hospitalieres/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Cette année, les Journées des données de santé et finances hospitalières se tiendront du 05 au 06 octobre 2026 au Centre Prouvé de Nancy. Dans un contexte marqué par de fortes contraintes budgétaires, des besoins de santé en constante évolution et la poursuite des transformations territoriales de l’offre de soins, les données de santé et…"
-  },
-  {
-    "uuid": "pro-adjan-2026-10-06-marc-madiot",
-    "title": "8/9 ADJAN avec Marc Madiot",
-    "category": "petit-dej",
-    "subcats": [
-      "Le 8/9 d'ADJAN",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-06",
-    "endDate": "2026-10-06",
-    "dateText": "Mardi 6 octobre 2026",
-    "schedule": "8h00–9h00",
-    "place": "Campanile Nancy Gare",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/Marc-MADIOT-Ancien-coureur-cycliste-dirigeant-sportif-et-consultant-francais.-Double-vainqueur-de-Paris-Roubaix-1985-et-19911.png",
-    "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
-    "source": "adjan",
-    "addedAt": "2026-09-28",
-    "network": "adjan",
-    "organizer": "Le 8/9 d'ADJAN",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Marc MADIOT comme intervenant."
-  },
-  {
-    "uuid": "pro-cci-nuit-de-la-creation-2026",
-    "title": "LA NUIT DE LA CRÉATION",
-    "category": "conference",
-    "subcats": [
-      "CCI Grand Nancy Métropole",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-08",
-    "endDate": "2026-10-08",
-    "dateText": "Jeudi 8 octobre 2026",
-    "schedule": "16h00–21h00",
-    "place": "Pala V - 5 rue du Mouzon",
-    "city": "Laxou",
-    "free": true,
-    "reservation": true,
-    "image": "affiches-pro/pro-cci-nuit-de-la-creation-2026-2026-10-08-156juje.svg",
-    "url": "https://www.nancy.cci.fr/evenement/nuit-de-la-creation-2026",
-    "source": "cci",
-    "addedAt": "2026-09-28",
-    "network": "cci",
-    "organizer": "CCI Grand Nancy Métropole",
-    "membersOnly": false,
-    "price": "",
-    "description": "Rendez-vous le jeudi 8 octobre de 16h à 21h pour la Nuit de la Création d'entreprise !",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-medef54-formation-at-mp-sante-mentale-et-travail",
-    "title": "Formation AT/MP : Santé Mentale et Travail",
-    "category": "formation",
-    "subcats": [
-      "MEDEF Meurthe-et-Moselle",
-      "Gratuit",
-      "réservé aux membres"
-    ],
-    "date": "2026-10-08",
-    "endDate": "2026-10-08",
-    "dateText": "Jeudi 8 octobre 2026",
-    "schedule": "9h00–17h00",
-    "place": "Pôle Formation UIMM Lorraine",
-    "city": "Maxéville",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/06/74ac8cb63c42f6a9a128ae7de3b75cf507bef441.png",
-    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/129",
-    "source": "medef54",
-    "addedAt": "2026-09-30",
-    "network": "medef54",
-    "organizer": "MEDEF Meurthe-et-Moselle",
-    "membersOnly": true,
-    "price": "Gratuit",
-    "description": "Risques psychosociaux et prévention des RPS Dans un contexte où la santé mentale est devenue un enjeu majeur de performance, d’attractivité et de responsabilité employeur, cette formation vise à outiller les dirigeants et managers pour passer de la réaction à la prévention structurelle."
-  },
-  {
-    "uuid": "pro-prouve-journee-serafin-ph-et-transformation-offre-handicap",
-    "title": "Journée Sérafin PH et transformation offre Handicap",
-    "category": "formation",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-12",
-    "endDate": "2026-10-12",
-    "dateText": "Lundi 12 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25731/ars-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/journee-serafin-ph-et-transformation-offre-handicap/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Partage de pratiques, orientations pour faire évoluer l’offre dédiée aux personnes en situation de handicap en Grand Est. Localisation"
-  },
-  {
-    "uuid": "pro-cafesbusiness-3431",
-    "title": "Café Business chez Fenêtres Nancéiennes",
-    "category": "petit-dej",
-    "subcats": [
-      "Les Cafés Business",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-13",
-    "endDate": "2026-10-13",
-    "dateText": "Mardi 13 octobre 2026",
-    "schedule": "9h00",
-    "place": "Fenêtres Nancéiennes",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3431-2026-10-13-3yawh7.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3431",
-    "source": "cafesbusiness",
-    "addedAt": "2026-09-28",
-    "network": "cafesbusiness",
-    "organizer": "Les Cafés Business",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Fenêtres Nancéiennes. Inscription en ligne, places limitées.",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-prouve-congres-et-salon-des-epl",
-    "title": "Congrès et Salon des Epl",
-    "category": "conference",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-14",
-    "endDate": "2026-10-16",
-    "dateText": "Du 14 au 16 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/22521/epl-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/congres-et-salon-des-epl/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Lieu de débat, de mise en réseau et de benchmark, le Congrès permet aux Entreprises publiques locales et à leurs parties prenantes de cerner les enjeux actuels et futurs du développement local, d’interroger leurs pratiques et de réfléchir à leur positionnement. Localisation"
-  },
-  {
-    "uuid": "pro-prouve-forum-est-horizon",
-    "title": "Forum Est-Horizon",
-    "category": "formation",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "Gratuit",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-22",
-    "endDate": "2026-10-22",
-    "dateText": "Jeudi 22 octobre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": true,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/26678/forum-est-horizon-1-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/forum-est-horizon/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "Gratuit",
-    "description": "L’un des plus grands forums de rencontres étudiants – professionnels du Grand Est. Il regroupe environ 40 entreprises pour 1000 visiteurs et le Forum propose également des ateliers professionnalisants (corrections de CV, simulations d’entretien, photos) ainsi qu’un concours de projets entrepreneurial. Localisation"
-  },
-  {
-    "uuid": "pro-cafesbusiness-3444",
-    "title": "Café Business chez DOMITYS",
-    "category": "petit-dej",
-    "subcats": [
-      "Les Cafés Business",
-      "ouvert à tous"
-    ],
-    "date": "2026-10-27",
-    "endDate": "2026-10-27",
-    "dateText": "Mardi 27 octobre 2026",
-    "schedule": "9h00",
-    "place": "DOMITYS",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3444-2026-10-27-5i6bvw.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3444",
-    "source": "cafesbusiness",
-    "addedAt": "2026-09-28",
-    "network": "cafesbusiness",
-    "organizer": "Les Cafés Business",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par DOMITYS. Inscription en ligne, places limitées.",
-    "autoPoster": true
-  },
-  {
-    "uuid": "pro-adjan-2026-11-03-luc-alphand",
-    "title": "8/9 ADJAN avec Luc Alphand",
-    "category": "petit-dej",
-    "subcats": [
-      "Le 8/9 d'ADJAN",
-      "ouvert à tous"
-    ],
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "dateText": "Mardi 3 novembre 2026",
-    "schedule": "8h00–9h00",
-    "place": "Nancy (lieu précisé à l'inscription)",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/Marc-MADIOT-Ancien-coureur-cycliste-dirigeant-sportif-et-consultant-francais.-Double-vainqueur-de-Paris-Roubaix-1985-et-19918.png",
-    "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
-    "source": "adjan",
-    "addedAt": "2026-09-28",
-    "network": "adjan",
-    "organizer": "Le 8/9 d'ADJAN",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Luc ALPHAND comme intervenant."
-  },
-  {
-    "uuid": "pro-prouve-journees-scientifiques-dimagerie-interventionnelle-afppe",
-    "title": "Journées Scientifiques d’Imagerie Interventionnelle AFPPE",
-    "category": "salon",
-    "subcats": [
-      "Centre Prouvé & Parc Expo",
-      "ouvert à tous"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-07",
-    "dateText": "Du 6 au 7 novembre 2026",
-    "schedule": "",
-    "place": "Centre Prouvé",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "https://www.destination-nancy.com/app/uploads/iris-images/25873/afppe-800x500-f50_50.webp",
-    "url": "https://www.destination-nancy.com/temps-fort/journees-scientifiques-dimagerie-interventionnelle-afppe/",
-    "source": "prouve",
-    "addedAt": "2026-09-28",
-    "network": "prouve",
-    "organizer": "Centre Prouvé & Parc Expo",
-    "membersOnly": false,
-    "price": "",
-    "description": "Promouvoir l’imagerie interventionnelle et partager les expertises. Le futur manipulateur : un MAORI MAORI : Manipulateur Aide Opératoire en Radiologie Interventionnelle. Cette dénomination affirme une identité professionnelle spécifique et accompagne la spécialisation progressive des équipes en radiologie interventionnelle. Elle répond au développement de la discipline et à la structuration nécessaire de ses activités. Le MAORI…"
-  },
-  {
-    "uuid": "pro-cafesbusiness-3554",
-    "title": "Café Business chez Nissan HESS Automobile",
-    "category": "petit-dej",
-    "subcats": [
-      "Les Cafés Business",
-      "ouvert à tous"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "Mardi 10 novembre 2026",
-    "schedule": "9h00",
-    "place": "Nissan HESS Automobile",
-    "city": "Nancy",
-    "free": false,
-    "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3554-2026-11-10-1rbmi2t.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3554",
-    "source": "cafesbusiness",
-    "addedAt": "2026-09-28",
-    "network": "cafesbusiness",
-    "organizer": "Les Cafés Business",
-    "membersOnly": false,
-    "price": "",
-    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Nissan HESS Automobile. Inscription en ligne, places limitées.",
-    "autoPoster": true
-  },
   {
     "uuid": "pro-prouve-geologia",
     "title": "Géologia",
@@ -591,6 +222,32 @@ const EVENTS = [
     "description": "1er forum national de rencontres entre étudiants et entreprises des géosciences, le salon Géologia est un lieu d’information, de discussions et de recrutement. Localisation"
   },
   {
+    "uuid": "pro-medef54-petit-dejeuner-facturation-electronique-1",
+    "title": "Petit-déjeuner : Facturation Electronique",
+    "category": "petit-dej",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-11-12",
+    "dateText": "Jeudi 12 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/06/e08ed1c1230e255ae4458b7459ee73a805ab7145.jpeg",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/135",
+    "source": "medef54",
+    "addedAt": "2026-10-29",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": false,
+    "price": "",
+    "description": "Premier bilan quelques mois après le lancement Quelques mois après l'entrée en vigueur de la réforme de la facturation électronique, où en sont les entreprises ? Quels sont les premiers retours d'expérience, les difficultés rencontrées et les prochaines échéances à anticiper ?"
+  },
+  {
     "uuid": "pro-prouve-20e-cnaag",
     "title": "20e CNAAG",
     "category": "salon",
@@ -617,8 +274,8 @@ const EVENTS = [
     "description": "Le Congrès National de l’Animation et de l’Accompagnement en Gérontologie fête ses 20 ans. Localisation"
   },
   {
-    "uuid": "pro-adjan-2026-11-17-equicoaching",
-    "title": "8/9 ADJAN avec EquiCoaching",
+    "uuid": "pro-adjan-2026-11-17-workshop-equicoaching",
+    "title": "8/9 ADJAN avec Workshop Equicoaching",
     "category": "petit-dej",
     "subcats": [
       "Le 8/9 d'ADJAN",
@@ -628,19 +285,257 @@ const EVENTS = [
     "endDate": "2026-11-17",
     "dateText": "Mardi 17 novembre 2026",
     "schedule": "8h00–9h00",
-    "place": "Nancy (lieu précisé à l'inscription)",
-    "city": "Nancy",
+    "place": "Éperon de Nancy, Villers-lès-Nancy",
+    "city": "Villers-lès-Nancy",
     "free": false,
     "reservation": true,
-    "image": "https://adjan.fr/wp-content/uploads/2026/09/Design-sans-titre4.png",
+    "image": "https://adjan.fr/wp-content/uploads/2026/10/7.png",
     "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
     "source": "adjan",
-    "addedAt": "2026-09-28",
+    "addedAt": "2026-10-13",
     "network": "adjan",
     "organizer": "Le 8/9 d'ADJAN",
     "membersOnly": false,
     "price": "",
-    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec EquiCoaching comme intervenant."
+    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Workshop Equicoaching comme intervenant."
+  },
+  {
+    "uuid": "pro-audacieux-afterwork-les-audacieux-pala-v-2026-11-18",
+    "title": "Afterwork Les Audacieux – Pala V",
+    "category": "afterwork",
+    "subcats": [
+      "Les Audacieux Nancy",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "dateText": "Mercredi 18 novembre 2026",
+    "schedule": "19h00",
+    "place": "5 Bis Rue du Mouzon, 54520 Laxou",
+    "city": "Laxou",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-pro/pro-audacieux-afterwork-les-audacieux-pala-v-2026-11-18-2026-7wjjqh.svg",
+    "url": "https://adsum.social/e/afterwork-les-audacieux-pala-v",
+    "source": "audacieux",
+    "addedAt": "2026-10-28",
+    "network": "audacieux",
+    "organizer": "Les Audacieux Nancy",
+    "membersOnly": false,
+    "price": "",
+    "description": "Le déroulement de la soirée : 19h00 – Accueil des participants. 19h45 – Mot de bienvenue et présentation de Pala V. 20h00 – Networking libre : discussions, partages d’expériences et échanges de cartes de visite et échanges autour d’un verre et d’un moment convivial. Tu as envie de rencontrer des entrepreneurs et commerciaux de la métropole nancéienne ? De développer son réseau professionnel ? Partager des idées, des conseils et des opportunités ? Que tu sois déjà membre ou nouveau curieux, cet afterwork est ouvert à tous les esprits audacieux qui souhaitent élargir leur réseau ! 🧠 Les membres",
+    "autoPoster": true
+  },
+  {
+    "uuid": "pro-medef54-afterwork-nis2-une-obligation-des-opportunites",
+    "title": "Afterwork NIS2 : Une obligation, des opportunités",
+    "category": "afterwork",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "Jeudi 19 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/09/20516201294b5c1fef8277c810356c7f73a468d0.png",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/137",
+    "source": "medef54",
+    "addedAt": "2026-11-07",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": false,
+    "price": "",
+    "description": "La cybersécurité n'est plus seulement une question technique. C'est devenu un enjeu stratégique pour les entreprises. Avec la directive européenne NIS2, les exigences en matière de cybersécurité se renforcent. De nombreuses entreprises sont directement concernées, tandis que d'autres peuvent être impactées par les nouvelles attentes de leurs clients et donneurs d'ordre."
+  },
+  {
+    "uuid": "pro-medef54-afterwork-ne-quittez-pas-lia-vous-repond",
+    "title": "Afterwork : Ne quittez pas… l’IA vous répond",
+    "category": "afterwork",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-24",
+    "endDate": "2026-11-24",
+    "dateText": "Mardi 24 novembre 2026",
+    "schedule": "",
+    "place": "vos clients tout en préservant le temps de vos équipes ? Le MEDEF et TERANIS vou",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/06/662810239ca174f175354724d0b513a0e25c627e.jpeg",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/156",
+    "source": "medef54",
+    "addedAt": "2026-10-29",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": false,
+    "price": "",
+    "description": "Découvrez comment l’intelligence artificielle peut faire évoluer l’accueil téléphonique et la relation client. Un téléphone qui sonne pendant un rendez-vous. Un accueil déjà occupé. Une demande qui arrive après la fermeture. Comment mieux répondre à vos clients tout en préservant le temps de vos équipes ?"
+  },
+  {
+    "uuid": "pro-medef54-soiree-des-nouveaux-adherents-1",
+    "title": "Soirée des nouveaux adhérents",
+    "category": "afterwork",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "réservé aux membres"
+    ],
+    "date": "2026-11-25",
+    "endDate": "2026-11-25",
+    "dateText": "Mercredi 25 novembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Laxou",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/08/ef375cbdba3de70bee0eb02f066ad683d99890d7.jpg",
+    "url": "https://www.medef-meurthe-moselle.fr/evenement/soiree-des-nouveaux-adherents-1",
+    "source": "medef54",
+    "addedAt": "2026-11-07",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": true,
+    "price": "",
+    "description": "Un temps d'échanges pour découvrir les services aux adhérents et le réseaux MEDEF. Lieu : Les Domaines qui Montent, 413 Avenue de Boufflers, Laxou."
+  },
+  {
+    "uuid": "pro-prouve-foncier-economique-moins-dhectares-plus-de-strategie",
+    "title": "Foncier économique : moins d’hectares, plus de stratégie",
+    "category": "salon",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "Gratuit",
+      "ouvert à tous"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "Jeudi 26 novembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/28220/lorrup-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/foncier-economique-moins-dhectares-plus-de-strategie/",
+    "source": "prouve",
+    "addedAt": "2026-11-11",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "Gratuit",
+    "description": "ZAN, contraintes environnementales, marché de l’immobilier d’entreprise : une matinée pour comprendre ce que le nouveau cadre foncier change concrètement dans la capacité du territoire à accueillir des entreprises — et identifier les premières marges de manœuvre pour agir."
+  },
+  {
+    "uuid": "pro-vhb-family-business-2026-11-26-ptit-dej-mercato-emploi",
+    "title": "P'tit déj Mercato de l'emploi",
+    "category": "petit-dej",
+    "subcats": [
+      "Villers Handball, Family Business",
+      "réservé aux membres"
+    ],
+    "date": "2026-11-26",
+    "endDate": "2026-11-26",
+    "dateText": "Jeudi 26 novembre 2026",
+    "schedule": "8h30-10h30",
+    "place": "Le Café Foy, 1 place Stanislas",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "affiches-pro/pro-vhb-family-business-2026-11-26-ptit-dej-mercato-emploi-2-hzdxm6.svg",
+    "url": "https://villers-handball.com/accueil/family-business/les-evenements/",
+    "source": "vhb-family-business",
+    "addedAt": "2026-10-29",
+    "network": "vhb-family-business",
+    "organizer": "Villers Handball, Family Business",
+    "membersOnly": true,
+    "price": "",
+    "description": "Petit-déjeuner du Family Business du Villers Handball avec Mercato de l'emploi : découverte d'un nouvel outil, puis échanges conviviaux. 20 places.",
+    "autoPoster": true
+  },
+  {
+    "uuid": "pro-adjan-2026-12-01-vincent-gerard",
+    "title": "8/9 ADJAN avec Vincent Gérard",
+    "category": "petit-dej",
+    "subcats": [
+      "Le 8/9 d'ADJAN",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-01",
+    "endDate": "2026-12-01",
+    "dateText": "Mardi 1 décembre 2026",
+    "schedule": "8h00–9h00",
+    "place": "Campanile Nancy Centre Gare, Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://adjan.fr/wp-content/uploads/2026/10/11.png",
+    "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
+    "source": "adjan",
+    "addedAt": "2026-10-06",
+    "network": "adjan",
+    "organizer": "Le 8/9 d'ADJAN",
+    "membersOnly": false,
+    "price": "",
+    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Vincent GÉRARD comme intervenant."
+  },
+  {
+    "uuid": "pro-medef54-soiree-decryptages-4-diner-debat",
+    "title": "Soirée Décryptages #4 - Dîner - Débat",
+    "category": "conference",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "50 €",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-02",
+    "endDate": "2026-12-02",
+    "dateText": "Mercredi 2 décembre 2026",
+    "schedule": "18h30",
+    "place": "18h30",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/08/338f6b41694a2b7c20548c77b35852022caf4b9d.png",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/158",
+    "source": "medef54",
+    "addedAt": "2026-11-07",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": false,
+    "price": "50 €",
+    "description": "Participez à la dernière soirée Décryptages de l'année ! Dans un contexte économique et géopolitique particulièrement complexe, et si nous prenions le temps de nous retrouver, de prendre du recul et de partager un moment convivial ?"
+  },
+  {
+    "uuid": "pro-medef54-petit-dejeuner-protegez-le-patrimoine-numerique-de-votre-entreprise",
+    "title": "Petit-déjeuner : Protégez le patrimoine numérique de votre entreprise",
+    "category": "petit-dej",
+    "subcats": [
+      "MEDEF Meurthe-et-Moselle",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-03",
+    "endDate": "2026-12-03",
+    "dateText": "Jeudi 3 décembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Maxéville",
+    "free": false,
+    "reservation": true,
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/09/1794d5afa92870e0c8c21abd015a1e6f13f3bac0.png",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/138",
+    "source": "medef54",
+    "addedAt": "2026-11-07",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
+    "membersOnly": false,
+    "price": "",
+    "description": "Données clients, contrats, savoir-faire : votre entreprise possède un patrimoine numérique essentiel à son activité. Savez-vous où il se trouve et qui en garde la maîtrise ? Si une personne clé ou votre prestataire informatique devenait indisponible demain, pourriez-vous continuer à travailler ?"
   },
   {
     "uuid": "pro-prouve-congres-preuves-pratiques",
@@ -669,58 +564,110 @@ const EVENTS = [
     "description": "Un congrès réunissant des professionnels de santé autour de différentes thématiques de médecine générale. Localisation"
   },
   {
-    "uuid": "pro-cafesbusiness-3660",
-    "title": "Café Business chez Office Station",
+    "uuid": "pro-medef54-petit-dejeuner-preservez-votre-capital-sante-et-celui-de-vos-salaries",
+    "title": "Petit-déjeuner : Préservez votre capital santé et celui de vos salariés",
     "category": "petit-dej",
     "subcats": [
-      "Les Cafés Business",
+      "MEDEF Meurthe-et-Moselle",
       "ouvert à tous"
     ],
-    "date": "2026-12-08",
-    "endDate": "2026-12-08",
-    "dateText": "Mardi 8 décembre 2026",
-    "schedule": "9h00",
-    "place": "Office Station",
-    "city": "Nancy",
+    "date": "2026-12-10",
+    "endDate": "2026-12-10",
+    "dateText": "Jeudi 10 décembre 2026",
+    "schedule": "",
+    "place": "",
+    "city": "Maxéville",
     "free": false,
     "reservation": true,
-    "image": "affiches-pro/pro-cafesbusiness-3660-2026-12-08-15kjuup.svg",
-    "url": "https://lescafesbusiness.businessapp.fr/meetings/view/3660",
-    "source": "cafesbusiness",
-    "addedAt": "2026-09-28",
-    "network": "cafesbusiness",
-    "organizer": "Les Cafés Business",
+    "image": "https://www.medef-meurthe-moselle.fr/uploads/media/node/0002/09/372be726bbcd46f5d87287174f807a30d5437a49.png",
+    "url": "https://erpmedef54-exh8a6h7gnfqd9gx.francecentral-01.azurewebsites.net/inscription/139",
+    "source": "medef54",
+    "addedAt": "2026-11-07",
+    "network": "medef54",
+    "organizer": "MEDEF Meurthe-et-Moselle",
     "membersOnly": false,
     "price": "",
-    "description": "Petit-déjeuner de réseautage des Cafés Business, accueilli par Office Station. Inscription en ligne, places limitées.",
-    "autoPoster": true
+    "description": "Bien manger pour sa santé, tout en respectant l'environnement, est-ce si compliqué ? Entre journées chargées, repas pris sur le pouce et conseils nutritionnels parfois contradictoires, pas toujours facile de savoir quoi mettre dans son assiette !"
   },
   {
-    "uuid": "pro-cci-reunion-dinformation-pret-vous-lancer-2",
-    "title": "Réunion d’information « Prêt à vous lancer »",
-    "category": "formation",
+    "uuid": "pro-prouve-journee-regionale-bien-vieillir-en-sante",
+    "title": "Journée régionale Bien vieillir en santé en Grand Est",
+    "category": "salon",
     "subcats": [
-      "CCI Grand Nancy Métropole",
+      "Centre Prouvé & Parc Expo",
+      "Gratuit",
       "ouvert à tous"
     ],
-    "date": "2026-12-08",
-    "endDate": "2026-12-08",
-    "dateText": "Mardi 8 décembre 2026",
-    "schedule": "9h30–11h30",
-    "place": "",
+    "date": "2026-12-11",
+    "endDate": "2026-12-11",
+    "dateText": "Vendredi 11 décembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
     "city": "Nancy",
     "free": true,
     "reservation": true,
-    "image": "affiches-pro/pro-cci-reunion-dinformation-pret-vous-lancer-2-2026-12-08-exrcm7.svg",
-    "url": "https://www.nancy.cci.fr/evenement/reunion-dinformation-pret-vous-lancer-2",
-    "source": "cci",
-    "addedAt": "2026-09-28",
-    "network": "cci",
-    "organizer": "CCI Grand Nancy Métropole",
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/27774/ars-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/journee-regionale-bien-vieillir-en-sante/",
+    "source": "prouve",
+    "addedAt": "2026-10-03",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "Gratuit",
+    "description": "Rencontre entre professionnels pour partager sur les initiatives locales dans les 10 départements pour faire face au défi du vieillissement dans le Grand Est d’ici à 2050. Localisation"
+  },
+  {
+    "uuid": "pro-prouve-forum-masters-masteres-specialises-et-mba-en-france-et-a-linternational",
+    "title": "Forum masters, mastères spécialisés et MBA, en France et à l’international",
+    "category": "formation",
+    "subcats": [
+      "Centre Prouvé & Parc Expo",
+      "Gratuit",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "Samedi 12 décembre 2026",
+    "schedule": "",
+    "place": "Centre Prouvé",
+    "city": "Nancy",
+    "free": true,
+    "reservation": true,
+    "image": "https://www.destination-nancy.com/app/uploads/iris-images/28222/lorrup-1-800x500-f50_50.webp",
+    "url": "https://www.destination-nancy.com/temps-fort/forum-masters-masteres-specialises-et-mba-en-france-et-a-linternational/",
+    "source": "prouve",
+    "addedAt": "2026-10-31",
+    "network": "prouve",
+    "organizer": "Centre Prouvé & Parc Expo",
+    "membersOnly": false,
+    "price": "Gratuit",
+    "description": "Le Forum de l’Etudiant masters, mastères spécialisés et MBA, en France et à l’international à Nancy revient pour sa 2e édition le samedi 12 décembre 2026 au Centre Prouvé ! Un rendez-vous incontournable pour aider les jeunes à construire leur projet de poursuite d’études après un bac+3 et les guider parmi la diversité des formations,…"
+  },
+  {
+    "uuid": "pro-adjan-2026-12-15-michael-jones",
+    "title": "8/9 ADJAN avec Michael Jones",
+    "category": "petit-dej",
+    "subcats": [
+      "Le 8/9 d'ADJAN",
+      "ouvert à tous"
+    ],
+    "date": "2026-12-15",
+    "endDate": "2026-12-15",
+    "dateText": "Mardi 15 décembre 2026",
+    "schedule": "8h00–9h00",
+    "place": "Espace ACORIS, Nancy",
+    "city": "Nancy",
+    "free": false,
+    "reservation": true,
+    "image": "https://adjan.fr/wp-content/uploads/2026/11/Card-evenement-site-1.png",
+    "url": "https://2ed8yt.share-eu1.hsforms.com/2i3X8dmXOQ-abQhQf-Zc7mg",
+    "source": "adjan",
+    "addedAt": "2026-11-05",
+    "network": "adjan",
+    "organizer": "Le 8/9 d'ADJAN",
     "membersOnly": false,
     "price": "",
-    "description": "Vous avez une idée de création d’entreprise mais vous ne savez pas par où commencer ?",
-    "autoPoster": true
+    "description": "Petit-déjeuner de dirigeants du réseau 8/9 d'ADJAN, de 8h à 9h, avec Michael JONES comme intervenant."
   },
   {
     "uuid": "pro-prouve-le-salon-du-brasseur",

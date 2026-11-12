@@ -1898,5 +1898,78 @@
   "lat": 48.394724,
   "lon": 6.132092,
   "city": "Diarville"
- }
+ },
+ "sarrebourg": {
+  "lat": 48.736347,
+  "lon": 7.053883,
+  "city": "Sarrebourg"
+ },
+ "chenevieres": {
+  "lat": 48.516264,
+  "lon": 6.633897,
+  "city": "Chenevières"
+ },
+ "moyen": {
+  "lat": 48.484153,
+  "lon": 6.565967,
+  "city": "Moyen"
+ },
+ "flin": {
+  "lat": 48.498493,
+  "lon": 6.65618,
+  "city": "Flin"
+ },
+ "fremenil": {
+  "lat": 48.564108,
+  "lon": 6.712214,
+  "city": "Fréménil"
+ },
+ "pournoy-la-chetive": {
+  "lat": 49.019018,
+  "lon": 6.153323,
+  "city": "Pournoy-la-Chétive"
+ },
+ "neuville-les-vaucouleurs": {
+  "lat": 48.577692,
+  "lon": 5.67303,
+  "city": "Neuville-lès-Vaucouleurs"
+ },
+ "langley": {
+  "lat": 48.360285,
+  "lon": 6.325519,
+  "city": "Langley"
+ },
+ "vannes-le-chatel": {
+  "lat": 48.545707,
+  "lon": 5.785108,
+  "city": "Vannes-le-Châtel"
+ },
+ "moriville": {
+  "lat": 48.348681,
+  "lon": 6.41913,
+  "city": "Moriville"
+ },
+ "marainville-sur-madon": {
+  "lat": 48.397773,
+  "lon": 6.167873,
+  "city": "Marainville-sur-Madon"
+ },
+ "vaucouleurs": {
+  "lat": 48.600511,
+  "lon": 5.667623,
+  "city": "Vaucouleurs"
+ },
+ "domjevin": {
+  "lat": 48.574503,
+  "lon": 6.696177,
+  "city": "Domjevin"
+ },
+ "floremont": {
+  "lat": 48.366088,
+  "lon": 6.259097,
+  "city": "Florémont"
+ },
+ "autigny-la-tour": null,
+ "coin-sur-seille": null,
+ "vandieres": null
 }

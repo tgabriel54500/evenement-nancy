@@ -1,0 +1,22 @@
+# NB : PAS de X-Robots-Tag noindex sur /* → on VEUT être indexé par Google.
+# (le noindex ne bloque pas les scrapers, il ne fait que nous retirer de Google ;
+#  la vraie protection anti-aspiration est assurée par Cloudflare.)
+# Cadres : autorisés pour NOTRE site seulement (la galerie ouvre la page d'un
+# événement dans un panneau), toujours interdits pour les autres sites.
+/*
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: no-referrer
+  Permissions-Policy: geolocation=(), microphone=(), camera=(), browsing-topics=()
+  Content-Security-Policy: frame-ancestors 'self'
+  Cross-Origin-Resource-Policy: same-site
+
+# data.js : on décourage le cache partagé et l'usage hors-site.
+/data.js
+  X-Robots-Tag: noindex, nofollow
+  Cache-Control: no-store
+
+# Service worker : doit etre revalide a chaque fois, sinon une vieille
+# version reste active des semaines sur les telephones.
+/sw.js
+  Cache-Control: no-cache

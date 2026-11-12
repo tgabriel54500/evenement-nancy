@@ -45,7 +45,7 @@ mkdir -p "$DIST"
 # figure dans la nav. À ne pas confondre avec le chantier « sport amateur »
 # (publication par les clubs via Supabase), toujours en pause : sport.js, lui,
 # n'est pas publié.
-FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js pro.html data-pro.js pro-categories.js pro-gate.js supabase-loader.js _headers robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
+FILES="index.html nouveautes.html compte.html mentions-legales.html galerie.js events-core.js compte.js user-events.js config-supabase.js style.css pwa.js sw.js compte.css data.js sport.html data-sport.js pro.html data-pro.js pro-categories.js pro-gate.js supabase-loader.js _headers _redirects robots.txt sitemap.xml site.webmanifest apple-touch-icon.png icon-192.png icon-512.png icon-maskable-512.png favicon-32.png favicon-16.png logo.svg"
 # On repart d'un dist/ propre pour ne rien laisser traîner (HTML/JS/CSS ET autres).
 rm -rf "$DIST"
 mkdir -p "$DIST"
@@ -121,7 +121,11 @@ for page in index.html nouveautes.html sport.html pro.html compte.html mentions-
     let h = fs.readFileSync(p, "utf8");
     if (!/goatcounter/i.test(h)) {
       const gc = "  <script data-goatcounter=\"https://gabz.goatcounter.com/count\" async src=\"//gc.zgo.at/count.js\"></script>\n";
-      h = h.replace(/<\/body>/i, gc + "</body>");
+      // Lien court traqué (?ref=xxx, cf. _redirects) : en plus de la visite normale
+      // sur "/", on envoie un événement « lien-xxx » qui apparaît comme une ligne à
+      // part dans la liste des pages de GoatCounter.
+      const gcRef = "  <script>(function(){var r=new URLSearchParams(location.search).get(\"ref\");if(!r)return;r=r.replace(/[^a-z0-9-]/gi,\"\").slice(0,40);if(!r)return;var n=0;(function s(){var g=window.goatcounter;if(g&&g.count){g.count({path:\"lien-\"+r,title:\"Lien court \"+r,event:true});}else if(n++<40){setTimeout(s,250);}})();})();</script>\n";
+      h = h.replace(/<\/body>/i, gc + gcRef + "</body>");
     }
     fs.writeFileSync(p, h);
   ' "$DIST/$page"

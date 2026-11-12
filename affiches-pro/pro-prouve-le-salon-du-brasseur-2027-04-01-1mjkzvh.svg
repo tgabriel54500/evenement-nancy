@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="Salon du Brasseur &amp; de la Boisson">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0.35" y2="1">
+      <stop offset="0" stop-color="#4c1d95"/>
+      <stop offset="1" stop-color="#220d43"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <g fill="none" stroke="#ddd6fe" opacity=".13">
+    <circle cx="690" cy="170" r="230" stroke-width="3"/>
+    <circle cx="690" cy="170" r="330" stroke-width="2"/>
+    <circle cx="90" cy="1120" r="260" stroke-width="3"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-size="110"></text>
+  <text x="400" y="500" text-anchor="middle" font-family="Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="30" font-weight="700" letter-spacing="8" fill="#ddd6fe">CENTRE PROUVÉ</text>
+  <rect x="360" y="526" width="80" height="4" rx="2" fill="#ddd6fe" opacity=".8"/>
+  <g text-anchor="middle" font-family="'Sets Grotesk', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif" font-weight="800" letter-spacing="-1" fill="#ffffff">
+      <text x="400" y="628" font-size="100">Salon du</text>
+      <text x="400" y="740" font-size="100">Brasseur &amp;</text>
+      <text x="400" y="852" font-size="100">de la</text>
+      <text x="400" y="964" font-size="100">Boisson</text>
+  </g>
+  <g text-anchor="middle" font-family="Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif">
+    <text x="400" y="1084" font-size="50" font-weight="700" fill="#ddd6fe">Jusqu'au 2 avril</text>
+    <text x="400" y="1146" font-size="42" font-weight="600" fill="#ffffff" opacity=".78">Vandœuvre-lès-Nancy</text>
+  </g>
+</svg>

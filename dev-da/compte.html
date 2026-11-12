@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon espace — Agenda du Grand-Nancy</title>
+  <meta name="robots" content="index, follow">
+  <link rel="icon" type="image/svg+xml" href="da/tete.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <meta name="theme-color" content="#121212">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Sets Grotesk (titres) : projet web Adobe Fonts « agenda-grandnancy ». -->
+  <link rel="preconnect" href="https://use.typekit.net" crossorigin>
+  <link rel="stylesheet" href="https://use.typekit.net/vvq4moz.css">
+  <link rel="stylesheet" href="style.css?v=da2">
+  <link rel="stylesheet" href="compte.css?v=da1">
+</head>
+<body data-view="compte">
+  <header class="hero hero--compact">
+    <a class="brand" href="index.html" aria-label="Agenda Grand-Nancy, accueil"><img src="da/logo.svg" alt="Agenda Grand-Nancy" width="168" height="87"></a>
+    <!-- Menu compte (visible uniquement connecté) : email, retour, déconnexion. -->
+    <div class="nav-account" id="navAccount" hidden>
+      <button class="nav-account__btn" id="navMenuBtn" aria-expanded="false" aria-controls="navMenu" aria-label="Menu du compte">
+        <svg class="ico ico--user" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 12a5 5 0 100-10 5 5 0 000 10zm0 2c-4.42 0-8 2.24-8 5v2h16v-2c0-2.76-3.58-5-8-5z"/></svg>
+        <svg class="ico ico--burger" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke-width="2" stroke-linecap="round"/></svg>
+      </button>
+      <div class="nav-menu" id="navMenu" hidden>
+        <span class="nav-menu__who" id="menu-who"></span>
+        <a class="nav-menu__link" href="index.html">🖼️ Retour à l'agenda</a>
+        <button type="button" class="nav-menu__link nav-menu__btn" id="logout">🚪 Se déconnecter</button>
+      </div>
+    </div>
+    <div class="hero__inner">
+      <p class="hero__eyebrow"><a class="home-link" href="index.html">← Agenda du Grand-Nancy</a></p>
+      <h1 class="hero__title hero__title--compact">Espace <span>organisateur</span></h1>
+      <p class="hero__subtitle">Créez votre compte et publiez vos événements gratuitement.
+        Ils apparaissent dans l'agenda après une courte vérification.</p>
+    </div>
+  </header>
+
+  <main class="compte-main">
+    <!-- ÉTAT NON CONNECTÉ : lien magique -->
+    <section id="auth" class="card-pane" hidden>
+      <h2>Connexion / Inscription</h2>
+      <nav class="auth-tabs" role="tablist" aria-label="Connexion ou inscription">
+        <button type="button" class="auth-tab is-active" data-auth="signin">Se connecter</button>
+        <button type="button" class="auth-tab" data-auth="signup">Créer un compte</button>
+      </nav>
+
+      <!-- Connexion par mot de passe. Les attributs name/autocomplete sont ce
+           qui permet au téléphone (iOS, Android) de proposer l'enregistrement
+           du mot de passe et le pré-remplissage aux visites suivantes. -->
+      <form id="signin-form" class="auth-pane" method="post" action="#" autocomplete="on">
+        <label>Email
+          <input type="email" id="signin-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <label>Mot de passe
+          <input type="password" id="signin-password" name="password" required autocomplete="current-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Se connecter</button>
+        <p class="auth-links">
+          <a href="#" id="forgot-link">Mot de passe oublié ?</a> ·
+          <a href="#" id="magic-link">Recevoir un lien de connexion par email</a>
+        </p>
+      </form>
+
+      <!-- Création de compte : email + mot de passe + confirmation. -->
+      <form id="signup-form" class="auth-pane" method="post" action="#" autocomplete="on" hidden>
+        <label>Nom de l'organisation <small>(entreprise, association, réseau, club…)</small>
+          <input type="text" id="signup-org" name="organization" required maxlength="100" placeholder="Ex. : Les Audacieux Nancy" autocomplete="organization">
+        </label>
+        <label>Email
+          <input type="email" id="signup-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <label>Mot de passe <small>(8 caractères minimum)</small>
+          <input type="password" id="signup-password" name="new-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <label>Confirmez le mot de passe
+          <input type="password" id="signup-password2" name="confirm-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Créer mon compte</button>
+        <p class="auth-links">Déjà un compte ? <a href="#" id="to-signin">Se connecter</a></p>
+      </form>
+
+      <!-- Lien magique (ancienne méthode, toujours disponible). -->
+      <form id="auth-form" class="auth-pane" hidden>
+        <p>Recevez un lien de connexion par email, sans mot de passe.</p>
+        <label>Email
+          <input type="email" id="auth-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <button type="submit" class="btn-primary">Recevoir mon lien</button>
+        <p class="auth-links"><a href="#" id="to-signin-2">Retour à la connexion par mot de passe</a></p>
+      </form>
+
+      <!-- Mot de passe oublié : envoi du lien de réinitialisation. -->
+      <form id="forgot-form" class="auth-pane" hidden>
+        <p>Indiquez votre email : vous recevrez un lien pour choisir un nouveau mot de passe.</p>
+        <label>Email
+          <input type="email" id="forgot-email" name="email" required placeholder="vous@exemple.fr" autocomplete="username" inputmode="email" autocapitalize="off" spellcheck="false">
+        </label>
+        <button type="submit" class="btn-primary">Envoyer le lien</button>
+        <p class="auth-links"><a href="#" id="to-signin-3">Retour à la connexion</a></p>
+      </form>
+
+      <p id="auth-msg" class="msg" hidden></p>
+    </section>
+
+    <!-- NOUVEAU MOT DE PASSE : affiché quand on arrive par le lien de réinitialisation. -->
+    <section id="reset" class="card-pane" hidden>
+      <h2>Nouveau mot de passe</h2>
+      <form id="reset-form" method="post" action="#" autocomplete="on">
+        <label>Nouveau mot de passe <small>(8 caractères minimum)</small>
+          <input type="password" id="reset-password" name="new-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <label>Confirmez le mot de passe
+          <input type="password" id="reset-password2" name="confirm-password" required autocomplete="new-password" minlength="8">
+        </label>
+        <button type="submit" class="btn-primary">Enregistrer</button>
+        <p id="reset-msg" class="msg" hidden></p>
+      </form>
+    </section>
+
+    <!-- ÉTAT CONNECTÉ -->
+    <section id="app" class="card-pane" hidden>
+      <div class="app-head">
+        <span id="who"></span>
+      </div>
+      <!-- Comptes créés avant le champ « organisation », ou par lien magique :
+           on la demande une fois, ici, et elle est enregistrée sur le compte. -->
+      <form id="org-form" class="org-form" hidden>
+        <label>Nom de votre organisation <small>(entreprise, association, réseau, club…)</small>
+          <input type="text" id="org-name" name="organization" required maxlength="100" placeholder="Ex. : Les Audacieux Nancy" autocomplete="organization">
+        </label>
+        <button type="submit" class="btn-primary">Enregistrer</button>
+        <p id="org-msg" class="msg" hidden></p>
+      </form>
+
+      <nav class="tabs">
+        <button class="tab is-active" data-tab="publish">Publier un événement</button>
+        <button class="tab" data-tab="mine">Mes événements</button>
+      </nav>
+
+      <!-- FORMULAIRE -->
+      <div id="tab-publish" class="tab-pane">
+        <form id="event-form">
+          <input type="hidden" id="ev-id">
+
+          <!-- Type : 'event' (agenda culturel) ou 'pro' (onglet Pro : réseaux
+               d'affaires, conférences, salons). La feature sport (kind='sport')
+               reste en pause : pas d'option ici, code intact côté base. -->
+          <label id="row-kind" class="pro-only" hidden>Type *
+            <select id="ev-kind">
+              <option value="event">🎭 Sortie, culture, loisirs (agenda principal)</option>
+              <option value="pro">💼 Rendez-vous professionnel (onglet Pro)</option>
+            </select>
+          </label>
+
+          <label>Titre *
+            <input type="text" id="ev-title" required maxlength="140">
+          </label>
+
+          <label id="row-category">Catégorie *
+            <select id="ev-category" required></select>
+          </label>
+
+          <!-- Champs propres aux rendez-vous pro -->
+          <div id="row-pro" hidden>
+            <label>Organisateur / réseau <small>(affiché sur la fiche, ex : Les Audacieux Nancy)</small>
+              <input type="text" id="ev-organizer" maxlength="100" placeholder="Nom de votre réseau, club ou entreprise">
+            </label>
+            <div class="checks">
+              <label class="inline"><input type="checkbox" id="ev-members"> Réservé aux membres du réseau</label>
+            </div>
+          </div>
+
+          <div class="row">
+            <label>Date de début *
+              <input type="date" id="ev-date" required>
+            </label>
+            <label>Date de fin <small>(si plusieurs jours)</small>
+              <input type="date" id="ev-end">
+            </label>
+          </div>
+
+          <div class="row">
+            <label>Heure de début <small>(optionnel)</small>
+              <input type="time" id="ev-time-start">
+            </label>
+            <label>Heure de fin <small>(optionnel)</small>
+              <input type="time" id="ev-time-end">
+            </label>
+          </div>
+
+          <div class="row">
+            <label class="ac-wrap">Lieu / adresse * <small>(choisissez une proposition)</small>
+              <input type="text" id="ev-place" required maxlength="120" autocomplete="off"
+                     placeholder="ex : 1 place Stanislas">
+              <div class="ac-list" id="ac-place" hidden></div>
+            </label>
+            <label>Ville *
+              <input type="text" id="ev-city" required maxlength="80">
+            </label>
+          </div>
+
+          <label id="row-desc">Description *
+            <textarea id="ev-desc" required rows="5" maxlength="2000"></textarea>
+          </label>
+
+          <label>Lien « Plus d'infos » <small>(optionnel, ex : votre-site.fr)</small>
+            <input type="text" id="ev-url" inputmode="url" placeholder="votre-site.fr" maxlength="300">
+          </label>
+
+          <div class="checks">
+            <label class="inline"><input type="checkbox" id="ev-free"> Gratuit</label>
+            <label class="inline"><input type="checkbox" id="ev-resa"> Réservation requise</label>
+          </div>
+
+          <label id="row-image">Affiche / image <span id="image-req">*</span> <small>(JPG, PNG, WebP ou GIF, 5 Mo max<span id="image-hint"></span>)</small>
+            <input type="file" id="ev-image" accept="image/png,image/jpeg,image/webp,image/gif">
+          </label>
+          <img id="ev-preview" class="preview" hidden alt="">
+
+          <!-- Aperçu de l'annonce telle qu'elle apparaîtra dans la galerie
+               (vignette) et dans sa fiche. Mis à jour à chaque saisie. -->
+          <section class="apercu" id="apercu" aria-live="polite">
+            <h3 class="apercu__title">Aperçu de votre annonce</h3>
+            <p class="apercu__hint">C'est ainsi qu'elle apparaîtra sur l'agenda. Vérifiez avant de publier.</p>
+            <div class="apercu__body">
+              <div class="apercu__tile" id="apercu-tile"></div>
+              <div class="apercu__fiche" id="apercu-fiche"></div>
+            </div>
+          </section>
+
+          <button type="submit" class="btn-primary" id="ev-submit">Publier</button>
+          <button type="button" class="btn-ghost" id="ev-cancel" hidden>Annuler l'édition</button>
+          <p id="ev-msg" class="msg" hidden></p>
+        </form>
+        <p class="hint">Chaque événement est vérifié automatiquement par une IA avant
+          publication (contenu cohérent, image appropriée). Vous verrez son statut
+          dans « Mes événements » en quelques secondes.</p>
+      </div>
+
+      <!-- MES ÉVÉNEMENTS -->
+      <div id="tab-mine" class="tab-pane" hidden>
+        <p id="mine-empty" class="msg" hidden>Aucun événement pour l'instant.</p>
+        <ul id="mine-list" class="mine-list"></ul>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="config-supabase.js"></script>
+  <script src="data.js"></script>
+  <script src="pro-categories.js"></script>
+  <script src="pro-gate.js?v=2"></script>
+  <script src="compte.js?v=10"></script>
+
+  <!-- Bouton contact WhatsApp -->
+  <a class="wa-fab" href="https://wa.me/33749326481?text=Bonjour%2C%20je%20vous%20contacte%20depuis%20l%27agenda%20du%20Grand-Nancy." target="_blank" rel="noopener" aria-label="Nous contacter sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+    <span class="wa-fab__label">Contact</span>
+  </a>
+
+  <footer class="footer">
+    <p><a href="mentions-legales.html">Mentions légales</a></p>
+  </footer>
+</body>
+</html>

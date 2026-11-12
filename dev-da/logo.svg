@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-label="Agenda Nancy">
+<rect width="512" height="512" rx="112" fill="#fdf6e8"></rect>
+<rect x="96" y="120" width="320" height="288" rx="36" fill="none" stroke="#c4452f" stroke-width="26"></rect>
+<line x1="96" y1="212" x2="416" y2="212" stroke="#c4452f" stroke-width="26"></line>
+<line x1="160" y1="84" x2="160" y2="150" stroke="#c4452f" stroke-width="26" stroke-linecap="round"></line>
+<line x1="352" y1="84" x2="352" y2="150" stroke="#c4452f" stroke-width="26" stroke-linecap="round"></line>
+<rect x="270" y="262" width="92" height="92" rx="20" fill="#e8b64c"></rect>
+<circle cx="196" cy="308" r="18" fill="#c4452f" opacity="0.3"></circle>
+</svg>

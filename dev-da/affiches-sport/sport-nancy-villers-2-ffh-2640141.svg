@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" width="800" height="1200" role="img" aria-label="NANCY / VILLERS 2 reçoit HOENHEIM">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#141414"/>
+      <stop offset="1" stop-color="#0e0e0e"/>
+    </linearGradient>
+    <!-- Voile sombre au centre : le motif de fond reste visible sur les bords,
+         le nom des équipes garde son contraste. -->
+    <radialGradient id="v" cx="50%" cy="52%" r="62%">
+      <stop offset="0" stop-color="#0e0e0e" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#0e0e0e" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="1200" fill="url(#g)"/>
+  <path d="M330 1200 V1120 H470 V1200" fill="none" stroke="#fdd835" stroke-width="8" opacity=".13"/>
+  <path d="M180 1200 V1120 a150 150 0 0 1 150 -150 H470 a150 150 0 0 1 150 150 V1200" fill="none" stroke="#fdd835" stroke-width="6" opacity=".13"/>
+  <path d="M90 1200 V1120 a240 240 0 0 1 240 -240 H470 a240 240 0 0 1 240 240 V1200" fill="none" stroke="#fdd835" stroke-width="4" opacity=".13"/>
+  <path d="M0 1010 L800 890 L800 1200 L0 1200 Z" fill="#fdd835" opacity=".14"/>
+  <rect width="800" height="1200" fill="url(#v)"/>
+  <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+    <text x="400" y="256" font-size="30" font-weight="700" fill="#ffffff" opacity=".55" letter-spacing="9">HANDBALL</text>
+    <text x="400" y="330" font-size="34" font-weight="600" fill="#fdd835" letter-spacing="3">NATIONALE 3 MASCULINE</text>
+    <text x="400" y="378" font-size="27" font-weight="500" fill="#ffffff" opacity=".65">9e journée</text>
+
+    <text x="400" y="530" font-size="64" font-weight="800" fill="#ffffff">NANCY / VILLERS 2</text>
+    <text x="400" y="612" font-size="36" font-weight="600" fill="#fdd835" letter-spacing="8">REÇOIT</text>
+    <text x="400" y="726" text-anchor="middle" font-size="104" font-weight="800" fill="#ffffff">HOENHEIM</text>
+
+    <rect x="160" y="866" width="480" height="2" fill="#ffffff" opacity=".22"/>
+    <text x="400" y="932" font-size="40" font-weight="700" fill="#ffffff">samedi 28 novembre · 19h00</text>
+    
+    <text x="400" y="978" font-size="27" font-weight="500" fill="#ffffff" opacity=".7">Salle Marie Marvingt, Villers-lès-Nancy</text>
+  </g>
+</svg>

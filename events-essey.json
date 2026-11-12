@@ -1,278 +1,5 @@
 [
   {
-    "uuid": "essey-inauguration-de-lallee-victor-martin",
-    "title": "Inauguration de l'Allée Victor Martin",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Vie municipale"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "14h à 15h30",
-    "place": "Jardin de l'an 2000",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/jardin-an-2000_0.jpg?itok=4eh5JWaG",
-    "url": "https://www.esseylesnancy.fr/agenda/inauguration-de-lallee-victor-martin",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-nuit-des-sports",
-    "title": "Nuit des sports",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Vie sportive"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "17h à 22h",
-    "place": "Salle Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2055406113.jpeg?itok=vj48cP9l",
-    "url": "https://www.esseylesnancy.fr/agenda/nuit-des-sports",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-fete-de-lautomne-du-conseil-de-quartier-des-hauts-dessey",
-    "title": "Fête de l’automne du Conseil de quartier des Hauts d'Essey",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "12h à 17h30",
-    "place": "Haut-Château",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/cdqhe-affiche-fete-automne-2024-site.jpg?itok=i5vEVfOj",
-    "url": "https://www.esseylesnancy.fr/agenda/fete-de-lautomne-du-conseil-de-quartier-des-hauts-dessey",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-repair-cafe-du-8-octobre",
-    "title": "Repair Café du 8 octobre",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-08",
-    "endDate": "2026-10-08",
-    "dateText": "",
-    "schedule": "17h à 20h",
-    "place": "Foyer Foch",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/repair_cafe_new_1.jpg?itok=WozypZi1",
-    "url": "https://www.esseylesnancy.fr/agenda/repair-cafe-du-8-octobre",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-reunion-publique-du-conseil-de-quartier-centre",
-    "title": "Réunion publique du Conseil de quartier Centre",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "20h à 22h",
-    "place": "Maison des Associations",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/reunion-publique-AdobeStock_165807958.jpeg?itok=k9OvDbKv",
-    "url": "https://www.esseylesnancy.fr/agenda/reunion-publique-du-conseil-de-quartier-centre",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-representation-de-lensemble-vocal-voix-plurielles",
-    "title": "Représentation de l'ensemble vocal Voix Plurielles",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Vie culturelle"
-    ],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "20h30",
-    "place": "Église Saint-Georges",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2001817892.jpeg?itok=DQR17LJg",
-    "url": "https://www.esseylesnancy.fr/agenda/representation-de-lensemble-vocal-voix-plurielles",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-balade-canine-animal-dans-la-ville",
-    "title": "Balade canine – Animal dans la Ville",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Animal dans la ville"
-    ],
-    "date": "2026-10-11",
-    "endDate": "2026-10-11",
-    "dateText": "",
-    "schedule": "9h30",
-    "place": "Place de la République",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_2183368439.jpeg?itok=xVdz8pmP",
-    "url": "https://www.esseylesnancy.fr/agenda/balade-canine-animal-dans-la-ville",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-yza-chante-piaf-pour-eler",
-    "title": "Yza chante Piaf pour ELER",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Vie culturelle"
-    ],
-    "date": "2026-10-11",
-    "endDate": "2026-10-11",
-    "dateText": "",
-    "schedule": "15h",
-    "place": "Salle Maringer",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/yza_chante_piaf.jpg?h=3a7e59e3&amp;itok=6DU5nXYA",
-    "url": "https://www.esseylesnancy.fr/agenda/yza-chante-piaf-pour-eler",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-bourse-aux-vetements-automnehiver",
-    "title": "Bourse aux vêtements automne/hiver",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-21",
-    "endDate": "2026-10-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_232231992.jpeg?h=a886d45a&amp;itok=rtL9qT62",
-    "url": "https://www.esseylesnancy.fr/agenda/bourse-aux-vetements-automnehiver",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-repas-des-seniors-dansant",
-    "title": "Repas des Seniors (dansant)",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/Repas%20des%20seniors.jpg?itok=FkHk4czP",
-    "url": "https://www.esseylesnancy.fr/agenda/repas-des-seniors-dansant",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-repas-des-seniors-anime",
-    "title": "Repas des Seniors (animé)",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Vie associative"
-    ],
-    "date": "2026-10-25",
-    "endDate": "2026-10-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/Repas%20des%20seniors.jpg?itok=FkHk4czP",
-    "url": "https://www.esseylesnancy.fr/agenda/repas-des-seniors-anime",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-distribution-de-compost-1",
-    "title": "Distribution de compost",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Vie municipale"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/images.jpeg?itok=7x_kxld3",
-    "url": "https://www.esseylesnancy.fr/agenda/distribution-de-compost-1",
-    "source": "essey"
-  },
-  {
-    "uuid": "essey-animal-dans-la-ville-premiere-reunion-du-comite",
-    "title": "Animal dans la Ville : première réunion du comité",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Animal dans la ville"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Essey-lès-Nancy",
-    "free": true,
-    "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_275121946.jpeg?itok=RN4d7xB9",
-    "url": "https://www.esseylesnancy.fr/agenda/animal-dans-la-ville-premiere-reunion-du-comite",
-    "source": "essey"
-  },
-  {
     "uuid": "essey-repair-cafe-du-12-novembre",
     "title": "Repair Café du 12 novembre",
     "category": "conference",
@@ -284,8 +11,8 @@
     "date": "2026-11-12",
     "endDate": "2026-11-12",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "17h à 20h",
+    "place": "Foyer Foch",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
@@ -294,45 +21,66 @@
     "source": "essey"
   },
   {
-    "uuid": "essey-conseil-municipal-du-23-novembre-2026",
-    "title": "Conseil municipal du 23 novembre 2026",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
+    "uuid": "essey-exposition-trois-regards-un-horizon-week-end-2",
+    "title": "Exposition : Trois regards, un horizon... - Week-end 2",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
     "subcats": [
-      "Conseil municipal"
+      "Exposition temporaire"
     ],
-    "date": "2026-11-23",
-    "endDate": "2026-11-23",
+    "date": "2026-11-14",
+    "endDate": "2026-11-15",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "14h à 18h",
+    "place": "Espace Michel Stricher",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
-    "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-23-novembre-2026",
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/becker1.jpeg?itok=UHD3fsUT",
+    "url": "https://www.esseylesnancy.fr/agenda/exposition-trois-regards-un-horizon-week-end-2",
     "source": "essey"
   },
   {
-    "uuid": "essey-assemblee-generale-du-conseil-de-quartier-centre",
-    "title": "Assemblée générale du Conseil de quartier Centre",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
+    "uuid": "essey-brocante-musicale",
+    "title": "Brocante musicale",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
     "subcats": [
-      "Assemblée générale"
+      "Vie culturelle"
     ],
-    "date": "2026-11-26",
-    "endDate": "2026-11-26",
+    "date": "2026-11-15",
+    "endDate": "2026-11-15",
     "dateText": "",
-    "schedule": "",
-    "place": "",
+    "schedule": "10h",
+    "place": "Salle Maringer",
     "city": "Essey-lès-Nancy",
     "free": true,
     "reservation": false,
-    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/assemblee-generale.jpg?itok=YcBwGwHR",
-    "url": "https://www.esseylesnancy.fr/agenda/assemblee-generale-du-conseil-de-quartier-centre",
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_1754454214.jpeg?itok=4mgsG_cV",
+    "url": "https://www.esseylesnancy.fr/agenda/brocante-musicale",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-exposition-bonjour-monsieur-galle",
+    "title": "Exposition « Bonjour, Monsieur Gallé »",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Vie culturelle"
+    ],
+    "date": "2026-11-16",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "0h",
+    "place": "Collège Émile Gallé",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/expo-bonjour_monsieur_galle.jpg?itok=Kln4i1_A",
+    "url": "https://www.esseylesnancy.fr/agenda/exposition-bonjour-monsieur-galle",
     "source": "essey"
   },
   {
@@ -378,6 +126,48 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-boites-de-noel-solidaires-collecte-au-marche-solidaire-de-mouzimpre",
+    "title": "Boîtes de Noël solidaires : collecte au marché solidaire de Mouzimpré",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Solidarité"
+    ],
+    "date": "2026-12-04",
+    "endDate": "2026-12-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_300081131.jpeg?itok=N4BgTNjc",
+    "url": "https://www.esseylesnancy.fr/agenda/boites-de-noel-solidaires-collecte-au-marche-solidaire-de-mouzimpre",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-saint-nicolas-domicile",
+    "title": "Saint Nicolas à domicile",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2026-12-04",
+    "endDate": "2026-12-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/mg_2265-860x400.jpg?itok=I-js3Iup",
+    "url": "https://www.esseylesnancy.fr/agenda/saint-nicolas-domicile",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-repair-cafe-du-10-decembre",
     "title": "Repair Café du 10 décembre",
     "category": "conference",
@@ -399,6 +189,69 @@
     "source": "essey"
   },
   {
+    "uuid": "essey-defile-de-la-saint-nicolas",
+    "title": "Défilé de la Saint-Nicolas",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/saint_nicolas_0.jpg?itok=OELmpo5r",
+    "url": "https://www.esseylesnancy.fr/agenda/defile-de-la-saint-nicolas",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-marche-de-la-saint-nicolas",
+    "title": "Marché de la Saint-Nicolas",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Vie municipale"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/saint_nicolas_0.jpg?itok=OELmpo5r",
+    "url": "https://www.esseylesnancy.fr/agenda/marche-de-la-saint-nicolas",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-foulees-des-peres-et-meres-noel-0",
+    "title": "Foulées des Pères et Mères Noël",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Manifestation sportive"
+    ],
+    "date": "2026-12-13",
+    "endDate": "2026-12-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/a75cf335176bad4b15c0a026facde7ef.jpg?itok=Xf2OPYU6",
+    "url": "https://www.esseylesnancy.fr/agenda/foulees-des-peres-et-meres-noel-0",
+    "source": "essey"
+  },
+  {
     "uuid": "essey-conseil-municipal-du-14-decembre-2026",
     "title": "Conseil municipal du 14 décembre 2026",
     "category": "citoyennete",
@@ -417,6 +270,48 @@
     "reservation": false,
     "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/marianne-adobestock_4883257.jpeg?itok=8KWyjFw7",
     "url": "https://www.esseylesnancy.fr/agenda/conseil-municipal-du-14-decembre-2026",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-noel-des-enfants-asceens",
+    "title": "Noël des enfants ascéens",
+    "category": "autre",
+    "catLabel": "Autre",
+    "catEmoji": "📌",
+    "subcats": [
+      "Vie culturelle"
+    ],
+    "date": "2026-12-21",
+    "endDate": "2026-12-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_276524013.jpeg?itok=YLG00cmb",
+    "url": "https://www.esseylesnancy.fr/agenda/noel-des-enfants-asceens",
+    "source": "essey"
+  },
+  {
+    "uuid": "essey-apres-midi-jeux-intergenerationnel-0",
+    "title": "Après-midi jeux intergénérationnel",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Vie associative"
+    ],
+    "date": "2027-01-31",
+    "endDate": "2027-01-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Essey-lès-Nancy",
+    "free": true,
+    "reservation": false,
+    "image": "https://www.esseylesnancy.fr/sites/default/files/styles/img__960x640__crop_main/public/media/images/adobestock_151441052.jpeg?itok=3JzCGUgn",
+    "url": "https://www.esseylesnancy.fr/agenda/apres-midi-jeux-intergenerationnel-0",
     "source": "essey"
   }
 ]

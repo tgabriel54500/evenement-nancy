@@ -17,7 +17,7 @@
   <path d="M90 1200 V1120 a240 240 0 0 1 240 -240 H470 a240 240 0 0 1 240 240 V1200" fill="none" stroke="#ddd6fe" stroke-width="4" opacity=".13"/>
   <path d="M0 1010 L800 890 L800 1200 L0 1200 Z" fill="#ddd6fe" opacity=".14"/>
   <rect width="800" height="1200" fill="url(#v)"/>
-  <g font-family="Inter, Helvetica Neue, Helvetica, Arial, sans-serif" text-anchor="middle">
+  <g font-family="'Sets Grotesk', 'Inter Tight', 'Helvetica Neue', Helvetica, Arial, sans-serif" text-anchor="middle">
     <text x="400" y="256" font-size="30" font-weight="700" fill="#ffffff" opacity=".55" letter-spacing="9">HANDBALL</text>
     <text x="400" y="330" font-size="34" font-weight="600" fill="#ddd6fe" letter-spacing="3">NATIONALE 2 FÉMININE</text>
     <text x="400" y="378" font-size="27" font-weight="500" fill="#ffffff" opacity=".65">9e journée</text>

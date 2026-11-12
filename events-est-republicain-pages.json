@@ -1,383 +1,5 @@
 [
   {
-    "uuid": "erp-2026-09-30-le-ventre-de-paris",
-    "title": "Le Ventre de Paris",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/09/30/Le-ventre-de-paris",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-30-parlons-sante-un-rendez-vous-pour-prendre-soin-de-soi",
-    "title": "Parlons santé : un rendez-vous pour prendre soin de soi",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre, conférence"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Jarville-la-malgrange/2026/09/30/Parlons-sante-un-rendez-vous-pour-prendre-soin-de-soi",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-30-l-hilo-une-memoire-urbaine-en-partage",
-    "title": "L'Hilo, une mémoire urbaine en partage",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Conférence"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Vandœuvre-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Conferences/Lorraine/Meurthe-et-moselle/Vandoeuvre-les-nancy/2026/09/30/L-hilo-une-memoire-urbaine-en-partage",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-30-un-soir-a-l-opera",
-    "title": "Un soir à l'Opéra",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Portes ouvertes"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Portes-ouvertes/Lorraine/Meurthe-et-moselle/Nancy/2026/09/30/Un-soir-a-l-opera",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-30-heure-du-conte",
-    "title": "Heure du Conte",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Lecture, conte"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Houdemont",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Lectures-contes/Lorraine/Meurthe-et-moselle/Houdemont/2026/09/30/Heure-du-conte",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-04-03-randonnees-roller",
-    "title": "Randonnées roller",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Balade, visite guidée"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Autres-sorties/Lorraine/Meurthe-et-moselle/Nancy/2026/04/03/Randonnees-roller",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-04-24-amap-du-pichou",
-    "title": "AMAP du Pichou",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Marché artisanal"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2027-03-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Amance",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Marches/Lorraine/Meurthe-et-moselle/Amance/2026/04/24/Amap-du-pichou",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-02-14-visite-guidee-du-centre-historique-de-nancy",
-    "title": "Visite guidée du centre historique de Nancy",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-12-19",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/02/14/Visite-guidee-du-centre-historique-de-nancy",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-12-nocturnes",
-    "title": "Nocturnes",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Malzéville",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Malzeville/2026/09/12/Nocturnes",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-08-16-l-art-en-campagne-34e-edition",
-    "title": "L'art en campagne, 34e édition",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Goviller",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Goviller/2026/08/16/L-art-en-campagne-34e-edition",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2024-04-19-visite-commentee-de-rosieres-aux-salines",
-    "title": "Visite commentée de la localité",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2028-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Rosières-aux-Salines",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Rosieres-aux-salines/2024/04/19/Visite-commentee-de-rosieres-aux-salines",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2025-11-20-wrapping-bonbon-laurence-jenkell",
-    "title": "« Wrapping Bonbon » Laurence Jenkell",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition - Sculpture"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2027-11-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Sculpture/Lorraine/Meurthe-et-moselle/Nancy/2025/11/20/Wrapping-bonbon-laurence-jenkell",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-06-05-mysterieuse-bergamote",
-    "title": "Mystérieuse bergamote",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2027-06-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/06/05/Mysterieuse-bergamote",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-06-27-chopes-et-cruches-et-autres-pots-a-biere",
-    "title": "Chopes et cruches et autres pots à bière",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-09-30",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Saint-Nicolas-de-Port",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Saint-nicolas-de-port/2026/06/27/Chopes-et-cruches-et-autres-pots-a-biere",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-08-18-essentielles",
-    "title": "EssentiELLES",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition - Photographie"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-21",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Photographie/Lorraine/Meurthe-et-moselle/Nancy/2026/08/18/Essentielles",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-04-souffles",
-    "title": "Souffles",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition - Peinture"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Peinture/Lorraine/Meurthe-et-moselle/Nancy/2026/09/04/Souffles",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-09-l-ocean-un-colosse-aux-pieds-d-argile",
-    "title": "L'océan, un colosse aux pieds d'argile",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Houdemont",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Houdemont/2026/09/09/L-ocean-un-colosse-aux-pieds-d-argile",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-08-contre-projets-penser-le-contre-realiser-le-pour",
-    "title": "Contre-projets : penser le contre realiser le pour",
-    "category": "exposition",
-    "catLabel": "Expositions",
-    "catEmoji": "🖼️",
-    "subcats": [
-      "Exposition"
-    ],
-    "date": "2026-09-30",
-    "endDate": "2026-10-13",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Nancy/2026/09/08/Contre-projets-penser-le-contre-realiser-le-pour",
-    "source": "est-republicain"
-  },
-  {
     "uuid": "erp-2026-09-11-masque-et-rituels",
     "title": "Masque et Rituels",
     "category": "exposition",
@@ -386,7 +8,7 @@
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-09-30",
+    "date": "2026-11-12",
     "endDate": "2026-11-14",
     "dateText": "",
     "schedule": "",
@@ -399,16 +21,16 @@
     "source": "est-republicain"
   },
   {
-    "uuid": "erp-2026-10-01-olivier-de-benoist-le-droit-au-bonheur",
-    "title": "Olivier de Benoist, \"Le droit au bonheur\"",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
+    "uuid": "erp-2025-11-20-wrapping-bonbon-laurence-jenkell",
+    "title": "« Wrapping Bonbon » Laurence Jenkell",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
     "subcats": [
-      "Spectacle - Humour"
+      "Exposition - Sculpture"
     ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
+    "date": "2026-11-12",
+    "endDate": "2027-11-20",
     "dateText": "",
     "schedule": "",
     "place": "",
@@ -416,545 +38,20 @@
     "free": false,
     "reservation": false,
     "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/10/01/Olivier-de-benoist-le-droit-au-bonheur",
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Sculpture/Lorraine/Meurthe-et-moselle/Nancy/2025/11/20/Wrapping-bonbon-laurence-jenkell",
     "source": "est-republicain"
   },
   {
-    "uuid": "erp-2026-10-01-rhinoceros",
-    "title": "Rhinocéros",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
+    "uuid": "erp-2026-09-18-vivant-mort-emilie-salquebre",
+    "title": "\"Vivant-Mort\" - Émilie Salquèbre",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
     "subcats": [
-      "Théâtre contemporain"
+      "Exposition - Photographie"
     ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/10/01/Rhinoceros",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-01-the-dansant",
-    "title": "Thé dansant",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Thé dansant"
-    ],
-    "date": "2026-10-01",
-    "endDate": "2026-10-01",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Lay-Saint-Christophe",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Bal-repas-the-dansant/The-dansant/Lorraine/Meurthe-et-moselle/Lay-saint-christophe/2026/10/01/The-dansant",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-02-the-sisters-of-mercy",
-    "title": "The Sisters of Mercy",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Rock"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Rock/Lorraine/Meurthe-et-moselle/Nancy/2026/10/02/The-sisters-of-mercy",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-02-40-annees-de-lutte-contre-le-terrorisme",
-    "title": "40 années de lutte contre le terrorisme",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Conférence"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Conferences/Lorraine/Meurthe-et-moselle/Nancy/2026/10/02/40-annees-de-lutte-contre-le-terrorisme",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-02-ravel-debussy-mozart-vivaldi-bach-piazzolla-cantemir-doppler-waxman",
-    "title": "Ravel, Debussy, Mozart, Vivaldi, Bach, Piazzolla cantemir doppler waxman",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Concert - Classique"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Classique/Lorraine/Meurthe-et-moselle/Nancy/2026/10/02/Ravel-debussy-mozart-vivaldi-bach-piazzolla-cantemir-doppler-waxman",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-02-ardele-et-la-marguerite",
-    "title": "Ardèle et la Marguerite",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre boulevard"
-    ],
-    "date": "2026-10-02",
-    "endDate": "2026-10-02",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/10/02/Ardele-et-la-marguerite",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-03-worlds-apart-30th-anniversary",
-    "title": "Worlds Apart \"30th Anniversary\"",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2026/10/03/Worlds-apart-30th-anniversary",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-06-27-stages-de-reliure",
-    "title": "Stages de reliure",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Stage, atelier - Art plastique"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Arts-plastiques/Lorraine/Meurthe-et-moselle/Nancy/2026/06/27/Stages-de-reliure",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-03-l-homme-qui-en-bavait-trop",
-    "title": "L'homme qui en bavait trop",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre boulevard"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Nancy/2026/10/03/L-homme-qui-en-bavait-trop",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-03-marche-des-producteurs-locaux",
-    "title": "Marché des producteurs locaux",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Marché artisanal"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Houdemont",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Marches/Lorraine/Meurthe-et-moselle/Houdemont/2026/10/03/Marche-des-producteurs-locaux",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-03-visite-du-musee-de-l-ecole-de-nancy",
-    "title": "Visite du Musée de l'École de Nancy",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visites guidées"
-    ],
-    "date": "2026-10-03",
-    "endDate": "2026-10-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/10/03/Visite-du-musee-de-l-ecole-de-nancy",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-04-octobre-rose",
-    "title": "Octobre Rose",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Marche à pied"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Blénod-lès-Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Sport/Marche-a-pied/Lorraine/Meurthe-et-moselle/Blenod-les-pont-a-mousson/2026/10/04/Octobre-rose",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-09-06-les-mysteres-de-l-encre",
-    "title": "Les mystères de l’encre",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Stage, atelier"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Jarville-la-malgrange/2026/09/06/Les-mysteres-de-l-encre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-04-meteorite-ou-le-fer-extraterrestre",
-    "title": "Météorite ou le fer extraterrestre",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Jarville-la-malgrange/2026/10/04/Meteorite-ou-le-fer-extraterrestre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-04-octobre-rose-a-dombasle",
-    "title": "Octobre Rose à Dombasle",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Course à pied, footing, cross"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Dombasle-sur-Meurthe",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Sport/Course-a-pied-footing-cross/Lorraine/Meurthe-et-moselle/Dombasle-sur-meurthe/2026/10/04/Octobre-rose-a-dombasle",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-04-loto",
-    "title": "Loto",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Loto"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Jeu-concours/Loto/Lorraine/Meurthe-et-moselle/Nancy/2026/10/04/Loto",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-04-marche-des-aidants",
-    "title": "Marche des aidants",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Randonnée"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Randonnees/Lorraine/Meurthe-et-moselle/Nancy/2026/10/04/Marche-des-aidants",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2016-10-02-ca-court-a-lupcourt",
-    "title": "Ça court à Lupcourt",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Randonnée"
-    ],
-    "date": "2026-10-04",
-    "endDate": "2026-10-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Lupcourt",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Randonnees/Lorraine/Meurthe-et-moselle/Lupcourt/2016/10/02/Ca-court-a-lupcourt",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-05-cabaret-voyageur-les-filles-de-l-escadron-bleu",
-    "title": "Cabaret Voyageur : Les filles de l’escadron bleu",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/10/05/Cabaret-voyageur-les-filles-de-l-escadron-bleu",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-05-golf-indoor",
-    "title": "Golf indoor",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Golf"
-    ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Pulnoy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Sport/Golf/Lorraine/Meurthe-et-moselle/Pulnoy/2026/10/05/Golf-indoor",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-05-journees-france-service-ton-moral-on-en-parle",
-    "title": "Journées France Service : \"Ton moral on en parle",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre, conférence"
-    ],
-    "date": "2026-10-05",
-    "endDate": "2026-10-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Lanfroicourt",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Lanfroicourt/2026/10/05/Journees-france-service-ton-moral-on-en-parle",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-07-le-raid-de-fontenoy-sur-moselle-du-22-janvier-1871",
-    "title": "Le raid de Fontenoy-sur-Moselle du 22 janvier 1871",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Conférence"
-    ],
-    "date": "2026-10-07",
-    "endDate": "2026-10-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Gondreville",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Conferences/Lorraine/Meurthe-et-moselle/Gondreville/2026/10/07/Le-raid-de-fontenoy-sur-moselle-du-22-janvier-1871",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-07-le-castel-conte",
-    "title": "Le Castel Conte",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Lecture, conte"
-    ],
-    "date": "2026-10-07",
-    "endDate": "2026-10-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Lectures-contes/Lorraine/Meurthe-et-moselle/Nancy/2026/10/07/Le-castel-conte",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-07-dernieres-nouvelles-du-cosmos",
-    "title": "Dernières nouvelles du Cosmos",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Conférence"
-    ],
-    "date": "2026-10-07",
-    "endDate": "2026-10-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Conferences/Lorraine/Meurthe-et-moselle/Nancy/2026/10/07/Dernieres-nouvelles-du-cosmos",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-09-concert-conference-la-biodiversite-en-musique",
-    "title": "Concert-conférence : \"La Biodiversité en musique\"",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Conférence"
-    ],
-    "date": "2026-10-09",
-    "endDate": "2026-10-09",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Conferences/Lorraine/Meurthe-et-moselle/Nancy/2026/10/09/Concert-conference-la-biodiversite-en-musique",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-10-roberto-d-olbia-dresseur-de-piano",
-    "title": "Roberto d'Olbia \"Dresseur de piano\" !",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
+    "date": "2026-11-12",
+    "endDate": "2026-12-11",
     "dateText": "",
     "schedule": "",
     "place": "",
@@ -962,503 +59,20 @@
     "free": false,
     "reservation": false,
     "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Vandoeuvre-les-nancy/2026/10/10/Roberto-d-olbia-dresseur-de-piano",
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Photographie/Lorraine/Meurthe-et-moselle/Vandoeuvre-les-nancy/2026/09/18/Vivant-mort-emilie-salquebre",
     "source": "est-republicain"
   },
   {
-    "uuid": "erp-2026-10-10-monsieur-maxence-au-pays-des-5-sens",
-    "title": "Monsieur Maxence au pays des 5 sens",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/10/10/Monsieur-maxence-au-pays-des-5-sens",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-10-un-couple-(presque)-parfait",
-    "title": "Un couple (presque) parfait",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/10/10/Un-couple-(presque)-parfait",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-10-plurielle",
-    "title": "Plurielle",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/10/10/Plurielle",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-10-fete-du-livre",
-    "title": "Fête du livre",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre, conférence"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Varangéville",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Varangeville/2026/10/10/Fete-du-livre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-10-la-fete-des-sciences",
-    "title": "La fête des sciences",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre, conférence"
-    ],
-    "date": "2026-10-10",
-    "endDate": "2026-10-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2026/10/10/La-fete-des-sciences",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-11-vide-greniers",
-    "title": "Vide-greniers",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Vide-greniers"
-    ],
-    "date": "2026-10-11",
-    "endDate": "2026-10-11",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Vide-greniers/Lorraine/Meurthe-et-moselle/Nancy/2026/10/11/Vide-greniers",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-14-balade-virtuelle-relaxante-par-la-maison-des-aidants",
-    "title": "Balade virtuelle relaxante par la Maison des aidants",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Stage, atelier"
-    ],
-    "date": "2026-10-14",
-    "endDate": "2026-10-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laneuvelotte",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Laneuvelotte/2026/10/14/Balade-virtuelle-relaxante-par-la-maison-des-aidants",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-04-23-parcours-brassicole-a-nancy",
-    "title": "Parcours brassicole à Nancy",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/04/23/Parcours-brassicole-a-nancy",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-15-scene-ouverte-6",
-    "title": "Scène Ouverte #6",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-10-15",
-    "endDate": "2026-10-15",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/10/15/Scene-ouverte-6",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-16-calogero-dans-le-tour-des-theatres",
-    "title": "Calogero dans \"Le tour des théâtres\"",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2026/10/16/Calogero-dans-le-tour-des-theatres",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-16-signe-dumas",
-    "title": "Signé Dumas",
-    "category": "musique-classique",
-    "catLabel": "Musique classique",
-    "catEmoji": "🎻",
-    "subcats": [
-      "Théâtre classique"
-    ],
-    "date": "2026-10-16",
-    "endDate": "2026-10-16",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-classique/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/10/16/Signe-dumas",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-17-j-ai-rien-demande-moi",
-    "title": "J'ai rien demandé moi !",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/10/17/J-ai-rien-demande-moi",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-17-et-hop",
-    "title": "Et Hop !",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/10/17/Et-hop",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-17-ladies-paradise-diner-spectacle-des-golden-boys",
-    "title": "Ladies Paradise : dîner-spectacle des Golden Boys",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle de danse"
-    ],
-    "date": "2026-10-17",
-    "endDate": "2026-10-17",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Custines",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Spectacle-de-danse/Lorraine/Meurthe-et-moselle/Custines/2026/10/17/Ladies-paradise-diner-spectacle-des-golden-boys",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-18-loto",
-    "title": "Loto",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Loto"
-    ],
-    "date": "2026-10-18",
-    "endDate": "2026-10-18",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Champigneulles",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Jeu-concours/Loto/Lorraine/Meurthe-et-moselle/Champigneulles/2026/10/18/Loto",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-04-10-visite-guidee-de-la-maison-bergeret",
-    "title": "Visite guidée de la Maison Bergeret",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-10-20",
-    "endDate": "2026-10-20",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/04/10/Visite-guidee-de-la-maison-bergeret",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-22-akim-omiri-contexte",
-    "title": "Akim Omiri - \"Contexte\"",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2026-10-22",
-    "endDate": "2026-10-22",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/10/22/Akim-omiri-contexte",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-23-sejour-en-angleterre",
-    "title": "Séjour en Angleterre",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-10-23",
-    "endDate": "2026-10-23",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Laneuveville-devant-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Laneuveville-devant-nancy/2026/10/23/Sejour-en-angleterre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-24-benjamin-biolay-en-tournee",
-    "title": "Benjamin Biolay \"En tournée\"",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Nancy/2026/10/24/Benjamin-biolay-en-tournee",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-24-patrick-bruel-alors-regarde-35",
-    "title": "Patrick Bruel \"Alors regarde 35\"",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-10-24",
-    "endDate": "2026-10-24",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Nancy/2026/10/24/Patrick-bruel-alors-regarde-35",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-25-bourse-aux-jouets",
-    "title": "Bourse aux jouets",
-    "category": "autre",
-    "catLabel": "Autre",
-    "catEmoji": "📌",
-    "subcats": [
-      "Bourse aux jouets"
-    ],
-    "date": "2026-10-25",
-    "endDate": "2026-10-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Saulxures-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Bourses/Lorraine/Meurthe-et-moselle/Saulxures-les-nancy/2026/10/25/Bourse-aux-jouets",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-25-vide-greniers",
-    "title": "Vide-greniers",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Vide-greniers"
-    ],
-    "date": "2026-10-25",
-    "endDate": "2026-10-25",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Saulxures-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Vide-greniers/Lorraine/Meurthe-et-moselle/Saulxures-les-nancy/2026/10/25/Vide-greniers",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-28-partez-a-la-decouverte-du-theatre",
-    "title": "Partez à la découverte du théâtre",
-    "category": "activite",
-    "catLabel": "Activités & ateliers",
-    "catEmoji": "🎨",
-    "subcats": [
-      "Visite guidée"
-    ],
-    "date": "2026-10-28",
-    "endDate": "2026-10-28",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/10/28/Partez-a-la-decouverte-du-theatre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-10-31-dinosaures-le-voyage-de-bumpy",
-    "title": "Dinosaures - \"Le voyage de Bumpy®\"",
+    "uuid": "erp-2026-09-19-chambres-d-echos",
+    "title": "Chambres d'échos",
     "category": "exposition",
     "catLabel": "Expositions",
     "catEmoji": "🖼️",
     "subcats": [
       "Exposition"
     ],
-    "date": "2026-10-31",
-    "endDate": "2026-10-31",
+    "date": "2026-11-12",
+    "endDate": "2027-01-30",
     "dateText": "",
     "schedule": "",
     "place": "",
@@ -1466,259 +80,28 @@
     "free": false,
     "reservation": false,
     "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Nancy/2026/10/31/Dinosaures-le-voyage-de-bumpy",
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Nancy/2026/09/19/Chambres-d-echos",
     "source": "est-republicain"
   },
   {
-    "uuid": "erp-2026-10-31-salon-du-bien-etre",
-    "title": "Salon du bien-être",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Salon, foire"
-    ],
-    "date": "2026-10-31",
-    "endDate": "2026-10-31",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Saint-Max",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Salon-foire-concours-agricole/Autres-salons-foires-concours/Lorraine/Meurthe-et-moselle/Saint-max/2026/10/31/Salon-du-bien-etre",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-03-charlelie-couture-solissimo",
-    "title": "CharlElie Couture \"Solissimo\"",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Nancy/2026/11/03/Charlelie-couture-solissimo",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-03-vertiges",
-    "title": "Vertiges",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Théâtre contemporain"
-    ],
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/11/03/Vertiges",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-03-forum-des-aidants-et-des-metiers-du-sanitaire-et-social",
-    "title": "Forum des aidants et des métiers du sanitaire et social",
-    "category": "festival",
-    "catLabel": "Festivals",
-    "catEmoji": "🎪",
-    "subcats": [
-      "Salon des formations, métiers"
-    ],
-    "date": "2026-11-03",
-    "endDate": "2026-11-03",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Dieulouard",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Salon-foire-concours-agricole/Salon-des-formations-metiers/Lorraine/Meurthe-et-moselle/Dieulouard/2026/11/03/Forum-des-aidants-et-des-metiers-du-sanitaire-et-social",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-06-17-mesdames-en-vraies",
-    "title": "Mesdames en vraies !",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle"
-    ],
-    "date": "2026-11-04",
-    "endDate": "2026-11-04",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/06/17/Mesdames-en-vraies",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-05-philippe-lellouche-en-tournee",
-    "title": "Philippe Lellouche \"En tournée\"",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2026-11-05",
-    "endDate": "2026-11-05",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/05/Philippe-lellouche-en-tournee",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-06-lynda-lemay-jean-felix-lalanne-autours-de-leurs-guitares",
-    "title": "Lynda Lemay & Jean-Felix Lalanne \"Autours de leurs guitares",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Nancy/2026/11/06/Lynda-lemay-jean-felix-lalanne-autours-de-leurs-guitares",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-05-09-bart-ryan",
-    "title": "Bart Ryan",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-11-06",
-    "endDate": "2026-11-06",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Jarville-la-Malgrange",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Jarville-la-malgrange/2026/05/09/Bart-ryan",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-07-linh-la-tournee",
-    "title": "Linh \"La Tournée'",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Chanson variété"
-    ],
-    "date": "2026-11-07",
-    "endDate": "2026-11-07",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2026/11/07/Linh-la-tournee",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-09-l-assemblee-extraordinaire-maltraitance-institutionnelle-et-pauvrete",
-    "title": "L’assemblée extraordinaire – Maltraitance institutionnelle et pauvrete",
-    "category": "conference",
-    "catLabel": "Conférences & rencontres",
-    "catEmoji": "🎓",
-    "subcats": [
-      "Rencontre - Débat"
-    ],
-    "date": "2026-11-09",
-    "endDate": "2026-11-09",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Nancy",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Debats/Lorraine/Meurthe-et-moselle/Nancy/2026/11/09/L-assemblee-extraordinaire-maltraitance-institutionnelle-et-pauvrete",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-11-10-the-5-rosies-a-tribute-to-ac-dc",
-    "title": "The 5 Rosies - A Tribute to AC/DC",
-    "category": "musiques-actuelles",
-    "catLabel": "Musiques actuelles",
-    "catEmoji": "🎸",
-    "subcats": [
-      "Concert - Rock"
-    ],
-    "date": "2026-11-10",
-    "endDate": "2026-11-10",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Ludres",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Rock/Lorraine/Meurthe-et-moselle/Ludres/2026/11/10/The-5-rosies-a-tribute-to-ac-dc",
-    "source": "est-republicain"
-  },
-  {
-    "uuid": "erp-2026-04-06-visite-du-chateau-les-jours-feries",
-    "title": "Visite du château les jours fériés",
+    "uuid": "erp-2026-02-14-visite-guidee-du-centre-historique-de-nancy",
+    "title": "Visite guidée du centre historique de Nancy",
     "category": "activite",
     "catLabel": "Activités & ateliers",
     "catEmoji": "🎨",
     "subcats": [
       "Visite guidée"
     ],
-    "date": "2026-11-11",
-    "endDate": "2026-11-11",
+    "date": "2026-11-12",
+    "endDate": "2026-12-19",
     "dateText": "",
     "schedule": "",
     "place": "",
-    "city": "Fléville-devant-Nancy",
+    "city": "Nancy",
     "free": false,
     "reservation": false,
     "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Fleville-devant-nancy/2026/04/06/Visite-du-chateau-les-jours-feries",
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Randonnee-balade-visite-guidee-orientation/Visites-guidees/Lorraine/Meurthe-et-moselle/Nancy/2026/02/14/Visite-guidee-du-centre-historique-de-nancy",
     "source": "est-republicain"
   },
   {
@@ -1740,6 +123,111 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/11/12/Radio-live-le-jour-d-apres",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-06-05-mysterieuse-bergamote",
+    "title": "Mystérieuse bergamote",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2027-06-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Autres-expositions/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/06/05/Mysterieuse-bergamote",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-09-19-50-ans-de-botanique",
+    "title": "50 ans de botanique",
+    "category": "exposition",
+    "catLabel": "Expositions",
+    "catEmoji": "🖼️",
+    "subcats": [
+      "Exposition - Photographie"
+    ],
+    "date": "2026-11-12",
+    "endDate": "2026-12-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Exposition/Photographie/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/09/19/50-ans-de-botanique",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-13-puisque-vous-partez-en-voyage",
+    "title": "Puisque vous partez en voyage",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/11/13/Puisque-vous-partez-en-voyage",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-10-16-apprendre-a-resister-(contre-le-patriarcat)",
+    "title": "Apprendre à résister (contre le patriarcat)",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2026-11-13",
+    "endDate": "2026-11-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2026/10/16/Apprendre-a-resister-(contre-le-patriarcat)",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-14-zone-de-gratuite-speciale-momes",
+    "title": "Zone de gratuité spéciale mômes",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Vide-greniers"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Vide-greniers/Lorraine/Meurthe-et-moselle/Vandoeuvre-les-nancy/2026/11/14/Zone-de-gratuite-speciale-momes",
     "source": "est-republicain"
   },
   {
@@ -1785,27 +273,6 @@
     "source": "est-republicain"
   },
   {
-    "uuid": "erp-2026-11-14-laurent-barat-s-enchaine",
-    "title": "Laurent Barat, \"S'enchaîne\"",
-    "category": "spectacle",
-    "catLabel": "Spectacles",
-    "catEmoji": "🎭",
-    "subcats": [
-      "Spectacle - Humour"
-    ],
-    "date": "2026-11-14",
-    "endDate": "2026-11-14",
-    "dateText": "",
-    "schedule": "",
-    "place": "",
-    "city": "Blénod-lès-Pont-à-Mousson",
-    "free": false,
-    "reservation": false,
-    "image": null,
-    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Blenod-les-pont-a-mousson/2026/11/14/Laurent-barat-s-enchaine",
-    "source": "est-republicain"
-  },
-  {
     "uuid": "erp-2026-11-14-camille-chamoux-ca-va-ca-va",
     "title": "Camille Chamoux \"Ça va ça va\"",
     "category": "spectacle",
@@ -1824,6 +291,69 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/14/Camille-chamoux-ca-va-ca-va",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-14-capitaine-frimousse-et-le-tresor-des-oceans",
+    "title": "Capitaine Frimousse et le trésor des océans",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/14/Capitaine-frimousse-et-le-tresor-des-oceans",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-14-florence-mendez-dans-delicate",
+    "title": "Florence Mendez dans Délicate",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/14/Florence-mendez-dans-delicate",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-14-girl-power",
+    "title": "Girl Power",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-11-14",
+    "endDate": "2026-11-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/14/Girl-power",
     "source": "est-republicain"
   },
   {
@@ -1869,6 +399,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2026-11-19-classement-sans-suite",
+    "title": "Classement sans suite",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Vandœuvre-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Vandoeuvre-les-nancy/2026/11/19/Classement-sans-suite",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2026-11-19-stephan-eicher-poussiere-d-or",
     "title": "Stephan Eicher \"Poussière d'Or\"",
     "category": "musiques-actuelles",
@@ -1887,6 +438,90 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2026/11/19/Stephan-eicher-poussiere-d-or",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-19-croisement(s)-bonnie-e-clyde-avec-thierry-simon",
+    "title": "Croisement(s) – Bonnie e Clyde avec Thierry Simon",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre, conférence"
+    ],
+    "date": "2026-11-19",
+    "endDate": "2026-11-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2026/11/19/Croisement(s)-bonnie-e-clyde-avec-thierry-simon",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-20-de-feu-et-lumiere",
+    "title": "De feu et lumière",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/11/20/De-feu-et-lumiere",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-20-le-destin-se-moque-des-choix",
+    "title": "Le destin se moque des choix",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2026-11-20",
+    "endDate": "2026-11-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Neuves-maisons/2026/11/20/Le-destin-se-moque-des-choix",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-21-atelier-d-ecriture",
+    "title": "Atelier d'écriture",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2026-11-21",
+    "endDate": "2026-11-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2026/11/21/Atelier-d-ecriture",
     "source": "est-republicain"
   },
   {
@@ -1995,6 +630,90 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2026-11-27-la-f-i-v-du-samedi-soir",
+    "title": "La F.I.V. du samedi soir",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/11/27/La-f-i-v-du-samedi-soir",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-27-silence-on-tourne",
+    "title": "Silence, on tourne",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre boulevard"
+    ],
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/11/27/Silence-on-tourne",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-27-climax",
+    "title": "Climax",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-11-27",
+    "endDate": "2026-11-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Neuves-maisons/2026/11/27/Climax",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-11-28-marche-de-la-saint-nicolas",
+    "title": "Marché de la Saint Nicolas",
+    "category": "festival",
+    "catLabel": "Festivals",
+    "catEmoji": "🎪",
+    "subcats": [
+      "Marchés"
+    ],
+    "date": "2026-11-28",
+    "endDate": "2026-11-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Fléville-devant-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Marche-brocante-vide-grenier/Marches/Lorraine/Meurthe-et-moselle/Fleville-devant-nancy/2026/11/28/Marche-de-la-saint-nicolas",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2026-12-01-redouane-bougheraba-mon-premier-spectacle",
     "title": "Redouane Bougheraba, \"Mon premier spectacle\"",
     "category": "spectacle",
@@ -2013,6 +732,48 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/12/01/Redouane-bougheraba-mon-premier-spectacle",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-04-les-debhordeurs-laboratoire-de-recherche",
+    "title": "Les débhordeurs : laboratoire de recherche",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre, conférence"
+    ],
+    "date": "2026-12-04",
+    "endDate": "2026-12-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2026/12/04/Les-debhordeurs-laboratoire-de-recherche",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-04-vvv-soiree-poesie-contemporaine",
+    "title": "VVV : Soirée poésie contemporaine",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-12-04",
+    "endDate": "2026-12-04",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/12/04/Vvv-soiree-poesie-contemporaine",
     "source": "est-republicain"
   },
   {
@@ -2058,6 +819,111 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2026-12-11-l-etre-ange-robert",
+    "title": "L’être-Ange Robert",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-12-11",
+    "endDate": "2026-12-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/12/11/L-etre-ange-robert",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-11-cinquieme-etage",
+    "title": "Cinquième étage",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2026-12-11",
+    "endDate": "2026-12-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/12/11/Cinquieme-etage",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-12-atelier-de-jeu",
+    "title": "Atelier de jeu",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2026/12/12/Atelier-de-jeu",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-12-aime-moi-si-tu-peux",
+    "title": "Aime-moi... Si tu peux !",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/12/12/Aime-moi-si-tu-peux",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-12-le-pirate-et-l-ile-de-noel",
+    "title": "Le pirate et l'île de Noël",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-12-12",
+    "endDate": "2026-12-12",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/12/12/Le-pirate-et-l-ile-de-noel",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2025-11-23-chantal-goya-50-ans-d-amour",
     "title": "Chantal Goya « 50 Ans d'Amour »",
     "category": "musiques-actuelles",
@@ -2100,6 +966,132 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2026-12-14-cabaret-voyageur-sweet-summer-sweat",
+    "title": "Cabaret Voyageur : Sweet Summer Sweat",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2026-12-14",
+    "endDate": "2026-12-14",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2026/12/14/Cabaret-voyageur-sweet-summer-sweat",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-09-20-candide",
+    "title": "Candide",
+    "category": "musique-classique",
+    "catLabel": "Musique classique",
+    "catEmoji": "🎻",
+    "subcats": [
+      "Concert - Classique"
+    ],
+    "date": "2026-12-15",
+    "endDate": "2026-12-15",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Classique/Lorraine/Meurthe-et-moselle/Nancy/2026/09/20/Candide",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-17-scene-ouverte-7",
+    "title": "Scène ouverte #7",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2026-12-17",
+    "endDate": "2026-12-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2026/12/17/Scene-ouverte-7",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-18-a-qui-la-faute",
+    "title": "À qui la faute ?",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre boulevard"
+    ],
+    "date": "2026-12-18",
+    "endDate": "2026-12-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Ludres/2026/12/18/A-qui-la-faute",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-19-animo-z-amis",
+    "title": "Animo Z’Amis",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Lecture, conte"
+    ],
+    "date": "2026-12-19",
+    "endDate": "2026-12-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Lectures-contes/Lorraine/Meurthe-et-moselle/Nancy/2026/12/19/Animo-z-amis",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-10-17-cine-jeunes-apero-philo",
+    "title": "Ciné jeunes apéro-philo",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Cinéma - Projection"
+    ],
+    "date": "2026-12-19",
+    "endDate": "2026-12-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Villers-lès-Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Cinema/Projections/Lorraine/Meurthe-et-moselle/Villers-les-nancy/2026/10/17/Cine-jeunes-apero-philo",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2026-12-20-leon-satache-un-(d)etonnant-noel",
     "title": "Léon Satache ,\"Un (d)étonnant Noël\"",
     "category": "spectacle",
@@ -2139,6 +1131,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Nancy/2026/12/20/Nicolas-peyrac-en-toute-liberte",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-12-31-nuit-d-ivresse",
+    "title": "Nuit d'ivresse",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle - Humour"
+    ],
+    "date": "2026-12-31",
+    "endDate": "2026-12-31",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2026/12/31/Nuit-d-ivresse",
     "source": "est-republicain"
   },
   {
@@ -2226,6 +1239,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-01-16-atelier-de-jeu",
+    "title": "Atelier de jeu",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2027-01-16",
+    "endDate": "2027-01-16",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2027/01/16/Atelier-de-jeu",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-01-19-napoline",
     "title": "Napoline",
     "category": "spectacle",
@@ -2268,6 +1302,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-01-21-croisement(s)-piscine-a-vague",
+    "title": "Croisement(s) – Piscine à vague",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre, conférence"
+    ],
+    "date": "2027-01-21",
+    "endDate": "2027-01-21",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2027/01/21/Croisement(s)-piscine-a-vague",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-01-22-rod-barthet-guests",
     "title": "Rod Barthet & Guests",
     "category": "musiques-actuelles",
@@ -2307,6 +1362,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2027/01/22/Madame-arthur-chante-celine-diam-s",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-01-22-reunion-d-urgence",
+    "title": "Réunion d'urgence",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre boulevard"
+    ],
+    "date": "2027-01-22",
+    "endDate": "2027-01-22",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Ludres/2027/01/22/Reunion-d-urgence",
     "source": "est-republicain"
   },
   {
@@ -2373,6 +1449,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-01-28-vents-contraires",
+    "title": "Vents contraires",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-01-28",
+    "endDate": "2027-01-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/01/28/Vents-contraires",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-01-29-clement-viktorovitch-l-art-de-ne-pas-dire",
     "title": "Clément Viktorovitch, \"L'art de ne pas dire\"",
     "category": "spectacle",
@@ -2391,6 +1488,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2027/01/29/Clement-viktorovitch-l-art-de-ne-pas-dire",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-01-30-atelier-en-famille-avec-simon-delattre",
+    "title": "Atelier en famille avec Simon Delattre",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2027-01-30",
+    "endDate": "2027-01-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2027/01/30/Atelier-en-famille-avec-simon-delattre",
     "source": "est-republicain"
   },
   {
@@ -2646,6 +1764,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-02-07-encore-une-histoire",
+    "title": "Encore une histoire",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Spectacle"
+    ],
+    "date": "2027-02-07",
+    "endDate": "2027-02-07",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Autres-spectacles/Lorraine/Meurthe-et-moselle/Nancy/2027/02/07/Encore-une-histoire",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-02-09-les-hommes-viennent-de-mars-les-femmes-de-venus-mise-a-jour-2-0",
     "title": "Les Hommes viennent de Mars les femmes de venus mise a jour 2 0",
     "category": "spectacle",
@@ -2688,6 +1827,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-02-09-magistral-e-s",
+    "title": "Magistral.e.s",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-02-09",
+    "endDate": "2027-02-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/02/09/Magistral-e-s",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-02-11-verino-rodeo",
     "title": "Verino, \"Rodéo\"",
     "category": "spectacle",
@@ -2727,6 +1887,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Pop/Lorraine/Meurthe-et-moselle/Nancy/2027/02/11/Les-louanges",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-02-11-croisement(s)-veilleuse",
+    "title": "Croisement(s) – Veilleuse",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre, conférence"
+    ],
+    "date": "2027-02-11",
+    "endDate": "2027-02-11",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2027/02/11/Croisement(s)-veilleuse",
     "source": "est-republicain"
   },
   {
@@ -2793,6 +1974,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-02-17-quatrieme-a-(lutte-de-classe)",
+    "title": "Quatrième A (lutte de classe)",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-02-17",
+    "endDate": "2027-02-17",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/02/17/Quatrieme-a-(lutte-de-classe)",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-02-18-nawell-madani-tout-court",
     "title": "Nawell Madani \"Tout court\"",
     "category": "spectacle",
@@ -2811,6 +2013,69 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2027/02/18/Nawell-madani-tout-court",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-02-19-le-mal-de-mere",
+    "title": "Le mal de mère",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre boulevard"
+    ],
+    "date": "2027-02-19",
+    "endDate": "2027-02-19",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-boulevard/Lorraine/Meurthe-et-moselle/Ludres/2027/02/19/Le-mal-de-mere",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-02-20-atelier-mensuel",
+    "title": "Atelier mensuel",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2027-02-20",
+    "endDate": "2027-02-20",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2027/02/20/Atelier-mensuel",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-02-25-croisement(s)",
+    "title": "Croisement(s)",
+    "category": "conference",
+    "catLabel": "Conférences & rencontres",
+    "catEmoji": "🎓",
+    "subcats": [
+      "Rencontre, conférence"
+    ],
+    "date": "2027-02-25",
+    "endDate": "2027-02-25",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Rencontre-conference/Autres-rencontres/Lorraine/Meurthe-et-moselle/Nancy/2027/02/25/Croisement(s)",
     "source": "est-republicain"
   },
   {
@@ -2877,6 +2142,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-03-09-si-ca-ne-tenait-qu-a-moi-je-raconterais-d-autres",
+    "title": "Si ça ne tenait qu’à moi je raconterais d’autres",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-03-09",
+    "endDate": "2027-03-09",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/03/09/Si-ca-ne-tenait-qu-a-moi-je-raconterais-d-autres",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-03-10-dany-boon-clown-n-est-pas-un-metier",
     "title": "Dany Boon, \"Clown n'est pas un métier !\"",
     "category": "spectacle",
@@ -2895,6 +2181,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2027/03/10/Dany-boon-clown-n-est-pas-un-metier",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-03-10-michele-torr-un-dernier-soir",
+    "title": "Michèle Torr \"Un dernier soir !\"",
+    "category": "musiques-actuelles",
+    "catLabel": "Musiques actuelles",
+    "catEmoji": "🎸",
+    "subcats": [
+      "Concert - Chanson variété"
+    ],
+    "date": "2027-03-10",
+    "endDate": "2027-03-10",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2027/03/10/Michele-torr-un-dernier-soir",
     "source": "est-republicain"
   },
   {
@@ -2937,6 +2244,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Chanson-variete/Lorraine/Meurthe-et-moselle/Ludres/2027/03/13/Julien-clerc-une-vie",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-03-13-atelier-jeu-et-spoken-word",
+    "title": "Atelier jeu et \"spoken word\"",
+    "category": "activite",
+    "catLabel": "Activités & ateliers",
+    "catEmoji": "🎨",
+    "subcats": [
+      "Stage, atelier"
+    ],
+    "date": "2027-03-13",
+    "endDate": "2027-03-13",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Stage-ateliers-cours/Autres-loisirs/Lorraine/Meurthe-et-moselle/Nancy/2027/03/13/Atelier-jeu-et-spoken-word",
     "source": "est-republicain"
   },
   {
@@ -3066,6 +2394,27 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-03-23-l-odeur-des-tissus",
+    "title": "L'odeur des tissus",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-03-23",
+    "endDate": "2027-03-23",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/03/23/L-odeur-des-tissus",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-03-27-alexis-tramoni-le-meilleur-et-le-pire",
     "title": "Alexis Tramoni \"Le Meilleur et le Pire\"",
     "category": "spectacle",
@@ -3084,6 +2433,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2027/03/27/Alexis-tramoni-le-meilleur-et-le-pire",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-03-30-nuancier-clown",
+    "title": "Nuancier clown",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-03-30",
+    "endDate": "2027-03-30",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/03/30/Nuancier-clown",
     "source": "est-republicain"
   },
   {
@@ -3147,6 +2517,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Humour/Lorraine/Meurthe-et-moselle/Nancy/2027/04/03/Pablo-mira-dans-cherche-encore-le-titre-de-son-spectacle",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-04-03-gaza-o-ma-joie",
+    "title": "Gaza ô ma joie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-04-03",
+    "endDate": "2027-04-03",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/04/03/Gaza-o-ma-joie",
     "source": "est-republicain"
   },
   {
@@ -3256,7 +2647,7 @@
   },
   {
     "uuid": "erp-2027-04-17-zazie",
-    "title": "Zazie",
+    "title": "Zazie : \"Volatil\"",
     "category": "musiques-actuelles",
     "catLabel": "Musiques actuelles",
     "catEmoji": "🎸",
@@ -3423,6 +2814,48 @@
     "source": "est-republicain"
   },
   {
+    "uuid": "erp-2027-05-28-l-extravagant-cabaret-de-la-vie",
+    "title": "L’extravagant cabaret de la vie",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-05-28",
+    "endDate": "2027-05-28",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/05/28/L-extravagant-cabaret-de-la-vie",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2027-06-01-good-mourning",
+    "title": "Good Mourning !",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Théâtre contemporain"
+    ],
+    "date": "2027-06-01",
+    "endDate": "2027-06-01",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Nancy",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Theatre-contemporain/Lorraine/Meurthe-et-moselle/Nancy/2027/06/01/Good-mourning",
+    "source": "est-republicain"
+  },
+  {
     "uuid": "erp-2027-06-07-maxim-emelyanychev-piano-aylen-pritchin-violon",
     "title": "Maxim Emelyanychev piano & Aylen Pritchin violon",
     "category": "musique-classique",
@@ -3441,6 +2874,27 @@
     "reservation": false,
     "image": null,
     "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Concert-musique/Classique/Lorraine/Meurthe-et-moselle/Nancy/2027/06/07/Maxim-emelyanychev-piano-aylen-pritchin-violon",
+    "source": "est-republicain"
+  },
+  {
+    "uuid": "erp-2026-09-26-d-hier-a-aujourd-hui",
+    "title": "D'hier à aujourd'hui",
+    "category": "spectacle",
+    "catLabel": "Spectacles",
+    "catEmoji": "🎭",
+    "subcats": [
+      "Comédie musicale"
+    ],
+    "date": "2027-06-27",
+    "endDate": "2027-06-27",
+    "dateText": "",
+    "schedule": "",
+    "place": "",
+    "city": "Neuves-Maisons",
+    "free": false,
+    "reservation": false,
+    "image": null,
+    "url": "https://c.estrepublicain.fr/pour-sortir/loisirs/Spectacle-theatre-conte/Comedie-musicale/Lorraine/Meurthe-et-moselle/Neuves-maisons/2026/09/26/D-hier-a-aujourd-hui",
     "source": "est-republicain"
   },
   {

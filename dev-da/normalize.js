@@ -1,0 +1,407 @@
+/**
+ * Nettoyage des données fusionnées, partagé par update-events.js (statique) et
+ * server.js (live) pour que les deux restent cohérents. Trois opérations :
+ *
+ *   1. cleanCity(raw)        — normalise les noms de commune (casse/accents/tirets)
+ *                              ex. "NANCY" et "Nancy" → "Nancy" ; "VANDOEUVRE LES
+ *                              NANCY" → "Vandœuvre-lès-Nancy". Indispensable pour
+ *                              tout filtre/regroupement géographique.
+ *   2. remapCategory(ev)     — replie les thèmes éditoriaux parasites (culture,
+ *                              famille, sport, nature…) hérités des agendas
+ *                              communaux sur le jeu de catégories canonique.
+ *   3. dedupeCrossSource(ev) — fusionne le MÊME événement listé par plusieurs
+ *                              sources (titre normalisé + chevauchement de dates +
+ *                              lieu compatible), en gardant la fiche la plus riche.
+ *
+ * On ne touche PAS aux snapshots events-*.json (lecture seule) : tout se fait à la
+ * fusion, sur le tableau en mémoire.
+ */
+
+// ── Helpers accents/clés ────────────────────────────────────────────────────
+const stripAccents = (s) =>
+  String(s || "").normalize("NFD").replace(/[̀-ͯ]/g, "");
+
+// Clé canonique d'un libellé (commune ou lieu) : minuscules, sans accents, œ→oe,
+// ponctuation/espaces réduits. Sert de clé de comparaison, pas d'affichage.
+function slugKey(raw) {
+  return stripAccents(String(raw || "").toLowerCase().replace(/œ/g, "oe").replace(/æ/g, "ae"))
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+// ── 1. Normalisation des communes ───────────────────────────────────────────
+// Table des communes du Grand Nancy + anneau 20–30 km (clé slugKey → affichage).
+// Couvre les variantes vues dans les sources (majuscules, sans accents/tirets).
+const CITY_CANON = {
+  "nancy": "Nancy",
+  "nancy cedex": "Nancy",
+  "vandoeuvre les nancy": "Vandœuvre-lès-Nancy",
+  "vandoeuvre": "Vandœuvre-lès-Nancy",
+  "villers les nancy": "Villers-lès-Nancy",
+  "villers": "Villers-lès-Nancy",
+  "laxou": "Laxou",
+  "maxeville": "Maxéville",
+  "saint max": "Saint-Max",
+  "st max": "Saint-Max",
+  "malzeville": "Malzéville",
+  "tomblaine": "Tomblaine",
+  "jarville la malgrange": "Jarville-la-Malgrange",
+  "jarville": "Jarville-la-Malgrange",
+  "essey les nancy": "Essey-lès-Nancy",
+  "heillecourt": "Heillecourt",
+  "houdemont": "Houdemont",
+  "ludres": "Ludres",
+  "fleville devant nancy": "Fléville-devant-Nancy",
+  "seichamps": "Seichamps",
+  "pulnoy": "Pulnoy",
+  "dommartemont": "Dommartemont",
+  "art sur meurthe": "Art-sur-Meurthe",
+  "saulxures les nancy": "Saulxures-lès-Nancy",
+  "champigneulles": "Champigneulles",
+  "toul": "Toul",
+  "pont a mousson": "Pont-à-Mousson",
+  "luneville": "Lunéville",
+  "liverdun": "Liverdun",
+  "bayon": "Bayon",
+  "saint nicolas de port": "Saint-Nicolas-de-Port",
+  "st nicolas de port": "Saint-Nicolas-de-Port",
+  "dombasle sur meurthe": "Dombasle-sur-Meurthe",
+  "dombasle": "Dombasle-sur-Meurthe",
+  "frouard": "Frouard",
+  "pompey": "Pompey",
+  "neuves maisons": "Neuves-Maisons",
+  "vezelise": "Vézelise",
+  "haroue": "Haroué",
+};
+
+// Particules françaises laissées en minuscules dans le repli de mise en forme.
+const PARTICLES = new Set(["les", "la", "le", "sur", "sous", "aux", "au", "de", "des", "du", "en", "et", "d", "l", "lez"]);
+
+// Repli quand la commune n'est pas dans la table : mise en forme « titre » qui
+// garde les particules en minuscules. Ne restaure pas les accents manquants
+// (les communes fréquentes sont toutes dans CITY_CANON, donc accentuées).
+function titleCaseCity(raw) {
+  return String(raw || "").trim().toLowerCase().replace(/\s+/g, " ")
+    .replace(/[a-zà-ÿ0-9]+/g, (w) => (PARTICLES.has(stripAccents(w)) ? w : w.charAt(0).toUpperCase() + w.slice(1)));
+}
+
+function cleanCity(raw) {
+  const s = String(raw || "").trim();
+  if (!s) return "";
+  return CITY_CANON[slugKey(s)] || titleCaseCity(s);
+}
+
+// ── 2. Remappage des catégories ─────────────────────────────────────────────
+// Jeu canonique (clé → libellé/emoji) ; on s'aligne sur la source Ville de Nancy.
+const CANON_CAT = {
+  festival: { label: "Festivals", emoji: "🎪" },
+  "musiques-actuelles": { label: "Musiques actuelles", emoji: "🎸" },
+  "musique-classique": { label: "Musique classique", emoji: "🎻" },
+  spectacle: { label: "Spectacles", emoji: "🎭" },
+  exposition: { label: "Expositions", emoji: "🖼️" },
+  "jeune-public": { label: "Jeune public", emoji: "🧸" },
+  activite: { label: "Activités & ateliers", emoji: "🎨" },
+  conference: { label: "Conférences & rencontres", emoji: "🎓" },
+  citoyennete: { label: "Citoyenneté", emoji: "🤝" },
+  autre: { label: "Autre", emoji: "📌" },
+};
+// Thèmes éditoriaux parasites (Villers/Vandœuvre…) → catégorie canonique.
+const CATEGORY_REMAP = {
+  culture: "autre",
+  famille: "jeune-public",
+  jeunesse: "jeune-public",
+  sport: "activite",
+  nature: "activite",
+  sante: "autre",
+  seniors: "autre",
+  social: "citoyennete",
+  mobilite: "autre",
+  economie: "autre",
+};
+
+function remapCategory(ev) {
+  const target = CATEGORY_REMAP[ev.category];
+  if (!target) return ev; // déjà canonique
+  const c = CANON_CAT[target];
+  return { ...ev, category: target, catLabel: c.label, catEmoji: c.emoji };
+}
+
+// ── 3. Dédoublonnage inter-sources ──────────────────────────────────────────
+// Titre normalisé : sans accents, sans préfixe de type ("Exposition - …"), sans
+// ponctuation. Sert à regrouper le même événement listé par plusieurs sources.
+const TYPE_PREFIX = /^(expositions?|expo|concert|spectacles?|visites? guidees?|visite|festival|conferences?|ateliers?|stage|theatre|danse|cinema|projection|rencontres?|lecture|balade|sortie)\s*[-–—:]\s*/;
+function titleKey(title) {
+  return stripAccents(String(title || "").toLowerCase())
+    .replace(TYPE_PREFIX, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim();
+}
+
+// Mots vides / génériques (types d'événement, années, "nancy") : ignorés pour
+// comparer deux titres reformulés d'une source à l'autre. On ne garde que les
+// mots DISTINCTIFS (noms propres, sujet) qui identifient réellement l'événement.
+const TITLE_STOP = new Set(
+  ("de la le les des du un une et a au aux en dans par pour avec sur " +
+   "recital concert visite guidee guidees commentee flash spectacle exposition expo " +
+   "atelier ateliers festival soiree stage stages loisirs animations estivales edition " +
+   "nancy 2024 2025 2026 2027 2028").split(" "));
+
+function sigTokens(title) {
+  // &#038; & co. (entités HTML laissées par certains scrapers) : sinon « 038 » compte comme un mot.
+  const clean = String(title || "").replace(/&#?[a-z0-9]+;/gi, " ");
+  return new Set(slugKey(clean).split(" ").filter((w) => w.length > 2 && !TITLE_STOP.has(w)));
+}
+function jaccard(a, b) {
+  if (!a.size || !b.size) return 0;
+  let inter = 0;
+  for (const x of a) if (b.has(x)) inter++;
+  return inter / (a.size + b.size - inter);
+}
+// Deux titres désignent-ils le MÊME événement ? Vrai si : clés canoniques égales,
+// OU les mots distinctifs de l'un sont inclus dans l'autre (≥2 mots), OU fort
+// recouvrement (Jaccard ≥ 0,6) avec ≥2 mots distinctifs communs. Le double
+// garde-fou (≥2 mots) évite de fusionner deux titres courts qui ne partagent
+// qu'un mot ("Saison 2026" vs "La Saison des Jardiniers"). Attrape en revanche les
+// reformulations et inversions ("X - récital de piano" vs "Récital de piano - X").
+function titleSimilar(a, b) {
+  const ka = titleKey(a), kb = titleKey(b);
+  if (ka && ka === kb) return true;
+  const ta = sigTokens(a), tb = sigTokens(b);
+  if (!ta.size || !tb.size) return false;
+  const small = ta.size <= tb.size ? ta : tb, big = ta.size <= tb.size ? tb : ta;
+  if (small.size >= 2 && [...small].every((x) => big.has(x))) return true;
+  let shared = 0;
+  for (const x of ta) if (tb.has(x)) shared++;
+  return jaccard(ta, tb) >= 0.6 && shared >= 2;
+}
+
+// Titre court d'UN seul mot distinctif (« Temples », « Les coulisses », « Mentissa »)
+// repris dans un titre plus long par une autre source (« Temples • L'Autre Canal
+// Nancy », « Visites des coulisses - Jardin botanique »). titleSimilar exige 2 mots
+// communs, ce qui laissait passer ces doublons (constaté 2026-09-16). Garde-fous :
+// mot d'au moins 5 lettres et pas générique, MÊME jour de début, deux événements
+// courts (≤ 4 jours), même commune quand les deux la donnent, sources différentes.
+const MOTS_GENERIQUES = new Set(("contes conte loto yoga balade balades marche repair cafe rencontre " +
+  "rencontres lecture lectures projection seance jeux jeu fete brocante braderie vide grenier " +
+  "portes ouvertes ouverte journee journees conference conferences theatre danse musique " +
+  "cinema film atelier histoire histoires nature jardin jardins musee eglise chapelle " +
+  "chateau parc balade randonnee course marche concours tournoi belote salon " +
+  "patrimoine bibliotheque mediatheque visite visites exposition").split(" "));
+const DAY_MS = 86400000;
+const courte = (e) => !e.endDate || e.endDate <= e.date ||
+  (Date.parse(e.endDate) - Date.parse(e.date)) / DAY_MS < 4;
+function sameShortEvent(x, e) {
+  if ((x.source || "ville-de-nancy") === (e.source || "ville-de-nancy")) return false;   // entre sources seulement
+  if (!x.date || x.date !== e.date || !courte(x) || !courte(e)) return false;
+  const cx = slugKey(x.city), ce = slugKey(e.city);
+  if (cx && ce && cx !== ce) return false;
+  const tx = sigTokens(x.title), te = sigTokens(e.title);
+  const small = tx.size <= te.size ? tx : te, big = tx.size <= te.size ? te : tx;
+  if (small.size !== 1) return false;
+  const [w] = small;
+  return w.length >= 5 && !MOTS_GENERIQUES.has(w) && big.has(w);
+}
+
+// Deux intervalles [date, endDate] se chevauchent-ils ?
+function overlap(a, b) {
+  const as = a.date || "", ae = a.endDate || a.date || "";
+  const bs = b.date || "", be = b.endDate || b.date || "";
+  return as <= be && bs <= ae;
+}
+
+// Lieux compatibles : l'un vide, identiques, même ville, ou l'un contenu dans
+// l'autre. Évite de fusionner deux événements homonymes dans des lieux distincts.
+function placeCompat(a, b) {
+  const pa = slugKey(a.place), pb = slugKey(b.place);
+  if (!pa || !pb) return true;
+  if (pa === pb || pa.includes(pb) || pb.includes(pa)) return true;
+  const ca = slugKey(a.city), cb = slugKey(b.city);
+  return !!ca && ca === cb;
+}
+
+// Priorité de source pour choisir la fiche « de référence » (plus c'est petit,
+// plus c'est prioritaire). La Ville de Nancy n'a pas de champ source (→ officiel).
+const SRC_RANK = {
+  "ville-de-nancy": 0, "destination-nancy": 1, "zenith-nancy": 2, "curieux-net": 3,
+  "ici-c-nancy": 4, "vandoeuvre": 5, "villers-les-nancy": 6, "est-republicain": 7,
+  "alentoor": 8,
+};
+const srcRank = (e) => SRC_RANK[e.source || "ville-de-nancy"] ?? 9;
+const FRAGILE_IMG = /^https?:\/\/(www\.)?alentoor\.fr\//;
+const richness = (e) => (e.dateText ? 2 : 0) + (e.image ? 1 : 0) + (e.place ? 0.5 : 0);
+
+// Autorité TARIFAIRE, distincte de la priorité de fiche : « gratuit » ne doit
+// venir que de qui vend les billets. Les salles (L'Autre Canal, Poirel, Zénith)
+// connaissent leur billetterie ; la Ville de Nancy (API) est fiable ; les autres
+// sources recopient ou devinent, et Alentoor marque « gratuit » dès qu'une offre
+// est à 0 € (souvent « prix inconnu »). Vu le 2026-10-08 : BD-concert NJP à
+// L'Autre Canal, 15 € partout, affiché « Gratuit » parce qu'Alentoor le disait.
+// Règle : si une source qui fait autorité est dans le groupe, seules les fiches
+// du meilleur rang présent votent. Sinon (communes, Destination Nancy, presse,
+// Facebook, Alentoor…), `free: false` veut souvent dire « inconnu » : on garde
+// l'ancien comportement, un « gratuit » quelconque l'emporte, et l'overlay
+// events-pricing.json (enrich-pricing.js) corrige ensuite ce qu'il peut.
+const PRICE_RANK = {
+  "autre-canal": 0, "poirel": 0, "zenith-nancy": 0,
+  "ville-de-nancy": 1,
+};
+const priceRank = (e) => PRICE_RANK[e.source || "ville-de-nancy"];
+function pickFree(cluster) {
+  const ranks = cluster.map(priceRank).filter((r) => r !== undefined);
+  if (!ranks.length) return cluster.some((e) => e.free);
+  const best = Math.min(...ranks);
+  return cluster.filter((e) => priceRank(e) === best).some((e) => e.free);
+}
+
+function pickBase(cluster) {
+  return cluster.slice().sort((a, b) => (richness(b) - richness(a)) || (srcRank(a) - srcRank(b)))[0];
+}
+
+function mergeCluster(cluster) {
+  const base = pickBase(cluster);
+  const starts = cluster.map((e) => e.date).filter(Boolean).sort();
+  const ends = cluster.map((e) => e.endDate || e.date).filter(Boolean).sort();
+  return {
+    ...base,
+    date: starts[0] || base.date,
+    endDate: ends[ends.length - 1] || base.endDate,
+    place: base.place || cluster.map((e) => e.place).find(Boolean) || "",
+    city: base.city || cluster.map((e) => e.city).find(Boolean) || "",
+    // Image : on évite celles d'Alentoor quand une autre source en a une (Alentoor
+    // refuse ses images à certains visiteurs, constaté le 2026-10-19).
+    image: [base.image, ...cluster.map((e) => e.image)].filter(Boolean)
+      .sort((a, b) => FRAGILE_IMG.test(a) - FRAGILE_IMG.test(b))[0] || null,
+    dateText: base.dateText || cluster.map((e) => e.dateText).find(Boolean) || "",
+    // Pages du même événement chez les autres sources : enrich-fiches.js y
+    // cherche une description plus complète, gen-pages.js les cite. Retiré du
+    // data.js publié (deploy-cloudflare.sh), comme `source` et `uuid`.
+    altUrls: [...new Set(cluster.map((e) => e.url).filter((u) => u && u !== base.url))],
+    free: pickFree(cluster),
+    reservation: cluster.some((e) => e.reservation),
+    subcats: [...new Set(cluster.flatMap((e) => e.subcats || []))],
+  };
+}
+
+// Fusionne le MÊME événement listé par plusieurs sources : clustering glouton des
+// fiches dont les DATES se chevauchent, le LIEU est compatible ET le TITRE désigne
+// le même événement (exact OU reformulé, cf. titleSimilar). On ne préfiltre plus
+// par titre exact (sinon les reformulations inter-sources échappaient au dédoublon-
+// nage). L'ordre du prédicat court-circuite le coûteux titleSimilar : overlap()
+// (comparaison de chaînes) élimine d'emblée la quasi-totalité des paires (dates
+// différentes). Un titre vide n'est jamais fusionné (titleSimilar → false).
+function dedupeCrossSource(events) {
+  const clusters = [];
+  for (const e of events) {
+    const c = clusters.find((cl) =>
+      cl.some((x) => overlap(x, e) && placeCompat(x, e) && (titleSimilar(x.title, e.title) || sameShortEvent(x, e))));
+    if (c) c.push(e); else clusters.push([e]);
+  }
+  return clusters
+    .map((cl) => (cl.length > 1 ? mergeCluster(cl) : cl[0]))
+    .sort((a, b) => (a.date || "").localeCompare(b.date || ""));
+}
+
+// ── 4. Période d'affichage pour les événements sur plusieurs jours ───────────
+// dateLabel() (front) privilégie `dateText` ; sinon il n'affiche que `date`
+// (un seul jour). Pour qu'un événement multi-jours montre sa PÉRIODE, on
+// renseigne dateText quand il est vide.
+//
+// ⚠️ `date` est calé sur aujourd'hui au tri pour les événements DÉJÀ en cours
+// (le vrai début est alors perdu ici). Le clampage ne touche QUE les débuts
+// passés : un événement strictement futur (date > aujourd'hui) a donc forcément
+// `date` = vrai début. On ne génère la période QUE dans ce cas sûr ; pour les
+// événements en cours on s'appuie sur le dateText (vraie période) déjà posé par
+// les scrapers à la collecte.
+const MONTH_NAMES = ["janvier", "février", "mars", "avril", "mai", "juin",
+  "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+
+function periodText(startISO, endISO) {
+  const [y1, m1, d1] = startISO.split("-").map(Number);
+  const [y2, m2, d2] = endISO.split("-").map(Number);
+  if (y1 !== y2) return `Du ${d1} ${MONTH_NAMES[m1 - 1]} ${y1} au ${d2} ${MONTH_NAMES[m2 - 1]} ${y2}`;
+  if (m1 !== m2) return `Du ${d1} ${MONTH_NAMES[m1 - 1]} au ${d2} ${MONTH_NAMES[m2 - 1]} ${y2}`;
+  return `Du ${d1} au ${d2} ${MONTH_NAMES[m1 - 1]} ${y1}`;
+}
+
+function fillPeriod(ev, todayISO) {
+  if (ev.dateText) return ev;                              // libellé déjà fourni
+  const start = ev.date, end = ev.endDate;
+  if (!start || !end || end <= start) return ev;           // jour unique
+  if (start <= todayISO) return ev;                        // en cours/passé : début peut-être calé → on ne devine pas
+  return { ...ev, dateText: periodText(start, end) };
+}
+
+
+// ── 5. Étalement des séries courtes ─────────────────────────────────────────
+// Un festival sur trois jours n'est pas une exposition : le visiteur veut savoir
+// ce qu'il peut faire SAMEDI, pas qu'un événement court « du 11 au 13 ». On
+// remplace donc une rencontre de 2 à 4 jours par une fiche par jour. Au-delà,
+// on garde la plage : une saison, un cycle ou une expo se lisent mieux ainsi.
+// Les expositions sont exclues quelle que soit leur durée, elles sont continues
+// par nature.
+const JOURS_ETALES_MAX = 4;
+const CATEGORIES_CONTINUES = new Set(["exposition"]);
+
+function dureeEnJours(ev) {
+  if (!ev.date || !ev.endDate || ev.endDate <= ev.date) return 1;
+  const j = Math.round((Date.parse(ev.endDate) - Date.parse(ev.date)) / 86400000) + 1;
+  return Number.isFinite(j) && j > 0 ? j : 1;
+}
+
+function jourPlusN(iso, n) {
+  const d = new Date(iso + "T12:00:00Z");
+  d.setUTCDate(d.getUTCDate() + n);
+  return d.toISOString().slice(0, 10);
+}
+
+function etalerSeriesCourtes(events) {
+  const out = [];
+  for (const ev of events) {
+    const n = dureeEnJours(ev);
+    if (n < 2 || n > JOURS_ETALES_MAX || CATEGORIES_CONTINUES.has(ev.category)) {
+      out.push(ev);
+      continue;
+    }
+    for (let i = 0; i < n; i++) {
+      const jour = jourPlusN(ev.date, i);
+      out.push({
+        ...ev,
+        // Le premier jour garde l'uuid d'origine (favoris et suivi des
+        // nouveautés déjà enregistrés) ; serieUuid relie tous les jours entre
+        // eux, pour qu'ils partagent une seule date de première apparition.
+        uuid: i === 0 ? ev.uuid : `${ev.uuid || ""}-j${i + 1}`,
+        serieUuid: ev.uuid || `${ev.title}|${ev.date}`,
+        date: jour,
+        endDate: jour,
+        dateText: "",          // le libellé de plage n'a plus lieu d'être
+      });
+    }
+  }
+  return out;
+}
+
+// Nettoie le libellé de lieu. Certaines sources (Destination Nancy surtout, via
+// le streetAddress du JSON-LD) ne livrent que le numéro de rue : « 10 », « 126 bis ».
+// Mieux vaut pas de lieu qu'un chiffre seul. On retire aussi un « 54500 Commune »
+// collé en fin d'adresse (la commune est déjà dans ev.city).
+function cleanPlace(raw) {
+  let s = String(raw || "").replace(/\s+/g, " ").trim();
+  if (/^\d+\s*(bis|ter|b)?$/i.test(s)) return "";
+  const sansCP = s.replace(/[\s,]*\b\d{5}\b.*$/, "").trim();
+  if (sansCP && !/^\d+\s*(bis|ter|b)?$/i.test(sansCP)) s = sansCP;
+  return s;
+}
+
+// Applique les nettoyages d'un coup sur un tableau d'événements fusionnés.
+function cleanupMerged(events) {
+  const todayISO = new Date().toISOString().slice(0, 10);
+  const normalized = events.map((e) => remapCategory({ ...e, city: cleanCity(e.city), place: cleanPlace(e.place) }));
+  // La période est calculée APRÈS dédoublonnage, sur les date/endDate finales
+  // (mergeCluster pouvant élargir l'intervalle en fusionnant plusieurs sources).
+  // Ordre imposé : on étale AVANT fillPeriod, sinon les fiches issues de
+  // l'étalement récupéreraient un libellé « du ... au ... » qui ne veut plus rien
+  // dire une fois la série découpée en journées.
+  return etalerSeriesCourtes(dedupeCrossSource(normalized)).map((e) => fillPeriod(e, todayISO));
+}
+
+module.exports = { cleanCity, cleanPlace, remapCategory, dedupeCrossSource, pickFree, etalerSeriesCourtes, cleanupMerged, CANON_CAT, CITY_CANON };

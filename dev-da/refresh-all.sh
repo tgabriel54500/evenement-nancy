@@ -1,0 +1,135 @@
+#!/bin/bash
+#
+# refresh-all.sh — régénération quotidienne du data.js (mode hors-ligne).
+# Lancé par le LaunchAgent com.evenement-nancy.refresh (tous les jours à 05h00)
+# OU manuellement: bash refresh-all.sh
+#
+# Lance séquentiellement les scrapers (un échec n'arrête pas les autres),
+# l'import iCal si des .ics sont présents, puis update-events.js qui fusionne
+# tout et réécrit data.js. Chaque étape est journalisée dans refresh.log.
+
+# --- Chemins absolus (launchd n'hérite PAS du PATH du shell interactif) ---
+PROJECT_DIR="/Users/tristan/Documents/Événement Nancy"
+NODE_BIN="/Users/tristan/.nvm/versions/node/v24.14.0/bin/node"
+NODE_DIR="/Users/tristan/.nvm/versions/node/v24.14.0/bin"
+export PATH="$NODE_DIR:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+
+LOG="$PROJECT_DIR/refresh.log"
+ICS_DIR="$PROJECT_DIR/ics-est-republicain"
+
+cd "$PROJECT_DIR" || { echo "[$(date '+%Y-%m-%d %H:%M:%S')] ERREUR: cd vers $PROJECT_DIR impossible" >> "$LOG"; exit 1; }
+
+# --- Rotation simple du log: si > 500 Ko, on repart d'un fichier neuf ---
+if [ -f "$LOG" ] && [ "$(wc -c < "$LOG" 2>/dev/null || echo 0)" -gt 512000 ]; then
+  tail -n 200 "$LOG" > "$LOG.tmp" 2>/dev/null && mv "$LOG.tmp" "$LOG"
+fi
+
+log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
+
+# Exécute une commande node sur un script donné, tolère l'échec.
+# $1 = fichier script
+run_step() {
+  local script="$1"
+  if [ ! -f "$PROJECT_DIR/$script" ]; then
+    log "SKIP  $script (fichier absent)"
+    return 0
+  fi
+  log "START $script"
+  if "$NODE_BIN" "$script" >> "$LOG" 2>&1; then
+    log "OK    $script"
+  else
+    log "FAIL  $script (code $?) — on continue"
+  fi
+}
+
+# --- Un seul passage à la fois ---------------------------------------------
+# Le 2026-10-19, le passage de 5 h (resté en pause pendant la veille du Mac) et
+# un passage lancé à 8 h 58 ont reconstruit dist/ et publié en même temps. Un
+# verrou (dossier créé atomiquement) empêche ce chevauchement ; un verrou de plus
+# de 3 heures est considéré comme abandonné (Mac éteint en plein passage).
+LOCK="$PROJECT_DIR/.refresh-all.lock"
+if ! mkdir "$LOCK" 2>/dev/null; then
+  if [ -n "$(find "$LOCK" -maxdepth 0 -mmin +180 2>/dev/null)" ]; then
+    log "Verrou de plus de 3 h trouvé : passage précédent abandonné, on reprend."
+    rmdir "$LOCK" 2>/dev/null; mkdir "$LOCK" 2>/dev/null
+  else
+    log "SKIP  refresh-all : un autre passage est déjà en cours (verrou $LOCK)."
+    exit 0
+  fi
+fi
+trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+
+log "===== DEBUT refresh-all (node $("$NODE_BIN" --version 2>/dev/null)) ====="
+
+# --- 1. Les scrapers, séquentiels, chacun protégé ---
+for s in \
+  destination-nancy.js \
+  curieux-net.js \
+  vandoeuvre.js \
+  villers-les-nancy.js \
+  alentoor.js \
+  ici-c-nancy.js \
+  zenith-nancy.js \
+  poirel.js \
+  laxou.js \
+  ludres.js \
+  autre-canal.js \
+  essey.js \
+  lorraineaucoeur.js
+do
+  run_step "$s"
+done
+
+# --- 2. Import iCal: seulement si des .ics sont réellement présents ---
+if [ -d "$ICS_DIR" ] && ls "$ICS_DIR"/*.ics >/dev/null 2>&1; then
+  run_step "import-ics.js"
+else
+  log "SKIP  import-ics.js (aucun .ics dans ics-est-republicain/)"
+fi
+# Pages « Pour sortir » enregistrées à la main (Est Républicain), si présentes.
+if [ -d "$ICS_DIR" ] && ls "$ICS_DIR"/*.html >/dev/null 2>&1; then
+  run_step "est-republicain-pages.js"
+else
+  log "SKIP  est-republicain-pages.js (aucune page .html dans ics-est-republicain/)"
+fi
+
+# Affiches des événements Facebook : rattache celles déjà téléchargées dans
+# images/fb/ et télécharge les manquantes. Indispensable après chaque import
+# Facebook (facebook.js réécrit events-facebook.json sans images) : oublié le
+# 2026-10-16, 460 événements s'étaient retrouvés avec l'affiche générée.
+run_step "fb-posters.js"
+
+# --- 3. Fusion + réécriture de data.js (TOUJOURS, même si des scrapers ont échoué) ---
+run_step "update-events.js"
+
+# Fiches détaillées des événements (description complète, tarifs, billetterie)
+# lues sur la page de chaque événement chez sa source, avec cache : seules les
+# fiches nouvelles ou anciennes sont relues. Sert aux pages événement que
+# deploy-cloudflare.sh génère (gen-pages.js). Un échec ici ne bloque rien.
+run_step "enrich-fiches.js"
+
+# Rencontres sportives : récupération puis fabrication de data-sport.js et des
+# affiches. Séparé de la culture, un échec ici ne compromet pas la galerie.
+run_step "sport-scrape.js"
+run_step "update-sport.js"
+
+# Rendez-vous professionnels (onglet Pro) : récupération des agendas des réseaux
+# d'affaires, de la CCI, du MEDEF 54 et du Centre Prouvé, puis data-pro.js et
+# affiches-pro/. Même isolement que le sport.
+run_step "pro-scrape.js"
+run_step "update-pro.js"
+
+# --- 4. Publication du site statique LIVE sur CLOUDFLARE (Workers static assets).
+# Remplace l'ancien deploy-site.sh → Netlify (abandonné : Netlify n'est plus
+# l'origine de agenda-grandnancy.fr). Sauté proprement si le script est absent. ---
+if [ -f "$PROJECT_DIR/deploy-cloudflare.sh" ]; then
+  log "START deploy-cloudflare.sh"
+  if bash "$PROJECT_DIR/deploy-cloudflare.sh" >> "$LOG" 2>&1; then
+    log "OK    deploy-cloudflare.sh"
+  else
+    log "FAIL  deploy-cloudflare.sh (code $?) — data.js a tout de même été régénéré"
+  fi
+fi
+
+log "===== FIN refresh-all ====="
+log ""
