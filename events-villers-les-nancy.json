@@ -8,7 +8,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "endDate": "2026-12-13",
     "dateText": "",
     "schedule": "",
@@ -29,7 +29,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "endDate": "2026-11-13",
     "dateText": "",
     "schedule": "",
@@ -54,7 +54,7 @@
       "Culture",
       "Sport"
     ],
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "endDate": "2026-12-15",
     "dateText": "",
     "schedule": "de 14h à 16h",
@@ -75,7 +75,7 @@
     "subcats": [
       "Culture"
     ],
-    "date": "2026-11-11",
+    "date": "2026-11-12",
     "endDate": "2026-12-08",
     "dateText": "",
     "schedule": "20h",
@@ -85,27 +85,6 @@
     "reservation": false,
     "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/cercledeslecteurs.jpg",
     "url": "https://www.villerslesnancy.fr/agenda/evenement/cercle-des-lecteurs",
-    "source": "villers-les-nancy"
-  },
-  {
-    "uuid": "vln-343",
-    "title": "Cérémonie  de commémoration de l’armistice du 11 novembre 1918  ",
-    "category": "citoyennete",
-    "catLabel": "Citoyenneté",
-    "catEmoji": "🤝",
-    "subcats": [
-      "Citoyenneté"
-    ],
-    "date": "2026-11-11",
-    "endDate": "2026-11-11",
-    "dateText": "",
-    "schedule": "9h30",
-    "place": "",
-    "city": "Villers-lès-Nancy",
-    "free": false,
-    "reservation": false,
-    "image": "https://www.villerslesnancy.fr/fileadmin/mediatheque/agendas/2024/111118.jpg",
-    "url": "https://www.villerslesnancy.fr/agenda/evenement/ceremonie-de-commemoration-de-larmistice-du-11-novembre-1918",
     "source": "villers-les-nancy"
   },
   {

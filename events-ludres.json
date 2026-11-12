@@ -21,6 +21,27 @@
     "source": "ludres"
   },
   {
+    "uuid": "lud-permanence-de-police-nationale3",
+    "title": "Permanence de Police Nationale",
+    "category": "citoyennete",
+    "catLabel": "Citoyenneté",
+    "catEmoji": "🤝",
+    "subcats": [
+      "Sécurité"
+    ],
+    "date": "2026-11-18",
+    "endDate": "2026-11-18",
+    "dateText": "",
+    "schedule": "",
+    "place": "Médiathèque",
+    "city": "Ludres",
+    "free": false,
+    "reservation": false,
+    "image": "https://www.ludres.com/wp-content/uploads/2025/08/securite-du-quotidien.jpg",
+    "url": "https://www.ludres.com/liste-evenements/permanence-de-police-nationale3/",
+    "source": "ludres"
+  },
+  {
     "uuid": "lud-heure-du-conte-grands",
     "title": "Heure du conte – Grands",
     "category": "autre",
